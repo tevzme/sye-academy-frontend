@@ -88,18 +88,18 @@ export default function AppRouterPage() {
         <aside id="sidebar" className="w-64 bg-white border-r border-slate-200 flex flex-col z-20 shrink-0">
           <div className="h-16 flex items-center px-6 border-b border-slate-100 justify-between">
             <div className="flex items-center space-x-3 cursor-pointer" onClick={(e) => nav('/landing', e)}>
-              <img src="/favicon.svg" alt="AEON" className="w-8 h-8 rounded-lg shadow-xs object-cover border border-slate-200" />
+              <div className="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-base shadow-sm">S</div>
               <div>
                 <h1 className="text-base font-bold text-slate-800 leading-tight">SYE Academy</h1>
                 <p className="text-xs text-slate-400 font-medium">Admin & Audit Portal</p>
               </div>
             </div>
           </div>
-          <div className="px-4 py-3 border-b border-slate-100 bg-blue-50/40">
-            <button onClick={() => { if (typeof (window as any).openLearnerModal === 'function') (window as any).openLearnerModal(); }} className="w-full rounded-xl px-3 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold transition flex items-center justify-center gap-1.5 shadow-xs">
-              <span>📚</span>
-              <span>Start Training</span>
-            </button>
+          <div className="px-6 py-2.5 border-b border-slate-100 bg-blue-50/50">
+            <a href="/landing" onClick={(e) => nav('/landing', e)} className="text-xs font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1.5">
+              <span>←</span>
+              <span>Learner Portal</span>
+            </a>
           </div>
           <nav className="flex-1 overflow-y-auto py-3">
             <ul className="space-y-0.5 px-3">
