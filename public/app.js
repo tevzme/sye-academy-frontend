@@ -23,7 +23,7 @@ let currentCharts = [];
 
 // ===== BILINGUAL TRANSLATION ENGINE (I18N) =====
 const I18N = {
-    current: localStorage.getItem('sye_lang') || 'en', // Default English
+    current: localStorage.getItem('sye_lang') || 'en',
     
     dict: {
         en: {
@@ -159,7 +159,7 @@ function updateLangButtonLabels() {
     if (btnAdmin) btnAdmin.textContent = shortLabel;
 }
 
-// ===== DATA LAYER (localStorage helpers & Seed Synchronizer) =====
+// ===== DATA LAYER =====
 const DB = {
     get: (key) => JSON.parse(localStorage.getItem(key) || '[]'),
     set: (key, data) => localStorage.setItem(key, JSON.stringify(data)),
@@ -184,7 +184,6 @@ const DB = {
     }
 };
 
-// Initialize Data
 function initData() {
     if (!localStorage.getItem('sye_employees') || (window.SYE_SAMPLE_DATA && DB.get('sye_employees').length !== window.SYE_SAMPLE_DATA.employees.length)) {
         console.log("Loading authentic master data...");
@@ -215,7 +214,6 @@ function loadSampleData() {
     }
 }
 
-// Data Getters & Calculations
 const DataAPI = {
     getEmployees: () => DB.get('sye_employees'),
     getCourses: () => DB.get('sye_courses'),
@@ -252,11 +250,10 @@ const DataAPI = {
     }
 };
 
-// Smooth Counter Animation Helper
 function animateCounter(elementId, targetValue, suffix = '') {
     const el = document.getElementById(elementId);
     if (!el) return;
-    const duration = 1000;
+    const duration = 1200;
     const startTime = performance.now();
     const update = (currentTime) => {
         const elapsed = currentTime - startTime;
@@ -273,7 +270,6 @@ function animateCounter(elementId, targetValue, suffix = '') {
     requestAnimationFrame(update);
 }
 
-// ===== SHARED UI HELPERS =====
 const UI = {
     resetScroll: () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -430,9 +426,8 @@ function handleRoute() {
 
 window.addEventListener('hashchange', handleRoute);
 
-// ===== LEARNER PORTAL SCREENS =====
+// ===== LEARNER PORTAL =====
 
-// 1. Landing Screen (With Official AEON Logo)
 function renderLanding(container) {
     const employees = DataAPI.getEmployees();
     
@@ -459,7 +454,6 @@ function renderLanding(container) {
                     </a>
                 </div>
                 
-                <!-- Returning Learner Form -->
                 <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
                     <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
@@ -492,7 +486,6 @@ function renderLanding(container) {
     });
 }
 
-// 2. Registration Screen
 function renderRegister(container) {
     container.innerHTML = `
         <div class="max-w-lg w-full my-auto py-6 animate-fade-in-up">
@@ -570,7 +563,7 @@ function renderRegister(container) {
         const emps = DataAPI.getEmployees();
         if(emps.find(emp => emp.id === staffId)) {
             const err = document.getElementById('reg-error');
-            err.textContent = `Error: Staff ID "${staffId}" is already registered. Please select your name on the landing page or use a new ID.`;
+            err.textContent = `Error: Staff ID "${staffId}" is already registered.`;
             err.classList.remove('hidden');
             return;
         }
@@ -603,7 +596,11 @@ function renderRegister(container) {
     });
 }
 
-// 3. My Training Roadmap Screen
+window.logoutLearner = () => {
+    DB.setCurrentLearner(null);
+    window.location.hash = 'landing';
+};
+
 function renderMyTraining(container) {
     const learnerId = DB.getCurrentLearner();
     if(!learnerId) {
@@ -640,7 +637,6 @@ function renderMyTraining(container) {
                 </button>
             </div>
             
-            <!-- Learner Header Card -->
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center space-x-4">
                     <img src="favicon.svg" alt="AEON" class="w-16 h-16 rounded-2xl shadow-xs object-cover border border-slate-200 shrink-0">
@@ -666,7 +662,6 @@ function renderMyTraining(container) {
                 </div>
             </div>
 
-            <!-- Roadmaps Container -->
             <div class="space-y-10" id="training-roadmap"></div>
         </div>
     `;
@@ -770,11 +765,6 @@ function renderMyTraining(container) {
     roadmap.innerHTML += renderGroup(2, I18N.t('step2_title'), I18N.t('step2_desc'), roleCourses, roleUnlocked);
     roadmap.innerHTML += renderGroup(3, I18N.t('step3_title'), I18N.t('step3_desc'), sectionCourses, secUnlocked);
 }
-
-window.logoutLearner = () => {
-    DB.setCurrentLearner(null);
-    window.location.hash = 'landing';
-};
 
 // Rich Markdown Parser
 function formatRichContent(rawText) {
@@ -950,7 +940,6 @@ function formatRichContent(rawText) {
     return outHtml;
 }
 
-// 4. Course Content & Assessment Screen
 function renderCourse(container, courseId) {
     UI.resetScroll();
     const learnerId = DB.getCurrentLearner();
@@ -1021,7 +1010,6 @@ function renderCourse(container, courseId) {
             </div>
             
             ${isCompleted ? `
-                <!-- Completed Notice Banner -->
                 <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div class="flex items-center space-x-3">
                         <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl">✓</div>
@@ -1069,9 +1057,7 @@ function renderCourse(container, courseId) {
                 </div>
             </div>
             
-            <div id="quiz-area" class="hidden bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-8">
-                <!-- Quiz dynamically injected -->
-            </div>
+            <div id="quiz-area" class="hidden bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-8"></div>
         </div>
     `;
 
@@ -1093,7 +1079,6 @@ function renderCourse(container, courseId) {
     }
 }
 
-// 5. Assessment Flow
 function renderQuiz(container, quiz, learnerId, courseId) {
     let html = `
         <div class="mb-8 border-b border-slate-100 pb-5">
@@ -1221,7 +1206,6 @@ function saveTrainingRecord(empId, courseId, status, score, passed, method, trai
     DB.logActivity('training_completed', `${emp ? emp.name : empId} (${emp ? emp.role : ''}) ${status === 'Completed' ? 'completed' : status.toLowerCase()} ${course ? course.name : courseId}${score !== null ? ` (Score: ${score}%)` : ''}`, courseId);
 }
 
-// 6. Detailed Quiz Breakdown Modal
 window.viewLearnerQuizReview = (empId, courseId) => {
     const quiz = DataAPI.getQuizzes().find(q => q.courseId === courseId) || DataAPI.getQuizzes()[0];
     const results = DataAPI.getQuizResults().filter(r => r.employeeId === empId && r.quizId === quiz.id);
@@ -1335,9 +1319,8 @@ window.viewQuizPreview = (quizId) => {
     UI.showModal('Quiz Question Bank Preview', html, null, '', false);
 };
 
-// ===== ADMIN PORTAL SCREENS =====
+// ===== ADMIN DASHBOARD =====
 
-// 1. Dashboard (With Animated Counters & High-Performance Chart Transitions)
 function renderDashboard(container) {
     const employees = DataAPI.getEmployees();
     const courses = DataAPI.getCourses();
@@ -1401,15 +1384,23 @@ function renderDashboard(container) {
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
-                        <span class="text-xs font-semibold text-blue-600">4 Core Sections</span>
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
+                            <p class="text-[11px] text-slate-400">Proportion of engineers fully certified per section</p>
+                        </div>
+                        <button onclick="renderDashboard(document.getElementById('admin-content'))" class="px-2.5 py-1 bg-slate-50 hover:bg-slate-100 text-slate-600 text-xs font-bold rounded-lg border border-slate-200 transition flex items-center gap-1 shadow-2xs">
+                            <span>🔄</span> Replay
+                        </button>
                     </div>
                     <div class="relative h-64"><canvas id="sectionChart"></canvas></div>
                 </div>
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
                     <div class="flex items-center justify-between mb-4">
-                        <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
-                        <span class="text-xs font-semibold text-slate-400">Average % Completed</span>
+                        <div>
+                            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
+                            <p class="text-[11px] text-slate-400">Average % completed across roles</p>
+                        </div>
+                        <span class="text-xs font-semibold text-slate-400">Target 100%</span>
                     </div>
                     <div class="relative h-64"><canvas id="roleChart"></canvas></div>
                 </div>
@@ -1469,114 +1460,124 @@ function renderDashboard(container) {
         </div>
     `;
 
-    // Trigger Smooth Numbers Count-Up Animation
     animateCounter('stat-total', totalEmps);
     animateCounter('stat-completed', compl);
     animateCounter('stat-inprog', inprog);
     animateCounter('stat-avg', overallCompRate, '%');
 
-    // Render Charts with Full Animation
-    requestAnimationFrame(() => {
-        setTimeout(() => {
-            const sectionLabels = SECTIONS.map(sec => {
-                const emps = employees.filter(e => e.section === sec);
-                const fullyTrained = emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
-                const shortName = sec.replace('Platform', '').replace('Systems', '').trim();
-                return `${shortName} (${fullyTrained}/${emps.length})`;
-            });
+    setTimeout(() => {
+        const sectionLabels = SECTIONS.map(sec => {
+            const emps = employees.filter(e => e.section === sec);
+            const fullyTrained = emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
+            const shortName = sec.replace('Platform', '').replace('Systems', '').trim();
+            return `${shortName} (${fullyTrained}/${emps.length})`;
+        });
 
-            const secData = SECTIONS.map(sec => {
-                const emps = employees.filter(e => e.section === sec);
-                if(!emps.length) return 0;
-                return emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
-            });
+        const secData = SECTIONS.map(sec => {
+            const emps = employees.filter(e => e.section === sec);
+            if(!emps.length) return 0;
+            return emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
+        });
 
-            const ctx1 = document.getElementById('sectionChart');
-            if(ctx1) {
-                const chart1 = new Chart(ctx1, {
-                    type: 'doughnut',
-                    data: {
-                        labels: sectionLabels,
-                        datasets: [{
-                            data: secData,
-                            backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6'],
-                            borderWidth: 2,
-                            borderColor: '#ffffff'
-                        }]
+        const ctx1 = document.getElementById('sectionChart');
+        if(ctx1) {
+            const chart1 = new Chart(ctx1, {
+                type: 'doughnut',
+                data: {
+                    labels: sectionLabels,
+                    datasets: [{
+                        data: [0, 0, 0, 0],
+                        backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6'],
+                        borderWidth: 3,
+                        borderColor: '#ffffff',
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        animateRotate: true,
+                        animateScale: true,
+                        duration: 1600,
+                        easing: 'easeOutQuart'
                     },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        animation: {
-                            animateRotate: true,
-                            animateScale: true,
-                            duration: 1400,
-                            easing: 'easeOutQuart'
-                        },
-                        plugins: {
-                            legend: {
-                                position: 'bottom',
-                                labels: { boxWidth: 12, font: { size: 11, weight: '600' } }
-                            }
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { boxWidth: 12, font: { size: 11, weight: '600' }, padding: 14 }
                         }
                     }
-                });
-                currentCharts.push(chart1);
-            }
-
-            const roleLabels = ROLES;
-            const roleColors = {
-                'Developer': '#3b82f6', // Blue
-                'BA': '#10b981',        // Emerald
-                'PM': '#f59e0b',        // Amber
-                'SRE': '#f43f5e',       // Rose
-                'QA': '#8b5cf6'         // Purple
-            };
-
-            const roleAverages = roleLabels.map(role => {
-                const emps = employees.filter(e => e.role === role);
-                if(!emps.length) return 0;
-                const total = emps.reduce((acc, curr) => acc + DataAPI.getEmployeeStats(curr.id).percent, 0);
-                return Math.round(total / emps.length);
+                }
             });
+            currentCharts.push(chart1);
 
-            const ctx2 = document.getElementById('roleChart');
-            if(ctx2) {
-                const chart2 = new Chart(ctx2, {
-                    type: 'bar',
-                    data: {
-                        labels: roleLabels,
-                        datasets: [{
-                            label: 'Average Progress %',
-                            data: roleAverages,
-                            backgroundColor: roleLabels.map(r => roleColors[r] || '#3b82f6'),
-                            borderRadius: 8
-                        }]
+            // Animate in after mount
+            setTimeout(() => {
+                chart1.data.datasets[0].data = secData;
+                chart1.update();
+            }, 60);
+        }
+
+        const roleLabels = ROLES;
+        const roleColors = {
+            'Developer': '#3b82f6',
+            'BA': '#10b981',
+            'PM': '#f59e0b',
+            'SRE': '#f43f5e',
+            'QA': '#8b5cf6'
+        };
+
+        const roleAverages = roleLabels.map(role => {
+            const emps = employees.filter(e => e.role === role);
+            if(!emps.length) return 0;
+            const total = emps.reduce((acc, curr) => acc + DataAPI.getEmployeeStats(curr.id).percent, 0);
+            return Math.round(total / emps.length);
+        });
+
+        const ctx2 = document.getElementById('roleChart');
+        if(ctx2) {
+            const chart2 = new Chart(ctx2, {
+                type: 'bar',
+                data: {
+                    labels: roleLabels,
+                    datasets: [{
+                        label: 'Average Progress %',
+                        data: [0, 0, 0, 0, 0],
+                        backgroundColor: roleLabels.map(r => roleColors[r] || '#3b82f6'),
+                        borderRadius: 8,
+                        borderSkipped: false
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    animation: {
+                        duration: 1600,
+                        easing: 'easeOutQuart'
                     },
-                    options: {
-                        indexAxis: 'y',
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        animation: {
-                            duration: 1400,
-                            easing: 'easeOutQuart'
-                        },
-                        scales: {
-                            x: {
-                                max: 100,
-                                min: 0,
-                                ticks: { callback: (v) => v + '%' }
-                            }
-                        },
-                        plugins: {
-                            legend: { display: false }
+                    scales: {
+                        x: {
+                            max: 100,
+                            min: 0,
+                            ticks: { callback: (v) => v + '%' }
                         }
+                    },
+                    plugins: {
+                        legend: { display: false }
                     }
-                });
-                currentCharts.push(chart2);
-            }
-        }, 100);
-    });
+                }
+            });
+            currentCharts.push(chart2);
+
+            // Animate in after mount
+            setTimeout(() => {
+                chart2.data.datasets[0].data = roleAverages;
+                chart2.update();
+            }, 100);
+        }
+    }, 60);
 }
 
 // 2. Training Catalog
@@ -1761,7 +1762,7 @@ window.deleteCourse = (id) => {
     }
 };
 
-// 3. Work Instructions (Enterprise SOP Viewer)
+// 3. Work Instructions
 function renderWorkInstructions(container) {
     const wis = DataAPI.getWIs();
     
@@ -2374,7 +2375,7 @@ window.deleteRecord = (id) => {
     }
 };
 
-// 6. Assessments Management
+// 6. Assessments
 function renderAssessments(container) {
     const quizzes = DataAPI.getQuizzes();
     const results = DataAPI.getQuizResults();
@@ -2485,7 +2486,7 @@ function renderAssessments(container) {
     renderQuizBank();
 }
 
-// 7. Reports & Excel Export Engine
+// 7. Reports
 function renderReports(container) {
     const emps = DataAPI.getEmployees();
     const courses = DataAPI.getCourses();
@@ -2758,7 +2759,7 @@ function printCertificate(empId, courseId) {
     }, 1000);
 }
 
-// 8. Settings Page
+// 8. Settings
 function renderSettings(container) {
     container.innerHTML = `
         <div class="max-w-4xl space-y-6 animate-fade-in-up">
@@ -2844,7 +2845,6 @@ function renderSettings(container) {
     `;
 }
 
-// Initialize on Load
 window.addEventListener('load', () => {
     initData();
     handleRoute();
