@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '3.5.0';
+const APP_VERSION = '4.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -1127,17 +1127,6 @@ function renderCourse(container, courseId) {
             ` : ''}
 
                         <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
-                <!-- Course Hero Image Banner -->
-                <div class="mb-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative bg-slate-900">
-                    <img src="${course.image || '/images/sye_platform_arch.jpg'}" alt="${courseName}" class="w-full h-56 sm:h-72 object-cover" />
-                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent p-4 flex items-center justify-between text-white">
-                        <span class="text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5 font-mono">
-                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> ${course.id} • ${course.category} Technical Track
-                        </span>
-                        <span class="text-xs text-slate-300 font-mono">AEON SYE Technical Standard</span>
-                    </div>
-                </div>
-
                 <div class="mb-6 border-b border-slate-100 pb-5">
                     <div class="flex flex-wrap gap-2 mb-2.5">
                         <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded-md text-xs font-mono font-semibold">${course.id}</span>
@@ -1777,17 +1766,6 @@ window.previewCourseContent = (courseId) => {
     
     let contentHtml = '';
     
-    // Top Hero Image Banner
-    contentHtml += `
-        <div class="mb-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative bg-slate-900">
-            <img src="${course.image || '/images/sye_platform_arch.jpg'}" alt="${course.name}" class="w-full h-48 sm:h-60 object-cover" />
-            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 to-transparent p-3 flex items-center justify-between text-white">
-                <span class="text-xs font-semibold uppercase font-mono">${course.id} • ${course.category}</span>
-                <span class="text-xs text-slate-300 font-mono">Technical Blueprint</span>
-            </div>
-        </div>
-    `;
-
     if (course.content && course.content.length > 0) {
         if(course.learningObjectives) {
             contentHtml += `
