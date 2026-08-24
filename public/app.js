@@ -1,11 +1,11 @@
-// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.5.0) =====
+// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.5.1) =====
 // System Enabler (SYE) Division • AEON System Development Department
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
 // ISO 27001 (ISMS), ISO 9001 (QMS), ISO 14001 (EMS), ISO 22301 (BCMS) Certified
-// On-Premise VMware Tanzu Kubernetes (TKG) & RedHat Enterprise Linux VM Infrastructure
+// Standardized Clean Enterprise Typography (Inter + Noto Sans Thai)
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '2.5.0';
+const APP_VERSION = '2.5.1';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -294,16 +294,16 @@ const UI = {
             'Inactive': { bg: 'bg-slate-100', text: 'text-slate-600', dot: 'bg-slate-400' }
         };
         const c = config[status] || config['Inactive'];
-        return `<span class="inline-flex items-center rounded-full ${c.bg} px-2.5 py-0.5 text-xs font-semibold ${c.text}">
+        return `<span class="inline-flex items-center rounded-full ${c.bg} px-2.5 py-0.5 text-xs font-medium ${c.text}">
             <span class="mr-1.5 h-1.5 w-1.5 rounded-full ${c.dot}"></span>${status}
         </span>`;
     },
 
     renderEmploymentBadge: (emp) => {
         if (emp.employmentType === 'Permanent' || !emp.employmentType) {
-            return `<span class="px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 text-[10px] font-bold border border-blue-100">Permanent (${emp.vendor || 'AEON'})</span>`;
+            return `<span class="px-2.5 py-0.5 rounded-md bg-blue-50 text-blue-700 text-xs font-medium border border-blue-100">Permanent (${emp.vendor || 'AEON'})</span>`;
         }
-        return `<span class="px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 text-[10px] font-bold border border-purple-100">Outsource (${emp.vendor || 'OS-SYE'})</span>`;
+        return `<span class="px-2.5 py-0.5 rounded-md bg-purple-50 text-purple-700 text-xs font-medium border border-purple-100">Outsource (${emp.vendor || 'OS-SYE'})</span>`;
     },
     
     renderProgressBar: (percent) => {
@@ -314,10 +314,10 @@ const UI = {
         
         return `
             <div class="flex items-center w-full">
-                <div class="w-full bg-slate-100 rounded-full h-2.5 mr-2 overflow-hidden">
-                    <div class="${color} h-2.5 rounded-full transition-all duration-500" style="width: ${p}%"></div>
+                <div class="w-full bg-slate-100 rounded-full h-2 mr-2 overflow-hidden">
+                    <div class="${color} h-2 rounded-full transition-all duration-500" style="width: ${p}%"></div>
                 </div>
-                <span class="text-xs font-bold text-slate-700 w-10 text-right">${p}%</span>
+                <span class="text-xs font-semibold text-slate-700 w-10 text-right">${p}%</span>
             </div>
         `;
     },
@@ -452,13 +452,13 @@ window.openLearnerModal = () => {
             </div>
 
             <div>
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Select Registered Engineer</label>
+                <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Select Registered Engineer</label>
                 <div class="space-y-3">
-                    <select id="modal-learner-select" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
+                    <select id="modal-learner-select" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
                         <option value="">-- Choose your name from roster --</option>
                         ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id} ${e.employmentType === 'Outsource' ? '[OS]' : ''})</option>`).join('')}
                     </select>
-                    <button id="modal-continue-btn" onclick="startSelectedLearner()" class="w-full rounded-xl px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold transition shadow-sm">
+                    <button id="modal-continue-btn" onclick="startSelectedLearner()" class="w-full rounded-xl px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition shadow-sm">
                         Continue to Training Roadmap →
                     </button>
                 </div>
@@ -466,7 +466,7 @@ window.openLearnerModal = () => {
 
             <div class="border-t border-slate-100 pt-4 text-center">
                 <p class="text-xs text-slate-400 mb-2">Not registered yet?</p>
-                <a href="#register" onclick="UI.closeModal()" class="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-800">
+                <a href="#register" onclick="UI.closeModal()" class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800">
                     <span>➕ Register New Staff / Outsource Engineer</span>
                 </a>
             </div>
@@ -552,7 +552,7 @@ function renderRegister(container) {
                     <div id="reg-error" class="text-xs text-rose-500 font-medium hidden p-2 bg-rose-50 rounded-lg"></div>
                     
                     <div class="pt-2">
-                        <button type="submit" class="w-full rounded-xl px-6 py-3 bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition shadow-sm">${I18N.t('reg_submit')}</button>
+                        <button type="submit" class="w-full rounded-xl px-6 py-3 bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition shadow-sm">${I18N.t('reg_submit')}</button>
                     </div>
                 </form>
             </div>
@@ -642,26 +642,26 @@ function renderMyTraining(container) {
             
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-2xl shrink-0">${emp.name.charAt(0)}</div>
+                    <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl shrink-0">${emp.name.charAt(0)}</div>
                     <div>
                         <div class="flex items-center gap-2">
-                            <h2 class="text-2xl font-bold text-slate-800">${I18N.t('welcome')}, ${emp.name}</h2>
+                            <h2 class="text-xl font-bold text-slate-800">${I18N.t('welcome')}, ${emp.name}</h2>
                         </div>
                         <p class="text-xs font-mono text-slate-400 mt-0.5">${emp.id} • ${emp.email}</p>
-                        <div class="flex flex-wrap items-center gap-2 mt-2.5">
-                            <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-semibold">${emp.role}</span>
-                            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold">${emp.section}</span>
+                        <div class="flex flex-wrap items-center gap-2 mt-2">
+                            <span class="px-2.5 py-0.5 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-medium">${emp.role}</span>
+                            <span class="px-2.5 py-0.5 bg-blue-50 text-blue-700 rounded-lg text-xs font-medium">${emp.section}</span>
                             ${UI.renderEmploymentBadge(emp)}
                         </div>
                     </div>
                 </div>
                 <div class="w-full md:w-72 bg-slate-50 p-4 rounded-2xl border border-slate-100">
                     <div class="flex justify-between items-center mb-2">
-                        <span class="text-xs font-bold text-slate-600 uppercase">${I18N.t('onboarding_progress')}</span>
+                        <span class="text-xs font-semibold text-slate-600 uppercase tracking-wider">${I18N.t('onboarding_progress')}</span>
                         <span class="text-xs font-bold text-blue-600">${stats.completed}/${stats.required}</span>
                     </div>
                     ${UI.renderProgressBar(stats.percent)}
-                    <p class="text-[11px] text-slate-400 mt-2 text-right">${stats.completed} ${I18N.t('courses_completed')}</p>
+                    <p class="text-xs text-slate-400 mt-2 text-right">${stats.completed} ${I18N.t('courses_completed')}</p>
                 </div>
             </div>
 
@@ -683,11 +683,11 @@ function renderMyTraining(container) {
             <div>
                 <div class="flex items-center justify-between mb-2">
                     <div>
-                        <h3 class="text-lg font-bold text-slate-800 flex items-center gap-2">
+                        <h3 class="text-base font-bold text-slate-800 flex items-center gap-2">
                             ${title} 
                             ${!isGroupUnlocked ? `<span class="px-2.5 py-0.5 bg-slate-100 text-slate-500 rounded-full text-xs font-normal">${I18N.t('locked')}</span>` : ''}
                         </h3>
-                        <p class="text-xs text-slate-400">${desc}</p>
+                        <p class="text-xs text-slate-400 mt-0.5">${desc}</p>
                     </div>
                 </div>
                 <div class="space-y-3 mt-4">
@@ -711,13 +711,13 @@ function renderMyTraining(container) {
                 
                 actionButtons = `
                     <div class="flex flex-wrap items-center gap-2">
-                        <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-bold flex items-center gap-1">
+                        <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-semibold flex items-center gap-1">
                             <span>✅</span> ${scoreText ? scoreText.substring(3) : 'Completed'}
                         </span>
-                        <a href="#course-${course.id}" class="rounded-lg px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-semibold hover:bg-slate-50 transition shadow-sm">
+                        <a href="#course-${course.id}" class="rounded-lg px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 transition shadow-sm">
                             ${I18N.t('review_course')}
                         </a>
-                        <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-lg px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold hover:bg-blue-100 transition">
+                        <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-lg px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-medium hover:bg-blue-100 transition">
                             ${I18N.t('view_assessment')}
                         </button>
                     </div>
@@ -725,7 +725,7 @@ function renderMyTraining(container) {
             } else if (canStart) {
                 borderColor = 'border-blue-500';
                 actionButtons = `
-                    <a href="#course-${course.id}" class="inline-flex items-center rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 transition shadow-sm gap-1">
+                    <a href="#course-${course.id}" class="inline-flex items-center rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold hover:bg-blue-700 transition shadow-sm gap-1">
                         ${I18N.current === 'th' ? 'เข้าสู่บทเรียน →' : 'Start Course →'}
                     </a>
                 `;
@@ -743,13 +743,13 @@ function renderMyTraining(container) {
             html += `
                 <div class="${bgStyle} rounded-2xl shadow-sm border border-slate-200 border-l-4 ${borderColor} p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 transition hover:shadow">
                     <div class="flex-1">
-                        <div class="flex items-center space-x-2.5 mb-1.5">
-                            <span class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-[11px] flex items-center justify-center font-bold">${index + 1}</span>
-                            <span class="text-xs font-mono font-bold text-slate-500">${course.id}</span>
-                            <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-[10px] uppercase font-bold rounded">📝 Assessment</span>
-                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-[10px] rounded font-semibold">👥 ${course.targetRoles.join(', ')}</span>
+                        <div class="flex items-center space-x-2 mb-1">
+                            <span class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-xs flex items-center justify-center font-bold">${index + 1}</span>
+                            <span class="text-xs font-mono font-semibold text-slate-500">${course.id}</span>
+                            <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-xs rounded font-medium">📝 Assessment</span>
+                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded font-medium">👥 ${course.targetRoles.join(', ')}</span>
                         </div>
-                        <h4 class="text-base font-bold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="window.location.hash='course-${course.id}'">${courseName}</h4>
+                        <h4 class="text-base font-semibold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="window.location.hash='course-${course.id}'">${courseName}</h4>
                         <p class="text-xs text-slate-500">⏱ ${course.duration}</p>
                     </div>
                     <div class="shrink-0 flex items-center">
@@ -786,9 +786,9 @@ function formatRichContent(rawText) {
             .replace(/\$([^\$]+)\$/g, '$1')
             .replace(/`([^`]+)`/g, (m, code) => {
                 const esc = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                return `<code class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded-md font-mono text-xs border border-blue-100 font-semibold">${esc}</code>`;
+                return `<code class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded-md font-mono text-xs border border-blue-100 font-medium">${esc}</code>`;
             })
-            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
+            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-900">$1</strong>')
             .replace(/\*(.*?)\*/g, '<em class="italic text-slate-700">$1</em>');
     }
 
@@ -806,8 +806,8 @@ function formatRichContent(rawText) {
             .replace(/>/g, '&gt;');
         const blockHtml = `
             <div class="my-4 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md">
-                ${lang ? `<div class="bg-slate-800/90 px-4 py-2 text-[11px] font-mono font-bold text-slate-300 uppercase tracking-wider border-b border-slate-700/60 flex items-center justify-between"><span>${lang}</span><span class="text-[10px] text-slate-500 font-normal">Syntax Format</span></div>` : ''}
-                <pre class="p-4 text-xs md:text-sm font-mono text-emerald-400 overflow-x-auto leading-relaxed whitespace-pre font-medium"><code>${escaped.trim()}</code></pre>
+                ${lang ? `<div class="bg-slate-800/90 px-4 py-2 text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider border-b border-slate-700/60 flex items-center justify-between"><span>${lang}</span><span class="text-xs text-slate-500 font-normal">Format</span></div>` : ''}
+                <pre class="p-4 text-xs md:text-sm font-mono text-emerald-400 overflow-x-auto leading-relaxed whitespace-pre font-normal"><code>${escaped.trim()}</code></pre>
             </div>
         `;
         tokens.push({ id, html: blockHtml });
@@ -825,7 +825,7 @@ function formatRichContent(rawText) {
             let tableHtml = `
                 <div class="my-5 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
                     <table class="w-full text-xs text-left">
-                        <thead class="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold uppercase text-[11px] tracking-wider">
+                        <thead class="bg-slate-50 border-b border-slate-200 text-slate-700 font-semibold uppercase text-xs tracking-wider">
                             <tr>
                                 ${headerCols.map(c => `<th class="p-3.5">${formatInline(c)}</th>`).join('')}
                             </tr>
@@ -891,12 +891,12 @@ function formatRichContent(rawText) {
 
         if (line.startsWith('### ')) {
             outHtml += closeLists();
-            outHtml += `<h4 class="text-base font-bold text-slate-800 mt-6 mb-2.5">${formatInline(line.substring(4))}</h4>\n`;
+            outHtml += `<h4 class="text-sm font-semibold text-slate-800 mt-5 mb-2">${formatInline(line.substring(4))}</h4>\n`;
             continue;
         }
         if (line.startsWith('## ')) {
             outHtml += closeLists();
-            outHtml += `<h3 class="text-lg font-bold text-slate-800 mt-7 mb-3">${formatInline(line.substring(3))}</h3>\n`;
+            outHtml += `<h3 class="text-base font-bold text-slate-800 mt-6 mb-2.5">${formatInline(line.substring(3))}</h3>\n`;
             continue;
         }
 
@@ -906,7 +906,7 @@ function formatRichContent(rawText) {
             if (inNestedUl) { outHtml += '</ul></li>\n'; inNestedUl = false; }
             else if (inOl) { outHtml += '</li>\n'; }
             if (!inOl) {
-                outHtml += '<ol class="list-decimal pl-5 my-2.5 space-y-2 text-sm md:text-base text-slate-800 font-medium">\n';
+                outHtml += '<ol class="list-decimal pl-5 my-2.5 space-y-1.5 text-sm text-slate-700 leading-relaxed">\n';
                 inOl = true;
             }
             outHtml += `  <li value="${numMatch[1]}">${formatInline(numMatch[2])}\n`;
@@ -917,13 +917,13 @@ function formatRichContent(rawText) {
             const itemText = line.substring(2);
             if (inOl) {
                 if (!inNestedUl) {
-                    outHtml += '<ul class="list-disc pl-5 my-1.5 space-y-1 text-sm font-normal text-slate-600">\n';
+                    outHtml += '<ul class="list-disc pl-5 my-1.5 space-y-1 text-xs text-slate-600">\n';
                     inNestedUl = true;
                 }
                 outHtml += `    <li>${formatInline(itemText)}</li>\n`;
             } else {
                 if (!inUl) {
-                    outHtml += '<ul class="list-disc pl-5 my-2.5 space-y-1.5 text-sm text-slate-700">\n';
+                    outHtml += '<ul class="list-disc pl-5 my-2.5 space-y-1.5 text-sm text-slate-700 leading-relaxed">\n';
                     inUl = true;
                 }
                 outHtml += `  <li>${formatInline(itemText)}</li>\n`;
@@ -932,7 +932,7 @@ function formatRichContent(rawText) {
         }
 
         outHtml += closeLists();
-        outHtml += `<p class="mb-3.5 leading-relaxed text-slate-700 text-sm md:text-base">${formatInline(line)}</p>\n`;
+        outHtml += `<p class="mb-3 leading-relaxed text-slate-700 text-sm">${formatInline(line)}</p>\n`;
     }
 
     outHtml += closeLists();
@@ -954,7 +954,7 @@ function renderCourse(container, courseId) {
 
     const course = DataAPI.getCourses().find(c => c.id === courseId);
     if(!course) {
-        container.innerHTML = `<div class="p-8 text-center text-slate-500 bg-white rounded-2xl mt-8">Course not found.</div>`;
+        container.innerHTML = `<div class="p-8 text-center text-slate-500 bg-white rounded-2xl mt-8 text-sm">Course not found.</div>`;
         return;
     }
 
@@ -974,11 +974,11 @@ function renderCourse(container, courseId) {
     if (contentSecs && contentSecs.length > 0) {
         if(learningObjs && learningObjs.length > 0) {
             contentHtml += `
-                <div class="bg-blue-50/50 border border-blue-100 rounded-2xl p-6 mb-8">
-                    <h3 class="text-sm font-bold text-blue-900 mb-3 flex items-center gap-2">
+                <div class="bg-blue-50/50 border border-blue-100 rounded-2xl p-5 mb-6">
+                    <h3 class="text-sm font-bold text-blue-900 mb-2.5 flex items-center gap-2">
                         <span>🎯</span> ${I18N.t('learning_objectives')}
                     </h3>
-                    <ul class="list-disc pl-5 text-slate-700 text-sm space-y-1.5">
+                    <ul class="list-disc pl-5 text-slate-700 text-sm space-y-1">
                         ${learningObjs.map(obj => `<li>${obj}</li>`).join('')}
                     </ul>
                 </div>
@@ -990,23 +990,23 @@ function renderCourse(container, courseId) {
             const formattedBody = formatRichContent(sec.body || '');
             
             contentHtml += `
-                <div class="mb-10">
-                    <h3 class="text-lg font-bold text-slate-800 mb-3 pb-2 border-b border-slate-100">${isThai ? 'หัวข้อที่' : 'Section'} ${idx+1}: ${cleanTitle}</h3>
+                <div class="mb-8">
+                    <h3 class="text-base font-bold text-slate-800 mb-2 pb-2 border-b border-slate-100">${isThai ? 'หัวข้อที่' : 'Section'} ${idx+1}: ${cleanTitle}</h3>
                     <div>${formattedBody}</div>
                 </div>
             `;
         });
     } else {
         contentHtml += `
-            <div class="bg-slate-50 p-6 rounded-2xl mb-8 border border-slate-100">
-                <h3 class="text-base font-bold text-slate-800 mb-2">${isThai ? 'ภาพรวมหลักสูตร' : 'Course Overview'}</h3>
+            <div class="bg-slate-50 p-6 rounded-2xl mb-6 border border-slate-100">
+                <h3 class="text-sm font-bold text-slate-800 mb-2">${isThai ? 'ภาพรวมหลักสูตร' : 'Course Overview'}</h3>
                 <p class="text-slate-700 text-sm leading-relaxed">${courseDesc}</p>
             </div>
         `;
     }
 
     container.innerHTML = `
-        <div class="max-w-5xl w-full py-4 animate-fade-in-up">
+        <div class="max-w-4xl w-full py-4 animate-fade-in-up">
             <div class="mb-4">
                 <a href="#my-training" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_roadmap')}
@@ -1018,43 +1018,43 @@ function renderCourse(container, courseId) {
                     <div class="flex items-center space-x-3">
                         <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl">✓</div>
                         <div>
-                            <h4 class="font-bold text-emerald-900 text-sm">${I18N.t('course_completed_msg')}</h4>
+                            <h4 class="font-semibold text-emerald-900 text-sm">${I18N.t('course_completed_msg')}</h4>
                             <p class="text-xs text-emerald-700 mt-0.5">Date: ${completedRecord.trainingDate} ${completedRecord.score !== null ? `• ${I18N.t('score_label')}: ${completedRecord.score}%` : ''}</p>
                         </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-xl px-4 py-2 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm">
+                        <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-xl px-4 py-2 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm">
                             ${I18N.t('review_answers_btn')}
                         </button>
                     </div>
                 </div>
             ` : ''}
 
-            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-8">
-                <div class="mb-8 border-b border-slate-100 pb-6">
-                    <div class="flex flex-wrap gap-2 mb-3">
-                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-mono font-bold">${course.id}</span>
-                        <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-semibold">${course.category}</span>
-                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold">📝 Assessment Required</span>
-                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold">👥 Roles: ${course.targetRoles.join(', ')}</span>
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+                <div class="mb-6 border-b border-slate-100 pb-5">
+                    <div class="flex flex-wrap gap-2 mb-2.5">
+                        <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded-md text-xs font-mono font-semibold">${course.id}</span>
+                        <span class="px-2.5 py-0.5 bg-indigo-50 text-indigo-700 rounded-md text-xs font-medium">${course.category}</span>
+                        <span class="px-2.5 py-0.5 bg-amber-50 text-amber-700 rounded-md text-xs font-medium">📝 Assessment Required</span>
+                        <span class="px-2.5 py-0.5 bg-blue-50 text-blue-700 rounded-md text-xs font-medium">👥 Roles: ${course.targetRoles.join(', ')}</span>
                     </div>
-                    <h1 class="text-2xl md:text-3xl font-extrabold text-slate-800 mb-2">${courseName}</h1>
+                    <h1 class="text-2xl font-bold text-slate-800 mb-1.5">${courseName}</h1>
                     <p class="text-xs text-slate-500">⏱ Duration: ${course.duration}</p>
                 </div>
                 
                 <div class="course-body">
                     ${contentHtml}
                     
-                    <div class="mt-12 pt-8 border-t border-slate-200">
-                        <p class="text-center text-slate-400 text-xs font-medium mb-8">${I18N.t('end_of_content')}</p>
+                    <div class="mt-10 pt-6 border-t border-slate-200">
+                        <p class="text-center text-slate-400 text-xs font-medium mb-6">${I18N.t('end_of_content')}</p>
                         
                         <div id="completion-area" class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                            <label class="flex items-start space-x-3 mb-6 cursor-pointer">
-                                <input type="checkbox" id="understand-check" ${isCompleted ? 'checked' : ''} class="w-5 h-5 mt-0.5 rounded border-slate-300 text-blue-600 focus:ring-blue-500">
+                            <label class="flex items-start space-x-3 mb-5 cursor-pointer">
+                                <input type="checkbox" id="understand-check" ${isCompleted ? 'checked' : ''} class="w-4 h-4 mt-0.5 rounded border-slate-300 text-blue-600 focus:ring-blue-500">
                                 <span class="text-slate-700 font-medium text-sm leading-snug">${I18N.t('confirm_read')}</span>
                             </label>
                             
-                            <button id="take-assessment-btn" ${!isCompleted ? 'disabled' : ''} class="w-full rounded-xl px-6 py-3.5 bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
+                            <button id="take-assessment-btn" ${!isCompleted ? 'disabled' : ''} class="w-full rounded-xl px-6 py-3 bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
                                 ${isCompleted ? I18N.t('retake_assessment') : I18N.t('take_assessment')}
                             </button>
                         </div>
@@ -1062,7 +1062,7 @@ function renderCourse(container, courseId) {
                 </div>
             </div>
             
-            <div id="quiz-area" class="hidden bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-10 mb-8"></div>
+            <div id="quiz-area" class="hidden bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8"></div>
         </div>
     `;
 
@@ -1086,21 +1086,21 @@ function renderCourse(container, courseId) {
 
 function renderQuiz(container, quiz, learnerId, courseId) {
     let html = `
-        <div class="mb-8 border-b border-slate-100 pb-5">
-            <span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold mb-2 inline-block">TECHNICAL KNOWLEDGE ASSESSMENT</span>
-            <h2 class="text-2xl font-bold text-slate-800">${quiz.title}</h2>
+        <div class="mb-6 border-b border-slate-100 pb-4">
+            <span class="px-2.5 py-0.5 bg-amber-50 text-amber-700 rounded-md text-xs font-semibold mb-2 inline-block">TECHNICAL KNOWLEDGE ASSESSMENT</span>
+            <h2 class="text-xl font-bold text-slate-800">${quiz.title}</h2>
             <p class="text-xs text-slate-500 mt-1">Passing Score: ${quiz.passingScore}% • ${quiz.questions.length} questions</p>
         </div>
-        <form id="quiz-form" class="space-y-6">
+        <form id="quiz-form" class="space-y-5">
     `;
 
     quiz.questions.forEach((q, idx) => {
         html += `
-            <div class="quiz-q bg-slate-50/50 p-5 rounded-2xl border border-slate-100" data-id="${q.id}">
-                <p class="font-bold text-slate-800 text-sm mb-3">${idx + 1}. ${q.question}</p>
-                <div class="space-y-2">
+            <div class="quiz-q bg-slate-50/50 p-4 rounded-2xl border border-slate-100" data-id="${q.id}">
+                <p class="font-semibold text-slate-800 text-sm mb-2.5">${idx + 1}. ${q.question}</p>
+                <div class="space-y-1.5">
                     ${q.options.map((opt, oIdx) => `
-                        <label class="flex items-start space-x-3 p-3 rounded-xl border border-slate-200 bg-white hover:bg-blue-50/30 hover:border-blue-300 cursor-pointer transition">
+                        <label class="flex items-start space-x-3 p-2.5 rounded-xl border border-slate-200 bg-white hover:bg-blue-50/30 hover:border-blue-300 cursor-pointer transition">
                             <input type="radio" name="q_${q.id}" value="${oIdx}" required class="mt-0.5 text-blue-600 focus:ring-blue-500">
                             <span class="text-slate-700 text-xs md:text-sm leading-snug">${opt}</span>
                         </label>
@@ -1113,8 +1113,8 @@ function renderQuiz(container, quiz, learnerId, courseId) {
     html += `
             <div id="quiz-result" class="hidden p-6 rounded-2xl text-center"></div>
             <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
-                <button type="submit" id="quiz-submit-btn" class="flex-1 rounded-xl px-6 py-3.5 bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition shadow-sm">${I18N.t('submit_answers')}</button>
-                <a href="#my-training" id="quiz-back-btn" class="hidden flex-1 text-center rounded-xl px-6 py-3.5 bg-slate-100 text-slate-700 font-semibold text-sm hover:bg-slate-200 transition">${I18N.t('back_to_roadmap')}</a>
+                <button type="submit" id="quiz-submit-btn" class="flex-1 rounded-xl px-6 py-3 bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition shadow-sm">${I18N.t('submit_answers')}</button>
+                <a href="#my-training" id="quiz-back-btn" class="hidden flex-1 text-center rounded-xl px-6 py-3 bg-slate-100 text-slate-700 font-semibold text-sm hover:bg-slate-200 transition">${I18N.t('back_to_roadmap')}</a>
             </div>
         </form>
     `;
@@ -1157,26 +1157,26 @@ function renderQuiz(container, quiz, learnerId, courseId) {
         const resDiv = document.getElementById('quiz-result');
         resDiv.classList.remove('hidden');
         if(passed) {
-            resDiv.className = 'p-6 rounded-2xl text-center bg-emerald-50 border border-emerald-200 mb-6';
+            resDiv.className = 'p-5 rounded-2xl text-center bg-emerald-50 border border-emerald-200 mb-5';
             resDiv.innerHTML = `
-                <h3 class="text-xl font-bold text-emerald-800 mb-2">${I18N.t('congrats_pass')}</h3>
-                <p class="text-emerald-700 font-semibold text-sm mb-4">${I18N.t('score_label')}: ${percent}% (${score}/${quiz.questions.length} correct)</p>
-                <button type="button" onclick="viewQuizBreakdownModal('${resId}')" class="rounded-xl px-4 py-2 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm">
+                <h3 class="text-lg font-bold text-emerald-800 mb-1.5">${I18N.t('congrats_pass')}</h3>
+                <p class="text-emerald-700 font-semibold text-sm mb-3">${I18N.t('score_label')}: ${percent}% (${score}/${quiz.questions.length} correct)</p>
+                <button type="button" onclick="viewQuizBreakdownModal('${resId}')" class="rounded-xl px-4 py-2 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm">
                     ${I18N.t('review_answers_btn')}
                 </button>
             `;
             document.getElementById('quiz-submit-btn').classList.add('hidden');
             document.getElementById('quiz-back-btn').classList.remove('hidden');
         } else {
-            resDiv.className = 'p-6 rounded-2xl text-center bg-rose-50 border border-rose-200 mb-6';
+            resDiv.className = 'p-5 rounded-2xl text-center bg-rose-50 border border-rose-200 mb-5';
             resDiv.innerHTML = `
-                <h3 class="text-xl font-bold text-rose-800 mb-2">${I18N.t('not_passed')}</h3>
-                <p class="text-rose-700 font-medium text-sm mb-4">${I18N.t('score_label')}: ${percent}% (${I18N.t('min_pass')}: ${quiz.passingScore}%)</p>
+                <h3 class="text-lg font-bold text-rose-800 mb-1.5">${I18N.t('not_passed')}</h3>
+                <p class="text-rose-700 font-medium text-sm mb-3">${I18N.t('score_label')}: ${percent}% (${I18N.t('min_pass')}: ${quiz.passingScore}%)</p>
                 <div class="flex justify-center gap-3">
-                    <button type="button" onclick="renderCourse(document.getElementById('learner-content'), '${courseId}')" class="rounded-xl px-4 py-2 bg-rose-600 text-white text-xs font-bold hover:bg-rose-700 transition shadow-sm">
+                    <button type="button" onclick="renderCourse(document.getElementById('learner-content'), '${courseId}')" class="rounded-xl px-4 py-2 bg-rose-600 text-white text-xs font-semibold hover:bg-rose-700 transition shadow-sm">
                         ${I18N.t('retake_assessment')}
                     </button>
-                    <button type="button" onclick="viewQuizBreakdownModal('${resId}')" class="rounded-xl px-4 py-2 bg-white border border-rose-200 text-rose-700 text-xs font-bold hover:bg-rose-50 transition">
+                    <button type="button" onclick="viewQuizBreakdownModal('${resId}')" class="rounded-xl px-4 py-2 bg-white border border-rose-200 text-rose-700 text-xs font-semibold hover:bg-rose-50 transition">
                         ${I18N.t('review_answers_btn')}
                     </button>
                 </div>
@@ -1240,26 +1240,26 @@ window.viewQuizBreakdownModal = (resId) => {
                 </div>
                 <div class="flex items-center gap-3">
                     <div class="text-right">
-                        <span class="text-2xl font-extrabold ${result.passed ? 'text-emerald-600' : 'text-rose-600'}">${result.score}%</span>
-                        <p class="text-[10px] text-slate-400">Passing: ${quiz.passingScore}%</p>
+                        <span class="text-2xl font-bold ${result.passed ? 'text-emerald-600' : 'text-rose-600'}">${result.score}%</span>
+                        <p class="text-xs text-slate-400">Passing: ${quiz.passingScore}%</p>
                     </div>
-                    <span class="px-3 py-1 rounded-full text-xs font-bold ${result.passed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                    <span class="px-3 py-1 rounded-full text-xs font-semibold ${result.passed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
                         ${result.passed ? 'PASS' : 'FAIL'}
                     </span>
                 </div>
             </div>
 
-            <div class="space-y-4">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Questions Breakdown & Explanations</h4>
+            <div class="space-y-3">
+                <h4 class="text-xs font-semibold uppercase tracking-wider text-slate-400">Questions Breakdown</h4>
                 ${quiz.questions.map((q, idx) => {
                     const chosen = (result.answers && result.answers[idx] !== undefined) ? result.answers[idx] : -1;
                     const isCorrect = chosen === q.correctAnswer;
                     
                     return `
                         <div class="p-4 rounded-2xl border ${isCorrect ? 'border-emerald-200 bg-emerald-50/20' : 'border-rose-200 bg-rose-50/20'}">
-                            <p class="text-sm font-bold text-slate-800 mb-2.5">
+                            <p class="text-sm font-semibold text-slate-800 mb-2">
                                 ${idx + 1}. ${q.question}
-                                ${isCorrect ? `<span class="ml-2 text-xs font-bold text-emerald-600">✓ Correct</span>` : `<span class="ml-2 text-xs font-bold text-rose-600">✗ Incorrect</span>`}
+                                ${isCorrect ? `<span class="ml-2 text-xs font-semibold text-emerald-600">✓ Correct</span>` : `<span class="ml-2 text-xs font-semibold text-rose-600">✗ Incorrect</span>`}
                             </p>
                             <div class="space-y-1.5">
                                 ${q.options.map((opt, oIdx) => {
@@ -1267,16 +1267,16 @@ window.viewQuizBreakdownModal = (resId) => {
                                     let badge = '';
                                     
                                     if (oIdx === q.correctAnswer) {
-                                        itemStyle = 'border-emerald-400 bg-emerald-50 text-emerald-900 font-semibold';
-                                        badge = `<span class="ml-auto text-[10px] bg-emerald-600 text-white font-bold px-2 py-0.5 rounded">${I18N.t('correct_ans')}</span>`;
+                                        itemStyle = 'border-emerald-400 bg-emerald-50 text-emerald-900 font-medium';
+                                        badge = `<span class="ml-auto text-xs bg-emerald-600 text-white font-medium px-2 py-0.5 rounded">${I18N.t('correct_ans')}</span>`;
                                     } else if (oIdx === chosen && !isCorrect) {
-                                        itemStyle = 'border-rose-400 bg-rose-50 text-rose-900 font-semibold';
-                                        badge = `<span class="ml-auto text-[10px] bg-rose-600 text-white font-bold px-2 py-0.5 rounded">${I18N.t('your_choice')}</span>`;
+                                        itemStyle = 'border-rose-400 bg-rose-50 text-rose-900 font-medium';
+                                        badge = `<span class="ml-auto text-xs bg-rose-600 text-white font-medium px-2 py-0.5 rounded">${I18N.t('your_choice')}</span>`;
                                     }
                                     
                                     return `
-                                        <div class="flex items-center p-2.5 rounded-xl border text-xs ${itemStyle}">
-                                            <span class="w-5 font-bold">${String.fromCharCode(65 + oIdx)}.</span>
+                                        <div class="flex items-center p-2 rounded-xl border text-xs ${itemStyle}">
+                                            <span class="w-5 font-semibold">${String.fromCharCode(65 + oIdx)}.</span>
                                             <span class="flex-1">${opt}</span>
                                             ${badge}
                                         </div>
@@ -1303,16 +1303,16 @@ window.viewQuizPreview = (quizId) => {
                 <h3 class="font-bold text-slate-800 text-base">${quiz.title}</h3>
                 <p class="text-xs text-slate-500 mt-1">Passing Score: ${quiz.passingScore}% • ${quiz.questions.length} total questions</p>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-3">
                 ${quiz.questions.map((q, idx) => `
                     <div class="p-4 rounded-2xl border border-slate-200 bg-white">
-                        <p class="text-sm font-bold text-slate-800 mb-2">${idx + 1}. ${q.question}</p>
+                        <p class="text-sm font-semibold text-slate-800 mb-2">${idx + 1}. ${q.question}</p>
                         <div class="space-y-1.5">
                             ${q.options.map((opt, oIdx) => `
                                 <div class="flex items-center p-2 rounded-xl text-xs ${oIdx === q.correctAnswer ? 'bg-emerald-50 text-emerald-800 border border-emerald-300 font-medium' : 'bg-slate-50 text-slate-600'}">
-                                    <span class="w-5 font-bold">${String.fromCharCode(65 + oIdx)}.</span>
+                                    <span class="w-5 font-semibold">${String.fromCharCode(65 + oIdx)}.</span>
                                     <span>${opt}</span>
-                                    ${oIdx === q.correctAnswer ? '<span class="ml-auto text-[10px] bg-emerald-600 text-white px-2 py-0.5 rounded font-bold">Answer Key</span>' : ''}
+                                    ${oIdx === q.correctAnswer ? '<span class="ml-auto text-xs bg-emerald-600 text-white px-2 py-0.5 rounded font-medium">Answer Key</span>' : ''}
                                 </div>
                             `).join('')}
                         </div>
@@ -1344,66 +1344,66 @@ function renderDashboard(container) {
     const sortedLogs = [...logs].sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
 
     container.innerHTML = `
-        <div class="space-y-8 animate-fade-in-up">
+        <div class="space-y-6 animate-fade-in-up">
             <!-- Stats Summary Row -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-blue-500 hover:shadow-md transition">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-blue-500 hover:shadow-md transition">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Engineers (SYE)</p>
-                            <p id="stat-total" class="text-3xl font-extrabold text-slate-800 mt-1">0</p>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Total Engineers (SYE)</p>
+                            <p id="stat-total" class="text-2xl font-bold text-slate-800 mt-1">0</p>
                         </div>
-                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl">👥</div>
+                        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl">👥</div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-emerald-500 hover:shadow-md transition">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-emerald-500 hover:shadow-md transition">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Fully Onboarded (100%)</p>
-                            <p id="stat-completed" class="text-3xl font-extrabold text-slate-800 mt-1">0</p>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Fully Onboarded (100%)</p>
+                            <p id="stat-completed" class="text-2xl font-bold text-slate-800 mt-1">0</p>
                         </div>
-                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl">✅</div>
+                        <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl">✅</div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-amber-500 hover:shadow-md transition">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-amber-500 hover:shadow-md transition">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">In Progress</p>
-                            <p id="stat-inprog" class="text-3xl font-extrabold text-slate-800 mt-1">0</p>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">In Progress</p>
+                            <p id="stat-inprog" class="text-2xl font-bold text-slate-800 mt-1">0</p>
                         </div>
-                        <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-2xl">🔄</div>
+                        <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl">🔄</div>
                     </div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-indigo-500 hover:shadow-md transition">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-indigo-500 hover:shadow-md transition">
                     <div class="flex items-center justify-between">
                         <div>
-                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Avg Completion</p>
-                            <p id="stat-avg" class="text-3xl font-extrabold text-slate-800 mt-1">0%</p>
+                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Avg Completion</p>
+                            <p id="stat-avg" class="text-2xl font-bold text-slate-800 mt-1">0%</p>
                         </div>
-                        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-2xl">📈</div>
+                        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl">📈</div>
                     </div>
                 </div>
             </div>
 
             <!-- Charts Row -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition">
                     <div class="flex items-center justify-between mb-4">
                         <div>
-                            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
-                            <p class="text-[11px] text-slate-400">Proportion of engineers fully certified per section</p>
+                            <h3 class="text-sm font-semibold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
+                            <p class="text-xs text-slate-400">Proportion of engineers fully certified per section</p>
                         </div>
-                        <button onclick="renderDashboard(document.getElementById('admin-content'))" class="px-2.5 py-1 bg-slate-50 hover:bg-slate-100 text-slate-600 text-xs font-bold rounded-lg border border-slate-200 transition flex items-center gap-1 shadow-2xs">
+                        <button onclick="renderDashboard(document.getElementById('admin-content'))" class="px-2.5 py-1 bg-slate-50 hover:bg-slate-100 text-slate-600 text-xs font-semibold rounded-lg border border-slate-200 transition flex items-center gap-1 shadow-2xs">
                             <span>🔄</span> Replay
                         </button>
                     </div>
                     <div class="relative h-64"><canvas id="sectionChart"></canvas></div>
                 </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 hover:shadow-md transition">
                     <div class="flex items-center justify-between mb-4">
                         <div>
-                            <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
-                            <p class="text-[11px] text-slate-400">Average % completed across roles</p>
+                            <h3 class="text-sm font-semibold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
+                            <p class="text-xs text-slate-400">Average % completed across roles</p>
                         </div>
                         <span class="text-xs font-semibold text-slate-400">Target 100%</span>
                     </div>
@@ -1412,48 +1412,48 @@ function renderDashboard(container) {
             </div>
 
             <!-- Statistics & Activity Row -->
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">SYE Engineering Knowledge Base</h3>
-                    <div class="grid grid-cols-3 gap-4 text-center">
-                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                            <div class="text-3xl font-extrabold text-blue-600">${courses.length}</div>
-                            <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Total Courses</div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+                <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+                    <h3 class="text-sm font-semibold text-slate-700 uppercase tracking-wider mb-4">SYE Engineering Knowledge Base</h3>
+                    <div class="grid grid-cols-3 gap-3 text-center">
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="text-2xl font-bold text-blue-600">${courses.length}</div>
+                            <div class="text-xs font-semibold text-slate-500 mt-1 uppercase">Total Courses</div>
                         </div>
-                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                            <div class="text-3xl font-extrabold text-indigo-600">${DataAPI.getWIs().length}</div>
-                            <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Work Instructions</div>
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="text-2xl font-bold text-indigo-600">${DataAPI.getWIs().length}</div>
+                            <div class="text-xs font-semibold text-slate-500 mt-1 uppercase">Work Instructions</div>
                         </div>
-                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                            <div class="text-3xl font-extrabold text-amber-600">${DataAPI.getQuizzes().length}</div>
-                            <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Technical Quizzes</div>
+                        <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="text-2xl font-bold text-amber-600">${DataAPI.getQuizzes().length}</div>
+                            <div class="text-xs font-semibold text-slate-500 mt-1 uppercase">Technical Quizzes</div>
                         </div>
                     </div>
-                    <div class="mt-6 p-4 rounded-xl bg-blue-50/50 border border-blue-100 flex items-center justify-between">
+                    <div class="mt-5 p-4 rounded-xl bg-blue-50/50 border border-blue-100 flex items-center justify-between">
                         <div class="flex items-center space-x-3">
-                            <img src="favicon.svg" alt="AEON" class="w-9 h-9 rounded-xl shadow-xs object-cover border border-slate-200">
+                            <img src="favicon.svg" alt="AEON" class="w-8 h-8 rounded-lg shadow-xs object-cover border border-slate-200">
                             <div>
                                 <h4 class="font-bold text-blue-900 text-xs">System Enabler (SYE) Division</h4>
                                 <p class="text-xs text-blue-700 mt-0.5">Head of SYE: Akkharasaran S. • Sermmit Tower 14th Floor</p>
                             </div>
                         </div>
-                        <button onclick="openLearnerModal()" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition">Start Training</button>
+                        <button onclick="openLearnerModal()" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-semibold hover:bg-blue-700 transition">Start Training</button>
                     </div>
                 </div>
                 
-                <div class="lg:col-span-1 bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col">
-                    <div class="flex justify-between items-center mb-4">
-                        <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Recent Activity</h3>
-                        <span class="text-[10px] font-bold text-slate-400">${sortedLogs.length} logs</span>
+                <div class="lg:col-span-1 bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="text-sm font-semibold text-slate-700 uppercase tracking-wider">Recent Activity</h3>
+                        <span class="text-xs font-semibold text-slate-400">${sortedLogs.length} logs</span>
                     </div>
-                    <div class="flex-1 overflow-y-auto max-h-60 pr-2">
-                        <div class="space-y-3.5">
+                    <div class="flex-1 overflow-y-auto max-h-60 pr-1">
+                        <div class="space-y-3">
                             ${sortedLogs.slice(0, 15).map(log => `
                                 <div class="flex items-start">
                                     <div class="w-2 h-2 mt-1.5 rounded-full bg-blue-500 mr-2.5 shrink-0"></div>
                                     <div class="flex-1 min-w-0">
-                                        <p class="text-xs text-slate-700 leading-snug break-words">${log.description}</p>
-                                        <p class="text-[10px] text-slate-400 mt-0.5">${new Date(log.timestamp).toLocaleString()}</p>
+                                        <p class="text-xs text-slate-700 leading-snug break-words font-medium">${log.description}</p>
+                                        <p class="text-xs text-slate-400 mt-0.5">${new Date(log.timestamp).toLocaleString()}</p>
                                     </div>
                                 </div>
                             `).join('')}
@@ -1510,7 +1510,7 @@ function renderDashboard(container) {
                     plugins: {
                         legend: {
                             position: 'bottom',
-                            labels: { boxWidth: 12, font: { size: 11, weight: '600' }, padding: 14 }
+                            labels: { boxWidth: 12, font: { family: "'Inter', 'Noto Sans Thai', sans-serif", size: 11, weight: '500' }, padding: 12 }
                         }
                     }
                 }
@@ -1566,7 +1566,10 @@ function renderDashboard(container) {
                         x: {
                             max: 100,
                             min: 0,
-                            ticks: { callback: (v) => v + '%' }
+                            ticks: { callback: (v) => v + '%', font: { family: "'Inter', 'Noto Sans Thai', sans-serif", size: 11 } }
+                        },
+                        y: {
+                            ticks: { font: { family: "'Inter', 'Noto Sans Thai', sans-serif", size: 11, weight: '600' } }
                         }
                     },
                     plugins: {
@@ -1592,15 +1595,15 @@ function renderCatalog(container) {
     container.innerHTML = `
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <h3 class="font-bold text-slate-800 text-lg">Training Catalog (${courses.length} Courses)</h3>
-            <button onclick="openCourseModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+            <button onclick="openCourseModal()" class="rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Course
             </button>
         </div>
         
         <div class="flex flex-wrap gap-2 mb-6" id="catalog-filters">
-            <button class="cat-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 text-white transition" data-cat="All">All</button>
+            <button class="cat-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-white transition" data-cat="All">All</button>
             ${CATEGORIES.map(c => `
-                <button class="cat-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition" data-cat="${c}">${c}</button>
+                <button class="cat-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition" data-cat="${c}">${c}</button>
             `).join('')}
         </div>
 
@@ -1612,25 +1615,25 @@ function renderCatalog(container) {
         const grid = document.getElementById('catalog-grid');
         
         grid.innerHTML = filtered.map(c => `
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="flex justify-between items-start mb-2">
-                        <span class="font-mono text-xs font-bold px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${c.id}</span>
-                        <span class="text-[11px] font-semibold px-2 py-0.5 bg-blue-50 text-blue-700 rounded-md">${c.category}</span>
+                        <span class="font-mono text-xs font-semibold px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${c.id}</span>
+                        <span class="text-xs font-medium px-2 py-0.5 bg-blue-50 text-blue-700 rounded-md">${c.category}</span>
                     </div>
-                    <h4 class="font-bold text-slate-800 text-base mb-2">${c.name}</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-2">${c.name}</h4>
                     <p class="text-xs text-slate-500 line-clamp-3 mb-4 leading-relaxed">${c.description}</p>
                 </div>
                 <div>
-                    <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-4">
+                    <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-3">
                         <span>⏱ ${c.duration}</span>
-                        <span class="text-indigo-600 font-semibold">👥 ${c.targetRoles.join(', ')}</span>
-                        <span class="text-amber-600 font-bold">📝 Assessment</span>
+                        <span class="text-indigo-600 font-medium">👥 ${c.targetRoles.join(', ')}</span>
+                        <span class="text-amber-600 font-medium">📝 Assessment</span>
                     </div>
                     <div class="flex items-center justify-end space-x-2 pt-2 border-t border-slate-100">
-                        <button onclick="previewCourseContent('${c.id}')" class="text-xs font-bold text-slate-600 hover:text-slate-900 px-2 py-1 rounded">Read Material</button>
-                        <button onclick="openCourseModal('${c.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 px-2 py-1 rounded">Edit</button>
-                        <button onclick="deleteCourse('${c.id}')" class="text-xs font-bold text-rose-500 hover:text-rose-700 px-2 py-1 rounded">Delete</button>
+                        <button onclick="previewCourseContent('${c.id}')" class="text-xs font-semibold text-slate-600 hover:text-slate-900 px-2 py-1 rounded">Read Material</button>
+                        <button onclick="openCourseModal('${c.id}')" class="text-xs font-semibold text-blue-600 hover:text-blue-800 px-2 py-1 rounded">Edit</button>
+                        <button onclick="deleteCourse('${c.id}')" class="text-xs font-semibold text-rose-500 hover:text-rose-700 px-2 py-1 rounded">Delete</button>
                     </div>
                 </div>
             </div>
@@ -1668,7 +1671,7 @@ window.previewCourseContent = (courseId) => {
         }
         course.content.forEach((sec, idx) => {
             contentHtml += `
-                <div class="mb-6">
+                <div class="mb-5">
                     <h4 class="font-bold text-slate-800 text-sm mb-1.5">${idx+1}. ${sec.title}</h4>
                     <div class="text-xs text-slate-600 leading-relaxed">${formatRichContent(sec.body)}</div>
                 </div>
@@ -1785,16 +1788,16 @@ function renderWorkInstructions(container) {
                 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
                     <div>
                         <div class="flex items-center space-x-3 mb-2">
-                            <span class="px-3 py-1 bg-slate-900 text-white rounded-xl text-xs font-mono font-bold">CONTROLLED SOPs</span>
-                            <span class="text-xs font-semibold text-slate-400">AEON System Enabler (SYE)</span>
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-xl text-xs font-mono font-semibold">CONTROLLED SOPs</span>
+                            <span class="text-xs font-medium text-slate-400">AEON System Enabler (SYE)</span>
                         </div>
-                        <h3 class="text-2xl font-extrabold text-slate-800">Standard Work Instructions</h3>
+                        <h3 class="text-2xl font-bold text-slate-800">Standard Work Instructions</h3>
                         <p class="text-xs text-slate-500 mt-1 max-w-2xl leading-relaxed">
                             Official operational procedures, change management protocols, disaster recovery runbooks, and ISO standard compliance runbooks.
                         </p>
                     </div>
                     <div class="flex items-center gap-3">
-                        <button onclick="openWIModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+                        <button onclick="openWIModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                             <span>+</span> Add Work Instruction
                         </button>
                     </div>
@@ -1805,10 +1808,10 @@ function renderWorkInstructions(container) {
                     ${isoBadges.map(b => `
                         <div class="p-3 rounded-2xl border ${b.color} flex items-center justify-between">
                             <div>
-                                <span class="font-bold text-xs block">${b.code}</span>
-                                <span class="text-[10px] opacity-80">${b.label}</span>
+                                <span class="font-semibold text-xs block">${b.code}</span>
+                                <span class="text-xs opacity-80">${b.label}</span>
                             </div>
-                            <span class="text-xs font-bold px-2 py-0.5 bg-white rounded-lg shadow-2xs">Active</span>
+                            <span class="text-xs font-medium px-2 py-0.5 bg-white rounded-lg shadow-2xs">Active</span>
                         </div>
                     `).join('')}
                 </div>
@@ -1817,9 +1820,9 @@ function renderWorkInstructions(container) {
             <!-- Filter & Search Bar -->
             <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
                 <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
-                    <button class="wi-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 text-white transition" data-sec="All">All SOPs (${wis.length})</button>
+                    <button class="wi-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-slate-800 text-white transition" data-sec="All">All SOPs (${wis.length})</button>
                     ${SECTIONS.map(s => `
-                        <button class="wi-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition" data-sec="${s}">${s.replace('Platform','').replace('Systems','').trim()}</button>
+                        <button class="wi-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition" data-sec="${s}">${s.replace('Platform','').replace('Systems','').trim()}</button>
                     `).join('')}
                 </div>
                 <div class="w-full sm:w-64">
@@ -1848,18 +1851,18 @@ function renderWorkInstructions(container) {
                 <div>
                     <div class="flex items-center justify-between mb-3">
                         <div class="flex items-center space-x-2">
-                            <span class="font-mono text-xs font-extrabold px-3 py-1 bg-blue-50 text-blue-700 rounded-xl border border-blue-100">${wi.id}</span>
-                            <span class="text-[10px] font-bold px-2 py-0.5 bg-slate-100 text-slate-600 rounded-md">v${wi.version}</span>
+                            <span class="font-mono text-xs font-semibold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-xl border border-blue-100">${wi.id}</span>
+                            <span class="text-xs font-medium px-2 py-0.5 bg-slate-100 text-slate-600 rounded-md">v${wi.version}</span>
                         </div>
-                        <span class="inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700 border border-emerald-100">
+                        <span class="inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-medium text-emerald-700 border border-emerald-100">
                             <span class="mr-1 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>EFFECTIVE
                         </span>
                     </div>
 
-                    <h4 class="font-bold text-slate-800 text-base mb-2 hover:text-blue-600 cursor-pointer" onclick="viewWIDetail('${wi.id}')">${wi.title}</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-2 hover:text-blue-600 cursor-pointer" onclick="viewWIDetail('${wi.id}')">${wi.title}</h4>
                     <p class="text-xs text-slate-500 line-clamp-2 mb-4 leading-relaxed">${wi.objective}</p>
 
-                    <div class="flex flex-wrap gap-2 text-[11px] font-medium text-slate-500 mb-4">
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500 mb-4">
                         <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">🏢 ${wi.section}</span>
                         <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">📅 ${wi.effectiveDate}</span>
                         <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">📋 ${wi.procedure ? wi.procedure.length : 0} Steps</span>
@@ -1867,14 +1870,14 @@ function renderWorkInstructions(container) {
                 </div>
 
                 <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <div class="text-[11px] text-slate-400">
+                    <div class="text-xs text-slate-400">
                         <span>Lead Approver: <strong class="text-slate-700 font-semibold">${wi.approvedBy}</strong></span>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <button onclick="viewWIDetail('${wi.id}')" class="rounded-xl px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition shadow-2xs">
+                        <button onclick="viewWIDetail('${wi.id}')" class="rounded-xl px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-semibold transition shadow-2xs">
                             View Full SOP →
                         </button>
-                        <button onclick="openWIModal('${wi.id}')" class="text-xs font-bold text-slate-500 hover:text-slate-800 px-2 py-1">
+                        <button onclick="openWIModal('${wi.id}')" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-2 py-1">
                             Edit
                         </button>
                     </div>
@@ -1883,7 +1886,7 @@ function renderWorkInstructions(container) {
         `).join('');
 
         if (filtered.length === 0) {
-            grid.innerHTML = `<div class="col-span-2 p-12 text-center text-slate-400 bg-white rounded-3xl border border-slate-100">No work instructions match the selected criteria.</div>`;
+            grid.innerHTML = `<div class="col-span-2 p-12 text-center text-slate-400 bg-white rounded-3xl border border-slate-100 text-sm">No work instructions match the selected criteria.</div>`;
         }
     };
 
@@ -1914,73 +1917,73 @@ window.viewWIDetail = (id) => {
     if (!wi) return;
     
     let html = `
-        <div class="space-y-8 max-h-[82vh] overflow-y-auto pr-3 font-sans">
+        <div class="space-y-6 max-h-[82vh] overflow-y-auto pr-3 font-sans">
             <!-- SOP Official Header Box -->
-            <div class="border-2 border-slate-800 rounded-3xl p-6 bg-white shadow-sm relative overflow-hidden">
-                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 pb-4 mb-4 gap-4">
+            <div class="border border-slate-200 rounded-3xl p-6 bg-white shadow-sm relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-100 pb-4 mb-4 gap-4">
                     <div class="flex items-center space-x-3">
-                        <img src="favicon.svg" alt="AEON" class="w-10 h-10 rounded-xl shadow-2xs object-cover border border-slate-200">
+                        <img src="favicon.svg" alt="AEON" class="w-9 h-9 rounded-xl shadow-2xs object-cover border border-slate-200">
                         <div>
-                            <h4 class="font-extrabold text-slate-900 text-sm tracking-tight uppercase">AEON System Development Department</h4>
-                            <p class="text-xs text-blue-700 font-bold">System Enabler (SYE) Division • Controlled Document</p>
+                            <h4 class="font-bold text-slate-900 text-sm uppercase">AEON System Development Department</h4>
+                            <p class="text-xs text-blue-700 font-semibold">System Enabler (SYE) Division • Controlled Document</p>
                         </div>
                     </div>
                     <div class="text-right">
-                        <span class="font-mono text-xs font-bold px-3 py-1 bg-slate-900 text-white rounded-lg">${wi.id}</span>
-                        <p class="text-[10px] text-slate-400 font-mono mt-1">CONFIDENTIAL - INTERNAL ONLY</p>
+                        <span class="font-mono text-xs font-semibold px-3 py-1 bg-slate-900 text-white rounded-lg">${wi.id}</span>
+                        <p class="text-xs text-slate-400 font-mono mt-1">CONFIDENTIAL - INTERNAL ONLY</p>
                     </div>
                 </div>
 
-                <h2 class="text-2xl font-black text-slate-900 mb-2">${wi.title}</h2>
-                <p class="text-xs text-slate-500 font-medium mb-5">${wi.section} Platform Standard Operating Procedure</p>
+                <h2 class="text-xl font-bold text-slate-900 mb-1.5">${wi.title}</h2>
+                <p class="text-xs text-slate-500 font-medium mb-4">${wi.section} Platform Standard Operating Procedure</p>
 
                 <!-- Metadata Matrix Table -->
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-100 text-xs">
                     <div>
-                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Version Status</span>
-                        <span class="font-bold text-emerald-700">v${wi.version} (Active)</span>
+                        <span class="text-xs uppercase font-semibold text-slate-400 block">Version Status</span>
+                        <span class="font-semibold text-emerald-700">v${wi.version} (Active)</span>
                     </div>
                     <div>
-                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Effective Date</span>
-                        <span class="font-bold text-slate-800">${wi.effectiveDate}</span>
+                        <span class="text-xs uppercase font-semibold text-slate-400 block">Effective Date</span>
+                        <span class="font-semibold text-slate-800">${wi.effectiveDate}</span>
                     </div>
                     <div>
-                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Governance Standard</span>
-                        <span class="font-bold text-blue-700">ISO 27001 / ISO 9001</span>
+                        <span class="text-xs uppercase font-semibold text-slate-400 block">Governance Standard</span>
+                        <span class="font-semibold text-blue-700">ISO 27001 / ISO 9001</span>
                     </div>
                     <div>
-                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Document Owner</span>
-                        <span class="font-bold text-slate-800">${wi.preparedBy}</span>
+                        <span class="text-xs uppercase font-semibold text-slate-400 block">Document Owner</span>
+                        <span class="font-semibold text-slate-800">${wi.preparedBy}</span>
                     </div>
                 </div>
 
                 <!-- Sign-off Matrix -->
-                <div class="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-200 text-xs">
+                <div class="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-100 text-xs">
                     <div class="p-2.5 rounded-xl bg-white border border-slate-200">
-                        <span class="text-[10px] uppercase text-slate-400 font-bold block">1. Prepared By</span>
+                        <span class="text-xs uppercase text-slate-400 font-semibold block">1. Prepared By</span>
                         <strong class="text-slate-800 text-xs block mt-0.5">${wi.preparedBy}</strong>
-                        <span class="text-[10px] text-slate-400">Author / Lead Engineer</span>
+                        <span class="text-xs text-slate-400">Author / Lead Engineer</span>
                     </div>
                     <div class="p-2.5 rounded-xl bg-white border border-slate-200">
-                        <span class="text-[10px] uppercase text-slate-400 font-bold block">2. Reviewed By</span>
+                        <span class="text-xs uppercase text-slate-400 font-semibold block">2. Reviewed By</span>
                         <strong class="text-slate-800 text-xs block mt-0.5">${wi.reviewedBy}</strong>
-                        <span class="text-[10px] text-slate-400">Section Platform Lead</span>
+                        <span class="text-xs text-slate-400">Section Platform Lead</span>
                     </div>
                     <div class="p-2.5 rounded-xl bg-blue-50 border border-blue-200">
-                        <span class="text-[10px] uppercase text-blue-600 font-bold block">3. Approved By</span>
+                        <span class="text-xs uppercase text-blue-600 font-semibold block">3. Approved By</span>
                         <strong class="text-blue-900 text-xs block mt-0.5">${wi.approvedBy}</strong>
-                        <span class="text-[10px] text-blue-700">Head of SYE Division</span>
+                        <span class="text-xs text-blue-700">Head of SYE Division</span>
                     </div>
                 </div>
             </div>
 
             <!-- Section 1: Objective & Scope -->
-            <div class="space-y-3">
-                <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">1</span>
+            <div class="space-y-2.5">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                    <span class="w-5 h-5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">1</span>
                     Objective & Operational Scope
                 </h3>
-                <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-3 text-xs leading-relaxed text-slate-700">
+                <div class="bg-white p-4 rounded-2xl border border-slate-200 space-y-2 text-xs leading-relaxed text-slate-700">
                     <p><strong>Purpose:</strong> ${wi.objective}</p>
                     <p><strong>Applicable Scope:</strong> ${wi.scope || 'All System Enabler (SYE) on-premise environments, VMware Tanzu K8s clusters, and RHEL VM infrastructure.'}</p>
                 </div>
@@ -1988,13 +1991,13 @@ window.viewWIDetail = (id) => {
 
             <!-- Section 2: Prerequisites -->
             ${wi.prerequisites && wi.prerequisites.length ? `
-                <div class="space-y-3">
-                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
-                        <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">2</span>
+                <div class="space-y-2.5">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                        <span class="w-5 h-5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">2</span>
                         Prerequisites & Security Controls
                     </h3>
-                    <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-200 text-xs text-slate-700">
-                        <ul class="list-disc pl-5 space-y-1.5">
+                    <div class="bg-amber-50/60 p-4 rounded-2xl border border-amber-200 text-xs text-slate-700">
+                        <ul class="list-disc pl-5 space-y-1">
                             ${wi.prerequisites.map(p => `<li>${p}</li>`).join('')}
                         </ul>
                     </div>
@@ -2002,19 +2005,19 @@ window.viewWIDetail = (id) => {
             ` : ''}
 
             <!-- Section 3: Standard Operating Procedure (Interactive Stepper) -->
-            <div class="space-y-4">
-                <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
-                    <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">3</span>
+            <div class="space-y-3">
+                <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                    <span class="w-5 h-5 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">3</span>
                     Step-by-Step Execution Protocol
                 </h3>
-                <div class="space-y-4">
+                <div class="space-y-3">
                     ${wi.procedure.map((step, idx) => `
-                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-2xs hover:border-blue-400 transition">
-                            <div class="flex items-center space-x-3 mb-2">
-                                <span class="w-7 h-7 rounded-xl bg-slate-900 text-white text-xs font-bold flex items-center justify-center font-mono">${step.step || idx + 1}</span>
-                                <h4 class="font-extrabold text-slate-900 text-sm">${step.title}</h4>
+                        <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-2xs hover:border-blue-400 transition">
+                            <div class="flex items-center space-x-2.5 mb-1.5">
+                                <span class="w-6 h-6 rounded-lg bg-slate-900 text-white text-xs font-semibold flex items-center justify-center font-mono">${step.step || idx + 1}</span>
+                                <h4 class="font-bold text-slate-900 text-sm">${step.title}</h4>
                             </div>
-                            <div class="text-xs text-slate-700 pl-10 leading-relaxed">
+                            <div class="text-xs text-slate-700 pl-8 leading-relaxed">
                                 ${formatRichContent(step.description)}
                             </div>
                         </div>
@@ -2024,12 +2027,12 @@ window.viewWIDetail = (id) => {
 
             <!-- Section 4: Rollback & Contingency -->
             ${wi.rollbackProcedure ? `
-                <div class="space-y-3">
-                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-rose-600 flex items-center gap-2">
-                        <span class="w-6 h-6 rounded-lg bg-rose-600 text-white flex items-center justify-center text-xs">4</span>
+                <div class="space-y-2.5">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-rose-600 flex items-center gap-2">
+                        <span class="w-5 h-5 rounded-lg bg-rose-600 text-white flex items-center justify-center text-xs">4</span>
                         Contingency & Emergency Rollback Protocol
                     </h3>
-                    <div class="bg-rose-50/70 p-5 rounded-2xl border border-rose-200 text-xs text-slate-800 leading-relaxed">
+                    <div class="bg-rose-50/70 p-4 rounded-2xl border border-rose-200 text-xs text-slate-800 leading-relaxed">
                         ${formatRichContent(wi.rollbackProcedure)}
                     </div>
                 </div>
@@ -2037,14 +2040,14 @@ window.viewWIDetail = (id) => {
 
             <!-- Section 5: Revision History -->
             ${wi.revisionHistory && wi.revisionHistory.length ? `
-                <div class="space-y-3">
-                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
-                        <span class="w-6 h-6 rounded-lg bg-slate-800 text-white flex items-center justify-center text-xs">5</span>
+                <div class="space-y-2.5">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                        <span class="w-5 h-5 rounded-lg bg-slate-800 text-white flex items-center justify-center text-xs">5</span>
                         Document Control & Revision History
                     </h3>
                     <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                         <table class="w-full text-left text-xs text-slate-600">
-                            <thead class="bg-slate-50 font-bold text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
+                            <thead class="bg-slate-50 font-semibold text-slate-500 uppercase text-xs tracking-wider border-b border-slate-200">
                                 <tr>
                                     <th class="p-3">Version</th>
                                     <th class="p-3">Date</th>
@@ -2056,7 +2059,7 @@ window.viewWIDetail = (id) => {
                             <tbody class="divide-y divide-slate-100">
                                 ${wi.revisionHistory.map(r => `
                                     <tr class="hover:bg-slate-50">
-                                        <td class="p-3 font-bold font-mono text-blue-600">${r.version}</td>
+                                        <td class="p-3 font-semibold font-mono text-blue-600">${r.version}</td>
                                         <td class="p-3 whitespace-nowrap">${r.date}</td>
                                         <td class="p-3 font-medium">${r.author}</td>
                                         <td class="p-3 font-semibold text-blue-700">${r.approver || 'Akkharasaran S.'}</td>
@@ -2161,7 +2164,7 @@ function renderEmployees(container) {
                 <h3 class="font-bold text-slate-800 text-lg">SYE Engineering Roster (${emps.length} Total Engineers)</h3>
                 <p class="text-xs text-slate-400 mt-0.5">Permanent Staff & Outsource Engineers (OS-SYE / OS-ECM / OS-NRT)</p>
             </div>
-            <button onclick="openEmpModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+            <button onclick="openEmpModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Engineer
             </button>
         </div>
@@ -2183,7 +2186,7 @@ function renderEmployees(container) {
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs text-slate-600">
-                    <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 sticky top-0 z-10 font-bold tracking-wider">
+                    <thead class="bg-white text-xs uppercase text-slate-400 border-b border-slate-100 sticky top-0 z-10 font-semibold tracking-wider">
                         <tr>
                             <th class="px-5 py-3.5">ID</th>
                             <th class="px-5 py-3.5">Name</th>
@@ -2216,17 +2219,17 @@ function renderEmployees(container) {
             const stats = DataAPI.getEmployeeStats(emp.id);
             return `
                 <tr class="hover:bg-slate-50 transition">
-                    <td class="px-5 py-3.5 font-mono text-xs cursor-pointer text-blue-600 font-bold" onclick="viewEmployeeDetail('${emp.id}')">${emp.id}</td>
-                    <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer" onclick="viewEmployeeDetail('${emp.id}')">${emp.name}</td>
+                    <td class="px-5 py-3.5 font-mono text-xs cursor-pointer text-blue-600 font-semibold" onclick="viewEmployeeDetail('${emp.id}')">${emp.id}</td>
+                    <td class="px-5 py-3.5 font-semibold text-slate-800 cursor-pointer" onclick="viewEmployeeDetail('${emp.id}')">${emp.name}</td>
                     <td class="px-5 py-3.5 font-medium">${emp.role}</td>
                     <td class="px-5 py-3.5 text-slate-500">${emp.section}</td>
                     <td class="px-5 py-3.5">${UI.renderEmploymentBadge(emp)}</td>
                     <td class="px-5 py-3.5">${UI.renderProgressBar(stats.percent)}</td>
                     <td class="px-5 py-3.5">${UI.renderBadge(emp.status)}</td>
                     <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
-                        <button onclick="viewEmployeeDetail('${emp.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Profile</button>
-                        <button onclick="openEmpModal('${emp.id}')" class="text-slate-600 hover:text-slate-900 text-xs font-bold">Edit</button>
-                        <button onclick="deleteEmp('${emp.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-bold">Delete</button>
+                        <button onclick="viewEmployeeDetail('${emp.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-semibold">Profile</button>
+                        <button onclick="openEmpModal('${emp.id}')" class="text-slate-600 hover:text-slate-900 text-xs font-semibold">Edit</button>
+                        <button onclick="deleteEmp('${emp.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-semibold">Delete</button>
                     </td>
                 </tr>
             `;
@@ -2355,15 +2358,15 @@ window.viewEmployeeDetail = (id) => {
     const avgScore = records.filter(r => r.score !== null).length ? Math.round(records.filter(r => r.score !== null).reduce((a,c) => a + c.score, 0) / records.filter(r => r.score !== null).length) : 0;
 
     let html = `
-        <div class="space-y-6 max-h-[82vh] overflow-y-auto pr-2">
+        <div class="space-y-6 max-h-[82vh] overflow-y-auto pr-2 font-sans">
             <!-- Profile Header Card -->
             <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-extrabold text-2xl shadow-sm shrink-0">${emp.name.charAt(0)}</div>
+                    <div class="w-14 h-14 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-bold text-xl shadow-sm shrink-0">${emp.name.charAt(0)}</div>
                     <div>
                         <div class="flex items-center gap-2">
-                            <h2 class="text-xl font-extrabold text-slate-900">${emp.name}</h2>
-                            <span class="font-mono text-xs font-bold px-2.5 py-0.5 bg-blue-100 text-blue-800 rounded-lg">${emp.id}</span>
+                            <h2 class="text-lg font-bold text-slate-900">${emp.name}</h2>
+                            <span class="font-mono text-xs font-semibold px-2.5 py-0.5 bg-blue-100 text-blue-800 rounded-lg">${emp.id}</span>
                         </div>
                         <p class="text-xs text-slate-500 mt-1 font-medium">${emp.role} • ${emp.section} • Joined ${emp.joinDate}</p>
                         <div class="flex flex-wrap items-center gap-2 mt-2">
@@ -2375,11 +2378,11 @@ window.viewEmployeeDetail = (id) => {
 
                 <div class="w-full md:w-64 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-2xs">
                     <div class="flex justify-between items-center mb-2">
-                        <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">Curriculum Progress</span>
-                        <span class="text-xs font-extrabold text-blue-600">${stats.completed} / ${stats.required} Done</span>
+                        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Curriculum Progress</span>
+                        <span class="text-xs font-bold text-blue-600">${stats.completed} / ${stats.required} Done</span>
                     </div>
                     ${UI.renderProgressBar(stats.percent)}
-                    <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 font-medium">
+                    <div class="flex justify-between items-center text-xs text-slate-400 mt-2 font-medium">
                         <span>Avg Score: <strong class="text-emerald-600 font-bold">${avgScore}%</strong></span>
                         <span>${stats.percent}% Certified</span>
                     </div>
@@ -2388,10 +2391,10 @@ window.viewEmployeeDetail = (id) => {
 
             <!-- Profile Tabs -->
             <div class="flex border-b border-slate-200 gap-4" id="profile-tabs">
-                <button class="profile-tab-btn active pb-3 text-xs font-bold text-blue-600 border-b-2 border-blue-600 transition" onclick="switchProfileTab('assigned')">
+                <button class="profile-tab-btn active pb-3 text-xs font-semibold text-blue-600 border-b-2 border-blue-600 transition" onclick="switchProfileTab('assigned')">
                     🎯 Assigned Curriculum (${stats.requiredCourses.length})
                 </button>
-                <button class="profile-tab-btn pb-3 text-xs font-bold text-slate-400 hover:text-slate-700 transition" onclick="switchProfileTab('records')">
+                <button class="profile-tab-btn pb-3 text-xs font-semibold text-slate-400 hover:text-slate-700 transition" onclick="switchProfileTab('records')">
                     📜 Training &amp; Assessment Log (${records.length})
                 </button>
             </div>
@@ -2400,7 +2403,7 @@ window.viewEmployeeDetail = (id) => {
             <div id="profile-tab-assigned" class="space-y-3">
                 <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <table class="w-full text-left text-xs text-slate-600">
-                        <thead class="bg-slate-50 font-bold text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
+                        <thead class="bg-slate-50 font-semibold text-slate-500 uppercase text-xs tracking-wider border-b border-slate-200">
                             <tr>
                                 <th class="px-4 py-3">Course Code &amp; Name</th>
                                 <th class="px-4 py-3">Category</th>
@@ -2416,17 +2419,17 @@ window.viewEmployeeDetail = (id) => {
                                 return `
                                     <tr class="hover:bg-slate-50">
                                         <td class="px-4 py-3">
-                                            <span class="font-mono font-bold text-slate-800 mr-2">[${c.id}]</span>
-                                            <span class="font-semibold text-slate-800">${c.name}</span>
+                                            <span class="font-mono font-semibold text-slate-800 mr-2">[${c.id}]</span>
+                                            <span class="font-medium text-slate-800">${c.name}</span>
                                         </td>
-                                        <td class="px-4 py-3"><span class="px-2 py-0.5 bg-slate-100 rounded text-[10px] font-semibold">${c.category}</span></td>
-                                        <td class="px-4 py-3">${isDone ? '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">✅ Completed</span>' : '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-500">Pending</span>'}</td>
-                                        <td class="px-4 py-3 font-bold ${isDone && rec.score >= 80 ? 'text-emerald-600' : 'text-slate-500'}">
+                                        <td class="px-4 py-3"><span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium">${c.category}</span></td>
+                                        <td class="px-4 py-3">${isDone ? '<span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">✅ Completed</span>' : '<span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-500">Pending</span>'}</td>
+                                        <td class="px-4 py-3 font-semibold ${isDone && rec.score >= 80 ? 'text-emerald-600' : 'text-slate-500'}">
                                             ${isDone && rec.score !== null ? `${rec.score}%` : '-'}
                                         </td>
                                         <td class="px-4 py-3 text-right">
                                             ${isDone ? `
-                                                <button onclick="viewLearnerQuizReview('${emp.id}', '${c.id}')" class="text-blue-600 hover:text-blue-800 font-bold text-xs">
+                                                <button onclick="viewLearnerQuizReview('${emp.id}', '${c.id}')" class="text-blue-600 hover:text-blue-800 font-semibold text-xs">
                                                     Review Answers
                                                 </button>
                                             ` : `
@@ -2446,7 +2449,7 @@ window.viewEmployeeDetail = (id) => {
                 ${records.length ? `
                 <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <table class="w-full text-left text-xs text-slate-600">
-                        <thead class="bg-slate-50 font-bold text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
+                        <thead class="bg-slate-50 font-semibold text-slate-500 uppercase text-xs tracking-wider border-b border-slate-200">
                             <tr>
                                 <th class="px-4 py-3">Date</th>
                                 <th class="px-4 py-3">Course</th>
@@ -2462,12 +2465,12 @@ window.viewEmployeeDetail = (id) => {
                                 return `
                                     <tr class="hover:bg-slate-50">
                                         <td class="px-4 py-3 whitespace-nowrap font-mono">${r.trainingDate}</td>
-                                        <td class="px-4 py-3 font-semibold text-slate-800">${c ? c.name : r.courseId}</td>
+                                        <td class="px-4 py-3 font-medium text-slate-800">${c ? c.name : r.courseId}</td>
                                         <td class="px-4 py-3 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
-                                        <td class="px-4 py-3 font-bold ${r.score >= 80 ? 'text-emerald-600' : 'text-slate-600'}">${r.score !== null ? `${r.score}%` : '-'}</td>
+                                        <td class="px-4 py-3 font-semibold ${r.score >= 80 ? 'text-emerald-600' : 'text-slate-600'}">${r.score !== null ? `${r.score}%` : '-'}</td>
                                         <td class="px-4 py-3">${UI.renderBadge(r.status)}</td>
                                         <td class="px-4 py-3 text-right">
-                                            <button onclick="viewLearnerQuizReview('${emp.id}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 font-bold text-xs">
+                                            <button onclick="viewLearnerQuizReview('${emp.id}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 font-semibold text-xs">
                                                 Review Answers
                                             </button>
                                         </td>
@@ -2491,13 +2494,13 @@ window.switchProfileTab = (tab) => {
     if (tab === 'assigned') {
         tabAssigned.classList.remove('hidden');
         tabRecords.classList.add('hidden');
-        btns[0].className = 'profile-tab-btn active pb-3 text-xs font-bold text-blue-600 border-b-2 border-blue-600 transition';
-        btns[1].className = 'profile-tab-btn pb-3 text-xs font-bold text-slate-400 hover:text-slate-700 transition';
+        btns[0].className = 'profile-tab-btn active pb-3 text-xs font-semibold text-blue-600 border-b-2 border-blue-600 transition';
+        btns[1].className = 'profile-tab-btn pb-3 text-xs font-semibold text-slate-400 hover:text-slate-700 transition';
     } else {
         tabAssigned.classList.add('hidden');
         tabRecords.classList.remove('hidden');
-        btns[0].className = 'profile-tab-btn pb-3 text-xs font-bold text-slate-400 hover:text-slate-700 transition';
-        btns[1].className = 'profile-tab-btn active pb-3 text-xs font-bold text-blue-600 border-b-2 border-blue-600 transition';
+        btns[0].className = 'profile-tab-btn pb-3 text-xs font-semibold text-slate-400 hover:text-slate-700 transition';
+        btns[1].className = 'profile-tab-btn active pb-3 text-xs font-semibold text-blue-600 border-b-2 border-blue-600 transition';
     }
 };
 
@@ -2511,14 +2514,14 @@ function renderRecords(container) {
     container.innerHTML = `
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <h3 class="font-bold text-slate-800 text-lg">Training Records Log (${records.length} Records)</h3>
-            <button onclick="openRecordModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+            <button onclick="openRecordModal()" class="rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Training Record
             </button>
         </div>
         <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs text-slate-600">
-                    <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 font-bold tracking-wider">
+                    <thead class="bg-white text-xs uppercase text-slate-400 border-b border-slate-100 font-semibold tracking-wider">
                         <tr>
                             <th class="px-5 py-3.5">Date</th>
                             <th class="px-5 py-3.5">Engineer</th>
@@ -2537,15 +2540,15 @@ function renderRecords(container) {
                             return `
                                 <tr class="hover:bg-slate-50 transition">
                                     <td class="px-5 py-3.5 whitespace-nowrap font-mono">${r.trainingDate}</td>
-                                    <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${r.employeeId}')">${emp.name}</td>
+                                    <td class="px-5 py-3.5 font-semibold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${r.employeeId}')">${emp.name}</td>
                                     <td class="px-5 py-3.5 text-slate-700">${course.name}</td>
                                     <td class="px-5 py-3.5 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
                                     <td class="px-5 py-3.5">${r.method}</td>
-                                    <td class="px-5 py-3.5 font-bold">${r.score !== null ? `${r.score}%` : '-'}</td>
+                                    <td class="px-5 py-3.5 font-semibold">${r.score !== null ? `${r.score}%` : '-'}</td>
                                     <td class="px-5 py-3.5">${UI.renderBadge(r.status)}</td>
                                     <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
-                                        <button onclick="viewLearnerQuizReview('${r.employeeId}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Review</button>
-                                        <button onclick="deleteRecord('${r.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-bold">Delete</button>
+                                        <button onclick="viewLearnerQuizReview('${r.employeeId}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 text-xs font-semibold">Review</button>
+                                        <button onclick="deleteRecord('${r.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-semibold">Delete</button>
                                     </td>
                                 </tr>
                             `;
@@ -2645,8 +2648,8 @@ function renderAssessments(container) {
                 <p class="text-xs text-slate-400 mt-0.5">${quizzes.length} Master Quizzes • ${results.length} Submissions Logged</p>
             </div>
             <div class="flex gap-2">
-                <button id="tab-quizzes-btn" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-white transition">Quiz Bank (${quizzes.length})</button>
-                <button id="tab-results-btn" class="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition">Submissions Log (${results.length})</button>
+                <button id="tab-quizzes-btn" class="px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-white transition">Quiz Bank (${quizzes.length})</button>
+                <button id="tab-results-btn" class="px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition">Submissions Log (${results.length})</button>
             </div>
         </div>
         
@@ -2660,17 +2663,17 @@ function renderAssessments(container) {
                 ${quizzes.map(q => {
                     const c = courses.find(course => course.id === q.courseId) || { name: q.title };
                     return `
-                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                             <div>
                                 <div class="flex justify-between items-start mb-2">
-                                    <span class="font-mono text-xs font-bold px-2 py-0.5 bg-amber-50 text-amber-700 rounded-md">${q.id}</span>
-                                    <span class="text-[11px] font-bold px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${q.courseId}</span>
+                                    <span class="font-mono text-xs font-semibold px-2 py-0.5 bg-amber-50 text-amber-700 rounded-md">${q.id}</span>
+                                    <span class="text-xs font-medium px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${q.courseId}</span>
                                 </div>
-                                <h4 class="font-bold text-slate-800 text-base mb-2">${q.title}</h4>
+                                <h4 class="font-semibold text-slate-800 text-base mb-2">${q.title}</h4>
                                 <p class="text-xs text-slate-500 mb-4">Passing Score: <strong class="text-emerald-600">${q.passingScore}%</strong> • ${q.questions.length} questions</p>
                             </div>
                             <div class="flex items-center justify-end space-x-2 pt-3 border-t border-slate-100">
-                                <button onclick="viewQuizPreview('${q.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 px-2 py-1 rounded">View Questions</button>
+                                <button onclick="viewQuizPreview('${q.id}')" class="text-xs font-semibold text-blue-600 hover:text-blue-800 px-2 py-1 rounded">View Questions</button>
                             </div>
                         </div>
                     `;
@@ -2685,7 +2688,7 @@ function renderAssessments(container) {
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
                 <div class="overflow-x-auto">
                     <table class="w-full text-left text-xs text-slate-600">
-                        <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 font-bold tracking-wider">
+                        <thead class="bg-white text-xs uppercase text-slate-400 border-b border-slate-100 font-semibold tracking-wider">
                             <tr>
                                 <th class="px-5 py-3.5">Date</th>
                                 <th class="px-5 py-3.5">Engineer</th>
@@ -2702,16 +2705,16 @@ function renderAssessments(container) {
                                 return `
                                     <tr class="hover:bg-slate-50 transition">
                                         <td class="px-5 py-3.5 whitespace-nowrap font-mono">${res.date}</td>
-                                        <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${res.employeeId}')">${emp.name}</td>
+                                        <td class="px-5 py-3.5 font-semibold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${res.employeeId}')">${emp.name}</td>
                                         <td class="px-5 py-3.5 font-medium text-slate-700">${quiz.title}</td>
-                                        <td class="px-5 py-3.5 font-extrabold ${res.passed ? 'text-emerald-600' : 'text-rose-600'}">${res.score}%</td>
+                                        <td class="px-5 py-3.5 font-bold ${res.passed ? 'text-emerald-600' : 'text-rose-600'}">${res.score}%</td>
                                         <td class="px-5 py-3.5">
-                                            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold ${res.passed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                                            <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold ${res.passed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
                                                 ${res.passed ? 'PASS' : 'FAIL'}
                                             </span>
                                         </td>
                                         <td class="px-5 py-3.5 text-right">
-                                            <button onclick="viewQuizBreakdownModal('${res.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Review Answers</button>
+                                            <button onclick="viewQuizBreakdownModal('${res.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-semibold">Review Answers</button>
                                         </td>
                                     </tr>
                                 `;
@@ -2727,14 +2730,14 @@ function renderAssessments(container) {
     const btnR = document.getElementById('tab-results-btn');
     
     btnQ.addEventListener('click', () => {
-        btnQ.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-white transition';
-        btnR.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition';
+        btnQ.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-white transition';
+        btnR.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition';
         renderQuizBank();
     });
 
     btnR.addEventListener('click', () => {
-        btnR.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-white transition';
-        btnQ.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition';
+        btnR.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-slate-800 text-white transition';
+        btnQ.className = 'px-4 py-2 rounded-xl text-xs font-semibold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition';
         renderResultsLog();
     });
 
@@ -2750,57 +2753,57 @@ function renderReports(container) {
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-3">📊</div>
-                    <h4 class="font-bold text-slate-800 text-base mb-1">Overall Training Summary</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-1">Overall Training Summary</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Complete section-by-section breakdown of training completion rates and employee headcount.</p>
                 </div>
-                <button onclick="exportTrainingSummaryExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                <button onclick="exportTrainingSummaryExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
                     <span>📥</span> Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">📋</div>
-                    <h4 class="font-bold text-slate-800 text-base mb-1">Full Training Matrix</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-1">Full Training Matrix</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Cross-reference matrix of all 18 engineers against all 37 curriculum courses with status indicators.</p>
                 </div>
-                <button onclick="exportTrainingMatrixExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                <button onclick="exportTrainingMatrixExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
                     <span>📥</span> Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-3">📝</div>
-                    <h4 class="font-bold text-slate-800 text-base mb-1">Assessment Audit Results</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-1">Assessment Audit Results</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Detailed quiz scores, passing status, and submission timestamps for compliance auditors.</p>
                 </div>
-                <button onclick="exportAssessmentAuditExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                <button onclick="exportAssessmentAuditExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
                     <span>📥</span> Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-3">📑</div>
-                    <h4 class="font-bold text-slate-800 text-base mb-1">Work Instructions Index</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-1">Work Instructions Index</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">ISO document control register, version history, effective dates, and lead approvers.</p>
                 </div>
-                <button onclick="exportWIIndexExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                <button onclick="exportWIIndexExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
                     <span>📥</span> Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-3">🎓</div>
-                    <h4 class="font-bold text-slate-800 text-base mb-1">Training Certificate</h4>
+                    <h4 class="font-semibold text-slate-800 text-base mb-1">Training Certificate</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Generate and print an official ISO training completion certificate for an engineer.</p>
                 </div>
-                <button onclick="openCertificateModal()" class="w-full rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                <button onclick="openCertificateModal()" class="w-full rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-semibold hover:bg-blue-700 transition shadow-sm flex items-center justify-center gap-1.5">
                     <span>🖨️</span> Issue Certificate
                 </button>
             </div>
@@ -2989,12 +2992,12 @@ function printCertificate(empId, courseId) {
                     <div>
                         <p class="text-xs text-slate-400">Date Issued:</p>
                         <p class="text-xs font-bold text-slate-700">${dateStr}</p>
-                        <p class="text-[10px] text-slate-400 mt-1">ISO 27001 / ISO 9001 / ISO 22301</p>
+                        <p class="text-xs text-slate-400 mt-1">ISO 27001 / ISO 9001 / ISO 22301</p>
                     </div>
                     <div class="text-right">
                         <div class="w-36 border-b border-slate-400 pb-1 mb-1 text-center font-mono font-bold text-xs text-blue-700">Akkharasaran S.</div>
                         <p class="text-xs font-bold text-slate-800">Akkharasaran S.</p>
-                        <p class="text-[10px] text-slate-500">Head of System Enabler Division</p>
+                        <p class="text-xs text-slate-500">Head of System Enabler Division</p>
                     </div>
                 </div>
             </div>
@@ -3017,76 +3020,76 @@ function renderSettings(container) {
                 <p class="text-xs text-slate-400 mt-0.5">SYE Academy Enterprise Platform • Version ${APP_VERSION}</p>
             </div>
             
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+                <h4 class="text-sm font-semibold text-slate-800 mb-3.5 flex items-center gap-2">
                     <span>🏢</span> On-Premise Infrastructure & Environment
                 </h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                        <span class="text-slate-400 block text-[10px] uppercase font-bold">Kubernetes Orchestrator</span>
-                        <span class="font-bold text-slate-800 text-sm">VMware Tanzu (TKG) Multi-Pod</span>
+                        <span class="text-slate-400 block text-xs uppercase font-semibold">Kubernetes Orchestrator</span>
+                        <span class="font-semibold text-slate-800 text-sm">VMware Tanzu (TKG) Multi-Pod</span>
                         <p class="text-slate-500 mt-1">Ingress Port: <strong>8080</strong> • Cluster Zone: Sermmit DC & DR Site</p>
                     </div>
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
-                        <span class="text-slate-400 block text-[10px] uppercase font-bold">Database & VM Tier</span>
-                        <span class="font-bold text-slate-800 text-sm">PostgreSQL 16 & RedHat Enterprise Linux 9</span>
+                        <span class="text-slate-400 block text-xs uppercase font-semibold">Database & VM Tier</span>
+                        <span class="font-semibold text-slate-800 text-sm">PostgreSQL 16 & RedHat Enterprise Linux 9</span>
                         <p class="text-slate-500 mt-1">Host: <strong>10.254.97.141</strong> • Patroni HA Replication</p>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+                <h4 class="text-sm font-semibold text-slate-800 mb-3.5 flex items-center gap-2">
                     <span>👑</span> Division Leadership & Architectural Authorities
                 </h4>
-                <div class="space-y-3 text-xs">
+                <div class="space-y-2.5 text-xs">
                     <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
                         <div class="flex items-center space-x-3">
                             <img src="favicon.svg" alt="AEON" class="w-7 h-7 rounded-lg shadow-xs object-cover border border-slate-200">
                             <div>
-                                <span class="font-bold text-slate-800">Akkharasaran S.</span>
-                                <p class="text-slate-500 text-[11px]">Head of System Enabler Division • CES Lead • TSQ Lead</p>
+                                <span class="font-semibold text-slate-800">Akkharasaran S.</span>
+                                <p class="text-slate-500 text-xs">Head of System Enabler Division • CES Lead • TSQ Lead</p>
                             </div>
                         </div>
-                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold rounded-lg text-[10px]">Division Head (sye@aeon.co.th)</span>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-semibold rounded-lg text-xs">Division Head (sye@aeon.co.th)</span>
                     </div>
                     <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
                         <div>
-                            <span class="font-bold text-slate-800">Rattanapakorn K.</span>
-                            <p class="text-slate-500 text-[11px]">API & Integration Platform Lead</p>
+                            <span class="font-semibold text-slate-800">Rattanapakorn K.</span>
+                            <p class="text-slate-500 text-xs">API & Integration Platform Lead</p>
                         </div>
-                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 font-bold rounded-lg text-[10px]">Section Lead (sye_api@aeon.co.th)</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 font-semibold rounded-lg text-xs">Section Lead (sye_api@aeon.co.th)</span>
                     </div>
                     <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
                         <div>
-                            <span class="font-bold text-slate-800">Waranya T.</span>
-                            <p class="text-slate-500 text-[11px]">User Application Systems Lead</p>
+                            <span class="font-semibold text-slate-800">Waranya T.</span>
+                            <p class="text-slate-500 text-xs">User Application Systems Lead</p>
                         </div>
-                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 font-bold rounded-lg text-[10px]">Section Lead (sye_uas@aeon.co.th)</span>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 font-semibold rounded-lg text-xs">Section Lead (sye_uas@aeon.co.th)</span>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
+                <h4 class="text-sm font-semibold text-slate-800 mb-3.5 flex items-center gap-2">
                     <span>🛡️</span> Certified ISO Governance Framework
                 </h4>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
                     <div class="p-3.5 bg-blue-50/50 rounded-xl border border-blue-100 text-center">
-                        <span class="font-extrabold text-blue-900 block text-sm">ISO 27001</span>
-                        <span class="text-[10px] text-blue-700">Information Security (ISMS)</span>
+                        <span class="font-bold text-blue-900 block text-sm">ISO 27001</span>
+                        <span class="text-xs text-blue-700">Information Security (ISMS)</span>
                     </div>
                     <div class="p-3.5 bg-emerald-50/50 rounded-xl border border-emerald-100 text-center">
-                        <span class="font-extrabold text-emerald-900 block text-sm">ISO 9001</span>
-                        <span class="text-[10px] text-emerald-700">Quality Management (QMS)</span>
+                        <span class="font-bold text-emerald-900 block text-sm">ISO 9001</span>
+                        <span class="text-xs text-emerald-700">Quality Management (QMS)</span>
                     </div>
                     <div class="p-3.5 bg-amber-50/50 rounded-xl border border-amber-100 text-center">
-                        <span class="font-extrabold text-amber-900 block text-sm">ISO 22301</span>
-                        <span class="text-[10px] text-amber-700">Business Continuity (BCMS/DR)</span>
+                        <span class="font-bold text-amber-900 block text-sm">ISO 22301</span>
+                        <span class="text-xs text-amber-700">Business Continuity (BCMS/DR)</span>
                     </div>
                     <div class="p-3.5 bg-purple-50/50 rounded-xl border border-purple-100 text-center">
-                        <span class="font-extrabold text-purple-900 block text-sm">ISO 14001</span>
-                        <span class="text-[10px] text-purple-700">Environmental Management</span>
+                        <span class="font-bold text-purple-900 block text-sm">ISO 14001</span>
+                        <span class="text-xs text-purple-700">Environmental Management</span>
                     </div>
                 </div>
             </div>

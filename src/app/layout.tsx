@@ -26,11 +26,23 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
         {/* Tailwind CDN */}
         <script src="https://cdn.tailwindcss.com"></script>
+        <script dangerouslySetInnerHTML={{ __html: `
+          tailwind.config = {
+            theme: {
+              extend: {
+                fontFamily: {
+                  sans: ['Inter', 'Noto Sans Thai', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                  mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+                }
+              }
+            }
+          }
+        `}} />
         {/* Chart.js CDN */}
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         {/* Core Scripts */}
@@ -38,8 +50,11 @@ export default function RootLayout({
         <script src="/app.js" defer></script>
         <style dangerouslySetInnerHTML={{ __html: `
           body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
             background-color: #f8fafc;
+            color: #1e293b;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
           }
           
           /* Sidebar Active State */
