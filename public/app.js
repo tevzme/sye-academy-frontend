@@ -373,7 +373,7 @@ window.navigate = function(path, event) {
     
     let target = path.startsWith('/') ? path : '/' + path;
     if (window.location.protocol === 'file:') {
-        window.location.hash = target.replace(/^//, '');
+        window.location.hash = target.replace(/^\/+/, '');
     } else {
         window.history.pushState(null, '', target);
         handleRoute();
@@ -385,17 +385,17 @@ window.addEventListener('hashchange', handleRoute);
 
 function getActiveRoute() {
     if (window.location.protocol === 'file:' && window.location.hash) {
-        return window.location.hash.substring(1).replace(/^//, '');
+        return window.location.hash.substring(1).replace(/^\/+/, '');
     }
     if (window.location.hash) {
-        const hashVal = window.location.hash.substring(1).replace(/^//, '');
+        const hashVal = window.location.hash.substring(1).replace(/^\/+/, '');
         if (hashVal) {
             window.history.replaceState(null, '', '/' + hashVal);
             return hashVal;
         }
     }
     
-    let pathname = window.location.pathname.replace(/^//, '');
+    let pathname = window.location.pathname.replace(/^\/+/, '');
     if (!pathname) return 'landing';
     return pathname;
 }
@@ -411,7 +411,7 @@ function handleRoute() {
     let path = getActiveRoute();
     if (!path || path === 'home') path = 'landing';
     
-    let courseMatch = path.match(/^(?:course/|course-)(.+)$/);
+    let courseMatch = path.match(/^(?:course\/|course-)(.+)$/);
     let isCourseRoute = false;
     let courseId = null;
     if (courseMatch) {
@@ -444,7 +444,8 @@ function handleRoute() {
         
         document.querySelectorAll('.nav-item').forEach(el => {
             el.classList.remove('active');
-            const targetPath = (el.getAttribute('href') || '').replace(/^//, '').replace(/^#/, '');
+            const hrefVal = el.getAttribute('href') || '';
+            const targetPath = hrefVal.replace(/^\/+/, '').replace(/^#/, '');
             if(targetPath === path) {
                 el.classList.add('active');
                 const titleText = el.textContent.replace(/[^\x00-\x7F]/g, "").trim();
