@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '13.0.0';
+const APP_VERSION = '15.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -35,7 +35,7 @@ const I18N = {
             admin_panel: 'Admin Panel',
             admin_panel_sub: 'Compliance Records, Audits & System Management',
             returning_learner: 'Select Registered Engineer',
-            select_learner: 'Select engineer to start / continue training...',
+            select_learner: 'Select to continue...', 
             continue_btn: 'Start Training →',
             back_to_home: '← Back to Home',
             back_to_roadmap: '← Back to My Training Roadmap',
@@ -43,9 +43,9 @@ const I18N = {
             welcome: 'Welcome',
             onboarding_progress: 'Onboarding Progress',
             courses_completed: 'courses completed',
-            review_course: '📖 Review Course',
-            view_assessment: '📝 View Assessment',
-            locked: '🔒 Locked',
+            review_course: 'Review Course',
+            view_assessment: 'Take Assessment',
+            locked: 'Locked',
             step1_title: 'Step 1: Division & General Engineering Orientation',
             step1_desc: 'Division mission, organizational sections, ISO governance, on-premise architecture landscape, and security policies',
             step2_title: 'Step 2: Role-Specific Technical Training',
@@ -57,12 +57,12 @@ const I18N = {
             confirm_read: 'I confirm that I have read and understood all the technical material and standards above',
             take_assessment: 'Take Knowledge Assessment →',
             retake_assessment: 'Retake Assessment →',
-            confirm_completion: 'Confirm Completion ✓',
+            confirm_completion: 'Confirm Completion',
             course_completed_msg: 'Course Completed',
             review_answers_btn: 'Review Submitted Answers',
             submit_answers: 'Submit Answers',
-            congrats_pass: '🎉 Congratulations! You Passed',
-            not_passed: '❌ Assessment Not Passed',
+            congrats_pass: 'Congratulations! You Passed',
+            not_passed: 'Assessment Not Passed',
             score_label: 'Score',
             min_pass: 'Passing required',
             reg_title: 'Engineer Registration',
@@ -77,8 +77,8 @@ const I18N = {
             vendor_name: 'Vendor / Entity Name',
             reg_submit: 'Register & Start Onboarding →',
             assessment_review_title: 'Assessment Submission Review',
-            correct_ans: '✓ Correct Answer',
-            your_choice: '✗ Your Choice'
+            correct_ans: 'Correct Answer',
+            your_choice: 'Your Choice'
         },
         th: {
             app_title: 'SYE Academy',
@@ -90,7 +90,7 @@ const I18N = {
             admin_panel: 'ผู้ดูแลระบบ (Admin Panel)',
             admin_panel_sub: 'บันทึกการอบรม ทะเบียนพนักงาน และเอกสาร Audit',
             returning_learner: 'เลือกวิศวกรที่ลงทะเบียนแล้ว',
-            select_learner: 'เลือกชื่อของคุณเพื่อเข้าสู่ระบบอบรม...',
+            select_learner: 'เลือกเพื่อดำเนินการต่อ...', 
             continue_btn: 'เริ่มการอบรม →',
             back_to_home: '← กลับหน้าหลัก (Home)',
             back_to_roadmap: '← กลับสู่แผนผังการอบรมของฉัน',
@@ -98,9 +98,9 @@ const I18N = {
             welcome: 'ยินดีต้อนรับ',
             onboarding_progress: 'ความคืบหน้าการฝึกอบรม',
             courses_completed: 'หลักสูตรที่ผ่านแล้ว',
-            review_course: '📖 ทบทวนบทเรียน',
-            view_assessment: '📝 ดูผลการสอบ',
-            locked: '🔒 ล็อกตามลำดับ',
+            review_course: 'ทบทวนบทเรียน',
+            view_assessment: 'ดูผลการสอบ',
+            locked: 'ล็อกตามลำดับ',
             step1_title: 'ขั้นตอนที่ 1: การปฐมนิเทศฝ่าย SYE และมาตรฐานวิศวกรรมทั่วไป',
             step1_desc: 'โครงสร้างผู้นำ 4 ส่วนงาน, มาตรฐาน ISO 4 ด้าน, ระบบ On-Premise (Tanzu/RHEL) และแผน BCP/DR Site',
             step2_title: 'ขั้นตอนที่ 2: การฝึกอบรมเฉพาะตำแหน่ง (Role-Specific)',
@@ -112,12 +112,12 @@ const I18N = {
             confirm_read: 'ข้าพเจ้ายืนยันว่าได้อ่านและทำความเข้าใจเนื้อหาทางเทคนิคและมาตรฐานข้างต้นครบถ้วนแล้ว',
             take_assessment: 'ทำแบบทดสอบประเมินความรู้ →',
             retake_assessment: 'ทำแบบทดสอบใหม่ →',
-            confirm_completion: 'ยืนยันจบการอบรม ✓',
+            confirm_completion: 'ยืนยันจบการอบรม',
             course_completed_msg: 'ผ่านการอบรมหลักสูตรนี้เรียบร้อยแล้ว',
             review_answers_btn: 'ดูเฉลยและคำตอบที่คุณทำ',
             submit_answers: 'ส่งคำตอบแบบทดสอบ',
-            congrats_pass: '🎉 ยินดีด้วย! คุณผ่านการทดสอบ',
-            not_passed: '❌ ไม่ผ่านเกณฑ์การทดสอบ',
+            congrats_pass: 'ยินดีด้วย! คุณผ่านการทดสอบ',
+            not_passed: 'ไม่ผ่านเกณฑ์การทดสอบ',
             score_label: 'คะแนนที่ได้',
             min_pass: 'เกณฑ์คะแนนขั้นต่ำ',
             reg_title: 'ลงทะเบียนพนักงาน / วิศวกรใหม่',
@@ -132,8 +132,8 @@ const I18N = {
             vendor_name: 'สังกัดบริษัท / Outsource Vendor',
             reg_submit: 'ลงทะเบียนและเริ่มการอบรม →',
             assessment_review_title: 'รายละเอียดผลการทดสอบประเมินผล',
-            correct_ans: '✓ คำตอบที่ถูกต้อง',
-            your_choice: '✗ คำตอบที่คุณเลือก'
+            correct_ans: 'คำตอบที่ถูกต้อง',
+            your_choice: 'คำตอบที่คุณเลือก'
         }
     },
     
@@ -475,7 +475,9 @@ window.openLearnerModal = () => {
     let html = `
         <div class="space-y-6">
             <div class="p-4 bg-blue-50/60 rounded-2xl border border-blue-100 flex items-center space-x-3">
-                <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shrink-0">🎓</div>
+                <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shrink-0">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+    </div>
                 <div>
                     <h4 class="font-bold text-blue-900 text-sm">System Enabler Onboarding Portal</h4>
                     <p class="text-xs text-blue-700 mt-0.5">Select your profile to continue self-study modules or assessments.</p>
@@ -486,7 +488,7 @@ window.openLearnerModal = () => {
                 <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Select Registered Engineer</label>
                 <div class="space-y-3">
                     <select id="modal-learner-select" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
-                        <option value="">-- Choose your name from roster --</option>
+                        <option value="">-- Select to continue --</option>
                         ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id} ${e.employmentType === 'Outsource' ? '[OS]' : ''})</option>`).join('')}
                     </select>
                     <button id="modal-continue-btn" onclick="startSelectedLearner()" class="w-full rounded-xl px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold transition shadow-sm">
@@ -498,7 +500,7 @@ window.openLearnerModal = () => {
             <div class="border-t border-slate-100 pt-4 text-center">
                 <p class="text-xs text-slate-400 mb-2">Not registered yet?</p>
                 <a href="/register" onclick="UI.closeModal(); navigate('/register', event);" class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800">
-                    <span>➕ Register New Staff / Outsource Engineer</span>
+                    <span>+ Register New Staff / Outsource Engineer</span>
                 </a>
             </div>
         </div>
@@ -606,7 +608,7 @@ function renderRegister(container) {
             </div>
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
                 <div class="flex items-center space-x-3 mb-6">
-                    <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl">📝</div>
+                    <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg></div>
                     <div>
                         <h2 class="text-xl font-bold text-slate-800">${I18N.t('reg_title')}</h2>
                         <p class="text-xs text-slate-500">${I18N.t('reg_desc')}</p>
@@ -820,7 +822,7 @@ function renderMyTraining(container) {
                 actionButtons = `
                     <div class="flex flex-wrap items-center gap-2">
                         <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-semibold flex items-center gap-1">
-                            <span>✅</span> ${scoreText ? scoreText.substring(3) : 'Completed'}
+                            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1"></span> ${scoreText ? scoreText.replace(/^[^a-zA-Z0-9]+/, "") : 'Completed'}
                         </span>
                         <a href="/course/${course.id}" onclick="navigate('/course/${course.id}', event)" class="rounded-lg px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 transition shadow-sm">
                             ${I18N.t('review_course')}
@@ -854,8 +856,8 @@ function renderMyTraining(container) {
                         <div class="flex items-center space-x-2 mb-1">
                             <span class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-xs flex items-center justify-center font-bold">${index + 1}</span>
                             <span class="text-xs font-mono font-semibold text-slate-500">${course.id}</span>
-                            <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-xs rounded font-medium">📝 Assessment</span>
-                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded font-medium">👥 ${course.targetRoles.join(', ')}</span>
+                            <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-xs rounded font-medium">Assessment</span>
+                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded font-medium">${course.targetRoles.join(', ')}</span>
                         </div>
                         <h4 class="text-base font-semibold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="navigate('/course/${course.id}', event)">${courseName}</h4>
                         <p class="text-xs text-slate-500">⏱ ${course.duration}</p>
@@ -1130,7 +1132,7 @@ function renderCourse(container, courseId) {
             contentHtml += `
                 <div class="bg-blue-50/50 border border-blue-100 rounded-2xl p-5 mb-6">
                     <h3 class="text-sm font-bold text-blue-900 mb-2.5 flex items-center gap-2">
-                        <span>🎯</span> ${I18N.t('learning_objectives')}
+                        <svg class="w-4 h-4 inline text-blue-600 mr-1.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m10 15 5-3-5-3v6Z"/></svg> ${I18N.t('learning_objectives')}
                     </h3>
                     <ul class="list-disc pl-5 text-slate-700 text-sm space-y-1">
                         ${learningObjs.map(obj => `<li>${obj}</li>`).join('')}
@@ -1170,7 +1172,7 @@ function renderCourse(container, courseId) {
             ${isCompleted ? `
                 <div class="bg-emerald-50 border border-emerald-200 rounded-2xl p-5 mb-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl">✓</div>
+                        <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-xl"><svg class="w-5 h-5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
                         <div>
                             <h4 class="font-semibold text-emerald-900 text-sm">${I18N.t('course_completed_msg')}</h4>
                             <p class="text-xs text-emerald-700 mt-0.5">Date: ${completedRecord.trainingDate} ${completedRecord.score !== null ? `• ${I18N.t('score_label')}: ${completedRecord.score}%` : ''}</p>
@@ -1189,8 +1191,8 @@ function renderCourse(container, courseId) {
                     <div class="flex flex-wrap gap-2 mb-2.5">
                         <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded-md text-xs font-mono font-semibold">${course.id}</span>
                         <span class="px-2.5 py-0.5 bg-indigo-50 text-indigo-700 rounded-md text-xs font-medium">${course.category}</span>
-                        <span class="px-2.5 py-0.5 bg-amber-50 text-amber-700 rounded-md text-xs font-medium">📝 Assessment Required</span>
-                        <span class="px-2.5 py-0.5 bg-blue-50 text-blue-700 rounded-md text-xs font-medium">👥 Roles: ${course.targetRoles.join(', ')}</span>
+                        <span class="px-2.5 py-0.5 bg-amber-50 text-amber-700 rounded-md text-xs font-medium">Assessment Required</span>
+                        )}</span>', ')}</span>
                     </div>
                     <h1 class="text-2xl font-bold text-slate-800 mb-1.5">${courseName}</h1>
                     <p class="text-xs text-slate-500">⏱ Duration: ${course.duration}</p>
@@ -1413,7 +1415,7 @@ window.viewQuizBreakdownModal = (resId) => {
                         <div class="p-4 rounded-2xl border ${isCorrect ? 'border-emerald-200 bg-emerald-50/20' : 'border-rose-200 bg-rose-50/20'}">
                             <p class="text-sm font-semibold text-slate-800 mb-2">
                                 ${idx + 1}. ${q.question}
-                                ${isCorrect ? `<span class="ml-2 text-xs font-semibold text-emerald-600">✓ Correct</span>` : `<span class="ml-2 text-xs font-semibold text-rose-600">✗ Incorrect</span>`}
+                                ${isCorrect ? `<span class="ml-2 text-xs font-semibold text-emerald-600">Correct</span>` : `<span class="ml-2 text-xs font-semibold text-rose-600">Incorrect</span>`}
                             </p>
                             <div class="space-y-1.5">
                                 ${q.options.map((opt, oIdx) => {
@@ -1546,34 +1548,6 @@ function renderDashboard(container) {
                 </div>
             </div>
         </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-emerald-500 hover:shadow-md transition">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Fully Onboarded (100%)</p>
-                            <p id="stat-completed" class="text-2xl font-bold text-slate-800 mt-1">0</p>
-                        </div>
-                        <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl">✅</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-amber-500 hover:shadow-md transition">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">In Progress</p>
-                            <p id="stat-inprog" class="text-2xl font-bold text-slate-800 mt-1">0</p>
-                        </div>
-                        <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl">🔄</div>
-                    </div>
-                </div>
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-indigo-500 hover:shadow-md transition">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Avg Completion</p>
-                            <p id="stat-avg" class="text-2xl font-bold text-slate-800 mt-1">0%</p>
-                        </div>
-                        <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl">📈</div>
-                    </div>
-                </div>
-            </div>
 
             <!-- Charts Row -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -1584,7 +1558,7 @@ function renderDashboard(container) {
                             <p class="text-xs text-slate-400">Proportion of engineers fully certified per section</p>
                         </div>
                         <button onclick="renderDashboard(document.getElementById('admin-content'))" class="px-2.5 py-1 bg-slate-50 hover:bg-slate-100 text-slate-600 text-xs font-semibold rounded-lg border border-slate-200 transition flex items-center gap-1 shadow-2xs">
-                            <span>🔄</span> Replay
+                            <svg class="w-3.5 h-3.5 inline mr-1 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg>Refresh
                         </button>
                     </div>
                     <div class="relative h-64"><canvas id="sectionChart"></canvas></div>
@@ -1655,10 +1629,7 @@ function renderDashboard(container) {
         </div>
     `;
 
-    animateCounter('stat-total', totalEmps);
-    animateCounter('stat-completed', compl);
-    animateCounter('stat-inprog', inprog);
-    animateCounter('stat-avg', overallCompRate, '%');
+    
 
     setTimeout(() => {
         const sectionLabels = SECTIONS.map(sec => {
@@ -1817,12 +1788,12 @@ function renderCatalog(container) {
                 <div>
                     <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-4">
                         <span>⏱ ${c.duration}</span>
-                        <span>👥 ${c.targetRoles.join(', ')}</span>
-                        ${c.hasAssessment ? `<span class="text-amber-600 font-bold">📝 Assessment</span>` : ''}
+                        <span>${c.targetRoles.join(', ')}</span>
+                        ${c.hasAssessment ? `<span class="text-amber-600 font-semibold">Assessment</span>` : ''}
                     </div>
                     <div class="flex items-center justify-between pt-2 border-t border-slate-100">
                         <button onclick="previewCourseContent('${c.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
-                            <span>📖 Read Material</span>
+                            <span>Read Material</span>
                         </button>
                         <div class="flex items-center space-x-1">
                             <button onclick="openCourseModal('${c.id}')" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-2 py-1">Edit</button>
@@ -2058,9 +2029,9 @@ function renderWorkInstructions(container) {
                     <p class="text-xs text-slate-500 line-clamp-2 mb-4 leading-relaxed">${wi.objective}</p>
 
                     <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500 mb-4">
-                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">🏢 ${wi.section}</span>
-                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">📅 ${wi.effectiveDate}</span>
-                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">📋 ${wi.procedure ? wi.procedure.length : 0} Steps</span>
+                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">${wi.section}</span>
+                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">Effective: ${wi.effectiveDate}</span>
+                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">${wi.procedure ? wi.procedure.length : 0} Steps</span>
                     </div>
                 </div>
 
@@ -2587,10 +2558,10 @@ window.viewEmployeeDetail = (id) => {
             <!-- Profile Tabs -->
             <div class="flex border-b border-slate-200 gap-4" id="profile-tabs">
                 <button class="profile-tab-btn active pb-3 text-xs font-semibold text-blue-600 border-b-2 border-blue-600 transition" onclick="switchProfileTab('assigned')">
-                    🎯 Assigned Curriculum (${stats.requiredCourses.length})
+                    Assigned Curriculum (${stats.requiredCourses.length})
                 </button>
                 <button class="profile-tab-btn pb-3 text-xs font-semibold text-slate-400 hover:text-slate-700 transition" onclick="switchProfileTab('records')">
-                    📜 Training &amp; Assessment Log (${records.length})
+                    Training &amp; Assessment Log (${records.length})
                 </button>
             </div>
             
@@ -2618,7 +2589,7 @@ window.viewEmployeeDetail = (id) => {
                                             <span class="font-medium text-slate-800">${c.name}</span>
                                         </td>
                                         <td class="px-4 py-3"><span class="px-2 py-0.5 bg-slate-100 rounded text-xs font-medium">${c.category}</span></td>
-                                        <td class="px-4 py-3">${isDone ? '<span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800">✅ Completed</span>' : '<span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-500">Pending</span>'}</td>
+                                        <td class="px-4 py-3">${isDone ? '<span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-100 text-emerald-800"><span class="inline-block w-2 h-2 rounded-full bg-emerald-500 mr-1.5"></span>Completed</span>' : '<span class="px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-500">Pending</span>'}</td>
                                         <td class="px-4 py-3 font-semibold ${isDone && rec.score >= 80 ? 'text-emerald-600' : 'text-slate-500'}">
                                             ${isDone && rec.score !== null ? `${rec.score}%` : '-'}
                                         </td>
@@ -2953,56 +2924,56 @@ function renderReports(container) {
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
-                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-3">📊</div>
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-3"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg></div>
                     <h4 class="font-semibold text-slate-800 text-base mb-1">Overall Training Summary</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Complete section-by-section breakdown of training completion rates and employee headcount.</p>
                 </div>
                 <button onclick="exportTrainingSummaryExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
-                    <span>📥</span> Export Excel (.csv / .xlsx)
+                    Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
-                    <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">📋</div>
+                    <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/></svg></div>
                     <h4 class="font-semibold text-slate-800 text-base mb-1">Full Training Matrix</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Cross-reference matrix of all 18 engineers against all 37 curriculum courses with status indicators.</p>
                 </div>
                 <button onclick="exportTrainingMatrixExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
-                    <span>📥</span> Export Excel (.csv / .xlsx)
+                    Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
-                    <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-3">📝</div>
+                    <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-3"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
                     <h4 class="font-semibold text-slate-800 text-base mb-1">Assessment Audit Results</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Detailed quiz scores, passing status, and submission timestamps for compliance auditors.</p>
                 </div>
                 <button onclick="exportAssessmentAuditExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
-                    <span>📥</span> Export Excel (.csv / .xlsx)
+                    Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
-                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-3">📑</div>
+                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-3"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/></svg></div>
                     <h4 class="font-semibold text-slate-800 text-base mb-1">Work Instructions Index</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">ISO document control register, version history, effective dates, and lead approvers.</p>
                 </div>
                 <button onclick="exportWIIndexExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-semibold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
-                    <span>📥</span> Export Excel (.csv / .xlsx)
+                    Export Excel (.csv / .xlsx)
                 </button>
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
                 <div>
-                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-3">🎓</div>
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-3"><svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
                     <h4 class="font-semibold text-slate-800 text-base mb-1">Training Certificate</h4>
                     <p class="text-xs text-slate-500 leading-relaxed mb-4">Generate and print an official ISO training completion certificate for an engineer.</p>
                 </div>
                 <button onclick="openCertificateModal()" class="w-full rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-semibold hover:bg-blue-700 transition shadow-sm flex items-center justify-center gap-1.5">
-                    <span>🖨️</span> Issue Certificate
+                    Issue Certificate
                 </button>
             </div>
         </div>
@@ -3220,7 +3191,7 @@ function renderSettings(container) {
             
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
                 <h4 class="text-sm font-semibold text-slate-800 mb-3.5 flex items-center gap-2">
-                    <span>🏢</span> On-Premise Infrastructure & Environment
+                    On-Premise Infrastructure & Environment
                 </h4>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
                     <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
@@ -3238,7 +3209,7 @@ function renderSettings(container) {
 
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
                 <h4 class="text-sm font-semibold text-slate-800 mb-3.5 flex items-center gap-2">
-                    <span>👑</span> Division Leadership & Architectural Authorities
+                    Division Leadership & Architectural Authorities
                 </h4>
                 <div class="space-y-2.5 text-xs">
                     <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
@@ -3270,7 +3241,7 @@ function renderSettings(container) {
 
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5">
                 <h4 class="text-sm font-semibold text-slate-800 mb-3.5 flex items-center gap-2">
-                    <span>🛡️</span> Certified ISO Governance Framework
+                    Certified ISO Governance Framework
                 </h4>
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
                     <div class="p-3.5 bg-blue-50/50 rounded-xl border border-blue-100 text-center">
