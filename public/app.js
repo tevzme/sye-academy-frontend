@@ -1,11 +1,11 @@
-// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.4.0) =====
+// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.5.0) =====
 // System Enabler (SYE) Division • AEON System Development Department
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
 // ISO 27001 (ISMS), ISO 9001 (QMS), ISO 14001 (EMS), ISO 22301 (BCMS) Certified
 // On-Premise VMware Tanzu Kubernetes (TKG) & RedHat Enterprise Linux VM Infrastructure
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '2.4.0';
+const APP_VERSION = '2.5.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -185,9 +185,14 @@ const DB = {
 };
 
 function initData() {
-    if (!localStorage.getItem('sye_employees') || (window.SYE_SAMPLE_DATA && DB.get('sye_employees').length !== window.SYE_SAMPLE_DATA.employees.length)) {
-        console.log("Loading authentic master data...");
+    const currentSeedVersion = localStorage.getItem('sye_seed_version');
+    const emps = DB.get('sye_employees');
+    const hasOldNames = emps.some(e => e.name === 'Chinawat K.' || e.name === 'Architeya B.');
+
+    if (!localStorage.getItem('sye_employees') || currentSeedVersion !== APP_VERSION || hasOldNames) {
+        console.log("Loading authentic master data v" + APP_VERSION + "...");
         loadSampleData();
+        localStorage.setItem('sye_seed_version', APP_VERSION);
     } else if (window.SYE_SAMPLE_DATA) {
         DB.set('sye_courses', window.SYE_SAMPLE_DATA.courses);
         DB.set('sye_work_instructions', window.SYE_SAMPLE_DATA.workInstructions);
@@ -210,7 +215,7 @@ function loadSampleData() {
             const storageKey = keyMap[key] || key;
             DB.set(storageKey, window.SYE_SAMPLE_DATA[key]);
         });
-        console.log("Authentic sample data initialized.");
+        console.log("Authentic sample data initialized with version " + APP_VERSION);
     }
 }
 
@@ -322,10 +327,13 @@ const UI = {
         currentCharts = [];
     },
 
-    showModal: (title, bodyHtml, onSave, saveText = 'Save', showFooter = true) => {
+    showModal: (title, bodyHtml, onSave, saveText = 'Save', showFooter = true, modalWidthClass = 'max-w-3xl') => {
         document.getElementById('modal-title').textContent = title;
         document.getElementById('modal-body').innerHTML = bodyHtml;
         
+        const modalContent = document.getElementById('modal-content');
+        modalContent.className = `bg-white rounded-3xl shadow-2xl ${modalWidthClass} w-full max-h-[92vh] flex flex-col overflow-hidden border border-slate-100`;
+
         const footer = document.getElementById('modal-footer');
         if (showFooter) {
             footer.classList.remove('hidden');
@@ -736,6 +744,7 @@ function renderMyTraining(container) {
                             <span class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-[11px] flex items-center justify-center font-bold">${index + 1}</span>
                             <span class="text-xs font-mono font-bold text-slate-500">${course.id}</span>
                             <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-[10px] uppercase font-bold rounded">📝 Assessment</span>
+                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-[10px] rounded font-semibold">👥 ${course.targetRoles.join(', ')}</span>
                         </div>
                         <h4 class="text-base font-bold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="window.location.hash='course-${course.id}'">${courseName}</h4>
                         <p class="text-xs text-slate-500">⏱ ${course.duration}</p>
@@ -1024,6 +1033,7 @@ function renderCourse(container, courseId) {
                         <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-mono font-bold">${course.id}</span>
                         <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-semibold">${course.category}</span>
                         <span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold">📝 Assessment Required</span>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold">👥 Roles: ${course.targetRoles.join(', ')}</span>
                     </div>
                     <h1 class="text-2xl md:text-3xl font-extrabold text-slate-800 mb-2">${courseName}</h1>
                     <p class="text-xs text-slate-500">⏱ Duration: ${course.duration}</p>
@@ -1611,7 +1621,7 @@ function renderCatalog(container) {
                 <div>
                     <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-4">
                         <span>⏱ ${c.duration}</span>
-                        <span>👥 ${c.targetRoles.join(', ')}</span>
+                        <span class="text-indigo-600 font-semibold">👥 ${c.targetRoles.join(', ')}</span>
                         <span class="text-amber-600 font-bold">📝 Assessment</span>
                     </div>
                     <div class="flex items-center justify-end space-x-2 pt-2 border-t border-slate-100">
@@ -1655,8 +1665,8 @@ window.previewCourseContent = (courseId) => {
         }
         course.content.forEach((sec, idx) => {
             contentHtml += `
-                <div class="mb-4">
-                    <h4 class="font-bold text-slate-800 text-sm mb-1">${idx+1}. ${sec.title}</h4>
+                <div class="mb-6">
+                    <h4 class="font-bold text-slate-800 text-sm mb-1.5">${idx+1}. ${sec.title}</h4>
                     <div class="text-xs text-slate-600 leading-relaxed">${formatRichContent(sec.body)}</div>
                 </div>
             `;
@@ -1665,7 +1675,7 @@ window.previewCourseContent = (courseId) => {
         contentHtml += `<p class="text-xs text-slate-600">${course.description}</p>`;
     }
     
-    UI.showModal(`Course Material: ${course.name}`, `<div class="space-y-4 max-h-[70vh] overflow-y-auto">${contentHtml}</div>`, null, '', false);
+    UI.showModal(`Course Material: ${course.name}`, `<div class="space-y-4 max-h-[75vh] overflow-y-auto pr-2">${contentHtml}</div>`, null, '', false, 'max-w-4xl');
 };
 
 window.openCourseModal = (id = null) => {
@@ -1754,137 +1764,300 @@ window.deleteCourse = (id) => {
     }
 };
 
-// 3. Work Instructions
+// 3. Work Instructions (Redesigned Enterprise Document Center)
 function renderWorkInstructions(container) {
     const wis = DataAPI.getWIs();
     
+    const isoBadges = [
+        { code: 'ISO 27001', label: 'ISMS Security', color: 'bg-blue-50 text-blue-700 border-blue-200' },
+        { code: 'ISO 9001', label: 'QMS Quality', color: 'bg-emerald-50 text-emerald-700 border-emerald-200' },
+        { code: 'ISO 22301', label: 'BCMS Disaster Recovery', color: 'bg-amber-50 text-amber-700 border-amber-200' },
+        { code: 'ISO 14001', label: 'EMS Environment', color: 'bg-purple-50 text-purple-700 border-purple-200' }
+    ];
+
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
-            <div>
-                <h3 class="font-bold text-slate-800 text-lg">Standard Work Instructions (${wis.length} SOP Documents)</h3>
-                <p class="text-xs text-slate-400 mt-0.5">ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified Operational Procedures</p>
-            </div>
-            <button onclick="openWIModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
-                <span>+</span> Add Work Instruction
-            </button>
-        </div>
-        
-        <div class="space-y-4">
-            ${wis.map(wi => `
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
-                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
-                        <div class="flex items-center space-x-3">
-                            <span class="font-mono text-xs font-bold px-2.5 py-1 bg-slate-100 text-slate-700 rounded-lg">${wi.id}</span>
-                            <div>
-                                <h4 class="font-bold text-slate-800 text-base hover:text-blue-600 cursor-pointer" onclick="viewWIDetail('${wi.id}')">${wi.title}</h4>
-                                <p class="text-xs text-slate-400 mt-0.5">${wi.section} • Ver: ${wi.version} • Effective: ${wi.effectiveDate}</p>
-                            </div>
+        <div class="space-y-6 animate-fade-in-up">
+            <!-- Header with ISO Overview -->
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-6 md:p-8">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                    <div>
+                        <div class="flex items-center space-x-3 mb-2">
+                            <span class="px-3 py-1 bg-slate-900 text-white rounded-xl text-xs font-mono font-bold">CONTROLLED SOPs</span>
+                            <span class="text-xs font-semibold text-slate-400">AEON System Enabler (SYE)</span>
                         </div>
-                        <div class="flex items-center space-x-2">
-                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-lg border border-emerald-100">Effective</span>
-                            <button onclick="viewWIDetail('${wi.id}')" class="rounded-xl px-3.5 py-1.5 bg-blue-50 text-blue-700 text-xs font-bold hover:bg-blue-100 transition">View SOP</button>
-                            <button onclick="openWIModal('${wi.id}')" class="text-xs font-bold text-slate-600 hover:text-slate-900 px-2 py-1">Edit</button>
-                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800">Standard Work Instructions</h3>
+                        <p class="text-xs text-slate-500 mt-1 max-w-2xl leading-relaxed">
+                            Official operational procedures, change management protocols, disaster recovery runbooks, and ISO standard compliance runbooks.
+                        </p>
                     </div>
-                    <p class="text-xs text-slate-600 leading-relaxed mb-4">${wi.objective}</p>
-                    <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400 bg-slate-50 p-3 rounded-xl">
-                        <span>Prepared: ${wi.preparedBy}</span>
-                        <span>Reviewed: ${wi.reviewedBy}</span>
-                        <span class="font-semibold text-slate-600">Approved: ${wi.approvedBy}</span>
+                    <div class="flex items-center gap-3">
+                        <button onclick="openWIModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+                            <span>+</span> Add Work Instruction
+                        </button>
                     </div>
                 </div>
-            `).join('')}
+                
+                <!-- ISO Standard Pills -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-6 pt-6 border-t border-slate-100">
+                    ${isoBadges.map(b => `
+                        <div class="p-3 rounded-2xl border ${b.color} flex items-center justify-between">
+                            <div>
+                                <span class="font-bold text-xs block">${b.code}</span>
+                                <span class="text-[10px] opacity-80">${b.label}</span>
+                            </div>
+                            <span class="text-xs font-bold px-2 py-0.5 bg-white rounded-lg shadow-2xs">Active</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- Filter & Search Bar -->
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                <div class="flex flex-wrap items-center gap-2 w-full sm:w-auto">
+                    <button class="wi-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 text-white transition" data-sec="All">All SOPs (${wis.length})</button>
+                    ${SECTIONS.map(s => `
+                        <button class="wi-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition" data-sec="${s}">${s.replace('Platform','').replace('Systems','').trim()}</button>
+                    `).join('')}
+                </div>
+                <div class="w-full sm:w-64">
+                    <input type="text" id="wi-search" placeholder="Search SOP title, doc no, owner..." class="w-full rounded-xl border border-slate-200 px-3.5 py-2 text-xs focus:ring-2 focus:ring-blue-500 outline-none bg-white shadow-2xs">
+                </div>
+            </div>
+            
+            <!-- Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="wi-grid"></div>
         </div>
     `;
+
+    const renderWIGrid = (secFilter = 'All', searchKw = '') => {
+        const grid = document.getElementById('wi-grid');
+        let filtered = wis;
+        if (secFilter !== 'All') {
+            filtered = filtered.filter(w => w.section === secFilter || w.section === 'All');
+        }
+        if (searchKw) {
+            const kw = searchKw.toLowerCase();
+            filtered = filtered.filter(w => w.title.toLowerCase().includes(kw) || w.id.toLowerCase().includes(kw) || (w.preparedBy && w.preparedBy.toLowerCase().includes(kw)));
+        }
+
+        grid.innerHTML = filtered.map(wi => `
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/80 p-6 flex flex-col justify-between hover:shadow-md hover:border-blue-300 transition duration-200">
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center space-x-2">
+                            <span class="font-mono text-xs font-extrabold px-3 py-1 bg-blue-50 text-blue-700 rounded-xl border border-blue-100">${wi.id}</span>
+                            <span class="text-[10px] font-bold px-2 py-0.5 bg-slate-100 text-slate-600 rounded-md">v${wi.version}</span>
+                        </div>
+                        <span class="inline-flex items-center rounded-full bg-emerald-50 px-2.5 py-0.5 text-[10px] font-bold text-emerald-700 border border-emerald-100">
+                            <span class="mr-1 h-1.5 w-1.5 rounded-full bg-emerald-500"></span>EFFECTIVE
+                        </span>
+                    </div>
+
+                    <h4 class="font-bold text-slate-800 text-base mb-2 hover:text-blue-600 cursor-pointer" onclick="viewWIDetail('${wi.id}')">${wi.title}</h4>
+                    <p class="text-xs text-slate-500 line-clamp-2 mb-4 leading-relaxed">${wi.objective}</p>
+
+                    <div class="flex flex-wrap gap-2 text-[11px] font-medium text-slate-500 mb-4">
+                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">🏢 ${wi.section}</span>
+                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">📅 ${wi.effectiveDate}</span>
+                        <span class="px-2.5 py-1 bg-slate-50 rounded-lg border border-slate-100">📋 ${wi.procedure ? wi.procedure.length : 0} Steps</span>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                    <div class="text-[11px] text-slate-400">
+                        <span>Lead Approver: <strong class="text-slate-700 font-semibold">${wi.approvedBy}</strong></span>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="viewWIDetail('${wi.id}')" class="rounded-xl px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold transition shadow-2xs">
+                            View Full SOP →
+                        </button>
+                        <button onclick="openWIModal('${wi.id}')" class="text-xs font-bold text-slate-500 hover:text-slate-800 px-2 py-1">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div class="col-span-2 p-12 text-center text-slate-400 bg-white rounded-3xl border border-slate-100">No work instructions match the selected criteria.</div>`;
+        }
+    };
+
+    let currentSec = 'All';
+    document.querySelectorAll('.wi-filter-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            document.querySelectorAll('.wi-filter-btn').forEach(b => {
+                b.classList.remove('active', 'bg-slate-800', 'text-white');
+                b.classList.add('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            });
+            e.target.classList.add('active', 'bg-slate-800', 'text-white');
+            e.target.classList.remove('bg-white', 'text-slate-600', 'border', 'border-slate-200');
+            currentSec = e.target.dataset.sec;
+            renderWIGrid(currentSec, document.getElementById('wi-search').value);
+        });
+    });
+
+    document.getElementById('wi-search').addEventListener('input', (e) => {
+        renderWIGrid(currentSec, e.target.value);
+    });
+
+    renderWIGrid('All');
 }
 
+// Full Enterprise SOP Modal View
 window.viewWIDetail = (id) => {
     const wi = DataAPI.getWIs().find(w => w.id === id);
     if (!wi) return;
     
     let html = `
-        <div class="space-y-6 max-h-[75vh] overflow-y-auto pr-2">
-            <div class="p-5 bg-slate-50 rounded-2xl border border-slate-200">
-                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
-                    <span class="font-mono text-xs font-bold px-3 py-1 bg-blue-600 text-white rounded-lg">${wi.id}</span>
-                    <span class="text-xs font-semibold px-2.5 py-0.5 bg-slate-200 text-slate-700 rounded">Version ${wi.version}</span>
+        <div class="space-y-8 max-h-[82vh] overflow-y-auto pr-3 font-sans">
+            <!-- SOP Official Header Box -->
+            <div class="border-2 border-slate-800 rounded-3xl p-6 bg-white shadow-sm relative overflow-hidden">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-slate-200 pb-4 mb-4 gap-4">
+                    <div class="flex items-center space-x-3">
+                        <img src="favicon.svg" alt="AEON" class="w-10 h-10 rounded-xl shadow-2xs object-cover border border-slate-200">
+                        <div>
+                            <h4 class="font-extrabold text-slate-900 text-sm tracking-tight uppercase">AEON System Development Department</h4>
+                            <p class="text-xs text-blue-700 font-bold">System Enabler (SYE) Division • Controlled Document</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <span class="font-mono text-xs font-bold px-3 py-1 bg-slate-900 text-white rounded-lg">${wi.id}</span>
+                        <p class="text-[10px] text-slate-400 font-mono mt-1">CONFIDENTIAL - INTERNAL ONLY</p>
+                    </div>
                 </div>
-                <h3 class="font-extrabold text-slate-800 text-lg mb-2">${wi.title}</h3>
-                <p class="text-xs text-slate-500 mb-4">${wi.section}</p>
-                
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs border-t border-slate-200 pt-3">
-                    <div><span class="text-slate-400 block text-[10px] uppercase">Effective Date</span><span class="font-bold text-slate-700">${wi.effectiveDate}</span></div>
-                    <div><span class="text-slate-400 block text-[10px] uppercase">Prepared By</span><span class="font-bold text-slate-700">${wi.preparedBy}</span></div>
-                    <div><span class="text-slate-400 block text-[10px] uppercase">Reviewed By</span><span class="font-bold text-slate-700">${wi.reviewedBy}</span></div>
-                    <div><span class="text-slate-400 block text-[10px] uppercase">Approved By</span><span class="font-bold text-blue-700">${wi.approvedBy}</span></div>
+
+                <h2 class="text-2xl font-black text-slate-900 mb-2">${wi.title}</h2>
+                <p class="text-xs text-slate-500 font-medium mb-5">${wi.section} Platform Standard Operating Procedure</p>
+
+                <!-- Metadata Matrix Table -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs">
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Version Status</span>
+                        <span class="font-bold text-emerald-700">v${wi.version} (Active)</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Effective Date</span>
+                        <span class="font-bold text-slate-800">${wi.effectiveDate}</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Governance Standard</span>
+                        <span class="font-bold text-blue-700">ISO 27001 / ISO 9001</span>
+                    </div>
+                    <div>
+                        <span class="text-[10px] uppercase font-bold text-slate-400 block">Document Owner</span>
+                        <span class="font-bold text-slate-800">${wi.preparedBy}</span>
+                    </div>
+                </div>
+
+                <!-- Sign-off Matrix -->
+                <div class="grid grid-cols-3 gap-3 mt-4 pt-4 border-t border-slate-200 text-xs">
+                    <div class="p-2.5 rounded-xl bg-white border border-slate-200">
+                        <span class="text-[10px] uppercase text-slate-400 font-bold block">1. Prepared By</span>
+                        <strong class="text-slate-800 text-xs block mt-0.5">${wi.preparedBy}</strong>
+                        <span class="text-[10px] text-slate-400">Author / Lead Engineer</span>
+                    </div>
+                    <div class="p-2.5 rounded-xl bg-white border border-slate-200">
+                        <span class="text-[10px] uppercase text-slate-400 font-bold block">2. Reviewed By</span>
+                        <strong class="text-slate-800 text-xs block mt-0.5">${wi.reviewedBy}</strong>
+                        <span class="text-[10px] text-slate-400">Section Platform Lead</span>
+                    </div>
+                    <div class="p-2.5 rounded-xl bg-blue-50 border border-blue-200">
+                        <span class="text-[10px] uppercase text-blue-600 font-bold block">3. Approved By</span>
+                        <strong class="text-blue-900 text-xs block mt-0.5">${wi.approvedBy}</strong>
+                        <span class="text-[10px] text-blue-700">Head of SYE Division</span>
+                    </div>
                 </div>
             </div>
 
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1. Objective & Scope</h4>
-                <div class="bg-white p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2">
-                    <p><strong>Objective:</strong> ${wi.objective}</p>
-                    <p><strong>Scope:</strong> ${wi.scope || 'All System Enabler (SYE) engineering environments and services.'}</p>
+            <!-- Section 1: Objective & Scope -->
+            <div class="space-y-3">
+                <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">1</span>
+                    Objective & Operational Scope
+                </h3>
+                <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-3 text-xs leading-relaxed text-slate-700">
+                    <p><strong>Purpose:</strong> ${wi.objective}</p>
+                    <p><strong>Applicable Scope:</strong> ${wi.scope || 'All System Enabler (SYE) on-premise environments, VMware Tanzu K8s clusters, and RHEL VM infrastructure.'}</p>
                 </div>
             </div>
 
+            <!-- Section 2: Prerequisites -->
             ${wi.prerequisites && wi.prerequisites.length ? `
-                <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">2. Prerequisites & Compliance Controls</h4>
-                    <div class="bg-amber-50/40 p-4 rounded-xl border border-amber-200/60 text-xs text-slate-700">
-                        <ul class="list-disc pl-4 space-y-1">
+                <div class="space-y-3">
+                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">2</span>
+                        Prerequisites & Security Controls
+                    </h3>
+                    <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-200 text-xs text-slate-700">
+                        <ul class="list-disc pl-5 space-y-1.5">
                             ${wi.prerequisites.map(p => `<li>${p}</li>`).join('')}
                         </ul>
                     </div>
                 </div>
             ` : ''}
 
-            <div>
-                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">3. Standard Operating Procedure Steps</h4>
-                <div class="space-y-3">
+            <!-- Section 3: Standard Operating Procedure (Interactive Stepper) -->
+            <div class="space-y-4">
+                <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                    <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs">3</span>
+                    Step-by-Step Execution Protocol
+                </h3>
+                <div class="space-y-4">
                     ${wi.procedure.map((step, idx) => `
-                        <div class="p-4 rounded-xl border border-slate-200 bg-white">
-                            <div class="flex items-center space-x-2 mb-1.5">
-                                <span class="w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center font-bold">${step.step || idx+1}</span>
-                                <h5 class="font-bold text-slate-800 text-xs">${step.title}</h5>
+                        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-2xs hover:border-blue-400 transition">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <span class="w-7 h-7 rounded-xl bg-slate-900 text-white text-xs font-bold flex items-center justify-center font-mono">${step.step || idx + 1}</span>
+                                <h4 class="font-extrabold text-slate-900 text-sm">${step.title}</h4>
                             </div>
-                            <div class="text-xs text-slate-600 pl-7 leading-relaxed">${formatRichContent(step.description)}</div>
+                            <div class="text-xs text-slate-700 pl-10 leading-relaxed">
+                                ${formatRichContent(step.description)}
+                            </div>
                         </div>
                     `).join('')}
                 </div>
             </div>
 
+            <!-- Section 4: Rollback & Contingency -->
             ${wi.rollbackProcedure ? `
-                <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-rose-500 mb-2">4. Contingency & Rollback Protocol</h4>
-                    <div class="bg-rose-50/40 p-4 rounded-xl border border-rose-200 text-xs text-slate-700 leading-relaxed">
+                <div class="space-y-3">
+                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-rose-600 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-lg bg-rose-600 text-white flex items-center justify-center text-xs">4</span>
+                        Contingency & Emergency Rollback Protocol
+                    </h3>
+                    <div class="bg-rose-50/70 p-5 rounded-2xl border border-rose-200 text-xs text-slate-800 leading-relaxed">
                         ${formatRichContent(wi.rollbackProcedure)}
                     </div>
                 </div>
             ` : ''}
 
+            <!-- Section 5: Revision History -->
             ${wi.revisionHistory && wi.revisionHistory.length ? `
-                <div>
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">5. Revision History & Approvals</h4>
-                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                <div class="space-y-3">
+                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+                        <span class="w-6 h-6 rounded-lg bg-slate-800 text-white flex items-center justify-center text-xs">5</span>
+                        Document Control & Revision History
+                    </h3>
+                    <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                         <table class="w-full text-left text-xs text-slate-600">
-                            <thead class="bg-slate-50 font-bold text-slate-500">
+                            <thead class="bg-slate-50 font-bold text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
                                 <tr>
-                                    <th class="p-2.5">Version</th>
-                                    <th class="p-2.5">Date</th>
-                                    <th class="p-2.5">Author</th>
-                                    <th class="p-2.5">Approver</th>
-                                    <th class="p-2.5">Summary of Changes</th>
+                                    <th class="p-3">Version</th>
+                                    <th class="p-3">Date</th>
+                                    <th class="p-3">Author</th>
+                                    <th class="p-3">Approver</th>
+                                    <th class="p-3">Summary of Changes</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-100">
                                 ${wi.revisionHistory.map(r => `
                                     <tr class="hover:bg-slate-50">
-                                        <td class="p-2.5 font-bold">${r.version}</td>
-                                        <td class="p-2.5">${r.date}</td>
-                                        <td class="p-2.5">${r.author}</td>
-                                        <td class="p-2.5 font-semibold text-blue-700">${r.approver || 'Akkharasaran S.'}</td>
-                                        <td class="p-2.5">${r.changes}</td>
+                                        <td class="p-3 font-bold font-mono text-blue-600">${r.version}</td>
+                                        <td class="p-3 whitespace-nowrap">${r.date}</td>
+                                        <td class="p-3 font-medium">${r.author}</td>
+                                        <td class="p-3 font-semibold text-blue-700">${r.approver || 'Akkharasaran S.'}</td>
+                                        <td class="p-3 text-slate-700">${r.changes}</td>
                                     </tr>
                                 `).join('')}
                             </tbody>
@@ -1895,7 +2068,7 @@ window.viewWIDetail = (id) => {
         </div>
     `;
     
-    UI.showModal(`Work Instruction: ${wi.id}`, html, null, '', false);
+    UI.showModal(`Standard Operating Procedure: ${wi.id}`, html, null, '', false, 'max-w-4xl');
 };
 
 window.openWIModal = (id = null) => {
@@ -2048,8 +2221,8 @@ function renderEmployees(container) {
                     <td class="px-5 py-3.5">${UI.renderProgressBar(stats.percent)}</td>
                     <td class="px-5 py-3.5">${UI.renderBadge(emp.status)}</td>
                     <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
-                        <button onclick="viewEmployeeDetail('${emp.id}')" class="text-slate-600 hover:text-slate-900 text-xs font-bold">Profile</button>
-                        <button onclick="openEmpModal('${emp.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Edit</button>
+                        <button onclick="viewEmployeeDetail('${emp.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Profile</button>
+                        <button onclick="openEmpModal('${emp.id}')" class="text-slate-600 hover:text-slate-900 text-xs font-bold">Edit</button>
                         <button onclick="deleteEmp('${emp.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-bold">Delete</button>
                     </td>
                 </tr>
@@ -2165,6 +2338,7 @@ window.deleteEmp = (id) => {
     }
 };
 
+// Fixed & Redesigned Engineer Training Profile (Strictly displays ONLY the selected employee)
 window.viewEmployeeDetail = (id) => {
     const emp = DataAPI.getEmployees().find(e => e.id === id);
     if(!emp) return;
@@ -2174,41 +2348,109 @@ window.viewEmployeeDetail = (id) => {
     const courses = DataAPI.getCourses();
     records.sort((a,b) => new Date(b.trainingDate) - new Date(a.trainingDate));
     
+    const completedRecordMap = new Map(records.filter(r => r.status === 'Completed').map(r => [r.courseId, r]));
+    const avgScore = records.filter(r => r.score !== null).length ? Math.round(records.filter(r => r.score !== null).reduce((a,c) => a + c.score, 0) / records.filter(r => r.score !== null).length) : 0;
+
     let html = `
-        <div class="space-y-6">
-            <div class="flex justify-between items-start">
+        <div class="space-y-6 max-h-[82vh] overflow-y-auto pr-2">
+            <!-- Profile Header Card -->
+            <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center space-x-4">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl shrink-0">${emp.name.charAt(0)}</div>
+                    <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-extrabold text-2xl shadow-sm shrink-0">${emp.name.charAt(0)}</div>
                     <div>
-                        <h2 class="text-xl font-bold text-slate-800">${emp.name} <span class="text-xs font-mono text-slate-400 ml-2">(${emp.id})</span></h2>
-                        <p class="text-xs text-slate-500 mt-1">${emp.role} • ${emp.section} • Joined ${emp.joinDate}</p>
-                        <div class="mt-1.5">${UI.renderEmploymentBadge(emp)}</div>
+                        <div class="flex items-center gap-2">
+                            <h2 class="text-xl font-extrabold text-slate-900">${emp.name}</h2>
+                            <span class="font-mono text-xs font-bold px-2.5 py-0.5 bg-blue-100 text-blue-800 rounded-lg">${emp.id}</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mt-1 font-medium">${emp.role} • ${emp.section} • Joined ${emp.joinDate}</p>
+                        <div class="flex flex-wrap items-center gap-2 mt-2">
+                            ${UI.renderEmploymentBadge(emp)}
+                            ${UI.renderBadge(emp.status)}
+                        </div>
                     </div>
                 </div>
-                ${UI.renderBadge(emp.status)}
-            </div>
-            
-            <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
-                <div class="flex justify-between items-center mb-2">
-                    <h4 class="text-xs font-bold text-slate-700 uppercase">Onboarding Curriculum Completion</h4>
-                    <span class="text-xs font-bold text-blue-600">${stats.completed} / ${stats.required} Required</span>
+
+                <div class="w-full md:w-64 bg-white p-4 rounded-2xl border border-slate-200/80 shadow-2xs">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-[10px] font-extrabold text-slate-400 uppercase tracking-wider">Curriculum Progress</span>
+                        <span class="text-xs font-extrabold text-blue-600">${stats.completed} / ${stats.required} Done</span>
+                    </div>
+                    ${UI.renderProgressBar(stats.percent)}
+                    <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 font-medium">
+                        <span>Avg Score: <strong class="text-emerald-600 font-bold">${avgScore}%</strong></span>
+                        <span>${stats.percent}% Certified</span>
+                    </div>
                 </div>
-                ${UI.renderProgressBar(stats.percent)}
+            </div>
+
+            <!-- Profile Tabs -->
+            <div class="flex border-b border-slate-200 gap-4" id="profile-tabs">
+                <button class="profile-tab-btn active pb-3 text-xs font-bold text-blue-600 border-b-2 border-blue-600 transition" onclick="switchProfileTab('assigned')">
+                    🎯 Assigned Curriculum (${stats.requiredCourses.length})
+                </button>
+                <button class="profile-tab-btn pb-3 text-xs font-bold text-slate-400 hover:text-slate-700 transition" onclick="switchProfileTab('records')">
+                    📜 Training &amp; Assessment Log (${records.length})
+                </button>
             </div>
             
-            <div>
-                <h4 class="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">Training & Assessment History (${records.length})</h4>
-                ${records.length ? `
-                <div class="border border-slate-200 rounded-2xl overflow-hidden">
+            <!-- Tab 1: Assigned Curriculum -->
+            <div id="profile-tab-assigned" class="space-y-3">
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
                     <table class="w-full text-left text-xs text-slate-600">
-                        <thead class="bg-slate-50 font-bold text-slate-500">
+                        <thead class="bg-slate-50 font-bold text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
                             <tr>
-                                <th class="px-4 py-2.5">Date</th>
-                                <th class="px-4 py-2.5">Course</th>
-                                <th class="px-4 py-2.5">Trainer</th>
-                                <th class="px-4 py-2.5">Score</th>
-                                <th class="px-4 py-2.5">Status</th>
-                                <th class="px-4 py-2.5 text-right">Assessment</th>
+                                <th class="px-4 py-3">Course Code &amp; Name</th>
+                                <th class="px-4 py-3">Category</th>
+                                <th class="px-4 py-3">Status</th>
+                                <th class="px-4 py-3">Assessment Score</th>
+                                <th class="px-4 py-3 text-right">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            ${stats.requiredCourses.map(c => {
+                                const rec = completedRecordMap.get(c.id);
+                                const isDone = !!rec;
+                                return `
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="px-4 py-3">
+                                            <span class="font-mono font-bold text-slate-800 mr-2">[${c.id}]</span>
+                                            <span class="font-semibold text-slate-800">${c.name}</span>
+                                        </td>
+                                        <td class="px-4 py-3"><span class="px-2 py-0.5 bg-slate-100 rounded text-[10px] font-semibold">${c.category}</span></td>
+                                        <td class="px-4 py-3">${isDone ? '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-800">✅ Completed</span>' : '<span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-500">Pending</span>'}</td>
+                                        <td class="px-4 py-3 font-bold ${isDone && rec.score >= 80 ? 'text-emerald-600' : 'text-slate-500'}">
+                                            ${isDone && rec.score !== null ? `${rec.score}%` : '-'}
+                                        </td>
+                                        <td class="px-4 py-3 text-right">
+                                            ${isDone ? `
+                                                <button onclick="viewLearnerQuizReview('${emp.id}', '${c.id}')" class="text-blue-600 hover:text-blue-800 font-bold text-xs">
+                                                    Review Answers
+                                                </button>
+                                            ` : `
+                                                <span class="text-slate-400 text-xs">-</span>
+                                            `}
+                                        </td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tab 2: Full Log -->
+            <div id="profile-tab-records" class="hidden space-y-3">
+                ${records.length ? `
+                <div class="border border-slate-200 rounded-2xl overflow-hidden bg-white">
+                    <table class="w-full text-left text-xs text-slate-600">
+                        <thead class="bg-slate-50 font-bold text-slate-500 uppercase text-[10px] tracking-wider border-b border-slate-200">
+                            <tr>
+                                <th class="px-4 py-3">Date</th>
+                                <th class="px-4 py-3">Course</th>
+                                <th class="px-4 py-3">Trainer</th>
+                                <th class="px-4 py-3">Score</th>
+                                <th class="px-4 py-3">Status</th>
+                                <th class="px-4 py-3 text-right">Action</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100">
@@ -2216,13 +2458,13 @@ window.viewEmployeeDetail = (id) => {
                                 const c = courses.find(c => c.id === r.courseId);
                                 return `
                                     <tr class="hover:bg-slate-50">
-                                        <td class="px-4 py-2.5 whitespace-nowrap">${r.trainingDate}</td>
-                                        <td class="px-4 py-2.5 font-semibold text-slate-800">${c ? c.name : r.courseId}</td>
-                                        <td class="px-4 py-2.5 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
-                                        <td class="px-4 py-2.5 font-bold">${r.score !== null ? `${r.score}%` : '-'}</td>
-                                        <td class="px-4 py-2.5">${UI.renderBadge(r.status)}</td>
-                                        <td class="px-4 py-2.5 text-right">
-                                            <button onclick="viewLearnerQuizReview('${emp.id}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 font-bold">
+                                        <td class="px-4 py-3 whitespace-nowrap font-mono">${r.trainingDate}</td>
+                                        <td class="px-4 py-3 font-semibold text-slate-800">${c ? c.name : r.courseId}</td>
+                                        <td class="px-4 py-3 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
+                                        <td class="px-4 py-3 font-bold ${r.score >= 80 ? 'text-emerald-600' : 'text-slate-600'}">${r.score !== null ? `${r.score}%` : '-'}</td>
+                                        <td class="px-4 py-3">${UI.renderBadge(r.status)}</td>
+                                        <td class="px-4 py-3 text-right">
+                                            <button onclick="viewLearnerQuizReview('${emp.id}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 font-bold text-xs">
                                                 Review Answers
                                             </button>
                                         </td>
@@ -2231,11 +2473,29 @@ window.viewEmployeeDetail = (id) => {
                             }).join('')}
                         </tbody>
                     </table>
-                </div>` : `<p class="text-xs text-slate-400 italic">No training records found for this engineer.</p>`}
+                </div>` : `<p class="text-xs text-slate-400 italic p-6 text-center bg-slate-50 rounded-2xl">No training records found for this engineer.</p>`}
             </div>
         </div>
     `;
-    UI.showModal('Engineer Training Profile', html, null, '', false);
+    UI.showModal(`Engineer Profile: ${emp.name} (${emp.id})`, html, null, '', false, 'max-w-4xl');
+};
+
+window.switchProfileTab = (tab) => {
+    const tabAssigned = document.getElementById('profile-tab-assigned');
+    const tabRecords = document.getElementById('profile-tab-records');
+    const btns = document.querySelectorAll('.profile-tab-btn');
+    
+    if (tab === 'assigned') {
+        tabAssigned.classList.remove('hidden');
+        tabRecords.classList.add('hidden');
+        btns[0].className = 'profile-tab-btn active pb-3 text-xs font-bold text-blue-600 border-b-2 border-blue-600 transition';
+        btns[1].className = 'profile-tab-btn pb-3 text-xs font-bold text-slate-400 hover:text-slate-700 transition';
+    } else {
+        tabAssigned.classList.add('hidden');
+        tabRecords.classList.remove('hidden');
+        btns[0].className = 'profile-tab-btn pb-3 text-xs font-bold text-slate-400 hover:text-slate-700 transition';
+        btns[1].className = 'profile-tab-btn active pb-3 text-xs font-bold text-blue-600 border-b-2 border-blue-600 transition';
+    }
 };
 
 // 5. Training Records
@@ -2273,7 +2533,7 @@ function renderRecords(container) {
                             const course = courses.find(c => c.id === r.courseId) || { name: r.courseId };
                             return `
                                 <tr class="hover:bg-slate-50 transition">
-                                    <td class="px-5 py-3.5 whitespace-nowrap">${r.trainingDate}</td>
+                                    <td class="px-5 py-3.5 whitespace-nowrap font-mono">${r.trainingDate}</td>
                                     <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${r.employeeId}')">${emp.name}</td>
                                     <td class="px-5 py-3.5 text-slate-700">${course.name}</td>
                                     <td class="px-5 py-3.5 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
@@ -2438,7 +2698,7 @@ function renderAssessments(container) {
                                 const quiz = quizzes.find(q => q.id === res.quizId) || { title: res.quizId };
                                 return `
                                     <tr class="hover:bg-slate-50 transition">
-                                        <td class="px-5 py-3.5 whitespace-nowrap">${res.date}</td>
+                                        <td class="px-5 py-3.5 whitespace-nowrap font-mono">${res.date}</td>
                                         <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${res.employeeId}')">${emp.name}</td>
                                         <td class="px-5 py-3.5 font-medium text-slate-700">${quiz.title}</td>
                                         <td class="px-5 py-3.5 font-extrabold ${res.passed ? 'text-emerald-600' : 'text-rose-600'}">${res.score}%</td>
@@ -2480,12 +2740,6 @@ function renderAssessments(container) {
 
 // 7. Reports
 function renderReports(container) {
-    const emps = DataAPI.getEmployees();
-    const courses = DataAPI.getCourses();
-    const records = DataAPI.getRecords();
-    const wis = DataAPI.getWIs();
-    const results = DataAPI.getQuizResults();
-
     container.innerHTML = `
         <div class="mb-6 animate-fade-in-up">
             <h3 class="font-bold text-slate-800 text-lg">Audit & Compliance Reports</h3>

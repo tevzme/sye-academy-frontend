@@ -1,4 +1,4 @@
-// SYE Academy Master Seed Data
+// SYE Academy Master Seed Data (v2.5.0)
 // System Enabler (SYE) Division • AEON System Development Department
 // Sermmit Tower 14th Floor • ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
@@ -55,7 +55,7 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "SYE-0005",
-      "name": "Architeya B.",
+      "name": "Athitaya B.",
       "role": "Developer",
       "section": "API & Integration Platform",
       "unit": "API Engineer",
@@ -63,7 +63,7 @@ window.SYE_SAMPLE_DATA = {
       "vendor": "OS-SYE",
       "joinDate": "2024-06-15",
       "status": "Active",
-      "email": "architeya.b@aeon.co.th"
+      "email": "athitaya.b@aeon.co.th"
     },
     {
       "id": "SYE-0006",
@@ -151,7 +151,7 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "SYE-0013",
-      "name": "Chinawat K.",
+      "name": "Chirawat K.",
       "role": "Developer",
       "section": "Customer Experience Systems",
       "unit": "Experience Development (EXD) & Governance",
@@ -159,7 +159,7 @@ window.SYE_SAMPLE_DATA = {
       "vendor": "OS-ECM",
       "joinDate": "2025-05-01",
       "status": "Active",
-      "email": "chinawat.k@aeon.co.th"
+      "email": "chirawat.k@aeon.co.th"
     },
     {
       "id": "SYE-0014",
@@ -310,7 +310,7 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Overview of AEON 4 Integrated ISO Standards",
-          "body": "All engineering systems, processes, and infrastructure in the SYE Division operate under **4 International Organization for Standardization (ISO) Certifications**:\n\n| ISO Standard | Domain | Core Focus in SYE |\n|---|---|---|\n| **ISO/IEC 27001** | Information Security Management (ISMS) | Zero-Trust access, data encryption, secrets protection, SOC incident reporting |\n| **ISO 9001** | Quality Management System (QMS) | SDLC quality gates, code reviews, automated unit testing, documentation traceability |\n| **ISO 14001** | Environmental Management System (EMS) | Paperless digital engineering, energy-efficient server consolidation |\n| **ISO 22301** | Business Continuity Management (BCMS) | Disaster Recovery (DR Site), BCP failover drills, RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-blue-400 uppercase tracking-wider\">AEON Integrated ISO Governance Framework</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-blue-900/50 text-blue-300 font-semibold border border-blue-700/50\">ISO 27001 • 9001 • 22301 • 14001</span>\n    </div>\n    <div class=\"grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs\">\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-blue-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-base\">🛡️</div>\n            <strong class=\"block text-blue-300 font-bold mb-1\">ISO 27001 (ISMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Access Control, Encryption & Data Security</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-emerald-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base\">📊</div>\n            <strong class=\"block text-emerald-300 font-bold mb-1\">ISO 9001 (QMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Quality Gates, Testing & Peer Reviews</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-amber-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-base\">🔄</div>\n            <strong class=\"block text-amber-300 font-bold mb-1\">ISO 22301 (BCMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Disaster Recovery (DR) & Business Continuity</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-purple-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-base\">🌱</div>\n            <strong class=\"block text-purple-300 font-bold mb-1\">ISO 14001 (EMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Green Compute & Resource Efficiency</p>\n        </div>\n    </div>\n    <div class=\"mt-4 pt-3 border-t border-slate-800/80 text-center\">\n        <span class=\"text-[11px] text-slate-400 font-medium\">PDCA Cycle: <span class=\"text-blue-400 font-bold\">Plan</span> (Risk Register) &rarr; <span class=\"text-emerald-400 font-bold\">Do</span> (SOP Implementation) &rarr; <span class=\"text-amber-400 font-bold\">Check</span> (Internal Audit) &rarr; <span class=\"text-purple-400 font-bold\">Act</span> (Continuous Improvement)</span>\n    </div>\n</div>\n\n\nAll engineering systems, processes, and infrastructure in the SYE Division operate under **4 International Organization for Standardization (ISO) Certifications**:\n\n| ISO Standard | Domain | Core Focus in SYE |\n|---|---|---|\n| **ISO/IEC 27001** | Information Security Management (ISMS) | Zero-Trust access, data encryption, secrets protection, SOC incident reporting |\n| **ISO 9001** | Quality Management System (QMS) | SDLC quality gates, code reviews, automated unit testing, documentation traceability |\n| **ISO 14001** | Environmental Management System (EMS) | Paperless digital engineering, energy-efficient server consolidation |\n| **ISO 22301** | Business Continuity Management (BCMS) | Disaster Recovery (DR Site), BCP failover drills, RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "ISO 27001: Information Security & Zero-Trust Architecture",
@@ -495,7 +495,7 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "100% On-Premise Mandate (Strictly No Public Cloud)",
-          "body": "To comply with regulatory banking requirements, data sovereignty, and internal security mandates, **all SYE financial platforms operate 100% On-Premise**. Hosting production workloads on public cloud providers (AWS, GCP, Azure) is strictly prohibited.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### Enterprise Compute Layers:\n1. **Container Platform**: **VMware Tanzu Kubernetes (K8s)** running microservices in high-density container pods with automated load balancing and ingress controller routing.\n2. **Virtual Machines**: **Red Hat Enterprise Linux (RHEL)** is the strictly mandated operating system for all enterprise VMs. No unauthorized Linux distributions (e.g. Ubuntu, CentOS) or unmanaged OS instances are permitted."
+          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-emerald-400 uppercase tracking-wider\">100% On-Premise Multi-Tier Enterprise Architecture</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-emerald-900/50 text-emerald-300 font-semibold border border-emerald-700/50\">Primary DC (Sermmit) & DR Site</span>\n    </div>\n    <div class=\"space-y-3 text-xs\">\n        <div class=\"p-3 rounded-xl bg-slate-800/90 border border-slate-700 flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left\">\n            <div>\n                <strong class=\"text-blue-300 font-bold\">Tier 1: Edge & Ingress</strong>\n                <p class=\"text-[11px] text-slate-400\">F5 BIG-IP Load Balancer (SSL Offloading, WAF, DDoS Mitigation)</p>\n            </div>\n            <span class=\"px-2.5 py-1 rounded bg-blue-950 text-blue-300 text-[10px] font-mono font-bold\">Port 443 / 8080</span>\n        </div>\n        <div class=\"text-center text-slate-500 font-bold text-xs\">&darr; Enterprise Service Mesh &amp; Internal Load Balancing</div>\n        <div class=\"p-3 rounded-xl bg-slate-800/90 border border-emerald-700/50 flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left\">\n            <div>\n                <strong class=\"text-emerald-300 font-bold\">Tier 2: Compute & Container Orchestration</strong>\n                <p class=\"text-[11px] text-slate-400\">VMware Tanzu Kubernetes Grid (TKG Multi-Pod) + RedHat Enterprise Linux 9 VMs</p>\n            </div>\n            <span class=\"px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 text-[10px] font-mono font-bold\">Tanzu TKG + RHEL 9</span>\n        </div>\n        <div class=\"text-center text-slate-500 font-bold text-xs\">&darr; Dedicated Private VLAN (10.254.97.x)</div>\n        <div class=\"p-3 rounded-xl bg-slate-800/90 border border-amber-700/50 flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left\">\n            <div>\n                <strong class=\"text-amber-300 font-bold\">Tier 3: Enterprise Data Tier & Patroni HA</strong>\n                <p class=\"text-[11px] text-slate-400\">PostgreSQL 16 HA Cluster (Patroni / etcd) + Oracle RAC Database & SAN Storage</p>\n            </div>\n            <span class=\"px-2.5 py-1 rounded bg-amber-950 text-amber-300 text-[10px] font-mono font-bold\">RPO &lt; 15m • RTO &lt; 2h</span>\n        </div>\n    </div>\n</div>\n\n\nTo comply with regulatory banking requirements, data sovereignty, and internal security mandates, **all SYE financial platforms operate 100% On-Premise**. Hosting production workloads on public cloud providers (AWS, GCP, Azure) is strictly prohibited.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### Enterprise Compute Layers:\n1. **Container Platform**: **VMware Tanzu Kubernetes (K8s)** running microservices in high-density container pods with automated load balancing and ingress controller routing.\n2. **Virtual Machines**: **Red Hat Enterprise Linux (RHEL)** is the strictly mandated operating system for all enterprise VMs. No unauthorized Linux distributions (e.g. Ubuntu, CentOS) or unmanaged OS instances are permitted."
         },
         {
           "title": "Standard Application Stack: Golang Backend & Next.js Frontend",
@@ -600,7 +600,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Core skills for managing IT projects, including scope, schedule, and resource management.",
       "duration": "4 hours",
       "targetRoles": [
-        "PM"
+        "PM",
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -662,7 +663,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive risk governance framework for financial IT systems. Covers risk identification, qualitative/quantitative risk scoring (Impact vs Likelihood matrix), mitigation action plans, and regulatory compliance risk registers under ISO 9001.",
       "duration": "3 hours",
       "targetRoles": [
-        "PM"
+        "PM",
+        "BA",
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -712,7 +715,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Effective communication strategies for managing stakeholder expectations and reporting.",
       "duration": "2 hours",
       "targetRoles": [
-        "PM"
+        "PM",
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -774,7 +778,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Financial aspects of project management and optimal resource distribution.",
       "duration": "3 hours",
       "targetRoles": [
-        "PM"
+        "PM",
+        "BA",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -836,7 +842,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Methods for gathering accurate and complete business requirements from stakeholders.",
       "duration": "3 hours",
       "targetRoles": [
-        "BA"
+        "BA",
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -898,7 +905,10 @@ window.SYE_SAMPLE_DATA = {
       "description": "Best practices for writing clear, testable user stories and robust acceptance criteria.",
       "duration": "4 hours",
       "targetRoles": [
-        "BA"
+        "BA",
+        "PM",
+        "QA",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -912,7 +922,7 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "The User Story Format",
-          "body": "User stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-amber-400 uppercase tracking-wider\">BDD Specification & Given-When-Then Lifecycle</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-amber-900/50 text-amber-300 font-semibold border border-amber-700/50\">INVEST & Gherkin Standard</span>\n    </div>\n    <div class=\"space-y-2 text-xs\">\n        <div class=\"p-2.5 rounded-lg bg-slate-800/80 border-l-4 border-blue-500\">\n            <span class=\"font-bold text-blue-300 uppercase text-[10px] mr-2\">Given</span>\n            <span class=\"text-slate-300\">An authenticated corporate customer with an active credit card account and available limit > 5,000 THB</span>\n        </div>\n        <div class=\"p-2.5 rounded-lg bg-slate-800/80 border-l-4 border-amber-500\">\n            <span class=\"font-bold text-amber-300 uppercase text-[10px] mr-2\">When</span>\n            <span class=\"text-slate-300\">The customer requests an online balance transfer of 3,000 THB to PromptPay account via Mobile App</span>\n        </div>\n        <div class=\"p-2.5 rounded-lg bg-slate-800/80 border-l-4 border-emerald-500\">\n            <span class=\"font-bold text-emerald-300 uppercase text-[10px] mr-2\">Then</span>\n            <span class=\"text-slate-300\">System executes transaction, generates ISO 20022 reference ID, sends SMS/Push notification, and logs audit trail within 800ms</span>\n        </div>\n    </div>\n</div>\n\n\nUser stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Applying INVEST Criteria",
@@ -960,7 +970,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standardized Business Process Model and Notation (BPMN 2.0) guidelines for documenting customer credit verification, digital loan disbursement, and payment workflows. Covers pools, swimlanes, gateway decision logic, and integration with engineering contracts.",
       "duration": "3 hours",
       "targetRoles": [
-        "BA"
+        "BA",
+        "PM",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1010,7 +1022,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Understanding and documenting how data moves through various systems and processes.",
       "duration": "3 hours",
       "targetRoles": [
-        "BA"
+        "BA",
+        "Developer",
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1072,7 +1086,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive enterprise standard for secure software engineering in Golang and Next.js. Covers input validation, parameterized SQL queries, prevention of SQL Injection, Cross-Site Scripting (XSS), Broken Object Level Authorization (BOLA), cryptographic key management, and automated SAST/DAST pipeline gates.",
       "duration": "4 hours",
       "targetRoles": [
-        "Developer"
+        "Developer",
+        "QA",
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1089,7 +1105,7 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "OWASP Top 10 in Financial Systems & Threat Vectors",
-          "body": "### Threat Landscape for AEON Financial Platforms\nAs financial systems process real money and sensitive customer credit profiles, web and API vulnerabilities can lead to catastrophic regulatory penalties and financial fraud.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### Top Critical Threat Vectors in AEON:\n1. **Broken Object Level Authorization (BOLA / IDOR)**: An authenticated attacker accesses another user's credit card transactions simply by guessing account IDs in API parameters.\n2. **SQL Injection (SQLi)**: Untrusted user input dynamically concatenated into SQL queries.\n3. **Cross-Site Scripting (XSS)**: Malicious JavaScript executed in customer browsers to steal session cookies.\n4. **Security Misconfiguration & Hardcoded Secrets**: Exposing API keys or internal database ports to unauthorized networks."
+          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-indigo-400 uppercase tracking-wider\">Clean Hexagonal Architecture & Security Boundary</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-indigo-900/50 text-indigo-300 font-semibold border border-indigo-700/50\">Industry Best Practice</span>\n    </div>\n    <div class=\"grid grid-cols-1 md:grid-cols-3 gap-3 text-center text-xs\">\n        <div class=\"p-3.5 rounded-xl bg-slate-800 border border-slate-700\">\n            <strong class=\"block text-sky-300 font-bold mb-1\">1. Adapters / Ingress</strong>\n            <p class=\"text-[10px] text-slate-400\">HTTP REST Handlers, DTO Validation, Auth Middleware (JWT/Bearer)</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800 border border-indigo-500/50 bg-indigo-950/20\">\n            <strong class=\"block text-indigo-300 font-bold mb-1\">2. Core Domain & Use Cases</strong>\n            <p class=\"text-[10px] text-slate-400\">Pure Business Logic, Transaction Services, Zero External Framework Dependencies</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800 border border-slate-700\">\n            <strong class=\"block text-emerald-300 font-bold mb-1\">3. Infrastructure / Egress</strong>\n            <p class=\"text-[10px] text-slate-400\">SQL Repositories (Parameterized), External Client Adapters, Kafka Publishers</p>\n        </div>\n    </div>\n</div>\n\n\n### Threat Landscape for AEON Financial Platforms\nAs financial systems process real money and sensitive customer credit profiles, web and API vulnerabilities can lead to catastrophic regulatory penalties and financial fraud.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### Top Critical Threat Vectors in AEON:\n1. **Broken Object Level Authorization (BOLA / IDOR)**: An authenticated attacker accesses another user's credit card transactions simply by guessing account IDs in API parameters.\n2. **SQL Injection (SQLi)**: Untrusted user input dynamically concatenated into SQL queries.\n3. **Cross-Site Scripting (XSS)**: Malicious JavaScript executed in customer browsers to steal session cookies.\n4. **Security Misconfiguration & Hardcoded Secrets**: Exposing API keys or internal database ports to unauthorized networks."
         },
         {
           "title": "SQL Injection Prevention & Safe Database Queries in Golang",
@@ -1138,7 +1154,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standard branching strategy, commit semantics, and pull request hygiene on AEON On-Premise GitHub Enterprise. Covers GitFlow vs Trunk-based branching, rebase vs merge policies, semantic versioning, and commit message formats linked to Jira.",
       "duration": "2 hours",
       "targetRoles": [
-        "Developer"
+        "Developer",
+        "SRE",
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1194,7 +1212,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Principles of designing RESTful APIs, documentation with Swagger, and implementation best practices.",
       "duration": "4 hours",
       "targetRoles": [
-        "Developer"
+        "Developer",
+        "BA",
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1256,7 +1276,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive guide to authoring fast, isolated, high-coverage unit tests in Golang using testify/mock and in Next.js using Jest/Vitest and React Testing Library. Enforces table-driven testing patterns and dependency injection.",
       "duration": "3 hours",
       "targetRoles": [
-        "Developer"
+        "Developer",
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1314,7 +1335,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Understanding the continuous integration and continuous deployment pipelines and configuring builds.",
       "duration": "3 hours",
       "targetRoles": [
-        "Developer"
+        "Developer",
+        "SRE",
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1378,7 +1401,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Developing comprehensive test plans, identifying test scenarios, and defining test coverage.",
       "duration": "3 hours",
       "targetRoles": [
-        "QA"
+        "QA",
+        "Developer",
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1392,7 +1417,7 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Test Levels",
-          "body": "Quality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-rose-400 uppercase tracking-wider\">Shift-Left Testing Pyramid (70 / 20 / 10 Strategy)</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-rose-900/50 text-rose-300 font-semibold border border-rose-700/50\">Quality Engineering Standard</span>\n    </div>\n    <div class=\"space-y-2.5 text-xs text-center\">\n        <div class=\"w-2/5 mx-auto p-2 rounded-lg bg-rose-900/40 border border-rose-600/50 text-rose-300 font-bold\">\n            10% E2E &amp; Performance (Cypress, Playwright, JMeter)\n        </div>\n        <div class=\"w-3/5 mx-auto p-2.5 rounded-lg bg-amber-900/40 border border-amber-600/50 text-amber-300 font-bold\">\n            20% Integration &amp; API Contract (Newman, Pact, Postman)\n        </div>\n        <div class=\"w-4/5 mx-auto p-3 rounded-lg bg-emerald-900/40 border border-emerald-600/50 text-emerald-300 font-bold\">\n            70% Unit &amp; Component Tests (Golang test, Jest, Mocking) &bull; Coverage &gt; 80%\n        </div>\n    </div>\n</div>\n\n\nQuality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Risk-Based Testing",
@@ -1440,7 +1465,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Practical training on building reliable, headless end-to-end browser automation suites using Playwright with TypeScript and API regression collections with Postman / Newman on RHEL runners.",
       "duration": "4 hours",
       "targetRoles": [
-        "QA"
+        "QA",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1490,7 +1516,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Techniques and tools for testing APIs, including functional and performance aspects.",
       "duration": "3 hours",
       "targetRoles": [
-        "QA"
+        "QA",
+        "Developer",
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1552,7 +1580,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Techniques for simulating peak financial traffic (Flash Sales, Salary Day) using Apache JMeter. Covers TPS measurement, response latency percentile thresholds (p95 < 200ms, p99 < 500ms), and bottleneck isolation.",
       "duration": "3 hours",
       "targetRoles": [
-        "QA"
+        "QA",
+        "SRE",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1602,7 +1632,10 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standard procedures for logging, tracking, and verifying software defects using JIRA.",
       "duration": "2 hours",
       "targetRoles": [
-        "QA"
+        "QA",
+        "Developer",
+        "PM",
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1664,7 +1697,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Core concepts of cloud computing, infrastructure as code, and basic resource provisioning.",
       "duration": "4 hours",
       "targetRoles": [
-        "SRE"
+        "SRE",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1726,7 +1760,9 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive telemetry and alerting architecture for enterprise on-premise systems. Covers Prometheus metric types (Counter, Gauge, Histogram), PromQL query authoring, Grafana dashboard visualization, Alertmanager routing to Slack/PagerDuty, and 99.95% Availability SLO tracking.",
       "duration": "3 hours",
       "targetRoles": [
-        "SRE"
+        "SRE",
+        "Developer",
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1776,7 +1812,10 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standard operating procedures for responding to system outages and conducting effective post-mortems.",
       "duration": "3 hours",
       "targetRoles": [
-        "SRE"
+        "SRE",
+        "Developer",
+        "PM",
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1790,7 +1829,7 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Incident Command System",
-          "body": "During a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-rose-400 uppercase tracking-wider\">Major Incident Command & Severity Matrix</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-rose-900/50 text-rose-300 font-semibold border border-rose-700/50\">SRE War Room Protocol</span>\n    </div>\n    <div class=\"grid grid-cols-2 md:grid-cols-4 gap-2 text-xs text-center\">\n        <div class=\"p-3 rounded-xl bg-rose-950/60 border border-rose-600\">\n            <span class=\"px-2 py-0.5 rounded bg-rose-600 text-white font-bold text-[10px]\">SEV-1 (Critical)</span>\n            <p class=\"text-[10px] text-rose-300 mt-1\">Core Payment / API down. Bridge opens in &lt; 5m. Head of SYE leads.</p>\n        </div>\n        <div class=\"p-3 rounded-xl bg-amber-950/60 border border-amber-600\">\n            <span class=\"px-2 py-0.5 rounded bg-amber-600 text-white font-bold text-[10px]\">SEV-2 (High)</span>\n            <p class=\"text-[10px] text-amber-300 mt-1\">Major feature degraded. Triage in &lt; 15m. Section Lead leads.</p>\n        </div>\n        <div class=\"p-3 rounded-xl bg-blue-950/60 border border-blue-600\">\n            <span class=\"px-2 py-0.5 rounded bg-blue-600 text-white font-bold text-[10px]\">SEV-3 (Medium)</span>\n            <p class=\"text-[10px] text-blue-300 mt-1\">Minor bug with workaround. Response &lt; 2h. Sprint fix.</p>\n        </div>\n        <div class=\"p-3 rounded-xl bg-slate-800 border border-slate-700\">\n            <span class=\"px-2 py-0.5 rounded bg-slate-600 text-white font-bold text-[10px]\">SEV-4 (Low)</span>\n            <p class=\"text-[10px] text-slate-300 mt-1\">Cosmetic / UI typo. Logged in Jira backlog.</p>\n        </div>\n    </div>\n</div>\n\n\nDuring a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Outage Communication",
@@ -1838,7 +1877,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Working with Docker containers and managing deployments using Kubernetes.",
       "duration": "4 hours",
       "targetRoles": [
-        "SRE"
+        "SRE",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -1900,7 +1940,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Architectural patterns and practices for building highly reliable and scalable systems.",
       "duration": "3 hours",
       "targetRoles": [
-        "SRE"
+        "SRE",
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
@@ -2013,7 +2054,8 @@ window.SYE_SAMPLE_DATA = {
       "duration": "3 hours",
       "targetRoles": [
         "Developer",
-        "SRE"
+        "SRE",
+        "QA"
       ],
       "targetSection": "API & Integration Platform",
       "prerequisites": [
@@ -2064,7 +2106,8 @@ window.SYE_SAMPLE_DATA = {
       "duration": "3 hours",
       "targetRoles": [
         "Developer",
-        "BA"
+        "BA",
+        "QA"
       ],
       "targetSection": "API & Integration Platform",
       "prerequisites": [],
@@ -2168,7 +2211,8 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standards for managing application state in complex customer-facing frontend applications.",
       "duration": "3 hours",
       "targetRoles": [
-        "Developer"
+        "Developer",
+        "QA"
       ],
       "targetSection": "Customer Experience Systems",
       "prerequisites": [],
@@ -2327,7 +2371,8 @@ window.SYE_SAMPLE_DATA = {
       "duration": "3 hours",
       "targetRoles": [
         "Developer",
-        "BA"
+        "BA",
+        "QA"
       ],
       "targetSection": "Technology Standards & Quality",
       "prerequisites": [],
@@ -2443,7 +2488,7 @@ window.SYE_SAMPLE_DATA = {
         {
           "version": "1.8",
           "date": "2024-08-20",
-          "author": "Architeya B.",
+          "author": "Athitaya B.",
           "approver": "Rattanapakorn K.",
           "changes": "Integrated SonarQube automated quality gate blocking."
         },
@@ -2557,7 +2602,7 @@ window.SYE_SAMPLE_DATA = {
       "effectiveDate": "2025-02-01",
       "reviewFrequency": "Annual",
       "classification": "AEON Confidential / Engineering Standard",
-      "preparedBy": "Chinawat K. (Software Engineer)",
+      "preparedBy": "Chirawat K. (Software Engineer)",
       "reviewedBy": "Pipat H. (Software Engineer Lead)",
       "approvedBy": "Akkharasaran S. (Head of System Enabler)",
       "version": "2.2",
@@ -2580,7 +2625,7 @@ window.SYE_SAMPLE_DATA = {
         {
           "step": 3,
           "title": "Mandatory Peer Code Review Standards",
-          "description": "Every PR requires at least 2 approving reviews from designated senior engineers (e.g., Pongsatorn N., Pipat H., or Chinawat K.). Reviewers must verify: Clean Architecture separation, parameterized SQL queries, zero hardcoded credentials, error handling, and structured logging."
+          "description": "Every PR requires at least 2 approving reviews from designated senior engineers (e.g., Pongsatorn N., Pipat H., or Chirawat K.). Reviewers must verify: Clean Architecture separation, parameterized SQL queries, zero hardcoded credentials, error handling, and structured logging."
         },
         {
           "step": 4,
@@ -2602,7 +2647,7 @@ window.SYE_SAMPLE_DATA = {
         {
           "version": "1.0",
           "date": "2024-02-10",
-          "author": "Chinawat K.",
+          "author": "Chirawat K.",
           "approver": "Akkharasaran S.",
           "changes": "Initial code review guideline."
         },
@@ -2616,7 +2661,7 @@ window.SYE_SAMPLE_DATA = {
         {
           "version": "2.2",
           "date": "2025-02-01",
-          "author": "Chinawat K.",
+          "author": "Chirawat K.",
           "approver": "Akkharasaran S.",
           "changes": "Mandated GPG signed commits and 2-approver policy for financial repositories."
         }
@@ -2933,7 +2978,7 @@ window.SYE_SAMPLE_DATA = {
       "effectiveDate": "2025-03-01",
       "reviewFrequency": "Quarterly",
       "classification": "AEON Confidential / Security Standard",
-      "preparedBy": "Chinawat K. (Software Engineer)",
+      "preparedBy": "Chirawat K. (Software Engineer)",
       "reviewedBy": "Pipat H. (Software Engineer Lead)",
       "approvedBy": "Akkharasaran S. (Head of System Enabler)",
       "version": "2.1",
@@ -2978,14 +3023,14 @@ window.SYE_SAMPLE_DATA = {
         {
           "version": "1.0",
           "date": "2024-03-15",
-          "author": "Chinawat K.",
+          "author": "Chirawat K.",
           "approver": "Akkharasaran S.",
           "changes": "Initial patch management standard."
         },
         {
           "version": "2.1",
           "date": "2025-03-01",
-          "author": "Chinawat K.",
+          "author": "Chirawat K.",
           "approver": "Akkharasaran S.",
           "changes": "Incorporated Tanzu Kubernetes node drain rolling update and automated Trivy CVE scanner gating."
         }
@@ -11034,7 +11079,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2025-05-21",
       "timestamp": "2025-05-21T13:30:00.000Z",
       "type": "record_added",
-      "description": "Chinawat K. (SYE-0013 - Developer) in progress Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006]",
+      "description": "Chirawat K. (SYE-0013 - Developer) in progress Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006]",
       "relatedId": "TR-00156"
     },
     {
@@ -11042,7 +11087,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2025-05-18",
       "timestamp": "2025-05-18T12:30:00.000Z",
       "type": "training_completed",
-      "description": "Chinawat K. (SYE-0013 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 83%)",
+      "description": "Chirawat K. (SYE-0013 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 83%)",
       "relatedId": "TR-00155"
     },
     {
@@ -11050,7 +11095,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2025-05-15",
       "timestamp": "2025-05-15T11:30:00.000Z",
       "type": "training_completed",
-      "description": "Chinawat K. (SYE-0013 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 84%)",
+      "description": "Chirawat K. (SYE-0013 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 84%)",
       "relatedId": "TR-00154"
     },
     {
@@ -11058,7 +11103,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2025-05-12",
       "timestamp": "2025-05-12T10:30:00.000Z",
       "type": "training_completed",
-      "description": "Chinawat K. (SYE-0013 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 86%)",
+      "description": "Chirawat K. (SYE-0013 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 86%)",
       "relatedId": "TR-00153"
     },
     {
@@ -11066,7 +11111,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2025-05-09",
       "timestamp": "2025-05-09T09:30:00.000Z",
       "type": "training_completed",
-      "description": "Chinawat K. (SYE-0013 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 91%)",
+      "description": "Chirawat K. (SYE-0013 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 91%)",
       "relatedId": "TR-00152"
     },
     {
@@ -11074,7 +11119,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2025-05-06",
       "timestamp": "2025-05-06T16:30:00.000Z",
       "type": "training_completed",
-      "description": "Chinawat K. (SYE-0013 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 81%)",
+      "description": "Chirawat K. (SYE-0013 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 81%)",
       "relatedId": "TR-00151"
     },
     {
@@ -11626,7 +11671,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-29",
       "timestamp": "2024-07-29T15:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Legacy System Integration Patterns [SEC-003] (Score: 99%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Legacy System Integration Patterns [SEC-003] (Score: 99%)",
       "relatedId": "TR-00062"
     },
     {
@@ -11642,7 +11687,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-26",
       "timestamp": "2024-07-26T14:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting [SEC-002] (Score: 88%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting [SEC-002] (Score: 88%)",
       "relatedId": "TR-00061"
     },
     {
@@ -11658,7 +11703,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-23",
       "timestamp": "2024-07-23T13:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Microservices & Distributed Event-Driven Architecture Standard [SEC-001] (Score: 96%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Microservices & Distributed Event-Driven Architecture Standard [SEC-001] (Score: 96%)",
       "relatedId": "TR-00060"
     },
     {
@@ -11674,7 +11719,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-20",
       "timestamp": "2024-07-20T12:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 98%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 98%)",
       "relatedId": "TR-00059"
     },
     {
@@ -11690,7 +11735,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-17",
       "timestamp": "2024-07-17T11:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 89%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 89%)",
       "relatedId": "TR-00058"
     },
     {
@@ -11706,7 +11751,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-14",
       "timestamp": "2024-07-14T10:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 85%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 85%)",
       "relatedId": "TR-00057"
     },
     {
@@ -11722,7 +11767,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-11",
       "timestamp": "2024-07-11T09:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 80%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 80%)",
       "relatedId": "TR-00056"
     },
     {
@@ -11738,7 +11783,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-08",
       "timestamp": "2024-07-08T16:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 99%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 99%)",
       "relatedId": "TR-00055"
     },
     {
@@ -11754,7 +11799,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-05",
       "timestamp": "2024-07-05T15:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 88%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 88%)",
       "relatedId": "TR-00054"
     },
     {
@@ -11762,7 +11807,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-07-02",
       "timestamp": "2024-07-02T14:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 93%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 93%)",
       "relatedId": "TR-00053"
     },
     {
@@ -11770,7 +11815,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-06-29",
       "timestamp": "2024-06-29T13:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 80%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 80%)",
       "relatedId": "TR-00052"
     },
     {
@@ -11778,7 +11823,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-06-26",
       "timestamp": "2024-06-26T12:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 93%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 93%)",
       "relatedId": "TR-00051"
     },
     {
@@ -11786,7 +11831,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-06-23",
       "timestamp": "2024-06-23T11:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 93%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 93%)",
       "relatedId": "TR-00050"
     },
     {
@@ -11802,7 +11847,7 @@ window.SYE_SAMPLE_DATA = {
       "date": "2024-06-20",
       "timestamp": "2024-06-20T10:30:00.000Z",
       "type": "training_completed",
-      "description": "Architeya B. (SYE-0005 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 92%)",
+      "description": "Athitaya B. (SYE-0005 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 92%)",
       "relatedId": "TR-00049"
     },
     {
