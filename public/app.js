@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '4.0.0';
+const APP_VERSION = '5.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -865,7 +865,7 @@ function renderMyTraining(container) {
     roadmap.innerHTML += renderGroup(3, I18N.t('step3_title'), I18N.t('step3_desc'), sectionCourses, secUnlocked);
 }
 
-// Rich Markdown Parser
+// Rich Markdown Parser with Native Image & Diagram Support
 function formatRichContent(rawText) {
     if (!rawText) return '';
 
@@ -876,8 +876,7 @@ function formatRichContent(rawText) {
         if (!str) return '';
         return str
             .replace(/\$\ge\s*(\d+)%?\?\$/g, '&ge; $1%')
-            .replace(/\ge/g, '&ge;')
-            .replace(/\le/g, '&le;')
+            .replace(/\$\le\s*(\d+)%?\?\$/g, '&le; $1%')
             .replace(/\$([^\$]+)\$/g, '$1')
             .replace(/`([^`]+)`/g, (m, code) => {
                 const esc = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -887,12 +886,30 @@ function formatRichContent(rawText) {
             .replace(/\*(.*?)\*/g, '<em class="italic text-slate-700">$1</em>');
     }
 
+    // 1. Parse Markdown Images ![alt](src)
+    text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
+        const id = `@@IMG_BLOCK_${tokens.length}@@`;
+        const imgHtml = `
+            <div class="my-6 rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-white">
+                <img src="${src.trim()}" alt="${alt || 'Technical Architecture Diagram'}" class="w-full h-auto object-cover max-h-[480px] bg-slate-950" loading="lazy" />
+                <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600 font-medium">
+                    <span class="flex items-center gap-2"><span class="text-blue-600 font-bold">📐</span> ${alt || 'Technical Architecture & Process Diagram'}</span>
+                    <span class="font-mono text-slate-400 font-normal">AEON SYE Technical Standard</span>
+                </div>
+            </div>
+        `;
+        tokens.push({ id, html: imgHtml });
+        return `\n\n${id}\n\n`;
+    });
+
+    // 2. Parse HTML blocks (SVGs, custom divs)
     text = text.replace(/<div[\s\S]*?<\/div>/gi, (match) => {
         const id = `@@HTML_BLOCK_${tokens.length}@@`;
         tokens.push({ id, html: match });
         return `\n\n${id}\n\n`;
     });
 
+    // 3. Parse Code blocks
     text = text.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
         const id = `@@CODE_BLOCK_${tokens.length}@@`;
         const escaped = code
@@ -909,6 +926,7 @@ function formatRichContent(rawText) {
         return `\n\n${id}\n\n`;
     });
 
+    // 4. Parse Tables
     text = text.replace(/((?:\|[^\n]+\|\n)+)/g, (match) => {
         const lines = match.trim().split('\n').filter(l => l.trim().startsWith('|'));
         if (lines.length >= 2) {
@@ -946,56 +964,45 @@ function formatRichContent(rawText) {
 
     const lines = text.split('\n');
     let outHtml = '';
+    let inUl = false;
     let inOl = false;
     let inNestedUl = false;
-    let inUl = false;
 
     function closeLists() {
-        let closing = '';
-        if (inNestedUl) {
-            closing += '</ul></li>\n';
-            inNestedUl = false;
-        } else if (inOl) {
-            closing += '</li>\n';
-        }
-        if (inOl) {
-            closing += '</ol>\n';
-            inOl = false;
-        }
-        if (inUl) {
-            closing += '</ul>\n';
-            inUl = false;
-        }
-        return closing;
+        let res = '';
+        if (inNestedUl) { res += '</ul></li>\n'; inNestedUl = false; }
+        if (inUl) { res += '</ul>\n'; inUl = false; }
+        if (inOl) { res += '</ol>\n'; inOl = false; }
+        return res;
     }
 
     for (let i = 0; i < lines.length; i++) {
-        let line = lines[i].trim();
-
-        if (!line) {
-            if (inNestedUl) { outHtml += '</ul></li>\n'; inNestedUl = false; }
-            if (inUl) { outHtml += '</ul>\n'; inUl = false; }
-            continue;
-        }
+        const line = lines[i].trim();
+        if (!line) continue;
 
         if (line.startsWith('@@') && line.endsWith('@@')) {
             outHtml += closeLists();
-            outHtml += line + '\n';
+            outHtml += `${line}\n`;
             continue;
         }
 
         if (line.startsWith('### ')) {
             outHtml += closeLists();
-            outHtml += `<h4 class="text-sm font-semibold text-slate-800 mt-5 mb-2">${formatInline(line.substring(4))}</h4>\n`;
+            outHtml += `<h4 class="text-sm font-bold text-slate-800 mt-4 mb-2">${formatInline(line.substring(4))}</h4>\n`;
             continue;
         }
         if (line.startsWith('## ')) {
             outHtml += closeLists();
-            outHtml += `<h3 class="text-base font-bold text-slate-800 mt-6 mb-2.5">${formatInline(line.substring(3))}</h3>\n`;
+            outHtml += `<h3 class="text-base font-bold text-slate-900 mt-6 mb-2.5 pb-1 border-b border-slate-100">${formatInline(line.substring(3))}</h3>\n`;
+            continue;
+        }
+        if (line.startsWith('# ')) {
+            outHtml += closeLists();
+            outHtml += `<h2 class="text-lg font-extrabold text-slate-900 mt-6 mb-3 pb-2 border-b border-slate-200">${formatInline(line.substring(2))}</h2>\n`;
             continue;
         }
 
-        const numMatch = line.match(/^(\d+)\.\s+(.*)$/);
+        const numMatch = line.match(/^(\d+)\.\s+(.*)/);
         if (numMatch) {
             if (inUl) { outHtml += '</ul>\n'; inUl = false; }
             if (inNestedUl) { outHtml += '</ul></li>\n'; inNestedUl = false; }
@@ -1033,8 +1040,10 @@ function formatRichContent(rawText) {
     outHtml += closeLists();
 
     tokens.forEach(tok => {
-        outHtml = outHtml.replace(tok.id, tok.html);
+        outHtml = outHtml.split(tok.id).join(tok.html);
     });
+
+    outHtml = outHtml.replace(/<p class="[^"]*">\s*(<div[\s\S]*?<\/div>)\s*<\/p>/gi, '$1');
 
     return outHtml;
 }
