@@ -432,9 +432,9 @@ function renderLanding(container) {
     const employees = DataAPI.getEmployees();
     
     container.innerHTML = `
-        <div class="max-w-2xl w-full my-auto py-8 animate-fade-in-up">
+        <div class="max-w-2xl w-full my-auto py-8">
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 text-center">
-                <img src="favicon.svg" alt="AEON" class="w-20 h-20 rounded-3xl mx-auto mb-6 shadow-md object-cover border border-slate-200">
+                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-6 shadow-sm">🎓</div>
                 <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">${I18N.t('app_title')}</h1>
                 <p class="text-slate-500 text-sm max-w-md mx-auto mb-10 leading-relaxed font-medium">
                     ${I18N.t('app_subtitle')}<br>
@@ -454,6 +454,7 @@ function renderLanding(container) {
                     </a>
                 </div>
                 
+                <!-- Returning Learner Form -->
                 <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
                     <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
@@ -488,7 +489,7 @@ function renderLanding(container) {
 
 function renderRegister(container) {
     container.innerHTML = `
-        <div class="max-w-lg w-full my-auto py-6 animate-fade-in-up">
+        <div class="max-w-lg w-full my-auto py-6">
             <div class="mb-4">
                 <a href="#landing" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
@@ -496,7 +497,7 @@ function renderRegister(container) {
             </div>
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
                 <div class="flex items-center space-x-3 mb-6">
-                    <img src="favicon.svg" alt="AEON" class="w-10 h-10 rounded-xl shadow-xs object-cover border border-slate-200">
+                    <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl">📝</div>
                     <div>
                         <h2 class="text-xl font-bold text-slate-800">${I18N.t('reg_title')}</h2>
                         <p class="text-xs text-slate-500">${I18N.t('reg_desc')}</p>
@@ -639,7 +640,7 @@ function renderMyTraining(container) {
             
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center space-x-4">
-                    <img src="favicon.svg" alt="AEON" class="w-16 h-16 rounded-2xl shadow-xs object-cover border border-slate-200 shrink-0">
+                    <div class="w-16 h-16 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-2xl shrink-0">${emp.name.charAt(0)}</div>
                     <div>
                         <div class="flex items-center gap-2">
                             <h2 class="text-2xl font-bold text-slate-800">${I18N.t('welcome')}, ${emp.name}</h2>
