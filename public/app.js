@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '9.0.0';
+const APP_VERSION = '10.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -865,28 +865,62 @@ function renderMyTraining(container) {
     roadmap.innerHTML += renderGroup(3, I18N.t('step3_title'), I18N.t('step3_desc'), sectionCourses, secUnlocked);
 }
 
-// Bulletproof Markdown Parser with Native Inline Images, Code Blocks & Tables
+// Robust Markdown & Nested HTML Parser
 function formatRichContent(rawText) {
     if (!rawText) return '';
 
     let text = rawText.replace(/\r\n/g, '\n');
     const tokens = [];
 
+    // Helper for inline formatting
     function formatInline(str) {
         if (!str) return '';
         return str
             .replace(/\$\ge\s*(\d+)%?\?\$/g, '&ge; $1%')
-            .replace(/\$\le\s*(\d+)%?\?\$/g, '&le; $1%')
+            .replace(/\\ge/g, '&ge;')
+            .replace(/\\le/g, '&le;')
             .replace(/\$([^\$]+)\$/g, '$1')
             .replace(/`([^`]+)`/g, (m, code) => {
                 const esc = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-                return `<code class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded-md font-mono text-xs border border-blue-100 font-medium">${esc}</code>`;
+                return `<code class="px-1.5 py-0.5 bg-blue-50 text-blue-700 rounded-md font-mono text-xs border border-blue-100 font-semibold">${esc}</code>`;
             })
-            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-semibold text-slate-900">$1</strong>')
+            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
             .replace(/\*(.*?)\*/g, '<em class="italic text-slate-700">$1</em>');
     }
 
-    // 1. Code blocks
+    // 1. Extract Balanced HTML <div> Blocks (Image Containers, Custom Cards)
+    let processedText = '';
+    let i = 0;
+    while (i < text.length) {
+        if (text.substr(i, 4).toLowerCase() === '<div') {
+            let depth = 0;
+            let start = i;
+            while (i < text.length) {
+                if (text.substr(i, 4).toLowerCase() === '<div') {
+                    depth++;
+                    i += 4;
+                } else if (text.substr(i, 6).toLowerCase() === '</div>') {
+                    depth--;
+                    i += 6;
+                    if (depth === 0) {
+                        break;
+                    }
+                } else {
+                    i++;
+                }
+            }
+            const block = text.substring(start, i);
+            const id = `@@HTML_BLOCK_${tokens.length}@@`;
+            tokens.push({ id, html: block });
+            processedText += `\n\n${id}\n\n`;
+        } else {
+            processedText += text[i];
+            i++;
+        }
+    }
+    text = processedText;
+
+    // 2. Fenced Code Blocks (```lang ... ```)
     text = text.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
         const id = `@@CODE_BLOCK_${tokens.length}@@`;
         const escaped = code
@@ -895,32 +929,15 @@ function formatRichContent(rawText) {
             .replace(/>/g, '&gt;');
         const blockHtml = `
             <div class="my-4 rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-md">
-                ${lang ? `<div class="bg-slate-800/90 px-4 py-2 text-xs font-mono font-semibold text-slate-300 uppercase tracking-wider border-b border-slate-700/60 flex items-center justify-between"><span>${lang}</span><span class="text-xs text-slate-500 font-normal">Format</span></div>` : ''}
-                <pre class="p-4 text-xs md:text-sm font-mono text-emerald-400 overflow-x-auto leading-relaxed whitespace-pre font-normal"><code>${escaped.trim()}</code></pre>
+                ${lang ? `<div class="bg-slate-800/90 px-4 py-2 text-[11px] font-mono font-bold text-slate-300 uppercase tracking-wider border-b border-slate-700/60 flex items-center justify-between"><span>${lang}</span><span class="text-[10px] text-slate-500 font-normal">Syntax Format</span></div>` : ''}
+                <pre class="p-4 text-xs md:text-sm font-mono text-emerald-400 overflow-x-auto leading-relaxed whitespace-pre font-medium"><code>${escaped.trim()}</code></pre>
             </div>
         `;
         tokens.push({ id, html: blockHtml });
         return `\n\n${id}\n\n`;
     });
 
-    // 2. Images ![alt](src)
-    text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
-        const id = `@@IMG_BLOCK_${tokens.length}@@`;
-        const cleanSrc = src.trim();
-        const imgHtml = `
-            <div class="my-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white">
-                <img src="${cleanSrc}" alt="${alt || 'Technical Architecture Diagram'}" class="w-full h-auto object-contain max-h-[460px] block mx-auto bg-slate-900" loading="lazy" />
-                <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600 font-medium">
-                    <span class="flex items-center gap-1.5"><span class="text-blue-600 font-bold">📐</span> ${alt || 'Technical Architecture & Process Diagram'}</span>
-                    <span class="font-mono text-slate-400 font-normal">AEON SYE Technical Standard</span>
-                </div>
-            </div>
-        `;
-        tokens.push({ id, html: imgHtml });
-        return `\n\n${id}\n\n`;
-    });
-
-    // 3. Tables
+    // 3. Markdown Tables (| Col 1 | Col 2 | ... |)
     text = text.replace(/((?:\|[^\n]+\|\n)+)/g, (match) => {
         const lines = match.trim().split('\n').filter(l => l.trim().startsWith('|'));
         if (lines.length >= 2) {
@@ -932,7 +949,7 @@ function formatRichContent(rawText) {
             let tableHtml = `
                 <div class="my-5 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white">
                     <table class="w-full text-xs text-left">
-                        <thead class="bg-slate-50 border-b border-slate-200 text-slate-700 font-semibold uppercase text-xs tracking-wider">
+                        <thead class="bg-slate-50 border-b border-slate-200 text-slate-700 font-bold uppercase text-[11px] tracking-wider">
                             <tr>
                                 ${headerCols.map(c => `<th class="p-3.5">${formatInline(c)}</th>`).join('')}
                             </tr>
@@ -956,51 +973,73 @@ function formatRichContent(rawText) {
         return match;
     });
 
+    // 4. Line-by-line block processing for Headings, Lists, and Paragraphs
     const lines = text.split('\n');
     let outHtml = '';
-    let inUl = false;
     let inOl = false;
     let inNestedUl = false;
+    let inUl = false;
 
     function closeLists() {
-        let res = '';
-        if (inNestedUl) { res += '</ul></li>\n'; inNestedUl = false; }
-        if (inUl) { res += '</ul>\n'; inUl = false; }
-        if (inOl) { res += '</ol>\n'; inOl = false; }
-        return res;
+        let closing = '';
+        if (inNestedUl) {
+            closing += '</ul></li>\n';
+            inNestedUl = false;
+        } else if (inOl) {
+            closing += '</li>\n';
+        }
+        if (inUl) {
+            closing += '</ul>\n';
+            inUl = false;
+        }
+        if (inOl) {
+            closing += '</ol>\n';
+            inOl = false;
+        }
+        return closing;
     }
 
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i].trim();
         if (!line) continue;
 
+        // Pass-through token placeholder
         if (line.startsWith('@@') && line.endsWith('@@')) {
             outHtml += closeLists();
             outHtml += `${line}\n`;
             continue;
         }
 
+        // Headings
         if (line.startsWith('### ')) {
             outHtml += closeLists();
-            outHtml += `<h4 class="text-sm font-bold text-slate-800 mt-4 mb-2">${formatInline(line.substring(4))}</h4>\n`;
+            outHtml += `<h4 class="text-sm font-bold text-slate-800 mt-5 mb-2.5">${formatInline(line.substring(4))}</h4>\n`;
             continue;
         }
         if (line.startsWith('## ')) {
             outHtml += closeLists();
-            outHtml += `<h3 class="text-base font-bold text-slate-900 mt-6 mb-2.5 pb-1 border-b border-slate-100">${formatInline(line.substring(3))}</h3>\n`;
+            outHtml += `<h3 class="text-base font-bold text-slate-900 mt-6 mb-3 pb-1 border-b border-slate-100">${formatInline(line.substring(3))}</h3>\n`;
             continue;
         }
         if (line.startsWith('# ')) {
             outHtml += closeLists();
-            outHtml += `<h2 class="text-lg font-extrabold text-slate-900 mt-6 mb-3 pb-2 border-b border-slate-200">${formatInline(line.substring(2))}</h2>\n`;
+            outHtml += `<h2 class="text-lg font-bold text-slate-900 mt-6 mb-3 pb-2 border-b border-slate-200">${formatInline(line.substring(2))}</h2>\n`;
             continue;
         }
 
+        // Numbered lists (1. Item)
         const numMatch = line.match(/^(\d+)\.\s+(.*)/);
         if (numMatch) {
-            if (inUl) { outHtml += '</ul>\n'; inUl = false; }
-            if (inNestedUl) { outHtml += '</ul></li>\n'; inNestedUl = false; }
-            else if (inOl) { outHtml += '</li>\n'; }
+            if (inUl) {
+                outHtml += '</ul>\n';
+                inUl = false;
+            }
+            if (inNestedUl) {
+                outHtml += '</ul></li>\n';
+                inNestedUl = false;
+            } else if (inOl) {
+                outHtml += '</li>\n';
+            }
             if (!inOl) {
                 outHtml += '<ol class="list-decimal pl-5 my-2.5 space-y-1.5 text-sm text-slate-700 leading-relaxed">\n';
                 inOl = true;
@@ -1009,32 +1048,36 @@ function formatRichContent(rawText) {
             continue;
         }
 
+        // Bullet lists (- or *)
         if (line.startsWith('- ') || line.startsWith('* ')) {
             const itemText = line.substring(2);
-            if (!inUl) {
-                outHtml += '<ul class="list-disc pl-5 my-2.5 space-y-1.5 text-sm text-slate-700 leading-relaxed">\n';
-                inUl = true;
+            if (inOl) {
+                if (!inNestedUl) {
+                    outHtml += '<ul class="list-disc pl-5 my-1.5 space-y-1 text-sm font-normal text-slate-600">\n';
+                    inNestedUl = true;
+                }
+                outHtml += `    <li>${formatInline(itemText)}</li>\n`;
+            } else {
+                if (!inUl) {
+                    outHtml += '<ul class="list-disc pl-5 my-2.5 space-y-1.5 text-sm text-slate-700">\n';
+                    inUl = true;
+                }
+                outHtml += `  <li>${formatInline(itemText)}</li>\n`;
             }
-            outHtml += `  <li>${formatInline(itemText)}</li>\n`;
             continue;
         }
 
+        // Standard text line / paragraph
         outHtml += closeLists();
-        outHtml += `<p class="mb-3 leading-relaxed text-slate-700 text-sm">${formatInline(line)}</p>\n`;
+        outHtml += `<p class="mb-3.5 leading-relaxed text-slate-700 text-sm md:text-base">${formatInline(line)}</p>\n`;
     }
 
     outHtml += closeLists();
 
-    // Replace all tokens recursively
-    let prev = '';
-    while (prev !== outHtml) {
-        prev = outHtml;
-        tokens.forEach(tok => {
-            outHtml = outHtml.split(tok.id).join(tok.html);
-        });
-    }
-
-    outHtml = outHtml.replace(/<p class="[^"]*">\s*(<div[\s\S]*?<\/div>)\s*<\/p>/gi, '$1');
+    // 5. Restore Tokens
+    tokens.forEach(tok => {
+        outHtml = outHtml.split(tok.id).join(tok.html);
+    });
 
     return outHtml;
 }

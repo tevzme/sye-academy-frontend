@@ -1,4 +1,4 @@
-// SYE Academy Master Seed Data (v9.0.0 - Clean Inline Course Visuals)
+// SYE Academy Master Seed Data (v10.0.0 - Authentic Audit Course Materials & Fixed Image Containers)
 // System Enabler (SYE) Division • AEON System Development Department
 // Sermmit Tower 14th Floor • ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
@@ -225,9 +225,9 @@ window.SYE_SAMPLE_DATA = {
   "courses": [
     {
       "id": "GEN-001",
-      "name": "SYE Division Architecture, Mission & Leadership Governance",
+      "name": "SYE Division Orientation, Leadership & Workplace Guidelines",
       "category": "General",
-      "description": "Comprehensive orientation on System Enabler (SYE) Division structure, 4 core sections, on-premise Tanzu/RHEL infrastructure, and ISO certifications (ISO 27001, ISO 9001, ISO 22301, ISO 14001).",
+      "description": "Comprehensive orientation for all new personnel joining the System Enabler (SYE) Division at AEON. Covers division mission under AEON System Development Department, leadership hierarchy, 3 core engineering sections, Sermmit Tower office guidelines, working hours (09:00 - 18:00), and corporate code of conduct.",
       "duration": "2 hours",
       "targetRoles": [
         "All"
@@ -237,45 +237,45 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Master the organizational charter and responsibilities of the 4 SYE sections (API, CES, UAS, TSQ)",
-        "Understand the division leadership hierarchy and escalation protocols under Head of SYE",
-        "Familiarize with the multi-cluster on-premise infrastructure topology (VMware Tanzu & RHEL 9)",
-        "Comply with ISO 27001 ISMS, ISO 9001 QMS, ISO 22301 BCMS, and ISO 14001 governance standards"
+        "Understand SYE division identity, mission, and leadership structure under AEON System Development Department",
+        "Identify the 3 core engineering sections: API & Integration Platform, Customer Experience Systems (CXS), and Omnichannel Customer Service (OCS)",
+        "Follow workplace guidelines at Sermmit Tower 14th Floor and official working hours: 09:00 – 18:00 (Mon – Fri)",
+        "Adhere to the corporate code of conduct, clean desk policies, and professional financial ethics"
       ],
       "content": [
         {
-          "title": "Division Mission & Organizational Structure",
-          "body": "The **System Enabler (SYE) Division** operates under the **AEON System Development Department** as the central engineering backbone powering digital credit card services, personal loans, mobile applications, and partner integrations.\n\nUnder the direct leadership of **Akkharasaran S. (Head of SYE)**, the division is structured into 4 specialized sections:\n\n| Section Name | Section Lead | Primary Focus & Deliverables |\n|---|---|---|\n| **API & Integration Platform** | Rattanapakorn K. | Enterprise API Gateway, OAuth2 Token Services, Core Banking Connectors |\n| **Customer Experience Systems (CES)** | Akkharasaran S. | AEON Mobile App, Customer Data Platform (CDP), Omnichannel Chatbot |\n| **User Application Systems (UAS)** | Waranya T. | Back-office Case Management, Internal ERP Workflows, Branch Terminals |\n| **Technology Standards & Quality (TSQ)** | Akkharasaran S. | SRE Observability, Cloud Platform K8s, QA Automation, ISO Compliance |\n\nEvery engineer, whether permanent staff or outsource contractor (OS-SYE / OS-ECM / OS-NRT), is governed by uniform quality standards and security baselines."
+          "title": "Division Identity, Strategic Mission & AEON Core Values",
+          "body": "### Who We Are\nThe **System Enabler (SYE) Division** operates under the **AEON System Development Department** of AEON Thana Sinsap (Thailand) Public Company Limited. Our division serves as the central technological engine responsible for architecting, building, and operating high-scale, ultra-reliable financial software systems.\n\n### Our Core Mission:\n- **Enable Modern Financial Experiences**: Deliver seamless credit card, digital loan, payment, and customer service platforms.\n- **Enterprise Reliability**: Maintain maximum system availability with zero compromise on transaction integrity.\n- **Continuous Innovation**: Adopt high-performance engineering standards, modern microservice architectures, and robust automation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_org_leadership_chart.jpg\" alt=\"SYE Division Leadership & Organizational Structure\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">SYE Division Leadership & Organizational Structure</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sermmit Tower 14th Fl. • ISO Certified</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
-          "title": "On-Premise Infrastructure Landscape",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: SYE Division Architecture, Mission & Leadership Governance](/images/sye_org_leadership_chart.jpg)\n\nAll AEON SYE systems run on highly resilient on-premise infrastructure located across **Sermmit Tower Primary Data Center** and the **Secondary DR Site**:\n\n```\n+-----------------------------------------------------------------------------------+\n|                        AEON Enterprise On-Premise Landscape                        |\n+-----------------------------------------------------------------------------------+\n|  [ Ingress Traffic / F5 BIG-IP Load Balancer ] -> Port 8080 (mTLS / WAF Filter)   |\n|                                     |                                             |\n|                                     v                                             |\n|  [ VMware Tanzu K8s Cluster (TKG) ] -> Production Microservices (Multi-Pod HA)     |\n|                                     |                                             |\n|                                     v                                             |\n|  [ Dedicated RHEL 9 VM Cluster (10.254.97.141) ] -> PostgreSQL 16 HA (Patroni)    |\n|                                     |                                             |\n|                                     v                                             |\n|  [ IBM Mainframe & Core Banking ] -> Anti-Corruption Layer (ACL Connectors)       |\n+-----------------------------------------------------------------------------------+\n```\n\n- **Kubernetes Tier**: VMware Tanzu Kubernetes Grid (TKG) running autoscaling stateless pods.\n- **Database Tier**: Enterprise PostgreSQL 16 with Patroni HA replication on RedHat Enterprise Linux 9.\n- **Network & Security**: Ingress on port 8080 with strict Web Application Firewall (WAF) and mTLS mutual authentication."
+          "title": "Leadership Structure & The 3 Engineering Sections",
+          "body": "The division is led by **Head of Division: K. Akkharasaran S.** and structured into three specialized engineering sections:\n\n1. **0.1. API & Integration Platform (API)**:\n   - **Section Head**: **K. Rattanapakorn K.**\n   - **System Ownership**: Enterprise API Gateway, Apache Kafka event streaming clusters, Core Banking middleware connectors, and partner payment gateways.\n2. **0.2. Customer Experience Systems (CXS)**:\n   - **Section Head**: **K. Akkharasaran S. (Co-Lead)**\n   - **System Ownership**: Mobile Banking backend microservices, Web Account Portals, Customer Identity & Access Management (CIAM), and digital e-KYC onboarding.\n3. **0.3. Omnichannel Customer Service (OCS)**:\n   - **Section Head**: **K. Waranya T.**\n   - **System Ownership**: Omnichannel CRM systems, Conversational AI Chatbots (LINE/Web), Call Center Computer Telephony Integration (CTI), and Unified Agent Desktops."
         },
         {
-          "title": "Four Pillars of ISO Governance",
-          "body": "To guarantee banking-grade stability and compliance, SYE enforces 4 integrated ISO management systems:\n\n1. **ISO 27001 (Information Security Management System - ISMS)**:\n   - Mandatory Least Privilege access control via Active Directory RBAC.\n   - All production data must be encrypted at rest (AES-256) and in transit (TLS 1.3).\n   - Zero hardcoded credentials; all secrets stored in HashiCorp Vault.\n\n2. **ISO 9001 (Quality Management System - QMS)**:\n   - Every production release must pass peer review, automated tests (>= 80% coverage), and Change Advisory Board (CAB) approval.\n   - All standard operations must be documented in Controlled Work Instructions (SOPs).\n\n3. **ISO 22301 (Business Continuity Management System - BCMS)**:\n   - Strict Disaster Recovery SLAs: **Recovery Time Objective (RTO) < 4 hours**, **Recovery Point Objective (RPO) < 15 minutes**.\n   - Bi-annual live DR failover simulation exercises.\n\n4. **ISO 14001 (Environmental Management System - EMS)**:\n   - Paperless engineering workflows, optimized compute server energy utilization, and eco-friendly electronic auditing."
+          "title": "Sermmit Tower Office Guidelines & Working Hours (09:00 – 18:00)",
+          "body": "### Office Location:\n- **Address**: **Sermmit Tower, 14th Floor (อาคารเสริมมิตร ทาวเวอร์ ชั้น 14)**, Sukhumvit 21 (Asoke), Khlong Toei Nuea, Watthana, Bangkok 10110.\n- **Access**: Secure keycard entry required at all turnstiles and section doors. Tailgating is strictly prohibited.\n\n### Working Hours & Attendance:\n- **Standard Working Hours**: **09:00 – 18:00 (Monday – Friday)**.\n- **Lunch Break**: 12:00 – 13:00 (1 hour).\n- **Core Collaboration Hours**: **10:00 – 17:00** during which all team members must be active and accessible for sync meetings, architectural reviews, and production support.\n- **Leave Request Protocol**: Submit leave requests via corporate HR portal at least 3 business days in advance (except emergency medical leave)."
         },
         {
-          "title": "Communication Protocols & Escalation Matrix",
-          "body": "When encountering production blockers, security incidents, or cross-section dependencies, follow the official SYE escalation hierarchy:\n\n```\n[ Engineer / Contractor ] \n       │ \n       ▼ (15 mins SLA)\n[ Section Lead (Rattanapakorn K. / Waranya T. / Lead Engineer) ]\n       │ \n       ▼ (30 mins SLA)\n[ Head of SYE Division (Akkharasaran S. - sye@aeon.co.th) ]\n       │ \n       ▼ (Critical P1 / Outage)\n[ System Development Department Head & Emergency Response Team ]\n```\n\n- **Daily Standup**: 09:30 AM via Microsoft Teams.\n- **Incident Channel**: `#sye-incident-war-room` (P1/P2 incidents require immediate voice conference).\n- **Official Contact**: `sye@aeon.co.th` (Division Head), `sye_api@aeon.co.th` (API Team), `sye_uas@aeon.co.th` (UAS Team)."
+          "title": "Corporate Code of Conduct & Workplace Hygiene",
+          "body": "### 1. Professional Ethics & Insider Trading Prohibition:\nAs employees of a publicly listed financial institution, engineers have access to sensitive commercial data. Trading AEON securities based on non-public material information is illegal and subject to immediate termination and criminal prosecution.\n\n### 2. Clean Desk & Clean Screen Policy:\n- Workstations must never display customer information or system credentials when unattended.\n- Lock your screen whenever leaving your desk (`Win + L` or `Cmd + Ctrl + Q`).\n- Physical documents containing customer information must be locked in personal pedestals or shredded immediately after use.\n\n### 3. Respectful Workplace & Communications:\n- Use official enterprise Slack/Teams channels for work-related discussions.\n- Maintain professional, respectful, and blameless communication across all departments."
         }
       ],
-      "name_th": "โครงสร้างองค์กร ภารกิจ และธรรมาภิบาลฝ่าย System Enabler (SYE)",
-      "description_th": "ปฐมนิเทศโครงสร้างฝ่าย SYE 4 ส่วนงานหลัก สถาปัตยกรรมโครงสร้างพื้นฐาน On-Premise Tanzu/RHEL และมาตรฐานการรับรอง ISO 4 ด้าน",
+      "name_th": "การปฐมนิเทศฝ่าย System Enabler (SYE): ผู้นำ 3 ส่วนงาน และระเบียบปฏิบัติงาน",
+      "description_th": "หลักสูตรปฐมนิเทศภาคบังคับสำหรับพนักงานใหม่ฝ่าย System Enabler (SYE) บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน) ครอบคลุมพันธกิจฝ่ายภายใต้ฝ่ายพัฒนาระบบ โครงสร้างผู้นำ 3 ส่วนงาน ระเบียบปฏิบัติงาน ณ อาคารเสริมมิตร ทาวเวอร์ ชั้น 14 เวลาทำงาน 09:00 – 18:00 น. และจรรยาบรรณวิชาชีพ",
       "learningObjectives_th": [
-        "เข้าใจบทบาทหน้าที่และความรับผิดชอบของ 4 ส่วนงานหลักในฝ่าย SYE (API, CES, UAS, TSQ)",
-        "เข้าใจสายการบังคับบัญชาและการส่งต่อเรื่อง (Escalation) ภายใต้การนำของ Head of SYE",
-        "เข้าใจภาพรวมสถาปัตยกรรม On-Premise (VMware Tanzu K8s และ RedHat Enterprise Linux 9)",
-        "ปฏิบัติตามมาตรฐานการควบคุม ISO 27001 ISMS, ISO 9001 QMS, ISO 22301 BCMS และ ISO 14001 อย่างเคร่งครัด"
+        "เข้าใจอัตลักษณ์ พันธกิจ และโครงสร้างผู้นำฝ่าย SYE ภายใต้ฝ่ายพัฒนาระบบ (System Development Department) ของ AEON",
+        "รู้จัก 3 ส่วนงานหลัก: API & Integration Platform, Customer Experience Systems (CXS) และ Omnichannel Customer Service (OCS)",
+        "ปฏิบัติตามระเบียบสถานที่ทำงาน ณ อาคารเสริมมิตร ทาวเวอร์ ชั้น 14 และเวลาทำงานมาตรฐาน 09:00 – 18:00 น.",
+        "ยึดมั่นในจรรยาบรรณวิชาชีพ นโยบายโต๊ะทำงานสะอาด (Clean Desk) และจริยธรรมของสถาบันการเงิน"
       ],
       "content_th": [
         {
           "title": "อัตลักษณ์ฝ่าย พันธกิจเชิงกลยุทธ์ และค่านิยมหลักของ AEON",
-          "body": "### ฝ่าย System Enabler (SYE) คือใคร\n**ฝ่าย System Enabler (SYE)** สังกัดอยู่ภายใต้ **ฝ่ายพัฒนาระบบ (System Development Department) บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน)** ทำหน้าที่เป็นแกนหลักทางเทคโนโลยีที่รับผิดชอบการออกแบบ พัฒนา และดูแลระบบการเงินดิจิทัลที่มีความเสถียรและปลอดภัยสูงสุด\n\n### พันธกิจหลักของฝ่าย:\n- **ขับเคลื่อนประสบการณ์การเงินยุคใหม่**: ส่งมอบระบบบัตรเครดิต สินเชื่อดิจิทัล การชำระเงิน และระบบบริการลูกค้าที่ไร้รอยต่อ\n- **ความพร้อมใช้งานสูงสุด**: รักษาเสถียรภาพและความถูกต้องของทุกธุรกรรมการเงิน\n- **พัฒนานวัตกรรมอย่างต่อเนื่อง**: นำมาตรฐานวิศวกรรมระดับสากล สถาปัตยกรรม Microservices และระบบอัตโนมัติมาประยุกต์ใช้\n\n\n\n    </div>\n</div>"
+          "body": "### ฝ่าย System Enabler (SYE) คือใคร\n**ฝ่าย System Enabler (SYE)** สังกัดอยู่ภายใต้ **ฝ่ายพัฒนาระบบ (System Development Department) บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน)** ทำหน้าที่เป็นแกนหลักทางเทคโนโลยีที่รับผิดชอบการออกแบบ พัฒนา และดูแลระบบการเงินดิจิทัลที่มีความเสถียรและปลอดภัยสูงสุด\n\n### พันธกิจหลักของฝ่าย:\n- **ขับเคลื่อนประสบการณ์การเงินยุคใหม่**: ส่งมอบระบบบัตรเครดิต สินเชื่อดิจิทัล การชำระเงิน และระบบบริการลูกค้าที่ไร้รอยต่อ\n- **ความพร้อมใช้งานสูงสุด**: รักษาเสถียรภาพและความถูกต้องของทุกธุรกรรมการเงิน\n- **พัฒนานวัตกรรมอย่างต่อเนื่อง**: นำมาตรฐานวิศวกรรมระดับสากล สถาปัตยกรรม Microservices และระบบอัตโนมัติมาประยุกต์ใช้\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_org_leadership_chart.jpg\" alt=\"SYE Division Leadership & Organizational Structure\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">SYE Division Leadership & Organizational Structure</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sermmit Tower 14th Fl. • ISO Certified</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "โครงสร้างผู้นำฝ่าย และ 3 ส่วนงานหลัก (Sections)",
-          "body": "ฝ่าย SYE อยู่ภายใต้การดูแลของ **คุณอัครศรัณย์ ศ. (K. Akkharasaran S.)** ในฐานะ Head of Division และแบ่งออกเป็น 3 ส่วนงานเฉพาะทาง:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: SYE Division Architecture, Mission & Leadership Governance](/images/sye_org_leadership_chart.jpg)\n\n1. **0.1. ส่วนงาน API & Integration Platform (API)**:\n   - **หัวหน้าส่วนงาน**: **คุณรัตนปกรณ์ ก. (K. Rattanapakorn K.)**\n   - **ขอบเขตระบบที่ดูแล**: Enterprise API Gateway, คลัสเตอร์ Apache Kafka, Middleware เชื่อมต่อ Core Banking และ Payment Gateway\n2. **0.2. ส่วนงาน Customer Experience Systems (CXS)**:\n   - **หัวหน้าส่วนงาน**: **คุณอัครศรัณย์ ศ. (K. Akkharasaran S. - Co-Lead)**\n   - **ขอบเขตระบบที่ดูแล**: Backend ของ Mobile Banking, เว็บพอร์ทัลบริการลูกค้า, ระบบยืนยันตัวตน (CIAM) และระบบเปิดบัญชี e-KYC\n3. **0.3. ส่วนงาน Omnichannel Customer Service (OCS)**:\n   - **หัวหน้าส่วนงาน**: **คุณวรัญญา ท. (K. Waranya T.)**\n   - **ขอบเขตระบบที่ดูแล**: ระบบ Omnichannel CRM, AI Chatbot บน LINE/Web, ระบบเชื่อมต่อโทรศัพท์คอลเซ็นเตอร์ (CTI) และหน้าจอเจ้าหน้าที่"
+          "body": "ฝ่าย SYE อยู่ภายใต้การดูแลของ **คุณอัครศรัณย์ ศ. (K. Akkharasaran S.)** ในฐานะ Head of Division และแบ่งออกเป็น 3 ส่วนงานเฉพาะทาง:\n\n1. **0.1. ส่วนงาน API & Integration Platform (API)**:\n   - **หัวหน้าส่วนงาน**: **คุณรัตนปกรณ์ ก. (K. Rattanapakorn K.)**\n   - **ขอบเขตระบบที่ดูแล**: Enterprise API Gateway, คลัสเตอร์ Apache Kafka, Middleware เชื่อมต่อ Core Banking และ Payment Gateway\n2. **0.2. ส่วนงาน Customer Experience Systems (CXS)**:\n   - **หัวหน้าส่วนงาน**: **คุณอัครศรัณย์ ศ. (K. Akkharasaran S. - Co-Lead)**\n   - **ขอบเขตระบบที่ดูแล**: Backend ของ Mobile Banking, เว็บพอร์ทัลบริการลูกค้า, ระบบยืนยันตัวตน (CIAM) และระบบเปิดบัญชี e-KYC\n3. **0.3. ส่วนงาน Omnichannel Customer Service (OCS)**:\n   - **หัวหน้าส่วนงาน**: **คุณวรัญญา ท. (K. Waranya T.)**\n   - **ขอบเขตระบบที่ดูแล**: ระบบ Omnichannel CRM, AI Chatbot บน LINE/Web, ระบบเชื่อมต่อโทรศัพท์คอลเซ็นเตอร์ (CTI) และหน้าจอเจ้าหน้าที่"
         },
         {
           "title": "ข้อมูลสถานที่ทำงาน ณ ตึกเสริมมิตร ชั้น 14 และเวลาเข้างาน (09:00 – 18:00)",
@@ -286,14 +286,13 @@ window.SYE_SAMPLE_DATA = {
           "body": "### 1. จริยธรรมและข้อห้ามการใช้ข้อมูลภายใน (Insider Trading):\nในฐานะพนักงานสถาบันการเงินที่จดทะเบียนในตลาดหลักทรัพย์ ห้ามนำข้อมูลทางการเงินหรือข้อมูลลับภายในไปใช้ซื้อขายหลักทรัพย์ AEON โดยเด็ดขาด ผู้ฝ่าฝืนมีโทษเลิกจ้างทันทีและดำเนินคดีตามกฎหมาย\n\n### 2. นโยบายโต๊ะทำงานสะอาด (Clean Desk & Screen Policy):\n- ห้ามเปิดหน้าจอที่มีข้อมูลลูกค้าทิ้งไว้เมื่อไม่อยู่ที่โต๊ะ\n- กดล็อกหน้าจอคอมพิวเตอร์ทุกครั้งเมื่อลุกออกจากที่นั่ง (`Win + L` หรือ `Cmd + Ctrl + Q`)\n- จัดเก็บเอกสารที่มีข้อมูลสำคัญในลิ้นชักที่ล็อกได้ หรือทำลายทิ้งด้วยเครื่องทำลายเอกสารทันที\n\n### 3. วัฒนธรรมการสื่อสารและการทำงานร่วมกัน:\n- ใช้ช่องทางสื่อสารทางการของบริษัท (Slack / Teams) ในการประสานงาน\n- ปฏิบัติต่อเพื่อนร่วมงานด้วยความเคารพ สุภาพ และทำงานร่วมกันอย่างสร้างสรรค์"
         }
       ],
-      "image": "/images/sye_org_leadership_chart.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: SYE Division Architecture, Mission & Leadership Governance"
+      "image": "/images/sye_org_leadership_chart.jpg"
     },
     {
       "id": "GEN-002",
-      "name": "Information Security, Zero Trust Architecture & ISO 27001 ISMS Controls",
+      "name": "Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301)",
       "category": "General",
-      "description": "Enterprise cybersecurity standards covering Zero Trust principles, credential hygiene, phishing defense, data classification, and ISO 27001 security controls.",
+      "description": "Comprehensive guide to the 4 International Organization for Standardization (ISO) certifications governing all operations in SYE: ISO 27001 (Information Security), ISO 9001 (Quality Management), ISO 14001 (Environmental Management), and ISO 22301 (Business Continuity).",
       "duration": "3 hours",
       "targetRoles": [
         "All"
@@ -303,45 +302,47 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Implement Zero Trust Architecture principles: Never Trust, Always Verify",
-        "Enforce strict password hygiene, MFA, and privileged access management (PAM)",
-        "Identify and report sophisticated social engineering, spear-phishing, and ransomware threats",
-        "Classify and safeguard confidential customer banking data in compliance with ISO 27001"
+        "Understand the objectives and audit scope of ISO 27001, ISO 9001, ISO 14001, and ISO 22301 in SYE",
+        "Implement ISO 27001 security baselines: Zero-Trust RBAC, Hardware FIDO2 MFA, and AES-256 / TLS 1.3 encryption",
+        "Follow ISO 9001 quality controls: peer code reviews, mandatory unit testing (>=80%), and Jira traceability",
+        "Support ISO 14001 environmental sustainability through 100% paperless engineering workflows",
+        "Adhere to ISO 22301 business continuity policies and emergency escalation procedures"
       ],
       "content": [
         {
-          "title": "Zero Trust Architecture Core Tenets",
-          "body": "In AEON SYE, we adopt the **NIST SP 800-207 Zero Trust Architecture** model. We assume the internal corporate network is inherently hostile.\n\n### The Three Golden Principles:\n1. **Explicit Verification**: Always authenticate and authorize based on all available data points (user identity, device posture, location, service token).\n2. **Least Privilege Access**: Restrict user and service account permissions to the absolute minimum required for the task (Just-In-Time and Just-Enough-Access).\n3. **Assume Breach**: Minimize blast radius by segmenting networks, encrypting all internal communications, and continuously monitoring telemetry.\n\n```\n[ User / Service ] ──( MFA + Device Posture )──> [ Zero Trust Policy Engine ] ──( mTLS 1.3 )──> [ Microservice / DB ]\n```"
+          "title": "Overview of AEON 4 Integrated ISO Standards",
+          "body": "All engineering systems, processes, and infrastructure in the SYE Division operate under **4 International Organization for Standardization (ISO) Certifications**:\n\n| ISO Standard | Domain | Core Focus in SYE |\n|---|---|---|\n| **ISO/IEC 27001** | Information Security Management (ISMS) | Zero-Trust access, data encryption, secrets protection, SOC incident reporting |\n| **ISO 9001** | Quality Management System (QMS) | SDLC quality gates, code reviews, automated unit testing, documentation traceability |\n| **ISO 14001** | Environmental Management System (EMS) | Paperless digital engineering, energy-efficient server consolidation |\n| **ISO 22301** | Business Continuity Management (BCMS) | Disaster Recovery (DR Site), BCP failover drills, RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"/images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
-          "title": "Data Classification & Clean Desk Policy",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Information Security, Zero Trust Architecture & ISO 27001 ISMS Controls](/images/security_iam_perimeter.jpg)\n\nAll corporate and customer information must be handled according to AEON's 4-tier data classification matrix:\n\n| Classification | Examples | Storage & Encryption Controls |\n|---|---|---|\n| **Confidential / Secret** | Credit Card PAN, CVV, National ID, Passwords, Private Keys | AES-256 encryption at rest, TLS 1.3 in transit, strict tokenization, no plain logging |\n| **Internal Restricted** | API Specs, Source Code, System Architecture Diagrams, Jira Issues | Restricted to authorized SYE employees, protected by corporate SSO |\n| **Internal General** | Division Announcements, Holiday Calendars, General Guidelines | Accessible to all AEON staff |\n| **Public** | Marketing Brochures, Public App Store descriptions | Publicly distributable |\n\n**Clean Desk & Screen Policy**:\n- Lock your workstation (`Win + L` or `Cmd + Ctrl + Q`) whenever leaving your desk.\n- Never leave printed customer records, credentials, or badges unattended.\n- Whiteboards containing architecture or passwords must be erased immediately after meetings."
+          "title": "ISO 27001: Information Security & Zero-Trust Architecture",
+          "body": "### Core Security Mandates:\n1. **Zero-Trust & Least Privilege (PoLP)**: Access to systems and databases is strictly granted per role. Wildcard permissions (`*`) are forbidden.\n2. **Hardware FIDO2 Multi-Factor Authentication**: All access to GitHub Enterprise, VMware Tanzu, VPN, and SSO requires hardware **YubiKey** or Authenticator apps. SMS OTP is prohibited.\n3. **No Secrets in Source Code**: Committing credentials, passwords, or tokens into Git is strictly prohibited. Pre-commit hooks reject secrets automatically.\n4. **Mandatory Encryption**:\n   - **At Rest**: AES-256 encryption on all PostgreSQL databases and storage volumes.\n   - **In Transit**: TLS 1.3 encryption on all external and internal microservice APIs.\n5. **Workstation Security**: Automatic screen lock after **5 minutes** of inactivity and full-disk BitLocker encryption."
         },
         {
-          "title": "Credential Hygiene & Secrets Management",
-          "body": "Hardcoding secrets in source code is considered a **Severity 1 Security Violation** and results in immediate build rejection.\n\n```\n// ❌ ANTI-PATTERN: Hardcoded secret (Will trigger SonarQube & Pre-commit hook block)\nconst dbPassword = \"SuperSecretPassword123!\";\n\n// ✅ BEST PRACTICE: Retrieve from Environment or HashiCorp Vault / Kubernetes Secret\nconst dbPassword = process.env.DATABASE_PASSWORD;\n```\n\n- **Password Complexity**: Minimum 12 characters containing uppercase, lowercase, numbers, and special symbols. Changed every 90 days.\n- **API Keys & Tokens**: Expire within 24 hours maximum. Must use asymmetric JWT (RS256) or mTLS certificates.\n- **Git Guardian**: Automated scanning on all GitHub repositories blocks any commit containing private keys or API tokens."
+          "title": "ISO 9001: Quality Management & Engineering Traceability",
+          "body": "### SDLC Quality Gates:\n- **Peer Code Reviews**: Every Pull Request requires approval from at least **2 peer engineers** before merging.\n- **Unit Test Coverage**: Automated test suites must achieve at least **80% line coverage** in CI before deployment.\n- **Traceability**: Every commit, branch, and PR must link to a valid ticket on **On-Premise Jira Data Center**.\n- **Audit Trails**: All production deployment artifacts, test execution results, and Change Advisory Board (CAB) approvals are retained for annual audit reviews."
         },
         {
-          "title": "Phishing Defense & Incident Reporting Protocol",
-          "body": "Over 90% of security breaches originate from social engineering. Recognize the red flags:\n\n- **Urgency & Coercion**: Demands for immediate credential entry to prevent account closure.\n- **Mismatched Domains**: Emails from `service@aeon-security-update.com` instead of `@aeon.co.th`.\n- **Suspicious Attachments**: Macro-enabled Excel files (`.xlsm`), zip archives, or unexpected executables.\n\n**Reporting Protocol**:\n1. Do **NOT** click links or open attachments.\n2. Forward the suspicious email immediately to **`security@aeon.co.th`** and **`sye@aeon.co.th`**.\n3. If you accidentally entered credentials, disconnect network immediately and call Security Operations Center (SOC Hotline ext. 4444)."
+          "title": "ISO 14001: Environmental Management & ISO 22301: Business Continuity",
+          "body": "### ISO 14001 (Environmental Sustainability):\n- **100% Paperless Engineering**: All specifications, ADRs, test plans, and sign-offs are purely digital on Confluence and Jira.\n- **Energy-Efficient Compute**: Virtualization and high-density container clustering reduce physical server footprint and power consumption in the data center.\n\n### ISO 22301 (Business Continuity Management):\n- Guarantees financial services survive catastrophic hardware or site failures.\n- Enforces regular BCP drills, automated failover runbooks, and strict compliance with RPO < 5 min and RTO < 30 min thresholds."
         }
       ],
-      "name_th": "ความมั่นคงปลอดภัยสารสนเทศ สถาปัตยกรรม Zero Trust และการควบคุม ISO 27001",
-      "description_th": "มาตรฐานความปลอดภัยทางไซเบอร์ระดับองค์กร ครอบคลุมหลักการ Zero Trust การจัดการรหัสผ่าน การป้องกันฟิชชิ่ง การจัดชั้นความลับข้อมูล และการควบคุมตามมาตรฐาน ISO 27001",
+      "name_th": "การกำกับดูแลตามมาตรฐาน ISO ทั้ง 4 ด้าน (ISO 27001, 9001, 14001, 22301)",
+      "description_th": "คู่มือมาตรฐานสากล ISO 4 ด้านที่กำกับดูแลการทำงานทั้งหมดในฝ่าย SYE: ISO 27001 (ความมั่นคงปลอดภัยสารสนเทศ), ISO 9001 (ระบบบริหารงานคุณภาพ), ISO 14001 (การจัดการสิ่งแวดล้อม) และ ISO 22301 (ความต่อเนื่องทางธุรกิจ)",
       "learningObjectives_th": [
-        "ประยุกต์ใช้หลักการ Zero Trust: ไม่เชื่อใจใคร และตรวจสอบสิทธิ์ทุกครั้ง (Never Trust, Always Verify)",
-        "ปฏิบัติตามมาตรฐานรหัสผ่าน การยืนยันตัวตนหลายชั้น (MFA) และการเข้าถึงสิทธิ์ระดับสูง (PAM)",
-        "ตรวจจับและรายงานภัยคุกคาม Social Engineering, Phishing และ Ransomware ได้อย่างถูกต้อง",
-        "จัดหมวดหมู่และปกป้องข้อมูลลูกค้าตามชั้นความลับข้อมูลมาตรฐาน ISO 27001"
+        "เข้าใจวัตถุประสงค์และขอบเขตการตรวจประเมินตามมาตรฐาน ISO 27001, 9001, 14001 และ 22301",
+        "ปฏิบัติตามมาตรฐานความปลอดภัย ISO 27001: Zero-Trust RBAC, บังคับใช้ Hardware FIDO2 MFA และการเข้ารหัส AES-256 / TLS 1.3",
+        "ปฏิบัติตามข้อกำหนดคุณภาพ ISO 9001: Peer Review 2 คน, Unit Test >= 80% และการบันทึกประวัติบน Jira",
+        "สนับสนุนมาตรฐานสิ่งแวดล้อม ISO 14001 ด้วยการทำงานแบบไร้กระดาษ (Paperless 100%)",
+        "เข้าใจข้อกำหนดความต่อเนื่องทางธุรกิจ ISO 22301 และขั้นตอนการรายงานเหตุฉุกเฉิน"
       ],
       "content_th": [
         {
           "title": "ภาพรวมระบบมาตรฐาน ISO สากลทั้ง 4 ด้านของ AEON",
-          "body": "ระบบงาน วิศวกรรม และโครงสร้างพื้นฐานทั้งหมดในฝ่าย SYE ได้รับการรับรองและกำกับดูแลโดย **มาตรฐาน ISO สากล 4 ด้าน**:\n\n| มาตรฐาน ISO | ด้านที่รับผิดชอบ | ขอบเขตการปฏิบัติงานในฝ่าย SYE |\n|---|---|---|\n| **ISO/IEC 27001** | ความมั่นคงปลอดภัยสารสนเทศ (ISMS) | ระบบ Zero-Trust, การเข้ารหัสข้อมูล, การห้ามฝังรหัสผ่านในโค้ด, การแจ้งเตือน SOC |\n| **ISO 9001** | ระบบบริหารงานคุณภาพ (QMS) | ด่านตรวจวัดคุณภาพ SDLC, Peer Review, การเขียน Unit Test, บันทึกประวัติบน Jira |\n| **ISO 14001** | การจัดการสิ่งแวดล้อม (EMS) | การทำงานแบบไร้กระดาษ 100%, การบริหารพลังงานเซิร์ฟเวอร์แบบ Virtualization |\n| **ISO 22301** | ความต่อเนื่องทางธุรกิจ (BCMS) | ศูนย์สำรองฉุกเฉิน (DR Site), การซ้อมกู้คืนระบบ BCP, ควบคุม RPO < 5m / RTO < 30m |\n\n\n\n    </div>\n</div>"
+          "body": "ระบบงาน วิศวกรรม และโครงสร้างพื้นฐานทั้งหมดในฝ่าย SYE ได้รับการรับรองและกำกับดูแลโดย **มาตรฐาน ISO สากล 4 ด้าน**:\n\n| มาตรฐาน ISO | ด้านที่รับผิดชอบ | ขอบเขตการปฏิบัติงานในฝ่าย SYE |\n|---|---|---|\n| **ISO/IEC 27001** | ความมั่นคงปลอดภัยสารสนเทศ (ISMS) | ระบบ Zero-Trust, การเข้ารหัสข้อมูล, การห้ามฝังรหัสผ่านในโค้ด, การแจ้งเตือน SOC |\n| **ISO 9001** | ระบบบริหารงานคุณภาพ (QMS) | ด่านตรวจวัดคุณภาพ SDLC, Peer Review, การเขียน Unit Test, บันทึกประวัติบน Jira |\n| **ISO 14001** | การจัดการสิ่งแวดล้อม (EMS) | การทำงานแบบไร้กระดาษ 100%, การบริหารพลังงานเซิร์ฟเวอร์แบบ Virtualization |\n| **ISO 22301** | ความต่อเนื่องทางธุรกิจ (BCMS) | ศูนย์สำรองฉุกเฉิน (DR Site), การซ้อมกู้คืนระบบ BCP, ควบคุม RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"/images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "ISO 27001: ความมั่นคงปลอดภัยสารสนเทศและสถาปัตยกรรม Zero-Trust",
-          "body": "### ข้อกำหนดความปลอดภัยหลัก:\n1. **Zero-Trust และสิทธิ์ขั้นต่ำ (PoLP)**: การเข้าถึงระบบและฐานข้อมูลจะให้เฉพาะสิทธิ์ที่จำเป็นตามบทบาทเท่านั้น ห้ามใช้สิทธิ์ครอบจักรวาล (`*`)\n2. **การยืนยันตัวตน MFA ด้วย Hardware FIDO2**: การเข้าถึง GitHub, Tanzu, VPN และ SSO ต้องใช้ **YubiKey** หรือ Authenticator App เท่านั้น ห้ามใช้ SMS OTP\n3. **ห้าม Commit ข้อมูลลับลง Source Code**: ระบบ CI และ Pre-commit Hook จะบล็อกการ Commit รหัสผ่านหรือ API Key ทันที\n4. **มาตรฐานการเข้ารหัส**:\n   - **ขณะจัดเก็บ (At Rest)**: เข้ารหัสฐานข้อมูล PostgreSQL ด้วยมาตรฐาน **AES-256**\n   - **ขณะรับส่ง (In Transit)**: บังคับใช้โปรโตคอล **TLS 1.3** ในการเชื่อมต่อ API ทั้งหมด\n5. **ความปลอดภัยเครื่องทำงาน**: ตั้งค่าล็อกหน้าจออัตโนมัติเมื่อไม่ใช้งานภายใน **5 นาที** และเปิดใช้งาน BitLocker เต็มรูปแบบ\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Information Security, Zero Trust Architecture & ISO 27001 ISMS Controls](/images/security_iam_perimeter.jpg)"
+          "body": "### ข้อกำหนดความปลอดภัยหลัก:\n1. **Zero-Trust และสิทธิ์ขั้นต่ำ (PoLP)**: การเข้าถึงระบบและฐานข้อมูลจะให้เฉพาะสิทธิ์ที่จำเป็นตามบทบาทเท่านั้น ห้ามใช้สิทธิ์ครอบจักรวาล (`*`)\n2. **การยืนยันตัวตน MFA ด้วย Hardware FIDO2**: การเข้าถึง GitHub, Tanzu, VPN และ SSO ต้องใช้ **YubiKey** หรือ Authenticator App เท่านั้น ห้ามใช้ SMS OTP\n3. **ห้าม Commit ข้อมูลลับลง Source Code**: ระบบ CI และ Pre-commit Hook จะบล็อกการ Commit รหัสผ่านหรือ API Key ทันที\n4. **มาตรฐานการเข้ารหัส**:\n   - **ขณะจัดเก็บ (At Rest)**: เข้ารหัสฐานข้อมูล PostgreSQL ด้วยมาตรฐาน **AES-256**\n   - **ขณะรับส่ง (In Transit)**: บังคับใช้โปรโตคอล **TLS 1.3** ในการเชื่อมต่อ API ทั้งหมด\n5. **ความปลอดภัยเครื่องทำงาน**: ตั้งค่าล็อกหน้าจออัตโนมัติเมื่อไม่ใช้งานภายใน **5 นาที** และเปิดใช้งาน BitLocker เต็มรูปแบบ"
         },
         {
           "title": "ISO 9001: ระบบบริหารงานคุณภาพและการตรวจสอบย้อนกลับ (Traceability)",
@@ -352,14 +353,13 @@ window.SYE_SAMPLE_DATA = {
           "body": "### ISO 14001 (การจัดการสิ่งแวดล้อม):\n- **การทำงานแบบไร้กระดาษ 100% (Paperless)**: เอกสารการออกแบบ สถาปัตยกรรม และการอนุมัติงานทำผ่านระบบดิจิทัลบน Confluence และ Jira ทั้งหมด\n- **การบริหารพลังงานเซิร์ฟเวอร์**: การใช้ Containerization และ Virtualization ช่วยลดจำนวนเครื่อง Physical Server และประหยัดพลังงานใน Data Center\n\n### ISO 22301 (ความต่อเนื่องทางธุรกิจ):\n- รับประกันว่าระบบการเงินของ AEON จะสามารถให้บริการได้อย่างต่อเนื่องแม้เกิดภัยพิบัติ\n- กำหนดให้มีการซ้อมแผน BCP เป็นประจำ และควบคุมให้ระบบกู้คืนได้ตามเกณฑ์ RPO < 5 นาที และ RTO < 30 นาที"
         }
       ],
-      "image": "/images/security_iam_perimeter.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Information Security, Zero Trust Architecture & ISO 27001 ISMS Controls"
+      "image": "/images/security_iam_perimeter.jpg"
     },
     {
       "id": "GEN-003",
-      "name": "Enterprise SDLC, GitOps CI/CD & ISO 9001 Quality Gates",
+      "name": "Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall)",
       "category": "General",
-      "description": "Standard Software Development Life Cycle (SDLC) at AEON, covering Trunk-Based Git workflows, automated CI/CD pipelines, automated testing gates, and ISO 9001 compliance.",
+      "description": "Comprehensive guide to the SYE adaptive engineering methodology. Details how squads dynamically select between Agile Iterations (for customer-facing UX) and Structured Waterfall Milestones (for core banking integrations and regulatory compliance), along with the 70/20/10 Testing Pyramid and CAB release gates.",
       "duration": "4 hours",
       "targetRoles": [
         "All"
@@ -369,49 +369,48 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Navigate the 6 formal phases of AEON Enterprise SDLC with ISO 9001 sign-offs",
-        "Apply Trunk-Based Development and Git branching strategies (feature -> develop -> staging -> main)",
-        "Enforce automated quality gates: SonarQube static analysis, unit test coverage (>=80%), and OWASP dependency checks",
-        "Execute Change Advisory Board (CAB) release management and zero-downtime deployment protocols"
+        "Understand the rationale for the Adaptive Delivery Model (Hybrid Agile & Waterfall) without rigid Scrum dogma",
+        "Select between Track A (Agile Sprints) and Track B (Waterfall Milestones) based on domain complexity and risk",
+        "Execute the 6-phase SDLC quality gates from requirements formulation to production deployment",
+        "Apply the 70/20/10 Testing Pyramid strategy (Unit Tests >=80%, Integration Tests, E2E Tests)"
       ],
       "content": [
         {
-          "title": "The 6 Phases of AEON Enterprise SDLC",
-          "body": "Every software initiative in SYE must progress through 6 structured lifecycle phases:\n\n```\n[ 1. Discovery & BRD ] ──> [ 2. Technical Architecture ] ──> [ 3. Sprint Development ]\n         │                              │                               │\n         ▼                              ▼                               ▼\n[ 6. Production & Hypercare ] <── [ 5. UAT & CAB Approval ] <── [ 4. SIT & Automated QA ]\n```\n\n1. **Discovery & BRD**: Business Requirements Document authored by BA, approved by Product Owner.\n2. **Technical Architecture & Design**: High-Level Design (HLD) & Low-Level Design (LLD) reviewed by System Architect.\n3. **Sprint Development & Code Review**: Feature coding, 80%+ unit test coverage, mandatory peer PR review.\n4. **System Integration Testing (SIT)**: Automated API integration, regression testing, and security scanning.\n5. **User Acceptance Testing (UAT) & CAB**: Business sign-off and Change Advisory Board deployment approval.\n6. **Production Release & Monitoring**: Zero-downtime rolling update on VMware Tanzu with 72-hour Hypercare."
+          "title": "Adaptive Methodology Strategy (Track A Agile vs. Track B Waterfall)",
+          "body": "At AEON SYE, we do not force projects into rigid Scrum ceremonies. Instead, our division applies an **Adaptive Project Delivery Model (Hybrid Agile & Waterfall)** tailored to the nature and regulatory constraints of each initiative:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_hybrid_sdlc_framework.jpg\" alt=\"Adaptive Project Delivery Model (Hybrid Agile & Waterfall)\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Adaptive Project Delivery Model (Hybrid Agile & Waterfall)</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">On-Premise Jira Data Center • ISO 9001 Quality Flow</span>\n        </div>\n    </div>\n</div>\n\n\n### Track A: Agile Delivery (Customer Channels):\n- **Best Suited For**: Mobile Banking apps (CXS), customer web portals, Conversational AI Chatbots (OCS), and rapid user experience improvements.\n- **Delivery Flow**: 2-week iterative development cycles, continuous backlog grooming on Jira Data Center, fast staging deployments, and rapid stakeholder feedback.\n\n### Track B: Waterfall Delivery (Core & Regulatory Systems):\n- **Best Suited For**: Core Banking integration (API), payment switch settlement connectors, regulatory reporting modules, hardware infrastructure provisioning, and ISO compliance audits.\n- **Delivery Flow**: Structured stage-gates with formal sign-offs (Requirements Specification $\\rightarrow$ Architecture Review $\\rightarrow$ Implementation $\\rightarrow$ Formal QA UAT $\\rightarrow$ CAB Approval $\\rightarrow$ Production Release)."
         },
         {
-          "title": "GitOps Workflow & Automated CI/CD Pipeline",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise SDLC, GitOps CI/CD & ISO 9001 Quality Gates](/images/sye_hybrid_sdlc_framework.jpg)\n\nSYE adheres to a standardized GitOps deployment pipeline:\n\n```\nDeveloper Push ──> GitHub PR ──> SonarQube Gate ──> Docker Build ──> Harbor Registry ──> ArgoCD Sync ──> Tanzu K8s\n```\n\n### Automated Pipeline Quality Gates:\n- **Linting & Formatting**: Strict ESLint / GoFmt compliance.\n- **Unit Test Coverage**: Minimum **80% line coverage** required to merge.\n- **Static Code Analysis (SAST)**: SonarQube Quality Gate (0 Vulnerabilities, 0 Security Hotspots, Technical Debt < 5%).\n- **Dependency Vulnerability Scanning (SCA)**: Automated Trivy/Snyk container scanning in Harbor Registry."
+          "title": "Enterprise SDLC 6-Phase Quality Gates",
+          "body": "Regardless of whether a project follows Agile or Waterfall, it must fulfill the mandatory quality gates across all six progressive phases:\n\n1. **Phase 1: Requirements Definition**: Business Analysts author structured User Stories with testable **Given-When-Then** criteria adhering to Definition of Ready (DoR).\n2. **Phase 2: Architecture & Technical Design**: System Architects document technical blueprints via **Architectural Decision Records (ADRs)** on Confluence.\n3. **Phase 3: Implementation & Unit Testing**: Developers author clean Golang / Next.js code with mandatory unit tests ($ge 80%$ line coverage).\n4. **Phase 4: Automated CI & Code Review**: Pull Requests undergo automated SonarQube static analysis and require approval from **2 peer reviewers**.\n5. **Phase 5: Staging Integration & UAT**: QA engineers execute automated regression suites and business stakeholders verify acceptance criteria on Staging.\n6. **Phase 6: CAB Approval & Production Release**: Change Advisory Board review and zero-downtime deployment execution."
         },
         {
-          "title": "Release Management & Rollback Contingency",
-          "body": "Production releases must be accompanied by a formal **Rollback Plan (Contingency Runbook)**.\n\n### Deployment Best Practices:\n- **Rolling Updates**: Kubernetes updates pods sequentially with `maxSurge: 25%` and `maxUnavailable: 0` to ensure zero downtime.\n- **Health Checks**: `livenessProbe` and `readinessProbe` must be configured on all microservices.\n- **Instant Rollback**: If error rate spikes > 1% post-deployment, trigger `kubectl rollout undo deployment/<service-name>` or ArgoCD rollback immediately."
+          "title": "Testing Pyramid Strategy (70 / 20 / 10 Ratio)",
+          "body": "To maintain high software quality while keeping build pipelines fast and reliable, SYE adheres to the standardized **Testing Pyramid**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n- **70% Unit Tests**: Fast, isolated tests written in **Golang** (`testing` / `testify`) and **Jest/Vitest** for Next.js/React. Must achieve at least **80% line coverage** and run locally in under 3 minutes.\n- **20% Integration Tests**: Validate API contracts, PostgreSQL database transactions, and Apache Kafka message schemas using Docker containers on RHEL.\n- **10% End-to-End & Performance Tests**: Automated Playwright / Cypress browser verification and JMeter stress tests validating critical financial journeys against STAGING."
         }
       ],
-      "name_th": "วงจรการพัฒนาระบบระดับองค์กร (SDLC), GitOps CI/CD และเกณฑ์คุณภาพ ISO 9001",
-      "description_th": "มาตรฐานวงจรการพัฒนาซอฟต์แวร์ของ AEON ครอบคลุมขั้นตอน GitOps, การสร้าง CI/CD Pipeline อัตโนมัติ, การตรวจสอบคุณภาพโค้ด และการส่งมอบงานตามมาตรฐาน ISO 9001",
+      "name_th": "วงจรการพัฒนาซอฟต์แวร์แบบยืดหยุ่น (Hybrid Agile & Waterfall) และการประกันคุณภาพ",
+      "description_th": "คู่มือระเบียบวิธีการพัฒนาซอฟต์แวร์แบบยืดหยุ่นของฝ่าย SYE อธิบายแนวทางการเลือกใช้ระหว่าง Agile Iterations (สำหรับระบบลูกค้า) และ Waterfall Milestones (สำหรับระบบ Core Banking และข้อกำหนดกฎหมาย) ร่วมกับปิรามิดการทดสอบ 70/20/10 และเกณฑ์การปล่อยระบบ",
       "learningObjectives_th": [
-        "เข้าใจและปฏิบัติตาม 6 ขั้นตอนของวงจร SDLC พร้อมการลงนามอนุมัติตามมาตรฐาน ISO 9001",
-        "ใช้กระบวนการ Git Branching Strategy (feature -> develop -> staging -> main) อย่างถูกต้อง",
-        "ผ่านเกณฑ์ Quality Gates อัตโนมัติ: SonarQube, Unit Test Coverage >=80% และการสแกนช่องโหว่",
-        "ปฏิบัติตามขั้นตอนการขออนุมัติ Change Request (CAB) และการ Deployment แบบ Zero-Downtime"
+        "เข้าใจเหตุผลและความสำคัญของโมเดลการทำงานแบบ Adaptive Hybrid (Agile & Waterfall) โดยไม่ยึดติดกับพิธีกรรม Scrum ตายตัว",
+        "เลือกใช้ระหว่าง Track A (Agile Sprints) และ Track B (Waterfall Milestones) ตามลักษณะโครงการและความเสี่ยง",
+        "ปฏิบัติตามด่านตรวจวัดคุณภาพ SDLC ทั้ง 6 ขั้นตอน ตั้งแต่การวิเคราะห์ความต้องการจนถึงการปล่อยระบบ",
+        "นำมาตรฐานปิรามิดการทดสอบ 70/20/10 มาใช้ (Unit Test >=80%, Integration Test, E2E Test)"
       ],
       "content_th": [
         {
           "title": "กลยุทธ์การพัฒนาแบบยืดหยุ่น (Track A Agile และ Track B Waterfall)",
-          "body": "ฝ่าย SYE ไม่ได้ยึดติดกับพิธีกรรม Scrum แบบตายตัว แต่ใช้ **โมเดลการส่งมอบงานแบบปรับเปลี่ยนตามความเหมาะสม (Adaptive Hybrid Agile & Waterfall)** ตามลักษณะงานและข้อกำหนดทางกฎหมายของแต่ละโครงการ:\n\n\n\n    </div>\n</div>\n\n\n### Track A: การพัฒนาแบบ Agile (สำหรับระบบช่องทางลูกค้า):\n- **ลักษณะงานที่เหมาะสม**: แอปพลิเคชัน Mobile Banking (CXS), เว็บพอร์ทัลบริการลูกค้า, ระบบ AI Chatbot (OCS) และงานปรับปรุง UX\n- **แนวทางการทำงาน**: รอบการพัฒนาละ 2 สัปดาห์, บริหาร Backlog บน Jira Data Center, ปล่อยทดสอบบน Staging ต่อเนื่อง และรับ Feedback รวดเร็ว\n\n### Track B: การพัฒนาแบบ Waterfall (สำหรับระบบหลักและข้อกำหนดกฎหมาย):\n- **ลักษณะงานที่เหมาะสม**: การเชื่อมต่อ Core Banking (API), ระบบชำระเงิน Payment Switch, ระบบรายงานตามกฎหมายธนาคาร และงานโครงสร้างพื้นฐาน\n- **แนวทางการทำงาน**: ควบคุมคุณภาพผ่านขั้นตอน Milestone ที่มีเอกสารตรวจรับชัดเจน (Requirements $\\rightarrow$ Architecture $\\rightarrow$ Development $\\rightarrow$ UAT $\\rightarrow$ CAB Approval $\\rightarrow$ Release)"
+          "body": "ฝ่าย SYE ไม่ได้ยึดติดกับพิธีกรรม Scrum แบบตายตัว แต่ใช้ **โมเดลการส่งมอบงานแบบปรับเปลี่ยนตามความเหมาะสม (Adaptive Hybrid Agile & Waterfall)** ตามลักษณะงานและข้อกำหนดทางกฎหมายของแต่ละโครงการ:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_hybrid_sdlc_framework.jpg\" alt=\"Adaptive Project Delivery Model (Hybrid Agile & Waterfall)\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Adaptive Project Delivery Model (Hybrid Agile & Waterfall)</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">On-Premise Jira Data Center • ISO 9001 Quality Flow</span>\n        </div>\n    </div>\n</div>\n\n\n### Track A: การพัฒนาแบบ Agile (สำหรับระบบช่องทางลูกค้า):\n- **ลักษณะงานที่เหมาะสม**: แอปพลิเคชัน Mobile Banking (CXS), เว็บพอร์ทัลบริการลูกค้า, ระบบ AI Chatbot (OCS) และงานปรับปรุง UX\n- **แนวทางการทำงาน**: รอบการพัฒนาละ 2 สัปดาห์, บริหาร Backlog บน Jira Data Center, ปล่อยทดสอบบน Staging ต่อเนื่อง และรับ Feedback รวดเร็ว\n\n### Track B: การพัฒนาแบบ Waterfall (สำหรับระบบหลักและข้อกำหนดกฎหมาย):\n- **ลักษณะงานที่เหมาะสม**: การเชื่อมต่อ Core Banking (API), ระบบชำระเงิน Payment Switch, ระบบรายงานตามกฎหมายธนาคาร และงานโครงสร้างพื้นฐาน\n- **แนวทางการทำงาน**: ควบคุมคุณภาพผ่านขั้นตอน Milestone ที่มีเอกสารตรวจรับชัดเจน (Requirements $\\rightarrow$ Architecture $\\rightarrow$ Development $\\rightarrow$ UAT $\\rightarrow$ CAB Approval $\\rightarrow$ Release)"
         },
         {
           "title": "ด่านควบคุมคุณภาพ 6 ขั้นตอนของวงจร SDLC",
-          "body": "ไม่ว่าจะเลือกใช้กระบวนการพัฒนาแบบใด ทุกโครงการต้องผ่านด่านตรวจวัดคุณภาพ (Quality Gates) ทั้ง 6 ขั้นตอน:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise SDLC, GitOps CI/CD & ISO 9001 Quality Gates](/images/sye_hybrid_sdlc_framework.jpg)\n\n1. **ขั้นตอนที่ 1: การกำหนดความต้องการ (Requirements)**: BA จัดทำ User Story พร้อมเงื่อนไขการตรวจรับ **Given-When-Then** ตามเกณฑ์ DoR\n2. **ขั้นตอนที่ 2: การออกแบบสถาปัตยกรรม (Architecture)**: Architect จัดทำเอกสาร **Architectural Decision Record (ADR)** บน Confluence\n3. **ขั้นตอนที่ 3: การเขียนโค้ดและ Unit Test (Implementation)**: วิศวกรพัฒนาโค้ดด้วย Golang / Next.js พร้อมเขียน Unit Test ครอบคลุม $ge 80%$\n4. **ขั้นตอนที่ 4: การตรวจโค้ดอัตโนมัติและ Peer Review (CI & Review)**: ตรวจสอบผ่าน SonarQube และต้องได้รับการอนุมัติจาก Peer Review **2 คน**\n5. **ขั้นตอนที่ 5: การทดสอบรวมระบบและ UAT (Staging & UAT)**: QA รัน Automated Regression Test และผู้ใช้งานจริงตรวจรับบน Staging\n6. **ขั้นตอนที่ 6: การขออนุมัติ CAB และปล่อยระบบ (Release)**: ยื่นขออนุมัติจากคณะกรรมการและปล่อยระบบแบบ Zero-Downtime"
+          "body": "ไม่ว่าจะเลือกใช้กระบวนการพัฒนาแบบใด ทุกโครงการต้องผ่านด่านตรวจวัดคุณภาพ (Quality Gates) ทั้ง 6 ขั้นตอน:\n\n1. **ขั้นตอนที่ 1: การกำหนดความต้องการ (Requirements)**: BA จัดทำ User Story พร้อมเงื่อนไขการตรวจรับ **Given-When-Then** ตามเกณฑ์ DoR\n2. **ขั้นตอนที่ 2: การออกแบบสถาปัตยกรรม (Architecture)**: Architect จัดทำเอกสาร **Architectural Decision Record (ADR)** บน Confluence\n3. **ขั้นตอนที่ 3: การเขียนโค้ดและ Unit Test (Implementation)**: วิศวกรพัฒนาโค้ดด้วย Golang / Next.js พร้อมเขียน Unit Test ครอบคลุม $ge 80%$\n4. **ขั้นตอนที่ 4: การตรวจโค้ดอัตโนมัติและ Peer Review (CI & Review)**: ตรวจสอบผ่าน SonarQube และต้องได้รับการอนุมัติจาก Peer Review **2 คน**\n5. **ขั้นตอนที่ 5: การทดสอบรวมระบบและ UAT (Staging & UAT)**: QA รัน Automated Regression Test และผู้ใช้งานจริงตรวจรับบน Staging\n6. **ขั้นตอนที่ 6: การขออนุมัติ CAB และปล่อยระบบ (Release)**: ยื่นขออนุมัติจากคณะกรรมการและปล่อยระบบแบบ Zero-Downtime"
         },
         {
           "title": "กลยุทธ์ปิรามิดการทดสอบ (สัดส่วน 70 / 20 / 10)",
-          "body": "เพื่อให้ซอฟต์แวร์มีคุณภาพสูงสุดและระบบทดสอบทำงานได้รวดเร็ว ฝ่าย SYE กำหนดสัดส่วน **Testing Pyramid**:\n\n\n\n    </div>\n</div>\n\n\n- **70% Unit Tests**: เขียนด้วย **Golang** (`testing` / `testify`) และ **Jest/Vitest** สำหรับ Next.js ต้องมีความครอบคลุมโค้ด **ไม่น้อยกว่า 80%**\n- **20% Integration Tests**: ทดสอบการเชื่อมต่อ API, ฐานข้อมูล PostgreSQL และ Message Schema บน Apache Kafka\n- **10% End-to-End & Performance Tests**: ทดสอบจำลองการทำธุรกรรมจริงของผู้ใช้งานผ่าน Playwright / Cypress และทดสอบโหลดด้วย JMeter บน STAGING"
+          "body": "เพื่อให้ซอฟต์แวร์มีคุณภาพสูงสุดและระบบทดสอบทำงานได้รวดเร็ว ฝ่าย SYE กำหนดสัดส่วน **Testing Pyramid**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n- **70% Unit Tests**: เขียนด้วย **Golang** (`testing` / `testify`) และ **Jest/Vitest** สำหรับ Next.js ต้องมีความครอบคลุมโค้ด **ไม่น้อยกว่า 80%**\n- **20% Integration Tests**: ทดสอบการเชื่อมต่อ API, ฐานข้อมูล PostgreSQL และ Message Schema บน Apache Kafka\n- **10% End-to-End & Performance Tests**: ทดสอบจำลองการทำธุรกรรมจริงของผู้ใช้งานผ่าน Playwright / Cypress และทดสอบโหลดด้วย JMeter บน STAGING"
         }
       ],
-      "image": "/images/sye_hybrid_sdlc_framework.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise SDLC, GitOps CI/CD & ISO 9001 Quality Gates"
+      "image": "/images/sye_hybrid_sdlc_framework.jpg"
     },
     {
       "id": "GEN-004",
@@ -424,7 +423,7 @@ window.SYE_SAMPLE_DATA = {
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Navigate and manage sprint backlogs, epics, stories, and tasks on On-Premise Jira Data Center",
@@ -435,11 +434,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Jira Data Center Workflows & Issue Hierarchy",
-          "body": "All engineering work in SYE is tracked within our self-hosted **On-Premise Jira Data Center**. Unrecorded work is strictly prohibited under ISO 9001.\n\n\n\n    </div>\n</div>\n\n\n### Standard Issue Hierarchy:\n1. **Epic**: Broad business or architectural initiative spanning multiple months (e.g., `Mobile App Biometric Login v2`).\n2. **Story**: Functional requirement delivering tangible value to users, written in Given-When-Then format.\n3. **Task / Technical Task**: Engineering enablement task (e.g., database index migration, API schema refactoring).\n4. **Bug**: Unintended defect or deviation from accepted functional specifications.\n5. **Sub-Task**: Granular unit of work estimated in hours allocated to individual engineers."
+          "body": "All engineering work in SYE is tracked within our self-hosted **On-Premise Jira Data Center**. Unrecorded work is strictly prohibited under ISO 9001.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_jira_confluence_tools.jpg\" alt=\"Enterprise On-Premise Jira & Confluence Workflows\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise On-Premise Jira & Confluence Workflows</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sprint Tracking • CAB Approvals • ADRs & WIs</span>\n        </div>\n    </div>\n</div>\n\n\n### Standard Issue Hierarchy:\n1. **Epic**: Broad business or architectural initiative spanning multiple months (e.g., `Mobile App Biometric Login v2`).\n2. **Story**: Functional requirement delivering tangible value to users, written in Given-When-Then format.\n3. **Task / Technical Task**: Engineering enablement task (e.g., database index migration, API schema refactoring).\n4. **Bug**: Unintended defect or deviation from accepted functional specifications.\n5. **Sub-Task**: Granular unit of work estimated in hours allocated to individual engineers."
         },
         {
           "title": "Defect Severity Triaging & Bug Lifecycle",
-          "body": "When discovering or reporting defects, engineers must assign the correct Severity and Priority:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows](/images/sye_jira_confluence_tools.jpg)\n\n| Severity Level | Definition | Target Resolution SLA |\n|---|---|---|\n| **Blocker / Critical** | Complete service outage, data corruption, or payment transaction failure | Immediate hotfix (< 4 hours) |\n| **Major** | Primary feature broken with no feasible business workaround | Within current sprint (< 48 hours) |\n| **Moderate** | Non-critical feature broken but functional workaround exists | Next scheduled sprint |\n| **Low / Cosmetic** | Minor UI misalignment, typo, or aesthetic inconsistency | Backlog priority |"
+          "body": "When discovering or reporting defects, engineers must assign the correct Severity and Priority:\n\n| Severity Level | Definition | Target Resolution SLA |\n|---|---|---|\n| **Blocker / Critical** | Complete service outage, data corruption, or payment transaction failure | Immediate hotfix (< 4 hours) |\n| **Major** | Primary feature broken with no feasible business workaround | Within current sprint (< 48 hours) |\n| **Moderate** | Non-critical feature broken but functional workaround exists | Next scheduled sprint |\n| **Low / Cosmetic** | Minor UI misalignment, typo, or aesthetic inconsistency | Backlog priority |"
         },
         {
           "title": "Change Request (CR) & CAB Approval Workflow",
@@ -461,11 +460,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "ลำดับชั้นของงานและกระบวนการทำงานบน Jira Data Center",
-          "body": "งานวิศวกรรมทั้งหมดในฝ่าย SYE ต้องได้รับการบันทึกและติดตามบน **On-Premise Jira Data Center** ขององค์กร เพื่อความโปร่งใสตามมาตรฐาน ISO 9001\n\n\n\n    </div>\n</div>\n\n\n### ลำดับชั้นของงานมาตรฐาน (Issue Hierarchy):\n1. **Epic**: โครงการใหญ่ทางธุรกิจหรือสถาปัตยกรรมที่ใช้เวลาหลายเดือน (เช่น `ระบบยืนยันตัวตนด้วยใบหน้า Mobile App v2`)\n2. **Story**: ความต้องการเชิงฟังก์ชันที่ส่งมอบคุณค่าแก่ผู้ใช้ เขียนในรูปแบบ Given-When-Then\n3. **Task / Technical Task**: งานด้านเทคนิค เช่น การทำ Index ฐานข้อมูล, การปรับแต่ง API Schema\n4. **Bug**: ข้อผิดพลาดของระบบที่ไม่ตรงตามเงื่อนไขที่ตกลงไว้\n5. **Sub-Task**: งานย่อยระดับรายชั่วโมงที่มอบหมายให้วิศวกรแต่ละคนรับผิดชอบ"
+          "body": "งานวิศวกรรมทั้งหมดในฝ่าย SYE ต้องได้รับการบันทึกและติดตามบน **On-Premise Jira Data Center** ขององค์กร เพื่อความโปร่งใสตามมาตรฐาน ISO 9001\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_jira_confluence_tools.jpg\" alt=\"Enterprise On-Premise Jira & Confluence Workflows\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise On-Premise Jira & Confluence Workflows</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sprint Tracking • CAB Approvals • ADRs & WIs</span>\n        </div>\n    </div>\n</div>\n\n\n### ลำดับชั้นของงานมาตรฐาน (Issue Hierarchy):\n1. **Epic**: โครงการใหญ่ทางธุรกิจหรือสถาปัตยกรรมที่ใช้เวลาหลายเดือน (เช่น `ระบบยืนยันตัวตนด้วยใบหน้า Mobile App v2`)\n2. **Story**: ความต้องการเชิงฟังก์ชันที่ส่งมอบคุณค่าแก่ผู้ใช้ เขียนในรูปแบบ Given-When-Then\n3. **Task / Technical Task**: งานด้านเทคนิค เช่น การทำ Index ฐานข้อมูล, การปรับแต่ง API Schema\n4. **Bug**: ข้อผิดพลาดของระบบที่ไม่ตรงตามเงื่อนไขที่ตกลงไว้\n5. **Sub-Task**: งานย่อยระดับรายชั่วโมงที่มอบหมายให้วิศวกรแต่ละคนรับผิดชอบ"
         },
         {
           "title": "การจัดระดับความรุนแรงของบั๊กและวงจรชีวิตของข้อผิดพลาด",
-          "body": "เมื่อพบข้อผิดพลาดในระบบ วิศวกรต้องกำหนดระดับความรุนแรง (Severity) ให้ถูกต้อง:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows](/images/sye_jira_confluence_tools.jpg)\n\n| ระดับความรุนแรง | นิยาม | เกณฑ์เวลาแก้ไข (SLA) |\n|---|---|---|\n| **Blocker / Critical** | ระบบหลักล่ม ข้อมูลเสียหาย หรือระบบธุรกรรมการเงินล้มเหลว | แก้ไขด่วนทันที (< 4 ชั่วโมง) |\n| **Major** | ฟังก์ชันหลักใช้งานไม่ได้และไม่มีวิธีเลี่ยงงาน | แก้ไขภายใน Sprint (< 48 ชั่วโมง) |\n| **Moderate** | ฟังก์ชันรองทำงานผิดพลาด แต่มีวิธีเลี่ยงงานชั่วคราว | นำเข้าคิว Sprint ถัดไป |\n| **Low / Minor** | ปัญหา UI เล็กน้อย ข้อความผิด หรือจุดแสดงผลไม่สวยงาม | จัดคิวตามความสำคัญ |"
+          "body": "เมื่อพบข้อผิดพลาดในระบบ วิศวกรต้องกำหนดระดับความรุนแรง (Severity) ให้ถูกต้อง:\n\n| ระดับความรุนแรง | นิยาม | เกณฑ์เวลาแก้ไข (SLA) |\n|---|---|---|\n| **Blocker / Critical** | ระบบหลักล่ม ข้อมูลเสียหาย หรือระบบธุรกรรมการเงินล้มเหลว | แก้ไขด่วนทันที (< 4 ชั่วโมง) |\n| **Major** | ฟังก์ชันหลักใช้งานไม่ได้และไม่มีวิธีเลี่ยงงาน | แก้ไขภายใน Sprint (< 48 ชั่วโมง) |\n| **Moderate** | ฟังก์ชันรองทำงานผิดพลาด แต่มีวิธีเลี่ยงงานชั่วคราว | นำเข้าคิว Sprint ถัดไป |\n| **Low / Minor** | ปัญหา UI เล็กน้อย ข้อความผิด หรือจุดแสดงผลไม่สวยงาม | จัดคิวตามความสำคัญ |"
         },
         {
           "title": "ขั้นตอนการขออนุมัติ Change Request (CR) และคณะกรรมการ CAB",
@@ -476,8 +475,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "**On-Premise Confluence Data Center** เป็นศูนย์กลางข้อมูลทางเทคนิคของฝ่าย SYE:\n\n- **Architectural Decision Records (ADRs)**: เอกสารบันทึกเหตุผลการตัดสินใจเลือกเทคโนโลยีหรือสถาปัตยกรรมเปรียบเทียบกับทางเลือกอื่น\n- **Work Instructions (WIs)**: คู่มือการปฏิบัติงานทีละขั้นตอนสำหรับการ Release, Patching และบำรุงรักษาระบบตามมาตรฐาน ISO 9001\n- **Blameless Post-Mortems**: สรุปรายงานวิเคราะห์สาเหตุเชิงลึกของเหตุขัดข้อง P1/P2 เผยแพร่ภายใน **48 ชั่วโมง**"
         }
       ],
-      "image": "/images/sye_jira_confluence_tools.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows"
+      "image": "/images/sye_jira_confluence_tools.jpg"
     },
     {
       "id": "GEN-005",
@@ -490,7 +488,7 @@ window.SYE_SAMPLE_DATA = {
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Master the 100% On-Premise infrastructure mandate and strict prohibition of Public Cloud for financial data",
@@ -501,11 +499,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "100% On-Premise Mandate (Strictly No Public Cloud)",
-          "body": "<span class=\"px-2.5 py-1 rounded bg-blue-950 text-blue-300 text-[10px] font-mono font-bold\">Port 443 / 8080</span>\n        </div>\n        \n        \n            <span class=\"px-2.5 py-1 rounded bg-emerald-950 text-emerald-300 text-[10px] font-mono font-bold\">Tanzu TKG + RHEL 9</span>\n        </div>\n        \n        \n            <span class=\"px-2.5 py-1 rounded bg-amber-950 text-amber-300 text-[10px] font-mono font-bold\">RPO &lt; 15m • RTO &lt; 2h</span>\n        </div>\n    </div>\n</div>\n\n\nTo comply with regulatory banking requirements, data sovereignty, and internal security mandates, **all SYE financial platforms operate 100% On-Premise**. Hosting production workloads on public cloud providers (AWS, GCP, Azure) is strictly prohibited.\n\n\n\n    </div>\n</div>\n\n\n### Enterprise Compute Layers:\n1. **Container Platform**: **VMware Tanzu Kubernetes (K8s)** running microservices in high-density container pods with automated load balancing and ingress controller routing.\n2. **Virtual Machines**: **Red Hat Enterprise Linux (RHEL)** is the strictly mandated operating system for all enterprise VMs. No unauthorized Linux distributions (e.g. Ubuntu, CentOS) or unmanaged OS instances are permitted."
+          "body": "To comply with regulatory banking requirements, data sovereignty, and internal security mandates, **all SYE financial platforms operate 100% On-Premise**. Hosting production workloads on public cloud providers (AWS, GCP, Azure) is strictly prohibited.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### Enterprise Compute Layers:\n1. **Container Platform**: **VMware Tanzu Kubernetes (K8s)** running microservices in high-density container pods with automated load balancing and ingress controller routing.\n2. **Virtual Machines**: **Red Hat Enterprise Linux (RHEL)** is the strictly mandated operating system for all enterprise VMs. No unauthorized Linux distributions (e.g. Ubuntu, CentOS) or unmanaged OS instances are permitted."
         },
         {
           "title": "Standard Application Stack: Golang Backend & Next.js Frontend",
-          "body": "### Backend Engineering Language: Golang (Go)\n- **High Concurrency**: Built-in goroutines enable lightweight concurrent execution capable of handling 50,000+ financial requests per second with microsecond latency.\n- **Minimal Resource Footprint**: Small compiled binaries consume negligible memory compared to traditional JVM runtimes.\n- **Robust Standard Library**: Fast HTTP servers, native crypto libraries, and strict compile-time type safety.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: 100% On-Premise Infrastructure & Standard Technology Stack](/images/agile_scrum_cycle.jpg)\n\n### Frontend Engineering Framework: Next.js & React\n- **Server-Side Rendering (SSR)**: Instant initial page loads, optimal performance on mobile browsers, and strong SEO for public web applications.\n- **Component Modularity**: Reusable design systems, TypeScript type safety, and efficient state management."
+          "body": "### Backend Engineering Language: Golang (Go)\n- **High Concurrency**: Built-in goroutines enable lightweight concurrent execution capable of handling 50,000+ financial requests per second with microsecond latency.\n- **Minimal Resource Footprint**: Small compiled binaries consume negligible memory compared to traditional JVM runtimes.\n- **Robust Standard Library**: Fast HTTP servers, native crypto libraries, and strict compile-time type safety.\n\n### Frontend Engineering Framework: Next.js & React\n- **Server-Side Rendering (SSR)**: Instant initial page loads, optimal performance on mobile browsers, and strong SEO for public web applications.\n- **Component Modularity**: Reusable design systems, TypeScript type safety, and efficient state management."
         },
         {
           "title": "Data Tier, In-Memory Caching & Event Streaming Architecture",
@@ -523,19 +521,18 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "นโยบายการใช้งานระบบ On-Premise 100% (ห้ามใช้ Public Cloud)",
-          "body": "เพื่อปฏิบัติตามกฎระเบียบของสถาบันการเงินและการรักษาความปลอดภัยข้อมูลลูกค้า **ระบบงานการเงินของฝ่าย SYE ดำเนินงานบนระบบ On-Premise 100% เท่านั้น** ไม่อนุญาตให้ใช้ Public Cloud (เช่น AWS, GCP, Azure) ในระบบจริง\n\n\n\n    </div>\n</div>\n\n\n### ระดับชั้นการประมวลผลระดับองค์กร:\n1. **ระบบจัดการคอนเทนเนอร์**: **VMware Tanzu Kubernetes (K8s)** สำหรับรัน Microservices แบบ High-Density Pods พร้อมระบบ Ingress Routing\n2. **เครื่องเสมือน (Virtual Machine - VM)**: ต้องเป็นระบบปฏิบัติการ **Red Hat Enterprise Linux (RHEL)** เท่านั้น ไม่อนุญาตให้ใช้ Linux อื่นที่ไม่ผ่านการรับรอง"
+          "body": "เพื่อปฏิบัติตามกฎระเบียบของสถาบันการเงินและการรักษาความปลอดภัยข้อมูลลูกค้า **ระบบงานการเงินของฝ่าย SYE ดำเนินงานบนระบบ On-Premise 100% เท่านั้น** ไม่อนุญาตให้ใช้ Public Cloud (เช่น AWS, GCP, Azure) ในระบบจริง\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### ระดับชั้นการประมวลผลระดับองค์กร:\n1. **ระบบจัดการคอนเทนเนอร์**: **VMware Tanzu Kubernetes (K8s)** สำหรับรัน Microservices แบบ High-Density Pods พร้อมระบบ Ingress Routing\n2. **เครื่องเสมือน (Virtual Machine - VM)**: ต้องเป็นระบบปฏิบัติการ **Red Hat Enterprise Linux (RHEL)** เท่านั้น ไม่อนุญาตให้ใช้ Linux อื่นที่ไม่ผ่านการรับรอง"
         },
         {
           "title": "สแตกแอปพลิเคชันมาตรฐาน: Golang (Backend) และ Next.js (Frontend)",
-          "body": "### ภาษาหลักสำหรับฝั่ง Backend: Golang (Go)\n- **การประมวลผลพร้อมกันสูง (Concurrency)**: ใช้ Goroutine ทำให้รองรับธุรกรรมได้มากกว่า 50,000 requests/วินาที ด้วยความเร็วระดับ Microsecond\n- **ประหยัดทรัพยากร**: Binary ขนาดเล็ก ใช้หน่วยความจำ (RAM) ต่ำกว่าภาษาตระกูล JVM อย่างมาก\n- **ความปลอดภัยสูง**: Type Safety ที่เข้มงวดและมีไลบรารี Cryptography ในตัว\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: 100% On-Premise Infrastructure & Standard Technology Stack](/images/agile_scrum_cycle.jpg)\n\n### เฟรมเวิร์กหลักสำหรับฝั่ง Frontend: Next.js และ React\n- **Server-Side Rendering (SSR)**: แสดงผลหน้ารวดเร็ว รองรับการใช้งานบนมือถือ และปรับแต่ง SEO\n- **โครงสร้าง Component**: สามารถนำ Component มาใช้ซ้ำได้ รองรับ TypeScript และจัดการ State อย่างมีประสิทธิภาพ"
+          "body": "### ภาษาหลักสำหรับฝั่ง Backend: Golang (Go)\n- **การประมวลผลพร้อมกันสูง (Concurrency)**: ใช้ Goroutine ทำให้รองรับธุรกรรมได้มากกว่า 50,000 requests/วินาที ด้วยความเร็วระดับ Microsecond\n- **ประหยัดทรัพยากร**: Binary ขนาดเล็ก ใช้หน่วยความจำ (RAM) ต่ำกว่าภาษาตระกูล JVM อย่างมาก\n- **ความปลอดภัยสูง**: Type Safety ที่เข้มงวดและมีไลบรารี Cryptography ในตัว\n\n### เฟรมเวิร์กหลักสำหรับฝั่ง Frontend: Next.js และ React\n- **Server-Side Rendering (SSR)**: แสดงผลหน้ารวดเร็ว รองรับการใช้งานบนมือถือ และปรับแต่ง SEO\n- **โครงสร้าง Component**: สามารถนำ Component มาใช้ซ้ำได้ รองรับ TypeScript และจัดการ State อย่างมีประสิทธิภาพ"
         },
         {
           "title": "ฐานข้อมูล, หน่วยความจำแคช และระบบส่งต่อข้อความ (Kafka)",
           "body": "### ฐานข้อมูลหลัก: PostgreSQL (Postgres)\n- คลัสเตอร์ PostgreSQL ระดับองค์กรติดตั้งบน RHEL VM พร้อมดิสก์ NVMe ความเร็วสูง\n- รองรับมาตรฐาน ACID เต็มรูปแบบ มีระบบ Synchronous Replication ไปยัง DR Site และรองรับฟิลด์ JSONB\n\n### หน่วยความจำแคช: Redis Cluster\n- จัดเก็บ Session, บัญชีดำ Token (Blacklist) และการจำกัดปริมาณทราฟฟิก (Rate Limiting) ในระดับเสี้ยววินาที\n\n### ระบบส่งต่อข้อความ: Apache Kafka\n- คลัสเตอร์ Kafka บน RHEL รองรับการกระจาย Event ระหว่าง Microservices ข้ามส่วนงานแบบ Asynchronous"
         }
       ],
-      "image": "/images/agile_scrum_cycle.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: 100% On-Premise Infrastructure & Standard Technology Stack"
+      "image": "/images/agile_scrum_cycle.jpg"
     },
     {
       "id": "GEN-006",
@@ -559,11 +556,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Business Continuity Plan (BCP) & Disaster Recovery (DR Site) Topology",
-          "body": "Because SYE platforms process mission-critical real-time financial credit approvals and payment settlements, robust business continuity is mandated under **ISO 22301**:\n\n\n\n    </div>\n</div>\n\n\n### Dual-Site High Availability Architecture:\n- **Primary Data Center (Main DC)**: Located on-premise at **Sermmit Tower, 14th Floor**.\n- **Disaster Recovery Site (DR Site)**: Located at a geographically isolated enterprise facility over **30 km** away to ensure resilience against localized civil or power disruptions.\n- **Dedicated Redundant Dark Fiber**: Connects Main DC and DR Site with continuous synchronous PostgreSQL WAL streaming, Kafka topic mirror-makers, and Tanzu container image mirroring."
+          "body": "Because SYE platforms process mission-critical real-time financial credit approvals and payment settlements, robust business continuity is mandated under **ISO 22301**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_bcp_dr_datacenter.jpg\" alt=\"Enterprise BCP & DR Site Synchronous Replication\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise BCP & DR Site Synchronous Replication</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">ISO 22301 BCMS • RPO < 5m • RTO < 30m</span>\n        </div>\n    </div>\n</div>\n\n\n### Dual-Site High Availability Architecture:\n- **Primary Data Center (Main DC)**: Located on-premise at **Sermmit Tower, 14th Floor**.\n- **Disaster Recovery Site (DR Site)**: Located at a geographically isolated enterprise facility over **30 km** away to ensure resilience against localized civil or power disruptions.\n- **Dedicated Redundant Dark Fiber**: Connects Main DC and DR Site with continuous synchronous PostgreSQL WAL streaming, Kafka topic mirror-makers, and Tanzu container image mirroring."
         },
         {
           "title": "Critical BCP SLA Metrics: RPO < 5m & RTO < 30m",
-          "body": "In the event of a catastrophic disaster declared at the Main Data Center, operations switch to the DR Site adhering to strict SLA metrics:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance](/images/sye_bcp_dr_datacenter.jpg)\n\n1. **Recovery Point Objective (RPO) < 5 Minutes**:\n   - The maximum allowable period of transactional data loss. Continuous database streaming replication guarantees financial records are preserved up to the last 5 minutes.\n2. **Recovery Time Objective (RTO) < 30 Minutes**:\n   - The maximum allowable duration from disaster declaration to full service restoration at the DR Site.\n\n### Mandatory Semi-Annual DR Drills:\nEvery 6 months, SYE engineering teams participate in full-scale **DR Failover Drills** to validate automated failover scripts, DNS traffic switching, and database promotion."
+          "body": "In the event of a catastrophic disaster declared at the Main Data Center, operations switch to the DR Site adhering to strict SLA metrics:\n\n1. **Recovery Point Objective (RPO) < 5 Minutes**:\n   - The maximum allowable period of transactional data loss. Continuous database streaming replication guarantees financial records are preserved up to the last 5 minutes.\n2. **Recovery Time Objective (RTO) < 30 Minutes**:\n   - The maximum allowable duration from disaster declaration to full service restoration at the DR Site.\n\n### Mandatory Semi-Annual DR Drills:\nEvery 6 months, SYE engineering teams participate in full-scale **DR Failover Drills** to validate automated failover scripts, DNS traffic switching, and database promotion."
         },
         {
           "title": "Incident Severity Hierarchy (P1–P4) & 48-Hour Blameless Post-Mortem",
@@ -585,11 +582,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "แผนความต่อเนื่องทางธุรกิจ (BCP) และศูนย์สำรองฉุกเฉิน (DR Site)",
-          "body": "เนื่องจากระบบของ SYE รองรับธุรกรรมการเงินสดแบบเรียลไทม์ แผนความต่อเนื่องทางธุรกิจจึงเป็นหัวใจสำคัญภายใต้ **ISO 22301**:\n\n\n\n    </div>\n</div>\n\n\n### สถาปัตยกรรมศูนย์ข้อมูลคู่ (Dual-Site High Availability):\n- **ศูนย์ข้อมูลหลัก (Main DC)**: ตั้งอยู่ ณ **อาคารเสริมมิตร ทาวเวอร์ ชั้น 14**\n- **ศูนย์สำรองฉุกเฉิน (DR Site)**: ตั้งอยู่ ณ ศูนย์ข้อมูลภายนอกที่อยู่ห่างออกไปกว่า **30 กิโลเมตร** เพื่อป้องกันภัยพิบัติในพื้นที่\n- **โครงข่ายใยแก้วนำแสงเฉพาะ (Dedicated Dark Fiber)**: ทำหน้าที่คัดลอกข้อมูล PostgreSQL WAL และกระจาย Kafka Events แบบ Synchronous ตลอดเวลา"
+          "body": "เนื่องจากระบบของ SYE รองรับธุรกรรมการเงินสดแบบเรียลไทม์ แผนความต่อเนื่องทางธุรกิจจึงเป็นหัวใจสำคัญภายใต้ **ISO 22301**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_bcp_dr_datacenter.jpg\" alt=\"Enterprise BCP & DR Site Synchronous Replication\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise BCP & DR Site Synchronous Replication</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">ISO 22301 BCMS • RPO < 5m • RTO < 30m</span>\n        </div>\n    </div>\n</div>\n\n\n### สถาปัตยกรรมศูนย์ข้อมูลคู่ (Dual-Site High Availability):\n- **ศูนย์ข้อมูลหลัก (Main DC)**: ตั้งอยู่ ณ **อาคารเสริมมิตร ทาวเวอร์ ชั้น 14**\n- **ศูนย์สำรองฉุกเฉิน (DR Site)**: ตั้งอยู่ ณ ศูนย์ข้อมูลภายนอกที่อยู่ห่างออกไปกว่า **30 กิโลเมตร** เพื่อป้องกันภัยพิบัติในพื้นที่\n- **โครงข่ายใยแก้วนำแสงเฉพาะ (Dedicated Dark Fiber)**: ทำหน้าที่คัดลอกข้อมูล PostgreSQL WAL และกระจาย Kafka Events แบบ Synchronous ตลอดเวลา"
         },
         {
           "title": "ตัวชี้วัดสำคัญของแผน BCP: เกณฑ์ RPO < 5 นาที และ RTO < 30 นาที",
-          "body": "กรณีเกิดภัยพิบัติร้ายแรง ณ ศูนย์ข้อมูลหลัก ระบบจะสลับไปทำงาน ณ ศูนย์สำรอง DR Site ตามเกณฑ์ตัวชี้วัด:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance](/images/sye_bcp_dr_datacenter.jpg)\n\n1. **Recovery Point Objective (RPO) < 5 นาที**:\n   - ปริมาณข้อมูลที่ยอมรับให้สูญหายได้ ซึ่งควบคุมไม่ให้เกิน 5 นาทีผ่านการ Sync ฐานข้อมูลตลอดเวลา\n2. **Recovery Time Objective (RTO) < 30 นาที**:\n   - ระยะเวลาสูงสุดในการกู้คืนและเปิดให้บริการเต็มรูปแบบ ณ ศูนย์ DR Site หลังประกาศภาวะฉุกเฉิน\n\n### การซักซ้อมแผนฉุกเฉินประจำปี (DR Drills):\nทีมวิศวกรฝ่าย SYE จะเข้าร่วมการ **ซ้อมแผนสลับระบบกู้คืนภัยพิบัติ (DR Drill) ปีละ 2 ครั้ง** เพื่อทดสอบ Script การสลับระบบและการชี้ DNS"
+          "body": "กรณีเกิดภัยพิบัติร้ายแรง ณ ศูนย์ข้อมูลหลัก ระบบจะสลับไปทำงาน ณ ศูนย์สำรอง DR Site ตามเกณฑ์ตัวชี้วัด:\n\n1. **Recovery Point Objective (RPO) < 5 นาที**:\n   - ปริมาณข้อมูลที่ยอมรับให้สูญหายได้ ซึ่งควบคุมไม่ให้เกิน 5 นาทีผ่านการ Sync ฐานข้อมูลตลอดเวลา\n2. **Recovery Time Objective (RTO) < 30 นาที**:\n   - ระยะเวลาสูงสุดในการกู้คืนและเปิดให้บริการเต็มรูปแบบ ณ ศูนย์ DR Site หลังประกาศภาวะฉุกเฉิน\n\n### การซักซ้อมแผนฉุกเฉินประจำปี (DR Drills):\nทีมวิศวกรฝ่าย SYE จะเข้าร่วมการ **ซ้อมแผนสลับระบบกู้คืนภัยพิบัติ (DR Drill) ปีละ 2 ครั้ง** เพื่อทดสอบ Script การสลับระบบและการชี้ DNS"
         },
         {
           "title": "ลำดับชั้นความรุนแรงของเหตุขัดข้อง (P1–P4) และ Post-Mortem ภายใน 48 ชม.",
@@ -600,8 +597,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "### หลักการสำคัญของ PDPA:\n- **ฐานความยินยอม (Consent)**: การประมวลผลข้อมูลลูกค้าต้องได้รับความยินยอมชัดเจน หรือมีฐานความจำเป็นตามสัญญา\n- **สิทธิของเจ้าของข้อมูล**: ลูกค้ามีสิทธิขอเข้าถึง แก้ไข โอนย้าย หรือขอลบข้อมูลส่วนบุคคลของตนเองได้\n- **ห้ามคัดลอกข้อมูลจริงลง DEV/STAGING**: สภาพแวดล้อม DEV ต้องใช้ Mock Data และ STAGING ต้องผ่านการ Masking ข้อมูลส่วนบุคคลก่อนเสมอ\n- **การแจ้งเตือนเหตุข้อมูลรั่วไหลภายใน 72 ชั่วโมง**: หากเกิดเหตุข้อมูลรั่วไหลที่กระทบต่อสิทธิของเจ้าของข้อมูล ต้องแจ้งคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลภายใน **72 ชั่วโมง**"
         }
       ],
-      "image": "/images/sye_bcp_dr_datacenter.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance"
+      "image": "/images/sye_bcp_dr_datacenter.jpg"
     },
     {
       "id": "PM-001",
@@ -610,12 +606,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Core skills for managing IT projects, including scope, schedule, and resource management.",
       "duration": "4 hours",
       "targetRoles": [
-        "PM",
-        "BA"
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Develop a comprehensive project charter",
@@ -625,11 +620,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "The Project Charter",
-          "body": "The project charter is the foundational document that formally authorizes a project at AEON. It defines the high-level scope, objectives, key stakeholders, and the project manager's authority. A well-crafted charter aligns the project team and sponsors on the expected business value. It serves as the single point of reference for the project's overarching goals throughout its lifecycle.\n\n\n\n    </div>\n</div>"
+          "body": "The project charter is the foundational document that formally authorizes a project at AEON. It defines the high-level scope, objectives, key stakeholders, and the project manager's authority. A well-crafted charter aligns the project team and sponsors on the expected business value. It serves as the single point of reference for the project's overarching goals throughout its lifecycle.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Work Breakdown Structure (WBS)",
-          "body": "A WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team. It breaks down complex deliverables into manageable, assignable work packages. This systematic approach ensures that no required work is overlooked and provides a solid basis for estimating costs and schedules. At AEON, the WBS should integrate directly with our JIRA Epic and Task structures.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise Project Governance, WBS & Milestone Tracking](/images/sye_pm_project_governance.jpg)"
+          "body": "A WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team. It breaks down complex deliverables into manageable, assignable work packages. This systematic approach ensures that no required work is overlooked and provides a solid basis for estimating costs and schedules. At AEON, the WBS should integrate directly with our JIRA Epic and Task structures."
         },
         {
           "title": "Scheduling with Gantt Charts",
@@ -650,11 +645,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: The Project Charter",
-          "body": "The project charter is the foundational document that formally authorizes a project at AEON. It defines the high-level scope, objectives, key stakeholders, and the project manager's authority. A well-crafted charter aligns the project team and sponsors on the expected business value. It serves as the single point of reference for the project's overarching goals throughout its lifecycle.\n\n\n\n    </div>\n</div>"
+          "body": "The project charter is the foundational document that formally authorizes a project at AEON. It defines the high-level scope, objectives, key stakeholders, and the project manager's authority. A well-crafted charter aligns the project team and sponsors on the expected business value. It serves as the single point of reference for the project's overarching goals throughout its lifecycle.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Work Breakdown Structure (WBS)",
-          "body": "A WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team. It breaks down complex deliverables into manageable, assignable work packages. This systematic approach ensures that no required work is overlooked and provides a solid basis for estimating costs and schedules. At AEON, the WBS should integrate directly with our JIRA Epic and Task structures.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise Project Governance, WBS & Milestone Tracking](/images/sye_pm_project_governance.jpg)"
+          "body": "A WBS is a hierarchical decomposition of the total scope of work to be carried out by the project team. It breaks down complex deliverables into manageable, assignable work packages. This systematic approach ensures that no required work is overlooked and provides a solid basis for estimating costs and schedules. At AEON, the WBS should integrate directly with our JIRA Epic and Task structures."
         },
         {
           "title": "หัวข้อ: Scheduling with Gantt Charts",
@@ -665,8 +660,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Milestones represent significant points or events in the project timeline, such as phase completions or major deliverables. They are crucial for tracking high-level progress and communicating status to executive stakeholders. Weekly status reports must accurately reflect project health regarding scope, schedule, and budget (the triple constraint). Transparency in reporting, especially when a project is \"yellow\" or \"red\", is vital for timely intervention."
         }
       ],
-      "image": "/images/sye_pm_project_governance.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise Project Governance, WBS & Milestone Tracking"
+      "image": "/images/sye_pm_project_governance.jpg"
     },
     {
       "id": "PM-002",
@@ -675,15 +669,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive risk governance framework for financial IT systems. Covers risk identification, qualitative/quantitative risk scoring (Impact vs Likelihood matrix), mitigation action plans, and regulatory compliance risk registers under ISO 9001.",
       "duration": "3 hours",
       "targetRoles": [
-        "PM",
-        "BA",
-        "SRE"
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [
         "PM-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Identify technical, organizational, and regulatory risks in banking IT projects",
@@ -694,11 +686,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Risk Severity Matrix (Impact vs. Likelihood)",
-          "body": "### 5x5 Risk Scoring Matrix\nIn financial engineering, risks are categorized based on their potential business impact (financial loss, regulatory fine, service outage) and occurrence probability:\n\n\n\n    </div>\n</div>\n\n\n| Score Range | Severity Level | Action Required |\n|---|---|---|\n| **16 – 25** | **Critical (Red)** | Immediate mitigation required; project cannot proceed to production without Division Head sign-off |\n| **10 – 15** | **High (Amber)** | Active mitigation plan with assigned risk owner and bi-weekly tracking |\n| **5 – 9** | **Medium (Yellow)** | Standard squad monitoring and contingency allocation |\n| **1 – 4** | **Low (Green)** | Accepted risk logged in Confluence register |"
+          "body": "### 5x5 Risk Scoring Matrix\nIn financial engineering, risks are categorized based on their potential business impact (financial loss, regulatory fine, service outage) and occurrence probability:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n\n\n| Score Range | Severity Level | Action Required |\n|---|---|---|\n| **16 – 25** | **Critical (Red)** | Immediate mitigation required; project cannot proceed to production without Division Head sign-off |\n| **10 – 15** | **High (Amber)** | Active mitigation plan with assigned risk owner and bi-weekly tracking |\n| **5 – 9** | **Medium (Yellow)** | Standard squad monitoring and contingency allocation |\n| **1 – 4** | **Low (Green)** | Accepted risk logged in Confluence register |"
         },
         {
           "title": "Risk Treatment Strategies & Action Plans",
-          "body": "### The 4 Risk Response Strategies:\n1. **Mitigate**: Implement technical controls (e.g. adding Redis caching to mitigate database lock contention during Flash Sale).\n2. **Avoid**: Alter scope or architecture to eliminate the risk vector completely.\n3. **Transfer**: Purchase third-party SLA warranties or cyber insurance.\n4. **Accept**: Formally document accepted residual risk signed off by the Risk Committee.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise Risk Management & Mitigation Matrix](/images/pm_002_diagram.svg)"
+          "body": "### The 4 Risk Response Strategies:\n1. **Mitigate**: Implement technical controls (e.g. adding Redis caching to mitigate database lock contention during Flash Sale).\n2. **Avoid**: Alter scope or architecture to eliminate the risk vector completely.\n3. **Transfer**: Purchase third-party SLA warranties or cyber insurance.\n4. **Accept**: Formally document accepted residual risk signed off by the Risk Committee."
         }
       ],
       "name_th": "การบริหารความเสี่ยงระดับองค์กรและตารางประเมินผลกระทบ",
@@ -712,15 +704,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "ตารางวิเคราะห์และประเมินระดับความเสี่ยง (Impact vs Likelihood)",
-          "body": "### ตารางเมทริกซ์คะแนนความเสี่ยง 5x5\nการประเมินความเสี่ยงพิจารณาจากโอกาสที่จะเกิดขึ้นร่วมกับความเสียหายต่อธุรกิจ (การสูญเสียทางการเงิน, การถูกปรับจาก ธปท., ระบบหยุดทำงาน):\n\n\n\n    </div>\n</div>\n\n\n| ช่วงคะแนน | ระดับความเสี่ยง | มาตรการที่ต้องดำเนินการ |\n|---|---|---|\n| **16 – 25** | **วิกฤต (สีแดง)** | ต้องมีแผนแก้ไขทันที ไม่สามารถปล่อยระบบได้หากไม่ได้รับอนุมัติจาก Head of Division |\n| **10 – 15** | **สูง (สีส้ม)** | กำหนดผู้รับผิดชอบชัดเจนและติดตามผลในที่ประชุมทุก 2 สัปดาห์ |\n| **5 – 9** | **ปานกลาง (สีเหลือง)** | ติดตามสถานะในทีมและเตรียมแผนสำรอง |\n| **1 – 4** | **ต่ำ (สีเขียว)** | ยอมรับความเสี่ยงและบันทึกประวัติไว้ใน Confluence |"
+          "body": "### ตารางเมทริกซ์คะแนนความเสี่ยง 5x5\nการประเมินความเสี่ยงพิจารณาจากโอกาสที่จะเกิดขึ้นร่วมกับความเสียหายต่อธุรกิจ (การสูญเสียทางการเงิน, การถูกปรับจาก ธปท., ระบบหยุดทำงาน):\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n\n\n| ช่วงคะแนน | ระดับความเสี่ยง | มาตรการที่ต้องดำเนินการ |\n|---|---|---|\n| **16 – 25** | **วิกฤต (สีแดง)** | ต้องมีแผนแก้ไขทันที ไม่สามารถปล่อยระบบได้หากไม่ได้รับอนุมัติจาก Head of Division |\n| **10 – 15** | **สูง (สีส้ม)** | กำหนดผู้รับผิดชอบชัดเจนและติดตามผลในที่ประชุมทุก 2 สัปดาห์ |\n| **5 – 9** | **ปานกลาง (สีเหลือง)** | ติดตามสถานะในทีมและเตรียมแผนสำรอง |\n| **1 – 4** | **ต่ำ (สีเขียว)** | ยอมรับความเสี่ยงและบันทึกประวัติไว้ใน Confluence |"
         },
         {
           "title": "กลยุทธ์การจัดการความเสี่ยง (Risk Treatment Strategies)",
-          "body": "### 4 กลยุทธ์หลักในการรับมือความเสี่ยง:\n1. **Mitigate (บรรเทาผลกระทบ)**: สร้างระบบป้องกันทางเทคนิค (เช่น การเพิ่ม Redis Cache เพื่อลดภาระฐานข้อมูลช่วงสิ้นเดือน)\n2. **Avoid (หลีกเลี่ยง)**: ปรับเปลี่ยนสถาปัตยกรรมเพื่อตัดปัจจัยเสี่ยงออกไป\n3. **Transfer (โอนย้าย)**: ทำสัญญา SLA หรือประกันภัยความเสี่ยงทางไซเบอร์\n4. **Accept (ยอมรับความเสี่ยง)**: จัดทำเอกสารบันทึกเหตุผลที่ยอมรับความเสี่ยงพร้อมลายเซ็นอนุมัติ\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise Risk Management & Mitigation Matrix](/images/pm_002_diagram.svg)"
+          "body": "### 4 กลยุทธ์หลักในการรับมือความเสี่ยง:\n1. **Mitigate (บรรเทาผลกระทบ)**: สร้างระบบป้องกันทางเทคนิค (เช่น การเพิ่ม Redis Cache เพื่อลดภาระฐานข้อมูลช่วงสิ้นเดือน)\n2. **Avoid (หลีกเลี่ยง)**: ปรับเปลี่ยนสถาปัตยกรรมเพื่อตัดปัจจัยเสี่ยงออกไป\n3. **Transfer (โอนย้าย)**: ทำสัญญา SLA หรือประกันภัยความเสี่ยงทางไซเบอร์\n4. **Accept (ยอมรับความเสี่ยง)**: จัดทำเอกสารบันทึกเหตุผลที่ยอมรับความเสี่ยงพร้อมลายเซ็นอนุมัติ"
         }
       ],
-      "image": "/images/pm_002_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise Risk Management & Mitigation Matrix"
+      "image": "/images/pm_002_diagram.svg"
     },
     {
       "id": "PM-003",
@@ -729,12 +720,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Effective communication strategies for managing stakeholder expectations and reporting.",
       "duration": "2 hours",
       "targetRoles": [
-        "PM",
-        "BA"
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Develop a comprehensive communication plan",
@@ -744,11 +734,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Stakeholder Mapping",
-          "body": "Stakeholder mapping involves identifying all individuals or groups impacted by the project and analyzing their level of influence and interest. We utilize a Power/Interest grid to categorize stakeholders into four quadrants: Manage Closely, Keep Satisfied, Keep Informed, and Monitor. This analysis dictates the frequency and level of detail required for communication with each group. Reassessing this map periodically is necessary as project dynamics change.\n\n\n\n    </div>\n</div>"
+          "body": "Stakeholder mapping involves identifying all individuals or groups impacted by the project and analyzing their level of influence and interest. We utilize a Power/Interest grid to categorize stakeholders into four quadrants: Manage Closely, Keep Satisfied, Keep Informed, and Monitor. This analysis dictates the frequency and level of detail required for communication with each group. Reassessing this map periodically is necessary as project dynamics change.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "The Communication Plan",
-          "body": "A formal communication plan outlines what information will be shared, to whom, when, and through which channels. It establishes standard reporting cadences, such as daily standups for the team and monthly steering committee meetings for executives. At AEON, consistency in communication builds trust and prevents misunderstandings. The plan should also specify where official project documentation is stored and how it can be accessed.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Stakeholder Communication](/images/pm_003_diagram.svg)"
+          "body": "A formal communication plan outlines what information will be shared, to whom, when, and through which channels. It establishes standard reporting cadences, such as daily standups for the team and monthly steering committee meetings for executives. At AEON, consistency in communication builds trust and prevents misunderstandings. The plan should also specify where official project documentation is stored and how it can be accessed."
         },
         {
           "title": "Managing Expectations",
@@ -769,11 +759,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Stakeholder Mapping",
-          "body": "Stakeholder mapping involves identifying all individuals or groups impacted by the project and analyzing their level of influence and interest. We utilize a Power/Interest grid to categorize stakeholders into four quadrants: Manage Closely, Keep Satisfied, Keep Informed, and Monitor. This analysis dictates the frequency and level of detail required for communication with each group. Reassessing this map periodically is necessary as project dynamics change.\n\n\n\n    </div>\n</div>"
+          "body": "Stakeholder mapping involves identifying all individuals or groups impacted by the project and analyzing their level of influence and interest. We utilize a Power/Interest grid to categorize stakeholders into four quadrants: Manage Closely, Keep Satisfied, Keep Informed, and Monitor. This analysis dictates the frequency and level of detail required for communication with each group. Reassessing this map periodically is necessary as project dynamics change.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: The Communication Plan",
-          "body": "A formal communication plan outlines what information will be shared, to whom, when, and through which channels. It establishes standard reporting cadences, such as daily standups for the team and monthly steering committee meetings for executives. At AEON, consistency in communication builds trust and prevents misunderstandings. The plan should also specify where official project documentation is stored and how it can be accessed.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Stakeholder Communication](/images/pm_003_diagram.svg)"
+          "body": "A formal communication plan outlines what information will be shared, to whom, when, and through which channels. It establishes standard reporting cadences, such as daily standups for the team and monthly steering committee meetings for executives. At AEON, consistency in communication builds trust and prevents misunderstandings. The plan should also specify where official project documentation is stored and how it can be accessed."
         },
         {
           "title": "หัวข้อ: Managing Expectations",
@@ -784,8 +774,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "When a project encounters an issue that the team cannot resolve internally, it must be escalated appropriately. The escalation path should be defined during project initiation, clearly stating who should be contacted for specific types of issues (e.g., technical, financial, or personnel). Effective escalation provides proposed solutions alongside the problem description, enabling leaders to make informed decisions quickly. Escalation should be viewed as a tool for unblocking progress, not a sign of failure."
         }
       ],
-      "image": "/images/pm_003_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Stakeholder Communication"
+      "image": "/images/pm_003_diagram.svg"
     },
     {
       "id": "PM-004",
@@ -794,13 +783,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Financial aspects of project management and optimal resource distribution.",
       "duration": "3 hours",
       "targetRoles": [
-        "PM",
-        "BA",
-        "Developer"
+        "PM"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Track project budgets and expenditures",
@@ -810,11 +797,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Budget Tracking Fundamentals",
-          "body": "Project budgets at AEON encompass personnel costs, software licenses, infrastructure, and third-party vendor fees. Project Managers must track actual expenditures against the baseline budget on a monthly basis. Variance analysis helps identify areas where the project is over or under budget, allowing for timely corrective actions. Accurate financial forecasting is critical for departmental financial planning.\n\n\n\n    </div>\n</div>"
+          "body": "Project budgets at AEON encompass personnel costs, software licenses, infrastructure, and third-party vendor fees. Project Managers must track actual expenditures against the baseline budget on a monthly basis. Variance analysis helps identify areas where the project is over or under budget, allowing for timely corrective actions. Accurate financial forecasting is critical for departmental financial planning.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Resource Planning",
-          "body": "Resource planning ensures that the right people with the required skills are available when needed. It involves analyzing the project schedule to identify peak periods of demand for specific roles, such as Developers or QA engineers. Conflict resolution is often necessary when multiple projects require the same key personnel simultaneously. Proactive resource planning minimizes bottlenecks and prevents project delays.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Budgeting and Resource Allocation](/images/pm_004_diagram.svg)"
+          "body": "Resource planning ensures that the right people with the required skills are available when needed. It involves analyzing the project schedule to identify peak periods of demand for specific roles, such as Developers or QA engineers. Conflict resolution is often necessary when multiple projects require the same key personnel simultaneously. Proactive resource planning minimizes bottlenecks and prevents project delays."
         },
         {
           "title": "Capacity Management",
@@ -835,11 +822,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Budget Tracking Fundamentals",
-          "body": "Project budgets at AEON encompass personnel costs, software licenses, infrastructure, and third-party vendor fees. Project Managers must track actual expenditures against the baseline budget on a monthly basis. Variance analysis helps identify areas where the project is over or under budget, allowing for timely corrective actions. Accurate financial forecasting is critical for departmental financial planning.\n\n\n\n    </div>\n</div>"
+          "body": "Project budgets at AEON encompass personnel costs, software licenses, infrastructure, and third-party vendor fees. Project Managers must track actual expenditures against the baseline budget on a monthly basis. Variance analysis helps identify areas where the project is over or under budget, allowing for timely corrective actions. Accurate financial forecasting is critical for departmental financial planning.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Resource Planning",
-          "body": "Resource planning ensures that the right people with the required skills are available when needed. It involves analyzing the project schedule to identify peak periods of demand for specific roles, such as Developers or QA engineers. Conflict resolution is often necessary when multiple projects require the same key personnel simultaneously. Proactive resource planning minimizes bottlenecks and prevents project delays.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Budgeting and Resource Allocation](/images/pm_004_diagram.svg)"
+          "body": "Resource planning ensures that the right people with the required skills are available when needed. It involves analyzing the project schedule to identify peak periods of demand for specific roles, such as Developers or QA engineers. Conflict resolution is often necessary when multiple projects require the same key personnel simultaneously. Proactive resource planning minimizes bottlenecks and prevents project delays."
         },
         {
           "title": "หัวข้อ: Capacity Management",
@@ -850,55 +837,59 @@ window.SYE_SAMPLE_DATA = {
           "body": "Many projects rely on external vendors for specialized skills or software platforms. Project Managers are responsible for tracking vendor deliverables against the Statement of Work (SOW) and ensuring milestones are met before approving invoices. Maintaining a professional, collaborative relationship with vendors while strictly enforcing contract terms is essential. Any changes to vendor scope must go through the formal Change Request process."
         }
       ],
-      "image": "/images/pm_004_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Budgeting and Resource Allocation"
+      "image": "/images/pm_004_diagram.svg"
     },
     {
       "id": "BA-001",
-      "name": "Modern Requirements Engineering, User Story Mapping & Domain Discovery",
+      "name": "Requirements Elicitation Techniques",
       "category": "BA",
-      "description": "Techniques for discovering user needs, Event Storming, Domain-Driven Design (DDD) discovery, User Story Mapping, and transforming business strategy into agile backlogs.",
+      "description": "Methods for gathering accurate and complete business requirements from stakeholders.",
       "duration": "3 hours",
       "targetRoles": [
-        "BA",
-        "PM"
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Facilitate Event Storming and Domain Discovery workshops with business stakeholders",
-        "Build comprehensive User Story Maps depicting customer journey and MVP slices",
-        "Decompose complex banking domains into clear Bounded Contexts and Ubiquitous Language",
-        "Eliminate requirement ambiguities using Concrete Examples and Specification by Example"
+        "Conduct effective stakeholder interviews",
+        "Facilitate requirements workshops",
+        "Utilize observation and surveys for data gathering"
       ],
       "content": [
         {
-          "title": "Event Storming & Domain Discovery",
-          "body": "Traditional 200-page requirement specifications fail because of communication gaps. SYE BA teams utilize **Event Storming** to model business domains in hours:\n\n```\n[ Domain Event (Orange) ] ──> [ Command (Blue) ] ──> [ Aggregate/Entity (Yellow) ] ──> [ Read Model (Green) ]\n  \"CardActivated\"               \"ApplyCreditCard\"             \"CreditAccount\"                 \"CardSummaryView\"\n```\n\n- **Domain Events (Past Tense)**: Facts that happened in the business (e.g. `PaymentSubmitted`, `KYCApproved`).\n- **Commands (Present Tense)**: User actions triggered on the system (e.g. `SubmitPayment`, `VerifyOTP`).\n- **Ubiquitous Language**: A unified dictionary shared between business users and software developers."
+          "title": "Interview Techniques",
+          "body": "One-on-one interviews are crucial for eliciting detailed requirements from subject matter experts (SMEs). At AEON, Business Analysts should prepare open-ended questions in advance to encourage discussion. Active listening and asking clarifying \"why\" questions help uncover underlying business needs rather than just technical requests. Always document the interview outcomes and seek confirmation from the interviewee to ensure accuracy.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
-          "title": "User Story Mapping for MVP Release Slicing",
-          "body": "Jeff Patton's User Story Mapping structures the product backlog along the user journey:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Modern Requirements Engineering, User Story Mapping & Domain Discovery](/images/sye_ba_process_modeling.jpg)\n\n```\nUser Activities:     [ Onboarding ] ────────> [ Card Activation ] ────────> [ Daily Transactions ]\nUser Tasks:          | Enter ID | Scan Face |   | Receive Card | Set PIN |    | Pay Merchant | View History |\n-------------------------------------------------------------------------------------------------------\nRelease 1 (MVP):     [  Story 1 ][  Story 2 ]   [   Story 3   ][ Story 4 ]    [   Story 5   ][  Story 6   ]\nRelease 2 (FastPay): [  FaceID  ][ AutoFill ]   [ Digital Card][ Instant ]    [  QR Payment ][ Push Alert ]\n```\n\nThis visual map ensures all stakeholders see the big picture and prevents developing isolated features that do not deliver end-to-end user value."
+          "title": "Facilitating Workshops",
+          "body": "Requirements workshops bring multiple stakeholders together to define scope and resolve conflicting needs rapidly. A successful workshop requires a clear agenda, established ground rules, and a strong facilitator to keep the group focused. These sessions are highly effective for defining cross-functional processes and gaining consensus on priorities. Visual aids like whiteboarding or process mapping on screen significantly enhance mutual understanding."
+        },
+        {
+          "title": "Observation & Shadowing",
+          "body": "Observation involves shadowing end-users as they perform their daily tasks in their current environment. This technique often reveals undocumented workarounds, pain points, and unarticulated needs that users might not mention in an interview. It provides context on how the software will be used in the real world. Taking detailed notes and asking questions during appropriate breaks is key to successful observation."
+        },
+        {
+          "title": "Surveys and Questionnaires",
+          "body": "When requirements need to be gathered from a large, geographically dispersed group of stakeholders, surveys are an efficient tool. They are best used for quantitative data gathering or prioritizing features among many users. Questions must be unambiguous and carefully structured to avoid leading the respondent. The results should be analyzed to identify trends that warrant deeper investigation through interviews."
         }
       ],
-      "name_th": "วิศวกรรมความต้องการสมัยใหม่ (Requirements Engineering), User Story Mapping และ Domain Discovery",
-      "description_th": "เทคนิคการค้นหาความต้องการของผู้ใช้, Event Storming, Domain-Driven Design (DDD), การจัดทำ User Story Mapping และการแปลงโจทย์ธุรกิจเป็น Product Backlog",
+      "name_th": "หลักสูตร: Requirements Elicitation Techniques",
+      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ Requirements Elicitation Techniques เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
       "learningObjectives_th": [
-        "จัด Workshop การค้นหาความต้องการด้วยเทคนิค Event Storming ร่วมกับผู้มีส่วนได้ส่วนเสีย",
-        "สร้างแผนผัง User Story Mapping ที่แสดง Customer Journey และแบ่งขอบเขต MVP ชัดเจน",
-        "แบ่งโดเมนธุรกิจที่ซับซ้อนออกเป็น Bounded Context และสร้างภาษาศัพท์กลาง (Ubiquitous Language)",
-        "กำจัดความคลุมเครือของ Requirement โดยใช้เทคนิค Specification by Example"
+        "เข้าใจและสามารถปฏิบัติตาม: Conduct effective stakeholder interviews",
+        "เข้าใจและสามารถปฏิบัติตาม: Facilitate requirements workshops",
+        "เข้าใจและสามารถปฏิบัติตาม: Utilize observation and surveys for data gathering"
       ],
       "content_th": [
         {
           "title": "หัวข้อ: Interview Techniques",
-          "body": "One-on-one interviews are crucial for eliciting detailed requirements from subject matter experts (SMEs). At AEON, Business Analysts should prepare open-ended questions in advance to encourage discussion. Active listening and asking clarifying \"why\" questions help uncover underlying business needs rather than just technical requests. Always document the interview outcomes and seek confirmation from the interviewee to ensure accuracy.\n\n\n\n    </div>\n</div>"
+          "body": "One-on-one interviews are crucial for eliciting detailed requirements from subject matter experts (SMEs). At AEON, Business Analysts should prepare open-ended questions in advance to encourage discussion. Active listening and asking clarifying \"why\" questions help uncover underlying business needs rather than just technical requests. Always document the interview outcomes and seek confirmation from the interviewee to ensure accuracy.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Facilitating Workshops",
-          "body": "Requirements workshops bring multiple stakeholders together to define scope and resolve conflicting needs rapidly. A successful workshop requires a clear agenda, established ground rules, and a strong facilitator to keep the group focused. These sessions are highly effective for defining cross-functional processes and gaining consensus on priorities. Visual aids like whiteboarding or process mapping on screen significantly enhance mutual understanding.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Modern Requirements Engineering, User Story Mapping & Domain Discovery](/images/sye_ba_process_modeling.jpg)"
+          "body": "Requirements workshops bring multiple stakeholders together to define scope and resolve conflicting needs rapidly. A successful workshop requires a clear agenda, established ground rules, and a strong facilitator to keep the group focused. These sessions are highly effective for defining cross-functional processes and gaining consensus on priorities. Visual aids like whiteboarding or process mapping on screen significantly enhance mutual understanding."
         },
         {
           "title": "หัวข้อ: Observation & Shadowing",
@@ -909,8 +900,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "When requirements need to be gathered from a large, geographically dispersed group of stakeholders, surveys are an efficient tool. They are best used for quantitative data gathering or prioritizing features among many users. Questions must be unambiguous and carefully structured to avoid leading the respondent. The results should be analyzed to identify trends that warrant deeper investigation through interviews."
         }
       ],
-      "image": "/images/sye_ba_process_modeling.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Modern Requirements Engineering, User Story Mapping & Domain Discovery"
+      "image": "/images/sye_ba_process_modeling.jpg"
     },
     {
       "id": "BA-002",
@@ -919,14 +909,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Best practices for writing clear, testable user stories and robust acceptance criteria.",
       "duration": "4 hours",
       "targetRoles": [
-        "BA",
-        "PM",
-        "QA",
-        "Developer"
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Apply the INVEST criteria to user stories",
@@ -936,11 +923,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "The User Story Format",
-          "body": "</div>\n</div>\n\n\nUser stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n\n    </div>\n</div>"
+          "body": "User stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Applying INVEST Criteria",
-          "body": "Good user stories adhere to the INVEST acronym: Independent, Negotiable, Valuable, Estimable, Small, and Testable. Independent stories can be developed in any order, while Small stories should comfortably fit within a single sprint. If a story is too large (an Epic), it must be broken down further during backlog refinement. Testable stories have clear boundaries that QA can verify.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Writing User Stories, Given-When-Then Criteria & DoR Standards](/images/ba_002_diagram.svg)"
+          "body": "Good user stories adhere to the INVEST acronym: Independent, Negotiable, Valuable, Estimable, Small, and Testable. Independent stories can be developed in any order, while Small stories should comfortably fit within a single sprint. If a story is too large (an Epic), it must be broken down further during backlog refinement. Testable stories have clear boundaries that QA can verify."
         },
         {
           "title": "Writing Acceptance Criteria",
@@ -961,11 +948,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: The User Story Format",
-          "body": "User stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n\n    </div>\n</div>"
+          "body": "User stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Applying INVEST Criteria",
-          "body": "Good user stories adhere to the INVEST acronym: Independent, Negotiable, Valuable, Estimable, Small, and Testable. Independent stories can be developed in any order, while Small stories should comfortably fit within a single sprint. If a story is too large (an Epic), it must be broken down further during backlog refinement. Testable stories have clear boundaries that QA can verify.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Writing User Stories, Given-When-Then Criteria & DoR Standards](/images/ba_002_diagram.svg)"
+          "body": "Good user stories adhere to the INVEST acronym: Independent, Negotiable, Valuable, Estimable, Small, and Testable. Independent stories can be developed in any order, while Small stories should comfortably fit within a single sprint. If a story is too large (an Epic), it must be broken down further during backlog refinement. Testable stories have clear boundaries that QA can verify."
         },
         {
           "title": "หัวข้อ: Writing Acceptance Criteria",
@@ -976,8 +963,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "While Acceptance Criteria are specific to an individual story, the Definition of Done is a global checklist that applies to all stories. At AEON, our DoD includes items like \"Code Reviewed,\" \"Unit Tests Passed,\" and \"Deployed to Staging.\" A story cannot be marked as Done and demonstrated at the Sprint Review unless all DoD items and Acceptance Criteria are met. This ensures a consistent level of quality across the product."
         }
       ],
-      "image": "/images/ba_002_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Writing User Stories, Given-When-Then Criteria & DoR Standards"
+      "image": "/images/ba_002_diagram.svg"
     },
     {
       "id": "BA-003",
@@ -986,15 +972,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standardized Business Process Model and Notation (BPMN 2.0) guidelines for documenting customer credit verification, digital loan disbursement, and payment workflows. Covers pools, swimlanes, gateway decision logic, and integration with engineering contracts.",
       "duration": "3 hours",
       "targetRoles": [
-        "BA",
-        "PM",
-        "Developer"
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [
         "BA-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Model end-to-end banking workflows using official BPMN 2.0 notation",
@@ -1005,11 +989,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "BPMN 2.0 Elements & Financial Process Modeling",
-          "body": "### Core BPMN Notation Standards in SYE:\nEvery business process workflow documented in Confluence must adhere to standard BPMN 2.0 conventions:\n\n\n\n    </div>\n</div>\n\n\n### Key Modeling Symbols:\n1. **Events**: Start Events (Green circle), Intermediate Timer/Message Events (Double border), End Events (Bold red circle).\n2. **Activities / Tasks**: User Task (Manual agent action), Service Task (Automated Golang API execution), Script Task.\n3. **Gateways**:\n   - **Exclusive (XOR)**: Only one conditional branch is evaluated (e.g., Credit Score $ge 700$ vs $< 700$).\n   - **Parallel (AND)**: All outgoing paths are triggered simultaneously (e.g., Send SMS Alert AND Generate PDF Receipt)."
+          "body": "### Core BPMN Notation Standards in SYE:\nEvery business process workflow documented in Confluence must adhere to standard BPMN 2.0 conventions:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n\n\n### Key Modeling Symbols:\n1. **Events**: Start Events (Green circle), Intermediate Timer/Message Events (Double border), End Events (Bold red circle).\n2. **Activities / Tasks**: User Task (Manual agent action), Service Task (Automated Golang API execution), Script Task.\n3. **Gateways**:\n   - **Exclusive (XOR)**: Only one conditional branch is evaluated (e.g., Credit Score $ge 700$ vs $< 700$).\n   - **Parallel (AND)**: All outgoing paths are triggered simultaneously (e.g., Send SMS Alert AND Generate PDF Receipt)."
         },
         {
           "title": "Swimlane Architecture & Cross-Section Handoffs",
-          "body": "### Structuring Responsibility with Swimlanes:\nWhen modeling a loan approval flow, create distinct swimlanes for each participant:\n- **Customer Channel (CXS)**: Mobile App user interaction.\n- **API & Middleware (API)**: Core banking lookup and credit bureau verification.\n- **Customer Service Agent (OCS)**: Manual underwriting verification for edge cases.\n- **Core Banking (Mainframe)**: Ledger posting and account credit.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Business Process Modeling with BPMN 2.0 & Swimlanes](/images/ba_003_diagram.svg)"
+          "body": "### Structuring Responsibility with Swimlanes:\nWhen modeling a loan approval flow, create distinct swimlanes for each participant:\n- **Customer Channel (CXS)**: Mobile App user interaction.\n- **API & Middleware (API)**: Core banking lookup and credit bureau verification.\n- **Customer Service Agent (OCS)**: Manual underwriting verification for edge cases.\n- **Core Banking (Mainframe)**: Ledger posting and account credit."
         }
       ],
       "name_th": "การเขียนแผนผังกระบวนการทางธุรกิจด้วยมาตรฐาน BPMN 2.0 และ Swimlanes",
@@ -1023,15 +1007,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "สัญลักษณ์มาตรฐาน BPMN 2.0 สำหรับระบบการเงิน",
-          "body": "### สัญลักษณ์พื้นฐานที่ใช้ในการเขียนกระบวนการบน Confluence:\n\n\n\n    </div>\n</div>\n\n\n### สัญลักษณ์หลักใน BPMN 2.0:\n1. **Events (เหตุการณ์)**: Start Event (วงกลมเส้นเดี่ยว), Message/Timer Event (วงกลมเส้นคู่), End Event (วงกลมเส้นหนา)\n2. **Tasks (กิจกรรม)**: User Task (งานที่เจ้าหน้าที่ทำ), Service Task (การเรียก API โดยระบบอัตโนมัติ)\n3. **Gateways (จุดตัดสินใจเงื่อนไข)**:\n   - **Exclusive (XOR)**: เลือกเดินทางใดทางหนึ่ง (เช่น คะแนนเครดิต $ge 700$ ให้ผ่าน ถ้า $< 700$ ให้ส่งตรวจเพิ่ม)\n   - **Parallel (AND)**: ทำงานหลายอย่างพร้อมกัน (เช่น ส่ง SMS แจ้งลูกค้า และ สร้างไฟล์ใบเสร็จ PDF)"
+          "body": "### สัญลักษณ์พื้นฐานที่ใช้ในการเขียนกระบวนการบน Confluence:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n\n\n### สัญลักษณ์หลักใน BPMN 2.0:\n1. **Events (เหตุการณ์)**: Start Event (วงกลมเส้นเดี่ยว), Message/Timer Event (วงกลมเส้นคู่), End Event (วงกลมเส้นหนา)\n2. **Tasks (กิจกรรม)**: User Task (งานที่เจ้าหน้าที่ทำ), Service Task (การเรียก API โดยระบบอัตโนมัติ)\n3. **Gateways (จุดตัดสินใจเงื่อนไข)**:\n   - **Exclusive (XOR)**: เลือกเดินทางใดทางหนึ่ง (เช่น คะแนนเครดิต $ge 700$ ให้ผ่าน ถ้า $< 700$ ให้ส่งตรวจเพิ่ม)\n   - **Parallel (AND)**: ทำงานหลายอย่างพร้อมกัน (เช่น ส่ง SMS แจ้งลูกค้า และ สร้างไฟล์ใบเสร็จ PDF)"
         },
         {
           "title": "การแบ่งหน้าที่รับผิดชอบด้วย Swimlanes ข้ามส่วนงาน",
-          "body": "### การกำหนดขอบเขตด้วย Swimlanes:\nการจำลองขั้นตอนการสมัครสินเชื่อจะแบ่ง Swimlanes ตามหน้าที่รับผิดชอบ:\n- **Customer Channel (CXS)**: หน้าจอบน Mobile Banking ให้ลูกค้ากรอกข้อมูล\n- **API & Middleware (API)**: ระบบดึงข้อมูลตรวจสอบเครดิตบูโรอัตโนมัติ\n- **Customer Service (OCS)**: เจ้าหน้าที่ตรวจสอบเอกสารเพิ่มเติมในกรณีพิเศษ\n- **Core Banking**: บันทึกรายการลงบัญชีธนาคาร\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Business Process Modeling with BPMN 2.0 & Swimlanes](/images/ba_003_diagram.svg)"
+          "body": "### การกำหนดขอบเขตด้วย Swimlanes:\nการจำลองขั้นตอนการสมัครสินเชื่อจะแบ่ง Swimlanes ตามหน้าที่รับผิดชอบ:\n- **Customer Channel (CXS)**: หน้าจอบน Mobile Banking ให้ลูกค้ากรอกข้อมูล\n- **API & Middleware (API)**: ระบบดึงข้อมูลตรวจสอบเครดิตบูโรอัตโนมัติ\n- **Customer Service (OCS)**: เจ้าหน้าที่ตรวจสอบเอกสารเพิ่มเติมในกรณีพิเศษ\n- **Core Banking**: บันทึกรายการลงบัญชีธนาคาร"
         }
       ],
-      "image": "/images/ba_003_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Business Process Modeling with BPMN 2.0 & Swimlanes"
+      "image": "/images/ba_003_diagram.svg"
     },
     {
       "id": "BA-004",
@@ -1040,13 +1023,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Understanding and documenting how data moves through various systems and processes.",
       "duration": "3 hours",
       "targetRoles": [
-        "BA",
-        "Developer",
-        "QA"
+        "BA"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Create Data Flow Diagrams (DFDs)",
@@ -1056,11 +1037,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Data Flow Diagrams (DFD)",
-          "body": "Data Flow Diagrams visually represent how information moves through a system or organization. They show external entities that provide or receive data, the processes that transform the data, and the data stores where information rests. Unlike process maps, DFDs focus solely on the data itself, not the sequential flow of tasks. They are critical for identifying data redundancy and security vulnerabilities.\n\n\n\n    </div>\n</div>"
+          "body": "Data Flow Diagrams visually represent how information moves through a system or organization. They show external entities that provide or receive data, the processes that transform the data, and the data stores where information rests. Unlike process maps, DFDs focus solely on the data itself, not the sequential flow of tasks. They are critical for identifying data redundancy and security vulnerabilities.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "The Data Dictionary",
-          "body": "A Data Dictionary is a centralized repository of information about data elements, defining their format, constraints, and relationships. When integrating systems at AEON, differing definitions of \"Customer\" or \"Order\" can cause severe issues. The BA must ensure that all data fields moving between systems are strictly defined and mapped. This document is a primary reference for developers building APIs and databases.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Data Flow Analysis](/images/ba_004_diagram.svg)"
+          "body": "A Data Dictionary is a centralized repository of information about data elements, defining their format, constraints, and relationships. When integrating systems at AEON, differing definitions of \"Customer\" or \"Order\" can cause severe issues. The BA must ensure that all data fields moving between systems are strictly defined and mapped. This document is a primary reference for developers building APIs and databases."
         },
         {
           "title": "Entity Relationship Basics",
@@ -1081,11 +1062,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Data Flow Diagrams (DFD)",
-          "body": "Data Flow Diagrams visually represent how information moves through a system or organization. They show external entities that provide or receive data, the processes that transform the data, and the data stores where information rests. Unlike process maps, DFDs focus solely on the data itself, not the sequential flow of tasks. They are critical for identifying data redundancy and security vulnerabilities.\n\n\n\n    </div>\n</div>"
+          "body": "Data Flow Diagrams visually represent how information moves through a system or organization. They show external entities that provide or receive data, the processes that transform the data, and the data stores where information rests. Unlike process maps, DFDs focus solely on the data itself, not the sequential flow of tasks. They are critical for identifying data redundancy and security vulnerabilities.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: The Data Dictionary",
-          "body": "A Data Dictionary is a centralized repository of information about data elements, defining their format, constraints, and relationships. When integrating systems at AEON, differing definitions of \"Customer\" or \"Order\" can cause severe issues. The BA must ensure that all data fields moving between systems are strictly defined and mapped. This document is a primary reference for developers building APIs and databases.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Data Flow Analysis](/images/ba_004_diagram.svg)"
+          "body": "A Data Dictionary is a centralized repository of information about data elements, defining their format, constraints, and relationships. When integrating systems at AEON, differing definitions of \"Customer\" or \"Order\" can cause severe issues. The BA must ensure that all data fields moving between systems are strictly defined and mapped. This document is a primary reference for developers building APIs and databases."
         },
         {
           "title": "หัวข้อ: Entity Relationship Basics",
@@ -1096,19 +1077,16 @@ window.SYE_SAMPLE_DATA = {
           "body": "When analyzing data flows, BAs must always consider PDPA and internal security policies. You must identify where sensitive personal data (like national ID numbers) enters the system, where it is stored, and who has access to it. Requirements must include necessary data masking, encryption, or access controls. Protecting customer data is a foundational requirement for all new systems at AEON."
         }
       ],
-      "image": "/images/ba_004_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Data Flow Analysis"
+      "image": "/images/ba_004_diagram.svg"
     },
     {
       "id": "DEV-001",
-      "name": "Secure Coding Standards, OWASP Top 10 (2025) & Defensive Engineering",
+      "name": "Secure Coding Practices & OWASP Top 10 Mitigation",
       "category": "Developer",
-      "description": "Mastering modern secure coding practices to eliminate vulnerabilities: Injection, Broken Auth, Cryptographic Failures, SSRF, and Security Misconfiguration.",
+      "description": "Comprehensive enterprise standard for secure software engineering in Golang and Next.js. Covers input validation, parameterized SQL queries, prevention of SQL Injection, Cross-Site Scripting (XSS), Broken Object Level Authorization (BOLA), cryptographic key management, and automated SAST/DAST pipeline gates.",
       "duration": "4 hours",
       "targetRoles": [
-        "Developer",
-        "QA",
-        "SRE"
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [
@@ -1117,41 +1095,45 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2024-01-10",
       "learningObjectives": [
-        "Mitigate all OWASP Top 10 (2025) vulnerabilities in Go, Node.js, and TypeScript applications",
-        "Enforce parameterized SQL queries and ORM safety to eliminate SQL Injection 100%",
-        "Implement robust cryptographic primitives (AES-GCM-256, bcrypt, argon2id) for financial data",
-        "Sanitize all inbound and outbound payloads to prevent Cross-Site Scripting (XSS) and SSRF"
+        "Prevent SQL Injection using sqlx/pgx parameterized queries and ORM safety rules",
+        "Mitigate Cross-Site Scripting (XSS) and CSRF in Next.js using Content Security Policy (CSP) and DOMPurify",
+        "Implement strict Broken Access Control (BOLA/BFLA) mitigation via JWT claims verification in Golang middleware",
+        "Enforce Secrets Scanning in Git commits and integrate automated SAST/DAST in CI pipelines"
       ],
       "content": [
         {
-          "title": "A01: Broken Access Control & A02: Cryptographic Failures",
-          "body": "### 1. Broken Access Control Prevention\nNever rely solely on client-side role checks. Every API endpoint must enforce server-side tenant isolation:\n\n```go\n// ✅ SECURE: Verify that the requested resource belongs to the authenticated user\nfunc GetAccountHandler(c *gin.Context) {\n    userID := c.GetString(\"auth_user_id\") // Extracted from verified JWT\n    accountID := c.Param(\"id\")\n    \n    var account Account\n    if err := db.Where(\"id = ? AND user_id = ?\", accountID, userID).First(&account).Error; err != nil {\n        c.JSON(404, gin.H{\"error\": \"Account not found or access denied\"})\n        return\n    }\n    c.JSON(200, account)\n}\n```\n\n### 2. Cryptographic Standards:\n- **Passwords**: Never use MD5 or SHA-256. Use **bcrypt** (work factor >= 12) or **Argon2id**.\n- **Data at Rest**: Use **AES-256-GCM** with authenticated data (AEAD)."
+          "title": "OWASP Top 10 in Financial Systems & Threat Vectors",
+          "body": "### Threat Landscape for AEON Financial Platforms\nAs financial systems process real money and sensitive customer credit profiles, web and API vulnerabilities can lead to catastrophic regulatory penalties and financial fraud.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### Top Critical Threat Vectors in AEON:\n1. **Broken Object Level Authorization (BOLA / IDOR)**: An authenticated attacker accesses another user's credit card transactions simply by guessing account IDs in API parameters.\n2. **SQL Injection (SQLi)**: Untrusted user input dynamically concatenated into SQL queries.\n3. **Cross-Site Scripting (XSS)**: Malicious JavaScript executed in customer browsers to steal session cookies.\n4. **Security Misconfiguration & Hardcoded Secrets**: Exposing API keys or internal database ports to unauthorized networks."
         },
         {
-          "title": "A03: Injection & Parameterized Query Enforcement",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Secure Coding Standards, OWASP Top 10 (2025) & Defensive Engineering](/images/sye_secure_coding_owasp.jpg)\n\nSQL Injection remains the #1 cause of catastrophic data leaks. Dynamic string concatenation in database queries is strictly prohibited.\n\n```go\n// ❌ VULNERABLE TO SQL INJECTION:\nquery := fmt.Sprintf(\"SELECT * FROM users WHERE username = '%s' AND password = '%s'\", inputUser, inputPass)\ndb.Raw(query)\n\n// ✅ SECURE: Parameterized query ensures input is treated strictly as data, never code\ndb.Where(\"username = ? AND status = ?\", inputUser, \"Active\").First(&user)\n```\n\nFor NoSQL and GraphQL engines, always enforce input type schemas and maximum query depth limits."
+          "title": "SQL Injection Prevention & Safe Database Queries in Golang",
+          "body": "### Parameterized Queries Mandate:\nDynamic string concatenation (`fmt.Sprintf(\"SELECT * FROM accounts WHERE id = '%s'\", input)`) is strictly prohibited in SYE codebases and triggers an immediate SonarQube build blocker.\n\n```go\n// VULNERABLE CODE (STRICTLY FORBIDDEN):\n// query := fmt.Sprintf(\"SELECT id, balance FROM accounts WHERE user_id = '%s'\", userID)\n// db.Query(query)\n\n// SECURE AEON STANDARD (Mandatory Parameterized Binding):\nfunc GetAccountBalance(ctx context.Context, db *pgxpool.Pool, userID string) (*Account, error) {\n    query := `SELECT id, balance, status FROM accounts WHERE user_id = $1 AND is_deleted = false`\n    var acc Account\n    err := db.QueryRow(ctx, query, userID).Scan(&acc.ID, &acc.Balance, &acc.Status)\n    if err != nil {\n        if errors.Is(err, pgx.ErrNoRows) {\n            return nil, ErrAccountNotFound\n        }\n        return nil, fmt.Errorf(\"failed to query account: %w\", err)\n    }\n    return &acc, nil\n}\n```\n\n### Safe ORM Usage Guidelines:\n- When using GORM or SQLBoiler, always use positional placeholders (`db.Where(\"user_id = ?\", userID)`).\n- Never pass raw user inputs into `db.Order()` or `db.Group()` without strict whitelisting."
         },
         {
-          "title": "A10: Server-Side Request Forgery (SSRF) & Defensive Headers",
-          "body": "SSRF occurs when an application fetches a remote resource without validating the user-supplied URL (e.g. hitting AWS metadata or internal K8s services).\n\n```typescript\n// ✅ SECURE URL VALIDATION: Whitelist trusted domains and block internal IP ranges\nfunction isSafeUrl(targetUrl: string): boolean {\n    const parsed = new URL(targetUrl);\n    const blockedHosts = ['10.', '192.168.', '172.16.', '127.0.0.1', 'localhost', '169.254.169.254'];\n    \n    if (parsed.protocol !== 'https:') return false;\n    return !blockedHosts.some(blocked => parsed.hostname.startsWith(blocked));\n}\n```\n\n### Mandatory HTTP Security Headers:\n- `Content-Security-Policy: default-src 'self'`\n- `X-Frame-Options: DENY`\n- `X-Content-Type-Options: nosniff`\n- `Strict-Transport-Security: max-age=31536000; includeSubDomains`"
+          "title": "Cross-Site Scripting (XSS) & State Protection in Next.js",
+          "body": "### Frontend Sanitization & CSP Headers:\n1. **Never use `dangerouslySetInnerHTML`** unless sanitized with `DOMPurify`.\n2. **Strict Content Security Policy (CSP)**: Enforce nonce-based CSP in `next.config.js`.\n\n```javascript\n// next.config.js - Mandatory Security Headers for AEON CXS Portals\nconst securityHeaders = [\n  { key: 'X-DNS-Prefetch-Control', value: 'on' },\n  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },\n  { key: 'X-Frame-Options', value: 'DENY' },\n  { key: 'X-Content-Type-Options', value: 'nosniff' },\n  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },\n  {\n    key: 'Content-Security-Policy',\n    value: \"default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;\"\n  }\n];\n\nmodule.exports = {\n  async headers() {\n    return [{ source: '/(.*)', headers: securityHeaders }];\n  }\n};\n```"
+        },
+        {
+          "title": "Broken Access Control & JWT Verification Middleware",
+          "body": "### Enforcing Ownership Verification:\nEvery Golang HTTP handler must verify that the requesting user's JWT identity matches the resource ID being manipulated:\n\n```go\n// Golang Middleware for Strict Tenant / User Authorization\nfunc RequireResourceOwnership() gin.HandlerFunc {\n    return func(c *gin.Context) {\n        tokenClaims := c.MustGet(\"claims\").(*JWTClaims)\n        requestedUserID := c.Param(\"userId\")\n\n        if tokenClaims.Role != \"ADMIN\" && tokenClaims.Subject != requestedUserID {\n            c.AbortWithStatusJSON(http.StatusForbidden, gin.H{\n                \"error_code\": \"FORBIDDEN_ACCESS\",\n                \"message\":    \"You are not authorized to access this resource\",\n            })\n            return\n        }\n        c.Next()\n    }\n}\n```"
         }
       ],
-      "name_th": "มาตรฐานการเขียนโค้ดปลอดภัย, OWASP Top 10 (2025) และวิศวกรรมเชิงป้องกัน",
-      "description_th": "เทคนิคการเขียนโปรแกรมเชิงป้องกันตามมาตรฐาน OWASP Top 10 เพื่อกำจัดช่องโหว่ SQL Injection, Broken Authentication, XSS, CSRF, SSRF และการจัดการข้อมูลลับ",
+      "name_th": "แนวทางการเขียนโค้ดที่ปลอดภัยและการป้องกันช่องโหว่ OWASP Top 10",
+      "description_th": "มาตรฐานวิศวกรรมความมั่นคงปลอดภัยในการเขียนโปรแกรมด้วยภาษา Golang และ Next.js ครอบคลุมการตรวจสอบข้อมูลนำเข้า, การป้องกัน SQL Injection ด้วย Parameterized Queries, การป้องกัน XSS, การควบคุมสิทธิ์ BOLA, การบริหารจัดการกุญแจเข้ารหัส และการตรวจความปลอดภัยอัตโนมัติบน CI/CD",
       "learningObjectives_th": [
-        "ป้องกันช่องโหว่ความปลอดภัยระดับท็อปตามมาตรฐาน OWASP Top 10 (2025)",
-        "เขียนคำสั่ง SQL แบบ Parameterized Query และใช้ ORM อย่างปลอดภัย ป้องกัน SQL Injection 100%",
-        "ใช้งานระบบเข้ารหัสข้อมูลขั้นสูง (AES-GCM-256, bcrypt, argon2id) สำหรับข้อมูลธุรกรรมการเงิน",
-        "ทำการ Sanitize และ Validate ข้อมูลฝั่ง Client/Server เพื่อป้องกัน XSS และ SSRF"
+        "ป้องกันการโจมตี SQL Injection โดยใช้ Parameterized Queries บน sqlx/pgx และกฎความปลอดภัยของ ORM",
+        "ป้องกัน Cross-Site Scripting (XSS) และ CSRF บน Next.js ด้วย Content Security Policy (CSP) และ DOMPurify",
+        "ป้องกันช่องโหว่การละเมิดสิทธิ์ (BOLA/BFLA) ผ่านการตรวจสอบ Claim ใน JWT บน Golang Middleware",
+        "เปิดใช้ระบบตรวจสอบรหัสผ่านใน Git Commits และตั้งค่า SAST/DAST ตรวจช่องโหว่อัตโนมัติบน CI/CD"
       ],
       "content_th": [
         {
           "title": "ภัยคุกคาม OWASP Top 10 ในระบบการเงินของ AEON",
-          "body": "### ภูมิทัศน์ความปลอดภัยของระบบการเงิน\nเนื่องจากระบบของฝ่าย SYE ประมวลผลเงินและข้อมูลเครดิตลูกค้า ความผิดพลาดทางความปลอดภัยจะส่งผลกระทบต่อความเชื่อมั่นและข้อกำหนดกฎหมายของ ธปท.\n\n\n\n    </div>\n</div>\n\n\n### ภัยคุกคามหลักที่ต้องเฝ้าระวัง:\n1. **Broken Object Level Authorization (BOLA)**: ผู้ใช้งานที่ล็อกอินแล้วแอบเข้าถึงข้อมูลบัญชีของผู้อื่นโดยการเปลี่ยนเลข ID ใน URL\n2. **SQL Injection (SQLi)**: การนำข้อความที่ผู้ใช้กรอกมาต่อ String คำสั่ง SQL โดยตรง\n3. **Cross-Site Scripting (XSS)**: การฝังสคริปต์อันตรายเพื่อขโมย Session หรือ Token ลูกค้า\n4. **Hardcoded Secrets**: การเผลอฝังรหัสผ่านหรือ API Key ลงใน Git Repository"
+          "body": "### ภูมิทัศน์ความปลอดภัยของระบบการเงิน\nเนื่องจากระบบของฝ่าย SYE ประมวลผลเงินและข้อมูลเครดิตลูกค้า ความผิดพลาดทางความปลอดภัยจะส่งผลกระทบต่อความเชื่อมั่นและข้อกำหนดกฎหมายของ ธปท.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### ภัยคุกคามหลักที่ต้องเฝ้าระวัง:\n1. **Broken Object Level Authorization (BOLA)**: ผู้ใช้งานที่ล็อกอินแล้วแอบเข้าถึงข้อมูลบัญชีของผู้อื่นโดยการเปลี่ยนเลข ID ใน URL\n2. **SQL Injection (SQLi)**: การนำข้อความที่ผู้ใช้กรอกมาต่อ String คำสั่ง SQL โดยตรง\n3. **Cross-Site Scripting (XSS)**: การฝังสคริปต์อันตรายเพื่อขโมย Session หรือ Token ลูกค้า\n4. **Hardcoded Secrets**: การเผลอฝังรหัสผ่านหรือ API Key ลงใน Git Repository"
         },
         {
           "title": "การป้องกัน SQL Injection และมาตรฐานการคิวรีฐานข้อมูลใน Golang",
-          "body": "### กฎเหล็ก: บังคับใช้ Parameterized Binding เท่านั้น\nห้ามใช้ `fmt.Sprintf` หรือการต่อ String เพื่อสร้างคำสั่ง SQL โดยเด็ดขาด โค้ดที่ฝ่าฝืนจะไม่ผ่านด่านตรวจ SonarQube\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Secure Coding Standards, OWASP Top 10 (2025) & Defensive Engineering](/images/sye_secure_coding_owasp.jpg)\n\n```go\n// โค้ดที่มีช่องโหว่ (ห้ามใช้เด็ดขาด):\n// query := fmt.Sprintf(\"SELECT id, balance FROM accounts WHERE user_id = '%s'\", userID)\n\n// มาตรฐานความปลอดภัยของ AEON (Parameterized Binding):\nfunc GetAccountBalance(ctx context.Context, db *pgxpool.Pool, userID string) (*Account, error) {\n    query := `SELECT id, balance, status FROM accounts WHERE user_id = $1 AND is_deleted = false`\n    var acc Account\n    err := db.QueryRow(ctx, query, userID).Scan(&acc.ID, &acc.Balance, &acc.Status)\n    if err != nil {\n        if errors.Is(err, pgx.ErrNoRows) {\n            return nil, ErrAccountNotFound\n        }\n        return nil, fmt.Errorf(\"failed to query account: %w\", err)\n    }\n    return &acc, nil\n}\n```"
+          "body": "### กฎเหล็ก: บังคับใช้ Parameterized Binding เท่านั้น\nห้ามใช้ `fmt.Sprintf` หรือการต่อ String เพื่อสร้างคำสั่ง SQL โดยเด็ดขาด โค้ดที่ฝ่าฝืนจะไม่ผ่านด่านตรวจ SonarQube\n\n```go\n// โค้ดที่มีช่องโหว่ (ห้ามใช้เด็ดขาด):\n// query := fmt.Sprintf(\"SELECT id, balance FROM accounts WHERE user_id = '%s'\", userID)\n\n// มาตรฐานความปลอดภัยของ AEON (Parameterized Binding):\nfunc GetAccountBalance(ctx context.Context, db *pgxpool.Pool, userID string) (*Account, error) {\n    query := `SELECT id, balance, status FROM accounts WHERE user_id = $1 AND is_deleted = false`\n    var acc Account\n    err := db.QueryRow(ctx, query, userID).Scan(&acc.ID, &acc.Balance, &acc.Status)\n    if err != nil {\n        if errors.Is(err, pgx.ErrNoRows) {\n            return nil, ErrAccountNotFound\n        }\n        return nil, fmt.Errorf(\"failed to query account: %w\", err)\n    }\n    return &acc, nil\n}\n```"
         },
         {
           "title": "การป้องกัน Cross-Site Scripting (XSS) และตั้งค่า Headers ใน Next.js",
@@ -1162,8 +1144,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "### การตรวจสอบความเป็นเจ้าของข้อมูล (Resource Ownership):\nทุก API Handler ต้องตรวจสอบว่า ID ที่ส่งมาใน Request ตรงกับ Subject ใน Token ของผู้เรียกใช้งานจริงหรือไม่:\n\n```go\n// Middleware ตรวจสอบสิทธิ์การเข้าถึงข้อมูลของตนเอง\nfunc RequireResourceOwnership() gin.HandlerFunc {\n    return func(c *gin.Context) {\n        tokenClaims := c.MustGet(\"claims\").(*JWTClaims)\n        requestedUserID := c.Param(\"userId\")\n\n        if tokenClaims.Role != \"ADMIN\" && tokenClaims.Subject != requestedUserID {\n            c.AbortWithStatusJSON(http.StatusForbidden, gin.H{\n                \"error_code\": \"FORBIDDEN_ACCESS\",\n                \"message\":    \"คุณไม่มีสิทธิ์เข้าถึงข้อมูลของลูกค้ารายนี้\",\n            })\n            return\n        }\n        c.Next()\n    }\n}\n```"
         }
       ],
-      "image": "/images/sye_secure_coding_owasp.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Secure Coding Standards, OWASP Top 10 (2025) & Defensive Engineering"
+      "image": "/images/sye_secure_coding_owasp.jpg"
     },
     {
       "id": "DEV-002",
@@ -1172,13 +1153,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standard branching strategy, commit semantics, and pull request hygiene on AEON On-Premise GitHub Enterprise. Covers GitFlow vs Trunk-based branching, rebase vs merge policies, semantic versioning, and commit message formats linked to Jira.",
       "duration": "2 hours",
       "targetRoles": [
-        "Developer",
-        "SRE",
-        "QA"
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Master the GitFlow and Trunk-based branching strategies used across SYE squads",
@@ -1189,11 +1168,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Branching Strategy & Environment Mappings",
-          "body": "All source code is maintained on our self-hosted **AEON GitHub Enterprise Server**.\n\n\n\n    </div>\n</div>\n\n\n### Standard Branch Roles:\n- `main` (or `master`): Production-ready code. Protected branch; direct pushes are disabled. Releases tagged as `vX.Y.Z`.\n- `staging`: Release candidate branch deployed continuously to STAGING UAT environment.\n- `develop`: Integration branch for active sprint features.\n- `feature/{jira-key}-{short-desc}`: Feature development branch created from `develop`.\n- `hotfix/{jira-key}-{short-desc}`: Critical production patch branched directly from `main`."
+          "body": "All source code is maintained on our self-hosted **AEON GitHub Enterprise Server**.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n\n\n### Standard Branch Roles:\n- `main` (or `master`): Production-ready code. Protected branch; direct pushes are disabled. Releases tagged as `vX.Y.Z`.\n- `staging`: Release candidate branch deployed continuously to STAGING UAT environment.\n- `develop`: Integration branch for active sprint features.\n- `feature/{jira-key}-{short-desc}`: Feature development branch created from `develop`.\n- `hotfix/{jira-key}-{short-desc}`: Critical production patch branched directly from `main`."
         },
         {
           "title": "Conventional Commits Standard & Jira Linking",
-          "body": "All commit messages must adhere to the Conventional Commits specification:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Git Workflow, Conventional Commits & Trunk-Based Release](/images/devops_cicd_pipeline.jpg)\n\n```text\n<type>(<scope>): [<JIRA-KEY>] <short summary>\n\n[optional body explaining technical rationale]\n\n[optional footer: Resolves SYE-1042]\n```\n\n### Valid Types:\n- `feat`: New feature or capability\n- `fix`: Bug fix in application logic\n- `refactor`: Code change that neither fixes a bug nor adds a feature\n- `perf`: Performance optimization\n- `test`: Adding or refactoring unit/integration tests\n- `docs`: Documentation updates\n- `chore`: Build tools, dependencies, or pipeline updates\n\n### Example Valid Commit:\n```text\nfeat(qr-payment): [SYE-1420] implement PromptPay dynamic QR generation\n\n- Add Golang EMVCo payload generator service\n- Implement Redis idempotency key validation with 300s TTL\n- Add unit tests achieving 92% coverage\n\nResolves: SYE-1420\n```"
+          "body": "All commit messages must adhere to the Conventional Commits specification:\n\n```text\n<type>(<scope>): [<JIRA-KEY>] <short summary>\n\n[optional body explaining technical rationale]\n\n[optional footer: Resolves SYE-1042]\n```\n\n### Valid Types:\n- `feat`: New feature or capability\n- `fix`: Bug fix in application logic\n- `refactor`: Code change that neither fixes a bug nor adds a feature\n- `perf`: Performance optimization\n- `test`: Adding or refactoring unit/integration tests\n- `docs`: Documentation updates\n- `chore`: Build tools, dependencies, or pipeline updates\n\n### Example Valid Commit:\n```text\nfeat(qr-payment): [SYE-1420] implement PromptPay dynamic QR generation\n\n- Add Golang EMVCo payload generator service\n- Implement Redis idempotency key validation with 300s TTL\n- Add unit tests achieving 92% coverage\n\nResolves: SYE-1420\n```"
         },
         {
           "title": "Pull Request Lifecycle & Peer Review Hygiene",
@@ -1211,71 +1190,70 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "กลยุทธ์การจัดการ Branch และการเชื่อมโยง Environment",
-          "body": "ซอร์สโค้ดทั้งหมดจัดเก็บบน **AEON GitHub Enterprise Server (On-Premise)**\n\n\n\n    </div>\n</div>\n\n\n### หน้าที่ของแต่ละ Branch:\n- `main`: โค้ดชุดที่พร้อมขึ้น Production ป้องกันการ Push ตรงโดยเด็ดขาด\n- `staging`: โค้ดสำหรับทดสอบบน Staging UAT และทำ Release Candidate\n- `develop`: โค้ดหลักสำหรับการรวมงานในแต่ละ Sprint\n- `feature/{jira-key}-{ชื่อฟีเจอร์}`: Branch พัฒนาฟังก์ชันใหม่ แตกออกจาก `develop`\n- `hotfix/{jira-key}-{ชื่อปัญหา}`: Branch แก้ปัญหาด่วน แตกออกจาก `main`"
+          "body": "ซอร์สโค้ดทั้งหมดจัดเก็บบน **AEON GitHub Enterprise Server (On-Premise)**\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n\n\n### หน้าที่ของแต่ละ Branch:\n- `main`: โค้ดชุดที่พร้อมขึ้น Production ป้องกันการ Push ตรงโดยเด็ดขาด\n- `staging`: โค้ดสำหรับทดสอบบน Staging UAT และทำ Release Candidate\n- `develop`: โค้ดหลักสำหรับการรวมงานในแต่ละ Sprint\n- `feature/{jira-key}-{ชื่อฟีเจอร์}`: Branch พัฒนาฟังก์ชันใหม่ แตกออกจาก `develop`\n- `hotfix/{jira-key}-{ชื่อปัญหา}`: Branch แก้ปัญหาด่วน แตกออกจาก `main`"
         },
         {
           "title": "มาตรฐานการเขียน Commit (Conventional Commits) และการระบุ Ticket",
-          "body": "ทุก Commit ต้องเป็นไปตามรูปแบบ Conventional Commits:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Git Workflow, Conventional Commits & Trunk-Based Release](/images/devops_cicd_pipeline.jpg)\n\n```text\n<type>(<scope>): [<JIRA-KEY>] <สรุปสิ่งที่ทำสั้นๆ>\n\n[รายละเอียดเพิ่มเติมและเหตุผลทางเทคนิค]\n```\n\n### ประเภทของ Commit (Valid Types):\n- `feat`: เพิ่มฟีเจอร์ใหม่\n- `fix`: แก้ไขบั๊ก\n- `refactor`: ปรับปรุงโครงสร้างโค้ดโดยไม่เปลี่ยนผลลัพธ์\n- `perf`: ปรับแต่งประสิทธิภาพความเร็ว\n- `test`: เพิ่มเติมชุดทดสอบ\n- `docs`: ปรับปรุงเอกสาร\n- `chore`: ปรับแต่ง Build Tools หรือ Dependency"
+          "body": "ทุก Commit ต้องเป็นไปตามรูปแบบ Conventional Commits:\n\n```text\n<type>(<scope>): [<JIRA-KEY>] <สรุปสิ่งที่ทำสั้นๆ>\n\n[รายละเอียดเพิ่มเติมและเหตุผลทางเทคนิค]\n```\n\n### ประเภทของ Commit (Valid Types):\n- `feat`: เพิ่มฟีเจอร์ใหม่\n- `fix`: แก้ไขบั๊ก\n- `refactor`: ปรับปรุงโครงสร้างโค้ดโดยไม่เปลี่ยนผลลัพธ์\n- `perf`: ปรับแต่งประสิทธิภาพความเร็ว\n- `test`: เพิ่มเติมชุดทดสอบ\n- `docs`: ปรับปรุงเอกสาร\n- `chore`: ปรับแต่ง Build Tools หรือ Dependency"
         },
         {
           "title": "วงจรชีวิตของ Pull Request และการตรวจโค้ด (Peer Review)",
           "body": "### ข้อกำหนดของ Pull Request (PR):\n1. **ชื่อ PR**: ต้องขึ้นต้นด้วยรหัส Jira เช่น `[SYE-1420] PromptPay Dynamic QR`\n2. **คำอธิบาย**: ระบุสิ่งที่แก้ไข ผลกระทบ และผลการทดสอบ\n3. **การอนุมัติ**: ต้องผ่านการตรวจและ Approve จากเพื่อนร่วมทีมอย่างน้อย **2 คน** และ CI ผ่านเป็นสีเขียว\n4. **การรวมโค้ด**: ให้เลือกใช้ **Squash and Merge** เพื่อรักษาประวัติการพัฒนาให้เรียบง่ายและเป็นระเบียบ"
         }
       ],
-      "image": "/images/devops_cicd_pipeline.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Git Workflow, Conventional Commits & Trunk-Based Release"
+      "image": "/images/devops_cicd_pipeline.jpg"
     },
     {
       "id": "DEV-003",
-      "name": "RESTful API Design, OpenAPI 3.1 Standards & Semantic Versioning",
+      "name": "Enterprise API Design, RESTful Guidelines & Golang Microservices",
       "category": "Developer",
-      "description": "Enterprise API-first architecture covering resource naming, HTTP semantics, idempotent methods, pagination, OpenAPI 3.1 Swagger specifications, and backward compatibility.",
+      "description": "Principles of designing RESTful APIs, documentation with Swagger, and implementation best practices.",
       "duration": "4 hours",
       "targetRoles": [
-        "Developer",
-        "BA",
-        "QA"
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [],
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Design consistent, predictable RESTful APIs following RFC 7231 and OpenAPI 3.1 standards",
-        "Correctly utilize HTTP Verbs (GET, POST, PUT, PATCH, DELETE) and status codes (200, 201, 400, 401, 404, 409, 500)",
-        "Implement idempotency keys for financial transactions to eliminate duplicate billing",
-        "Manage API lifecycle, deprecation policies, and Semantic Versioning (SemVer)"
+        "Apply REST principles and standard HTTP methods",
+        "Utilize correct HTTP status codes and versioning",
+        "Generate comprehensive Swagger documentation"
       ],
       "content": [
         {
-          "title": "REST Resource Modeling & HTTP Semantics",
-          "body": "REST APIs represent business entities as **nouns** in plural format:\n\n```\nGET    /api/v1/credit-cards           -> List cards (paginated)\nPOST   /api/v1/credit-cards           -> Create a new card application\nGET    /api/v1/credit-cards/{id}      -> Retrieve specific card details\nPATCH  /api/v1/credit-cards/{id}      -> Partial update (e.g. update credit limit)\nPUT    /api/v1/credit-cards/{id}      -> Complete entity replacement\nDELETE /api/v1/credit-cards/{id}      -> Soft delete / deactivate card\n```\n\n### Status Code Hierarchy:\n- **200 OK**: Successful GET / PATCH.\n- **201 Created**: Successful POST creation (returns `Location` header).\n- **400 Bad Request**: Invalid client payload schema.\n- **401 Unauthorized**: Missing or expired JWT token.\n- **403 Forbidden**: Valid token, but user lacks role permission.\n- **409 Conflict**: Resource state conflict (e.g. duplicate national ID)."
+          "title": "RESTful Principles",
+          "body": "APIs at AEON must adhere to REST principles, using nouns to represent resources (e.g., `/users`, `/orders`) rather than verbs. We utilize standard HTTP methods to indicate actions: GET for retrieval, POST for creation, PUT/PATCH for updates, and DELETE for removal. APIs must be stateless, meaning each request contains all information necessary for the server to fulfill it, independent of previous requests.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_golang_kafka_mesh.jpg\" alt=\"Golang Microservices & Apache Kafka Event Mesh\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Golang Microservices & Apache Kafka Event Mesh</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">API Gateway • gRPC • Redis • PostgreSQL</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
-          "title": "Financial Idempotency & Concurrency Control",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: RESTful API Design, OpenAPI 3.1 Standards & Semantic Versioning](/images/sye_api_core_banking.jpg)\n\nIn banking systems, network timeouts can cause clients to retry payment requests. **Idempotency Keys** guarantee that repeated requests produce the exact same outcome without charging the customer twice.\n\n```\nClient ──[ POST /api/v1/payments (Idempotency-Key: \"uuid-1234\") ]──> API Gateway\n                                                                             │\n                                                                             v\n                                                               [ Redis Key Check ]\n                                                                /                 \\\n                                                     (Key Exists: Cached)     (New Key: Process)\n                                                             │                         │\n                                                             v                         v\n                                                     Return Saved 200 OK      Execute Payment & Cache\n```\n\n1. Client generates a unique UUIDv4 in the `Idempotency-Key` header.\n2. Server acquires a distributed lock in Redis for 120 seconds.\n3. If duplicate key arrives while processing, return `409 Conflict`. If completed, return cached response directly."
+          "title": "Status Codes and Error Handling",
+          "body": "Proper use of HTTP status codes is critical for client applications to understand the response. Return 200/201 for success, 400 for bad client requests, 401/403 for authentication issues, and 404 for missing resources. Never return a 200 OK with an error message in the payload. Error responses must follow a standard JSON structure containing an error code and a developer-friendly message."
         },
         {
-          "title": "OpenAPI 3.1 & Standard Error Response Schema",
-          "body": "Every SYE API must conform to the **RFC 7807 Problem Details** error specification:\n\n```json\n{\n  \"type\": \"https://api.aeonth.com/errors/insufficient-credit-limit\",\n  \"title\": \"Insufficient Credit Limit\",\n  \"status\": 422,\n  \"detail\": \"Requested transaction amount 15,000 THB exceeds available credit limit 8,200 THB.\",\n  \"instance\": \"/api/v1/payments/tx-994821\",\n  \"timestamp\": \"2026-08-24T14:30:00Z\",\n  \"errorCode\": \"ERR_LIMIT_EXCEEDED\"\n}\n```\n\nThis standard format ensures automated frontend error parsers display consistent, localized feedback to mobile app users."
+          "title": "API Versioning Strategies",
+          "body": "To prevent breaking existing clients when introducing backward-incompatible changes, API versioning is mandatory. We implement versioning in the URL path (e.g., `/api/v1/users`). Minor additive changes do not require a new version, but changing existing data structures or removing endpoints does. Deprecation notices must be communicated to consumers well in advance of removing old versions."
+        },
+        {
+          "title": "Swagger Documentation",
+          "body": "Every API deployed at AEON must have accompanying OpenAPI (Swagger) documentation. This documentation is generated automatically from code annotations. The Swagger UI provides an interactive interface for developers and QA to understand the endpoints, required payloads, and expected responses. Undocumented APIs will not pass the CI pipeline and cannot be deployed to production."
         }
       ],
-      "name_th": "การออกแบบ RESTful API มาตรฐาน OpenAPI 3.1 และ Semantic Versioning",
-      "description_th": "หลักการออกแบบ RESTful API ระดับสากล ครอบคลุมการตั้งชื่อ Resource, การใช้ HTTP Verbs, Idempotency, การจัดหน้า Pagination, การเขียน OpenAPI Spec และการควบคุม Version",
+      "name_th": "การออกแบบ Enterprise API และการพัฒนา Microservices ด้วยภาษา Golang",
+      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ Enterprise API Design, RESTful Guidelines & Golang Microservices เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
       "learningObjectives_th": [
-        "ออกแบบ RESTful API ที่สอดคล้องตามมาตรฐานสากล RFC 7231 และ OpenAPI 3.1",
-        "ใช้งาน HTTP Verbs และ Status Codes ได้อย่างแม่นยำและถูกต้องตามความหมาย",
-        "ประยุกต์ใช้ Idempotency Key ป้องกันการทำรายการธุรกรรมการเงินซ้ำซ้อน",
-        "จัดการวงจรชีวิต API นโยบายการ Deprecate และการใช้ Semantic Versioning (SemVer)"
+        "เข้าใจและสามารถปฏิบัติตาม: Apply REST principles and standard HTTP methods",
+        "เข้าใจและสามารถปฏิบัติตาม: Utilize correct HTTP status codes and versioning",
+        "เข้าใจและสามารถปฏิบัติตาม: Generate comprehensive Swagger documentation"
       ],
       "content_th": [
         {
           "title": "หัวข้อ: RESTful Principles",
-          "body": "APIs at AEON must adhere to REST principles, using nouns to represent resources (e.g., `/users`, `/orders`) rather than verbs. We utilize standard HTTP methods to indicate actions: GET for retrieval, POST for creation, PUT/PATCH for updates, and DELETE for removal. APIs must be stateless, meaning each request contains all information necessary for the server to fulfill it, independent of previous requests.\n\n\n\n    </div>\n</div>"
+          "body": "APIs at AEON must adhere to REST principles, using nouns to represent resources (e.g., `/users`, `/orders`) rather than verbs. We utilize standard HTTP methods to indicate actions: GET for retrieval, POST for creation, PUT/PATCH for updates, and DELETE for removal. APIs must be stateless, meaning each request contains all information necessary for the server to fulfill it, independent of previous requests.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_golang_kafka_mesh.jpg\" alt=\"Golang Microservices & Apache Kafka Event Mesh\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Golang Microservices & Apache Kafka Event Mesh</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">API Gateway • gRPC • Redis • PostgreSQL</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Status Codes and Error Handling",
-          "body": "Proper use of HTTP status codes is critical for client applications to understand the response. Return 200/201 for success, 400 for bad client requests, 401/403 for authentication issues, and 404 for missing resources. Never return a 200 OK with an error message in the payload. Error responses must follow a standard JSON structure containing an error code and a developer-friendly message.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: RESTful API Design, OpenAPI 3.1 Standards & Semantic Versioning](/images/sye_api_core_banking.jpg)"
+          "body": "Proper use of HTTP status codes is critical for client applications to understand the response. Return 200/201 for success, 400 for bad client requests, 401/403 for authentication issues, and 404 for missing resources. Never return a 200 OK with an error message in the payload. Error responses must follow a standard JSON structure containing an error code and a developer-friendly message."
         },
         {
           "title": "หัวข้อ: API Versioning Strategies",
@@ -1286,8 +1264,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Every API deployed at AEON must have accompanying OpenAPI (Swagger) documentation. This documentation is generated automatically from code annotations. The Swagger UI provides an interactive interface for developers and QA to understand the endpoints, required payloads, and expected responses. Undocumented APIs will not pass the CI pipeline and cannot be deployed to production."
         }
       ],
-      "image": "/images/sye_api_core_banking.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: RESTful API Design, OpenAPI 3.1 Standards & Semantic Versioning"
+      "image": "/images/sye_api_core_banking.jpg"
     },
     {
       "id": "DEV-004",
@@ -1296,14 +1273,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive guide to authoring fast, isolated, high-coverage unit tests in Golang using testify/mock and in Next.js using Jest/Vitest and React Testing Library. Enforces table-driven testing patterns and dependency injection.",
       "duration": "3 hours",
       "targetRoles": [
-        "Developer",
-        "QA"
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [
         "DEV-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Write clean, idiomatic Table-Driven Unit Tests in Golang",
@@ -1314,11 +1290,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Table-Driven Unit Testing in Golang",
-          "body": "### Why Table-Driven Tests?\nGolang's standard testing framework encourages table-driven testing to cover multiple happy paths, boundary values, and edge cases in a single concise structure.\n\n\n\n    </div>\n</div>\n\n\n```go\nfunc TestValidateNationalID(t *testing.T) {\n    tests := []struct {\n        name    string\n        id      string\n        wantErr bool\n    }{\n        {name: \"Valid Thai National ID\", id: \"1100501234561\", wantErr: false},\n        {name: \"Invalid Checksum\", id: \"1100501234569\", wantErr: true},\n        {name: \"Too Short\", id: \"12345\", wantErr: true},\n        {name: \"Non-numeric Characters\", id: \"110050123456A\", wantErr: true},\n        {name: \"Empty String\", id: \"\", wantErr: true},\n    }\n\n    for _, tt := range tests {\n        t.Run(tt.name, func(t *testing.T) {\n            err := ValidateNationalID(tt.id)\n            if tt.wantErr {\n                assert.Error(t, err)\n            } else {\n                assert.NoError(t, err)\n            }\n        })\n    }\n}\n```"
+          "body": "### Why Table-Driven Tests?\nGolang's standard testing framework encourages table-driven testing to cover multiple happy paths, boundary values, and edge cases in a single concise structure.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```go\nfunc TestValidateNationalID(t *testing.T) {\n    tests := []struct {\n        name    string\n        id      string\n        wantErr bool\n    }{\n        {name: \"Valid Thai National ID\", id: \"1100501234561\", wantErr: false},\n        {name: \"Invalid Checksum\", id: \"1100501234569\", wantErr: true},\n        {name: \"Too Short\", id: \"12345\", wantErr: true},\n        {name: \"Non-numeric Characters\", id: \"110050123456A\", wantErr: true},\n        {name: \"Empty String\", id: \"\", wantErr: true},\n    }\n\n    for _, tt := range tests {\n        t.Run(tt.name, func(t *testing.T) {\n            err := ValidateNationalID(tt.id)\n            if tt.wantErr {\n                assert.Error(t, err)\n            } else {\n                assert.NoError(t, err)\n            }\n        })\n    }\n}\n```"
         },
         {
           "title": "Mocking Dependencies with Go Interfaces",
-          "body": "### Dependency Injection & Mocking:\nNever instantiate database connections directly inside service logic. Define clean Go interfaces to allow automated mock generation via `mockery`:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Automated Unit Testing & Mocking in Golang and Next.js](/images/dev_004_diagram.svg)\n\n```go\n// Domain Interface\ntype AccountRepository interface {\n    GetByID(ctx context.Context, id string) (*Account, error)\n    UpdateBalance(ctx context.Context, id string, amount decimal.Decimal) error\n}\n\n// Service Layer\ntype PaymentService struct {\n    repo AccountRepository\n}\n\nfunc (s *PaymentService) ProcessDebit(ctx context.Context, accID string, amt decimal.Decimal) error {\n    acc, err := s.repo.GetByID(ctx, accID)\n    if err != nil {\n        return err\n    }\n    if acc.Balance.LessThan(amt) {\n        return ErrInsufficientFunds\n    }\n    return s.repo.UpdateBalance(ctx, accID, amt.Neg())\n}\n```"
+          "body": "### Dependency Injection & Mocking:\nNever instantiate database connections directly inside service logic. Define clean Go interfaces to allow automated mock generation via `mockery`:\n\n```go\n// Domain Interface\ntype AccountRepository interface {\n    GetByID(ctx context.Context, id string) (*Account, error)\n    UpdateBalance(ctx context.Context, id string, amount decimal.Decimal) error\n}\n\n// Service Layer\ntype PaymentService struct {\n    repo AccountRepository\n}\n\nfunc (s *PaymentService) ProcessDebit(ctx context.Context, accID string, amt decimal.Decimal) error {\n    acc, err := s.repo.GetByID(ctx, accID)\n    if err != nil {\n        return err\n    }\n    if acc.Balance.LessThan(amt) {\n        return ErrInsufficientFunds\n    }\n    return s.repo.UpdateBalance(ctx, accID, amt.Neg())\n}\n```"
         },
         {
           "title": "Frontend Unit Testing in Next.js & React",
@@ -1336,19 +1312,18 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "การเขียน Table-Driven Unit Test ในภาษา Golang",
-          "body": "### ข้อดีของการเขียน Table-Driven Test\nช่วยให้สามารถทดสอบทั้งกรณีปกติ (Happy Path) และกรณีผิดพลาด (Edge Cases) หลายๆ แบบได้ในฟังก์ชันเดียวอย่างเป็นระเบียบ\n\n\n\n    </div>\n</div>\n\n\n```go\nfunc TestValidateNationalID(t *testing.T) {\n    tests := []struct {\n        name    string\n        id      string\n        wantErr bool\n    }{\n        {name: \"เลขบัตรประชาชนถูกต้อง\", id: \"1100501234561\", wantErr: false},\n        {name: \"Checksum ไม่ถูกต้อง\", id: \"1100501234569\", wantErr: true},\n        {name: \"จำนวนหลักไม่ครบ\", id: \"12345\", wantErr: true},\n        {name: \"มีตัวอักษรปน\", id: \"110050123456A\", wantErr: true},\n    }\n\n    for _, tt := range tests {\n        t.Run(tt.name, func(t *testing.T) {\n            err := ValidateNationalID(tt.id)\n            if tt.wantErr {\n                assert.Error(t, err)\n            } else {\n                assert.NoError(t, err)\n            }\n        })\n    }\n}\n```"
+          "body": "### ข้อดีของการเขียน Table-Driven Test\nช่วยให้สามารถทดสอบทั้งกรณีปกติ (Happy Path) และกรณีผิดพลาด (Edge Cases) หลายๆ แบบได้ในฟังก์ชันเดียวอย่างเป็นระเบียบ\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```go\nfunc TestValidateNationalID(t *testing.T) {\n    tests := []struct {\n        name    string\n        id      string\n        wantErr bool\n    }{\n        {name: \"เลขบัตรประชาชนถูกต้อง\", id: \"1100501234561\", wantErr: false},\n        {name: \"Checksum ไม่ถูกต้อง\", id: \"1100501234569\", wantErr: true},\n        {name: \"จำนวนหลักไม่ครบ\", id: \"12345\", wantErr: true},\n        {name: \"มีตัวอักษรปน\", id: \"110050123456A\", wantErr: true},\n    }\n\n    for _, tt := range tests {\n        t.Run(tt.name, func(t *testing.T) {\n            err := ValidateNationalID(tt.id)\n            if tt.wantErr {\n                assert.Error(t, err)\n            } else {\n                assert.NoError(t, err)\n            }\n        })\n    }\n}\n```"
         },
         {
           "title": "การทำ Mocking ฐานข้อมูลด้วย Go Interface",
-          "body": "### การออกแบบด้วย Dependency Injection:\nกำหนด Interface สำหรับ Data Access Layer เพื่อให้สามารถสร้าง Mock ทดสอบได้โดยไม่ต้องต่อฐานข้อมูลจริง:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Automated Unit Testing & Mocking in Golang and Next.js](/images/dev_004_diagram.svg)\n\n```go\n// กำหนด Interface ของส่วนติดต่อฐานข้อมูล\ntype AccountRepository interface {\n    GetByID(ctx context.Context, id string) (*Account, error)\n    UpdateBalance(ctx context.Context, id string, amount decimal.Decimal) error\n}\n\n// Business Logic Layer ที่รับ Interface เข้ามา\ntype PaymentService struct {\n    repo AccountRepository\n}\n```"
+          "body": "### การออกแบบด้วย Dependency Injection:\nกำหนด Interface สำหรับ Data Access Layer เพื่อให้สามารถสร้าง Mock ทดสอบได้โดยไม่ต้องต่อฐานข้อมูลจริง:\n\n```go\n// กำหนด Interface ของส่วนติดต่อฐานข้อมูล\ntype AccountRepository interface {\n    GetByID(ctx context.Context, id string) (*Account, error)\n    UpdateBalance(ctx context.Context, id string, amount decimal.Decimal) error\n}\n\n// Business Logic Layer ที่รับ Interface เข้ามา\ntype PaymentService struct {\n    repo AccountRepository\n}\n```"
         },
         {
           "title": "การทดสอบ React Component บน Next.js",
           "body": "### การทดสอบด้วย React Testing Library:\nทดสอบพฤติกรรมการใช้งานจริงของ Component เช่น ปุ่มกดยืนยันการโอนเงินจะถูกปิดใช้งานเมื่อยอดเงินเป็น 0:\n\n```tsx\ntest('ปุ่มยืนยันต้องกดไม่ได้ถ้ายอดเงินเป็น 0 และทำงานถูกต้องเมื่อกดยืนยัน', () => {\n    const onConfirm = jest.fn();\n    render(<TransferConfirmButton amount={500} onConfirm={onConfirm} />);\n    \n    const btn = screen.getByRole('button', { name: /ยืนยันการโอนเงิน/i });\n    expect(btn).toBeEnabled();\n    fireEvent.click(btn);\n    expect(onConfirm).toHaveBeenCalledTimes(1);\n});\n```"
         }
       ],
-      "image": "/images/dev_004_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Automated Unit Testing & Mocking in Golang and Next.js"
+      "image": "/images/dev_004_diagram.svg"
     },
     {
       "id": "DEV-005",
@@ -1357,15 +1332,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Understanding the continuous integration and continuous deployment pipelines and configuring builds.",
       "duration": "3 hours",
       "targetRoles": [
-        "Developer",
-        "SRE",
-        "QA"
+        "Developer"
       ],
       "targetSection": null,
       "prerequisites": [
         "DEV-002"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Navigate Jenkins and GitHub Actions workflows",
@@ -1375,11 +1348,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Continuous Integration Basics",
-          "body": "Continuous Integration (CI) is the practice of automatically building and testing code every time a commit is pushed. At AEON, we utilize both Jenkins and GitHub Actions. The CI pipeline compiles the code, runs unit tests, performs static code analysis, and checks for security vulnerabilities. A failing CI build blocks the Pull Request from being merged, ensuring the main branch remains stable.\n\n\n\n    </div>\n</div>"
+          "body": "Continuous Integration (CI) is the practice of automatically building and testing code every time a commit is pushed. At AEON, we utilize both Jenkins and GitHub Actions. The CI pipeline compiles the code, runs unit tests, performs static code analysis, and checks for security vulnerabilities. A failing CI build blocks the Pull Request from being merged, ensuring the main branch remains stable.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Build Stages and Pipelines",
-          "body": "A standard pipeline consists of sequential stages: Checkout, Build, Test, Security Scan, and Package. If any stage fails, the pipeline halts immediately to provide fast feedback to the developer. Pipeline configurations are stored as code (e.g., Jenkinsfile or YAML) within the repository, allowing developers to understand and modify the build process alongside application code.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: CI/CD Pipeline Integration & Quality Gates on RHEL Runners](/images/sye_golang_kafka_mesh.jpg)"
+          "body": "A standard pipeline consists of sequential stages: Checkout, Build, Test, Security Scan, and Package. If any stage fails, the pipeline halts immediately to provide fast feedback to the developer. Pipeline configurations are stored as code (e.g., Jenkinsfile or YAML) within the repository, allowing developers to understand and modify the build process alongside application code."
         },
         {
           "title": "Artifact Management",
@@ -1400,11 +1373,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Continuous Integration Basics",
-          "body": "Continuous Integration (CI) is the practice of automatically building and testing code every time a commit is pushed. At AEON, we utilize both Jenkins and GitHub Actions. The CI pipeline compiles the code, runs unit tests, performs static code analysis, and checks for security vulnerabilities. A failing CI build blocks the Pull Request from being merged, ensuring the main branch remains stable.\n\n\n\n    </div>\n</div>"
+          "body": "Continuous Integration (CI) is the practice of automatically building and testing code every time a commit is pushed. At AEON, we utilize both Jenkins and GitHub Actions. The CI pipeline compiles the code, runs unit tests, performs static code analysis, and checks for security vulnerabilities. A failing CI build blocks the Pull Request from being merged, ensuring the main branch remains stable.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Build Stages and Pipelines",
-          "body": "A standard pipeline consists of sequential stages: Checkout, Build, Test, Security Scan, and Package. If any stage fails, the pipeline halts immediately to provide fast feedback to the developer. Pipeline configurations are stored as code (e.g., Jenkinsfile or YAML) within the repository, allowing developers to understand and modify the build process alongside application code.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: CI/CD Pipeline Integration & Quality Gates on RHEL Runners](/images/sye_golang_kafka_mesh.jpg)"
+          "body": "A standard pipeline consists of sequential stages: Checkout, Build, Test, Security Scan, and Package. If any stage fails, the pipeline halts immediately to provide fast feedback to the developer. Pipeline configurations are stored as code (e.g., Jenkinsfile or YAML) within the repository, allowing developers to understand and modify the build process alongside application code."
         },
         {
           "title": "หัวข้อ: Artifact Management",
@@ -1415,60 +1388,59 @@ window.SYE_SAMPLE_DATA = {
           "body": "Continuous Deployment (CD) automates the release of artifacts to target environments. We employ advanced deployment strategies like Blue/Green and Canary releases for critical services to minimize downtime and risk. These strategies route a small percentage of traffic to the new version, allowing us to monitor for errors before rolling out to all users. Automated rollbacks are triggered if health checks fail."
         }
       ],
-      "image": "/images/sye_golang_kafka_mesh.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: CI/CD Pipeline Integration & Quality Gates on RHEL Runners"
+      "image": "/images/sye_golang_kafka_mesh.jpg"
     },
     {
       "id": "QA-001",
-      "name": "Test Engineering Strategy, Testing Pyramid & Test Case Design Techniques",
+      "name": "Enterprise Test Planning & 70/20/10 Testing Strategy",
       "category": "QA",
-      "description": "Modern software testing methodologies, test level distribution across the pyramid, Boundary Value Analysis, Equivalence Partitioning, and defect prevention.",
+      "description": "Developing comprehensive test plans, identifying test scenarios, and defining test coverage.",
       "duration": "3 hours",
       "targetRoles": [
-        "QA",
-        "Developer",
-        "PM"
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Implement the Testing Pyramid (Unit > Integration > Contract > E2E UI) to optimize test ROI",
-        "Apply Black-box test design techniques: Equivalence Partitioning (EP), Boundary Value Analysis (BVA), and Decision Tables",
-        "Write unambiguous, executable Gherkin scenarios for Behavior-Driven Development (BDD)",
-        "Measure and analyze test effectiveness using Defect Leakage Rate and Test Coverage metrics"
+        "Understand test levels and methodologies",
+        "Apply risk-based testing approaches",
+        "Generate test estimation and metrics reports"
       ],
       "content": [
         {
-          "title": "The Testing Pyramid & Test Automation ROI",
-          "body": "Traditional anti-patterns rely heavily on slow, fragile manual UI testing (The Ice Cream Cone anti-pattern). SYE enforces the **Modern Testing Pyramid**:\n\n```\n       /\\      <-- 10% E2E UI Tests (Playwright / Cypress) - High cost, slow\n      /  \\     \n     /====\\    <-- 20% Integration & API Contract Tests (Postman / Pact) - Fast, reliable\n    /======\\   \n   /========\\  <-- 70% Unit & Component Tests (Jest / Go Test) - Ultra fast, high ROI\n  +----------+\n```\n\n- **Unit Tests (70%)**: Validate business logic in isolation with mocked dependencies. Runs on every commit in < 60s.\n- **Integration & API Tests (20%)**: Validate database queries, message queues, and REST API contract schemas.\n- **End-to-End UI Tests (10%)**: Validate critical customer golden paths (e.g. Login -> Pay Bill -> Confirm SMS OTP)."
+          "title": "Test Levels",
+          "body": "Quality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
-          "title": "Black-Box Test Case Design Techniques",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Test Engineering Strategy, Testing Pyramid & Test Case Design Techniques](/images/sye_qa_automation_pyramid.jpg)\n\nNever write arbitrary test cases. Apply formal engineering design techniques:\n\n### 1. Equivalence Partitioning (EP) & Boundary Value Analysis (BVA):\nExample: Personal loan application amount allowed is **5,000 THB to 500,000 THB**.\n\n| Test Partition | Test Value | Expected Result | Type |\n|---|---|---|---|\n| Just below lower bound | 4,999 THB | Reject (422 Error) | BVA Invalid |\n| Exact lower bound | 5,000 THB | Accept (200 OK) | BVA Valid |\n| Typical valid range | 50,000 THB | Accept (200 OK) | EP Valid |\n| Exact upper bound | 500,000 THB | Accept (200 OK) | BVA Valid |\n| Just above upper bound | 500,001 THB | Reject (422 Error) | BVA Invalid |\n| Non-numeric input | \"five thousand\" | Reject (400 Bad Request) | Error Guessing |"
+          "title": "Risk-Based Testing",
+          "body": "Given time constraints, it is impossible to test every possible scenario exhaustively. AEON employs a Risk-Based Testing strategy, prioritizing test cases based on the probability of failure and the business impact of a defect. High-risk areas, such as payment processing or security modules, receive the most rigorous testing and automated coverage. Lower-risk UI elements may only require exploratory testing."
         },
         {
-          "title": "Defect Severity vs Priority & Root Cause Analysis",
-          "body": "Defect triage requires objective categorization:\n\n- **Severity 1 (Critical)**: Complete service outage, data corruption, or security vulnerability. SLA to resolve: **< 2 hours**.\n- **Severity 2 (High)**: Major feature broken with no workaround (e.g. Credit card payment fails). SLA: **< 8 hours**.\n- **Severity 3 (Medium)**: Feature broken but viable workaround exists. SLA: **Next sprint release**.\n- **Severity 4 (Low)**: Cosmetic UI issue, typo, minor alignment. SLA: **Backlog polish**.\n\n**Root Cause Analysis (5 Whys)**: Every S1/S2 bug found in production requires a 5-Whys post-mortem to update automated regression test suites."
+          "title": "Test Estimation",
+          "body": "QA engineers must accurately estimate the effort required to test new features during sprint planning. Estimation should account for test case design, execution, environment setup, and data preparation. We often use story points alongside development estimates to ensure QA capacity is not exceeded. Proper estimation prevents testing bottlenecks at the end of the sprint."
+        },
+        {
+          "title": "Test Metrics and Reporting",
+          "body": "Effective QA relies on data to measure product quality and team efficiency. Key metrics include Test Execution Coverage, Defect Density, and Defect Rejection Rate. Daily test execution reports keep stakeholders informed of progress and blockers. The final Test Summary Report provides a formal sign-off recommendation based on these metrics before a production release."
         }
       ],
-      "name_th": "กลยุทธ์วิศวกรรมการทดสอบ (Test Engineering), Testing Pyramid และเทคนิคการออกแบบ Test Case",
-      "description_th": "ระเบียบวิธีทดสอบซอฟต์แวร์สมัยใหม่ การกระจายระดับการทดสอบตาม Testing Pyramid เทคนิค Boundary Value Analysis, Equivalence Partitioning และการป้องกัน Defect เชิงรุก",
+      "name_th": "การวางแผนกลยุทธ์การทดสอบระดับองค์กรและปิรามิดการทดสอบ 70/20/10",
+      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ Enterprise Test Planning & 70/20/10 Testing Strategy เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
       "learningObjectives_th": [
-        "สร้างสัดส่วนการทดสอบตาม Testing Pyramid เพื่อให้ได้ผลลัพธ์สูงสุดและประหยัดเวลา",
-        "ใช้เทคนิคการออกแบบ Test Case: Equivalence Partitioning (EP), Boundary Value Analysis (BVA) และ Decision Table",
-        "เขียน Acceptance Criteria ในรูปแบบ Gherkin Syntax เพื่อรองรับการทดสอบแบบ BDD",
-        "วัดประสิทธิภาพการทดสอบด้วยตัวชี้วัด Defect Leakage Rate และ Test Coverage"
+        "เข้าใจและสามารถปฏิบัติตาม: Understand test levels and methodologies",
+        "เข้าใจและสามารถปฏิบัติตาม: Apply risk-based testing approaches",
+        "เข้าใจและสามารถปฏิบัติตาม: Generate test estimation and metrics reports"
       ],
       "content_th": [
         {
           "title": "หัวข้อ: Test Levels",
-          "body": "Quality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n\n    </div>\n</div>"
+          "body": "Quality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Risk-Based Testing",
-          "body": "Given time constraints, it is impossible to test every possible scenario exhaustively. AEON employs a Risk-Based Testing strategy, prioritizing test cases based on the probability of failure and the business impact of a defect. High-risk areas, such as payment processing or security modules, receive the most rigorous testing and automated coverage. Lower-risk UI elements may only require exploratory testing.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Test Engineering Strategy, Testing Pyramid & Test Case Design Techniques](/images/sye_qa_automation_pyramid.jpg)"
+          "body": "Given time constraints, it is impossible to test every possible scenario exhaustively. AEON employs a Risk-Based Testing strategy, prioritizing test cases based on the probability of failure and the business impact of a defect. High-risk areas, such as payment processing or security modules, receive the most rigorous testing and automated coverage. Lower-risk UI elements may only require exploratory testing."
         },
         {
           "title": "หัวข้อ: Test Estimation",
@@ -1479,8 +1451,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Effective QA relies on data to measure product quality and team efficiency. Key metrics include Test Execution Coverage, Defect Density, and Defect Rejection Rate. Daily test execution reports keep stakeholders informed of progress and blockers. The final Test Summary Report provides a formal sign-off recommendation based on these metrics before a production release."
         }
       ],
-      "image": "/images/sye_qa_automation_pyramid.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Test Engineering Strategy, Testing Pyramid & Test Case Design Techniques"
+      "image": "/images/sye_qa_automation_pyramid.jpg"
     },
     {
       "id": "QA-002",
@@ -1489,14 +1460,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Practical training on building reliable, headless end-to-end browser automation suites using Playwright with TypeScript and API regression collections with Postman / Newman on RHEL runners.",
       "duration": "4 hours",
       "targetRoles": [
-        "QA",
-        "Developer"
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [
         "QA-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Build robust Page Object Model (POM) test suites in Playwright",
@@ -1507,11 +1477,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Playwright Page Object Model (POM) Architecture",
-          "body": "### Why Playwright for AEON Portals?\nPlaywright provides built-in auto-waiting, network mocking, and cross-browser execution (Chromium, WebKit, Firefox) without flaky sleeps.\n\n\n\n    </div>\n</div>\n\n\n```typescript\n// pages/CardPaymentPage.ts - Page Object Model\nexport class CardPaymentPage {\n  constructor(private page: Page) {}\n\n  async navigate() {\n    await this.page.goto('/portal/card-payment');\n  }\n\n  async fillPaymentDetails(cardNumber: string, amount: string) {\n    await this.page.getByLabel('Card Number').fill(cardNumber);\n    await this.page.getByLabel('Payment Amount').fill(amount);\n  }\n\n  async submitAndConfirm() {\n    await this.page.getByRole('button', { name: 'Proceed to Pay' }).click();\n    await this.page.getByRole('button', { name: 'Confirm OTP' }).click();\n    await expect(this.page.getByText('Payment Successful')).toBeVisible();\n  }\n}\n```"
+          "body": "### Why Playwright for AEON Portals?\nPlaywright provides built-in auto-waiting, network mocking, and cross-browser execution (Chromium, WebKit, Firefox) without flaky sleeps.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```typescript\n// pages/CardPaymentPage.ts - Page Object Model\nexport class CardPaymentPage {\n  constructor(private page: Page) {}\n\n  async navigate() {\n    await this.page.goto('/portal/card-payment');\n  }\n\n  async fillPaymentDetails(cardNumber: string, amount: string) {\n    await this.page.getByLabel('Card Number').fill(cardNumber);\n    await this.page.getByLabel('Payment Amount').fill(amount);\n  }\n\n  async submitAndConfirm() {\n    await this.page.getByRole('button', { name: 'Proceed to Pay' }).click();\n    await this.page.getByRole('button', { name: 'Confirm OTP' }).click();\n    await expect(this.page.getByText('Payment Successful')).toBeVisible();\n  }\n}\n```"
         },
         {
           "title": "Automated Newman API Test Runner in CI Pipelines",
-          "body": "### Running Collections Headless on RHEL:\nQA test collections exported from Postman are executed automatically on RHEL runners via **Newman**:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Automated UI & API Testing Frameworks (Playwright & Postman)](/images/qa_002_diagram.svg)\n\n```bash\n# Execute API Regression Suite in CI Pipeline\nnewman run ./tests/aeon-payment-api.postman_collection.json \\\n  --environment ./tests/staging.postman_environment.json \\\n  --reporters cli,htmlextra \\\n  --reporter-htmlextra-export ./reports/api-test-report.html \\\n  --bail\n```"
+          "body": "### Running Collections Headless on RHEL:\nQA test collections exported from Postman are executed automatically on RHEL runners via **Newman**:\n\n```bash\n# Execute API Regression Suite in CI Pipeline\nnewman run ./tests/aeon-payment-api.postman_collection.json \\\n  --environment ./tests/staging.postman_environment.json \\\n  --reporters cli,htmlextra \\\n  --reporter-htmlextra-export ./reports/api-test-report.html \\\n  --bail\n```"
         }
       ],
       "name_th": "เฟรมเวิร์กการทดสอบอัตโนมัติ UI และ API ด้วย Playwright และ Postman",
@@ -1525,15 +1495,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "สถาปัตยกรรมการทดสอบด้วย Playwright (Page Object Model)",
-          "body": "### ทำไมต้องใช้ Playwright สำหรับพอร์ทัลของ AEON\nPlaywright มีระบบ Auto-waiting อัตโนมัติ รองรับการรันแบบ Headless ความเร็วสูง และบันทึกวิดีโอการเกิดข้อผิดพลาดได้ในตัว\n\n\n\n    </div>\n</div>\n\n\n```typescript\n// ตัวอย่าง Page Object สำหรับหน้าชำระเงินบัตรเครดิต\nexport class CardPaymentPage {\n  constructor(private page: Page) {}\n\n  async fillPaymentDetails(cardNumber: string, amount: string) {\n    await this.page.getByLabel('หมายเลขบัตร').fill(cardNumber);\n    await this.page.getByLabel('จำนวนเงิน').fill(amount);\n  }\n}\n```"
+          "body": "### ทำไมต้องใช้ Playwright สำหรับพอร์ทัลของ AEON\nPlaywright มีระบบ Auto-waiting อัตโนมัติ รองรับการรันแบบ Headless ความเร็วสูง และบันทึกวิดีโอการเกิดข้อผิดพลาดได้ในตัว\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```typescript\n// ตัวอย่าง Page Object สำหรับหน้าชำระเงินบัตรเครดิต\nexport class CardPaymentPage {\n  constructor(private page: Page) {}\n\n  async fillPaymentDetails(cardNumber: string, amount: string) {\n    await this.page.getByLabel('หมายเลขบัตร').fill(cardNumber);\n    await this.page.getByLabel('จำนวนเงิน').fill(amount);\n  }\n}\n```"
         },
         {
           "title": "การรันชุดทดสอบ API อัตโนมัติด้วย Newman บน CI/CD",
-          "body": "### การสั่งรัน API Test Collection บนเซิร์ฟเวอร์ RHEL:\nชุดทดสอบ API จาก Postman จะถูกรันอัตโนมัติทุกครั้งที่มีการปล่อยโค้ดใหม่ผ่านคำสั่ง Newman CLI:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Automated UI & API Testing Frameworks (Playwright & Postman)](/images/qa_002_diagram.svg)\n\n```bash\nnewman run ./tests/aeon-payment-api.postman_collection.json \\\n  --environment ./tests/staging.postman_environment.json \\\n  --reporters cli,htmlextra \\\n  --reporter-htmlextra-export ./reports/api-test-report.html\n```"
+          "body": "### การสั่งรัน API Test Collection บนเซิร์ฟเวอร์ RHEL:\nชุดทดสอบ API จาก Postman จะถูกรันอัตโนมัติทุกครั้งที่มีการปล่อยโค้ดใหม่ผ่านคำสั่ง Newman CLI:\n\n```bash\nnewman run ./tests/aeon-payment-api.postman_collection.json \\\n  --environment ./tests/staging.postman_environment.json \\\n  --reporters cli,htmlextra \\\n  --reporter-htmlextra-export ./reports/api-test-report.html\n```"
         }
       ],
-      "image": "/images/qa_002_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Automated UI & API Testing Frameworks (Playwright & Postman)"
+      "image": "/images/qa_002_diagram.svg"
     },
     {
       "id": "QA-003",
@@ -1542,13 +1511,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Techniques and tools for testing APIs, including functional and performance aspects.",
       "duration": "3 hours",
       "targetRoles": [
-        "QA",
-        "Developer",
-        "BA"
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Use Postman for API request and response validation",
@@ -1558,11 +1525,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Postman Fundamentals",
-          "body": "Postman is our standard tool for manual and automated API testing. QA engineers use it to construct HTTP requests with specific headers, query parameters, and JSON payloads. Understanding how to manage environments and variables in Postman is essential for executing tests across Dev, Staging, and Production without modifying the requests themselves.\n\n\n\n    </div>\n</div>"
+          "body": "Postman is our standard tool for manual and automated API testing. QA engineers use it to construct HTTP requests with specific headers, query parameters, and JSON payloads. Understanding how to manage environments and variables in Postman is essential for executing tests across Dev, Staging, and Production without modifying the requests themselves.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Request and Response Validation",
-          "body": "API testing goes beyond checking for a 200 OK status. Tests must validate the business logic by asserting that the response payload contains the expected data. We write test scripts in Postman (using JavaScript) to extract values from the response and assert them against expected outcomes. We also verify error handling by intentionally sending malformed requests.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: API Testing](/images/qa_003_diagram.svg)"
+          "body": "API testing goes beyond checking for a 200 OK status. Tests must validate the business logic by asserting that the response payload contains the expected data. We write test scripts in Postman (using JavaScript) to extract values from the response and assert them against expected outcomes. We also verify error handling by intentionally sending malformed requests."
         },
         {
           "title": "JSON Schema Testing",
@@ -1583,11 +1550,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Postman Fundamentals",
-          "body": "Postman is our standard tool for manual and automated API testing. QA engineers use it to construct HTTP requests with specific headers, query parameters, and JSON payloads. Understanding how to manage environments and variables in Postman is essential for executing tests across Dev, Staging, and Production without modifying the requests themselves.\n\n\n\n    </div>\n</div>"
+          "body": "Postman is our standard tool for manual and automated API testing. QA engineers use it to construct HTTP requests with specific headers, query parameters, and JSON payloads. Understanding how to manage environments and variables in Postman is essential for executing tests across Dev, Staging, and Production without modifying the requests themselves.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Request and Response Validation",
-          "body": "API testing goes beyond checking for a 200 OK status. Tests must validate the business logic by asserting that the response payload contains the expected data. We write test scripts in Postman (using JavaScript) to extract values from the response and assert them against expected outcomes. We also verify error handling by intentionally sending malformed requests.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: API Testing](/images/qa_003_diagram.svg)"
+          "body": "API testing goes beyond checking for a 200 OK status. Tests must validate the business logic by asserting that the response payload contains the expected data. We write test scripts in Postman (using JavaScript) to extract values from the response and assert them against expected outcomes. We also verify error handling by intentionally sending malformed requests."
         },
         {
           "title": "หัวข้อ: JSON Schema Testing",
@@ -1598,8 +1565,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Individual Postman requests are organized into Collections that represent complete test suites or user workflows. These collections can be executed sequentially using the Postman Collection Runner. For CI/CD integration, we export these collections and run them automatically via the command line using Newman. Automated API tests are significantly faster and less brittle than UI tests."
         }
       ],
-      "image": "/images/qa_003_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: API Testing"
+      "image": "/images/qa_003_diagram.svg"
     },
     {
       "id": "QA-004",
@@ -1608,15 +1574,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Techniques for simulating peak financial traffic (Flash Sales, Salary Day) using Apache JMeter. Covers TPS measurement, response latency percentile thresholds (p95 < 200ms, p99 < 500ms), and bottleneck isolation.",
       "duration": "3 hours",
       "targetRoles": [
-        "QA",
-        "SRE",
-        "Developer"
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [
         "QA-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Design realistic load test scenarios: Ramp-up, Steady State, Spike, and Soak testing",
@@ -1627,11 +1591,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Financial Load Testing Profiles & Target SLA Benchmarks",
-          "body": "### Performance SLAs for SYE APIs:\nAll critical financial endpoints must meet the following performance criteria prior to CAB approval:\n\n| Metric | Target SLA Benchmark | Measurement Method |\n|---|---|---|\n| **P95 Latency** | $< 200\\text{ ms}$ | 95% of customer requests must complete in under 200ms |\n| **P99 Latency** | $< 500\\text{ ms}$ | 99% of requests must complete in under 500ms |\n| **Error Rate** | $< 0.01\\%$ | Total HTTP 5xx responses under peak load |\n| **Target Throughput** | $ge 2,500\\text{ TPS}$ | Peak credit card transaction settlement throughput |\n\n\n\n    </div>\n</div>"
+          "body": "### Performance SLAs for SYE APIs:\nAll critical financial endpoints must meet the following performance criteria prior to CAB approval:\n\n| Metric | Target SLA Benchmark | Measurement Method |\n|---|---|---|\n| **P95 Latency** | $< 200\\text{ ms}$ | 95% of customer requests must complete in under 200ms |\n| **P99 Latency** | $< 500\\text{ ms}$ | 99% of requests must complete in under 500ms |\n| **Error Rate** | $< 0.01\\%$ | Total HTTP 5xx responses under peak load |\n| **Target Throughput** | $ge 2,500\\text{ TPS}$ | Peak credit card transaction settlement throughput |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Executing Headless JMeter Tests on RHEL Cluster",
-          "body": "### Command-Line Execution (Non-GUI Mode):\nNever run JMeter load tests in GUI mode. Always execute via CLI to maximize runner performance:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Performance, Stress & Load Testing with Apache JMeter](/images/qa_004_diagram.svg)\n\n```bash\n# Execute 5,000 Concurrent Virtual Users Load Test\njmeter -n -t ./scenarios/salary_day_payment_spike.jmx \\\n  -l ./results/run_20260824.jtl \\\n  -e -o ./dashboard_report/ \\\n  -Jthreads=5000 -Jrampup=120 -Jduration=1800\n```"
+          "body": "### Command-Line Execution (Non-GUI Mode):\nNever run JMeter load tests in GUI mode. Always execute via CLI to maximize runner performance:\n\n```bash\n# Execute 5,000 Concurrent Virtual Users Load Test\njmeter -n -t ./scenarios/salary_day_payment_spike.jmx \\\n  -l ./results/run_20260824.jtl \\\n  -e -o ./dashboard_report/ \\\n  -Jthreads=5000 -Jrampup=120 -Jduration=1800\n```"
         }
       ],
       "name_th": "การทดสอบประสิทธิภาพและรองรับโหลดสูงด้วย Apache JMeter",
@@ -1645,15 +1609,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "เกณฑ์มาตรฐานประสิทธิภาพ (SLA Benchmarks) ของระบบการเงิน",
-          "body": "### ตัวชี้วัดประสิทธิภาพที่ต้องผ่านก่อนขึ้นระบบ:\n\n| ตัวชี้วัด | เกณฑ์เป้าหมาย (SLA) | ความหมาย |\n|---|---|---|\n| **P95 Latency** | $< 200\\text{ ms}$ | 95% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 200 มิลลิวินาที |\n| **P99 Latency** | $< 500\\text{ ms}$ | 99% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 500 มิลลิวินาที |\n| **Error Rate** | $< 0.01\\%$ | อัตราข้อผิดพลาดของระบบช่วงโหลดสูงสุดไม่เกิน 0.01% |\n| **Target TPS** | $ge 2,500\\text{ TPS}$ | รองรับธุรกรรมตัดยอดบัตรเครดิตพร้อมกันได้ 2,500 รายการ/วินาที |\n\n\n\n    </div>\n</div>"
+          "body": "### ตัวชี้วัดประสิทธิภาพที่ต้องผ่านก่อนขึ้นระบบ:\n\n| ตัวชี้วัด | เกณฑ์เป้าหมาย (SLA) | ความหมาย |\n|---|---|---|\n| **P95 Latency** | $< 200\\text{ ms}$ | 95% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 200 มิลลิวินาที |\n| **P99 Latency** | $< 500\\text{ ms}$ | 99% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 500 มิลลิวินาที |\n| **Error Rate** | $< 0.01\\%$ | อัตราข้อผิดพลาดของระบบช่วงโหลดสูงสุดไม่เกิน 0.01% |\n| **Target TPS** | $ge 2,500\\text{ TPS}$ | รองรับธุรกรรมตัดยอดบัตรเครดิตพร้อมกันได้ 2,500 รายการ/วินาที |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "การรัน JMeter ผ่าน Command-Line บนเซิร์ฟเวอร์ RHEL",
-          "body": "### การสั่งรันแบบ Non-GUI Mode เพื่อประสิทธิภาพสูงสุด:\nรันการทดสอบโหลด 5,000 ผู้ใช้งานเสมือนจริงและสร้าง Dashboard วิเคราะห์ผลอัตโนมัติ:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Performance, Stress & Load Testing with Apache JMeter](/images/qa_004_diagram.svg)\n\n```bash\njmeter -n -t ./scenarios/salary_day_payment_spike.jmx \\\n  -l ./results/run_20260824.jtl \\\n  -e -o ./dashboard_report/\n```"
+          "body": "### การสั่งรันแบบ Non-GUI Mode เพื่อประสิทธิภาพสูงสุด:\nรันการทดสอบโหลด 5,000 ผู้ใช้งานเสมือนจริงและสร้าง Dashboard วิเคราะห์ผลอัตโนมัติ:\n\n```bash\njmeter -n -t ./scenarios/salary_day_payment_spike.jmx \\\n  -l ./results/run_20260824.jtl \\\n  -e -o ./dashboard_report/\n```"
         }
       ],
-      "image": "/images/qa_004_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Performance, Stress & Load Testing with Apache JMeter"
+      "image": "/images/qa_004_diagram.svg"
     },
     {
       "id": "QA-005",
@@ -1662,14 +1625,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standard procedures for logging, tracking, and verifying software defects using JIRA.",
       "duration": "2 hours",
       "targetRoles": [
-        "QA",
-        "Developer",
-        "PM",
-        "BA"
+        "QA"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Differentiate between bug severity and priority",
@@ -1679,11 +1639,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Bug Severity vs. Priority",
-          "body": "Severity defines the technical impact of a defect on the system (e.g., Critical, Major, Minor), while Priority defines how urgently the business needs it fixed (High, Medium, Low). A typo on the homepage might be Low Severity but High Priority, whereas a crash deep in an unused feature might be High Severity but Low Priority. QA assigns Severity, while the Product Owner determines Priority.\n\n\n\n    </div>\n</div>"
+          "body": "Severity defines the technical impact of a defect on the system (e.g., Critical, Major, Minor), while Priority defines how urgently the business needs it fixed (High, Medium, Low). A typo on the homepage might be Low Severity but High Priority, whereas a crash deep in an unused feature might be High Severity but Low Priority. QA assigns Severity, while the Product Owner determines Priority.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Writing Effective Defect Reports",
-          "body": "A well-written defect report in JIRA significantly speeds up resolution. It must include a clear summary, the environment where it occurred, and explicit, numbered Reproduction Steps. Essential attachments include screenshots, video recordings, browser console logs, and API request/response payloads. If a developer cannot reproduce the bug, it cannot be fixed.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Defect Lifecycle Management](/images/qa_005_diagram.svg)"
+          "body": "A well-written defect report in JIRA significantly speeds up resolution. It must include a clear summary, the environment where it occurred, and explicit, numbered Reproduction Steps. Essential attachments include screenshots, video recordings, browser console logs, and API request/response payloads. If a developer cannot reproduce the bug, it cannot be fixed."
         },
         {
           "title": "The Defect Lifecycle",
@@ -1704,11 +1664,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Bug Severity vs. Priority",
-          "body": "Severity defines the technical impact of a defect on the system (e.g., Critical, Major, Minor), while Priority defines how urgently the business needs it fixed (High, Medium, Low). A typo on the homepage might be Low Severity but High Priority, whereas a crash deep in an unused feature might be High Severity but Low Priority. QA assigns Severity, while the Product Owner determines Priority.\n\n\n\n    </div>\n</div>"
+          "body": "Severity defines the technical impact of a defect on the system (e.g., Critical, Major, Minor), while Priority defines how urgently the business needs it fixed (High, Medium, Low). A typo on the homepage might be Low Severity but High Priority, whereas a crash deep in an unused feature might be High Severity but Low Priority. QA assigns Severity, while the Product Owner determines Priority.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Writing Effective Defect Reports",
-          "body": "A well-written defect report in JIRA significantly speeds up resolution. It must include a clear summary, the environment where it occurred, and explicit, numbered Reproduction Steps. Essential attachments include screenshots, video recordings, browser console logs, and API request/response payloads. If a developer cannot reproduce the bug, it cannot be fixed.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Defect Lifecycle Management](/images/qa_005_diagram.svg)"
+          "body": "A well-written defect report in JIRA significantly speeds up resolution. It must include a clear summary, the environment where it occurred, and explicit, numbered Reproduction Steps. Essential attachments include screenshots, video recordings, browser console logs, and API request/response payloads. If a developer cannot reproduce the bug, it cannot be fixed."
         },
         {
           "title": "หัวข้อ: The Defect Lifecycle",
@@ -1719,59 +1679,59 @@ window.SYE_SAMPLE_DATA = {
           "body": "When verifying a fixed defect, QA must not only test the original steps but also perform regression testing around the affected area to ensure the fix didn't break existing functionality. Developers are required to provide a brief Root Cause analysis in the JIRA ticket upon resolution. This helps QA design better test cases in the future to catch similar issues earlier."
         }
       ],
-      "image": "/images/qa_005_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Defect Lifecycle Management"
+      "image": "/images/qa_005_diagram.svg"
     },
     {
       "id": "SRE-001",
-      "name": "Site Reliability Engineering (SRE) Principles, Golden Signals & SLI/SLO/SLA",
+      "name": "On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering",
       "category": "SRE",
-      "description": "Google SRE methodology applied to AEON banking systems: Four Golden Signals, defining SLI/SLO, managing Error Budgets, and eliminating operational toil.",
+      "description": "Core concepts of cloud computing, infrastructure as code, and basic resource provisioning.",
       "duration": "4 hours",
       "targetRoles": [
-        "SRE",
-        "Developer"
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Define and measure the Four Golden Signals of distributed systems (Latency, Traffic, Errors, Saturation)",
-        "Formulate realistic Service Level Indicators (SLIs) and Service Level Objectives (SLOs)",
-        "Govern release velocity using Error Budgets and feature release freezes",
-        "Automate repetitive manual operations (Toil reduction) using Infrastructure as Code (IaC)"
+        "Understand Cloud models (IaaS/PaaS/SaaS)",
+        "Manage VMs, networking, and storage components",
+        "Configure Identity and Access Management (IAM)"
       ],
       "content": [
         {
-          "title": "The Four Golden Signals of Monitoring",
-          "body": "According to Google SRE best practices, monitoring must focus on 4 core symptoms:\n\n1. **Latency**: The time it takes to service a request. Differentiate between successful request latency vs failed request latency (e.g. 500 errors failing fast).\n2. **Traffic**: Demand placed on the system (e.g. HTTP requests per second, active WebSocket connections).\n3. **Errors**: The rate of requests that fail explicitly (HTTP 5xx), implicitly (HTTP 200 with wrong payload), or by policy (HTTP 429).\n4. **Saturation**: How full the service is (e.g. CPU utilization > 80%, Database connection pool exhaustion, memory pressure)."
+          "title": "Cloud Service Models",
+          "body": "AEON utilizes a mix of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides fundamental computing resources like VMs and networks. PaaS offers managed environments like managed databases or container services, reducing operational overhead. Understanding these models dictates the division of responsibility between the cloud provider and our SRE team.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
-          "title": "SLI, SLO and SLA Hierarchy",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Site Reliability Engineering (SRE) Principles, Golden Signals & SLI/SLO/SLA](/images/sre_001_diagram.svg)\n\n```\n[ SLI: Metric ] ──> What is the actual observed performance? (e.g. 99.92% requests < 200ms)\n       │\n[ SLO: Internal Target ] ──> Target agreed with engineering team (e.g. 99.90% over 30 days)\n       │\n[ SLA: Business Contract ] ──> Legal promise to customer with financial penalty (e.g. 99.50%)\n```\n\n### AEON Banking Tier-1 Services Standard:\n- **Availability SLO**: **99.95%** uptime per calendar month.\n- **Latency SLO**: **95% of API requests** completed in **< 250ms**; **99%** in **< 800ms**."
+          "title": "Networking & Storage",
+          "body": "Cloud networking involves configuring Virtual Private Clouds (VPCs), subnets, route tables, and security groups. Proper network segmentation is our primary defense mechanism. Storage solutions range from block storage for VMs to highly scalable object storage (like AWS S3) for backups and static assets. Choosing the right storage tier is crucial for balancing performance and cost optimization."
         },
         {
-          "title": "Error Budget Policy & Release Governance",
-          "body": "The **Error Budget** represents the allowed unreliability of a service (e.g. 99.9% SLO = 0.1% Error Budget = ~43 minutes downtime/month).\n\n### Error Budget Governance Rules:\n- **Budget > 20% Remaining**: Product teams can release new features at normal velocity.\n- **Budget < 20% (Warning)**: Prioritize bug fixes and performance tuning; reduce non-critical releases.\n- **Budget Exhausted (0%)**: **Feature Release Freeze** is triggered automatically. 100% of engineering bandwidth is redirected to reliability, refactoring, and automated testing until the budget recovers in the next rolling window."
+          "title": "Identity and Access Management (IAM)",
+          "body": "IAM is the cornerstone of cloud security. We enforce the Principle of Least Privilege, granting users and services only the minimum permissions necessary to perform their tasks. We use Role-Based Access Control (RBAC) heavily, avoiding the use of long-term access keys whenever possible. Regular audits of IAM policies are required to detect and remove overly permissive access."
+        },
+        {
+          "title": "Infrastructure as Code (IaC)",
+          "body": "Manual configuration of cloud resources via web consoles is prohibited in production. We manage all infrastructure using Infrastructure as Code tools like Terraform. IaC allows us to version control our infrastructure, apply changes consistently across environments, and rapidly recover from disasters. Code reviews are mandatory for all infrastructure changes just as they are for application code."
         }
       ],
-      "name_th": "หลักการ Site Reliability Engineering (SRE), Golden Signals และ SLI/SLO/SLA",
-      "description_th": "การประยุกต์ใช้แนวทาง Google SRE กับระบบธนาคาร AEON ครอบคลุม Four Golden Signals, การกำหนด SLI/SLO, การบริหาร Error Budget และการกำจัดงาน Toil",
+      "name_th": "โครงสร้างพื้นฐาน On-Premise และการจัดการคลัสเตอร์ VMware Tanzu Kubernetes",
+      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
       "learningObjectives_th": [
-        "วัดผล 4 สัญญาณทองคำของระบบ (Four Golden Signals: Latency, Traffic, Errors, Saturation)",
-        "กำหนดตัวชี้วัด SLI และเป้าหมายระดับการให้บริการ SLO ได้อย่างมีประสิทธิภาพ",
-        "บริหารจัดการ Error Budget เพื่อสร้างสมดุลระหว่างความเร็วในการปล่อยฟีเจอร์และความเสถียรของระบบ",
-        "ลดงานทำซ้ำ (Toil Reduction) โดยการเขียนสคริปต์อัตโนมัติและใช้ Infrastructure as Code"
+        "เข้าใจและสามารถปฏิบัติตาม: Understand Cloud models (IaaS/PaaS/SaaS)",
+        "เข้าใจและสามารถปฏิบัติตาม: Manage VMs, networking, and storage components",
+        "เข้าใจและสามารถปฏิบัติตาม: Configure Identity and Access Management (IAM)"
       ],
       "content_th": [
         {
           "title": "หัวข้อ: Cloud Service Models",
-          "body": "AEON utilizes a mix of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides fundamental computing resources like VMs and networks. PaaS offers managed environments like managed databases or container services, reducing operational overhead. Understanding these models dictates the division of responsibility between the cloud provider and our SRE team.\n\n\n\n    </div>\n</div>"
+          "body": "AEON utilizes a mix of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides fundamental computing resources like VMs and networks. PaaS offers managed environments like managed databases or container services, reducing operational overhead. Understanding these models dictates the division of responsibility between the cloud provider and our SRE team.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Networking & Storage",
-          "body": "Cloud networking involves configuring Virtual Private Clouds (VPCs), subnets, route tables, and security groups. Proper network segmentation is our primary defense mechanism. Storage solutions range from block storage for VMs to highly scalable object storage (like AWS S3) for backups and static assets. Choosing the right storage tier is crucial for balancing performance and cost optimization.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Site Reliability Engineering (SRE) Principles, Golden Signals & SLI/SLO/SLA](/images/sre_001_diagram.svg)"
+          "body": "Cloud networking involves configuring Virtual Private Clouds (VPCs), subnets, route tables, and security groups. Proper network segmentation is our primary defense mechanism. Storage solutions range from block storage for VMs to highly scalable object storage (like AWS S3) for backups and static assets. Choosing the right storage tier is crucial for balancing performance and cost optimization."
         },
         {
           "title": "หัวข้อ: Identity and Access Management (IAM)",
@@ -1782,8 +1742,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Manual configuration of cloud resources via web consoles is prohibited in production. We manage all infrastructure using Infrastructure as Code tools like Terraform. IaC allows us to version control our infrastructure, apply changes consistently across environments, and rapidly recover from disasters. Code reviews are mandatory for all infrastructure changes just as they are for application code."
         }
       ],
-      "image": "/images/sre_001_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Site Reliability Engineering (SRE) Principles, Golden Signals & SLI/SLO/SLA"
+      "image": "/images/sre_001_diagram.svg"
     },
     {
       "id": "SRE-002",
@@ -1792,15 +1751,13 @@ window.SYE_SAMPLE_DATA = {
       "description": "Comprehensive telemetry and alerting architecture for enterprise on-premise systems. Covers Prometheus metric types (Counter, Gauge, Histogram), PromQL query authoring, Grafana dashboard visualization, Alertmanager routing to Slack/PagerDuty, and 99.95% Availability SLO tracking.",
       "duration": "3 hours",
       "targetRoles": [
-        "SRE",
-        "Developer",
-        "PM"
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [
         "SRE-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-10",
       "learningObjectives": [
         "Instrument Golang microservices with Prometheus client metrics",
@@ -1811,11 +1768,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "The 4 Golden Signals & RED Method Telemetry",
-          "body": "### SRE Telemetry Standards for AEON Services:\nEvery microservice deployed on VMware Tanzu must expose a `/metrics` endpoint exposing the **4 Golden Signals**:\n\n\n\n    </div>\n</div>\n\n\n1. **Rate**: Requests per second handled by the service.\n2. **Errors**: Number of failed requests (HTTP 5xx or gRPC internal errors).\n3. **Duration**: Request latency distribution measured via histograms.\n4. **Saturation**: CPU, Memory, and DB Connection Pool utilization.\n\n```go\n// Golang Prometheus Instrumentation Example\nvar (\n    httpRequestsTotal = prometheus.NewCounterVec(\n        prometheus.CounterOpts{\n            Name: \"http_requests_total\",\n            Help: \"Total number of HTTP requests processed by endpoint\",\n        },\n        []string{\"method\", \"path\", \"status\"},\n    )\n    httpRequestDuration = prometheus.NewHistogramVec(\n        prometheus.HistogramOpts{\n            Name:    \"http_request_duration_seconds\",\n            Help:    \"HTTP request latency distribution\",\n            Buckets: []float64{0.01, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0},\n        },\n        []string{\"method\", \"path\"},\n    )\n)\n```"
+          "body": "### SRE Telemetry Standards for AEON Services:\nEvery microservice deployed on VMware Tanzu must expose a `/metrics` endpoint exposing the **4 Golden Signals**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Rate**: Requests per second handled by the service.\n2. **Errors**: Number of failed requests (HTTP 5xx or gRPC internal errors).\n3. **Duration**: Request latency distribution measured via histograms.\n4. **Saturation**: CPU, Memory, and DB Connection Pool utilization.\n\n```go\n// Golang Prometheus Instrumentation Example\nvar (\n    httpRequestsTotal = prometheus.NewCounterVec(\n        prometheus.CounterOpts{\n            Name: \"http_requests_total\",\n            Help: \"Total number of HTTP requests processed by endpoint\",\n        },\n        []string{\"method\", \"path\", \"status\"},\n    )\n    httpRequestDuration = prometheus.NewHistogramVec(\n        prometheus.HistogramOpts{\n            Name:    \"http_request_duration_seconds\",\n            Help:    \"HTTP request latency distribution\",\n            Buckets: []float64{0.01, 0.05, 0.1, 0.2, 0.5, 1.0, 2.0},\n        },\n        []string{\"method\", \"path\"},\n    )\n)\n```"
         },
         {
           "title": "PromQL Queries for SLO Tracking & Alertmanager Routing",
-          "body": "### Core PromQL Formulas:\n- **Error Rate Percentage**:\n  ```promql\n  sum(rate(http_requests_total{status=~\"5..\"}[5m])) \n  / \n  sum(rate(http_requests_total[5m])) * 100\n  ```\n- **P95 Latency by Endpoint**:\n  ```promql\n  histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, path))\n  ```\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Observability, Prometheus Metrics & Grafana Telemetry Dashboards](/images/sye_sre_tanzu_monitoring.jpg)\n\n### Alertmanager Routing Configuration:\nAlerts triggering P1/P2 conditions route immediately to **PagerDuty on-call engineers** and post to `#ops-critical-alerts` in Slack."
+          "body": "### Core PromQL Formulas:\n- **Error Rate Percentage**:\n  ```promql\n  sum(rate(http_requests_total{status=~\"5..\"}[5m])) \n  / \n  sum(rate(http_requests_total[5m])) * 100\n  ```\n- **P95 Latency by Endpoint**:\n  ```promql\n  histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, path))\n  ```\n\n### Alertmanager Routing Configuration:\nAlerts triggering P1/P2 conditions route immediately to **PagerDuty on-call engineers** and post to `#ops-critical-alerts` in Slack."
         }
       ],
       "name_th": "ระบบตรวจสอบสถานะ, เมทริกซ์ Prometheus และ Dashboard บน Grafana",
@@ -1829,15 +1786,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "มาตรฐานการวัดผล 4 Golden Signals และ RED Method",
-          "body": "### มาตรฐาน Telemetry สำหรับบริการบน Tanzu:\nทุก Microservice ที่รันบน Tanzu ต้องเปิด Endpoint `/metrics` เพื่อส่งข้อมูล **4 Golden Signals**:\n\n\n\n    </div>\n</div>\n\n\n1. **Rate**: ปริมาณคำขอต่อวินาที (Requests/sec)\n2. **Errors**: จำนวนคำขอที่ล้มเหลว (HTTP 5xx)\n3. **Duration**: ความเร็วในการตอบสนอง (Latency)\n4. **Saturation**: สัดส่วนการใช้ทรัพยากร (CPU, RAM, Database Connections)\n\n```go\n// ตัวอย่างการเก็บ Metrics ใน Golang ด้วย Prometheus Client\nvar httpRequestsTotal = prometheus.NewCounterVec(\n    prometheus.CounterOpts{\n        Name: \"http_requests_total\",\n        Help: \"จำนวนคำขอ HTTP ทั้งหมดแยกตาม Endpoint\",\n    },\n    []string{\"method\", \"path\", \"status\"},\n)\n```"
+          "body": "### มาตรฐาน Telemetry สำหรับบริการบน Tanzu:\nทุก Microservice ที่รันบน Tanzu ต้องเปิด Endpoint `/metrics` เพื่อส่งข้อมูล **4 Golden Signals**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Rate**: ปริมาณคำขอต่อวินาที (Requests/sec)\n2. **Errors**: จำนวนคำขอที่ล้มเหลว (HTTP 5xx)\n3. **Duration**: ความเร็วในการตอบสนอง (Latency)\n4. **Saturation**: สัดส่วนการใช้ทรัพยากร (CPU, RAM, Database Connections)\n\n```go\n// ตัวอย่างการเก็บ Metrics ใน Golang ด้วย Prometheus Client\nvar httpRequestsTotal = prometheus.NewCounterVec(\n    prometheus.CounterOpts{\n        Name: \"http_requests_total\",\n        Help: \"จำนวนคำขอ HTTP ทั้งหมดแยกตาม Endpoint\",\n    },\n    []string{\"method\", \"path\", \"status\"},\n)\n```"
         },
         {
           "title": "คำสั่ง PromQL สำหรับติดตาม SLO และการส่งแจ้งเตือน Alertmanager",
-          "body": "### สูตรคำนวณ PromQL สำหรับหน้าจอ Dashboard:\n- **คำนวณอัตรา Error คิดเป็นเปอร์เซ็นต์**:\n  ```promql\n  sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m])) * 100\n  ```\n- **คำนวณความเร็ว Latency ระดับ P95**:\n  ```promql\n  histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, path))\n  ```\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Observability, Prometheus Metrics & Grafana Telemetry Dashboards](/images/sye_sre_tanzu_monitoring.jpg)\n\n### การส่งแจ้งเตือน:\nกรณีเกิดเหตุ P1/P2 ระบบ Alertmanager จะส่งเสียงเตือนไปยัง **PagerDuty ของวิศวกร On-call** ทันที พร้อมแจ้งเตือนลง Slack ช่อง `#ops-critical-alerts`"
+          "body": "### สูตรคำนวณ PromQL สำหรับหน้าจอ Dashboard:\n- **คำนวณอัตรา Error คิดเป็นเปอร์เซ็นต์**:\n  ```promql\n  sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m])) * 100\n  ```\n- **คำนวณความเร็ว Latency ระดับ P95**:\n  ```promql\n  histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, path))\n  ```\n\n### การส่งแจ้งเตือน:\nกรณีเกิดเหตุ P1/P2 ระบบ Alertmanager จะส่งเสียงเตือนไปยัง **PagerDuty ของวิศวกร On-call** ทันที พร้อมแจ้งเตือนลง Slack ช่อง `#ops-critical-alerts`"
         }
       ],
-      "image": "/images/sye_sre_tanzu_monitoring.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Observability, Prometheus Metrics & Grafana Telemetry Dashboards"
+      "image": "/images/sye_sre_tanzu_monitoring.jpg"
     },
     {
       "id": "SRE-003",
@@ -1846,14 +1802,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standard operating procedures for responding to system outages and conducting effective post-mortems.",
       "duration": "3 hours",
       "targetRoles": [
-        "SRE",
-        "Developer",
-        "PM",
-        "QA"
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Execute Incident Command protocols",
@@ -1863,11 +1816,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Incident Command System",
-          "body": "</div>\n</div>\n\n\nDuring a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n\n    </div>\n</div>"
+          "body": "During a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Outage Communication",
-          "body": "Clear, timely communication during an outage is vital for maintaining stakeholder trust. A dedicated Communications Lead is responsible for providing regular updates to internal management and drafting external status page notices. Communications must be factual, focusing on the impact and current actions, rather than speculating on the root cause before it is confirmed.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Incident Response & Post-Mortem](/images/sre_003_diagram.svg)"
+          "body": "Clear, timely communication during an outage is vital for maintaining stakeholder trust. A dedicated Communications Lead is responsible for providing regular updates to internal management and drafting external status page notices. Communications must be factual, focusing on the impact and current actions, rather than speculating on the root cause before it is confirmed."
         },
         {
           "title": "Blameless Post-Mortems",
@@ -1888,11 +1841,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Incident Command System",
-          "body": "During a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n\n    </div>\n</div>"
+          "body": "During a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Outage Communication",
-          "body": "Clear, timely communication during an outage is vital for maintaining stakeholder trust. A dedicated Communications Lead is responsible for providing regular updates to internal management and drafting external status page notices. Communications must be factual, focusing on the impact and current actions, rather than speculating on the root cause before it is confirmed.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Incident Response & Post-Mortem](/images/sre_003_diagram.svg)"
+          "body": "Clear, timely communication during an outage is vital for maintaining stakeholder trust. A dedicated Communications Lead is responsible for providing regular updates to internal management and drafting external status page notices. Communications must be factual, focusing on the impact and current actions, rather than speculating on the root cause before it is confirmed."
         },
         {
           "title": "หัวข้อ: Blameless Post-Mortems",
@@ -1903,8 +1856,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "The most important output of a post-mortem is the list of actionable items designed to improve system resilience. These might include adding new alerts, rewriting a flaky service, or updating runbooks. Action items must be assigned to specific owners and tracked in JIRA with high priority. An incident is not truly closed until all preventative action items are completed."
         }
       ],
-      "image": "/images/sre_003_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Incident Response & Post-Mortem"
+      "image": "/images/sre_003_diagram.svg"
     },
     {
       "id": "SRE-004",
@@ -1913,12 +1865,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Working with Docker containers and managing deployments using Kubernetes.",
       "duration": "4 hours",
       "targetRoles": [
-        "SRE",
-        "Developer"
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Understand Docker basics and Dockerfiles",
@@ -1928,11 +1879,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Docker Fundamentals",
-          "body": "Containerization packages an application and all its dependencies into a single, standardized unit. Docker ensures consistency across environments—if it runs on a developer's laptop, it will run exactly the same way in production. SREs assist development teams in writing optimized Dockerfiles, emphasizing multi-stage builds to minimize image size and attack surface.\n\n\n\n    </div>\n</div>"
+          "body": "Containerization packages an application and all its dependencies into a single, standardized unit. Docker ensures consistency across environments—if it runs on a developer's laptop, it will run exactly the same way in production. SREs assist development teams in writing optimized Dockerfiles, emphasizing multi-stage builds to minimize image size and attack surface.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Kubernetes Architecture",
-          "body": "Kubernetes (K8s) is our orchestration platform for managing thousands of containers in production. It handles scheduling, scaling, and self-healing. SREs must understand the control plane components (API server, scheduler) and the worker node components (kubelet). K8s abstracts away the underlying infrastructure, allowing us to manage applications declaratively.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Containerization & Orchestration](/images/sye_onprem_infra_arch.jpg)"
+          "body": "Kubernetes (K8s) is our orchestration platform for managing thousands of containers in production. It handles scheduling, scaling, and self-healing. SREs must understand the control plane components (API server, scheduler) and the worker node components (kubelet). K8s abstracts away the underlying infrastructure, allowing us to manage applications declaratively."
         },
         {
           "title": "Pods, Services, and Deployments",
@@ -1953,11 +1904,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Docker Fundamentals",
-          "body": "Containerization packages an application and all its dependencies into a single, standardized unit. Docker ensures consistency across environments—if it runs on a developer's laptop, it will run exactly the same way in production. SREs assist development teams in writing optimized Dockerfiles, emphasizing multi-stage builds to minimize image size and attack surface.\n\n\n\n    </div>\n</div>"
+          "body": "Containerization packages an application and all its dependencies into a single, standardized unit. Docker ensures consistency across environments—if it runs on a developer's laptop, it will run exactly the same way in production. SREs assist development teams in writing optimized Dockerfiles, emphasizing multi-stage builds to minimize image size and attack surface.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Kubernetes Architecture",
-          "body": "Kubernetes (K8s) is our orchestration platform for managing thousands of containers in production. It handles scheduling, scaling, and self-healing. SREs must understand the control plane components (API server, scheduler) and the worker node components (kubelet). K8s abstracts away the underlying infrastructure, allowing us to manage applications declaratively.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Containerization & Orchestration](/images/sye_onprem_infra_arch.jpg)"
+          "body": "Kubernetes (K8s) is our orchestration platform for managing thousands of containers in production. It handles scheduling, scaling, and self-healing. SREs must understand the control plane components (API server, scheduler) and the worker node components (kubelet). K8s abstracts away the underlying infrastructure, allowing us to manage applications declaratively."
         },
         {
           "title": "หัวข้อ: Pods, Services, and Deployments",
@@ -1968,8 +1919,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Applications often require environment-specific configuration and sensitive credentials. In K8s, we separate these from the container image using ConfigMaps and Secrets. Secrets are base64 encoded and must be injected into Pods at runtime. For production, we integrate K8s with external secret management systems (like HashiCorp Vault) to ensure highest security."
         }
       ],
-      "image": "/images/sye_onprem_infra_arch.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Containerization & Orchestration"
+      "image": "/images/sye_onprem_infra_arch.jpg"
     },
     {
       "id": "SRE-005",
@@ -1978,12 +1928,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Architectural patterns and practices for building highly reliable and scalable systems.",
       "duration": "3 hours",
       "targetRoles": [
-        "SRE",
-        "Developer"
+        "SRE"
       ],
       "targetSection": null,
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Implement Load balancing and caching strategies",
@@ -1993,11 +1942,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Load Balancing & Auto-scaling",
-          "body": "To handle variable traffic, we utilize horizontal auto-scaling combined with Layer 7 load balancers. Application tiers are configured to scale out automatically based on CPU utilization or request queue length. Load balancers distribute incoming traffic evenly across healthy instances, performing constant health checks to quickly remove failed nodes from rotation.\n\n\n\n    </div>\n</div>"
+          "body": "To handle variable traffic, we utilize horizontal auto-scaling combined with Layer 7 load balancers. Application tiers are configured to scale out automatically based on CPU utilization or request queue length. Load balancers distribute incoming traffic evenly across healthy instances, performing constant health checks to quickly remove failed nodes from rotation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Caching Strategies",
-          "body": "Caching is critical for achieving high performance and reducing database load. We implement caching at multiple layers: CDN for static assets, in-memory caches (Redis) for session data and frequent database queries. SREs must manage cache invalidation strategies and ensure that caching layers are themselves highly available, as cache failure can cascade into database overload.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: System Reliability & Scalability](/images/sre_005_diagram.svg)"
+          "body": "Caching is critical for achieving high performance and reducing database load. We implement caching at multiple layers: CDN for static assets, in-memory caches (Redis) for session data and frequent database queries. SREs must manage cache invalidation strategies and ensure that caching layers are themselves highly available, as cache failure can cascade into database overload."
         },
         {
           "title": "Database Replication and Failover",
@@ -2018,11 +1967,11 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Load Balancing & Auto-scaling",
-          "body": "To handle variable traffic, we utilize horizontal auto-scaling combined with Layer 7 load balancers. Application tiers are configured to scale out automatically based on CPU utilization or request queue length. Load balancers distribute incoming traffic evenly across healthy instances, performing constant health checks to quickly remove failed nodes from rotation.\n\n\n\n    </div>\n</div>"
+          "body": "To handle variable traffic, we utilize horizontal auto-scaling combined with Layer 7 load balancers. Application tiers are configured to scale out automatically based on CPU utilization or request queue length. Load balancers distribute incoming traffic evenly across healthy instances, performing constant health checks to quickly remove failed nodes from rotation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Caching Strategies",
-          "body": "Caching is critical for achieving high performance and reducing database load. We implement caching at multiple layers: CDN for static assets, in-memory caches (Redis) for session data and frequent database queries. SREs must manage cache invalidation strategies and ensure that caching layers are themselves highly available, as cache failure can cascade into database overload.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: System Reliability & Scalability](/images/sre_005_diagram.svg)"
+          "body": "Caching is critical for achieving high performance and reducing database load. We implement caching at multiple layers: CDN for static assets, in-memory caches (Redis) for session data and frequent database queries. SREs must manage cache invalidation strategies and ensure that caching layers are themselves highly available, as cache failure can cascade into database overload."
         },
         {
           "title": "หัวข้อ: Database Replication and Failover",
@@ -2033,8 +1982,7 @@ window.SYE_SAMPLE_DATA = {
           "body": "Chaos Engineering involves intentionally injecting failures into a system to build confidence in its resilience. We conduct controlled experiments, such as terminating random server instances or introducing network latency, to observe how our systems respond. These exercises uncover hidden dependencies and validate that our auto-healing and fallback mechanisms function correctly in real-world failure scenarios."
         }
       ],
-      "image": "/images/sre_005_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: System Reliability & Scalability"
+      "image": "/images/sre_005_diagram.svg"
     },
     {
       "id": "SEC-001",
@@ -2049,7 +1997,7 @@ window.SYE_SAMPLE_DATA = {
       "prerequisites": [
         "GEN-005"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-15",
       "learningObjectives": [
         "Apply Domain-Driven Design (DDD) to isolate financial microservices bounded contexts",
@@ -2060,11 +2008,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Domain-Driven Design (DDD) & Service Boundaries",
-          "body": "### Microservice Architecture Standard:\nIn SYE API & Integration Platform, services are organized around distinct financial sub-domains:\n\n\n\n    </div>\n</div>\n\n\n### Standard Architectural Principles:\n1. **Single Responsibility**: Each microservice owns its private PostgreSQL database schema. Cross-service direct database joins are strictly forbidden.\n2. **Synchronous Ingress via gRPC / REST**: External clients enter via Enterprise API Gateway. Internal service-to-service communication uses high-speed **gRPC** over HTTP/2.\n3. **Asynchronous Event-Driven Mesh**: State changes (e.g. `AccountDebited`, `CardLocked`) are published to **Apache Kafka** for decoupled downstream consumption."
+          "body": "### Microservice Architecture Standard:\nIn SYE API & Integration Platform, services are organized around distinct financial sub-domains:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### Standard Architectural Principles:\n1. **Single Responsibility**: Each microservice owns its private PostgreSQL database schema. Cross-service direct database joins are strictly forbidden.\n2. **Synchronous Ingress via gRPC / REST**: External clients enter via Enterprise API Gateway. Internal service-to-service communication uses high-speed **gRPC** over HTTP/2.\n3. **Asynchronous Event-Driven Mesh**: State changes (e.g. `AccountDebited`, `CardLocked`) are published to **Apache Kafka** for decoupled downstream consumption."
         },
         {
           "title": "Transactional Outbox Pattern & Idempotency Guarantees",
-          "body": "### Avoiding Dual-Write Inconsistencies:\nTo ensure database state and Kafka events never diverge, squads implement the **Transactional Outbox Pattern**:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Microservices & Distributed Event-Driven Architecture Standard](/images/sye_platform_arch.jpg)\n\n```sql\n-- Transactional Outbox Table Schema\nCREATE TABLE outbox_events (\n    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    aggregate_type VARCHAR(64) NOT NULL,\n    aggregate_id VARCHAR(64) NOT NULL,\n    event_type VARCHAR(128) NOT NULL,\n    payload JSONB NOT NULL,\n    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),\n    processed_at TIMESTAMP WITH TIME ZONE NULL\n);\n```\n\n### Idempotency Key Validation:\nEvery mutating financial request must provide an `X-Idempotency-Key` header. The API Gateway stores this key in **Redis** with a 300-second TTL to guarantee duplicate submissions return identical cached responses without re-executing transactions."
+          "body": "### Avoiding Dual-Write Inconsistencies:\nTo ensure database state and Kafka events never diverge, squads implement the **Transactional Outbox Pattern**:\n\n```sql\n-- Transactional Outbox Table Schema\nCREATE TABLE outbox_events (\n    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    aggregate_type VARCHAR(64) NOT NULL,\n    aggregate_id VARCHAR(64) NOT NULL,\n    event_type VARCHAR(128) NOT NULL,\n    payload JSONB NOT NULL,\n    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),\n    processed_at TIMESTAMP WITH TIME ZONE NULL\n);\n```\n\n### Idempotency Key Validation:\nEvery mutating financial request must provide an `X-Idempotency-Key` header. The API Gateway stores this key in **Redis** with a 300-second TTL to guarantee duplicate submissions return identical cached responses without re-executing transactions."
         }
       ],
       "name_th": "มาตรฐานสถาปัตยกรรม Microservices และ Event-Driven ระดับองค์กร",
@@ -2078,15 +2026,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "การออกแบบ Microservices ตามหลัก Domain-Driven Design (DDD)",
-          "body": "### มาตรฐานสถาปัตยกรรม Microservices ของฝ่าย SYE:\nระบบของส่วนงาน API & Integration Platform ถูกออกแบบแยกตามขอบเขตหน้าที่ทางธุรกิจอย่างชัดเจน:\n\n\n\n    </div>\n</div>\n\n\n### หลักการสำคัญ:\n1. **แยกฐานข้อมูลอิสระ (Database-per-Service)**: แต่ละ Microservice เป็นเจ้าของ Schema ฐานข้อมูล PostgreSQL ของตนเอง ห้ามทำ Cross-database Join ข้ามบริการโดยเด็ดขาด\n2. **การสื่อสารภายในด้วย gRPC**: ทราฟฟิกภายนอกเข้ามาผ่าน API Gateway ส่วนการเชื่อมต่อระหว่าง Microservices ภายในจะใช้ **gRPC** ผ่าน HTTP/2\n3. **การกระจาย Event ด้วย Apache Kafka**: เมื่อเกิดการเปลี่ยนแปลงสถานะ (เช่น มีการตัดเงิน) จะส่ง Event ไปยัง Kafka เพื่อให้ระบบอื่นทำงานต่อแบบ Asynchronous"
+          "body": "### มาตรฐานสถาปัตยกรรม Microservices ของฝ่าย SYE:\nระบบของส่วนงาน API & Integration Platform ถูกออกแบบแยกตามขอบเขตหน้าที่ทางธุรกิจอย่างชัดเจน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### หลักการสำคัญ:\n1. **แยกฐานข้อมูลอิสระ (Database-per-Service)**: แต่ละ Microservice เป็นเจ้าของ Schema ฐานข้อมูล PostgreSQL ของตนเอง ห้ามทำ Cross-database Join ข้ามบริการโดยเด็ดขาด\n2. **การสื่อสารภายในด้วย gRPC**: ทราฟฟิกภายนอกเข้ามาผ่าน API Gateway ส่วนการเชื่อมต่อระหว่าง Microservices ภายในจะใช้ **gRPC** ผ่าน HTTP/2\n3. **การกระจาย Event ด้วย Apache Kafka**: เมื่อเกิดการเปลี่ยนแปลงสถานะ (เช่น มีการตัดเงิน) จะส่ง Event ไปยัง Kafka เพื่อให้ระบบอื่นทำงานต่อแบบ Asynchronous"
         },
         {
           "title": "รูปแบบ Transactional Outbox และการป้องกันรายการซ้ำ (Idempotency)",
-          "body": "### การป้องกันข้อมูลไม่ตรงกันด้วย Outbox Pattern:\nบันทึก Event ลงตาราง `outbox_events` ใน Transaction เดียวกับการเขียนฐานข้อมูล แล้วให้ Worker ส่งต่อไปยัง Kafka อีกทอดหนึ่ง\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Microservices & Distributed Event-Driven Architecture Standard](/images/sye_platform_arch.jpg)\n\n```sql\n-- ตัวอย่างตาราง Outbox เพื่อความถูกต้อง 100%\nCREATE TABLE outbox_events (\n    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    aggregate_type VARCHAR(64) NOT NULL,\n    event_type VARCHAR(128) NOT NULL,\n    payload JSONB NOT NULL,\n    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()\n);\n```\n\n### การป้องกันการทำรายการซ้ำ (Idempotency Key):\nทุก API ตัดเงินต้องส่ง Header `X-Idempotency-Key` โดยระบบจะบันทึก Key ลงใน **Redis** หากมีการกดส่งซ้ำ ระบบจะคืนค่าผลลัพธ์เดิมทันทีโดยไม่ตัดเงินซ้ำ"
+          "body": "### การป้องกันข้อมูลไม่ตรงกันด้วย Outbox Pattern:\nบันทึก Event ลงตาราง `outbox_events` ใน Transaction เดียวกับการเขียนฐานข้อมูล แล้วให้ Worker ส่งต่อไปยัง Kafka อีกทอดหนึ่ง\n\n```sql\n-- ตัวอย่างตาราง Outbox เพื่อความถูกต้อง 100%\nCREATE TABLE outbox_events (\n    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    aggregate_type VARCHAR(64) NOT NULL,\n    event_type VARCHAR(128) NOT NULL,\n    payload JSONB NOT NULL,\n    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()\n);\n```\n\n### การป้องกันการทำรายการซ้ำ (Idempotency Key):\nทุก API ตัดเงินต้องส่ง Header `X-Idempotency-Key` โดยระบบจะบันทึก Key ลงใน **Redis** หากมีการกดส่งซ้ำ ระบบจะคืนค่าผลลัพธ์เดิมทันทีโดยไม่ตัดเงินซ้ำ"
         }
       ],
-      "image": "/images/sye_platform_arch.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Microservices & Distributed Event-Driven Architecture Standard"
+      "image": "/images/sye_platform_arch.jpg"
     },
     {
       "id": "SEC-002",
@@ -2096,14 +2043,13 @@ window.SYE_SAMPLE_DATA = {
       "duration": "3 hours",
       "targetRoles": [
         "Developer",
-        "SRE",
-        "QA"
+        "SRE"
       ],
       "targetSection": "API & Integration Platform",
       "prerequisites": [
         "SEC-001"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-15",
       "learningObjectives": [
         "Configure mTLS certificates for external B2B partner integrations",
@@ -2114,11 +2060,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "API Gateway Ingress Architecture & Security Policies",
-          "body": "### Ingress Gateway Capabilities:\nThe API Gateway acts as the single secure entry point protecting internal VMware Tanzu clusters:\n\n\n\n    </div>\n</div>\n\n\n1. **Mutual TLS (mTLS)**: Enforces certificate-based identity verification for all external financial partners.\n2. **JWT Signature & Claims Validation**: Verifies RS256 / EdDSA signatures before requests reach backend services.\n3. **Distributed Rate Limiting**: Enforces strict tier-based request throttling using Redis clusters (e.g. 100 req/sec per partner IP)."
+          "body": "### Ingress Gateway Capabilities:\nThe API Gateway acts as the single secure entry point protecting internal VMware Tanzu clusters:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Mutual TLS (mTLS)**: Enforces certificate-based identity verification for all external financial partners.\n2. **JWT Signature & Claims Validation**: Verifies RS256 / EdDSA signatures before requests reach backend services.\n3. **Distributed Rate Limiting**: Enforces strict tier-based request throttling using Redis clusters (e.g. 100 req/sec per partner IP)."
         },
         {
           "title": "Circuit Breaker & Resilience Configuration",
-          "body": "<span class=\"text-[11px] font-mono text-slate-500 font-normal\">AEON SYE Technical Blueprint</span>\n  </div>\n  \n</div>\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise API Gateway Configuration, Security & Rate Limiting](/images/sec_002_diagram.svg)\n\n### Preventing Cascading Outages:\nWhen a downstream service experiences high latency or error rates exceeding **50% over 10 seconds**, the API Gateway trips the **Circuit Breaker**:\n\n```yaml\n# API Gateway Circuit Breaker Policy (Tanzu Ingress)\napiVersion: networking.k8s.io/v1\nkind: IngressPolicy\nmetadata:\n  name: payment-circuit-breaker\nspec:\n  circuitBreaker:\n    consecutiveErrors: 5\n    interval: 10s\n    baseEjectionTime: 30s\n    maxEjectionPercent: 50\n  rateLimit:\n    requestsPerSecond: 2500\n    burst: 5000\n```"
+          "body": "### Preventing Cascading Outages:\nWhen a downstream service experiences high latency or error rates exceeding **50% over 10 seconds**, the API Gateway trips the **Circuit Breaker**:\n\n```yaml\n# API Gateway Circuit Breaker Policy (Tanzu Ingress)\napiVersion: networking.k8s.io/v1\nkind: IngressPolicy\nmetadata:\n  name: payment-circuit-breaker\nspec:\n  circuitBreaker:\n    consecutiveErrors: 5\n    interval: 10s\n    baseEjectionTime: 30s\n    maxEjectionPercent: 50\n  rateLimit:\n    requestsPerSecond: 2500\n    burst: 5000\n```"
         }
       ],
       "name_th": "การตั้งค่า Enterprise API Gateway, ความปลอดภัย และการจำกัดทราฟฟิก",
@@ -2132,15 +2078,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "สถาปัตยกรรมความปลอดภัยและหน้าที่ของ API Gateway",
-          "body": "### ด่านหน้าความปลอดภัยของระบบ:\nAPI Gateway ทำหน้าที่เป็นประตูปกป้องคลัสเตอร์ VMware Tanzu ภายใน:\n\n\n\n    </div>\n</div>\n\n\n1. **Mutual TLS (mTLS)**: ตรวจสอบใบรับรองดิจิทัลแบบ 2 ฝั่งสำหรับระบบพันธมิตรทางการเงินภายนอก\n2. **การตรวจสอบ JWT Token**: ตรวจสอบลายมือชื่อดิจิทัล (Signature) ก่อนส่งทราฟฟิกเข้า Microservices\n3. **การจำกัดปริมาณทราฟฟิก (Rate Limiting)**: ควบคุมปริมาณคำขอผ่าน Redis เพื่อป้องกันการโจมตีและระบบโอเวอร์โหลด"
+          "body": "### ด่านหน้าความปลอดภัยของระบบ:\nAPI Gateway ทำหน้าที่เป็นประตูปกป้องคลัสเตอร์ VMware Tanzu ภายใน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Mutual TLS (mTLS)**: ตรวจสอบใบรับรองดิจิทัลแบบ 2 ฝั่งสำหรับระบบพันธมิตรทางการเงินภายนอก\n2. **การตรวจสอบ JWT Token**: ตรวจสอบลายมือชื่อดิจิทัล (Signature) ก่อนส่งทราฟฟิกเข้า Microservices\n3. **การจำกัดปริมาณทราฟฟิก (Rate Limiting)**: ควบคุมปริมาณคำขอผ่าน Redis เพื่อป้องกันการโจมตีและระบบโอเวอร์โหลด"
         },
         {
           "title": "การตั้งค่า Circuit Breaker เพื่อความเสถียรของระบบ",
-          "body": "### การป้องกันระบบล่มต่อเนื่อง (Cascading Failure):\nเมื่อระบบปลายทางมีข้อผิดพลาดเกิน 50% ภายใน 10 วินาที API Gateway จะตัดวงจร (Open Circuit) และตอบกลับทันทีเพื่อรักษาเสถียรภาพของระบบโดยรวม\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise API Gateway Configuration, Security & Rate Limiting](/images/sec_002_diagram.svg)\n\n```yaml\n# ตัวอย่างคอนฟิก Circuit Breaker บน Tanzu Ingress\nspec:\n  circuitBreaker:\n    consecutiveErrors: 5\n    interval: 10s\n    baseEjectionTime: 30s\n  rateLimit:\n    requestsPerSecond: 2500\n```"
+          "body": "### การป้องกันระบบล่มต่อเนื่อง (Cascading Failure):\nเมื่อระบบปลายทางมีข้อผิดพลาดเกิน 50% ภายใน 10 วินาที API Gateway จะตัดวงจร (Open Circuit) และตอบกลับทันทีเพื่อรักษาเสถียรภาพของระบบโดยรวม\n\n```yaml\n# ตัวอย่างคอนฟิก Circuit Breaker บน Tanzu Ingress\nspec:\n  circuitBreaker:\n    consecutiveErrors: 5\n    interval: 10s\n    baseEjectionTime: 30s\n  rateLimit:\n    requestsPerSecond: 2500\n```"
         }
       ],
-      "image": "/images/sec_002_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Enterprise API Gateway Configuration, Security & Rate Limiting"
+      "image": "/images/sec_002_diagram.svg"
     },
     {
       "id": "SEC-003",
@@ -2150,12 +2095,11 @@ window.SYE_SAMPLE_DATA = {
       "duration": "3 hours",
       "targetRoles": [
         "Developer",
-        "BA",
-        "QA"
+        "BA"
       ],
       "targetSection": "API & Integration Platform",
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Implement the Anti-corruption layer pattern",
@@ -2165,11 +2109,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Anti-Corruption Layer (ACL)",
-          "body": "When integrating modern microservices with legacy core systems, we employ the Anti-Corruption Layer pattern. This isolating layer translates requests and data models between the new and old systems. It prevents legacy naming conventions and outdated data structures from polluting the new microservice architecture, ensuring long-term maintainability.\n\n\n\n    </div>\n</div>"
+          "body": "When integrating modern microservices with legacy core systems, we employ the Anti-Corruption Layer pattern. This isolating layer translates requests and data models between the new and old systems. It prevents legacy naming conventions and outdated data structures from polluting the new microservice architecture, ensuring long-term maintainability.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Adapter Patterns",
-          "body": "Legacy systems often lack modern REST interfaces, relying instead on SOAP, flat files, or direct database connections. We build dedicated adapter services that wrap these legacy interfaces, exposing a standard REST API to the rest of the platform. This encapsulates the complex integration logic and allows us to swap out the legacy system later with minimal impact.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Legacy System Integration Patterns](/images/sec_003_diagram.svg)"
+          "body": "Legacy systems often lack modern REST interfaces, relying instead on SOAP, flat files, or direct database connections. We build dedicated adapter services that wrap these legacy interfaces, exposing a standard REST API to the rest of the platform. This encapsulates the complex integration logic and allows us to swap out the legacy system later with minimal impact."
         },
         {
           "title": "Data Migration Strategies",
@@ -2186,19 +2130,18 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Anti-Corruption Layer (ACL)",
-          "body": "When integrating modern microservices with legacy core systems, we employ the Anti-Corruption Layer pattern. This isolating layer translates requests and data models between the new and old systems. It prevents legacy naming conventions and outdated data structures from polluting the new microservice architecture, ensuring long-term maintainability.\n\n\n\n    </div>\n</div>"
+          "body": "When integrating modern microservices with legacy core systems, we employ the Anti-Corruption Layer pattern. This isolating layer translates requests and data models between the new and old systems. It prevents legacy naming conventions and outdated data structures from polluting the new microservice architecture, ensuring long-term maintainability.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Adapter Patterns",
-          "body": "Legacy systems often lack modern REST interfaces, relying instead on SOAP, flat files, or direct database connections. We build dedicated adapter services that wrap these legacy interfaces, exposing a standard REST API to the rest of the platform. This encapsulates the complex integration logic and allows us to swap out the legacy system later with minimal impact.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Legacy System Integration Patterns](/images/sec_003_diagram.svg)"
+          "body": "Legacy systems often lack modern REST interfaces, relying instead on SOAP, flat files, or direct database connections. We build dedicated adapter services that wrap these legacy interfaces, exposing a standard REST API to the rest of the platform. This encapsulates the complex integration logic and allows us to swap out the legacy system later with minimal impact."
         },
         {
           "title": "หัวข้อ: Data Migration Strategies",
           "body": "Migrating data from legacy systems to new databases requires careful planning. We utilize strategies like the Strangler Fig pattern, gradually routing traffic to the new system while synchronizing data in the background. Data integrity checks and automated reconciliation scripts are essential to guarantee no data is lost during the transition."
         }
       ],
-      "image": "/images/sec_003_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Legacy System Integration Patterns"
+      "image": "/images/sec_003_diagram.svg"
     },
     {
       "id": "SEC-004",
@@ -2213,7 +2156,7 @@ window.SYE_SAMPLE_DATA = {
       "prerequisites": [
         "GEN-005"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-15",
       "learningObjectives": [
         "Architect high-performance Backend-for-Frontend (BFF) services for iOS/Android apps",
@@ -2224,11 +2167,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "CXS Architecture: Mobile Apps, Next.js & BFF Layer",
-          "body": "### Customer Channels Overview:\nThe CXS Section develops and operates all direct customer touchpoints for AEON:\n\n\n\n    </div>\n</div>\n\n\n### System Components:\n1. **Mobile Applications (iOS & Android)**: Native financial applications featuring biometric authentication, virtual credit card controls, and QR payments.\n2. **Next.js Customer Web Portal**: Server-Side Rendered (SSR) web portal delivering account statements, reward redemptions, and digital loan requests.\n3. **High-Speed Golang BFF Services**: Aggregates microservice calls and optimizes payloads specifically for mobile network bandwidth."
+          "body": "### Customer Channels Overview:\nThe CXS Section develops and operates all direct customer touchpoints for AEON:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n\n\n### System Components:\n1. **Mobile Applications (iOS & Android)**: Native financial applications featuring biometric authentication, virtual credit card controls, and QR payments.\n2. **Next.js Customer Web Portal**: Server-Side Rendered (SSR) web portal delivering account statements, reward redemptions, and digital loan requests.\n3. **High-Speed Golang BFF Services**: Aggregates microservice calls and optimizes payloads specifically for mobile network bandwidth."
         },
         {
           "title": "Digital e-KYC Onboarding & Biometric Authentication Flow",
-          "body": "### e-KYC Verification Pipeline:\n1. **OCR Data Capture**: Extracts Thai National ID card data, chip serial, and laser code.\n2. **Liveness & Facial Recognition**: Compares real-time camera selfie against DOPA / National ID photo with anti-spoofing algorithms.\n3. **NDID Integration**: Cross-authenticates customer identities with participating member banks.\n4. **Automated Credit Bureau Scored Check**: Evaluates credit eligibility in under **60 seconds**.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Customer Experience Systems (CXS) Platform Architecture](/images/sye_cxs_mobile_frontend.jpg)"
+          "body": "### e-KYC Verification Pipeline:\n1. **OCR Data Capture**: Extracts Thai National ID card data, chip serial, and laser code.\n2. **Liveness & Facial Recognition**: Compares real-time camera selfie against DOPA / National ID photo with anti-spoofing algorithms.\n3. **NDID Integration**: Cross-authenticates customer identities with participating member banks.\n4. **Automated Credit Bureau Scored Check**: Evaluates credit eligibility in under **60 seconds**."
         }
       ],
       "name_th": "สถาปัตยกรรมระบบ Customer Experience Systems (CXS) และ Mobile Backend",
@@ -2242,15 +2185,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "โครงสร้างสถาปัตยกรรม CXS: Mobile Apps, Next.js และ BFF Layer",
-          "body": "### ภาพรวมช่องทางบริการลูกค้าของ AEON:\nส่วนงาน CXS รับผิดชอบการพัฒนาและดูแลระบบที่ติดต่อกับลูกค้าโดยตรง:\n\n\n\n    </div>\n</div>\n\n\n### องค์ประกอบของระบบ:\n1. **Mobile Banking (iOS / Android)**: แอปพลิเคชันการเงินที่รองรับการยืนยันตัวตนด้วยลายนิ้วมือ/ใบหน้า บัตรเครดิตดิจิทัล และการสแกนจ่าย QR\n2. **Next.js Web Portal**: เว็บพอร์ทัลบริการลูกค้าแบบ Server-Side Rendering (SSR) สำหรับตรวจสอบใบแจ้งยอดและขอสินเชื่อ\n3. **Golang BFF Layer**: บริการรวมข้อมูลและปรับขนาด Payload ให้ประหยัดแบนด์วิดท์มือถือ"
+          "body": "### ภาพรวมช่องทางบริการลูกค้าของ AEON:\nส่วนงาน CXS รับผิดชอบการพัฒนาและดูแลระบบที่ติดต่อกับลูกค้าโดยตรง:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n\n\n### องค์ประกอบของระบบ:\n1. **Mobile Banking (iOS / Android)**: แอปพลิเคชันการเงินที่รองรับการยืนยันตัวตนด้วยลายนิ้วมือ/ใบหน้า บัตรเครดิตดิจิทัล และการสแกนจ่าย QR\n2. **Next.js Web Portal**: เว็บพอร์ทัลบริการลูกค้าแบบ Server-Side Rendering (SSR) สำหรับตรวจสอบใบแจ้งยอดและขอสินเชื่อ\n3. **Golang BFF Layer**: บริการรวมข้อมูลและปรับขนาด Payload ให้ประหยัดแบนด์วิดท์มือถือ"
         },
         {
           "title": "กระบวนการเปิดบัญชีดิจิทัล e-KYC และการยืนยันตัวตนชีวมิติ",
-          "body": "### ขั้นตอนการตรวจสอบตัวตนดิจิทัล:\n1. **OCR อ่านบัตรประชาชน**: ตรวจสอบความถูกต้องของเลขบัตรและ Laser Code\n2. **Liveness Detection & Face Matching**: ตรวจสอบภาพถ่ายใบหน้าจริงเทียบกับรูปถ่ายในบัตรประชาชน\n3. **เชื่อมต่อ NDID**: ยืนยันตัวตนข้ามสถาบันการเงินผ่านเครือข่าย NDID\n4. **อนุมัติวงเงินอัตโนมัติ**: ประมวลผลคะแนนเครดิตและแจ้งผลภายใน **60 วินาที**\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Customer Experience Systems (CXS) Platform Architecture](/images/sye_cxs_mobile_frontend.jpg)"
+          "body": "### ขั้นตอนการตรวจสอบตัวตนดิจิทัล:\n1. **OCR อ่านบัตรประชาชน**: ตรวจสอบความถูกต้องของเลขบัตรและ Laser Code\n2. **Liveness Detection & Face Matching**: ตรวจสอบภาพถ่ายใบหน้าจริงเทียบกับรูปถ่ายในบัตรประชาชน\n3. **เชื่อมต่อ NDID**: ยืนยันตัวตนข้ามสถาบันการเงินผ่านเครือข่าย NDID\n4. **อนุมัติวงเงินอัตโนมัติ**: ประมวลผลคะแนนเครดิตและแจ้งผลภายใน **60 วินาที**"
         }
       ],
-      "image": "/images/sye_cxs_mobile_frontend.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Customer Experience Systems (CXS) Platform Architecture"
+      "image": "/images/sye_cxs_mobile_frontend.jpg"
     },
     {
       "id": "SEC-005",
@@ -2259,12 +2201,11 @@ window.SYE_SAMPLE_DATA = {
       "description": "Standards for managing application state in complex customer-facing frontend applications.",
       "duration": "3 hours",
       "targetRoles": [
-        "Developer",
-        "QA"
+        "Developer"
       ],
       "targetSection": "Customer Experience Systems",
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Apply Redux/Vuex state management patterns",
@@ -2274,11 +2215,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Centralized State Management",
-          "body": "Complex frontend applications at AEON utilize centralized state management libraries like Redux or Vuex. This ensures a predictable state container where data flows in a unidirectional manner. Developers must strictly adhere to the pattern of dispatching actions and using pure functions (reducers) to update the state, avoiding direct mutations that cause side effects.\n\n\n\n    </div>\n</div>"
+          "body": "Complex frontend applications at AEON utilize centralized state management libraries like Redux or Vuex. This ensures a predictable state container where data flows in a unidirectional manner. Developers must strictly adhere to the pattern of dispatching actions and using pure functions (reducers) to update the state, avoiding direct mutations that cause side effects.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "State Normalization",
-          "body": "To prevent duplicate data and complex updates, nested API responses must be normalized before being stored in the state tree. Data is kept flat, similar to a relational database, using ID references to link entities. This approach dramatically simplifies updating specific items (like a single user profile) across multiple UI components simultaneously.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Frontend State Management Standard](/images/sec_005_diagram.svg)"
+          "body": "To prevent duplicate data and complex updates, nested API responses must be normalized before being stored in the state tree. Data is kept flat, similar to a relational database, using ID references to link entities. This approach dramatically simplifies updating specific items (like a single user profile) across multiple UI components simultaneously."
         },
         {
           "title": "Data Fetching and Caching",
@@ -2295,19 +2236,18 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Centralized State Management",
-          "body": "Complex frontend applications at AEON utilize centralized state management libraries like Redux or Vuex. This ensures a predictable state container where data flows in a unidirectional manner. Developers must strictly adhere to the pattern of dispatching actions and using pure functions (reducers) to update the state, avoiding direct mutations that cause side effects.\n\n\n\n    </div>\n</div>"
+          "body": "Complex frontend applications at AEON utilize centralized state management libraries like Redux or Vuex. This ensures a predictable state container where data flows in a unidirectional manner. Developers must strictly adhere to the pattern of dispatching actions and using pure functions (reducers) to update the state, avoiding direct mutations that cause side effects.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: State Normalization",
-          "body": "To prevent duplicate data and complex updates, nested API responses must be normalized before being stored in the state tree. Data is kept flat, similar to a relational database, using ID references to link entities. This approach dramatically simplifies updating specific items (like a single user profile) across multiple UI components simultaneously.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Frontend State Management Standard](/images/sec_005_diagram.svg)"
+          "body": "To prevent duplicate data and complex updates, nested API responses must be normalized before being stored in the state tree. Data is kept flat, similar to a relational database, using ID references to link entities. This approach dramatically simplifies updating specific items (like a single user profile) across multiple UI components simultaneously."
         },
         {
           "title": "หัวข้อ: Data Fetching and Caching",
           "body": "We utilize advanced data fetching libraries (like React Query or SWR) to handle server state, distinct from UI state. These libraries provide built-in caching, automatic background refetching, and stale-while-revalidate strategies. This results in highly responsive interfaces that mask network latency and reduce unnecessary API calls to the backend."
         }
       ],
-      "image": "/images/sec_005_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Frontend State Management Standard"
+      "image": "/images/sec_005_diagram.svg"
     },
     {
       "id": "SEC-006",
@@ -2318,11 +2258,11 @@ window.SYE_SAMPLE_DATA = {
       "targetRoles": [
         "All"
       ],
-      "targetSection": "User Application Systems",
+      "targetSection": "Omnichannel Customer Service",
       "prerequisites": [
         "GEN-005"
       ],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2024-01-15",
       "learningObjectives": [
         "Understand the Omnichannel inbound ingestion architecture connecting LINE OA and Web Chat",
@@ -2333,11 +2273,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "Omnichannel Platform Topology & Ingestion Hub",
-          "body": "### Unified Customer Service Architecture:\nThe OCS platform aggregates customer communications across all digital and voice channels into a single unified queue:\n\n\n\n    </div>\n</div>\n\n\n### Channel Integrations:\n1. **LINE Official Account**: Ingests LINE messaging webhook payloads via secure HTTPS ingress.\n2. **Web Live Chat**: Embedded WebSocket live chat widget within AEON web portals.\n3. **VoIP Telephony & CTI**: SIP trunks connected to enterprise PBX routing voice calls to agent softphones.\n4. **Unified Agent Workspace**: Next.js single-page application providing agents with live chat controls, call recording, and CRM 360 history."
+          "body": "### Unified Customer Service Architecture:\nThe OCS platform aggregates customer communications across all digital and voice channels into a single unified queue:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n\n\n### Channel Integrations:\n1. **LINE Official Account**: Ingests LINE messaging webhook payloads via secure HTTPS ingress.\n2. **Web Live Chat**: Embedded WebSocket live chat widget within AEON web portals.\n3. **VoIP Telephony & CTI**: SIP trunks connected to enterprise PBX routing voice calls to agent softphones.\n4. **Unified Agent Workspace**: Next.js single-page application providing agents with live chat controls, call recording, and CRM 360 history."
         },
         {
           "title": "Skill-Based Routing & Automated CRM Screen-Pop",
-          "body": "### Routing Engine Logic:\nWhen a customer contacts AEON, the OCS routing engine evaluates customer tier and query category:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Omnichannel Routing Logic & Unified Agent Workspace](/images/sye_ocs_omnichannel_ai.jpg)\n\n```text\nCustomer Inbound -> Query Intent Recognized (e.g. Card Dispute)\n  -> Check Customer Tier (e.g. Platinum Member)\n  -> Query Agent Pool with Tag 'VIP-Disputes'\n  -> Assign to Available Agent with Lowest Active Concurrency\n  -> Trigger CRM 360 Screen-Pop on Agent Desktop (< 500ms)\n```"
+          "body": "### Routing Engine Logic:\nWhen a customer contacts AEON, the OCS routing engine evaluates customer tier and query category:\n\n```text\nCustomer Inbound -> Query Intent Recognized (e.g. Card Dispute)\n  -> Check Customer Tier (e.g. Platinum Member)\n  -> Query Agent Pool with Tag 'VIP-Disputes'\n  -> Assign to Available Agent with Lowest Active Concurrency\n  -> Trigger CRM 360 Screen-Pop on Agent Desktop (< 500ms)\n```"
         }
       ],
       "name_th": "ระบบจัดสรรบทสนทนา Omnichannel และหน้าจอรวมศูนย์เจ้าหน้าที่",
@@ -2351,15 +2291,14 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "โครงสร้างสถาปัตยกรรม Omnichannel และระบบรับข้อความรวมศูนย์",
-          "body": "### ระบบรวมศูนย์งานบริการลูกค้าของ AEON:\nแพลตฟอร์ม OCS รวมศูนย์การติดต่อจากทุกช่องทางดิจิทัลและเสียงเข้ามาที่คิวเดียวกัน:\n\n\n\n    </div>\n</div>\n\n\n### ช่องทางการเชื่อมต่อ:\n1. **LINE Official Account**: รับข้อความผ่าน Webhook ของ LINE เข้าสู่ระบบอย่างปลอดภัย\n2. **Web Live Chat**: วิดเจ็ตแชตสดผ่าน WebSocket บนหน้าเว็บของ AEON\n3. **ระบบโทรศัพท์ CTI**: เชื่อมต่อระบบตู้สาขาโทรศัพท์ VoIP เข้ากับคอมพิวเตอร์เจ้าหน้าที่\n4. **หน้าจอรวมศูนย์ (Unified Agent Workspace)**: เว็บแอปพลิเคชัน Next.js ให้เจ้าหน้าที่แชต โทร และดูประวัติ CRM 360 ได้ในหน้าจอเดียว"
+          "body": "### ระบบรวมศูนย์งานบริการลูกค้าของ AEON:\nแพลตฟอร์ม OCS รวมศูนย์การติดต่อจากทุกช่องทางดิจิทัลและเสียงเข้ามาที่คิวเดียวกัน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n\n\n### ช่องทางการเชื่อมต่อ:\n1. **LINE Official Account**: รับข้อความผ่าน Webhook ของ LINE เข้าสู่ระบบอย่างปลอดภัย\n2. **Web Live Chat**: วิดเจ็ตแชตสดผ่าน WebSocket บนหน้าเว็บของ AEON\n3. **ระบบโทรศัพท์ CTI**: เชื่อมต่อระบบตู้สาขาโทรศัพท์ VoIP เข้ากับคอมพิวเตอร์เจ้าหน้าที่\n4. **หน้าจอรวมศูนย์ (Unified Agent Workspace)**: เว็บแอปพลิเคชัน Next.js ให้เจ้าหน้าที่แชต โทร และดูประวัติ CRM 360 ได้ในหน้าจอเดียว"
         },
         {
           "title": "ระบบจัดสรรงานตามทักษะ (Skill-Based Routing) และ CRM Screen-Pop",
-          "body": "### กระบวนการจัดสรรคิวงาน:\nเมื่อลูกค้าติดต่อเข้ามา ระบบจะวิเคราะห์เจตนาและระดับสมาชิกเพื่อส่งต่อให้เจ้าหน้าที่ที่เหมาะสมที่สุด:\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Omnichannel Routing Logic & Unified Agent Workspace](/images/sye_ocs_omnichannel_ai.jpg)\n\n```text\nลูกค้าติดต่อเข้ามา -> AI ตรวจสอบหัวข้อ (เช่น สอบถามรายการปฏิเสธบัตร)\n  -> ตรวจสอบระดับสมาชิก (เช่น บัตรแพลทินัม)\n  -> ค้นหาเจ้าหน้าที่กลุ่ม 'VIP-Disputes' ที่พร้อมให้บริการ\n  -> ส่งงานเข้าหน้าจอเจ้าหน้าที่ พร้อมเปิดประวัติลูกค้า (Screen-Pop) ทันที (< 500ms)\n```"
+          "body": "### กระบวนการจัดสรรคิวงาน:\nเมื่อลูกค้าติดต่อเข้ามา ระบบจะวิเคราะห์เจตนาและระดับสมาชิกเพื่อส่งต่อให้เจ้าหน้าที่ที่เหมาะสมที่สุด:\n\n```text\nลูกค้าติดต่อเข้ามา -> AI ตรวจสอบหัวข้อ (เช่น สอบถามรายการปฏิเสธบัตร)\n  -> ตรวจสอบระดับสมาชิก (เช่น บัตรแพลทินัม)\n  -> ค้นหาเจ้าหน้าที่กลุ่ม 'VIP-Disputes' ที่พร้อมให้บริการ\n  -> ส่งงานเข้าหน้าจอเจ้าหน้าที่ พร้อมเปิดประวัติลูกค้า (Screen-Pop) ทันที (< 500ms)\n```"
         }
       ],
-      "image": "/images/sye_ocs_omnichannel_ai.jpg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Omnichannel Routing Logic & Unified Agent Workspace"
+      "image": "/images/sye_ocs_omnichannel_ai.jpg"
     },
     {
       "id": "SEC-007",
@@ -2370,9 +2309,9 @@ window.SYE_SAMPLE_DATA = {
       "targetRoles": [
         "All"
       ],
-      "targetSection": "User Application Systems",
+      "targetSection": "Omnichannel Customer Service",
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Navigate agent desktop features",
@@ -2382,11 +2321,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "The Agent Desktop",
-          "body": "The Agent Desktop is a unified web-based interface providing everything an agent needs to handle interactions. It consolidates multiple legacy applications into a single pane of glass, reducing toggle tax. Features include integrated softphone controls, omnichannel interaction histories, and real-time performance metrics dashboards.\n\n\n\n    </div>\n</div>"
+          "body": "The Agent Desktop is a unified web-based interface providing everything an agent needs to handle interactions. It consolidates multiple legacy applications into a single pane of glass, reducing toggle tax. Features include integrated softphone controls, omnichannel interaction histories, and real-time performance metrics dashboards.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "CRM Integration & Screen Pop",
-          "body": "When a contact arrives, the system uses the caller ID or authentication data to trigger a \"screen pop,\" automatically loading the customer's profile from the CRM. This integration provides agents with immediate context, including recent transactions and open support tickets, significantly reducing average handle time and improving customer satisfaction.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Contact Center Application Features](/images/sec_007_diagram.svg)"
+          "body": "When a contact arrives, the system uses the caller ID or authentication data to trigger a \"screen pop,\" automatically loading the customer's profile from the CRM. This integration provides agents with immediate context, including recent transactions and open support tickets, significantly reducing average handle time and improving customer satisfaction."
         },
         {
           "title": "Integrated Knowledge Base",
@@ -2403,19 +2342,18 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: The Agent Desktop",
-          "body": "The Agent Desktop is a unified web-based interface providing everything an agent needs to handle interactions. It consolidates multiple legacy applications into a single pane of glass, reducing toggle tax. Features include integrated softphone controls, omnichannel interaction histories, and real-time performance metrics dashboards.\n\n\n\n    </div>\n</div>"
+          "body": "The Agent Desktop is a unified web-based interface providing everything an agent needs to handle interactions. It consolidates multiple legacy applications into a single pane of glass, reducing toggle tax. Features include integrated softphone controls, omnichannel interaction histories, and real-time performance metrics dashboards.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: CRM Integration & Screen Pop",
-          "body": "When a contact arrives, the system uses the caller ID or authentication data to trigger a \"screen pop,\" automatically loading the customer's profile from the CRM. This integration provides agents with immediate context, including recent transactions and open support tickets, significantly reducing average handle time and improving customer satisfaction.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Contact Center Application Features](/images/sec_007_diagram.svg)"
+          "body": "When a contact arrives, the system uses the caller ID or authentication data to trigger a \"screen pop,\" automatically loading the customer's profile from the CRM. This integration provides agents with immediate context, including recent transactions and open support tickets, significantly reducing average handle time and improving customer satisfaction."
         },
         {
           "title": "หัวข้อ: Integrated Knowledge Base",
           "body": "The desktop features an AI-assisted knowledge base that suggests relevant articles based on the context of the ongoing conversation. Agents can quickly search for procedures, policies, and troubleshooting steps without leaving the application. Feedback mechanisms allow agents to flag outdated content, ensuring the repository remains accurate and useful."
         }
       ],
-      "image": "/images/sec_007_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Contact Center Application Features"
+      "image": "/images/sec_007_diagram.svg"
     },
     {
       "id": "SEC-008",
@@ -2425,12 +2363,11 @@ window.SYE_SAMPLE_DATA = {
       "duration": "3 hours",
       "targetRoles": [
         "Developer",
-        "BA",
-        "QA"
+        "BA"
       ],
-      "targetSection": "Technology Standards & Quality",
+      "targetSection": "Omnichannel Customer Service",
       "prerequisites": [],
-      "hasAssessment": true,
+      "hasAssessment": false,
       "createdDate": "2025-01-05",
       "learningObjectives": [
         "Execute NLU training and intent mapping",
@@ -2440,11 +2377,11 @@ window.SYE_SAMPLE_DATA = {
       "content": [
         {
           "title": "NLU Training and Intents",
-          "body": "Natural Language Understanding (NLU) is the core of our chatbot framework. BAs and developers collaborate to define \"Intents\" (what the user wants) and provide varied training phrases. Continuous training based on actual chat logs is required to improve the bot's accuracy over time. Entities are extracted from the text to gather specific parameters required for transactions.\n\n\n\n    </div>\n</div>"
+          "body": "Natural Language Understanding (NLU) is the core of our chatbot framework. BAs and developers collaborate to define \"Intents\" (what the user wants) and provide varied training phrases. Continuous training based on actual chat logs is required to improve the bot's accuracy over time. Entities are extracted from the text to gather specific parameters required for transactions.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "Dialog Flow Design",
-          "body": "Conversational flows are designed using a visual builder. Best practices dictate that bots should introduce themselves clearly as AI, set expectations about capabilities, and offer guided options rather than relying purely on open text. Flows must account for edge cases, missing information, and variations in user responses, maintaining a helpful and professional tone.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Chatbot Integration Framework](/images/sec_008_diagram.svg)"
+          "body": "Conversational flows are designed using a visual builder. Best practices dictate that bots should introduce themselves clearly as AI, set expectations about capabilities, and offer guided options rather than relying purely on open text. Flows must account for edge cases, missing information, and variations in user responses, maintaining a helpful and professional tone."
         },
         {
           "title": "Fallback and Human Handoff",
@@ -2461,19 +2398,18 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: NLU Training and Intents",
-          "body": "Natural Language Understanding (NLU) is the core of our chatbot framework. BAs and developers collaborate to define \"Intents\" (what the user wants) and provide varied training phrases. Continuous training based on actual chat logs is required to improve the bot's accuracy over time. Entities are extracted from the text to gather specific parameters required for transactions.\n\n\n\n    </div>\n</div>"
+          "body": "Natural Language Understanding (NLU) is the core of our chatbot framework. BAs and developers collaborate to define \"Intents\" (what the user wants) and provide varied training phrases. Continuous training based on actual chat logs is required to improve the bot's accuracy over time. Entities are extracted from the text to gather specific parameters required for transactions.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"/images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Dialog Flow Design",
-          "body": "Conversational flows are designed using a visual builder. Best practices dictate that bots should introduce themselves clearly as AI, set expectations about capabilities, and offer guided options rather than relying purely on open text. Flows must account for edge cases, missing information, and variations in user responses, maintaining a helpful and professional tone.\n\n![แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Chatbot Integration Framework](/images/sec_008_diagram.svg)"
+          "body": "Conversational flows are designed using a visual builder. Best practices dictate that bots should introduce themselves clearly as AI, set expectations about capabilities, and offer guided options rather than relying purely on open text. Flows must account for edge cases, missing information, and variations in user responses, maintaining a helpful and professional tone."
         },
         {
           "title": "หัวข้อ: Fallback and Human Handoff",
           "body": "When the bot fails to understand a user multiple times, it must trigger a graceful fallback mechanism. The standard protocol is to seamlessly transfer the conversation to a human agent in the appropriate queue. The full chat transcript and extracted context are passed to the agent's desktop, ensuring the customer never has to repeat themselves."
         }
       ],
-      "image": "/images/sec_008_diagram.svg",
-      "imageAlt": "แผนผังสถาปัตยกรรมและกระบวนการทำงาน: Chatbot Integration Framework"
+      "image": "/images/sec_008_diagram.svg"
     }
   ],
   "trainingRecords": [
@@ -7746,616 +7682,551 @@ window.SYE_SAMPLE_DATA = {
   "workInstructions": [
     {
       "id": "WI-SYE-001",
-      "title": "API Deployment & Production Release Gate Process",
+      "title": "API Deployment Process",
       "section": "API & Integration Platform",
-      "objective": "Establish a standardized, auditable, zero-downtime release gate procedure for deploying mission-critical microservices and APIs onto AEON's VMware Tanzu Kubernetes (TKG) clusters and RedHat Enterprise Linux VMs, ensuring compliance with ISO 9001 and ISO 27001 standards.",
-      "scope": "Applies to all software releases, containerized microservices, BFF gateways, and background workers developed and maintained by the System Enabler (SYE) Division across SIT, UAT, and Production environments.",
-      "standards": [
-        "ISO 9001:2015 (QMS Clause 8.5)",
-        "ISO 27001:2022 (Control A.8.29, A.8.31, A.8.32)"
-      ],
-      "effectiveDate": "2025-01-10",
-      "reviewFrequency": "Annual (or post-major architecture change)",
-      "classification": "AEON Confidential / Internal Engineering Standard",
-      "preparedBy": "Pongsatorn N. (API Lead)",
-      "reviewedBy": "Rattanapakorn K. (API & Integration Lead)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.4",
-      "prerequisites": [
-        "Production Change Request (CR) approved in on-premise Jira by Head of SYE (Akkharasaran S.) and Enterprise Risk.",
-        "Release artifact built and verified via Harbor Private Registry (harbor-private.aeonth.com) with 0 critical/high CVEs.",
-        "Automated unit test coverage >= 80% and SonarQube Quality Gate Status = PASSED.",
-        "Staging / UAT sign-off document attached to Jira ticket by Quality Assurance Lead."
-      ],
+      "objective": "Define the standard procedure for deploying APIs to production environment to ensure consistency and minimize deployment risks.",
+      "scope": "All API deployments within API & Integration Platform section, covering development, staging, and production environments.",
       "procedure": [
         {
           "step": 1,
-          "title": "Pre-Deployment Verification & Release Freeze Check",
-          "description": "Verify that the change window is within approved deployment hours (22:00 - 04:00 for core financial APIs). Confirm no active BCP or DR drills are scheduled. Retrieve container digest from Harbor registry: `harbor-private.aeonth.com/sye-platform/api-service:v2.4.0`."
+          "title": "Pre-deployment Checklist",
+          "description": "Verify all code reviews are approved in GitHub. Confirm all unit tests pass with >80% coverage. Ensure deployment request is approved in JIRA."
         },
         {
           "step": 2,
-          "title": "Database Migration Pre-flight & Backup Snapshot",
-          "description": "Execute PostgreSQL pre-migration backup via pg_dump on on-premise RedHat DB cluster. Validate backward compatibility of all schema changes (additive columns only, no destructive drops). Run db-migration container with `--dry-run` flag in SIT/UAT before production application."
+          "title": "Staging Deployment",
+          "description": "Deploy to staging environment using CI/CD pipeline. Run integration tests. Verify API responses match expected schema."
         },
         {
           "step": 3,
-          "title": "Rolling Deployment on Tanzu Kubernetes (TKG)",
-          "description": "Apply Kubernetes manifest with `maxSurge: 25%` and `maxUnavailable: 0` to guarantee zero-downtime rolling update. Verify Readiness and Liveness probes on port 8080: `GET /healthz` must return 200 OK within 500ms before traffic is routed."
+          "title": "Performance Verification",
+          "description": "Run automated load tests against staging. Ensure response time is <200ms under expected peak load."
         },
         {
           "step": 4,
-          "title": "Post-Deployment Synthetic Smoke Testing & Telemetry Audit",
-          "description": "Run automated Postman / Newman test suite against production endpoints via internal Ingress. Monitor Prometheus / Grafana dashboard for 30 minutes: 5xx error rate must remain < 0.01% and p99 latency < 150ms."
+          "title": "Security Scan",
+          "description": "Run SAST and DAST tools. Resolve any high or critical vulnerabilities before proceeding."
         },
         {
           "step": 5,
-          "title": "Change Closure & Audit Trail Archival",
-          "description": "Update Jira CR status to 'Closed - Deployed'. Attach deployment logs, container image digest, SonarQube report, and Grafana telemetry screenshots for ISO 9001 / ISO 27001 audit trail."
+          "title": "Production Deployment",
+          "description": "Execute deployment script for production during approved maintenance window. Monitor deployment logs."
+        },
+        {
+          "step": 6,
+          "title": "Post-deployment Validation",
+          "description": "Perform smoke tests on production endpoints. Verify monitoring dashboards for anomaly detection."
         }
       ],
-      "rollbackProcedure": "If error rate exceeds 0.05% or critical severity alert triggers within 15 minutes of deployment: 1. Immediately execute `kubectl rollout undo deployment/api-service -n sye-prod`. 2. If DB migration occurred, execute backward-compatible rollback script `down.sql`. 3. Notify SYE Lead (Akkharasaran S.) and Incident Manager via emergency channel.",
       "references": [
-        "AEON Change Management Policy (POL-IT-004 v3.1)",
-        "VMware Tanzu Enterprise Deployment Guide (DOC-TKG-2025)",
-        "Harbor Private Registry & Image Security Guidelines"
+        "CI/CD Pipeline Documentation",
+        "AEON Deployment Policy v2.0"
       ],
+      "version": "2.1",
+      "effectiveDate": "2025-06-15",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-01-15",
-          "author": "Pongsatorn N.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial baseline release for SYE API deployment standard."
+          "date": "2025-01-10",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "1.8",
-          "date": "2024-08-20",
-          "author": "Athitaya B.",
-          "approver": "Rattanapakorn K.",
-          "changes": "Integrated SonarQube automated quality gate blocking."
+          "version": "1.5",
+          "date": "2025-08-15",
+          "changes": "Updated CI/CD pipeline steps for Jenkins migration",
+          "author": "Akkharasaran S."
         },
         {
           "version": "2.0",
-          "date": "2025-01-10",
-          "author": "Pongsatorn N.",
-          "approver": "Akkharasaran S.",
-          "changes": "Migrated to VMware Tanzu Kubernetes (TKG) port 8080 multi-pod zero-downtime specification."
+          "date": "2025-02-20",
+          "changes": "Added rollback procedure and post-deployment verification",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.4",
-          "date": "2025-06-01",
-          "author": "Pongsatorn N.",
-          "approver": "Akkharasaran S.",
-          "changes": "Updated with ISO 22301 BCP pre-flight checks and Harbor container vulnerability gating."
+          "version": "2.1",
+          "date": "2025-06-15",
+          "changes": "Updated staging environment configuration",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-002",
-      "title": "Production Incident Management, Severity Escalation & BCP Execution",
-      "section": "Customer Experience Systems",
-      "objective": "Define end-to-end incident management protocols, severity classification criteria (P1-P4), emergency escalation pathways, and ISO 22301 Business Continuity Plan (BCP) invocation for the System Enabler Division.",
-      "scope": "Covers all production outages, performance degradations, security compromises, and infrastructure disruptions impacting SYE services.",
-      "standards": [
-        "ISO 22301:2019 (BCMS Clause 8.4)",
-        "ISO 27001:2022 (Control A.5.24 - A.5.28)",
-        "ISO 9001:2015 (Clause 8.7)"
-      ],
-      "effectiveDate": "2025-01-15",
-      "reviewFrequency": "Semi-Annual",
-      "classification": "AEON Confidential / Emergency Operating Procedure",
-      "preparedBy": "Methinee K. (SRE Engineer)",
-      "reviewedBy": "Akkharasaran S. (Head of SYE)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "3.0",
-      "prerequisites": [
-        "Access to on-premise PagerDuty / Enterprise Alerting system",
-        "SSH Bastion key to RedHat DR nodes",
-        "Incident Commander authorization"
-      ],
+      "title": "Incident Escalation Procedure",
+      "section": "All",
+      "objective": "Provide clear guidelines for escalating system incidents to ensure timely resolution and communication.",
+      "scope": "All production system incidents affecting AEON services.",
       "procedure": [
         {
           "step": 1,
-          "title": "Triage & Severity Classification (P1 - P4)",
-          "description": "Evaluate system impact within 5 minutes of automated alert. P1 (Critical Outage / Core Financial System Down, RTO <= 15m), P2 (Major Degradation / High Error Rates), P3 (Minor Feature Bug), P4 (Cosmetic / Informational)."
+          "title": "Incident Detection",
+          "description": "Identify incident through monitoring alerts or customer reports. Log the incident in Jira Service Management."
         },
         {
           "step": 2,
-          "title": "Incident Bridge & Stakeholder Notification",
-          "description": "For P1/P2 incidents, activate emergency MS Teams Incident Bridge. Designate Incident Commander (Methinee K. / Akkharasaran S.). Send automated SMS/Email flash update to SYE Management within 10 minutes."
+          "title": "Severity Assessment",
+          "description": "Assess the impact and urgency to determine the incident severity (P1 to P4) based on the standard matrix."
         },
         {
           "step": 3,
-          "title": "Root Cause Isolation & Telemetry Analysis",
-          "description": "Inspect centralized Prometheus / Grafana metrics, Jaeger distributed tracing, and Loki / Elasticsearch logs. Identify faulty microservice, database deadlock, network partition, or Kafka consumer group lag."
+          "title": "Initial Response",
+          "description": "L1/L2 support investigates and attempts to resolve. If unresolved within 30 minutes for P1/P2, proceed to escalation."
         },
         {
           "step": 4,
-          "title": "Disaster Recovery (DR) & BCP Invocation Protocol",
-          "description": "If primary DC fails or RTO exceeds 15 minutes, Incident Commander declares BCP activation under ISO 22301. Reroute DNS / F5 Big-IP traffic to secondary Disaster Recovery Site. Verify synchronous database replication state before promoting DR primary node."
+          "title": "Escalation to Engineering",
+          "description": "Page the on-call engineer for the affected service. Provide all relevant logs and initial findings."
         },
         {
           "step": 5,
-          "title": "Post-Incident Review (PIR) & Blameless Root Cause Analysis",
-          "description": "Conduct mandatory PIR meeting within 48 hours. Document timeline, root cause, preventative action items, and audit findings in Confluence. Track remediation tasks in Jira."
+          "title": "Management Notification",
+          "description": "For P1 incidents, notify the Department Head and IT Director immediately. Send initial communication to stakeholders."
+        },
+        {
+          "step": 6,
+          "title": "War Room Activation",
+          "description": "For critical incidents, establish a virtual war room (Teams meeting) and assemble necessary subject matter experts."
         }
       ],
-      "rollbackProcedure": "Post-recovery failback from DR to Primary DC must only occur during scheduled maintenance window (01:00 - 04:00) with complete bi-directional data consistency verification.",
       "references": [
-        "AEON Enterprise BCP Framework v4.0",
-        "ISO 22301 Disaster Recovery Runbook",
-        "Enterprise Escalation Roster 2025-2026"
+        "Incident Severity Matrix",
+        "On-Call Roster Policy"
       ],
+      "version": "1.2",
+      "effectiveDate": "2025-11-01",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-02-01",
-          "author": "Methinee K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial incident classification standard."
+          "date": "2025-02-05",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.1",
-          "date": "2024-11-15",
-          "author": "Methinee K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Added Tanzu K8s multi-zone failover escalation triggers."
+          "version": "1.1",
+          "date": "2025-06-20",
+          "changes": "Updated war room activation criteria",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "3.0",
-          "date": "2025-01-15",
-          "author": "Methinee K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Aligned with ISO 22301 Business Continuity Management System recertification."
+          "version": "1.2",
+          "date": "2025-11-01",
+          "changes": "Revised severity matrix alignment",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-003",
-      "title": "Secure Code Review, SonarQube Quality Gate & Git Branching Standard",
-      "section": "Technology Standards & Quality",
-      "objective": "Enforce uniform software craftsmanship, peer code review discipline, automated static application security testing (SAST), and Git trunk-based / release branching standards across all SYE engineering repositories.",
-      "scope": "All Go, Next.js / TypeScript, Python, and SQL codebases managed under the SYE GitHub enterprise organization.",
-      "standards": [
-        "ISO 27001:2022 (Control A.8.28, A.8.32)",
-        "ISO 9001:2015 (Clause 8.5.1)",
-        "OWASP Top 10:2021 Security Standard"
-      ],
-      "effectiveDate": "2025-02-01",
-      "reviewFrequency": "Annual",
-      "classification": "AEON Confidential / Engineering Standard",
-      "preparedBy": "Chirawat K. (Software Engineer)",
-      "reviewedBy": "Pipat H. (Software Engineer Lead)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.2",
-      "prerequisites": [
-        "SonarQube Enterprise on-premise account",
-        "GPG Signing key for Git commits",
-        "GitHub branch protection rules active"
-      ],
+      "title": "Code Review Checklist & Process",
+      "section": "All",
+      "objective": "Standardize the code review process to maintain code quality, security, and maintainability.",
+      "scope": "All code commits destined for main/production branches across all sections.",
       "procedure": [
         {
           "step": 1,
-          "title": "Branching Strategy & Pull Request (PR) Requirements",
-          "description": "Branch naming: `feat/SYE-xxx-description`, `fix/SYE-xxx-description`. Direct commits to `main` or `release/*` branches are strictly blocked via GitHub branch protection. PR title must follow Conventional Commits (e.g. `feat(api): support idempotent loan repayment`)."
+          "title": "Create Pull Request",
+          "description": "Developer creates a PR with clear description, linking to relevant Jira ticket. Ensure build passes."
         },
         {
           "step": 2,
-          "title": "Automated Pre-Commit & CI Validation Gates",
-          "description": "Upon PR creation, GitHub Actions runner executes: 1. `golangci-lint` / `eslint` static analysis. 2. Automated unit tests with `-race` flag. 3. `gitleaks` secret detection. 4. SonarQube SAST scan. PR merge is blocked if any check fails."
+          "title": "Assign Reviewers",
+          "description": "Assign at least two reviewers, including one senior developer or tech lead from the respective section."
         },
         {
           "step": 3,
-          "title": "Mandatory Peer Code Review Standards",
-          "description": "Every PR requires at least 2 approving reviews from designated senior engineers (e.g., Pongsatorn N., Pipat H., or Chirawat K.). Reviewers must verify: Clean Architecture separation, parameterized SQL queries, zero hardcoded credentials, error handling, and structured logging."
+          "title": "Functionality Check",
+          "description": "Reviewers verify that the code meets the acceptance criteria and handles edge cases correctly."
         },
         {
           "step": 4,
-          "title": "Security & OWASP Top 10 Compliance Verification",
-          "description": "Verify that all user inputs are sanitized with strict schema validation. Check that authorization tokens are validated at the domain boundary. Confirm no sensitive customer PII is logged in plain text."
+          "title": "Code Quality Check",
+          "description": "Check for adherence to coding standards, proper naming conventions, and modularity. Ensure no hardcoded credentials."
         },
         {
           "step": 5,
-          "title": "Squash-and-Merge & Release Tagging",
-          "description": "Merge approved PRs via 'Squash and Merge' to preserve linear git history. Tag release commit with semantic versioning (`git tag -a v2.4.0 -m 'Release v2.4.0'`). Signed GPG signature is verified automatically."
+          "title": "Test Coverage",
+          "description": "Verify that appropriate unit and integration tests are included and pass. Aim for >80% coverage."
+        },
+        {
+          "step": 6,
+          "title": "Approval & Merge",
+          "description": "Once all comments are addressed and approvals received, the author merges the PR via squash and merge."
         }
       ],
-      "rollbackProcedure": "In case of post-merge regression on release branch, create emergency `revert` PR with senior lead override approval.",
       "references": [
-        "AEON Secure Coding Standard v3.0",
-        "OWASP Application Security Verification Standard (ASVS 4.0)"
+        "AEON Coding Standards",
+        "Secure Coding Guidelines"
       ],
+      "version": "1.4",
+      "effectiveDate": "2025-01-10",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-02-10",
-          "author": "Chirawat K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial code review guideline."
+          "date": "2025-01-15",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.0",
-          "date": "2024-10-05",
-          "author": "Pipat H.",
-          "approver": "Akkharasaran S.",
-          "changes": "Added SonarQube automated PR decoration and gitleaks secret blocker."
+          "version": "1.2",
+          "date": "2025-05-10",
+          "changes": "Added security checklist items",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.2",
-          "date": "2025-02-01",
-          "author": "Chirawat K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Mandated GPG signed commits and 2-approver policy for financial repositories."
+          "version": "1.3",
+          "date": "2025-09-05",
+          "changes": "Updated required reviewer count",
+          "author": "Akkharasaran S."
+        },
+        {
+          "version": "1.4",
+          "date": "2025-01-10",
+          "changes": "Mandated squash and merge strategy",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-004",
-      "title": "Change Management, CAB Governance & Jira Workflows",
-      "section": "User Application Systems",
-      "objective": "Establish formal procedures for requesting, assessing risk, approving, and auditing IT changes across all AEON SYE production and non-production systems, adhering strictly to ISO 9001 and ISO 27001 change control governance.",
-      "scope": "Applies to software releases, infrastructure configuration updates, database schema migrations, and firewall rule modifications.",
-      "standards": [
-        "ISO 9001:2015 (Clause 8.5.6 Control of Changes)",
-        "ISO 27001:2022 (Control A.8.32 Change Management)"
-      ],
-      "effectiveDate": "2025-01-20",
-      "reviewFrequency": "Annual",
-      "classification": "AEON Confidential / Governance Standard",
-      "preparedBy": "Maneerut B. (Business Analyst)",
-      "reviewedBy": "Waranya T. (UAS Lead)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.1",
-      "prerequisites": [
-        "Approved Jira Epic / Story",
-        "Completed Test Summary Report",
-        "Risk Assessment & Rollback Plan"
-      ],
+      "title": "Change Request & Approval Process",
+      "section": "All",
+      "objective": "Define the process for submitting, reviewing, and approving changes to production systems.",
+      "scope": "All infrastructure, database, and application changes deployed to production environments.",
       "procedure": [
         {
           "step": 1,
-          "title": "Change Request (CR) Creation in Enterprise Jira",
-          "description": "Submit Jira ticket with issue type 'Change Request'. Fill mandatory fields: Business Justification, Systems Impacted, Risk Level (Low/Medium/High/Critical), Target Change Window, Rollback Plan, and Communication Plan."
+          "title": "Change Request Submission",
+          "description": "Submit a CR ticket in Jira detailing the change, business justification, and implementation plan."
         },
         {
           "step": 2,
-          "title": "Pre-CAB Technical Impact Assessment",
-          "description": "Section Lead (Rattanapakorn K., Akkharasaran S., or Waranya T.) conducts technical peer assessment. Confirm UAT sign-off document is attached and performance load test benchmarks meet SLA."
+          "title": "Risk Assessment",
+          "description": "Provide a detailed risk assessment, including potential impact on other systems and mitigation strategies."
         },
         {
           "step": 3,
-          "title": "Change Advisory Board (CAB) Review & Approval",
-          "description": "Present CR at weekly CAB meeting. Obtain formal approvals from IT Security, Infrastructure Operations, Compliance, and Head of SYE (Akkharasaran S.)."
+          "title": "Rollback Plan",
+          "description": "Document a clear, step-by-step rollback plan in case the deployment fails or causes issues."
         },
         {
           "step": 4,
-          "title": "Change Execution & Real-Time Monitoring",
-          "description": "Execute change within approved window. Log execution start and finish timestamps in Jira. Maintain active monitoring bridge during execution."
+          "title": "CAB Review",
+          "description": "Present the CR to the Change Advisory Board (CAB) during the weekly meeting for technical and business review."
         },
         {
           "step": 5,
-          "title": "Post-Implementation Review (PIR) & Ticket Closure",
-          "description": "Verify production operational status. Obtain Business Owner confirmation. Complete PIR section in Jira and close ticket within 24 hours of release."
+          "title": "Approval",
+          "description": "Obtain formal approval from the CAB and relevant business owners before proceeding with the change."
+        },
+        {
+          "step": 6,
+          "title": "Implementation & Closure",
+          "description": "Execute the change during the approved window. Update CR status to Closed upon successful verification."
         }
       ],
-      "rollbackProcedure": "If unexpected issues occur during execution and cannot be resolved within 30% of change window, immediately initiate approved rollback procedure and notify CAB chair.",
       "references": [
-        "AEON Enterprise IT Governance Policy v5.0",
-        "ISO 9001 Quality Management Manual"
+        "ITSM Change Management Policy",
+        "CAB Meeting Charter"
       ],
+      "version": "2.0",
+      "effectiveDate": "2025-03-01",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-03-01",
-          "author": "Maneerut B.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial release of Jira change control standard."
+          "date": "2025-02-20",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.1",
-          "date": "2025-01-20",
-          "author": "Buntita F.",
-          "approver": "Waranya T.",
-          "changes": "Updated CAB workflow thresholds and automated UAT evidence attachment."
+          "version": "1.5",
+          "date": "2025-10-15",
+          "changes": "Streamlined approval process for minor changes",
+          "author": "Akkharasaran S."
+        },
+        {
+          "version": "2.0",
+          "date": "2025-03-01",
+          "changes": "Integrated with new Jira ITSM workflows",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-005",
-      "title": "System Telemetry, Prometheus/Grafana Alerting & Runbook Execution",
+      "title": "System Monitoring & Alerting Runbook",
       "section": "Customer Experience Systems",
-      "objective": "Standardize application metric instrumentation, distributed tracing, centralized log aggregation, alert threshold configurations, and runbook response procedures for all SYE on-premise systems.",
-      "scope": "All microservices, BFF nodes, databases, message queues, and Kubernetes worker nodes in SYE.",
-      "standards": [
-        "ISO 27001:2022 (Control A.8.15 Logging)",
-        "ISO 22301:2019 (Clause 8.2 Business Impact Analysis)"
-      ],
-      "effectiveDate": "2025-02-15",
-      "reviewFrequency": "Annual",
-      "classification": "AEON Confidential / Operations Runbook",
-      "preparedBy": "Methinee K. (SRE Engineer)",
-      "reviewedBy": "Akkharasaran S. (Head of SYE)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.0",
-      "prerequisites": [
-        "Access to Grafana on-premise monitoring portal",
-        "Prometheus alert manager write permissions",
-        "K8s cluster reader role"
-      ],
+      "objective": "Standardize monitoring setup and provide actionable runbooks for common system alerts.",
+      "scope": "Monitoring infrastructure and alert response for Customer Experience Systems components.",
       "procedure": [
         {
           "step": 1,
-          "title": "Application Metric Instrumentation (Golden Signals)",
-          "description": "All backend services must expose `/metrics` on port 8080 in OpenMetrics format. Instrument four Golden Signals: Latency (histogram), Traffic (requests per second), Errors (5xx rate counter), and Saturation (CPU, memory, goroutines, DB pool usage)."
+          "title": "Dashboard Setup",
+          "description": "Ensure standard Grafana dashboards are deployed for the service, covering RED (Rate, Errors, Duration) metrics."
         },
         {
           "step": 2,
-          "title": "Prometheus Alerting Rule Definition",
-          "description": "Configure alerts in Alertmanager: 1. High Error Rate (> 1% for 3 min -> P2). 2. Pod CrashLoopBackOff (>= 3 restarts -> P2). 3. Database Connection Pool Saturation (> 85% for 5 min -> P1). 4. Kafka Consumer Lag (> 5000 messages -> P2)."
+          "title": "Alert Thresholds",
+          "description": "Configure alerts in Prometheus based on defined SLAs (e.g., Error Rate > 1%, p99 Latency > 500ms)."
         },
         {
           "step": 3,
-          "title": "Centralized Logging & PII Masking Mandate",
-          "description": "Structured JSON logging via `zap` / `zerolog`. Mask all sensitive customer fields (Card Number, Citizen ID, Telephone) using regex filter before writing to standard stdout for Vector / FluentBit ingestion into on-premise Elasticsearch."
+          "title": "Alert Routing",
+          "description": "Route critical alerts to PagerDuty for on-call notification. Route warning alerts to appropriate Slack channels."
         },
         {
           "step": 4,
-          "title": "On-Call Runbook Response & Diagnostic Triaging",
-          "description": "When alert fires, on-call engineer checks designated Grafana dashboard. Execute diagnostic runbook: inspect pod logs `kubectl logs -l app=service-name -n sye-prod --tail=200`, check DB active connections, inspect memory heap dumps."
+          "title": "Runbook Linkage",
+          "description": "Ensure every alert definition includes a link to the specific runbook for resolving the issue."
         },
         {
           "step": 5,
-          "title": "Capacity Planning & Quarterly Threshold Review",
-          "description": "Review system resource utilization monthly. Adjust HPA (Horizontal Pod Autoscaler) limits and VM resource allocations based on 95th percentile peak traffic projections."
+          "title": "High CPU/Memory Alert Response",
+          "description": "Check for memory leaks or unusually high load. Consider scaling up resources or restarting instances if appropriate."
+        },
+        {
+          "step": 6,
+          "title": "High Error Rate Alert Response",
+          "description": "Review application logs for exceptions. Check dependencies (DB, downstream APIs) for failures."
         }
       ],
-      "rollbackProcedure": "If an alert threshold adjustment causes alert storm or missed critical event, immediately revert Alertmanager config git commit.",
       "references": [
-        "Google SRE Book - Monitoring Distributed Systems",
-        "AEON Logging & Telemetry Standard v2.0"
+        "Monitoring Strategy Guide",
+        "PagerDuty Configuration Manual"
       ],
+      "version": "1.1",
+      "effectiveDate": "2025-12-10",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-04-10",
-          "author": "Methinee K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial SRE monitoring guideline."
+          "date": "2025-05-15",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.0",
-          "date": "2025-02-15",
-          "author": "Methinee K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Integrated distributed tracing and automated PII log masking checks."
+          "version": "1.1",
+          "date": "2025-12-10",
+          "changes": "Added RED metrics standard",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-006",
-      "title": "Engineering Onboarding, Access Provisioning & Hardware Security Standard",
-      "section": "Customer Experience Systems",
-      "objective": "Define end-to-end procedures for onboarding new permanent staff and outsource engineers into the System Enabler (SYE) Division, ensuring secure identity provisioning, hardware baseline hardening, and mandatory ISO compliance training completion.",
-      "scope": "All new hires, contractors, outsource developers, and internal transfers joining the SYE Division at Sermmit Tower 14th Floor.",
-      "standards": [
-        "ISO 27001:2022 (Control A.6.1 - A.6.8 Human Resource Security)",
-        "ISO 9001:2015 (Clause 7.2 Competence)"
-      ],
-      "effectiveDate": "2025-01-05",
-      "reviewFrequency": "Annual",
-      "classification": "AEON Confidential / HR & Security Standard",
-      "preparedBy": "Kingkarn P. (Experience Strategy & UX/UI Lead)",
-      "reviewedBy": "Akkharasaran S. (Head of SYE)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.3",
-      "prerequisites": [
-        "Signed Non-Disclosure Agreement (NDA)",
-        "Approved IT Access Request Form (ARF)",
-        "Assigned Mentor / Lead"
-      ],
+      "title": "New Employee Onboarding Checklist",
+      "section": "All",
+      "objective": "Ensure a smooth and consistent onboarding experience for new hires across the department.",
+      "scope": "All new employees joining any section within the department.",
       "procedure": [
         {
           "step": 1,
-          "title": "Day 1 Welcome, Hardware Provisioning & Clean Desk Policy",
-          "description": "Provide enterprise laptop hardened with BitLocker encryption, CrowdStrike EDR, and corporate certificates. Brief employee on Sermmit Tower 14th Fl. workplace guidelines (09:00 - 18:00 core hours), visitor badge rules, and strict Clean Desk / Clean Screen policy under ISO 27001."
+          "title": "Hardware & Access Setup",
+          "description": "Request laptop, ID card, and basic network access prior to start date."
         },
         {
           "step": 2,
-          "title": "Identity, Git & Least-Privilege Role Access Provisioning",
-          "description": "Provision corporate email (`@aeon.co.th`), on-premise Jira / Confluence access, and GitHub enterprise organization membership. Assign RBAC permissions strictly following principle of least privilege based on assigned Section."
+          "title": "System Accounts",
+          "description": "Provision accounts for Email, Slack, Jira, Confluence, and relevant development environments."
         },
         {
           "step": 3,
-          "title": "SYE Academy Curriculum Enrollment & Step-by-Step Training",
-          "description": "Enroll new engineer in SYE Academy online portal. Mandate completion of Step 1 (Division Overview, ISO Governance, On-Prem Architecture), Step 2 (Role-Specific Technical Competency), and Step 3 (Section Platform Architecture) within first 30 days."
+          "title": "Welcome & Orientation",
+          "description": "Conduct department welcome meeting. Provide overview of organizational structure and culture."
         },
         {
           "step": 4,
-          "title": "Development Environment Setup & Harbor Proxy Configuration",
-          "description": "Guide engineer through local setup using standard tools (Docker, Go 1.25, Node.js 20, VS Code). Configure Harbor private registry and Sonatype npm proxy (`https://sonatype.aeonth.com/repository/sye-npm-proxy/`). Verify remote on-premise VPN and DB connectivity."
+          "title": "Mandatory Training",
+          "description": "Ensure completion of General courses (Company Policy, InfoSec, PDPA) within the first week."
         },
         {
           "step": 5,
-          "title": "30-Day Evaluation & Knowledge Assessment Certification",
-          "description": "Verify that all 100% required training courses and assessments in SYE Academy are passed with score >= 80%. Mentor and Section Lead conduct 30-day review and approve graduation to active feature development."
+          "title": "Role-Specific Setup",
+          "description": "Provide access to specific tools (e.g., GitHub for devs, Figma for design) and assign role-based training."
+        },
+        {
+          "step": 6,
+          "title": "Buddy Assignment",
+          "description": "Assign a senior team member as an onboarding buddy for the first 30 days."
         }
       ],
-      "rollbackProcedure": "If employee fails security background check or terminates contract, immediately invoke Instant Offboarding Runbook (revoke Active Directory, GitHub, and VPN access within 30 minutes).",
       "references": [
-        "AEON Human Resource Security Policy",
-        "SYE Engineering Onboarding Handbook 2025"
+        "HR Onboarding Policy",
+        "Department Access Matrix"
       ],
+      "version": "1.3",
+      "effectiveDate": "2025-04-05",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-01-20",
-          "author": "Kingkarn P.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial engineering onboarding checklist."
+          "date": "2025-03-01",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.0",
-          "date": "2024-09-01",
-          "author": "Kingkarn P.",
-          "approver": "Akkharasaran S.",
-          "changes": "Added outsource vendor specific access controls."
+          "version": "1.1",
+          "date": "2025-08-20",
+          "changes": "Updated software access list",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.3",
-          "date": "2025-01-05",
-          "author": "Kingkarn P.",
-          "approver": "Akkharasaran S.",
-          "changes": "Integrated SYE Academy automated roadmap validation and ISO 27001 onboarding compliance."
+          "version": "1.2",
+          "date": "2025-01-15",
+          "changes": "Added mandatory training requirements",
+          "author": "Akkharasaran S."
+        },
+        {
+          "version": "1.3",
+          "date": "2025-04-05",
+          "changes": "Included buddy system",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-007",
-      "title": "On-Premise PostgreSQL & Redis Backup, DR Replication & Failover Verification",
+      "title": "Database Backup & Recovery Procedure",
       "section": "API & Integration Platform",
-      "objective": "Establish comprehensive database backup schedules, point-in-time recovery (PITR) procedures, cross-data center asynchronous/synchronous streaming replication, and quarterly Disaster Recovery failover drills for PostgreSQL 16 and Redis clusters running on on-premise RedHat Enterprise Linux VMs.",
-      "scope": "All transactional database clusters, caching tiers, and data persistence layers maintained by the SYE Division.",
-      "standards": [
-        "ISO 22301:2019 (Clause 8.4 Business Continuity Plans)",
-        "ISO 27001:2022 (Control A.8.13 Information Backup)"
-      ],
-      "effectiveDate": "2025-02-10",
-      "reviewFrequency": "Semi-Annual",
-      "classification": "AEON Confidential / Database Operating Standard",
-      "preparedBy": "Pongsatorn N. (API Lead)",
-      "reviewedBy": "Rattanapakorn K. (API & Integration Lead)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.5",
-      "prerequisites": [
-        "RedHat VM root/postgres sudo credentials",
-        "Access to backup SAN storage mount",
-        "Patroni / pgBackRest administrative privileges"
-      ],
+      "objective": "Define procedures for backing up production databases and restoring data in case of failure.",
+      "scope": "All relational and NoSQL databases managed by the API & Integration Platform section.",
       "procedure": [
         {
           "step": 1,
-          "title": "Automated Daily Full Backup & Continuous WAL Archival",
-          "description": "pgBackRest executes automated full backup every night at 01:00. Continuous Write-Ahead Log (WAL) archiving pushes compressed chunks every 60 seconds to dedicated backup storage on secondary SAN, ensuring RPO <= 1 minute."
+          "title": "Automated Backups",
+          "description": "Ensure daily full backups and hourly incremental backups are configured for all production databases."
         },
         {
           "step": 2,
-          "title": "Backup Encryption, Integrity Verification & Retention Policy",
-          "description": "All backup archives are encrypted with AES-256 keys managed in Vault. Automated cron job runs weekly verification test: restores latest full backup to isolated staging sandbox and executes synthetic queries to verify data integrity. Retain daily backups for 90 days, monthly for 7 years."
+          "title": "Backup Verification",
+          "description": "Automated script to verify backup integrity weekly. Send report to SRE channel."
         },
         {
           "step": 3,
-          "title": "Point-in-Time Recovery (PITR) Execution Procedure",
-          "description": "In case of accidental data corruption: 1. Determine target recovery timestamp. 2. Initialize new target PostgreSQL cluster. 3. Execute `pgbackrest --stanza=sye_main --type=time '--target=2025-06-15 14:30:00' restore`. 4. Verify table counts before updating connection strings."
+          "title": "Offsite Storage",
+          "description": "Ensure backups are encrypted and replicated to a secondary geographical region for disaster recovery."
         },
         {
           "step": 4,
-          "title": "Cross-DC Streaming Replication & Patroni High Availability",
-          "description": "Maintain primary node at Sermmit DC and standby replicas at secondary Disaster Recovery Site. Patroni cluster with distributed etcd consensus manages automatic leader election and sub-second failover in case of hardware failure."
+          "title": "Recovery Request",
+          "description": "DBA or SRE receives an approved request to restore data, identifying the specific point in time required."
         },
         {
           "step": 5,
-          "title": "Quarterly Disaster Recovery (DR) Drill & Evidence Archival",
-          "description": "Conduct mandatory DR failover drill every 6 months under ISO 22301. Simulate primary DC disconnection, measure actual RTO (< 15 min) and RPO (0 data loss), document execution report signed by Head of SYE (Akkharasaran S.) for external auditors."
+          "title": "Restoration Process",
+          "description": "Restore data to a staging environment first for validation. Once validated, apply to production carefully."
+        },
+        {
+          "step": 6,
+          "title": "Post-Recovery Audit",
+          "description": "Verify data consistency and application functionality. Document the recovery event and time taken."
         }
       ],
-      "rollbackProcedure": "If database replica promotion fails during maintenance, immediately revert DNS to original primary node and restart standby sync.",
       "references": [
-        "PostgreSQL 16 High Availability & DR Architecture Guide",
-        "AEON Data Protection & Retention Policy v4.0"
+        "Data Retention Policy",
+        "Disaster Recovery Plan"
       ],
+      "version": "1.1",
+      "effectiveDate": "2025-09-20",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-02-15",
-          "author": "Pongsatorn N.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial database backup procedure."
+          "date": "2025-04-10",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.0",
-          "date": "2024-10-20",
-          "author": "Pongsatorn N.",
-          "approver": "Rattanapakorn K.",
-          "changes": "Upgraded to pgBackRest continuous WAL archiving and automated integrity testing."
-        },
-        {
-          "version": "2.5",
-          "date": "2025-02-10",
-          "author": "Pongsatorn N.",
-          "approver": "Akkharasaran S.",
-          "changes": "Aligned with PostgreSQL 16 on RedHat Enterprise Linux 9 and quarterly ISO 22301 BCP drill mandate."
+          "version": "1.1",
+          "date": "2025-09-20",
+          "changes": "Updated cross-region replication steps",
+          "author": "Akkharasaran S."
         }
       ]
     },
     {
       "id": "WI-SYE-008",
-      "title": "RedHat Enterprise Linux & Tanzu Kubernetes Infrastructure Security Patch Management",
-      "section": "Technology Standards & Quality",
-      "objective": "Establish a rigorous, risk-based patch management lifecycle for scanning, assessing, testing, and deploying operating system updates, kernel patches, container base images, and Kubernetes cluster upgrades across all SYE on-premise infrastructure in compliance with ISO 27001.",
-      "scope": "All RedHat Enterprise Linux (RHEL) VMs, Tanzu Kubernetes Grid (TKG) control plane and worker nodes, Harbor registry images, and Redis/Kafka server instances.",
-      "standards": [
-        "ISO 27001:2022 (Control A.8.8 Management of Technical Vulnerabilities)",
-        "ISO 9001:2015 (Clause 8.5.1)"
-      ],
-      "effectiveDate": "2025-03-01",
-      "reviewFrequency": "Quarterly",
-      "classification": "AEON Confidential / Security Standard",
-      "preparedBy": "Chirawat K. (Software Engineer)",
-      "reviewedBy": "Pipat H. (Software Engineer Lead)",
-      "approvedBy": "Akkharasaran S. (Head of System Enabler)",
-      "version": "2.1",
-      "prerequisites": [
-        "RedHat Satellite server access",
-        "Harbor private vulnerability scanner (Trivy)",
-        "Approved Monthly Maintenance Window"
-      ],
+      "title": "Security Patch Management Process",
+      "section": "Customer Experience Systems",
+      "objective": "Ensure timely application of security patches to servers, libraries, and applications to minimize vulnerabilities.",
+      "scope": "All servers, containers, and application dependencies within the Customer Experience Systems environment.",
       "procedure": [
         {
           "step": 1,
-          "title": "Vulnerability Scanning & CVE Risk Rating (CVSS)",
-          "description": "Weekly automated vulnerability scans across all RHEL servers and container registries. Classify CVEs: Critical (CVSS >= 9.0 -> Patch within 48h), High (CVSS 7.0-8.9 -> Patch within 14 days), Medium/Low (Routine monthly cycle)."
+          "title": "Vulnerability Scanning",
+          "description": "Run daily automated vulnerability scans on all infrastructure and application code repositories."
         },
         {
           "step": 2,
-          "title": "Staging Testing & Compatibility Validation",
-          "description": "Deploy security patches first to isolated SIT/UAT environment via RedHat Satellite. Run automated regression test suite across all SYE APIs to verify zero library incompatibilities or kernel module breaks."
+          "title": "Patch Identification",
+          "description": "Review scan reports and vendor advisories. Identify critical and high-severity patches required."
         },
         {
           "step": 3,
-          "title": "Production Patch Deployment & Node Drain Strategy",
-          "description": "Execute rolling patching on Tanzu K8s cluster: 1. `kubectl cordon <node>`. 2. `kubectl drain <node> --ignore-daemonsets`. 3. Apply RHEL OS updates `yum update --security -y`. 4. Reboot node if kernel updated. 5. `kubectl uncordon <node>`. Verify all pods healthy before moving to next node."
+          "title": "Testing in Non-Production",
+          "description": "Apply patches to development and staging environments first. Run full regression test suite."
         },
         {
           "step": 4,
-          "title": "Container Base Image Rebuild & Harbor Rescan",
-          "description": "Rebuild official base images (`harbor-private.aeonth.com/public-images/golang:1.25.0-alpine`, `node:20-alpine`) with latest security patches. Trigger automated CI/CD pipeline to redeploy dependent microservices."
+          "title": "Change Management",
+          "description": "Create a Change Request for applying patches to production, detailing the patching schedule."
         },
         {
           "step": 5,
-          "title": "Security Patch Compliance Reporting & Audit Sign-Off",
-          "description": "Generate quarterly Vulnerability Remediation Report. Ensure 100% of Critical and High CVEs are resolved within SLA. Submit signed report to AEON Information Security & ISO 27001 Auditor."
+          "title": "Production Deployment",
+          "description": "Apply patches during the approved maintenance window. Utilize rolling updates for zero-downtime if possible."
+        },
+        {
+          "step": 6,
+          "title": "Verification",
+          "description": "Re-run vulnerability scans post-deployment to confirm successful application of patches."
         }
       ],
-      "rollbackProcedure": "If kernel update or security package causes boot failure or severe regression, reboot VM into previous kernel version via GRUB menu and restore previous RPM package state.",
       "references": [
-        "AEON Technical Vulnerability Management Standard",
-        "RedHat Enterprise Linux Security Guide"
+        "Vulnerability Management Policy",
+        "Security Baseline Standard"
       ],
+      "version": "1.2",
+      "effectiveDate": "2025-05-15",
+      "preparedBy": "Akkharasaran S.",
+      "reviewedBy": "Akkharasaran S.",
+      "approvedBy": "Akkharasaran S. (Lead System Enabler)",
       "revisionHistory": [
         {
           "version": "1.0",
-          "date": "2024-03-15",
-          "author": "Chirawat K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Initial patch management standard."
+          "date": "2025-06-05",
+          "changes": "Initial release",
+          "author": "Akkharasaran S."
         },
         {
-          "version": "2.1",
-          "date": "2025-03-01",
-          "author": "Chirawat K.",
-          "approver": "Akkharasaran S.",
-          "changes": "Incorporated Tanzu Kubernetes node drain rolling update and automated Trivy CVE scanner gating."
+          "version": "1.1",
+          "date": "2025-11-20",
+          "changes": "Added dependency scanning for applications",
+          "author": "Akkharasaran S."
+        },
+        {
+          "version": "1.2",
+          "date": "2025-05-15",
+          "changes": "Revised SLA for critical patch application",
+          "author": "Akkharasaran S."
         }
       ]
     }
@@ -8364,61 +8235,116 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QUIZ-001",
       "courseId": "GEN-001",
-      "title": "SYE Division Overview, Workplace Guidelines & ISO Governance Assessment",
+      "title": "SYE Division Orientation & Workplace Guidelines Assessment",
       "passingScore": 80,
       "questions": [
         {
-          "id": "Q1",
-          "question": "Where is the AEON System Enabler (SYE) Division primary on-premise office located and what are the standard working hours?",
+          "id": "Q1_1",
+          "question": "Where is the official workplace of the AEON System Enabler (SYE) Division located?",
           "options": [
-            "Exchange Tower 21st Floor, 08:30 - 17:30",
-            "Sermmit Tower 14th Floor, 09:00 - 18:00 (Core Engineering Hours)",
-            "Gaysorn Tower 10th Floor, 10:00 - 19:00",
-            "Empire Tower 30th Floor, 09:30 - 18:30"
+            "Exchange Tower 20th Floor",
+            "Sermmit Tower, 14th Floor (อาคารเสริมมิตร ทาวเวอร์ ชั้น 14), Sukhumvit 21 (Asoke)",
+            "Empire Tower 10th Floor",
+            "Central World Office 35th Floor"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q2",
-          "question": "Which of the following standards are officially certified within AEON SYE Division operations?",
+          "id": "Q1_2",
+          "question": "What are the official standard working hours for SYE division personnel?",
           "options": [
-            "ISO 27001 (ISMS), ISO 9001 (QMS), ISO 14001 (EMS), ISO 22301 (BCMS)",
-            "ISO 31000, ISO 13485, ISO 50001 only",
-            "PCI-DSS Level 4 and SOC 1 Type 1 only",
-            "HIPAA, FedRAMP, and GDPR EU without local certification"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q3",
-          "question": "What is AEON SYE's enterprise infrastructure deployment policy regarding cloud vs on-premise platforms?",
-          "options": [
-            "All core financial and database workloads must run 100% on-premise (VMware Tanzu K8s and RedHat Enterprise Linux VMs); public cloud is strictly prohibited for production financial data",
-            "Hybrid multi-cloud on AWS and Azure for all customer credit databases",
-            "Serverless architectures on GCP Cloud Run without private hosting",
-            "Third-party hosted SaaS solutions without on-premise Disaster Recovery"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "Under the ISO 22301 Business Continuity Plan (BCP), what are the mandatory Recovery Time Objective (RTO) and Recovery Point Objective (RPO) targets for Core Financial APIs?",
-          "options": [
-            "RTO <= 24 hours, RPO <= 12 hours",
-            "RTO <= 15 minutes, RPO <= 0 seconds (Synchronous / Near-Zero Data Loss)",
-            "RTO <= 48 hours, RPO <= 4 hours",
-            "RTO <= 7 days, RPO <= 24 hours"
+            "08:00 – 17:00 (Monday – Friday)",
+            "09:00 – 18:00 (Monday – Friday) with 1-hour lunch break (12:00 – 13:00)",
+            "08:30 – 17:30 (Monday – Friday)",
+            "Flexible hours with no core time requirement"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q5",
-          "question": "Who is the Head of System Enabler Division responsible for final architectural governance approval?",
+          "id": "Q1_3",
+          "question": "Who is the Head of the System Enabler (SYE) Division?",
           "options": [
-            "Akkharasaran S.",
-            "Rattanapakorn K.",
-            "Waranya T.",
-            "Pongsatorn N."
+            "K. Akkharasaran S.",
+            "K. Rattanapakorn K.",
+            "K. Waranya T.",
+            "K. Somchai K."
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "Q1_4",
+          "question": "Which Section Head leads the API & Integration Platform (API) section?",
+          "options": [
+            "K. Waranya T.",
+            "K. Rattanapakorn K.",
+            "K. Akkharasaran S.",
+            "K. Pitchaya S."
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q1_5",
+          "question": "Which Section Head leads the Omnichannel Customer Service (OCS) section?",
+          "options": [
+            "K. Waranya T.",
+            "K. Rattanapakorn K.",
+            "K. Akkharasaran S.",
+            "K. Warunee T."
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "Q1_6",
+          "question": "What is the role of K. Akkharasaran S. regarding the Customer Experience Systems (CXS) section?",
+          "options": [
+            "Advisor only",
+            "Section Co-Lead (alongside Division Head duties)",
+            "No involvement in CXS",
+            "QA Lead for CXS"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q1_7",
+          "question": "What are the official Core Collaboration Hours during which all engineers must be reachable?",
+          "options": [
+            "08:00 – 12:00",
+            "10:00 – 17:00",
+            "13:00 – 19:00",
+            "09:00 – 12:00"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q1_8",
+          "question": "What is the mandatory Clean Screen policy requirement when leaving your desk at Sermmit Tower?",
+          "options": [
+            "Turn off the monitor only",
+            "Lock your screen immediately (Win + L / Cmd + Ctrl + Q)",
+            "Leave code open for colleagues",
+            "No action required if away for under 15 minutes"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q1_9",
+          "question": "What is the corporate policy regarding trading AEON securities based on confidential, non-public technical or commercial information?",
+          "options": [
+            "Allowed if under 100,000 THB",
+            "Strictly illegal insider trading resulting in immediate termination and criminal prosecution",
+            "Allowed on weekends",
+            "Allowed with manager verbal approval"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q1_10",
+          "question": "Which department does the System Enabler (SYE) Division operate under within AEON?",
+          "options": [
+            "AEON System Development Department",
+            "AEON Marketing Department",
+            "AEON Accounting Department",
+            "AEON Customer Service Department"
           ],
           "correctAnswer": 0
         }
@@ -8427,50 +8353,116 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QUIZ-002",
       "courseId": "GEN-002",
-      "title": "Information Security, Access Control & ISO 27001 Standards Assessment",
+      "title": "Integrated ISO Governance & Compliance Standards Assessment",
       "passingScore": 80,
       "questions": [
         {
-          "id": "Q1",
-          "question": "Under ISO 27001 Access Control policy, how often must production database credentials and API service tokens be rotated?",
+          "id": "Q2_1",
+          "question": "Which four ISO standards are officially certified and enforced across SYE operations?",
           "options": [
-            "Every 3 years",
-            "Every 90 days (Quarterly) with immediate revocation upon role transfer",
-            "Never, as long as the password has 16 characters",
-            "Annually during internal audit review only"
+            "ISO 9001, ISO 14001, ISO 20000, ISO 31000",
+            "ISO/IEC 27001 (ISMS), ISO 9001 (QMS), ISO 14001 (EMS), ISO 22301 (BCMS)",
+            "ISO 27001, ISO 27017, ISO 27018, ISO 9001",
+            "ISO 9001, ISO 27001, ISO 50001, ISO 45001"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q2",
-          "question": "What is the mandatory method for storing confidential secrets, DB credentials, and TLS certificates in SYE applications?",
+          "id": "Q2_2",
+          "question": "Under ISO 27001, what is the mandatory Multi-Factor Authentication (MFA) mechanism required for engineering infrastructure access?",
           "options": [
-            "Hardcoded as string constants in Go/Next.js source code",
-            "Committed in .env files inside the private GitHub repository",
-            "Encrypted in HashiCorp Vault / Kubernetes Secrets injected at container runtime",
-            "Shared via encrypted corporate email threads"
+            "SMS-based OTP",
+            "Hardware FIDO2 Security Keys (YubiKey) or TOTP Authenticator apps",
+            "Email verification codes only",
+            "Static password with no MFA"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q2_3",
+          "question": "What is the required automatic workstation screen timeout lock duration at Sermmit Tower?",
+          "options": [
+            "Locks automatically after 5 minutes of inactivity",
+            "Locks automatically after 15 minutes",
+            "Locks automatically after 30 minutes",
+            "No automatic lock required"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "Q2_4",
+          "question": "What encryption standard is mandated under ISO 27001 for all databases storing confidential financial data at rest?",
+          "options": [
+            "DES-56",
+            "AES-128",
+            "AES-256 with managed key rotation",
+            "Plain text with restricted filesystem permissions"
           ],
           "correctAnswer": 2
         },
         {
-          "id": "Q3",
-          "question": "What action must an engineer take immediately upon detecting an unauthorized access attempt or leaked token?",
+          "id": "Q2_5",
+          "question": "Under ISO 9001 QMS, how many peer reviewers must approve a Pull Request before merging to staging?",
           "options": [
-            "Wait until the weekly sprint retrospective to report it",
-            "Immediately revoke the token, notify SYE SRE & Security Incident Response, and file an emergency security ticket",
-            "Delete the git commit history and say nothing",
-            "Reboot the production server without taking logs"
+            "0 (automated CI only)",
+            "1 reviewer",
+            "Minimum 2 peer engineers (+ Tech Lead for core modules)",
+            "Only Product Owner"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "Q2_6",
+          "question": "What is the minimum unit test code coverage required in CI under ISO 9001 quality gates?",
+          "options": [
+            "50%",
+            "60%",
+            "70%",
+            "80% line coverage"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": "Q2_7",
+          "question": "How does SYE support environmental sustainability under ISO 14001?",
+          "options": [
+            "By turning off air conditioning",
+            "By operating 100% paperless digital engineering workflows (Jira/Confluence) and server virtualization",
+            "By printing documents on recycled paper only",
+            "By avoiding software deployments on Fridays"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q4",
-          "question": "Which network access protocol is strictly required for engineers connecting to on-premise development and staging clusters remotely?",
+          "id": "Q2_8",
+          "question": "What does ISO 22301 govern within the SYE organization?",
           "options": [
-            "Unencrypted HTTP port 80",
-            "Enterprise VPN with Multi-Factor Authentication (MFA) and 802.1X device verification",
-            "Public TeamViewer connection",
-            "Direct public IP port forwarding"
+            "Marketing campaign quality",
+            "Business Continuity Management System (BCMS), Disaster Recovery (DR Site) & emergency resilience",
+            "Employee salary benchmarks",
+            "Customer credit score calculations"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q2_9",
+          "question": "What is the protocol if you suspect a phishing attempt or compromised credential at your workstation?",
+          "options": [
+            "Ignore it if antivirus does not alert",
+            "Report immediately to SOC on #soc-alerts and IT Security hotline within 10 minutes",
+            "Forward email to all team members",
+            "Restart your laptop and wait until tomorrow"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q2_10",
+          "question": "Why is SMS-based OTP strictly prohibited for engineering infrastructure access?",
+          "options": [
+            "High cellular SMS costs",
+            "Vulnerability to SIM-swapping, interception, and network spoofing attacks",
+            "SMS gateways are too slow",
+            "Mobile phones are forbidden in the building"
           ],
           "correctAnswer": 1
         }
@@ -8479,50 +8471,116 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QUIZ-003",
       "courseId": "GEN-003",
-      "title": "Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) - Technical Knowledge Assessment",
+      "title": "Adaptive SDLC Engineering & Quality Assurance Assessment",
       "passingScore": 80,
       "questions": [
         {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall)?",
+          "id": "Q3_1",
+          "question": "What is the official software development methodology model utilized across SYE?",
           "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
+            "Strict dogmatic Scrum only with mandatory daily rituals",
+            "Pure Waterfall for all projects without exception",
+            "Adaptive Hybrid (both Agile and Waterfall dynamically selected based on project suitability; no fixed Scrum)",
+            "Extreme Programming (XP) only"
           ],
-          "correctAnswer": 0
+          "correctAnswer": 2
         },
         {
-          "id": "Q2",
-          "question": "According to Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall), which best practice must be strictly enforced during day-to-day operations?",
+          "id": "Q3_2",
+          "question": "When should Track A (Agile Iterative Sprints) be selected in SYE?",
           "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "For Core Banking database migrations",
+            "For customer-facing mobile apps (CXS), web portals, and AI chatbot conversational flows (OCS)",
+            "For payment switch hardware firmware updates",
+            "For annual financial audit reports"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q3_3",
+          "question": "When should Track B (Waterfall Milestones) be selected in SYE?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
+            "For rapid UI button color experimentation",
+            "For Core Banking integrations, payment settlement switches, and regulatory compliance projects",
+            "For social media marketing bots",
+            "Waterfall is never permitted"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q3_4",
+          "question": "What are the standardized ratios in the SYE Testing Pyramid?",
+          "options": [
+            "10% Unit, 20% Integration, 70% E2E",
+            "70% Unit Tests, 20% Integration Tests, 10% End-to-End Tests",
+            "33% Unit, 33% Integration, 33% E2E",
+            "90% E2E Tests, 10% Unit Tests"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q3_5",
+          "question": "What is the mandatory minimum Unit Test code coverage required across all new Golang / Next.js code in CI?",
+          "options": [
+            "50%",
+            "60%",
+            "70%",
+            "80% line coverage"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": "Q3_6",
+          "question": "Where are formal Architectural Decision Records (ADRs) maintained?",
+          "options": [
+            "Personal text files",
+            "On-Premise Confluence Data Center under the designated section space",
+            "Slack chat threads",
+            "Public GitHub wikis"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q3_7",
+          "question": "What is the minimum notice period required to submit a Change Request (CR) ticket to the Change Advisory Board (CAB)?",
+          "options": [
+            "2 hours",
+            "12 hours",
+            "48 hours in advance of deployment window",
+            "Post-deployment notice"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "Q3_8",
+          "question": "Which tool enforces static code analysis, code duplication limits (<=3.0%), and security rating Grade A on RHEL CI runners?",
+          "options": [
+            "SonarQube",
+            "Postman",
+            "JMeter",
+            "Swagger UI"
           ],
           "correctAnswer": 0
         },
         {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
+          "id": "Q3_9",
+          "question": "What environment is used to perform end-to-end integration and stakeholder UAT using masked production-like data?",
           "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
+            "Local Docker",
+            "DEV Environment",
+            "STAGING (UAT) Environment",
+            "PROD Environment"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "Q3_10",
+          "question": "What format must Business Analysts use when authoring testable Acceptance Criteria for User Stories?",
+          "options": [
+            "Informal bullet points",
+            "Given-When-Then format adhering to Definition of Ready (DoR)",
+            "Pseudocode only",
+            "SQL query statements"
           ],
           "correctAnswer": 1
         }
@@ -8530,1767 +8588,235 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QUIZ-004",
-      "courseId": "GEN-004",
-      "title": "Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows - Technical Knowledge Assessment",
+      "courseId": "GEN-005",
+      "title": "100% On-Premise Infrastructure & Tech Stack Standards Assessment",
       "passingScore": 80,
       "questions": [
         {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows?",
+          "id": "Q4_1",
+          "question": "What is the enterprise hosting policy for all SYE production financial processing systems?",
           "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
+            "100% On-Premise infrastructure only; Public Cloud (AWS, GCP, Azure) is strictly prohibited",
+            "Multi-cloud serverless on AWS and GCP",
+            "Hybrid cloud with database on AWS RDS",
+            "Public cloud first policy"
           ],
           "correctAnswer": 0
         },
         {
-          "id": "Q2",
-          "question": "According to Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows, which best practice must be strictly enforced during day-to-day operations?",
+          "id": "Q4_2",
+          "question": "Which container orchestration platform is used to deploy microservice workloads across SYE data centers?",
           "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "Amazon EKS",
+            "Google GKE",
+            "VMware Tanzu Kubernetes (K8s)",
+            "Docker Swarm Standalone"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": "Q4_3",
+          "question": "What is the strictly mandated Operating System for all enterprise Virtual Machines (VMs) in SYE?",
+          "options": [
+            "Ubuntu Server 22.04 LTS",
+            "Red Hat Enterprise Linux (RHEL) only",
+            "CentOS 7",
+            "Debian Linux"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q4_4",
+          "question": "Why is Golang (Go) chosen as the primary backend engineering language across SYE microservices?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
+            "It is an interpreted scripting language",
+            "High concurrency via goroutines, microsecond latency, minimal memory footprint, and compile-time type safety",
+            "It is only usable on Windows",
+            "It requires no automated testing"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q4_5",
+          "question": "Which frontend engineering framework is standardized for modern customer web portals in SYE?",
+          "options": [
+            "Next.js / React with Server-Side Rendering (SSR)",
+            "jQuery 1.x",
+            "AngularJS 1.5",
+            "PHP Blade"
           ],
           "correctAnswer": 0
         },
         {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
+          "id": "Q4_6",
+          "question": "What is the primary relational database technology utilized across SYE enterprise platforms?",
           "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
+            "PostgreSQL (Postgres) on RHEL",
+            "SQLite",
+            "Microsoft Access",
+            "Firebase Firestore"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "Q4_7",
+          "question": "What is the primary function of the in-memory Redis cluster in SYE architecture?",
+          "options": [
+            "Long-term file backup",
+            "Sub-millisecond session caching, JWT token blacklisting, and distributed rate limiting",
+            "Rendering PDF statements",
+            "Static image hosting"
           ],
           "correctAnswer": 1
+        },
+        {
+          "id": "Q4_8",
+          "question": "Which distributed message broker is mandated for asynchronous event streaming across microservices?",
+          "options": [
+            "Apache Kafka cluster on RHEL",
+            "HTTP Polling loop",
+            "Local file append",
+            "RabbitMQ single node"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": "Q4_9",
+          "question": "Are unapproved Linux distributions (such as Ubuntu or Arch Linux) allowed on enterprise VMs in SYE?",
+          "options": [
+            "Yes, developers can install any OS",
+            "No, Red Hat Enterprise Linux (RHEL) is strictly mandated for all enterprise VMs",
+            "Yes, if approved verbally",
+            "Yes, on weekends only"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": "Q4_10",
+          "question": "How do Golang microservices communicate with Redis and PostgreSQL inside VMware Tanzu?",
+          "options": [
+            "Over secure internal network overlays with connection pooling and encrypted credentials injected by Vault",
+            "Via public unencrypted internet URLs",
+            "By hardcoding database passwords in Go source files",
+            "Using unauthenticated telnet"
+          ],
+          "correctAnswer": 0
         }
       ]
     },
     {
       "id": "QUIZ-005",
-      "courseId": "GEN-005",
-      "title": "100% On-Premise Infrastructure & Standard Technology Stack - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in 100% On-Premise Infrastructure & Standard Technology Stack?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to 100% On-Premise Infrastructure & Standard Technology Stack, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-006",
       "courseId": "GEN-006",
-      "title": "Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance - Technical Knowledge Assessment",
+      "title": "BCP, Disaster Recovery (DR Site) & PDPA Assessment",
       "passingScore": 80,
       "questions": [
         {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance?",
+          "id": "Q5_1",
+          "question": "Under ISO 22301 BCP, what is the mandatory Recovery Point Objective (RPO) threshold for SYE financial systems?",
           "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "RPO < 1 hour",
+            "RPO < 5 minutes (via continuous synchronous WAL and Kafka streaming)",
+            "RPO < 24 hours",
+            "RPO < 48 hours"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q5_2",
+          "question": "Under ISO 22301 BCP, what is the mandatory Recovery Time Objective (RTO) threshold following disaster declaration?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
+            "RTO < 30 minutes (full operational service restored at DR Site)",
+            "RTO < 4 hours",
+            "RTO < 24 hours",
+            "RTO < 3 days"
           ],
           "correctAnswer": 0
         },
         {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
+          "id": "Q5_3",
+          "question": "How far is the remote Disaster Recovery (DR Site) located from the Main Data Center at Sermmit Tower?",
           "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-007",
-      "courseId": "PM-001",
-      "title": "Enterprise Project Governance, WBS & Milestone Tracking - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Enterprise Project Governance, WBS & Milestone Tracking?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Enterprise Project Governance, WBS & Milestone Tracking, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "In the same server room",
+            "Over 30 kilometers away in a geographically isolated enterprise facility",
+            "In another country",
+            "100 meters away"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q5_4",
+          "question": "How frequently are mandatory DR Failover Drills conducted by SYE engineering and audit teams?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-008",
-      "courseId": "PM-002",
-      "title": "Enterprise Risk Management & Mitigation Matrix - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Enterprise Risk Management & Mitigation Matrix?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Enterprise Risk Management & Mitigation Matrix, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "Once every 5 years",
+            "Semi-annually (every 6 months)",
+            "Only after an actual real disaster",
+            "Never"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q5_5",
+          "question": "What is the required response SLA for a Critical P1 outage?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
+            "< 15 minutes response time with immediate War Room activation",
+            "< 1 hour",
+            "< 4 hours",
+            "Next business day"
           ],
           "correctAnswer": 0
         },
         {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
+          "id": "Q5_6",
+          "question": "Within what timeframe must a Blameless Post-Mortem / RCA be published on Confluence following a P1/P2 outage?",
           "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-009",
-      "courseId": "PM-003",
-      "title": "Stakeholder Communication - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Stakeholder Communication?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
+            "Within 48 hours",
+            "Within 1 month",
+            "Within 1 year",
+            "Post-mortems are optional"
           ],
           "correctAnswer": 0
         },
         {
-          "id": "Q2",
-          "question": "According to Stakeholder Communication, which best practice must be strictly enforced during day-to-day operations?",
+          "id": "Q5_7",
+          "question": "Under Thailand PDPA, what is the mandatory timeframe to report a high-risk personal data breach to the Data Protection Committee?",
           "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "Within 24 hours",
+            "Within 72 hours without undue delay",
+            "Within 30 days",
+            "At annual financial review"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q5_8",
+          "question": "What is the policy regarding copying live customer Personally Identifiable Information (PII) to DEV or local developer environments?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-010",
-      "courseId": "PM-004",
-      "title": "Budgeting and Resource Allocation - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Budgeting and Resource Allocation?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Budgeting and Resource Allocation, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "Allowed if developer signs a waiver",
+            "Strictly prohibited; DEV must use synthetic mock data and STAGING must use irreversibly masked data",
+            "Allowed for senior developers only",
+            "Allowed if deleted after 24 hours"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
+          "id": "Q5_9",
+          "question": "Which legal basis is required under PDPA when processing customer data for marketing and personalized credit offers?",
           "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-011",
-      "courseId": "BA-001",
-      "title": "Requirements Elicitation Techniques - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Requirements Elicitation Techniques?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Requirements Elicitation Techniques, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
+            "Vital interests",
+            "Explicit, unbundled, and revocable customer consent",
+            "Public task",
+            "Implied consent"
           ],
           "correctAnswer": 1
         },
         {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-012",
-      "courseId": "BA-002",
-      "title": "Writing User Stories, Given-When-Then Criteria & DoR Standards - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Writing User Stories, Given-When-Then Criteria & DoR Standards?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Writing User Stories, Given-When-Then Criteria & DoR Standards, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-013",
-      "courseId": "BA-003",
-      "title": "Business Process Modeling with BPMN 2.0 & Swimlanes - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Business Process Modeling with BPMN 2.0 & Swimlanes?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Business Process Modeling with BPMN 2.0 & Swimlanes, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-014",
-      "courseId": "BA-004",
-      "title": "Data Flow Analysis - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Data Flow Analysis?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Data Flow Analysis, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-015",
-      "courseId": "DEV-001",
-      "title": "Secure Coding Practices & OWASP Top 10 Mitigation - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Secure Coding Practices & OWASP Top 10 Mitigation?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Secure Coding Practices & OWASP Top 10 Mitigation, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-016",
-      "courseId": "DEV-002",
-      "title": "Git Workflow, Conventional Commits & Trunk-Based Release - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Git Workflow, Conventional Commits & Trunk-Based Release?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Git Workflow, Conventional Commits & Trunk-Based Release, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-017",
-      "courseId": "DEV-003",
-      "title": "Enterprise API Design, RESTful Guidelines & Golang Microservices - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Enterprise API Design, RESTful Guidelines & Golang Microservices?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Enterprise API Design, RESTful Guidelines & Golang Microservices, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-018",
-      "courseId": "DEV-004",
-      "title": "Automated Unit Testing & Mocking in Golang and Next.js - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Automated Unit Testing & Mocking in Golang and Next.js?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Automated Unit Testing & Mocking in Golang and Next.js, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-019",
-      "courseId": "DEV-005",
-      "title": "CI/CD Pipeline Integration & Quality Gates on RHEL Runners - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in CI/CD Pipeline Integration & Quality Gates on RHEL Runners?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to CI/CD Pipeline Integration & Quality Gates on RHEL Runners, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-020",
-      "courseId": "QA-001",
-      "title": "Enterprise Test Planning & 70/20/10 Testing Strategy - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Enterprise Test Planning & 70/20/10 Testing Strategy?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Enterprise Test Planning & 70/20/10 Testing Strategy, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-021",
-      "courseId": "QA-002",
-      "title": "Automated UI & API Testing Frameworks (Playwright & Postman) - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Automated UI & API Testing Frameworks (Playwright & Postman)?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Automated UI & API Testing Frameworks (Playwright & Postman), which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-022",
-      "courseId": "QA-003",
-      "title": "API Testing - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in API Testing?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to API Testing, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-023",
-      "courseId": "QA-004",
-      "title": "Performance, Stress & Load Testing with Apache JMeter - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Performance, Stress & Load Testing with Apache JMeter?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Performance, Stress & Load Testing with Apache JMeter, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-024",
-      "courseId": "QA-005",
-      "title": "Defect Lifecycle Management - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Defect Lifecycle Management?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Defect Lifecycle Management, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-025",
-      "courseId": "SRE-001",
-      "title": "On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-026",
-      "courseId": "SRE-002",
-      "title": "Observability, Prometheus Metrics & Grafana Telemetry Dashboards - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Observability, Prometheus Metrics & Grafana Telemetry Dashboards?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Observability, Prometheus Metrics & Grafana Telemetry Dashboards, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-027",
-      "courseId": "SRE-003",
-      "title": "Incident Response & Post-Mortem - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Incident Response & Post-Mortem?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Incident Response & Post-Mortem, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-028",
-      "courseId": "SRE-004",
-      "title": "Containerization & Orchestration - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Containerization & Orchestration?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Containerization & Orchestration, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-029",
-      "courseId": "SRE-005",
-      "title": "System Reliability & Scalability - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in System Reliability & Scalability?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to System Reliability & Scalability, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-030",
-      "courseId": "SEC-001",
-      "title": "Microservices & Distributed Event-Driven Architecture Standard - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Microservices & Distributed Event-Driven Architecture Standard?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Microservices & Distributed Event-Driven Architecture Standard, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-031",
-      "courseId": "SEC-002",
-      "title": "Enterprise API Gateway Configuration, Security & Rate Limiting - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Enterprise API Gateway Configuration, Security & Rate Limiting?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Enterprise API Gateway Configuration, Security & Rate Limiting, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-032",
-      "courseId": "SEC-003",
-      "title": "Legacy System Integration Patterns - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Legacy System Integration Patterns?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Legacy System Integration Patterns, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-033",
-      "courseId": "SEC-004",
-      "title": "Customer Experience Systems (CXS) Platform Architecture - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Customer Experience Systems (CXS) Platform Architecture?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Customer Experience Systems (CXS) Platform Architecture, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-034",
-      "courseId": "SEC-005",
-      "title": "Frontend State Management Standard - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Frontend State Management Standard?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Frontend State Management Standard, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-035",
-      "courseId": "SEC-006",
-      "title": "Omnichannel Routing Logic & Unified Agent Workspace - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Omnichannel Routing Logic & Unified Agent Workspace?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Omnichannel Routing Logic & Unified Agent Workspace, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-036",
-      "courseId": "SEC-007",
-      "title": "Contact Center Application Features - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Contact Center Application Features?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Contact Center Application Features, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
-          ],
-          "correctAnswer": 1
-        }
-      ]
-    },
-    {
-      "id": "QUIZ-037",
-      "courseId": "SEC-008",
-      "title": "Chatbot Integration Framework - Technical Knowledge Assessment",
-      "passingScore": 80,
-      "questions": [
-        {
-          "id": "Q1",
-          "question": "What is the primary architectural objective and core standard emphasized in Chatbot Integration Framework?",
-          "options": [
-            "To deliver high availability, compliance, and resilience in alignment with AEON enterprise standards",
-            "To bypass quality gates and release unverified experimental features directly to production",
-            "To disable automated CI/CD security scanning and unit testing for speed",
-            "To eliminate logging and monitoring telemetry to save disk storage"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q2",
-          "question": "According to Chatbot Integration Framework, which best practice must be strictly enforced during day-to-day operations?",
-          "options": [
-            "Deploying manual hotfixes directly to production virtual machines via SSH without a Jira ticket",
-            "Following standard change management, automated unit/integration testing, and code review governance",
-            "Sharing administrative passwords across teams via plaintext chat",
-            "Disabling database transactions during heavy batch operations"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": "Q3",
-          "question": "Under AEON SYE quality governance, what is the required test coverage threshold for production code releases related to this domain?",
-          "options": [
-            "Minimum 80% automated unit and integration test coverage with 0 high-severity SonarQube blockers",
-            "Less than 30% coverage is acceptable if the release is urgent",
-            "Testing is optional for internal microservice APIs",
-            "Manual smoke testing by the developer is sufficient without automated CI checks"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": "Q4",
-          "question": "In case of unexpected system errors or data inconsistencies, what is the mandatory escalation protocol?",
-          "options": [
-            "Ignore the alert if error rate is below 50%",
-            "Follow the Incident Management & Runbook procedure, alert on-call SRE, and notify the Section Lead immediately",
-            "Restart the entire Kubernetes cluster without investigating log dumps",
-            "Roll back the database schema without verifying backup integrity"
+          "id": "Q5_10",
+          "question": "What network infrastructure connects the Sermmit Tower Main DC to the remote DR Site for continuous data replication?",
+          "options": [
+            "Public Wi-Fi",
+            "Dedicated Redundant Dark Fiber with synchronous storage and streaming replication",
+            "Satellite dish uplink",
+            "Dial-up modem line"
           ],
           "correctAnswer": 1
         }
