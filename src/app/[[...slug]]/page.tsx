@@ -55,7 +55,9 @@ export default function AppRouterPage() {
         {/* Top Navbar */}
         <nav id="learner-nav" className="bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center shadow-xs shrink-0 z-10">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={(e) => nav('/landing', e)}>
-            <div className="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">S</div>
+            <div className="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">
+              S
+            </div>
             <div>
               <h1 className="text-base font-bold text-slate-800 leading-tight">SYE Academy</h1>
               <p className="text-xs text-slate-500 font-medium">System Enabler Division • AEON</p>
@@ -67,10 +69,11 @@ export default function AppRouterPage() {
               onClick={() => { if (typeof (window as any).toggleLanguage === 'function') (window as any).toggleLanguage(); }}
               className="px-3 py-1.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 text-xs font-semibold flex items-center gap-1.5 shadow-xs transition"
             >
-              <span>🌐</span> <span id="lang-label-learner">EN</span>
+              <svg className="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              <span id="lang-label-learner">EN</span>
             </button>
-            <a href="/dashboard" onClick={(e) => nav('/dashboard', e)} className="text-xs font-semibold px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-1.5 shadow-xs">
-              <span>🔧</span>
+            <a href="/dashboard" onClick={(e) => nav('/dashboard', e)} className="text-xs font-semibold px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 transition flex items-center gap-2 shadow-xs">
+              <svg className="w-4 h-4 text-slate-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               <span>Admin Panel</span>
             </a>
           </div>
@@ -97,20 +100,60 @@ export default function AppRouterPage() {
           </div>
           <div className="px-6 py-2.5 border-b border-slate-100 bg-blue-50/50">
             <a href="/landing" onClick={(e) => nav('/landing', e)} className="text-xs font-semibold text-blue-600 hover:text-blue-800 flex items-center gap-1.5">
-              <span>←</span>
+              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6"/></svg>
               <span>Learner Portal</span>
             </a>
           </div>
           <nav className="flex-1 overflow-y-auto py-3">
             <ul className="space-y-0.5 px-3">
-              <li><a href="/dashboard" onClick={(e) => nav('/dashboard', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">📊 <span className="ml-2.5">Dashboard</span></a></li>
-              <li><a href="/catalog" onClick={(e) => nav('/catalog', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">📚 <span className="ml-2.5">Training Catalog</span></a></li>
-              <li><a href="/work-instructions" onClick={(e) => nav('/work-instructions', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">📋 <span className="ml-2.5">Work Instructions</span></a></li>
-              <li><a href="/employees" onClick={(e) => nav('/employees', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">👥 <span className="ml-2.5">Employees</span></a></li>
-              <li><a href="/records" onClick={(e) => nav('/records', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">📝 <span className="ml-2.5">Training Records</span></a></li>
-              <li><a href="/assessments" onClick={(e) => nav('/assessments', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">✏️ <span className="ml-2.5">Assessments</span></a></li>
-              <li><a href="/reports" onClick={(e) => nav('/reports', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">📄 <span className="ml-2.5">Reports</span></a></li>
-              <li><a href="/settings" onClick={(e) => nav('/settings', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">⚙️ <span className="ml-2.5">Settings</span></a></li>
+              <li>
+                <a href="/dashboard" onClick={(e) => nav('/dashboard', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-blue-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+                  <span className="ml-3">Dashboard</span>
+                </a>
+              </li>
+              <li>
+                <a href="/catalog" onClick={(e) => nav('/catalog', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-indigo-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10M6 10h10"/></svg>
+                  <span className="ml-3">Training Catalog</span>
+                </a>
+              </li>
+              <li>
+                <a href="/work-instructions" onClick={(e) => nav('/work-instructions', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-cyan-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
+                  <span className="ml-3">Work Instructions</span>
+                </a>
+              </li>
+              <li>
+                <a href="/employees" onClick={(e) => nav('/employees', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-emerald-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                  <span className="ml-3">Employees</span>
+                </a>
+              </li>
+              <li>
+                <a href="/records" onClick={(e) => nav('/records', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-amber-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                  <span className="ml-3">Training Records</span>
+                </a>
+              </li>
+              <li>
+                <a href="/assessments" onClick={(e) => nav('/assessments', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-purple-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  <span className="ml-3">Assessments</span>
+                </a>
+              </li>
+              <li>
+                <a href="/reports" onClick={(e) => nav('/reports', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-rose-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                  <span className="ml-3">Reports</span>
+                </a>
+              </li>
+              <li>
+                <a href="/settings" onClick={(e) => nav('/settings', e)} className="nav-item flex items-center px-3.5 py-2.5 rounded-xl text-sm font-medium text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-colors">
+                  <svg className="w-4 h-4 text-slate-500 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                  <span className="ml-3">Settings</span>
+                </a>
+              </li>
             </ul>
           </nav>
           <div className="p-3.5 border-t border-slate-100 text-xs text-slate-400 text-center font-medium">
@@ -129,7 +172,8 @@ export default function AppRouterPage() {
                 onClick={() => { if (typeof (window as any).toggleLanguage === 'function') (window as any).toggleLanguage(); }}
                 className="px-3 py-1.5 rounded-xl border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 text-xs font-semibold flex items-center gap-1.5 shadow-xs transition"
               >
-                <span>🌐</span> <span id="lang-label-admin">EN</span>
+                <svg className="w-3.5 h-3.5 text-slate-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                <span id="lang-label-admin">EN</span>
               </button>
               <span id="current-date" className="text-xs text-slate-500 font-medium"></span>
               <div className="h-8 px-3 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-xs border border-blue-100">

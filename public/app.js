@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '10.0.0';
+const APP_VERSION = '12.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -527,21 +527,35 @@ function renderLanding(container) {
     container.innerHTML = `
         <div class="max-w-2xl w-full my-auto py-8 animate-fade-in-up">
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 text-center">
-                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-6 shadow-sm">🎓</div>
+                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl mx-auto flex items-center justify-center mb-6 shadow-sm border border-blue-100">
+                    <svg class="w-10 h-10 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                    </svg>
+                </div>
                 <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">${I18N.t('app_title')}</h1>
                 <p class="text-slate-500 text-sm max-w-md mx-auto mb-10 leading-relaxed font-medium">
                     ${I18N.t('app_subtitle')}<br>
                     <span class="text-xs text-slate-400">${I18N.t('division_name')}</span>
                 </p>
                 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                    <a href="/register" onclick="navigate('/register', event)" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-blue-50/30 border-2 border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-md transition duration-200 group text-center">
-                        <span class="text-3xl mb-3 group-hover:scale-110 transition-transform">📚</span>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+                    <a href="/register" onclick="navigate('/register', event)" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-blue-50/40 border-2 border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-md transition duration-200 group text-center">
+                        <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+                                <path d="M6 6h10M6 10h10"/>
+                            </svg>
+                        </div>
                         <span class="font-bold text-slate-800 group-hover:text-blue-700 text-base mb-1">${I18N.t('start_training')}</span>
                         <span class="text-xs text-slate-400">${I18N.t('start_training_sub')}</span>
                     </a>
                     <a href="/dashboard" onclick="navigate('/dashboard', event)" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-slate-50 border-2 border-slate-200 rounded-2xl hover:border-slate-800 hover:shadow-md transition duration-200 group text-center">
-                        <span class="text-3xl mb-3 group-hover:scale-110 transition-transform">🔧</span>
+                        <div class="w-12 h-12 rounded-2xl bg-slate-100 text-slate-700 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
                         <span class="font-bold text-slate-800 group-hover:text-slate-900 text-base mb-1">${I18N.t('admin_panel')}</span>
                         <span class="text-xs text-slate-400">${I18N.t('admin_panel_sub')}</span>
                     </a>
@@ -551,7 +565,7 @@ function renderLanding(container) {
                 <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
                     <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
-                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50">
+                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
                             <option value="">${I18N.t('select_learner')}</option>
                             ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id})</option>`).join('')}
                         </select>
@@ -568,18 +582,17 @@ function renderLanding(container) {
     const select = document.getElementById('learner-select');
     const btn = document.getElementById('continue-btn');
     
-    if (select && btn) {
-        select.addEventListener('change', (e) => {
-            btn.disabled = !e.target.value;
-        });
-        
-        btn.addEventListener('click', () => {
-            if(select.value) {
-                DB.setCurrentLearner(select.value);
-                window.navigate('/my-training');
-            }
-        });
-    }
+    select.addEventListener('change', (e) => {
+        btn.disabled = !e.target.value;
+    });
+    
+    btn.addEventListener('click', () => {
+        const learnerId = select.value;
+        if(learnerId) {
+            DB.setCurrentLearner(learnerId);
+            navigate('/my-training');
+        }
+    });
 }
 
 // 2. Registration Page
@@ -1487,16 +1500,52 @@ function renderDashboard(container) {
     container.innerHTML = `
         <div class="space-y-6 animate-fade-in-up">
             <!-- Stats Summary Row -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-blue-500 hover:shadow-md transition">
-                    <div class="flex items-center justify-between">
-                        <div>
-                            <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Total Engineers (SYE)</p>
-                            <p id="stat-total" class="text-2xl font-bold text-slate-800 mt-1">0</p>
-                        </div>
-                        <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl">👥</div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-blue-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Engineers</p>
+                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${totalEmps}</p>
+                    </div>
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
                     </div>
                 </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-emerald-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Fully Onboarded (100%)</p>
+                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${compl}</p>
+                    </div>
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-amber-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">In Progress</p>
+                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${inprog}</p>
+                    </div>
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-2xl flex items-center justify-center">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-indigo-500">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Avg Completion</p>
+                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${overallCompRate}%</p>
+                    </div>
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
                 <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 border-l-4 border-l-emerald-500 hover:shadow-md transition">
                     <div class="flex items-center justify-between">
                         <div>
