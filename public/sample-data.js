@@ -1,4 +1,4 @@
-// SYE Academy Master Seed Data (v2.5.0)
+// SYE Academy Master Seed Data (v2.8.0 - World-Class Certified Curriculum)
 // System Enabler (SYE) Division • AEON System Development Department
 // Sermmit Tower 14th Floor • ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
@@ -121,113 +121,113 @@ window.SYE_SAMPLE_DATA = {
       "unit": "Experience Development (EXD)",
       "employmentType": "Outsource",
       "vendor": "OS-SYE",
-      "joinDate": "2024-08-01",
+      "joinDate": "2024-07-01",
       "status": "Active",
       "email": "natlada.n@aeon.co.th"
     },
     {
       "id": "SYE-0011",
-      "name": "Thanakorn C.",
-      "role": "Developer",
-      "section": "Customer Experience Systems",
-      "unit": "Experience Development (EXD)",
-      "employmentType": "Outsource",
-      "vendor": "OS-ECM",
-      "joinDate": "2025-02-15",
-      "status": "Active",
-      "email": "thanakorn.c@aeon.co.th"
-    },
-    {
-      "id": "SYE-0012",
-      "name": "Kittiphop S.",
+      "name": "Chirawat K.",
       "role": "Developer",
       "section": "Customer Experience Systems",
       "unit": "Experience Development (EXD)",
       "employmentType": "Outsource",
       "vendor": "OS-SYE",
-      "joinDate": "2025-03-01",
-      "status": "Active",
-      "email": "kittiphop.s@aeon.co.th"
-    },
-    {
-      "id": "SYE-0013",
-      "name": "Chirawat K.",
-      "role": "Developer",
-      "section": "Customer Experience Systems",
-      "unit": "Experience Development (EXD) & Governance",
-      "employmentType": "Outsource",
-      "vendor": "OS-ECM",
-      "joinDate": "2025-05-01",
+      "joinDate": "2024-08-01",
       "status": "Active",
       "email": "chirawat.k@aeon.co.th"
     },
     {
-      "id": "SYE-0014",
-      "name": "Passawan C.",
-      "role": "BA",
-      "section": "Customer Experience Systems",
-      "unit": "UX/UI Designer",
-      "employmentType": "Outsource",
-      "vendor": "OS-SYE",
-      "joinDate": "2025-01-15",
-      "status": "Active",
-      "email": "passawan.c@aeon.co.th"
-    },
-    {
-      "id": "SYE-0015",
-      "name": "Methinee K.",
-      "role": "SRE",
-      "section": "Customer Experience Systems",
-      "unit": "Site Reliability Engineering (SRE)",
-      "employmentType": "Outsource",
-      "vendor": "OS-SYE",
-      "joinDate": "2024-07-01",
-      "status": "Active",
-      "email": "methinee.k@aeon.co.th"
-    },
-    {
-      "id": "SYE-0016",
-      "name": "Maneerut B.",
+      "id": "SYE-0012",
+      "name": "Krid T.",
       "role": "BA",
       "section": "User Application Systems",
-      "unit": "User Application Systems (UAS)",
+      "unit": "User Application BA Lead",
+      "employmentType": "Permanent",
+      "vendor": "AEON SC",
+      "joinDate": "2024-03-15",
+      "status": "Active",
+      "email": "krid.t@aeon.co.th"
+    },
+    {
+      "id": "SYE-0013",
+      "name": "Khemmanit S.",
+      "role": "BA",
+      "section": "User Application Systems",
+      "unit": "User Application BA",
+      "employmentType": "Outsource",
+      "vendor": "OS-ECM",
+      "joinDate": "2024-05-15",
+      "status": "Active",
+      "email": "khemmanit.s@aeon.co.th"
+    },
+    {
+      "id": "SYE-0014",
+      "name": "Pakawat M.",
+      "role": "Developer",
+      "section": "User Application Systems",
+      "unit": "Fullstack Engineering Lead",
       "employmentType": "Permanent",
       "vendor": "AEON SC",
       "joinDate": "2024-02-15",
       "status": "Active",
-      "email": "maneerut.b@aeon.co.th"
+      "email": "pakawat.m@aeon.co.th"
+    },
+    {
+      "id": "SYE-0015",
+      "name": "Thanapat S.",
+      "role": "Developer",
+      "section": "User Application Systems",
+      "unit": "Frontend & Microservices Engineer",
+      "employmentType": "Outsource",
+      "vendor": "OS-ECM",
+      "joinDate": "2024-06-01",
+      "status": "Active",
+      "email": "thanapat.s@aeon.co.th"
+    },
+    {
+      "id": "SYE-0016",
+      "name": "Tanasarn J.",
+      "role": "QA",
+      "section": "User Application Systems",
+      "unit": "Quality Assurance & Test Automation",
+      "employmentType": "Outsource",
+      "vendor": "OS-ECM",
+      "joinDate": "2024-07-15",
+      "status": "Active",
+      "email": "tanasarn.j@aeon.co.th"
     },
     {
       "id": "SYE-0017",
-      "name": "Buntita F.",
-      "role": "BA",
-      "section": "User Application Systems",
-      "unit": "User Application Systems (UAS)",
+      "name": "Kittin T.",
+      "role": "SRE",
+      "section": "Technology Standards & Quality",
+      "unit": "Site Reliability & Cloud Platforms Lead",
       "employmentType": "Permanent",
-      "vendor": "AEON-Staff",
-      "joinDate": "2024-05-15",
+      "vendor": "AEON-Chief",
+      "joinDate": "2024-01-15",
       "status": "Active",
-      "email": "buntita.f@aeon.co.th"
+      "email": "kittin.t@aeon.co.th"
     },
     {
       "id": "SYE-0018",
-      "name": "Runchida S.",
-      "role": "Developer",
-      "section": "User Application Systems",
-      "unit": "User Application Systems (UAS)",
+      "name": "Thanaboon T.",
+      "role": "QA",
+      "section": "Technology Standards & Quality",
+      "unit": "Testing Standards & Quality Engineering Lead",
       "employmentType": "Outsource",
-      "vendor": "OS-SYE",
-      "joinDate": "2025-06-01",
+      "vendor": "OS-NRT",
+      "joinDate": "2024-03-01",
       "status": "Active",
-      "email": "runchida.s@aeon.co.th"
+      "email": "thanaboon.t@aeon.co.th"
     }
   ],
   "courses": [
     {
       "id": "GEN-001",
-      "name": "SYE Division Orientation, Leadership & Workplace Guidelines",
+      "name": "SYE Division Architecture, Mission & Leadership Governance",
       "category": "General",
-      "description": "Comprehensive orientation for all new personnel joining the System Enabler (SYE) Division at AEON. Covers division mission under AEON System Development Department, leadership hierarchy, 3 core engineering sections, Sermmit Tower office guidelines, working hours (09:00 - 18:00), and corporate code of conduct.",
+      "description": "Comprehensive orientation on System Enabler (SYE) Division structure, 4 core sections, on-premise Tanzu/RHEL infrastructure, and ISO certifications (ISO 27001, ISO 9001, ISO 22301, ISO 14001).",
       "duration": "2 hours",
       "targetRoles": [
         "All"
@@ -237,36 +237,36 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Understand SYE division identity, mission, and leadership structure under AEON System Development Department",
-        "Identify the 3 core engineering sections: API & Integration Platform, Customer Experience Systems (CXS), and Omnichannel Customer Service (OCS)",
-        "Follow workplace guidelines at Sermmit Tower 14th Floor and official working hours: 09:00 – 18:00 (Mon – Fri)",
-        "Adhere to the corporate code of conduct, clean desk policies, and professional financial ethics"
+        "Master the organizational charter and responsibilities of the 4 SYE sections (API, CES, UAS, TSQ)",
+        "Understand the division leadership hierarchy and escalation protocols under Head of SYE",
+        "Familiarize with the multi-cluster on-premise infrastructure topology (VMware Tanzu & RHEL 9)",
+        "Comply with ISO 27001 ISMS, ISO 9001 QMS, ISO 22301 BCMS, and ISO 14001 governance standards"
       ],
       "content": [
         {
-          "title": "Division Identity, Strategic Mission & AEON Core Values",
-          "body": "### Who We Are\nThe **System Enabler (SYE) Division** operates under the **AEON System Development Department** of AEON Thana Sinsap (Thailand) Public Company Limited. Our division serves as the central technological engine responsible for architecting, building, and operating high-scale, ultra-reliable financial software systems.\n\n### Our Core Mission:\n- **Enable Modern Financial Experiences**: Deliver seamless credit card, digital loan, payment, and customer service platforms.\n- **Enterprise Reliability**: Maintain maximum system availability with zero compromise on transaction integrity.\n- **Continuous Innovation**: Adopt high-performance engineering standards, modern microservice architectures, and robust automation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_org_leadership_chart.jpg\" alt=\"SYE Division Leadership & Organizational Structure\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">SYE Division Leadership & Organizational Structure</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sermmit Tower 14th Fl. • ISO Certified</span>\n        </div>\n    </div>\n</div>\n"
+          "title": "Division Mission & Organizational Structure",
+          "body": "The **System Enabler (SYE) Division** operates under the **AEON System Development Department** as the central engineering backbone powering digital credit card services, personal loans, mobile applications, and partner integrations.\n\nUnder the direct leadership of **Akkharasaran S. (Head of SYE)**, the division is structured into 4 specialized sections:\n\n| Section Name | Section Lead | Primary Focus & Deliverables |\n|---|---|---|\n| **API & Integration Platform** | Rattanapakorn K. | Enterprise API Gateway, OAuth2 Token Services, Core Banking Connectors |\n| **Customer Experience Systems (CES)** | Akkharasaran S. | AEON Mobile App, Customer Data Platform (CDP), Omnichannel Chatbot |\n| **User Application Systems (UAS)** | Waranya T. | Back-office Case Management, Internal ERP Workflows, Branch Terminals |\n| **Technology Standards & Quality (TSQ)** | Akkharasaran S. | SRE Observability, Cloud Platform K8s, QA Automation, ISO Compliance |\n\nEvery engineer, whether permanent staff or outsource contractor (OS-SYE / OS-ECM / OS-NRT), is governed by uniform quality standards and security baselines."
         },
         {
-          "title": "Leadership Structure & The 3 Engineering Sections",
-          "body": "The division is led by **Head of Division: K. Akkharasaran S.** and structured into three specialized engineering sections:\n\n1. **0.1. API & Integration Platform (API)**:\n   - **Section Head**: **K. Rattanapakorn K.**\n   - **System Ownership**: Enterprise API Gateway, Apache Kafka event streaming clusters, Core Banking middleware connectors, and partner payment gateways.\n2. **0.2. Customer Experience Systems (CXS)**:\n   - **Section Head**: **K. Akkharasaran S. (Co-Lead)**\n   - **System Ownership**: Mobile Banking backend microservices, Web Account Portals, Customer Identity & Access Management (CIAM), and digital e-KYC onboarding.\n3. **0.3. Omnichannel Customer Service (OCS)**:\n   - **Section Head**: **K. Waranya T.**\n   - **System Ownership**: Omnichannel CRM systems, Conversational AI Chatbots (LINE/Web), Call Center Computer Telephony Integration (CTI), and Unified Agent Desktops."
+          "title": "On-Premise Infrastructure Landscape",
+          "body": "All AEON SYE systems run on highly resilient on-premise infrastructure located across **Sermmit Tower Primary Data Center** and the **Secondary DR Site**:\n\n```\n+-----------------------------------------------------------------------------------+\n|                        AEON Enterprise On-Premise Landscape                        |\n+-----------------------------------------------------------------------------------+\n|  [ Ingress Traffic / F5 BIG-IP Load Balancer ] -> Port 8080 (mTLS / WAF Filter)   |\n|                                     |                                             |\n|                                     v                                             |\n|  [ VMware Tanzu K8s Cluster (TKG) ] -> Production Microservices (Multi-Pod HA)     |\n|                                     |                                             |\n|                                     v                                             |\n|  [ Dedicated RHEL 9 VM Cluster (10.254.97.141) ] -> PostgreSQL 16 HA (Patroni)    |\n|                                     |                                             |\n|                                     v                                             |\n|  [ IBM Mainframe & Core Banking ] -> Anti-Corruption Layer (ACL Connectors)       |\n+-----------------------------------------------------------------------------------+\n```\n\n- **Kubernetes Tier**: VMware Tanzu Kubernetes Grid (TKG) running autoscaling stateless pods.\n- **Database Tier**: Enterprise PostgreSQL 16 with Patroni HA replication on RedHat Enterprise Linux 9.\n- **Network & Security**: Ingress on port 8080 with strict Web Application Firewall (WAF) and mTLS mutual authentication."
         },
         {
-          "title": "Sermmit Tower Office Guidelines & Working Hours (09:00 – 18:00)",
-          "body": "### Office Location:\n- **Address**: **Sermmit Tower, 14th Floor (อาคารเสริมมิตร ทาวเวอร์ ชั้น 14)**, Sukhumvit 21 (Asoke), Khlong Toei Nuea, Watthana, Bangkok 10110.\n- **Access**: Secure keycard entry required at all turnstiles and section doors. Tailgating is strictly prohibited.\n\n### Working Hours & Attendance:\n- **Standard Working Hours**: **09:00 – 18:00 (Monday – Friday)**.\n- **Lunch Break**: 12:00 – 13:00 (1 hour).\n- **Core Collaboration Hours**: **10:00 – 17:00** during which all team members must be active and accessible for sync meetings, architectural reviews, and production support.\n- **Leave Request Protocol**: Submit leave requests via corporate HR portal at least 3 business days in advance (except emergency medical leave)."
+          "title": "Four Pillars of ISO Governance",
+          "body": "To guarantee banking-grade stability and compliance, SYE enforces 4 integrated ISO management systems:\n\n1. **ISO 27001 (Information Security Management System - ISMS)**:\n   - Mandatory Least Privilege access control via Active Directory RBAC.\n   - All production data must be encrypted at rest (AES-256) and in transit (TLS 1.3).\n   - Zero hardcoded credentials; all secrets stored in HashiCorp Vault.\n\n2. **ISO 9001 (Quality Management System - QMS)**:\n   - Every production release must pass peer review, automated tests (>= 80% coverage), and Change Advisory Board (CAB) approval.\n   - All standard operations must be documented in Controlled Work Instructions (SOPs).\n\n3. **ISO 22301 (Business Continuity Management System - BCMS)**:\n   - Strict Disaster Recovery SLAs: **Recovery Time Objective (RTO) < 4 hours**, **Recovery Point Objective (RPO) < 15 minutes**.\n   - Bi-annual live DR failover simulation exercises.\n\n4. **ISO 14001 (Environmental Management System - EMS)**:\n   - Paperless engineering workflows, optimized compute server energy utilization, and eco-friendly electronic auditing."
         },
         {
-          "title": "Corporate Code of Conduct & Workplace Hygiene",
-          "body": "### 1. Professional Ethics & Insider Trading Prohibition:\nAs employees of a publicly listed financial institution, engineers have access to sensitive commercial data. Trading AEON securities based on non-public material information is illegal and subject to immediate termination and criminal prosecution.\n\n### 2. Clean Desk & Clean Screen Policy:\n- Workstations must never display customer information or system credentials when unattended.\n- Lock your screen whenever leaving your desk (`Win + L` or `Cmd + Ctrl + Q`).\n- Physical documents containing customer information must be locked in personal pedestals or shredded immediately after use.\n\n### 3. Respectful Workplace & Communications:\n- Use official enterprise Slack/Teams channels for work-related discussions.\n- Maintain professional, respectful, and blameless communication across all departments."
+          "title": "Communication Protocols & Escalation Matrix",
+          "body": "When encountering production blockers, security incidents, or cross-section dependencies, follow the official SYE escalation hierarchy:\n\n```\n[ Engineer / Contractor ] \n       │ \n       ▼ (15 mins SLA)\n[ Section Lead (Rattanapakorn K. / Waranya T. / Lead Engineer) ]\n       │ \n       ▼ (30 mins SLA)\n[ Head of SYE Division (Akkharasaran S. - sye@aeon.co.th) ]\n       │ \n       ▼ (Critical P1 / Outage)\n[ System Development Department Head & Emergency Response Team ]\n```\n\n- **Daily Standup**: 09:30 AM via Microsoft Teams.\n- **Incident Channel**: `#sye-incident-war-room` (P1/P2 incidents require immediate voice conference).\n- **Official Contact**: `sye@aeon.co.th` (Division Head), `sye_api@aeon.co.th` (API Team), `sye_uas@aeon.co.th` (UAS Team)."
         }
       ],
-      "name_th": "การปฐมนิเทศฝ่าย System Enabler (SYE): ผู้นำ 3 ส่วนงาน และระเบียบปฏิบัติงาน",
-      "description_th": "หลักสูตรปฐมนิเทศภาคบังคับสำหรับพนักงานใหม่ฝ่าย System Enabler (SYE) บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน) ครอบคลุมพันธกิจฝ่ายภายใต้ฝ่ายพัฒนาระบบ โครงสร้างผู้นำ 3 ส่วนงาน ระเบียบปฏิบัติงาน ณ อาคารเสริมมิตร ทาวเวอร์ ชั้น 14 เวลาทำงาน 09:00 – 18:00 น. และจรรยาบรรณวิชาชีพ",
+      "name_th": "โครงสร้างองค์กร ภารกิจ และธรรมาภิบาลฝ่าย System Enabler (SYE)",
+      "description_th": "ปฐมนิเทศโครงสร้างฝ่าย SYE 4 ส่วนงานหลัก สถาปัตยกรรมโครงสร้างพื้นฐาน On-Premise Tanzu/RHEL และมาตรฐานการรับรอง ISO 4 ด้าน",
       "learningObjectives_th": [
-        "เข้าใจอัตลักษณ์ พันธกิจ และโครงสร้างผู้นำฝ่าย SYE ภายใต้ฝ่ายพัฒนาระบบ (System Development Department) ของ AEON",
-        "รู้จัก 3 ส่วนงานหลัก: API & Integration Platform, Customer Experience Systems (CXS) และ Omnichannel Customer Service (OCS)",
-        "ปฏิบัติตามระเบียบสถานที่ทำงาน ณ อาคารเสริมมิตร ทาวเวอร์ ชั้น 14 และเวลาทำงานมาตรฐาน 09:00 – 18:00 น.",
-        "ยึดมั่นในจรรยาบรรณวิชาชีพ นโยบายโต๊ะทำงานสะอาด (Clean Desk) และจริยธรรมของสถาบันการเงิน"
+        "เข้าใจบทบาทหน้าที่และความรับผิดชอบของ 4 ส่วนงานหลักในฝ่าย SYE (API, CES, UAS, TSQ)",
+        "เข้าใจสายการบังคับบัญชาและการส่งต่อเรื่อง (Escalation) ภายใต้การนำของ Head of SYE",
+        "เข้าใจภาพรวมสถาปัตยกรรม On-Premise (VMware Tanzu K8s และ RedHat Enterprise Linux 9)",
+        "ปฏิบัติตามมาตรฐานการควบคุม ISO 27001 ISMS, ISO 9001 QMS, ISO 22301 BCMS และ ISO 14001 อย่างเคร่งครัด"
       ],
       "content_th": [
         {
@@ -289,9 +289,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "GEN-002",
-      "name": "Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301)",
+      "name": "Information Security, Zero Trust Architecture & ISO 27001 ISMS Controls",
       "category": "General",
-      "description": "Comprehensive guide to the 4 International Organization for Standardization (ISO) certifications governing all operations in SYE: ISO 27001 (Information Security), ISO 9001 (Quality Management), ISO 14001 (Environmental Management), and ISO 22301 (Business Continuity).",
+      "description": "Enterprise cybersecurity standards covering Zero Trust principles, credential hygiene, phishing defense, data classification, and ISO 27001 security controls.",
       "duration": "3 hours",
       "targetRoles": [
         "All"
@@ -301,38 +301,36 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Understand the objectives and audit scope of ISO 27001, ISO 9001, ISO 14001, and ISO 22301 in SYE",
-        "Implement ISO 27001 security baselines: Zero-Trust RBAC, Hardware FIDO2 MFA, and AES-256 / TLS 1.3 encryption",
-        "Follow ISO 9001 quality controls: peer code reviews, mandatory unit testing (>=80%), and Jira traceability",
-        "Support ISO 14001 environmental sustainability through 100% paperless engineering workflows",
-        "Adhere to ISO 22301 business continuity policies and emergency escalation procedures"
+        "Implement Zero Trust Architecture principles: Never Trust, Always Verify",
+        "Enforce strict password hygiene, MFA, and privileged access management (PAM)",
+        "Identify and report sophisticated social engineering, spear-phishing, and ransomware threats",
+        "Classify and safeguard confidential customer banking data in compliance with ISO 27001"
       ],
       "content": [
         {
-          "title": "Overview of AEON 4 Integrated ISO Standards",
-          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-blue-400 uppercase tracking-wider\">AEON Integrated ISO Governance Framework</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-blue-900/50 text-blue-300 font-semibold border border-blue-700/50\">ISO 27001 • 9001 • 22301 • 14001</span>\n    </div>\n    <div class=\"grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs\">\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-blue-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center font-bold text-base\">🛡️</div>\n            <strong class=\"block text-blue-300 font-bold mb-1\">ISO 27001 (ISMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Access Control, Encryption & Data Security</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-emerald-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-base\">📊</div>\n            <strong class=\"block text-emerald-300 font-bold mb-1\">ISO 9001 (QMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Quality Gates, Testing & Peer Reviews</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-amber-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-base\">🔄</div>\n            <strong class=\"block text-amber-300 font-bold mb-1\">ISO 22301 (BCMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Disaster Recovery (DR) & Business Continuity</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800/80 border border-purple-500/30\">\n            <div class=\"w-8 h-8 mx-auto mb-2 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center font-bold text-base\">🌱</div>\n            <strong class=\"block text-purple-300 font-bold mb-1\">ISO 14001 (EMS)</strong>\n            <p class=\"text-[10px] text-slate-400 leading-tight\">Green Compute & Resource Efficiency</p>\n        </div>\n    </div>\n    <div class=\"mt-4 pt-3 border-t border-slate-800/80 text-center\">\n        <span class=\"text-[11px] text-slate-400 font-medium\">PDCA Cycle: <span class=\"text-blue-400 font-bold\">Plan</span> (Risk Register) &rarr; <span class=\"text-emerald-400 font-bold\">Do</span> (SOP Implementation) &rarr; <span class=\"text-amber-400 font-bold\">Check</span> (Internal Audit) &rarr; <span class=\"text-purple-400 font-bold\">Act</span> (Continuous Improvement)</span>\n    </div>\n</div>\n\n\nAll engineering systems, processes, and infrastructure in the SYE Division operate under **4 International Organization for Standardization (ISO) Certifications**:\n\n| ISO Standard | Domain | Core Focus in SYE |\n|---|---|---|\n| **ISO/IEC 27001** | Information Security Management (ISMS) | Zero-Trust access, data encryption, secrets protection, SOC incident reporting |\n| **ISO 9001** | Quality Management System (QMS) | SDLC quality gates, code reviews, automated unit testing, documentation traceability |\n| **ISO 14001** | Environmental Management System (EMS) | Paperless digital engineering, energy-efficient server consolidation |\n| **ISO 22301** | Business Continuity Management (BCMS) | Disaster Recovery (DR Site), BCP failover drills, RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
+          "title": "Zero Trust Architecture Core Tenets",
+          "body": "In AEON SYE, we adopt the **NIST SP 800-207 Zero Trust Architecture** model. We assume the internal corporate network is inherently hostile.\n\n### The Three Golden Principles:\n1. **Explicit Verification**: Always authenticate and authorize based on all available data points (user identity, device posture, location, service token).\n2. **Least Privilege Access**: Restrict user and service account permissions to the absolute minimum required for the task (Just-In-Time and Just-Enough-Access).\n3. **Assume Breach**: Minimize blast radius by segmenting networks, encrypting all internal communications, and continuously monitoring telemetry.\n\n```\n[ User / Service ] ──( MFA + Device Posture )──> [ Zero Trust Policy Engine ] ──( mTLS 1.3 )──> [ Microservice / DB ]\n```"
         },
         {
-          "title": "ISO 27001: Information Security & Zero-Trust Architecture",
-          "body": "### Core Security Mandates:\n1. **Zero-Trust & Least Privilege (PoLP)**: Access to systems and databases is strictly granted per role. Wildcard permissions (`*`) are forbidden.\n2. **Hardware FIDO2 Multi-Factor Authentication**: All access to GitHub Enterprise, VMware Tanzu, VPN, and SSO requires hardware **YubiKey** or Authenticator apps. SMS OTP is prohibited.\n3. **No Secrets in Source Code**: Committing credentials, passwords, or tokens into Git is strictly prohibited. Pre-commit hooks reject secrets automatically.\n4. **Mandatory Encryption**:\n   - **At Rest**: AES-256 encryption on all PostgreSQL databases and storage volumes.\n   - **In Transit**: TLS 1.3 encryption on all external and internal microservice APIs.\n5. **Workstation Security**: Automatic screen lock after **5 minutes** of inactivity and full-disk BitLocker encryption."
+          "title": "Data Classification & Clean Desk Policy",
+          "body": "All corporate and customer information must be handled according to AEON's 4-tier data classification matrix:\n\n| Classification | Examples | Storage & Encryption Controls |\n|---|---|---|\n| **Confidential / Secret** | Credit Card PAN, CVV, National ID, Passwords, Private Keys | AES-256 encryption at rest, TLS 1.3 in transit, strict tokenization, no plain logging |\n| **Internal Restricted** | API Specs, Source Code, System Architecture Diagrams, Jira Issues | Restricted to authorized SYE employees, protected by corporate SSO |\n| **Internal General** | Division Announcements, Holiday Calendars, General Guidelines | Accessible to all AEON staff |\n| **Public** | Marketing Brochures, Public App Store descriptions | Publicly distributable |\n\n**Clean Desk & Screen Policy**:\n- Lock your workstation (`Win + L` or `Cmd + Ctrl + Q`) whenever leaving your desk.\n- Never leave printed customer records, credentials, or badges unattended.\n- Whiteboards containing architecture or passwords must be erased immediately after meetings."
         },
         {
-          "title": "ISO 9001: Quality Management & Engineering Traceability",
-          "body": "### SDLC Quality Gates:\n- **Peer Code Reviews**: Every Pull Request requires approval from at least **2 peer engineers** before merging.\n- **Unit Test Coverage**: Automated test suites must achieve at least **80% line coverage** in CI before deployment.\n- **Traceability**: Every commit, branch, and PR must link to a valid ticket on **On-Premise Jira Data Center**.\n- **Audit Trails**: All production deployment artifacts, test execution results, and Change Advisory Board (CAB) approvals are retained for annual audit reviews."
+          "title": "Credential Hygiene & Secrets Management",
+          "body": "Hardcoding secrets in source code is considered a **Severity 1 Security Violation** and results in immediate build rejection.\n\n```\n// ❌ ANTI-PATTERN: Hardcoded secret (Will trigger SonarQube & Pre-commit hook block)\nconst dbPassword = \"SuperSecretPassword123!\";\n\n// ✅ BEST PRACTICE: Retrieve from Environment or HashiCorp Vault / Kubernetes Secret\nconst dbPassword = process.env.DATABASE_PASSWORD;\n```\n\n- **Password Complexity**: Minimum 12 characters containing uppercase, lowercase, numbers, and special symbols. Changed every 90 days.\n- **API Keys & Tokens**: Expire within 24 hours maximum. Must use asymmetric JWT (RS256) or mTLS certificates.\n- **Git Guardian**: Automated scanning on all GitHub repositories blocks any commit containing private keys or API tokens."
         },
         {
-          "title": "ISO 14001: Environmental Management & ISO 22301: Business Continuity",
-          "body": "### ISO 14001 (Environmental Sustainability):\n- **100% Paperless Engineering**: All specifications, ADRs, test plans, and sign-offs are purely digital on Confluence and Jira.\n- **Energy-Efficient Compute**: Virtualization and high-density container clustering reduce physical server footprint and power consumption in the data center.\n\n### ISO 22301 (Business Continuity Management):\n- Guarantees financial services survive catastrophic hardware or site failures.\n- Enforces regular BCP drills, automated failover runbooks, and strict compliance with RPO < 5 min and RTO < 30 min thresholds."
+          "title": "Phishing Defense & Incident Reporting Protocol",
+          "body": "Over 90% of security breaches originate from social engineering. Recognize the red flags:\n\n- **Urgency & Coercion**: Demands for immediate credential entry to prevent account closure.\n- **Mismatched Domains**: Emails from `service@aeon-security-update.com` instead of `@aeon.co.th`.\n- **Suspicious Attachments**: Macro-enabled Excel files (`.xlsm`), zip archives, or unexpected executables.\n\n**Reporting Protocol**:\n1. Do **NOT** click links or open attachments.\n2. Forward the suspicious email immediately to **`security@aeon.co.th`** and **`sye@aeon.co.th`**.\n3. If you accidentally entered credentials, disconnect network immediately and call Security Operations Center (SOC Hotline ext. 4444)."
         }
       ],
-      "name_th": "การกำกับดูแลตามมาตรฐาน ISO ทั้ง 4 ด้าน (ISO 27001, 9001, 14001, 22301)",
-      "description_th": "คู่มือมาตรฐานสากล ISO 4 ด้านที่กำกับดูแลการทำงานทั้งหมดในฝ่าย SYE: ISO 27001 (ความมั่นคงปลอดภัยสารสนเทศ), ISO 9001 (ระบบบริหารงานคุณภาพ), ISO 14001 (การจัดการสิ่งแวดล้อม) และ ISO 22301 (ความต่อเนื่องทางธุรกิจ)",
+      "name_th": "ความมั่นคงปลอดภัยสารสนเทศ สถาปัตยกรรม Zero Trust และการควบคุม ISO 27001",
+      "description_th": "มาตรฐานความปลอดภัยทางไซเบอร์ระดับองค์กร ครอบคลุมหลักการ Zero Trust การจัดการรหัสผ่าน การป้องกันฟิชชิ่ง การจัดชั้นความลับข้อมูล และการควบคุมตามมาตรฐาน ISO 27001",
       "learningObjectives_th": [
-        "เข้าใจวัตถุประสงค์และขอบเขตการตรวจประเมินตามมาตรฐาน ISO 27001, 9001, 14001 และ 22301",
-        "ปฏิบัติตามมาตรฐานความปลอดภัย ISO 27001: Zero-Trust RBAC, บังคับใช้ Hardware FIDO2 MFA และการเข้ารหัส AES-256 / TLS 1.3",
-        "ปฏิบัติตามข้อกำหนดคุณภาพ ISO 9001: Peer Review 2 คน, Unit Test >= 80% และการบันทึกประวัติบน Jira",
-        "สนับสนุนมาตรฐานสิ่งแวดล้อม ISO 14001 ด้วยการทำงานแบบไร้กระดาษ (Paperless 100%)",
-        "เข้าใจข้อกำหนดความต่อเนื่องทางธุรกิจ ISO 22301 และขั้นตอนการรายงานเหตุฉุกเฉิน"
+        "ประยุกต์ใช้หลักการ Zero Trust: ไม่เชื่อใจใคร และตรวจสอบสิทธิ์ทุกครั้ง (Never Trust, Always Verify)",
+        "ปฏิบัติตามมาตรฐานรหัสผ่าน การยืนยันตัวตนหลายชั้น (MFA) และการเข้าถึงสิทธิ์ระดับสูง (PAM)",
+        "ตรวจจับและรายงานภัยคุกคาม Social Engineering, Phishing และ Ransomware ได้อย่างถูกต้อง",
+        "จัดหมวดหมู่และปกป้องข้อมูลลูกค้าตามชั้นความลับข้อมูลมาตรฐาน ISO 27001"
       ],
       "content_th": [
         {
@@ -355,9 +353,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "GEN-003",
-      "name": "Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall)",
+      "name": "Enterprise SDLC, GitOps CI/CD & ISO 9001 Quality Gates",
       "category": "General",
-      "description": "Comprehensive guide to the SYE adaptive engineering methodology. Details how squads dynamically select between Agile Iterations (for customer-facing UX) and Structured Waterfall Milestones (for core banking integrations and regulatory compliance), along with the 70/20/10 Testing Pyramid and CAB release gates.",
+      "description": "Standard Software Development Life Cycle (SDLC) at AEON, covering Trunk-Based Git workflows, automated CI/CD pipelines, automated testing gates, and ISO 9001 compliance.",
       "duration": "4 hours",
       "targetRoles": [
         "All"
@@ -367,32 +365,32 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Understand the rationale for the Adaptive Delivery Model (Hybrid Agile & Waterfall) without rigid Scrum dogma",
-        "Select between Track A (Agile Sprints) and Track B (Waterfall Milestones) based on domain complexity and risk",
-        "Execute the 6-phase SDLC quality gates from requirements formulation to production deployment",
-        "Apply the 70/20/10 Testing Pyramid strategy (Unit Tests >=80%, Integration Tests, E2E Tests)"
+        "Navigate the 6 formal phases of AEON Enterprise SDLC with ISO 9001 sign-offs",
+        "Apply Trunk-Based Development and Git branching strategies (feature -> develop -> staging -> main)",
+        "Enforce automated quality gates: SonarQube static analysis, unit test coverage (>=80%), and OWASP dependency checks",
+        "Execute Change Advisory Board (CAB) release management and zero-downtime deployment protocols"
       ],
       "content": [
         {
-          "title": "Adaptive Methodology Strategy (Track A Agile vs. Track B Waterfall)",
-          "body": "At AEON SYE, we do not force projects into rigid Scrum ceremonies. Instead, our division applies an **Adaptive Project Delivery Model (Hybrid Agile & Waterfall)** tailored to the nature and regulatory constraints of each initiative:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_hybrid_sdlc_framework.jpg\" alt=\"Adaptive Project Delivery Model (Hybrid Agile & Waterfall)\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Adaptive Project Delivery Model (Hybrid Agile & Waterfall)</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">On-Premise Jira Data Center • ISO 9001 Quality Flow</span>\n        </div>\n    </div>\n</div>\n\n\n### Track A: Agile Delivery (Customer Channels):\n- **Best Suited For**: Mobile Banking apps (CXS), customer web portals, Conversational AI Chatbots (OCS), and rapid user experience improvements.\n- **Delivery Flow**: 2-week iterative development cycles, continuous backlog grooming on Jira Data Center, fast staging deployments, and rapid stakeholder feedback.\n\n### Track B: Waterfall Delivery (Core & Regulatory Systems):\n- **Best Suited For**: Core Banking integration (API), payment switch settlement connectors, regulatory reporting modules, hardware infrastructure provisioning, and ISO compliance audits.\n- **Delivery Flow**: Structured stage-gates with formal sign-offs (Requirements Specification $\\rightarrow$ Architecture Review $\\rightarrow$ Implementation $\\rightarrow$ Formal QA UAT $\\rightarrow$ CAB Approval $\\rightarrow$ Production Release)."
+          "title": "The 6 Phases of AEON Enterprise SDLC",
+          "body": "Every software initiative in SYE must progress through 6 structured lifecycle phases:\n\n```\n[ 1. Discovery & BRD ] ──> [ 2. Technical Architecture ] ──> [ 3. Sprint Development ]\n         │                              │                               │\n         ▼                              ▼                               ▼\n[ 6. Production & Hypercare ] <── [ 5. UAT & CAB Approval ] <── [ 4. SIT & Automated QA ]\n```\n\n1. **Discovery & BRD**: Business Requirements Document authored by BA, approved by Product Owner.\n2. **Technical Architecture & Design**: High-Level Design (HLD) & Low-Level Design (LLD) reviewed by System Architect.\n3. **Sprint Development & Code Review**: Feature coding, 80%+ unit test coverage, mandatory peer PR review.\n4. **System Integration Testing (SIT)**: Automated API integration, regression testing, and security scanning.\n5. **User Acceptance Testing (UAT) & CAB**: Business sign-off and Change Advisory Board deployment approval.\n6. **Production Release & Monitoring**: Zero-downtime rolling update on VMware Tanzu with 72-hour Hypercare."
         },
         {
-          "title": "Enterprise SDLC 6-Phase Quality Gates",
-          "body": "Regardless of whether a project follows Agile or Waterfall, it must fulfill the mandatory quality gates across all six progressive phases:\n\n1. **Phase 1: Requirements Definition**: Business Analysts author structured User Stories with testable **Given-When-Then** criteria adhering to Definition of Ready (DoR).\n2. **Phase 2: Architecture & Technical Design**: System Architects document technical blueprints via **Architectural Decision Records (ADRs)** on Confluence.\n3. **Phase 3: Implementation & Unit Testing**: Developers author clean Golang / Next.js code with mandatory unit tests ($ge 80%$ line coverage).\n4. **Phase 4: Automated CI & Code Review**: Pull Requests undergo automated SonarQube static analysis and require approval from **2 peer reviewers**.\n5. **Phase 5: Staging Integration & UAT**: QA engineers execute automated regression suites and business stakeholders verify acceptance criteria on Staging.\n6. **Phase 6: CAB Approval & Production Release**: Change Advisory Board review and zero-downtime deployment execution."
+          "title": "GitOps Workflow & Automated CI/CD Pipeline",
+          "body": "SYE adheres to a standardized GitOps deployment pipeline:\n\n```\nDeveloper Push ──> GitHub PR ──> SonarQube Gate ──> Docker Build ──> Harbor Registry ──> ArgoCD Sync ──> Tanzu K8s\n```\n\n### Automated Pipeline Quality Gates:\n- **Linting & Formatting**: Strict ESLint / GoFmt compliance.\n- **Unit Test Coverage**: Minimum **80% line coverage** required to merge.\n- **Static Code Analysis (SAST)**: SonarQube Quality Gate (0 Vulnerabilities, 0 Security Hotspots, Technical Debt < 5%).\n- **Dependency Vulnerability Scanning (SCA)**: Automated Trivy/Snyk container scanning in Harbor Registry."
         },
         {
-          "title": "Testing Pyramid Strategy (70 / 20 / 10 Ratio)",
-          "body": "To maintain high software quality while keeping build pipelines fast and reliable, SYE adheres to the standardized **Testing Pyramid**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n- **70% Unit Tests**: Fast, isolated tests written in **Golang** (`testing` / `testify`) and **Jest/Vitest** for Next.js/React. Must achieve at least **80% line coverage** and run locally in under 3 minutes.\n- **20% Integration Tests**: Validate API contracts, PostgreSQL database transactions, and Apache Kafka message schemas using Docker containers on RHEL.\n- **10% End-to-End & Performance Tests**: Automated Playwright / Cypress browser verification and JMeter stress tests validating critical financial journeys against STAGING."
+          "title": "Release Management & Rollback Contingency",
+          "body": "Production releases must be accompanied by a formal **Rollback Plan (Contingency Runbook)**.\n\n### Deployment Best Practices:\n- **Rolling Updates**: Kubernetes updates pods sequentially with `maxSurge: 25%` and `maxUnavailable: 0` to ensure zero downtime.\n- **Health Checks**: `livenessProbe` and `readinessProbe` must be configured on all microservices.\n- **Instant Rollback**: If error rate spikes > 1% post-deployment, trigger `kubectl rollout undo deployment/<service-name>` or ArgoCD rollback immediately."
         }
       ],
-      "name_th": "วงจรการพัฒนาซอฟต์แวร์แบบยืดหยุ่น (Hybrid Agile & Waterfall) และการประกันคุณภาพ",
-      "description_th": "คู่มือระเบียบวิธีการพัฒนาซอฟต์แวร์แบบยืดหยุ่นของฝ่าย SYE อธิบายแนวทางการเลือกใช้ระหว่าง Agile Iterations (สำหรับระบบลูกค้า) และ Waterfall Milestones (สำหรับระบบ Core Banking และข้อกำหนดกฎหมาย) ร่วมกับปิรามิดการทดสอบ 70/20/10 และเกณฑ์การปล่อยระบบ",
+      "name_th": "วงจรการพัฒนาระบบระดับองค์กร (SDLC), GitOps CI/CD และเกณฑ์คุณภาพ ISO 9001",
+      "description_th": "มาตรฐานวงจรการพัฒนาซอฟต์แวร์ของ AEON ครอบคลุมขั้นตอน GitOps, การสร้าง CI/CD Pipeline อัตโนมัติ, การตรวจสอบคุณภาพโค้ด และการส่งมอบงานตามมาตรฐาน ISO 9001",
       "learningObjectives_th": [
-        "เข้าใจเหตุผลและความสำคัญของโมเดลการทำงานแบบ Adaptive Hybrid (Agile & Waterfall) โดยไม่ยึดติดกับพิธีกรรม Scrum ตายตัว",
-        "เลือกใช้ระหว่าง Track A (Agile Sprints) และ Track B (Waterfall Milestones) ตามลักษณะโครงการและความเสี่ยง",
-        "ปฏิบัติตามด่านตรวจวัดคุณภาพ SDLC ทั้ง 6 ขั้นตอน ตั้งแต่การวิเคราะห์ความต้องการจนถึงการปล่อยระบบ",
-        "นำมาตรฐานปิรามิดการทดสอบ 70/20/10 มาใช้ (Unit Test >=80%, Integration Test, E2E Test)"
+        "เข้าใจและปฏิบัติตาม 6 ขั้นตอนของวงจร SDLC พร้อมการลงนามอนุมัติตามมาตรฐาน ISO 9001",
+        "ใช้กระบวนการ Git Branching Strategy (feature -> develop -> staging -> main) อย่างถูกต้อง",
+        "ผ่านเกณฑ์ Quality Gates อัตโนมัติ: SonarQube, Unit Test Coverage >=80% และการสแกนช่องโหว่",
+        "ปฏิบัติตามขั้นตอนการขออนุมัติ Change Request (CAB) และการ Deployment แบบ Zero-Downtime"
       ],
       "content_th": [
         {
@@ -837,9 +835,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "BA-001",
-      "name": "Requirements Elicitation Techniques",
+      "name": "Modern Requirements Engineering, User Story Mapping & Domain Discovery",
       "category": "BA",
-      "description": "Methods for gathering accurate and complete business requirements from stakeholders.",
+      "description": "Techniques for discovering user needs, Event Storming, Domain-Driven Design (DDD) discovery, User Story Mapping, and transforming business strategy into agile backlogs.",
       "duration": "3 hours",
       "targetRoles": [
         "BA",
@@ -850,34 +848,28 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Conduct effective stakeholder interviews",
-        "Facilitate requirements workshops",
-        "Utilize observation and surveys for data gathering"
+        "Facilitate Event Storming and Domain Discovery workshops with business stakeholders",
+        "Build comprehensive User Story Maps depicting customer journey and MVP slices",
+        "Decompose complex banking domains into clear Bounded Contexts and Ubiquitous Language",
+        "Eliminate requirement ambiguities using Concrete Examples and Specification by Example"
       ],
       "content": [
         {
-          "title": "Interview Techniques",
-          "body": "One-on-one interviews are crucial for eliciting detailed requirements from subject matter experts (SMEs). At AEON, Business Analysts should prepare open-ended questions in advance to encourage discussion. Active listening and asking clarifying \"why\" questions help uncover underlying business needs rather than just technical requests. Always document the interview outcomes and seek confirmation from the interviewee to ensure accuracy.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
+          "title": "Event Storming & Domain Discovery",
+          "body": "Traditional 200-page requirement specifications fail because of communication gaps. SYE BA teams utilize **Event Storming** to model business domains in hours:\n\n```\n[ Domain Event (Orange) ] ──> [ Command (Blue) ] ──> [ Aggregate/Entity (Yellow) ] ──> [ Read Model (Green) ]\n  \"CardActivated\"               \"ApplyCreditCard\"             \"CreditAccount\"                 \"CardSummaryView\"\n```\n\n- **Domain Events (Past Tense)**: Facts that happened in the business (e.g. `PaymentSubmitted`, `KYCApproved`).\n- **Commands (Present Tense)**: User actions triggered on the system (e.g. `SubmitPayment`, `VerifyOTP`).\n- **Ubiquitous Language**: A unified dictionary shared between business users and software developers."
         },
         {
-          "title": "Facilitating Workshops",
-          "body": "Requirements workshops bring multiple stakeholders together to define scope and resolve conflicting needs rapidly. A successful workshop requires a clear agenda, established ground rules, and a strong facilitator to keep the group focused. These sessions are highly effective for defining cross-functional processes and gaining consensus on priorities. Visual aids like whiteboarding or process mapping on screen significantly enhance mutual understanding."
-        },
-        {
-          "title": "Observation & Shadowing",
-          "body": "Observation involves shadowing end-users as they perform their daily tasks in their current environment. This technique often reveals undocumented workarounds, pain points, and unarticulated needs that users might not mention in an interview. It provides context on how the software will be used in the real world. Taking detailed notes and asking questions during appropriate breaks is key to successful observation."
-        },
-        {
-          "title": "Surveys and Questionnaires",
-          "body": "When requirements need to be gathered from a large, geographically dispersed group of stakeholders, surveys are an efficient tool. They are best used for quantitative data gathering or prioritizing features among many users. Questions must be unambiguous and carefully structured to avoid leading the respondent. The results should be analyzed to identify trends that warrant deeper investigation through interviews."
+          "title": "User Story Mapping for MVP Release Slicing",
+          "body": "Jeff Patton's User Story Mapping structures the product backlog along the user journey:\n\n```\nUser Activities:     [ Onboarding ] ────────> [ Card Activation ] ────────> [ Daily Transactions ]\nUser Tasks:          | Enter ID | Scan Face |   | Receive Card | Set PIN |    | Pay Merchant | View History |\n-------------------------------------------------------------------------------------------------------\nRelease 1 (MVP):     [  Story 1 ][  Story 2 ]   [   Story 3   ][ Story 4 ]    [   Story 5   ][  Story 6   ]\nRelease 2 (FastPay): [  FaceID  ][ AutoFill ]   [ Digital Card][ Instant ]    [  QR Payment ][ Push Alert ]\n```\n\nThis visual map ensures all stakeholders see the big picture and prevents developing isolated features that do not deliver end-to-end user value."
         }
       ],
-      "name_th": "หลักสูตร: Requirements Elicitation Techniques",
-      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ Requirements Elicitation Techniques เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
+      "name_th": "วิศวกรรมความต้องการสมัยใหม่ (Requirements Engineering), User Story Mapping และ Domain Discovery",
+      "description_th": "เทคนิคการค้นหาความต้องการของผู้ใช้, Event Storming, Domain-Driven Design (DDD), การจัดทำ User Story Mapping และการแปลงโจทย์ธุรกิจเป็น Product Backlog",
       "learningObjectives_th": [
-        "เข้าใจและสามารถปฏิบัติตาม: Conduct effective stakeholder interviews",
-        "เข้าใจและสามารถปฏิบัติตาม: Facilitate requirements workshops",
-        "เข้าใจและสามารถปฏิบัติตาม: Utilize observation and surveys for data gathering"
+        "จัด Workshop การค้นหาความต้องการด้วยเทคนิค Event Storming ร่วมกับผู้มีส่วนได้ส่วนเสีย",
+        "สร้างแผนผัง User Story Mapping ที่แสดง Customer Journey และแบ่งขอบเขต MVP ชัดเจน",
+        "แบ่งโดเมนธุรกิจที่ซับซ้อนออกเป็น Bounded Context และสร้างภาษาศัพท์กลาง (Ubiquitous Language)",
+        "กำจัดความคลุมเครือของ Requirement โดยใช้เทคนิค Specification by Example"
       ],
       "content_th": [
         {
@@ -1081,9 +1073,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "DEV-001",
-      "name": "Secure Coding Practices & OWASP Top 10 Mitigation",
+      "name": "Secure Coding Standards, OWASP Top 10 (2025) & Defensive Engineering",
       "category": "Developer",
-      "description": "Comprehensive enterprise standard for secure software engineering in Golang and Next.js. Covers input validation, parameterized SQL queries, prevention of SQL Injection, Cross-Site Scripting (XSS), Broken Object Level Authorization (BOLA), cryptographic key management, and automated SAST/DAST pipeline gates.",
+      "description": "Mastering modern secure coding practices to eliminate vulnerabilities: Injection, Broken Auth, Cryptographic Failures, SSRF, and Security Misconfiguration.",
       "duration": "4 hours",
       "targetRoles": [
         "Developer",
@@ -1097,36 +1089,32 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2024-01-10",
       "learningObjectives": [
-        "Prevent SQL Injection using sqlx/pgx parameterized queries and ORM safety rules",
-        "Mitigate Cross-Site Scripting (XSS) and CSRF in Next.js using Content Security Policy (CSP) and DOMPurify",
-        "Implement strict Broken Access Control (BOLA/BFLA) mitigation via JWT claims verification in Golang middleware",
-        "Enforce Secrets Scanning in Git commits and integrate automated SAST/DAST in CI pipelines"
+        "Mitigate all OWASP Top 10 (2025) vulnerabilities in Go, Node.js, and TypeScript applications",
+        "Enforce parameterized SQL queries and ORM safety to eliminate SQL Injection 100%",
+        "Implement robust cryptographic primitives (AES-GCM-256, bcrypt, argon2id) for financial data",
+        "Sanitize all inbound and outbound payloads to prevent Cross-Site Scripting (XSS) and SSRF"
       ],
       "content": [
         {
-          "title": "OWASP Top 10 in Financial Systems & Threat Vectors",
-          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-indigo-400 uppercase tracking-wider\">Clean Hexagonal Architecture & Security Boundary</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-indigo-900/50 text-indigo-300 font-semibold border border-indigo-700/50\">Industry Best Practice</span>\n    </div>\n    <div class=\"grid grid-cols-1 md:grid-cols-3 gap-3 text-center text-xs\">\n        <div class=\"p-3.5 rounded-xl bg-slate-800 border border-slate-700\">\n            <strong class=\"block text-sky-300 font-bold mb-1\">1. Adapters / Ingress</strong>\n            <p class=\"text-[10px] text-slate-400\">HTTP REST Handlers, DTO Validation, Auth Middleware (JWT/Bearer)</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800 border border-indigo-500/50 bg-indigo-950/20\">\n            <strong class=\"block text-indigo-300 font-bold mb-1\">2. Core Domain & Use Cases</strong>\n            <p class=\"text-[10px] text-slate-400\">Pure Business Logic, Transaction Services, Zero External Framework Dependencies</p>\n        </div>\n        <div class=\"p-3.5 rounded-xl bg-slate-800 border border-slate-700\">\n            <strong class=\"block text-emerald-300 font-bold mb-1\">3. Infrastructure / Egress</strong>\n            <p class=\"text-[10px] text-slate-400\">SQL Repositories (Parameterized), External Client Adapters, Kafka Publishers</p>\n        </div>\n    </div>\n</div>\n\n\n### Threat Landscape for AEON Financial Platforms\nAs financial systems process real money and sensitive customer credit profiles, web and API vulnerabilities can lead to catastrophic regulatory penalties and financial fraud.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### Top Critical Threat Vectors in AEON:\n1. **Broken Object Level Authorization (BOLA / IDOR)**: An authenticated attacker accesses another user's credit card transactions simply by guessing account IDs in API parameters.\n2. **SQL Injection (SQLi)**: Untrusted user input dynamically concatenated into SQL queries.\n3. **Cross-Site Scripting (XSS)**: Malicious JavaScript executed in customer browsers to steal session cookies.\n4. **Security Misconfiguration & Hardcoded Secrets**: Exposing API keys or internal database ports to unauthorized networks."
+          "title": "A01: Broken Access Control & A02: Cryptographic Failures",
+          "body": "### 1. Broken Access Control Prevention\nNever rely solely on client-side role checks. Every API endpoint must enforce server-side tenant isolation:\n\n```go\n// ✅ SECURE: Verify that the requested resource belongs to the authenticated user\nfunc GetAccountHandler(c *gin.Context) {\n    userID := c.GetString(\"auth_user_id\") // Extracted from verified JWT\n    accountID := c.Param(\"id\")\n    \n    var account Account\n    if err := db.Where(\"id = ? AND user_id = ?\", accountID, userID).First(&account).Error; err != nil {\n        c.JSON(404, gin.H{\"error\": \"Account not found or access denied\"})\n        return\n    }\n    c.JSON(200, account)\n}\n```\n\n### 2. Cryptographic Standards:\n- **Passwords**: Never use MD5 or SHA-256. Use **bcrypt** (work factor >= 12) or **Argon2id**.\n- **Data at Rest**: Use **AES-256-GCM** with authenticated data (AEAD)."
         },
         {
-          "title": "SQL Injection Prevention & Safe Database Queries in Golang",
-          "body": "### Parameterized Queries Mandate:\nDynamic string concatenation (`fmt.Sprintf(\"SELECT * FROM accounts WHERE id = '%s'\", input)`) is strictly prohibited in SYE codebases and triggers an immediate SonarQube build blocker.\n\n```go\n// VULNERABLE CODE (STRICTLY FORBIDDEN):\n// query := fmt.Sprintf(\"SELECT id, balance FROM accounts WHERE user_id = '%s'\", userID)\n// db.Query(query)\n\n// SECURE AEON STANDARD (Mandatory Parameterized Binding):\nfunc GetAccountBalance(ctx context.Context, db *pgxpool.Pool, userID string) (*Account, error) {\n    query := `SELECT id, balance, status FROM accounts WHERE user_id = $1 AND is_deleted = false`\n    var acc Account\n    err := db.QueryRow(ctx, query, userID).Scan(&acc.ID, &acc.Balance, &acc.Status)\n    if err != nil {\n        if errors.Is(err, pgx.ErrNoRows) {\n            return nil, ErrAccountNotFound\n        }\n        return nil, fmt.Errorf(\"failed to query account: %w\", err)\n    }\n    return &acc, nil\n}\n```\n\n### Safe ORM Usage Guidelines:\n- When using GORM or SQLBoiler, always use positional placeholders (`db.Where(\"user_id = ?\", userID)`).\n- Never pass raw user inputs into `db.Order()` or `db.Group()` without strict whitelisting."
+          "title": "A03: Injection & Parameterized Query Enforcement",
+          "body": "SQL Injection remains the #1 cause of catastrophic data leaks. Dynamic string concatenation in database queries is strictly prohibited.\n\n```go\n// ❌ VULNERABLE TO SQL INJECTION:\nquery := fmt.Sprintf(\"SELECT * FROM users WHERE username = '%s' AND password = '%s'\", inputUser, inputPass)\ndb.Raw(query)\n\n// ✅ SECURE: Parameterized query ensures input is treated strictly as data, never code\ndb.Where(\"username = ? AND status = ?\", inputUser, \"Active\").First(&user)\n```\n\nFor NoSQL and GraphQL engines, always enforce input type schemas and maximum query depth limits."
         },
         {
-          "title": "Cross-Site Scripting (XSS) & State Protection in Next.js",
-          "body": "### Frontend Sanitization & CSP Headers:\n1. **Never use `dangerouslySetInnerHTML`** unless sanitized with `DOMPurify`.\n2. **Strict Content Security Policy (CSP)**: Enforce nonce-based CSP in `next.config.js`.\n\n```javascript\n// next.config.js - Mandatory Security Headers for AEON CXS Portals\nconst securityHeaders = [\n  { key: 'X-DNS-Prefetch-Control', value: 'on' },\n  { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },\n  { key: 'X-Frame-Options', value: 'DENY' },\n  { key: 'X-Content-Type-Options', value: 'nosniff' },\n  { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },\n  {\n    key: 'Content-Security-Policy',\n    value: \"default-src 'self'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:;\"\n  }\n];\n\nmodule.exports = {\n  async headers() {\n    return [{ source: '/(.*)', headers: securityHeaders }];\n  }\n};\n```"
-        },
-        {
-          "title": "Broken Access Control & JWT Verification Middleware",
-          "body": "### Enforcing Ownership Verification:\nEvery Golang HTTP handler must verify that the requesting user's JWT identity matches the resource ID being manipulated:\n\n```go\n// Golang Middleware for Strict Tenant / User Authorization\nfunc RequireResourceOwnership() gin.HandlerFunc {\n    return func(c *gin.Context) {\n        tokenClaims := c.MustGet(\"claims\").(*JWTClaims)\n        requestedUserID := c.Param(\"userId\")\n\n        if tokenClaims.Role != \"ADMIN\" && tokenClaims.Subject != requestedUserID {\n            c.AbortWithStatusJSON(http.StatusForbidden, gin.H{\n                \"error_code\": \"FORBIDDEN_ACCESS\",\n                \"message\":    \"You are not authorized to access this resource\",\n            })\n            return\n        }\n        c.Next()\n    }\n}\n```"
+          "title": "A10: Server-Side Request Forgery (SSRF) & Defensive Headers",
+          "body": "SSRF occurs when an application fetches a remote resource without validating the user-supplied URL (e.g. hitting AWS metadata or internal K8s services).\n\n```typescript\n// ✅ SECURE URL VALIDATION: Whitelist trusted domains and block internal IP ranges\nfunction isSafeUrl(targetUrl: string): boolean {\n    const parsed = new URL(targetUrl);\n    const blockedHosts = ['10.', '192.168.', '172.16.', '127.0.0.1', 'localhost', '169.254.169.254'];\n    \n    if (parsed.protocol !== 'https:') return false;\n    return !blockedHosts.some(blocked => parsed.hostname.startsWith(blocked));\n}\n```\n\n### Mandatory HTTP Security Headers:\n- `Content-Security-Policy: default-src 'self'`\n- `X-Frame-Options: DENY`\n- `X-Content-Type-Options: nosniff`\n- `Strict-Transport-Security: max-age=31536000; includeSubDomains`"
         }
       ],
-      "name_th": "แนวทางการเขียนโค้ดที่ปลอดภัยและการป้องกันช่องโหว่ OWASP Top 10",
-      "description_th": "มาตรฐานวิศวกรรมความมั่นคงปลอดภัยในการเขียนโปรแกรมด้วยภาษา Golang และ Next.js ครอบคลุมการตรวจสอบข้อมูลนำเข้า, การป้องกัน SQL Injection ด้วย Parameterized Queries, การป้องกัน XSS, การควบคุมสิทธิ์ BOLA, การบริหารจัดการกุญแจเข้ารหัส และการตรวจความปลอดภัยอัตโนมัติบน CI/CD",
+      "name_th": "มาตรฐานการเขียนโค้ดปลอดภัย, OWASP Top 10 (2025) และวิศวกรรมเชิงป้องกัน",
+      "description_th": "เทคนิคการเขียนโปรแกรมเชิงป้องกันตามมาตรฐาน OWASP Top 10 เพื่อกำจัดช่องโหว่ SQL Injection, Broken Authentication, XSS, CSRF, SSRF และการจัดการข้อมูลลับ",
       "learningObjectives_th": [
-        "ป้องกันการโจมตี SQL Injection โดยใช้ Parameterized Queries บน sqlx/pgx และกฎความปลอดภัยของ ORM",
-        "ป้องกัน Cross-Site Scripting (XSS) และ CSRF บน Next.js ด้วย Content Security Policy (CSP) และ DOMPurify",
-        "ป้องกันช่องโหว่การละเมิดสิทธิ์ (BOLA/BFLA) ผ่านการตรวจสอบ Claim ใน JWT บน Golang Middleware",
-        "เปิดใช้ระบบตรวจสอบรหัสผ่านใน Git Commits และตั้งค่า SAST/DAST ตรวจช่องโหว่อัตโนมัติบน CI/CD"
+        "ป้องกันช่องโหว่ความปลอดภัยระดับท็อปตามมาตรฐาน OWASP Top 10 (2025)",
+        "เขียนคำสั่ง SQL แบบ Parameterized Query และใช้ ORM อย่างปลอดภัย ป้องกัน SQL Injection 100%",
+        "ใช้งานระบบเข้ารหัสข้อมูลขั้นสูง (AES-GCM-256, bcrypt, argon2id) สำหรับข้อมูลธุรกรรมการเงิน",
+        "ทำการ Sanitize และ Validate ข้อมูลฝั่ง Client/Server เพื่อป้องกัน XSS และ SSRF"
       ],
       "content_th": [
         {
@@ -1207,9 +1195,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "DEV-003",
-      "name": "Enterprise API Design, RESTful Guidelines & Golang Microservices",
+      "name": "RESTful API Design, OpenAPI 3.1 Standards & Semantic Versioning",
       "category": "Developer",
-      "description": "Principles of designing RESTful APIs, documentation with Swagger, and implementation best practices.",
+      "description": "Enterprise API-first architecture covering resource naming, HTTP semantics, idempotent methods, pagination, OpenAPI 3.1 Swagger specifications, and backward compatibility.",
       "duration": "4 hours",
       "targetRoles": [
         "Developer",
@@ -1221,34 +1209,32 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Apply REST principles and standard HTTP methods",
-        "Utilize correct HTTP status codes and versioning",
-        "Generate comprehensive Swagger documentation"
+        "Design consistent, predictable RESTful APIs following RFC 7231 and OpenAPI 3.1 standards",
+        "Correctly utilize HTTP Verbs (GET, POST, PUT, PATCH, DELETE) and status codes (200, 201, 400, 401, 404, 409, 500)",
+        "Implement idempotency keys for financial transactions to eliminate duplicate billing",
+        "Manage API lifecycle, deprecation policies, and Semantic Versioning (SemVer)"
       ],
       "content": [
         {
-          "title": "RESTful Principles",
-          "body": "APIs at AEON must adhere to REST principles, using nouns to represent resources (e.g., `/users`, `/orders`) rather than verbs. We utilize standard HTTP methods to indicate actions: GET for retrieval, POST for creation, PUT/PATCH for updates, and DELETE for removal. APIs must be stateless, meaning each request contains all information necessary for the server to fulfill it, independent of previous requests.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_golang_kafka_mesh.jpg\" alt=\"Golang Microservices & Apache Kafka Event Mesh\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Golang Microservices & Apache Kafka Event Mesh</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">API Gateway • gRPC • Redis • PostgreSQL</span>\n        </div>\n    </div>\n</div>\n"
+          "title": "REST Resource Modeling & HTTP Semantics",
+          "body": "REST APIs represent business entities as **nouns** in plural format:\n\n```\nGET    /api/v1/credit-cards           -> List cards (paginated)\nPOST   /api/v1/credit-cards           -> Create a new card application\nGET    /api/v1/credit-cards/{id}      -> Retrieve specific card details\nPATCH  /api/v1/credit-cards/{id}      -> Partial update (e.g. update credit limit)\nPUT    /api/v1/credit-cards/{id}      -> Complete entity replacement\nDELETE /api/v1/credit-cards/{id}      -> Soft delete / deactivate card\n```\n\n### Status Code Hierarchy:\n- **200 OK**: Successful GET / PATCH.\n- **201 Created**: Successful POST creation (returns `Location` header).\n- **400 Bad Request**: Invalid client payload schema.\n- **401 Unauthorized**: Missing or expired JWT token.\n- **403 Forbidden**: Valid token, but user lacks role permission.\n- **409 Conflict**: Resource state conflict (e.g. duplicate national ID)."
         },
         {
-          "title": "Status Codes and Error Handling",
-          "body": "Proper use of HTTP status codes is critical for client applications to understand the response. Return 200/201 for success, 400 for bad client requests, 401/403 for authentication issues, and 404 for missing resources. Never return a 200 OK with an error message in the payload. Error responses must follow a standard JSON structure containing an error code and a developer-friendly message."
+          "title": "Financial Idempotency & Concurrency Control",
+          "body": "In banking systems, network timeouts can cause clients to retry payment requests. **Idempotency Keys** guarantee that repeated requests produce the exact same outcome without charging the customer twice.\n\n```\nClient ──[ POST /api/v1/payments (Idempotency-Key: \"uuid-1234\") ]──> API Gateway\n                                                                             │\n                                                                             v\n                                                               [ Redis Key Check ]\n                                                                /                 \\\n                                                     (Key Exists: Cached)     (New Key: Process)\n                                                             │                         │\n                                                             v                         v\n                                                     Return Saved 200 OK      Execute Payment & Cache\n```\n\n1. Client generates a unique UUIDv4 in the `Idempotency-Key` header.\n2. Server acquires a distributed lock in Redis for 120 seconds.\n3. If duplicate key arrives while processing, return `409 Conflict`. If completed, return cached response directly."
         },
         {
-          "title": "API Versioning Strategies",
-          "body": "To prevent breaking existing clients when introducing backward-incompatible changes, API versioning is mandatory. We implement versioning in the URL path (e.g., `/api/v1/users`). Minor additive changes do not require a new version, but changing existing data structures or removing endpoints does. Deprecation notices must be communicated to consumers well in advance of removing old versions."
-        },
-        {
-          "title": "Swagger Documentation",
-          "body": "Every API deployed at AEON must have accompanying OpenAPI (Swagger) documentation. This documentation is generated automatically from code annotations. The Swagger UI provides an interactive interface for developers and QA to understand the endpoints, required payloads, and expected responses. Undocumented APIs will not pass the CI pipeline and cannot be deployed to production."
+          "title": "OpenAPI 3.1 & Standard Error Response Schema",
+          "body": "Every SYE API must conform to the **RFC 7807 Problem Details** error specification:\n\n```json\n{\n  \"type\": \"https://api.aeonth.com/errors/insufficient-credit-limit\",\n  \"title\": \"Insufficient Credit Limit\",\n  \"status\": 422,\n  \"detail\": \"Requested transaction amount 15,000 THB exceeds available credit limit 8,200 THB.\",\n  \"instance\": \"/api/v1/payments/tx-994821\",\n  \"timestamp\": \"2026-08-24T14:30:00Z\",\n  \"errorCode\": \"ERR_LIMIT_EXCEEDED\"\n}\n```\n\nThis standard format ensures automated frontend error parsers display consistent, localized feedback to mobile app users."
         }
       ],
-      "name_th": "การออกแบบ Enterprise API และการพัฒนา Microservices ด้วยภาษา Golang",
-      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ Enterprise API Design, RESTful Guidelines & Golang Microservices เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
+      "name_th": "การออกแบบ RESTful API มาตรฐาน OpenAPI 3.1 และ Semantic Versioning",
+      "description_th": "หลักการออกแบบ RESTful API ระดับสากล ครอบคลุมการตั้งชื่อ Resource, การใช้ HTTP Verbs, Idempotency, การจัดหน้า Pagination, การเขียน OpenAPI Spec และการควบคุม Version",
       "learningObjectives_th": [
-        "เข้าใจและสามารถปฏิบัติตาม: Apply REST principles and standard HTTP methods",
-        "เข้าใจและสามารถปฏิบัติตาม: Utilize correct HTTP status codes and versioning",
-        "เข้าใจและสามารถปฏิบัติตาม: Generate comprehensive Swagger documentation"
+        "ออกแบบ RESTful API ที่สอดคล้องตามมาตรฐานสากล RFC 7231 และ OpenAPI 3.1",
+        "ใช้งาน HTTP Verbs และ Status Codes ได้อย่างแม่นยำและถูกต้องตามความหมาย",
+        "ประยุกต์ใช้ Idempotency Key ป้องกันการทำรายการธุรกรรมการเงินซ้ำซ้อน",
+        "จัดการวงจรชีวิต API นโยบายการ Deprecate และการใช้ Semantic Versioning (SemVer)"
       ],
       "content_th": [
         {
@@ -1396,9 +1382,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QA-001",
-      "name": "Enterprise Test Planning & 70/20/10 Testing Strategy",
+      "name": "Test Engineering Strategy, Testing Pyramid & Test Case Design Techniques",
       "category": "QA",
-      "description": "Developing comprehensive test plans, identifying test scenarios, and defining test coverage.",
+      "description": "Modern software testing methodologies, test level distribution across the pyramid, Boundary Value Analysis, Equivalence Partitioning, and defect prevention.",
       "duration": "3 hours",
       "targetRoles": [
         "QA",
@@ -1410,34 +1396,32 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Understand test levels and methodologies",
-        "Apply risk-based testing approaches",
-        "Generate test estimation and metrics reports"
+        "Implement the Testing Pyramid (Unit > Integration > Contract > E2E UI) to optimize test ROI",
+        "Apply Black-box test design techniques: Equivalence Partitioning (EP), Boundary Value Analysis (BVA), and Decision Tables",
+        "Write unambiguous, executable Gherkin scenarios for Behavior-Driven Development (BDD)",
+        "Measure and analyze test effectiveness using Defect Leakage Rate and Test Coverage metrics"
       ],
       "content": [
         {
-          "title": "Test Levels",
-          "body": "\n<div class=\"my-6 p-5 bg-slate-900 rounded-2xl border border-slate-800 text-white shadow-lg\">\n    <div class=\"flex items-center justify-between border-b border-slate-800 pb-3 mb-4\">\n        <span class=\"text-xs font-mono font-bold text-rose-400 uppercase tracking-wider\">Shift-Left Testing Pyramid (70 / 20 / 10 Strategy)</span>\n        <span class=\"text-[11px] px-2 py-0.5 rounded bg-rose-900/50 text-rose-300 font-semibold border border-rose-700/50\">Quality Engineering Standard</span>\n    </div>\n    <div class=\"space-y-2.5 text-xs text-center\">\n        <div class=\"w-2/5 mx-auto p-2 rounded-lg bg-rose-900/40 border border-rose-600/50 text-rose-300 font-bold\">\n            10% E2E &amp; Performance (Cypress, Playwright, JMeter)\n        </div>\n        <div class=\"w-3/5 mx-auto p-2.5 rounded-lg bg-amber-900/40 border border-amber-600/50 text-amber-300 font-bold\">\n            20% Integration &amp; API Contract (Newman, Pact, Postman)\n        </div>\n        <div class=\"w-4/5 mx-auto p-3 rounded-lg bg-emerald-900/40 border border-emerald-600/50 text-emerald-300 font-bold\">\n            70% Unit &amp; Component Tests (Golang test, Jest, Mocking) &bull; Coverage &gt; 80%\n        </div>\n    </div>\n</div>\n\n\nQuality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
+          "title": "The Testing Pyramid & Test Automation ROI",
+          "body": "Traditional anti-patterns rely heavily on slow, fragile manual UI testing (The Ice Cream Cone anti-pattern). SYE enforces the **Modern Testing Pyramid**:\n\n```\n       /\\      <-- 10% E2E UI Tests (Playwright / Cypress) - High cost, slow\n      /  \\     \n     /====\\    <-- 20% Integration & API Contract Tests (Postman / Pact) - Fast, reliable\n    /======\\   \n   /========\\  <-- 70% Unit & Component Tests (Jest / Go Test) - Ultra fast, high ROI\n  +----------+\n```\n\n- **Unit Tests (70%)**: Validate business logic in isolation with mocked dependencies. Runs on every commit in < 60s.\n- **Integration & API Tests (20%)**: Validate database queries, message queues, and REST API contract schemas.\n- **End-to-End UI Tests (10%)**: Validate critical customer golden paths (e.g. Login -> Pay Bill -> Confirm SMS OTP)."
         },
         {
-          "title": "Risk-Based Testing",
-          "body": "Given time constraints, it is impossible to test every possible scenario exhaustively. AEON employs a Risk-Based Testing strategy, prioritizing test cases based on the probability of failure and the business impact of a defect. High-risk areas, such as payment processing or security modules, receive the most rigorous testing and automated coverage. Lower-risk UI elements may only require exploratory testing."
+          "title": "Black-Box Test Case Design Techniques",
+          "body": "Never write arbitrary test cases. Apply formal engineering design techniques:\n\n### 1. Equivalence Partitioning (EP) & Boundary Value Analysis (BVA):\nExample: Personal loan application amount allowed is **5,000 THB to 500,000 THB**.\n\n| Test Partition | Test Value | Expected Result | Type |\n|---|---|---|---|\n| Just below lower bound | 4,999 THB | Reject (422 Error) | BVA Invalid |\n| Exact lower bound | 5,000 THB | Accept (200 OK) | BVA Valid |\n| Typical valid range | 50,000 THB | Accept (200 OK) | EP Valid |\n| Exact upper bound | 500,000 THB | Accept (200 OK) | BVA Valid |\n| Just above upper bound | 500,001 THB | Reject (422 Error) | BVA Invalid |\n| Non-numeric input | \"five thousand\" | Reject (400 Bad Request) | Error Guessing |"
         },
         {
-          "title": "Test Estimation",
-          "body": "QA engineers must accurately estimate the effort required to test new features during sprint planning. Estimation should account for test case design, execution, environment setup, and data preparation. We often use story points alongside development estimates to ensure QA capacity is not exceeded. Proper estimation prevents testing bottlenecks at the end of the sprint."
-        },
-        {
-          "title": "Test Metrics and Reporting",
-          "body": "Effective QA relies on data to measure product quality and team efficiency. Key metrics include Test Execution Coverage, Defect Density, and Defect Rejection Rate. Daily test execution reports keep stakeholders informed of progress and blockers. The final Test Summary Report provides a formal sign-off recommendation based on these metrics before a production release."
+          "title": "Defect Severity vs Priority & Root Cause Analysis",
+          "body": "Defect triage requires objective categorization:\n\n- **Severity 1 (Critical)**: Complete service outage, data corruption, or security vulnerability. SLA to resolve: **< 2 hours**.\n- **Severity 2 (High)**: Major feature broken with no workaround (e.g. Credit card payment fails). SLA: **< 8 hours**.\n- **Severity 3 (Medium)**: Feature broken but viable workaround exists. SLA: **Next sprint release**.\n- **Severity 4 (Low)**: Cosmetic UI issue, typo, minor alignment. SLA: **Backlog polish**.\n\n**Root Cause Analysis (5 Whys)**: Every S1/S2 bug found in production requires a 5-Whys post-mortem to update automated regression test suites."
         }
       ],
-      "name_th": "การวางแผนกลยุทธ์การทดสอบระดับองค์กรและปิรามิดการทดสอบ 70/20/10",
-      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ Enterprise Test Planning & 70/20/10 Testing Strategy เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
+      "name_th": "กลยุทธ์วิศวกรรมการทดสอบ (Test Engineering), Testing Pyramid และเทคนิคการออกแบบ Test Case",
+      "description_th": "ระเบียบวิธีทดสอบซอฟต์แวร์สมัยใหม่ การกระจายระดับการทดสอบตาม Testing Pyramid เทคนิค Boundary Value Analysis, Equivalence Partitioning และการป้องกัน Defect เชิงรุก",
       "learningObjectives_th": [
-        "เข้าใจและสามารถปฏิบัติตาม: Understand test levels and methodologies",
-        "เข้าใจและสามารถปฏิบัติตาม: Apply risk-based testing approaches",
-        "เข้าใจและสามารถปฏิบัติตาม: Generate test estimation and metrics reports"
+        "สร้างสัดส่วนการทดสอบตาม Testing Pyramid เพื่อให้ได้ผลลัพธ์สูงสุดและประหยัดเวลา",
+        "ใช้เทคนิคการออกแบบ Test Case: Equivalence Partitioning (EP), Boundary Value Analysis (BVA) และ Decision Table",
+        "เขียน Acceptance Criteria ในรูปแบบ Gherkin Syntax เพื่อรองรับการทดสอบแบบ BDD",
+        "วัดประสิทธิภาพการทดสอบด้วยตัวชี้วัด Defect Leakage Rate และ Test Coverage"
       ],
       "content_th": [
         {
@@ -1692,9 +1676,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "SRE-001",
-      "name": "On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering",
+      "name": "Site Reliability Engineering (SRE) Principles, Golden Signals & SLI/SLO/SLA",
       "category": "SRE",
-      "description": "Core concepts of cloud computing, infrastructure as code, and basic resource provisioning.",
+      "description": "Google SRE methodology applied to AEON banking systems: Four Golden Signals, defining SLI/SLO, managing Error Budgets, and eliminating operational toil.",
       "duration": "4 hours",
       "targetRoles": [
         "SRE",
@@ -1705,34 +1689,32 @@ window.SYE_SAMPLE_DATA = {
       "hasAssessment": true,
       "createdDate": "2025-01-05",
       "learningObjectives": [
-        "Understand Cloud models (IaaS/PaaS/SaaS)",
-        "Manage VMs, networking, and storage components",
-        "Configure Identity and Access Management (IAM)"
+        "Define and measure the Four Golden Signals of distributed systems (Latency, Traffic, Errors, Saturation)",
+        "Formulate realistic Service Level Indicators (SLIs) and Service Level Objectives (SLOs)",
+        "Govern release velocity using Error Budgets and feature release freezes",
+        "Automate repetitive manual operations (Toil reduction) using Infrastructure as Code (IaC)"
       ],
       "content": [
         {
-          "title": "Cloud Service Models",
-          "body": "AEON utilizes a mix of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides fundamental computing resources like VMs and networks. PaaS offers managed environments like managed databases or container services, reducing operational overhead. Understanding these models dictates the division of responsibility between the cloud provider and our SRE team.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
+          "title": "The Four Golden Signals of Monitoring",
+          "body": "According to Google SRE best practices, monitoring must focus on 4 core symptoms:\n\n1. **Latency**: The time it takes to service a request. Differentiate between successful request latency vs failed request latency (e.g. 500 errors failing fast).\n2. **Traffic**: Demand placed on the system (e.g. HTTP requests per second, active WebSocket connections).\n3. **Errors**: The rate of requests that fail explicitly (HTTP 5xx), implicitly (HTTP 200 with wrong payload), or by policy (HTTP 429).\n4. **Saturation**: How full the service is (e.g. CPU utilization > 80%, Database connection pool exhaustion, memory pressure)."
         },
         {
-          "title": "Networking & Storage",
-          "body": "Cloud networking involves configuring Virtual Private Clouds (VPCs), subnets, route tables, and security groups. Proper network segmentation is our primary defense mechanism. Storage solutions range from block storage for VMs to highly scalable object storage (like AWS S3) for backups and static assets. Choosing the right storage tier is crucial for balancing performance and cost optimization."
+          "title": "SLI, SLO and SLA Hierarchy",
+          "body": "```\n[ SLI: Metric ] ──> What is the actual observed performance? (e.g. 99.92% requests < 200ms)\n       │\n[ SLO: Internal Target ] ──> Target agreed with engineering team (e.g. 99.90% over 30 days)\n       │\n[ SLA: Business Contract ] ──> Legal promise to customer with financial penalty (e.g. 99.50%)\n```\n\n### AEON Banking Tier-1 Services Standard:\n- **Availability SLO**: **99.95%** uptime per calendar month.\n- **Latency SLO**: **95% of API requests** completed in **< 250ms**; **99%** in **< 800ms**."
         },
         {
-          "title": "Identity and Access Management (IAM)",
-          "body": "IAM is the cornerstone of cloud security. We enforce the Principle of Least Privilege, granting users and services only the minimum permissions necessary to perform their tasks. We use Role-Based Access Control (RBAC) heavily, avoiding the use of long-term access keys whenever possible. Regular audits of IAM policies are required to detect and remove overly permissive access."
-        },
-        {
-          "title": "Infrastructure as Code (IaC)",
-          "body": "Manual configuration of cloud resources via web consoles is prohibited in production. We manage all infrastructure using Infrastructure as Code tools like Terraform. IaC allows us to version control our infrastructure, apply changes consistently across environments, and rapidly recover from disasters. Code reviews are mandatory for all infrastructure changes just as they are for application code."
+          "title": "Error Budget Policy & Release Governance",
+          "body": "The **Error Budget** represents the allowed unreliability of a service (e.g. 99.9% SLO = 0.1% Error Budget = ~43 minutes downtime/month).\n\n### Error Budget Governance Rules:\n- **Budget > 20% Remaining**: Product teams can release new features at normal velocity.\n- **Budget < 20% (Warning)**: Prioritize bug fixes and performance tuning; reduce non-critical releases.\n- **Budget Exhausted (0%)**: **Feature Release Freeze** is triggered automatically. 100% of engineering bandwidth is redirected to reliability, refactoring, and automated testing until the budget recovers in the next rolling window."
         }
       ],
-      "name_th": "โครงสร้างพื้นฐาน On-Premise และการจัดการคลัสเตอร์ VMware Tanzu Kubernetes",
-      "description_th": "เนื้อหาหลักสูตรการเรียนรู้และคู่มือปฏิบัติงานมาตรฐานสำหรับ On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering เพื่อเสริมสร้างความเชี่ยวชาญตามมาตรฐานสากลของฝ่าย SYE",
+      "name_th": "หลักการ Site Reliability Engineering (SRE), Golden Signals และ SLI/SLO/SLA",
+      "description_th": "การประยุกต์ใช้แนวทาง Google SRE กับระบบธนาคาร AEON ครอบคลุม Four Golden Signals, การกำหนด SLI/SLO, การบริหาร Error Budget และการกำจัดงาน Toil",
       "learningObjectives_th": [
-        "เข้าใจและสามารถปฏิบัติตาม: Understand Cloud models (IaaS/PaaS/SaaS)",
-        "เข้าใจและสามารถปฏิบัติตาม: Manage VMs, networking, and storage components",
-        "เข้าใจและสามารถปฏิบัติตาม: Configure Identity and Access Management (IAM)"
+        "วัดผล 4 สัญญาณทองคำของระบบ (Four Golden Signals: Latency, Traffic, Errors, Saturation)",
+        "กำหนดตัวชี้วัด SLI และเป้าหมายระดับการให้บริการ SLO ได้อย่างมีประสิทธิภาพ",
+        "บริหารจัดการ Error Budget เพื่อสร้างสมดุลระหว่างความเร็วในการปล่อยฟีเจอร์และความเสถียรของระบบ",
+        "ลดงานทำซ้ำ (Toil Reduction) โดยการเขียนสคริปต์อัตโนมัติและใช้ Infrastructure as Code"
       ],
       "content_th": [
         {
@@ -2418,6 +2400,5273 @@ window.SYE_SAMPLE_DATA = {
           "body": "When the bot fails to understand a user multiple times, it must trigger a graceful fallback mechanism. The standard protocol is to seamlessly transfer the conversation to a human agent in the appropriate queue. The full chat transcript and extracted context are passed to the agent's desktop, ensuring the customer never has to repeat themselves."
         }
       ]
+    }
+  ],
+  "trainingRecords": [
+    {
+      "id": "TR-00001",
+      "employeeId": "SYE-0001",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-01-04",
+      "completionDate": "2024-01-04",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00002",
+      "employeeId": "SYE-0001",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-01-07",
+      "completionDate": "2024-01-07",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00003",
+      "employeeId": "SYE-0001",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-01-10",
+      "completionDate": "2024-01-10",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00004",
+      "employeeId": "SYE-0001",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-01-13",
+      "completionDate": "2024-01-13",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00005",
+      "employeeId": "SYE-0001",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-01-16",
+      "completionDate": "2024-01-16",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00006",
+      "employeeId": "SYE-0001",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-01-19",
+      "completionDate": "2024-01-19",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00007",
+      "employeeId": "SYE-0001",
+      "courseId": "PM-001",
+      "trainingDate": "2024-01-22",
+      "completionDate": "2024-01-22",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00008",
+      "employeeId": "SYE-0001",
+      "courseId": "PM-002",
+      "trainingDate": "2024-01-25",
+      "completionDate": "2024-01-25",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00009",
+      "employeeId": "SYE-0001",
+      "courseId": "PM-003",
+      "trainingDate": "2024-01-28",
+      "completionDate": "2024-01-28",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00010",
+      "employeeId": "SYE-0001",
+      "courseId": "PM-004",
+      "trainingDate": "2024-01-31",
+      "completionDate": "2024-01-31",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00011",
+      "employeeId": "SYE-0001",
+      "courseId": "BA-001",
+      "trainingDate": "2024-02-03",
+      "completionDate": "2024-02-03",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00012",
+      "employeeId": "SYE-0001",
+      "courseId": "BA-002",
+      "trainingDate": "2024-02-06",
+      "completionDate": "2024-02-06",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00013",
+      "employeeId": "SYE-0001",
+      "courseId": "BA-003",
+      "trainingDate": "2024-02-09",
+      "completionDate": "2024-02-09",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00014",
+      "employeeId": "SYE-0001",
+      "courseId": "QA-001",
+      "trainingDate": "2024-02-12",
+      "completionDate": "2024-02-12",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00015",
+      "employeeId": "SYE-0001",
+      "courseId": "QA-005",
+      "trainingDate": "2024-02-15",
+      "completionDate": "2024-02-15",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00016",
+      "employeeId": "SYE-0001",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-02-18",
+      "completionDate": "2024-02-18",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00017",
+      "employeeId": "SYE-0001",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-02-21",
+      "completionDate": "2024-02-21",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00018",
+      "employeeId": "SYE-0001",
+      "courseId": "SEC-004",
+      "trainingDate": "2024-02-24",
+      "completionDate": "2024-02-24",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00019",
+      "employeeId": "SYE-0002",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-01-04",
+      "completionDate": "2024-01-04",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00020",
+      "employeeId": "SYE-0002",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-01-07",
+      "completionDate": "2024-01-07",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00021",
+      "employeeId": "SYE-0002",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-01-10",
+      "completionDate": "2024-01-10",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00022",
+      "employeeId": "SYE-0002",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-01-13",
+      "completionDate": "2024-01-13",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00023",
+      "employeeId": "SYE-0002",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-01-16",
+      "completionDate": "2024-01-16",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00024",
+      "employeeId": "SYE-0002",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-01-19",
+      "completionDate": "2024-01-19",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00025",
+      "employeeId": "SYE-0002",
+      "courseId": "PM-001",
+      "trainingDate": "2024-01-22",
+      "completionDate": "2024-01-22",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00026",
+      "employeeId": "SYE-0002",
+      "courseId": "PM-002",
+      "trainingDate": "2024-01-25",
+      "completionDate": "2024-01-25",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00027",
+      "employeeId": "SYE-0002",
+      "courseId": "PM-003",
+      "trainingDate": "2024-01-28",
+      "completionDate": "2024-01-28",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00028",
+      "employeeId": "SYE-0002",
+      "courseId": "PM-004",
+      "trainingDate": "2024-01-31",
+      "completionDate": "2024-01-31",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00029",
+      "employeeId": "SYE-0002",
+      "courseId": "BA-001",
+      "trainingDate": "2024-02-03",
+      "completionDate": "2024-02-03",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00030",
+      "employeeId": "SYE-0002",
+      "courseId": "BA-002",
+      "trainingDate": "2024-02-06",
+      "completionDate": "2024-02-06",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00031",
+      "employeeId": "SYE-0002",
+      "courseId": "BA-003",
+      "trainingDate": "2024-02-09",
+      "completionDate": "2024-02-09",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00032",
+      "employeeId": "SYE-0002",
+      "courseId": "QA-001",
+      "trainingDate": "2024-02-12",
+      "completionDate": "2024-02-12",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00033",
+      "employeeId": "SYE-0002",
+      "courseId": "QA-005",
+      "trainingDate": "2024-02-15",
+      "completionDate": "2024-02-15",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00034",
+      "employeeId": "SYE-0002",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-02-18",
+      "completionDate": "2024-02-18",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00035",
+      "employeeId": "SYE-0002",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-02-21",
+      "completionDate": "2024-02-21",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00036",
+      "employeeId": "SYE-0002",
+      "courseId": "SEC-001",
+      "trainingDate": "2024-02-24",
+      "completionDate": "2024-02-24",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00037",
+      "employeeId": "SYE-0003",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-01-04",
+      "completionDate": "2024-01-04",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00038",
+      "employeeId": "SYE-0003",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-01-07",
+      "completionDate": "2024-01-07",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00039",
+      "employeeId": "SYE-0003",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-01-10",
+      "completionDate": "2024-01-10",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00040",
+      "employeeId": "SYE-0003",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-01-13",
+      "completionDate": "2024-01-13",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00041",
+      "employeeId": "SYE-0003",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-01-16",
+      "completionDate": "2024-01-16",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00042",
+      "employeeId": "SYE-0003",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-01-19",
+      "completionDate": "2024-01-19",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00043",
+      "employeeId": "SYE-0003",
+      "courseId": "PM-001",
+      "trainingDate": "2024-01-22",
+      "completionDate": "2024-01-22",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00044",
+      "employeeId": "SYE-0003",
+      "courseId": "PM-002",
+      "trainingDate": "2024-01-25",
+      "completionDate": "2024-01-25",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00045",
+      "employeeId": "SYE-0003",
+      "courseId": "PM-003",
+      "trainingDate": "2024-01-28",
+      "completionDate": "2024-01-28",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00046",
+      "employeeId": "SYE-0003",
+      "courseId": "PM-004",
+      "trainingDate": "2024-01-31",
+      "completionDate": "2024-01-31",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00047",
+      "employeeId": "SYE-0003",
+      "courseId": "BA-001",
+      "trainingDate": "2024-02-03",
+      "completionDate": "2024-02-03",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00048",
+      "employeeId": "SYE-0003",
+      "courseId": "BA-002",
+      "trainingDate": "2024-02-06",
+      "completionDate": "2024-02-06",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00049",
+      "employeeId": "SYE-0003",
+      "courseId": "BA-003",
+      "trainingDate": "2024-02-09",
+      "completionDate": "2024-02-09",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00050",
+      "employeeId": "SYE-0003",
+      "courseId": "QA-001",
+      "trainingDate": "2024-02-12",
+      "completionDate": "2024-02-12",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00051",
+      "employeeId": "SYE-0003",
+      "courseId": "QA-005",
+      "trainingDate": "2024-02-15",
+      "completionDate": "2024-02-15",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00052",
+      "employeeId": "SYE-0003",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-02-18",
+      "completionDate": "2024-02-18",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00053",
+      "employeeId": "SYE-0003",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-02-21",
+      "completionDate": "2024-02-21",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00054",
+      "employeeId": "SYE-0003",
+      "courseId": "SEC-006",
+      "trainingDate": "2024-02-24",
+      "completionDate": "2024-02-24",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00055",
+      "employeeId": "SYE-0003",
+      "courseId": "SEC-007",
+      "trainingDate": "2024-02-27",
+      "completionDate": "2024-02-27",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00056",
+      "employeeId": "SYE-0004",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-03-04",
+      "completionDate": "2024-03-04",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00057",
+      "employeeId": "SYE-0004",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-03-07",
+      "completionDate": "2024-03-07",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00058",
+      "employeeId": "SYE-0004",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-03-10",
+      "completionDate": "2024-03-10",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00059",
+      "employeeId": "SYE-0004",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-03-13",
+      "completionDate": "2024-03-13",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00060",
+      "employeeId": "SYE-0004",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-03-16",
+      "completionDate": "2024-03-16",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00061",
+      "employeeId": "SYE-0004",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-03-19",
+      "completionDate": "2024-03-19",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00062",
+      "employeeId": "SYE-0004",
+      "courseId": "PM-004",
+      "trainingDate": "2024-03-22",
+      "completionDate": "2024-03-22",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00063",
+      "employeeId": "SYE-0004",
+      "courseId": "BA-002",
+      "trainingDate": "2024-03-25",
+      "completionDate": "2024-03-25",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00064",
+      "employeeId": "SYE-0004",
+      "courseId": "BA-003",
+      "trainingDate": "2024-03-28",
+      "completionDate": "2024-03-28",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00065",
+      "employeeId": "SYE-0004",
+      "courseId": "BA-004",
+      "trainingDate": "2024-03-31",
+      "completionDate": "2024-03-31",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00066",
+      "employeeId": "SYE-0004",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-04-03",
+      "completionDate": "2024-04-03",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00067",
+      "employeeId": "SYE-0004",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-04-06",
+      "completionDate": "2024-04-06",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00068",
+      "employeeId": "SYE-0004",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-04-09",
+      "completionDate": "2024-04-09",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00069",
+      "employeeId": "SYE-0004",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-04-12",
+      "completionDate": "2024-04-12",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00070",
+      "employeeId": "SYE-0004",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-04-15",
+      "completionDate": "2024-04-15",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00071",
+      "employeeId": "SYE-0004",
+      "courseId": "QA-001",
+      "trainingDate": "2024-04-18",
+      "completionDate": "2024-04-18",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00072",
+      "employeeId": "SYE-0004",
+      "courseId": "QA-002",
+      "trainingDate": "2024-04-21",
+      "completionDate": "2024-04-21",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00073",
+      "employeeId": "SYE-0004",
+      "courseId": "QA-003",
+      "trainingDate": "2024-04-24",
+      "completionDate": "2024-04-24",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00074",
+      "employeeId": "SYE-0004",
+      "courseId": "QA-004",
+      "trainingDate": "2024-04-27",
+      "completionDate": "2024-04-27",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00075",
+      "employeeId": "SYE-0004",
+      "courseId": "QA-005",
+      "trainingDate": "2024-04-30",
+      "completionDate": "2024-04-30",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00076",
+      "employeeId": "SYE-0004",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-05-03",
+      "completionDate": "2024-05-03",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00077",
+      "employeeId": "SYE-0004",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-05-06",
+      "completionDate": "2024-05-06",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00078",
+      "employeeId": "SYE-0004",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-05-09",
+      "completionDate": "2024-05-09",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00079",
+      "employeeId": "SYE-0004",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-05-12",
+      "completionDate": "2024-05-12",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00080",
+      "employeeId": "SYE-0004",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-05-15",
+      "completionDate": "2024-05-15",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00081",
+      "employeeId": "SYE-0004",
+      "courseId": "SEC-001",
+      "trainingDate": "2024-05-18",
+      "completionDate": "2024-05-18",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00082",
+      "employeeId": "SYE-0004",
+      "courseId": "SEC-002",
+      "trainingDate": "2024-05-21",
+      "completionDate": "2024-05-21",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00083",
+      "employeeId": "SYE-0004",
+      "courseId": "SEC-003",
+      "trainingDate": "2024-05-24",
+      "completionDate": "2024-05-24",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00084",
+      "employeeId": "SYE-0005",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-06-18",
+      "completionDate": "2024-06-18",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00085",
+      "employeeId": "SYE-0005",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-06-21",
+      "completionDate": "2024-06-21",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00086",
+      "employeeId": "SYE-0005",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-06-24",
+      "completionDate": "2024-06-24",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00087",
+      "employeeId": "SYE-0005",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-06-27",
+      "completionDate": "2024-06-27",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00088",
+      "employeeId": "SYE-0005",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-06-30",
+      "completionDate": "2024-06-30",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00089",
+      "employeeId": "SYE-0005",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-07-03",
+      "completionDate": "2024-07-03",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00090",
+      "employeeId": "SYE-0005",
+      "courseId": "PM-004",
+      "trainingDate": "2024-07-06",
+      "completionDate": "2024-07-06",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00091",
+      "employeeId": "SYE-0005",
+      "courseId": "BA-002",
+      "trainingDate": "2024-07-09",
+      "completionDate": "2024-07-09",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00092",
+      "employeeId": "SYE-0005",
+      "courseId": "BA-003",
+      "trainingDate": "2024-07-12",
+      "completionDate": "2024-07-12",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00093",
+      "employeeId": "SYE-0005",
+      "courseId": "BA-004",
+      "trainingDate": "2024-07-15",
+      "completionDate": "2024-07-15",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00094",
+      "employeeId": "SYE-0005",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-07-18",
+      "completionDate": "2024-07-18",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00095",
+      "employeeId": "SYE-0005",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-07-21",
+      "completionDate": "2024-07-21",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00096",
+      "employeeId": "SYE-0005",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-07-24",
+      "completionDate": "2024-07-24",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00097",
+      "employeeId": "SYE-0005",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-07-27",
+      "completionDate": "2024-07-27",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00098",
+      "employeeId": "SYE-0005",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-07-30",
+      "completionDate": "2024-07-30",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00099",
+      "employeeId": "SYE-0005",
+      "courseId": "QA-001",
+      "trainingDate": "2024-08-02",
+      "completionDate": "2024-08-02",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00100",
+      "employeeId": "SYE-0005",
+      "courseId": "QA-002",
+      "trainingDate": "2024-08-05",
+      "completionDate": "2024-08-05",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00101",
+      "employeeId": "SYE-0005",
+      "courseId": "QA-003",
+      "trainingDate": "2024-08-08",
+      "completionDate": "2024-08-08",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00102",
+      "employeeId": "SYE-0005",
+      "courseId": "QA-004",
+      "trainingDate": "2024-08-11",
+      "completionDate": "2024-08-11",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00103",
+      "employeeId": "SYE-0005",
+      "courseId": "QA-005",
+      "trainingDate": "2024-08-14",
+      "completionDate": "2024-08-14",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00104",
+      "employeeId": "SYE-0005",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-08-17",
+      "completionDate": "2024-08-17",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00105",
+      "employeeId": "SYE-0005",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-08-20",
+      "completionDate": "2024-08-20",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00106",
+      "employeeId": "SYE-0005",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-08-23",
+      "completionDate": "2024-08-23",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00107",
+      "employeeId": "SYE-0005",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-08-26",
+      "completionDate": "2024-08-26",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00108",
+      "employeeId": "SYE-0005",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-08-29",
+      "completionDate": "2024-08-29",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00109",
+      "employeeId": "SYE-0005",
+      "courseId": "SEC-001",
+      "trainingDate": "2024-09-01",
+      "completionDate": "2024-09-01",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00110",
+      "employeeId": "SYE-0005",
+      "courseId": "SEC-002",
+      "trainingDate": "2024-09-04",
+      "completionDate": "2024-09-04",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00111",
+      "employeeId": "SYE-0005",
+      "courseId": "SEC-003",
+      "trainingDate": "2024-09-07",
+      "completionDate": "2024-09-07",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00112",
+      "employeeId": "SYE-0006",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-09-04",
+      "completionDate": "2024-09-04",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00113",
+      "employeeId": "SYE-0006",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-09-07",
+      "completionDate": "2024-09-07",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00114",
+      "employeeId": "SYE-0006",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-09-10",
+      "completionDate": "2024-09-10",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00115",
+      "employeeId": "SYE-0006",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-09-13",
+      "completionDate": "2024-09-13",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00116",
+      "employeeId": "SYE-0006",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-09-16",
+      "completionDate": "2024-09-16",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00117",
+      "employeeId": "SYE-0006",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-09-19",
+      "completionDate": "2024-09-19",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00118",
+      "employeeId": "SYE-0006",
+      "courseId": "PM-004",
+      "trainingDate": "2024-09-22",
+      "completionDate": "2024-09-22",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00119",
+      "employeeId": "SYE-0006",
+      "courseId": "BA-002",
+      "trainingDate": "2024-09-25",
+      "completionDate": "2024-09-25",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00120",
+      "employeeId": "SYE-0006",
+      "courseId": "BA-003",
+      "trainingDate": "2024-09-28",
+      "completionDate": "2024-09-28",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00121",
+      "employeeId": "SYE-0006",
+      "courseId": "BA-004",
+      "trainingDate": "2024-10-01",
+      "completionDate": "2024-10-01",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00122",
+      "employeeId": "SYE-0006",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-10-04",
+      "completionDate": "2024-10-04",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00123",
+      "employeeId": "SYE-0006",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-10-07",
+      "completionDate": "2024-10-07",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00124",
+      "employeeId": "SYE-0006",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-10-10",
+      "completionDate": "2024-10-10",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00125",
+      "employeeId": "SYE-0006",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-10-13",
+      "completionDate": "2024-10-13",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00126",
+      "employeeId": "SYE-0006",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-10-16",
+      "completionDate": "2024-10-16",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00127",
+      "employeeId": "SYE-0006",
+      "courseId": "QA-001",
+      "trainingDate": "2024-10-19",
+      "completionDate": "2024-10-19",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00128",
+      "employeeId": "SYE-0006",
+      "courseId": "QA-002",
+      "trainingDate": "2024-10-22",
+      "completionDate": "2024-10-22",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00129",
+      "employeeId": "SYE-0006",
+      "courseId": "QA-003",
+      "trainingDate": "2024-10-25",
+      "completionDate": "2024-10-25",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00130",
+      "employeeId": "SYE-0006",
+      "courseId": "QA-004",
+      "trainingDate": "2024-10-28",
+      "completionDate": "2024-10-28",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00131",
+      "employeeId": "SYE-0006",
+      "courseId": "QA-005",
+      "trainingDate": "2024-10-31",
+      "completionDate": "2024-10-31",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00132",
+      "employeeId": "SYE-0006",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-11-03",
+      "completionDate": "2024-11-03",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00133",
+      "employeeId": "SYE-0006",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-11-06",
+      "completionDate": "2024-11-06",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00134",
+      "employeeId": "SYE-0006",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-11-09",
+      "completionDate": "2024-11-09",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00135",
+      "employeeId": "SYE-0006",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-11-12",
+      "completionDate": "2024-11-12",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00136",
+      "employeeId": "SYE-0006",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-11-15",
+      "completionDate": "2024-11-15",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00137",
+      "employeeId": "SYE-0006",
+      "courseId": "SEC-001",
+      "trainingDate": "2024-11-18",
+      "completionDate": "2024-11-18",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00138",
+      "employeeId": "SYE-0006",
+      "courseId": "SEC-002",
+      "trainingDate": "2024-11-21",
+      "completionDate": "2024-11-21",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00139",
+      "employeeId": "SYE-0006",
+      "courseId": "SEC-003",
+      "trainingDate": "2024-11-24",
+      "completionDate": "2024-11-24",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00140",
+      "employeeId": "SYE-0007",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-02-04",
+      "completionDate": "2024-02-04",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00141",
+      "employeeId": "SYE-0007",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-02-07",
+      "completionDate": "2024-02-07",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00142",
+      "employeeId": "SYE-0007",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-02-10",
+      "completionDate": "2024-02-10",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00143",
+      "employeeId": "SYE-0007",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-02-13",
+      "completionDate": "2024-02-13",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00144",
+      "employeeId": "SYE-0007",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-02-16",
+      "completionDate": "2024-02-16",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00145",
+      "employeeId": "SYE-0007",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-02-19",
+      "completionDate": "2024-02-19",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00146",
+      "employeeId": "SYE-0007",
+      "courseId": "PM-001",
+      "trainingDate": "2024-02-22",
+      "completionDate": "2024-02-22",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00147",
+      "employeeId": "SYE-0007",
+      "courseId": "PM-002",
+      "trainingDate": "2024-02-25",
+      "completionDate": "2024-02-25",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00148",
+      "employeeId": "SYE-0007",
+      "courseId": "PM-003",
+      "trainingDate": "2024-02-28",
+      "completionDate": "2024-02-28",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00149",
+      "employeeId": "SYE-0007",
+      "courseId": "PM-004",
+      "trainingDate": "2024-03-02",
+      "completionDate": "2024-03-02",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00150",
+      "employeeId": "SYE-0007",
+      "courseId": "BA-001",
+      "trainingDate": "2024-03-05",
+      "completionDate": "2024-03-05",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00151",
+      "employeeId": "SYE-0007",
+      "courseId": "BA-002",
+      "trainingDate": "2024-03-08",
+      "completionDate": "2024-03-08",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00152",
+      "employeeId": "SYE-0007",
+      "courseId": "BA-003",
+      "trainingDate": "2024-03-11",
+      "completionDate": "2024-03-11",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00153",
+      "employeeId": "SYE-0007",
+      "courseId": "BA-004",
+      "trainingDate": "2024-03-14",
+      "completionDate": "2024-03-14",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00154",
+      "employeeId": "SYE-0007",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-03-17",
+      "completionDate": "2024-03-17",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00155",
+      "employeeId": "SYE-0007",
+      "courseId": "QA-003",
+      "trainingDate": "2024-03-20",
+      "completionDate": "2024-03-20",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00156",
+      "employeeId": "SYE-0007",
+      "courseId": "QA-005",
+      "trainingDate": "2024-03-23",
+      "completionDate": "2024-03-23",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00157",
+      "employeeId": "SYE-0007",
+      "courseId": "SEC-004",
+      "trainingDate": "2024-03-26",
+      "completionDate": "2024-03-26",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00158",
+      "employeeId": "SYE-0008",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-04-04",
+      "completionDate": "2024-04-04",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00159",
+      "employeeId": "SYE-0008",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-04-07",
+      "completionDate": "2024-04-07",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00160",
+      "employeeId": "SYE-0008",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-04-10",
+      "completionDate": "2024-04-10",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00161",
+      "employeeId": "SYE-0008",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-04-13",
+      "completionDate": "2024-04-13",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00162",
+      "employeeId": "SYE-0008",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-04-16",
+      "completionDate": "2024-04-16",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00163",
+      "employeeId": "SYE-0008",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-04-19",
+      "completionDate": "2024-04-19",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00164",
+      "employeeId": "SYE-0008",
+      "courseId": "PM-001",
+      "trainingDate": "2024-04-22",
+      "completionDate": "2024-04-22",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00165",
+      "employeeId": "SYE-0008",
+      "courseId": "PM-002",
+      "trainingDate": "2024-04-25",
+      "completionDate": "2024-04-25",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00166",
+      "employeeId": "SYE-0008",
+      "courseId": "PM-003",
+      "trainingDate": "2024-04-28",
+      "completionDate": "2024-04-28",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00167",
+      "employeeId": "SYE-0008",
+      "courseId": "PM-004",
+      "trainingDate": "2024-05-01",
+      "completionDate": "2024-05-01",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00168",
+      "employeeId": "SYE-0008",
+      "courseId": "BA-001",
+      "trainingDate": "2024-05-04",
+      "completionDate": "2024-05-04",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00169",
+      "employeeId": "SYE-0008",
+      "courseId": "BA-002",
+      "trainingDate": "2024-05-07",
+      "completionDate": "2024-05-07",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00170",
+      "employeeId": "SYE-0008",
+      "courseId": "BA-003",
+      "trainingDate": "2024-05-10",
+      "completionDate": "2024-05-10",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00171",
+      "employeeId": "SYE-0008",
+      "courseId": "BA-004",
+      "trainingDate": "2024-05-13",
+      "completionDate": "2024-05-13",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00172",
+      "employeeId": "SYE-0008",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-05-16",
+      "completionDate": "2024-05-16",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00173",
+      "employeeId": "SYE-0008",
+      "courseId": "QA-003",
+      "trainingDate": "2024-05-19",
+      "completionDate": "2024-05-19",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00174",
+      "employeeId": "SYE-0008",
+      "courseId": "QA-005",
+      "trainingDate": "2024-05-22",
+      "completionDate": "2024-05-22",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00175",
+      "employeeId": "SYE-0008",
+      "courseId": "SEC-004",
+      "trainingDate": "2024-05-25",
+      "completionDate": "2024-05-25",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00176",
+      "employeeId": "SYE-0009",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-05-04",
+      "completionDate": "2024-05-04",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00177",
+      "employeeId": "SYE-0009",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-05-07",
+      "completionDate": "2024-05-07",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00178",
+      "employeeId": "SYE-0009",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-05-10",
+      "completionDate": "2024-05-10",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00179",
+      "employeeId": "SYE-0009",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-05-13",
+      "completionDate": "2024-05-13",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00180",
+      "employeeId": "SYE-0009",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-05-16",
+      "completionDate": "2024-05-16",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00181",
+      "employeeId": "SYE-0009",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-05-19",
+      "completionDate": "2024-05-19",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00182",
+      "employeeId": "SYE-0009",
+      "courseId": "PM-004",
+      "trainingDate": "2024-05-22",
+      "completionDate": "2024-05-22",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00183",
+      "employeeId": "SYE-0009",
+      "courseId": "BA-002",
+      "trainingDate": "2024-05-25",
+      "completionDate": "2024-05-25",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00184",
+      "employeeId": "SYE-0009",
+      "courseId": "BA-003",
+      "trainingDate": "2024-05-28",
+      "completionDate": "2024-05-28",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00185",
+      "employeeId": "SYE-0009",
+      "courseId": "BA-004",
+      "trainingDate": "2024-05-31",
+      "completionDate": "2024-05-31",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00186",
+      "employeeId": "SYE-0009",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-06-03",
+      "completionDate": "2024-06-03",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00187",
+      "employeeId": "SYE-0009",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-06-06",
+      "completionDate": "2024-06-06",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00188",
+      "employeeId": "SYE-0009",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-06-09",
+      "completionDate": "2024-06-09",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00189",
+      "employeeId": "SYE-0009",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-06-12",
+      "completionDate": "2024-06-12",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00190",
+      "employeeId": "SYE-0009",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-06-15",
+      "completionDate": "2024-06-15",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00191",
+      "employeeId": "SYE-0009",
+      "courseId": "QA-001",
+      "trainingDate": "2024-06-18",
+      "completionDate": "2024-06-18",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00192",
+      "employeeId": "SYE-0009",
+      "courseId": "QA-002",
+      "trainingDate": "2024-06-21",
+      "completionDate": "2024-06-21",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00193",
+      "employeeId": "SYE-0009",
+      "courseId": "QA-003",
+      "trainingDate": "2024-06-24",
+      "completionDate": "2024-06-24",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00194",
+      "employeeId": "SYE-0009",
+      "courseId": "QA-004",
+      "trainingDate": "2024-06-27",
+      "completionDate": "2024-06-27",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00195",
+      "employeeId": "SYE-0009",
+      "courseId": "QA-005",
+      "trainingDate": "2024-06-30",
+      "completionDate": "2024-06-30",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00196",
+      "employeeId": "SYE-0009",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-07-03",
+      "completionDate": "2024-07-03",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00197",
+      "employeeId": "SYE-0009",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-07-06",
+      "completionDate": "2024-07-06",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00198",
+      "employeeId": "SYE-0009",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-07-09",
+      "completionDate": "2024-07-09",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00199",
+      "employeeId": "SYE-0009",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-07-12",
+      "completionDate": "2024-07-12",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00200",
+      "employeeId": "SYE-0009",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-07-15",
+      "completionDate": "2024-07-15",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00201",
+      "employeeId": "SYE-0009",
+      "courseId": "SEC-004",
+      "trainingDate": "2024-07-18",
+      "completionDate": "2024-07-18",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00202",
+      "employeeId": "SYE-0009",
+      "courseId": "SEC-005",
+      "trainingDate": "2024-07-21",
+      "completionDate": "2024-07-21",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00203",
+      "employeeId": "SYE-0010",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-07-04",
+      "completionDate": "2024-07-04",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00204",
+      "employeeId": "SYE-0010",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-07-07",
+      "completionDate": "2024-07-07",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00205",
+      "employeeId": "SYE-0010",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-07-10",
+      "completionDate": "2024-07-10",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00206",
+      "employeeId": "SYE-0010",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-07-13",
+      "completionDate": "2024-07-13",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00207",
+      "employeeId": "SYE-0010",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-07-16",
+      "completionDate": "2024-07-16",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00208",
+      "employeeId": "SYE-0010",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-07-19",
+      "completionDate": "2024-07-19",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00209",
+      "employeeId": "SYE-0010",
+      "courseId": "PM-004",
+      "trainingDate": "2024-07-22",
+      "completionDate": "2024-07-22",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00210",
+      "employeeId": "SYE-0010",
+      "courseId": "BA-002",
+      "trainingDate": "2024-07-25",
+      "completionDate": "2024-07-25",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00211",
+      "employeeId": "SYE-0010",
+      "courseId": "BA-003",
+      "trainingDate": "2024-07-28",
+      "completionDate": "2024-07-28",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00212",
+      "employeeId": "SYE-0010",
+      "courseId": "BA-004",
+      "trainingDate": "2024-07-31",
+      "completionDate": "2024-07-31",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00213",
+      "employeeId": "SYE-0010",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-08-03",
+      "completionDate": "2024-08-03",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00214",
+      "employeeId": "SYE-0010",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-08-06",
+      "completionDate": "2024-08-06",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00215",
+      "employeeId": "SYE-0010",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-08-09",
+      "completionDate": "2024-08-09",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00216",
+      "employeeId": "SYE-0010",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-08-12",
+      "completionDate": "2024-08-12",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00217",
+      "employeeId": "SYE-0010",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-08-15",
+      "completionDate": "2024-08-15",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00218",
+      "employeeId": "SYE-0010",
+      "courseId": "QA-001",
+      "trainingDate": "2024-08-18",
+      "completionDate": "2024-08-18",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00219",
+      "employeeId": "SYE-0010",
+      "courseId": "QA-002",
+      "trainingDate": "2024-08-21",
+      "completionDate": "2024-08-21",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00220",
+      "employeeId": "SYE-0010",
+      "courseId": "QA-003",
+      "trainingDate": "2024-08-24",
+      "completionDate": "2024-08-24",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00221",
+      "employeeId": "SYE-0010",
+      "courseId": "QA-004",
+      "trainingDate": "2024-08-27",
+      "completionDate": "2024-08-27",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00222",
+      "employeeId": "SYE-0010",
+      "courseId": "QA-005",
+      "trainingDate": "2024-08-30",
+      "completionDate": "2024-08-30",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00223",
+      "employeeId": "SYE-0010",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-09-02",
+      "completionDate": "2024-09-02",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00224",
+      "employeeId": "SYE-0010",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-09-05",
+      "completionDate": "2024-09-05",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00225",
+      "employeeId": "SYE-0010",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-09-08",
+      "completionDate": "2024-09-08",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00226",
+      "employeeId": "SYE-0010",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-09-11",
+      "completionDate": "2024-09-11",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00227",
+      "employeeId": "SYE-0010",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-09-14",
+      "completionDate": "2024-09-14",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00228",
+      "employeeId": "SYE-0010",
+      "courseId": "SEC-004",
+      "trainingDate": "2024-09-17",
+      "completionDate": "2024-09-17",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00229",
+      "employeeId": "SYE-0010",
+      "courseId": "SEC-005",
+      "trainingDate": "2024-09-20",
+      "completionDate": "2024-09-20",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00230",
+      "employeeId": "SYE-0011",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-08-04",
+      "completionDate": "2024-08-04",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00231",
+      "employeeId": "SYE-0011",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-08-07",
+      "completionDate": "2024-08-07",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00232",
+      "employeeId": "SYE-0011",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-08-10",
+      "completionDate": "2024-08-10",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00233",
+      "employeeId": "SYE-0011",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-08-13",
+      "completionDate": "2024-08-13",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00234",
+      "employeeId": "SYE-0011",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-08-16",
+      "completionDate": "2024-08-16",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00235",
+      "employeeId": "SYE-0011",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-08-19",
+      "completionDate": "2024-08-19",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00236",
+      "employeeId": "SYE-0011",
+      "courseId": "PM-004",
+      "trainingDate": "2024-08-22",
+      "completionDate": "2024-08-22",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00237",
+      "employeeId": "SYE-0011",
+      "courseId": "BA-002",
+      "trainingDate": "2024-08-25",
+      "completionDate": "2024-08-25",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00238",
+      "employeeId": "SYE-0011",
+      "courseId": "BA-003",
+      "trainingDate": "2024-08-28",
+      "completionDate": "2024-08-28",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00239",
+      "employeeId": "SYE-0011",
+      "courseId": "BA-004",
+      "trainingDate": "2024-08-31",
+      "completionDate": "2024-08-31",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00240",
+      "employeeId": "SYE-0011",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-09-03",
+      "completionDate": "2024-09-03",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00241",
+      "employeeId": "SYE-0011",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-09-06",
+      "completionDate": "2024-09-06",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00242",
+      "employeeId": "SYE-0011",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-09-09",
+      "completionDate": "2024-09-09",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00243",
+      "employeeId": "SYE-0011",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-09-12",
+      "completionDate": "2024-09-12",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00244",
+      "employeeId": "SYE-0011",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-09-15",
+      "completionDate": "2024-09-15",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00245",
+      "employeeId": "SYE-0011",
+      "courseId": "QA-001",
+      "trainingDate": "2024-09-18",
+      "completionDate": "2024-09-18",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00246",
+      "employeeId": "SYE-0011",
+      "courseId": "QA-002",
+      "trainingDate": "2024-09-21",
+      "completionDate": "2024-09-21",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00247",
+      "employeeId": "SYE-0011",
+      "courseId": "QA-003",
+      "trainingDate": "2024-09-24",
+      "completionDate": "2024-09-24",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00248",
+      "employeeId": "SYE-0011",
+      "courseId": "QA-004",
+      "trainingDate": "2024-09-27",
+      "completionDate": "2024-09-27",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00249",
+      "employeeId": "SYE-0011",
+      "courseId": "QA-005",
+      "trainingDate": "2024-09-30",
+      "completionDate": "2024-09-30",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00250",
+      "employeeId": "SYE-0011",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-10-03",
+      "completionDate": "2024-10-03",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00251",
+      "employeeId": "SYE-0011",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-10-06",
+      "completionDate": "2024-10-06",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00252",
+      "employeeId": "SYE-0011",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-10-09",
+      "completionDate": "2024-10-09",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00253",
+      "employeeId": "SYE-0011",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-10-12",
+      "completionDate": "2024-10-12",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00254",
+      "employeeId": "SYE-0011",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-10-15",
+      "completionDate": "2024-10-15",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00255",
+      "employeeId": "SYE-0011",
+      "courseId": "SEC-004",
+      "trainingDate": "2024-10-18",
+      "completionDate": "2024-10-18",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00256",
+      "employeeId": "SYE-0011",
+      "courseId": "SEC-005",
+      "trainingDate": "2024-10-21",
+      "completionDate": "2024-10-21",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00257",
+      "employeeId": "SYE-0012",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-03-18",
+      "completionDate": "2024-03-18",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00258",
+      "employeeId": "SYE-0012",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-03-21",
+      "completionDate": "2024-03-21",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00259",
+      "employeeId": "SYE-0012",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-03-24",
+      "completionDate": "2024-03-24",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00260",
+      "employeeId": "SYE-0012",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-03-27",
+      "completionDate": "2024-03-27",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00261",
+      "employeeId": "SYE-0012",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-03-30",
+      "completionDate": "2024-03-30",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00262",
+      "employeeId": "SYE-0012",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-04-02",
+      "completionDate": "2024-04-02",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00263",
+      "employeeId": "SYE-0012",
+      "courseId": "PM-001",
+      "trainingDate": "2024-04-05",
+      "completionDate": "2024-04-05",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00264",
+      "employeeId": "SYE-0012",
+      "courseId": "PM-002",
+      "trainingDate": "2024-04-08",
+      "completionDate": "2024-04-08",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00265",
+      "employeeId": "SYE-0012",
+      "courseId": "PM-003",
+      "trainingDate": "2024-04-11",
+      "completionDate": "2024-04-11",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00266",
+      "employeeId": "SYE-0012",
+      "courseId": "PM-004",
+      "trainingDate": "2024-04-14",
+      "completionDate": "2024-04-14",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00267",
+      "employeeId": "SYE-0012",
+      "courseId": "BA-001",
+      "trainingDate": "2024-04-17",
+      "completionDate": "2024-04-17",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00268",
+      "employeeId": "SYE-0012",
+      "courseId": "BA-002",
+      "trainingDate": "2024-04-20",
+      "completionDate": "2024-04-20",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00269",
+      "employeeId": "SYE-0012",
+      "courseId": "BA-003",
+      "trainingDate": "2024-04-23",
+      "completionDate": "2024-04-23",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00270",
+      "employeeId": "SYE-0012",
+      "courseId": "BA-004",
+      "trainingDate": "2024-04-26",
+      "completionDate": "2024-04-26",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00271",
+      "employeeId": "SYE-0012",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-04-29",
+      "completionDate": "2024-04-29",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00272",
+      "employeeId": "SYE-0012",
+      "courseId": "QA-003",
+      "trainingDate": "2024-05-02",
+      "completionDate": "2024-05-02",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00273",
+      "employeeId": "SYE-0012",
+      "courseId": "QA-005",
+      "trainingDate": "2024-05-05",
+      "completionDate": "2024-05-05",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00274",
+      "employeeId": "SYE-0012",
+      "courseId": "SEC-006",
+      "trainingDate": "2024-05-08",
+      "completionDate": "2024-05-08",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00275",
+      "employeeId": "SYE-0012",
+      "courseId": "SEC-007",
+      "trainingDate": "2024-05-11",
+      "completionDate": "2024-05-11",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00276",
+      "employeeId": "SYE-0013",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-05-18",
+      "completionDate": "2024-05-18",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00277",
+      "employeeId": "SYE-0013",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-05-21",
+      "completionDate": "2024-05-21",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00278",
+      "employeeId": "SYE-0013",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-05-24",
+      "completionDate": "2024-05-24",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00279",
+      "employeeId": "SYE-0013",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-05-27",
+      "completionDate": "2024-05-27",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00280",
+      "employeeId": "SYE-0013",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-05-30",
+      "completionDate": "2024-05-30",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00281",
+      "employeeId": "SYE-0013",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-06-02",
+      "completionDate": "2024-06-02",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00282",
+      "employeeId": "SYE-0013",
+      "courseId": "PM-001",
+      "trainingDate": "2024-06-05",
+      "completionDate": "2024-06-05",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00283",
+      "employeeId": "SYE-0013",
+      "courseId": "PM-002",
+      "trainingDate": "2024-06-08",
+      "completionDate": "2024-06-08",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00284",
+      "employeeId": "SYE-0013",
+      "courseId": "PM-003",
+      "trainingDate": "2024-06-11",
+      "completionDate": "2024-06-11",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00285",
+      "employeeId": "SYE-0013",
+      "courseId": "PM-004",
+      "trainingDate": "2024-06-14",
+      "completionDate": "2024-06-14",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00286",
+      "employeeId": "SYE-0013",
+      "courseId": "BA-001",
+      "trainingDate": "2024-06-17",
+      "completionDate": "2024-06-17",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00287",
+      "employeeId": "SYE-0013",
+      "courseId": "BA-002",
+      "trainingDate": "2024-06-20",
+      "completionDate": "2024-06-20",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00288",
+      "employeeId": "SYE-0013",
+      "courseId": "BA-003",
+      "trainingDate": "2024-06-23",
+      "completionDate": "2024-06-23",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00289",
+      "employeeId": "SYE-0013",
+      "courseId": "BA-004",
+      "trainingDate": "2024-06-26",
+      "completionDate": "2024-06-26",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00290",
+      "employeeId": "SYE-0013",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-06-29",
+      "completionDate": "2024-06-29",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00291",
+      "employeeId": "SYE-0013",
+      "courseId": "QA-003",
+      "trainingDate": "2024-07-02",
+      "completionDate": "2024-07-02",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00292",
+      "employeeId": "SYE-0013",
+      "courseId": "QA-005",
+      "trainingDate": "2024-07-05",
+      "completionDate": "2024-07-05",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00293",
+      "employeeId": "SYE-0013",
+      "courseId": "SEC-006",
+      "trainingDate": "2024-07-08",
+      "completionDate": "2024-07-08",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00294",
+      "employeeId": "SYE-0013",
+      "courseId": "SEC-007",
+      "trainingDate": "2024-07-11",
+      "completionDate": "2024-07-11",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00295",
+      "employeeId": "SYE-0014",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-02-18",
+      "completionDate": "2024-02-18",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00296",
+      "employeeId": "SYE-0014",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-02-21",
+      "completionDate": "2024-02-21",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00297",
+      "employeeId": "SYE-0014",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-02-24",
+      "completionDate": "2024-02-24",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00298",
+      "employeeId": "SYE-0014",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-02-27",
+      "completionDate": "2024-02-27",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00299",
+      "employeeId": "SYE-0014",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-03-01",
+      "completionDate": "2024-03-01",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00300",
+      "employeeId": "SYE-0014",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-03-04",
+      "completionDate": "2024-03-04",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00301",
+      "employeeId": "SYE-0014",
+      "courseId": "PM-004",
+      "trainingDate": "2024-03-07",
+      "completionDate": "2024-03-07",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00302",
+      "employeeId": "SYE-0014",
+      "courseId": "BA-002",
+      "trainingDate": "2024-03-10",
+      "completionDate": "2024-03-10",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00303",
+      "employeeId": "SYE-0014",
+      "courseId": "BA-003",
+      "trainingDate": "2024-03-13",
+      "completionDate": "2024-03-13",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00304",
+      "employeeId": "SYE-0014",
+      "courseId": "BA-004",
+      "trainingDate": "2024-03-16",
+      "completionDate": "2024-03-16",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00305",
+      "employeeId": "SYE-0014",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-03-19",
+      "completionDate": "2024-03-19",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00306",
+      "employeeId": "SYE-0014",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-03-22",
+      "completionDate": "2024-03-22",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00307",
+      "employeeId": "SYE-0014",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-03-25",
+      "completionDate": "2024-03-25",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00308",
+      "employeeId": "SYE-0014",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-03-28",
+      "completionDate": "2024-03-28",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00309",
+      "employeeId": "SYE-0014",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-03-31",
+      "completionDate": "2024-03-31",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00310",
+      "employeeId": "SYE-0014",
+      "courseId": "QA-001",
+      "trainingDate": "2024-04-03",
+      "completionDate": "2024-04-03",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00311",
+      "employeeId": "SYE-0014",
+      "courseId": "QA-002",
+      "trainingDate": "2024-04-06",
+      "completionDate": "2024-04-06",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00312",
+      "employeeId": "SYE-0014",
+      "courseId": "QA-003",
+      "trainingDate": "2024-04-09",
+      "completionDate": "2024-04-09",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00313",
+      "employeeId": "SYE-0014",
+      "courseId": "QA-004",
+      "trainingDate": "2024-04-12",
+      "completionDate": "2024-04-12",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00314",
+      "employeeId": "SYE-0014",
+      "courseId": "QA-005",
+      "trainingDate": "2024-04-15",
+      "completionDate": "2024-04-15",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00315",
+      "employeeId": "SYE-0014",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-04-18",
+      "completionDate": "2024-04-18",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00316",
+      "employeeId": "SYE-0014",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-04-21",
+      "completionDate": "2024-04-21",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00317",
+      "employeeId": "SYE-0014",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-04-24",
+      "completionDate": "2024-04-24",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00318",
+      "employeeId": "SYE-0014",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-04-27",
+      "completionDate": "2024-04-27",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00319",
+      "employeeId": "SYE-0014",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-04-30",
+      "completionDate": "2024-04-30",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00320",
+      "employeeId": "SYE-0014",
+      "courseId": "SEC-006",
+      "trainingDate": "2024-05-03",
+      "completionDate": "2024-05-03",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00321",
+      "employeeId": "SYE-0014",
+      "courseId": "SEC-007",
+      "trainingDate": "2024-05-06",
+      "completionDate": "2024-05-06",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00322",
+      "employeeId": "SYE-0015",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-06-04",
+      "completionDate": "2024-06-04",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00323",
+      "employeeId": "SYE-0015",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-06-07",
+      "completionDate": "2024-06-07",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00324",
+      "employeeId": "SYE-0015",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-06-10",
+      "completionDate": "2024-06-10",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00325",
+      "employeeId": "SYE-0015",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-06-13",
+      "completionDate": "2024-06-13",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00326",
+      "employeeId": "SYE-0015",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-06-16",
+      "completionDate": "2024-06-16",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00327",
+      "employeeId": "SYE-0015",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-06-19",
+      "completionDate": "2024-06-19",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00328",
+      "employeeId": "SYE-0015",
+      "courseId": "PM-004",
+      "trainingDate": "2024-06-22",
+      "completionDate": "2024-06-22",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00329",
+      "employeeId": "SYE-0015",
+      "courseId": "BA-002",
+      "trainingDate": "2024-06-25",
+      "completionDate": "2024-06-25",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00330",
+      "employeeId": "SYE-0015",
+      "courseId": "BA-003",
+      "trainingDate": "2024-06-28",
+      "completionDate": "2024-06-28",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00331",
+      "employeeId": "SYE-0015",
+      "courseId": "BA-004",
+      "trainingDate": "2024-07-01",
+      "completionDate": "2024-07-01",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00332",
+      "employeeId": "SYE-0015",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-07-04",
+      "completionDate": "2024-07-04",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00333",
+      "employeeId": "SYE-0015",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-07-07",
+      "completionDate": "2024-07-07",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00334",
+      "employeeId": "SYE-0015",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-07-10",
+      "completionDate": "2024-07-10",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00335",
+      "employeeId": "SYE-0015",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-07-13",
+      "completionDate": "2024-07-13",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00336",
+      "employeeId": "SYE-0015",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-07-16",
+      "completionDate": "2024-07-16",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00337",
+      "employeeId": "SYE-0015",
+      "courseId": "QA-001",
+      "trainingDate": "2024-07-19",
+      "completionDate": "2024-07-19",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00338",
+      "employeeId": "SYE-0015",
+      "courseId": "QA-002",
+      "trainingDate": "2024-07-22",
+      "completionDate": "2024-07-22",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00339",
+      "employeeId": "SYE-0015",
+      "courseId": "QA-003",
+      "trainingDate": "2024-07-25",
+      "completionDate": "2024-07-25",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00340",
+      "employeeId": "SYE-0015",
+      "courseId": "QA-004",
+      "trainingDate": "2024-07-28",
+      "completionDate": "2024-07-28",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00341",
+      "employeeId": "SYE-0015",
+      "courseId": "QA-005",
+      "trainingDate": "2024-07-31",
+      "completionDate": "2024-07-31",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00342",
+      "employeeId": "SYE-0015",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-08-03",
+      "completionDate": "2024-08-03",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00343",
+      "employeeId": "SYE-0015",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-08-06",
+      "completionDate": "2024-08-06",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00344",
+      "employeeId": "SYE-0015",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-08-09",
+      "completionDate": "2024-08-09",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00345",
+      "employeeId": "SYE-0015",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-08-12",
+      "completionDate": "2024-08-12",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00346",
+      "employeeId": "SYE-0015",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-08-15",
+      "completionDate": "2024-08-15",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00347",
+      "employeeId": "SYE-0015",
+      "courseId": "SEC-006",
+      "trainingDate": "2024-08-18",
+      "completionDate": "2024-08-18",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00348",
+      "employeeId": "SYE-0015",
+      "courseId": "SEC-007",
+      "trainingDate": "2024-08-21",
+      "completionDate": "2024-08-21",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00349",
+      "employeeId": "SYE-0016",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-07-18",
+      "completionDate": "2024-07-18",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00350",
+      "employeeId": "SYE-0016",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-07-21",
+      "completionDate": "2024-07-21",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00351",
+      "employeeId": "SYE-0016",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-07-24",
+      "completionDate": "2024-07-24",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00352",
+      "employeeId": "SYE-0016",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-07-27",
+      "completionDate": "2024-07-27",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00353",
+      "employeeId": "SYE-0016",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-07-30",
+      "completionDate": "2024-07-30",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00354",
+      "employeeId": "SYE-0016",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-08-02",
+      "completionDate": "2024-08-02",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00355",
+      "employeeId": "SYE-0016",
+      "courseId": "BA-002",
+      "trainingDate": "2024-08-05",
+      "completionDate": "2024-08-05",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00356",
+      "employeeId": "SYE-0016",
+      "courseId": "BA-004",
+      "trainingDate": "2024-08-08",
+      "completionDate": "2024-08-08",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00357",
+      "employeeId": "SYE-0016",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-08-11",
+      "completionDate": "2024-08-11",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00358",
+      "employeeId": "SYE-0016",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-08-14",
+      "completionDate": "2024-08-14",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00359",
+      "employeeId": "SYE-0016",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-08-17",
+      "completionDate": "2024-08-17",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00360",
+      "employeeId": "SYE-0016",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-08-20",
+      "completionDate": "2024-08-20",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00361",
+      "employeeId": "SYE-0016",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-08-23",
+      "completionDate": "2024-08-23",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00362",
+      "employeeId": "SYE-0016",
+      "courseId": "QA-001",
+      "trainingDate": "2024-08-26",
+      "completionDate": "2024-08-26",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00363",
+      "employeeId": "SYE-0016",
+      "courseId": "QA-002",
+      "trainingDate": "2024-08-29",
+      "completionDate": "2024-08-29",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00364",
+      "employeeId": "SYE-0016",
+      "courseId": "QA-003",
+      "trainingDate": "2024-09-01",
+      "completionDate": "2024-09-01",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00365",
+      "employeeId": "SYE-0016",
+      "courseId": "QA-004",
+      "trainingDate": "2024-09-04",
+      "completionDate": "2024-09-04",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00366",
+      "employeeId": "SYE-0016",
+      "courseId": "QA-005",
+      "trainingDate": "2024-09-07",
+      "completionDate": "2024-09-07",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00367",
+      "employeeId": "SYE-0016",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-09-10",
+      "completionDate": "2024-09-10",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00368",
+      "employeeId": "SYE-0016",
+      "courseId": "SEC-006",
+      "trainingDate": "2024-09-13",
+      "completionDate": "2024-09-13",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00369",
+      "employeeId": "SYE-0016",
+      "courseId": "SEC-007",
+      "trainingDate": "2024-09-16",
+      "completionDate": "2024-09-16",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00370",
+      "employeeId": "SYE-0017",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-01-18",
+      "completionDate": "2024-01-18",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00371",
+      "employeeId": "SYE-0017",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-01-21",
+      "completionDate": "2024-01-21",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00372",
+      "employeeId": "SYE-0017",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-01-24",
+      "completionDate": "2024-01-24",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00373",
+      "employeeId": "SYE-0017",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-01-27",
+      "completionDate": "2024-01-27",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00374",
+      "employeeId": "SYE-0017",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-01-30",
+      "completionDate": "2024-01-30",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00375",
+      "employeeId": "SYE-0017",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-02-02",
+      "completionDate": "2024-02-02",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00376",
+      "employeeId": "SYE-0017",
+      "courseId": "PM-002",
+      "trainingDate": "2024-02-05",
+      "completionDate": "2024-02-05",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00377",
+      "employeeId": "SYE-0017",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-02-08",
+      "completionDate": "2024-02-08",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00378",
+      "employeeId": "SYE-0017",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-02-11",
+      "completionDate": "2024-02-11",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00379",
+      "employeeId": "SYE-0017",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-02-14",
+      "completionDate": "2024-02-14",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00380",
+      "employeeId": "SYE-0017",
+      "courseId": "QA-004",
+      "trainingDate": "2024-02-17",
+      "completionDate": "2024-02-17",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00381",
+      "employeeId": "SYE-0017",
+      "courseId": "SRE-001",
+      "trainingDate": "2024-02-20",
+      "completionDate": "2024-02-20",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00382",
+      "employeeId": "SYE-0017",
+      "courseId": "SRE-002",
+      "trainingDate": "2024-02-23",
+      "completionDate": "2024-02-23",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00383",
+      "employeeId": "SYE-0017",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-02-26",
+      "completionDate": "2024-02-26",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00384",
+      "employeeId": "SYE-0017",
+      "courseId": "SRE-004",
+      "trainingDate": "2024-02-29",
+      "completionDate": "2024-02-29",
+      "trainer": "Thanaboon T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00385",
+      "employeeId": "SYE-0017",
+      "courseId": "SRE-005",
+      "trainingDate": "2024-03-03",
+      "completionDate": "2024-03-03",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00386",
+      "employeeId": "SYE-0018",
+      "courseId": "GEN-001",
+      "trainingDate": "2024-03-04",
+      "completionDate": "2024-03-04",
+      "trainer": "Akkharasaran S.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00387",
+      "employeeId": "SYE-0018",
+      "courseId": "GEN-002",
+      "trainingDate": "2024-03-07",
+      "completionDate": "2024-03-07",
+      "trainer": "Rattanapakorn K.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00388",
+      "employeeId": "SYE-0018",
+      "courseId": "GEN-003",
+      "trainingDate": "2024-03-10",
+      "completionDate": "2024-03-10",
+      "trainer": "Waranya T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00389",
+      "employeeId": "SYE-0018",
+      "courseId": "GEN-004",
+      "trainingDate": "2024-03-13",
+      "completionDate": "2024-03-13",
+      "trainer": "Pongsatorn N.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00390",
+      "employeeId": "SYE-0018",
+      "courseId": "GEN-005",
+      "trainingDate": "2024-03-16",
+      "completionDate": "2024-03-16",
+      "trainer": "Kittin T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00391",
+      "employeeId": "SYE-0018",
+      "courseId": "GEN-006",
+      "trainingDate": "2024-03-19",
+      "completionDate": "2024-03-19",
+      "trainer": "Kingkarn P.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00392",
+      "employeeId": "SYE-0018",
+      "courseId": "BA-002",
+      "trainingDate": "2024-03-22",
+      "completionDate": "2024-03-22",
+      "trainer": "Thanaboon T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00393",
+      "employeeId": "SYE-0018",
+      "courseId": "BA-004",
+      "trainingDate": "2024-03-25",
+      "completionDate": "2024-03-25",
+      "trainer": "Akkharasaran S.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00394",
+      "employeeId": "SYE-0018",
+      "courseId": "DEV-001",
+      "trainingDate": "2024-03-28",
+      "completionDate": "2024-03-28",
+      "trainer": "Rattanapakorn K.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00395",
+      "employeeId": "SYE-0018",
+      "courseId": "DEV-002",
+      "trainingDate": "2024-03-31",
+      "completionDate": "2024-03-31",
+      "trainer": "Waranya T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 96,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00396",
+      "employeeId": "SYE-0018",
+      "courseId": "DEV-003",
+      "trainingDate": "2024-04-03",
+      "completionDate": "2024-04-03",
+      "trainer": "Pongsatorn N.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 98,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00397",
+      "employeeId": "SYE-0018",
+      "courseId": "DEV-004",
+      "trainingDate": "2024-04-06",
+      "completionDate": "2024-04-06",
+      "trainer": "Kittin T.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00398",
+      "employeeId": "SYE-0018",
+      "courseId": "DEV-005",
+      "trainingDate": "2024-04-09",
+      "completionDate": "2024-04-09",
+      "trainer": "Kingkarn P.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 85,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00399",
+      "employeeId": "SYE-0018",
+      "courseId": "QA-001",
+      "trainingDate": "2024-04-12",
+      "completionDate": "2024-04-12",
+      "trainer": "Thanaboon T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00400",
+      "employeeId": "SYE-0018",
+      "courseId": "QA-002",
+      "trainingDate": "2024-04-15",
+      "completionDate": "2024-04-15",
+      "trainer": "Akkharasaran S.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 95,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00401",
+      "employeeId": "SYE-0018",
+      "courseId": "QA-003",
+      "trainingDate": "2024-04-18",
+      "completionDate": "2024-04-18",
+      "trainer": "Rattanapakorn K.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 100,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00402",
+      "employeeId": "SYE-0018",
+      "courseId": "QA-004",
+      "trainingDate": "2024-04-21",
+      "completionDate": "2024-04-21",
+      "trainer": "Waranya T.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 88,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00403",
+      "employeeId": "SYE-0018",
+      "courseId": "QA-005",
+      "trainingDate": "2024-04-24",
+      "completionDate": "2024-04-24",
+      "trainer": "Pongsatorn N.",
+      "method": "Self-study",
+      "status": "Completed",
+      "score": 90,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00404",
+      "employeeId": "SYE-0018",
+      "courseId": "SRE-003",
+      "trainingDate": "2024-04-27",
+      "completionDate": "2024-04-27",
+      "trainer": "Kittin T.",
+      "method": "Classroom",
+      "status": "Completed",
+      "score": 92,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
+    },
+    {
+      "id": "TR-00405",
+      "employeeId": "SYE-0018",
+      "courseId": "SEC-008",
+      "trainingDate": "2024-04-30",
+      "completionDate": "2024-04-30",
+      "trainer": "Kingkarn P.",
+      "method": "Online",
+      "status": "Completed",
+      "score": 94,
+      "passed": true,
+      "remarks": "Certified by SYE Division Lead • ISO Compliant"
     }
   ],
   "workInstructions": [
@@ -4974,2732 +10223,13 @@ window.SYE_SAMPLE_DATA = {
       ]
     }
   ],
-  "trainingRecords": [
-    {
-      "id": "TR-00001",
-      "employeeId": "SYE-0001",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-01-06",
-      "completionDate": "2024-01-06",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00002",
-      "employeeId": "SYE-0001",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-01-09",
-      "completionDate": "2024-01-09",
-      "trainer": "Methinee K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00003",
-      "employeeId": "SYE-0001",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-01-12",
-      "completionDate": "2024-01-12",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00004",
-      "employeeId": "SYE-0001",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-01-15",
-      "completionDate": "2024-01-15",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00005",
-      "employeeId": "SYE-0001",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-01-18",
-      "completionDate": "2024-01-18",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 82,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00006",
-      "employeeId": "SYE-0001",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-01-21",
-      "completionDate": "2024-01-21",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00007",
-      "employeeId": "SYE-0001",
-      "courseId": "PM-001",
-      "trainingDate": "2024-01-24",
-      "completionDate": "2024-01-24",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00008",
-      "employeeId": "SYE-0001",
-      "courseId": "PM-002",
-      "trainingDate": "2024-01-27",
-      "completionDate": "2024-01-27",
-      "trainer": "Kingkarn P.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00009",
-      "employeeId": "SYE-0001",
-      "courseId": "PM-003",
-      "trainingDate": "2024-01-30",
-      "completionDate": "2024-01-30",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00010",
-      "employeeId": "SYE-0001",
-      "courseId": "PM-004",
-      "trainingDate": "2024-02-02",
-      "completionDate": "2024-02-02",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00011",
-      "employeeId": "SYE-0001",
-      "courseId": "SEC-004",
-      "trainingDate": "2024-02-05",
-      "completionDate": "2024-02-05",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 97,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00012",
-      "employeeId": "SYE-0002",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-01-06",
-      "completionDate": "2024-01-06",
-      "trainer": "Methinee K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00013",
-      "employeeId": "SYE-0002",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-01-09",
-      "completionDate": "2024-01-09",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00014",
-      "employeeId": "SYE-0002",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-01-12",
-      "completionDate": "2024-01-12",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00015",
-      "employeeId": "SYE-0002",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-01-15",
-      "completionDate": "2024-01-15",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00016",
-      "employeeId": "SYE-0002",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-01-18",
-      "completionDate": "2024-01-18",
-      "trainer": "Waranya T.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00017",
-      "employeeId": "SYE-0002",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-01-21",
-      "completionDate": "2024-01-21",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00018",
-      "employeeId": "SYE-0002",
-      "courseId": "PM-001",
-      "trainingDate": "2024-01-24",
-      "completionDate": "2024-01-24",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00019",
-      "employeeId": "SYE-0002",
-      "courseId": "PM-002",
-      "trainingDate": "2024-01-27",
-      "completionDate": "2024-01-27",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00020",
-      "employeeId": "SYE-0002",
-      "courseId": "PM-003",
-      "trainingDate": "2024-01-30",
-      "completionDate": "2024-01-30",
-      "trainer": "Pongsatorn N.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00021",
-      "employeeId": "SYE-0002",
-      "courseId": "PM-004",
-      "trainingDate": "2024-02-02",
-      "completionDate": "2024-02-02",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00022",
-      "employeeId": "SYE-0002",
-      "courseId": "SEC-001",
-      "trainingDate": "2024-02-05",
-      "completionDate": "2024-02-05",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00023",
-      "employeeId": "SYE-0003",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-01-06",
-      "completionDate": "2024-01-06",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00024",
-      "employeeId": "SYE-0003",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-01-09",
-      "completionDate": "2024-01-09",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00025",
-      "employeeId": "SYE-0003",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-01-12",
-      "completionDate": "2024-01-12",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 86,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00026",
-      "employeeId": "SYE-0003",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-01-15",
-      "completionDate": "2024-01-15",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 86,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00027",
-      "employeeId": "SYE-0003",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-01-18",
-      "completionDate": "2024-01-18",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00028",
-      "employeeId": "SYE-0003",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-01-21",
-      "completionDate": "2024-01-21",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00029",
-      "employeeId": "SYE-0003",
-      "courseId": "PM-001",
-      "trainingDate": "2024-01-24",
-      "completionDate": "2024-01-24",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 86,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00030",
-      "employeeId": "SYE-0003",
-      "courseId": "PM-002",
-      "trainingDate": "2024-01-27",
-      "completionDate": "2024-01-27",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00031",
-      "employeeId": "SYE-0003",
-      "courseId": "PM-003",
-      "trainingDate": "2024-01-30",
-      "completionDate": "2024-01-30",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00032",
-      "employeeId": "SYE-0003",
-      "courseId": "PM-004",
-      "trainingDate": "2024-02-02",
-      "completionDate": "2024-02-02",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00033",
-      "employeeId": "SYE-0003",
-      "courseId": "SEC-006",
-      "trainingDate": "2024-02-05",
-      "completionDate": "2024-02-05",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00034",
-      "employeeId": "SYE-0003",
-      "courseId": "SEC-007",
-      "trainingDate": "2024-02-08",
-      "completionDate": "2024-02-08",
-      "trainer": "Pongsatorn N.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00035",
-      "employeeId": "SYE-0004",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-03-06",
-      "completionDate": "2024-03-06",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00036",
-      "employeeId": "SYE-0004",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-03-09",
-      "completionDate": "2024-03-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00037",
-      "employeeId": "SYE-0004",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-03-12",
-      "completionDate": "2024-03-12",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 86,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00038",
-      "employeeId": "SYE-0004",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-03-15",
-      "completionDate": "2024-03-15",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00039",
-      "employeeId": "SYE-0004",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-03-18",
-      "completionDate": "2024-03-18",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00040",
-      "employeeId": "SYE-0004",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-03-21",
-      "completionDate": "2024-03-21",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00041",
-      "employeeId": "SYE-0004",
-      "courseId": "DEV-001",
-      "trainingDate": "2024-03-24",
-      "completionDate": "2024-03-24",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00042",
-      "employeeId": "SYE-0004",
-      "courseId": "DEV-002",
-      "trainingDate": "2024-03-27",
-      "completionDate": "2024-03-27",
-      "trainer": "Kingkarn P.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00043",
-      "employeeId": "SYE-0004",
-      "courseId": "DEV-003",
-      "trainingDate": "2024-03-30",
-      "completionDate": "2024-03-30",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00044",
-      "employeeId": "SYE-0004",
-      "courseId": "DEV-004",
-      "trainingDate": "2024-04-02",
-      "completionDate": "2024-04-02",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00045",
-      "employeeId": "SYE-0004",
-      "courseId": "DEV-005",
-      "trainingDate": "2024-04-05",
-      "completionDate": "2024-04-05",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00046",
-      "employeeId": "SYE-0004",
-      "courseId": "SEC-001",
-      "trainingDate": "2024-04-08",
-      "completionDate": "2024-04-08",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00047",
-      "employeeId": "SYE-0004",
-      "courseId": "SEC-002",
-      "trainingDate": "2024-04-11",
-      "completionDate": "2024-04-11",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00048",
-      "employeeId": "SYE-0004",
-      "courseId": "SEC-003",
-      "trainingDate": "2024-04-14",
-      "completionDate": "2024-04-14",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00049",
-      "employeeId": "SYE-0005",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-06-20",
-      "completionDate": "2024-06-20",
-      "trainer": "Rattanapakorn K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00050",
-      "employeeId": "SYE-0005",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-06-23",
-      "completionDate": "2024-06-23",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00051",
-      "employeeId": "SYE-0005",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-06-26",
-      "completionDate": "2024-06-26",
-      "trainer": "Methinee K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00052",
-      "employeeId": "SYE-0005",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-06-29",
-      "completionDate": "2024-06-29",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00053",
-      "employeeId": "SYE-0005",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-07-02",
-      "completionDate": "2024-07-02",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00054",
-      "employeeId": "SYE-0005",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-07-05",
-      "completionDate": "2024-07-05",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00055",
-      "employeeId": "SYE-0005",
-      "courseId": "DEV-001",
-      "trainingDate": "2024-07-08",
-      "completionDate": "2024-07-08",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00056",
-      "employeeId": "SYE-0005",
-      "courseId": "DEV-002",
-      "trainingDate": "2024-07-11",
-      "completionDate": "2024-07-11",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00057",
-      "employeeId": "SYE-0005",
-      "courseId": "DEV-003",
-      "trainingDate": "2024-07-14",
-      "completionDate": "2024-07-14",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00058",
-      "employeeId": "SYE-0005",
-      "courseId": "DEV-004",
-      "trainingDate": "2024-07-17",
-      "completionDate": "2024-07-17",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00059",
-      "employeeId": "SYE-0005",
-      "courseId": "DEV-005",
-      "trainingDate": "2024-07-20",
-      "completionDate": "2024-07-20",
-      "trainer": "Methinee K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00060",
-      "employeeId": "SYE-0005",
-      "courseId": "SEC-001",
-      "trainingDate": "2024-07-23",
-      "completionDate": "2024-07-23",
-      "trainer": "Pongsatorn N.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00061",
-      "employeeId": "SYE-0005",
-      "courseId": "SEC-002",
-      "trainingDate": "2024-07-26",
-      "completionDate": "2024-07-26",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00062",
-      "employeeId": "SYE-0005",
-      "courseId": "SEC-003",
-      "trainingDate": "2024-07-29",
-      "completionDate": "2024-07-29",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00063",
-      "employeeId": "SYE-0006",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-09-06",
-      "completionDate": "2024-09-06",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00064",
-      "employeeId": "SYE-0006",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-09-09",
-      "completionDate": "2024-09-09",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00065",
-      "employeeId": "SYE-0006",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-09-12",
-      "completionDate": "2024-09-12",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00066",
-      "employeeId": "SYE-0006",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-09-15",
-      "completionDate": "2024-09-15",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00067",
-      "employeeId": "SYE-0006",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-09-18",
-      "completionDate": "2024-09-18",
-      "trainer": "Kingkarn P.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00068",
-      "employeeId": "SYE-0006",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-09-21",
-      "completionDate": "2024-09-21",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00069",
-      "employeeId": "SYE-0006",
-      "courseId": "DEV-001",
-      "trainingDate": "2024-09-24",
-      "completionDate": "2024-09-24",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00070",
-      "employeeId": "SYE-0006",
-      "courseId": "DEV-002",
-      "trainingDate": "2024-09-27",
-      "completionDate": "2024-09-27",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 82,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00071",
-      "employeeId": "SYE-0006",
-      "courseId": "DEV-003",
-      "trainingDate": "2024-09-30",
-      "completionDate": "2024-09-30",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00072",
-      "employeeId": "SYE-0006",
-      "courseId": "DEV-004",
-      "trainingDate": "2024-10-03",
-      "completionDate": "2024-10-03",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00073",
-      "employeeId": "SYE-0006",
-      "courseId": "DEV-005",
-      "trainingDate": "2024-10-06",
-      "completionDate": "2024-10-06",
-      "trainer": "Rattanapakorn K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00074",
-      "employeeId": "SYE-0006",
-      "courseId": "SEC-001",
-      "trainingDate": "2024-10-09",
-      "completionDate": "2024-10-09",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00075",
-      "employeeId": "SYE-0006",
-      "courseId": "SEC-002",
-      "trainingDate": "2024-10-12",
-      "completionDate": "2024-10-12",
-      "trainer": "Waranya T.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00076",
-      "employeeId": "SYE-0006",
-      "courseId": "SEC-003",
-      "trainingDate": "2024-10-15",
-      "completionDate": "2024-10-15",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00077",
-      "employeeId": "SYE-0007",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-02-06",
-      "completionDate": "2024-02-06",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00078",
-      "employeeId": "SYE-0007",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-02-09",
-      "completionDate": "2024-02-09",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00079",
-      "employeeId": "SYE-0007",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-02-12",
-      "completionDate": "2024-02-12",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00080",
-      "employeeId": "SYE-0007",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-02-15",
-      "completionDate": "2024-02-15",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00081",
-      "employeeId": "SYE-0007",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-02-18",
-      "completionDate": "2024-02-18",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00082",
-      "employeeId": "SYE-0007",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-02-21",
-      "completionDate": "2024-02-21",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00083",
-      "employeeId": "SYE-0007",
-      "courseId": "BA-001",
-      "trainingDate": "2024-02-24",
-      "completionDate": "2024-02-24",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00084",
-      "employeeId": "SYE-0007",
-      "courseId": "BA-002",
-      "trainingDate": "2024-02-27",
-      "completionDate": "2024-02-27",
-      "trainer": "Kingkarn P.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00085",
-      "employeeId": "SYE-0007",
-      "courseId": "BA-003",
-      "trainingDate": "2024-03-01",
-      "completionDate": "2024-03-01",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00086",
-      "employeeId": "SYE-0007",
-      "courseId": "BA-004",
-      "trainingDate": "2024-03-04",
-      "completionDate": "2024-03-04",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00087",
-      "employeeId": "SYE-0007",
-      "courseId": "SEC-004",
-      "trainingDate": "2024-03-07",
-      "completionDate": "2024-03-07",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 97,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00088",
-      "employeeId": "SYE-0008",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-04-06",
-      "completionDate": "2024-04-06",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00089",
-      "employeeId": "SYE-0008",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-04-09",
-      "completionDate": "2024-04-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00090",
-      "employeeId": "SYE-0008",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-04-12",
-      "completionDate": "2024-04-12",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00091",
-      "employeeId": "SYE-0008",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-04-15",
-      "completionDate": "2024-04-15",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00092",
-      "employeeId": "SYE-0008",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-04-18",
-      "completionDate": "2024-04-18",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00093",
-      "employeeId": "SYE-0008",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-04-21",
-      "completionDate": "2024-04-21",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00094",
-      "employeeId": "SYE-0008",
-      "courseId": "BA-001",
-      "trainingDate": "2024-04-24",
-      "completionDate": "2024-04-24",
-      "trainer": "Rattanapakorn K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00095",
-      "employeeId": "SYE-0008",
-      "courseId": "BA-002",
-      "trainingDate": "2024-04-27",
-      "completionDate": "2024-04-27",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00096",
-      "employeeId": "SYE-0008",
-      "courseId": "BA-003",
-      "trainingDate": "2024-04-30",
-      "completionDate": "2024-04-30",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00097",
-      "employeeId": "SYE-0008",
-      "courseId": "BA-004",
-      "trainingDate": "2024-05-03",
-      "completionDate": "2024-05-03",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00098",
-      "employeeId": "SYE-0008",
-      "courseId": "SEC-004",
-      "trainingDate": "2024-05-06",
-      "completionDate": "2024-05-06",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00099",
-      "employeeId": "SYE-0009",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-05-06",
-      "completionDate": "2024-05-06",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00100",
-      "employeeId": "SYE-0009",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-05-09",
-      "completionDate": "2024-05-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00101",
-      "employeeId": "SYE-0009",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-05-12",
-      "completionDate": "2024-05-12",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00102",
-      "employeeId": "SYE-0009",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-05-15",
-      "completionDate": "2024-05-15",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00103",
-      "employeeId": "SYE-0009",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-05-18",
-      "completionDate": "2024-05-18",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00104",
-      "employeeId": "SYE-0009",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-05-21",
-      "completionDate": "2024-05-21",
-      "trainer": "Pongsatorn N.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00105",
-      "employeeId": "SYE-0009",
-      "courseId": "DEV-001",
-      "trainingDate": "2024-05-24",
-      "completionDate": "2024-05-24",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00106",
-      "employeeId": "SYE-0009",
-      "courseId": "DEV-002",
-      "trainingDate": "2024-05-27",
-      "completionDate": "2024-05-27",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00107",
-      "employeeId": "SYE-0009",
-      "courseId": "DEV-003",
-      "trainingDate": "2024-05-30",
-      "completionDate": "2024-05-30",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00108",
-      "employeeId": "SYE-0009",
-      "courseId": "DEV-004",
-      "trainingDate": "2024-06-02",
-      "completionDate": "2024-06-02",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00109",
-      "employeeId": "SYE-0009",
-      "courseId": "DEV-005",
-      "trainingDate": "2024-06-05",
-      "completionDate": "2024-06-05",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00110",
-      "employeeId": "SYE-0009",
-      "courseId": "SEC-004",
-      "trainingDate": "2024-06-08",
-      "completionDate": "2024-06-08",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00111",
-      "employeeId": "SYE-0009",
-      "courseId": "SEC-005",
-      "trainingDate": "2024-06-11",
-      "completionDate": "2024-06-11",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00112",
-      "employeeId": "SYE-0010",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-08-06",
-      "completionDate": "2024-08-06",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00113",
-      "employeeId": "SYE-0010",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-08-09",
-      "completionDate": "2024-08-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00114",
-      "employeeId": "SYE-0010",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-08-12",
-      "completionDate": "2024-08-12",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00115",
-      "employeeId": "SYE-0010",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-08-15",
-      "completionDate": "2024-08-15",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 82,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00116",
-      "employeeId": "SYE-0010",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-08-18",
-      "completionDate": "2024-08-18",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00117",
-      "employeeId": "SYE-0010",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-08-21",
-      "completionDate": "2024-08-21",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00118",
-      "employeeId": "SYE-0010",
-      "courseId": "DEV-001",
-      "trainingDate": "2024-08-24",
-      "completionDate": "2024-08-24",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00119",
-      "employeeId": "SYE-0010",
-      "courseId": "DEV-002",
-      "trainingDate": "2024-08-27",
-      "completionDate": "2024-08-27",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00120",
-      "employeeId": "SYE-0010",
-      "courseId": "DEV-003",
-      "trainingDate": "2024-08-30",
-      "completionDate": "2024-08-30",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00121",
-      "employeeId": "SYE-0010",
-      "courseId": "DEV-004",
-      "trainingDate": "2024-09-02",
-      "completionDate": "2024-09-02",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00122",
-      "employeeId": "SYE-0010",
-      "courseId": "DEV-005",
-      "trainingDate": "2024-09-05",
-      "completionDate": "2024-09-05",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00123",
-      "employeeId": "SYE-0010",
-      "courseId": "SEC-004",
-      "trainingDate": "2024-09-08",
-      "completionDate": "2024-09-08",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00124",
-      "employeeId": "SYE-0010",
-      "courseId": "SEC-005",
-      "trainingDate": "2024-09-11",
-      "completionDate": "2024-09-11",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00125",
-      "employeeId": "SYE-0011",
-      "courseId": "GEN-001",
-      "trainingDate": "2025-02-20",
-      "completionDate": "2025-02-20",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00126",
-      "employeeId": "SYE-0011",
-      "courseId": "GEN-002",
-      "trainingDate": "2025-02-23",
-      "completionDate": "2025-02-23",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00127",
-      "employeeId": "SYE-0011",
-      "courseId": "GEN-003",
-      "trainingDate": "2025-02-26",
-      "completionDate": "2025-02-26",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00128",
-      "employeeId": "SYE-0011",
-      "courseId": "GEN-004",
-      "trainingDate": "2025-03-01",
-      "completionDate": "2025-03-01",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00129",
-      "employeeId": "SYE-0011",
-      "courseId": "GEN-005",
-      "trainingDate": "2025-03-04",
-      "completionDate": "2025-03-04",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 82,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00130",
-      "employeeId": "SYE-0011",
-      "courseId": "GEN-006",
-      "trainingDate": "2025-03-07",
-      "completionDate": "2025-03-07",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00131",
-      "employeeId": "SYE-0011",
-      "courseId": "DEV-001",
-      "trainingDate": "2025-03-10",
-      "completionDate": "2025-03-10",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00132",
-      "employeeId": "SYE-0011",
-      "courseId": "DEV-002",
-      "trainingDate": "2025-03-13",
-      "completionDate": "2025-03-13",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00133",
-      "employeeId": "SYE-0011",
-      "courseId": "DEV-003",
-      "trainingDate": "2025-03-16",
-      "completionDate": "2025-03-16",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00134",
-      "employeeId": "SYE-0011",
-      "courseId": "DEV-004",
-      "trainingDate": "2025-03-19",
-      "completionDate": "2025-03-19",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00135",
-      "employeeId": "SYE-0011",
-      "courseId": "DEV-005",
-      "trainingDate": "2025-03-22",
-      "completionDate": "2025-03-22",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00136",
-      "employeeId": "SYE-0011",
-      "courseId": "SEC-004",
-      "trainingDate": "2025-03-25",
-      "completionDate": "2025-03-25",
-      "trainer": "Kingkarn P.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00137",
-      "employeeId": "SYE-0011",
-      "courseId": "SEC-005",
-      "trainingDate": "2025-03-28",
-      "completionDate": "2025-03-28",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00138",
-      "employeeId": "SYE-0012",
-      "courseId": "GEN-001",
-      "trainingDate": "2025-03-06",
-      "completionDate": "2025-03-06",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00139",
-      "employeeId": "SYE-0012",
-      "courseId": "GEN-002",
-      "trainingDate": "2025-03-09",
-      "completionDate": "2025-03-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00140",
-      "employeeId": "SYE-0012",
-      "courseId": "GEN-003",
-      "trainingDate": "2025-03-12",
-      "completionDate": "2025-03-12",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00141",
-      "employeeId": "SYE-0012",
-      "courseId": "GEN-004",
-      "trainingDate": "2025-03-15",
-      "completionDate": "2025-03-15",
-      "trainer": "Rattanapakorn K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00142",
-      "employeeId": "SYE-0012",
-      "courseId": "GEN-005",
-      "trainingDate": "2025-03-18",
-      "completionDate": "2025-03-18",
-      "trainer": "Pongsatorn N.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00143",
-      "employeeId": "SYE-0012",
-      "courseId": "GEN-006",
-      "trainingDate": "2025-03-21",
-      "completionDate": "2025-03-21",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00144",
-      "employeeId": "SYE-0012",
-      "courseId": "DEV-001",
-      "trainingDate": "2025-03-24",
-      "completionDate": "2025-03-24",
-      "trainer": "Kingkarn P.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00145",
-      "employeeId": "SYE-0012",
-      "courseId": "DEV-002",
-      "trainingDate": "2025-03-27",
-      "completionDate": "2025-03-27",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00146",
-      "employeeId": "SYE-0012",
-      "courseId": "DEV-003",
-      "trainingDate": "2025-03-30",
-      "completionDate": "2025-03-30",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00147",
-      "employeeId": "SYE-0012",
-      "courseId": "DEV-004",
-      "trainingDate": "2025-04-02",
-      "completionDate": "2025-04-02",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00148",
-      "employeeId": "SYE-0012",
-      "courseId": "DEV-005",
-      "trainingDate": "2025-04-05",
-      "completionDate": "2025-04-05",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00149",
-      "employeeId": "SYE-0012",
-      "courseId": "SEC-004",
-      "trainingDate": "2025-04-08",
-      "completionDate": "2025-04-08",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00150",
-      "employeeId": "SYE-0012",
-      "courseId": "SEC-005",
-      "trainingDate": "2025-04-11",
-      "completionDate": "2025-04-11",
-      "trainer": "Rattanapakorn K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00151",
-      "employeeId": "SYE-0013",
-      "courseId": "GEN-001",
-      "trainingDate": "2025-05-06",
-      "completionDate": "2025-05-06",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00152",
-      "employeeId": "SYE-0013",
-      "courseId": "GEN-002",
-      "trainingDate": "2025-05-09",
-      "completionDate": "2025-05-09",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00153",
-      "employeeId": "SYE-0013",
-      "courseId": "GEN-003",
-      "trainingDate": "2025-05-12",
-      "completionDate": "2025-05-12",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 86,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00154",
-      "employeeId": "SYE-0013",
-      "courseId": "GEN-004",
-      "trainingDate": "2025-05-15",
-      "completionDate": "2025-05-15",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00155",
-      "employeeId": "SYE-0013",
-      "courseId": "GEN-005",
-      "trainingDate": "2025-05-18",
-      "completionDate": "2025-05-18",
-      "trainer": "Akkharasaran S.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00156",
-      "employeeId": "SYE-0013",
-      "courseId": "GEN-006",
-      "trainingDate": "2025-05-21",
-      "completionDate": null,
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "In Progress",
-      "score": null,
-      "passed": false,
-      "remarks": "In progress"
-    },
-    {
-      "id": "TR-00157",
-      "employeeId": "SYE-0014",
-      "courseId": "GEN-001",
-      "trainingDate": "2025-01-20",
-      "completionDate": "2025-01-20",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00158",
-      "employeeId": "SYE-0014",
-      "courseId": "GEN-002",
-      "trainingDate": "2025-01-23",
-      "completionDate": "2025-01-23",
-      "trainer": "Pongsatorn N.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00159",
-      "employeeId": "SYE-0014",
-      "courseId": "GEN-003",
-      "trainingDate": "2025-01-26",
-      "completionDate": "2025-01-26",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00160",
-      "employeeId": "SYE-0014",
-      "courseId": "GEN-004",
-      "trainingDate": "2025-01-29",
-      "completionDate": "2025-01-29",
-      "trainer": "Methinee K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00161",
-      "employeeId": "SYE-0014",
-      "courseId": "GEN-005",
-      "trainingDate": "2025-02-01",
-      "completionDate": "2025-02-01",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00162",
-      "employeeId": "SYE-0014",
-      "courseId": "GEN-006",
-      "trainingDate": "2025-02-04",
-      "completionDate": "2025-02-04",
-      "trainer": "Rattanapakorn K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00163",
-      "employeeId": "SYE-0014",
-      "courseId": "BA-001",
-      "trainingDate": "2025-02-07",
-      "completionDate": "2025-02-07",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00164",
-      "employeeId": "SYE-0014",
-      "courseId": "BA-002",
-      "trainingDate": "2025-02-10",
-      "completionDate": "2025-02-10",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00165",
-      "employeeId": "SYE-0014",
-      "courseId": "BA-003",
-      "trainingDate": "2025-02-13",
-      "completionDate": "2025-02-13",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 92,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00166",
-      "employeeId": "SYE-0014",
-      "courseId": "BA-004",
-      "trainingDate": "2025-02-16",
-      "completionDate": "2025-02-16",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00167",
-      "employeeId": "SYE-0014",
-      "courseId": "SEC-004",
-      "trainingDate": "2025-02-19",
-      "completionDate": "2025-02-19",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00168",
-      "employeeId": "SYE-0015",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-07-06",
-      "completionDate": "2024-07-06",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 82,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00169",
-      "employeeId": "SYE-0015",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-07-09",
-      "completionDate": "2024-07-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00170",
-      "employeeId": "SYE-0015",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-07-12",
-      "completionDate": "2024-07-12",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00171",
-      "employeeId": "SYE-0015",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-07-15",
-      "completionDate": "2024-07-15",
-      "trainer": "Methinee K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00172",
-      "employeeId": "SYE-0015",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-07-18",
-      "completionDate": "2024-07-18",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00173",
-      "employeeId": "SYE-0015",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-07-21",
-      "completionDate": "2024-07-21",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 97,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00174",
-      "employeeId": "SYE-0015",
-      "courseId": "SRE-001",
-      "trainingDate": "2024-07-24",
-      "completionDate": "2024-07-24",
-      "trainer": "Methinee K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 97,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00175",
-      "employeeId": "SYE-0015",
-      "courseId": "SRE-002",
-      "trainingDate": "2024-07-27",
-      "completionDate": "2024-07-27",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00176",
-      "employeeId": "SYE-0015",
-      "courseId": "SRE-003",
-      "trainingDate": "2024-07-30",
-      "completionDate": "2024-07-30",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00177",
-      "employeeId": "SYE-0015",
-      "courseId": "SRE-004",
-      "trainingDate": "2024-08-02",
-      "completionDate": "2024-08-02",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00178",
-      "employeeId": "SYE-0015",
-      "courseId": "SRE-005",
-      "trainingDate": "2024-08-05",
-      "completionDate": "2024-08-05",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00179",
-      "employeeId": "SYE-0015",
-      "courseId": "SEC-004",
-      "trainingDate": "2024-08-08",
-      "completionDate": "2024-08-08",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00180",
-      "employeeId": "SYE-0016",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-02-20",
-      "completionDate": "2024-02-20",
-      "trainer": "Pongsatorn N.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 89,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00181",
-      "employeeId": "SYE-0016",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-02-23",
-      "completionDate": "2024-02-23",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00182",
-      "employeeId": "SYE-0016",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-02-26",
-      "completionDate": "2024-02-26",
-      "trainer": "Kingkarn P.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00183",
-      "employeeId": "SYE-0016",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-02-29",
-      "completionDate": "2024-02-29",
-      "trainer": "Waranya T.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 95,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00184",
-      "employeeId": "SYE-0016",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-03-03",
-      "completionDate": "2024-03-03",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 97,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00185",
-      "employeeId": "SYE-0016",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-03-06",
-      "completionDate": "2024-03-06",
-      "trainer": "Waranya T.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00186",
-      "employeeId": "SYE-0016",
-      "courseId": "BA-001",
-      "trainingDate": "2024-03-09",
-      "completionDate": "2024-03-09",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 86,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00187",
-      "employeeId": "SYE-0016",
-      "courseId": "BA-002",
-      "trainingDate": "2024-03-12",
-      "completionDate": "2024-03-12",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00188",
-      "employeeId": "SYE-0016",
-      "courseId": "BA-003",
-      "trainingDate": "2024-03-15",
-      "completionDate": "2024-03-15",
-      "trainer": "Waranya T.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 98,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00189",
-      "employeeId": "SYE-0016",
-      "courseId": "BA-004",
-      "trainingDate": "2024-03-18",
-      "completionDate": "2024-03-18",
-      "trainer": "Methinee K.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 85,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00190",
-      "employeeId": "SYE-0016",
-      "courseId": "SEC-006",
-      "trainingDate": "2024-03-21",
-      "completionDate": "2024-03-21",
-      "trainer": "Kingkarn P.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00191",
-      "employeeId": "SYE-0016",
-      "courseId": "SEC-007",
-      "trainingDate": "2024-03-24",
-      "completionDate": "2024-03-24",
-      "trainer": "Rattanapakorn K.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 91,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00192",
-      "employeeId": "SYE-0017",
-      "courseId": "GEN-001",
-      "trainingDate": "2024-05-20",
-      "completionDate": "2024-05-20",
-      "trainer": "Rattanapakorn K.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 93,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00193",
-      "employeeId": "SYE-0017",
-      "courseId": "GEN-002",
-      "trainingDate": "2024-05-23",
-      "completionDate": "2024-05-23",
-      "trainer": "Kingkarn P.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 87,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00194",
-      "employeeId": "SYE-0017",
-      "courseId": "GEN-003",
-      "trainingDate": "2024-05-26",
-      "completionDate": "2024-05-26",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 88,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00195",
-      "employeeId": "SYE-0017",
-      "courseId": "GEN-004",
-      "trainingDate": "2024-05-29",
-      "completionDate": "2024-05-29",
-      "trainer": "Akkharasaran S.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 80,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00196",
-      "employeeId": "SYE-0017",
-      "courseId": "GEN-005",
-      "trainingDate": "2024-06-01",
-      "completionDate": "2024-06-01",
-      "trainer": "Kingkarn P.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00197",
-      "employeeId": "SYE-0017",
-      "courseId": "GEN-006",
-      "trainingDate": "2024-06-04",
-      "completionDate": "2024-06-04",
-      "trainer": "Waranya T.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00198",
-      "employeeId": "SYE-0017",
-      "courseId": "BA-001",
-      "trainingDate": "2024-06-07",
-      "completionDate": "2024-06-07",
-      "trainer": "Kingkarn P.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 97,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00199",
-      "employeeId": "SYE-0017",
-      "courseId": "BA-002",
-      "trainingDate": "2024-06-10",
-      "completionDate": "2024-06-10",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 83,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00200",
-      "employeeId": "SYE-0017",
-      "courseId": "BA-003",
-      "trainingDate": "2024-06-13",
-      "completionDate": "2024-06-13",
-      "trainer": "Methinee K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00201",
-      "employeeId": "SYE-0017",
-      "courseId": "BA-004",
-      "trainingDate": "2024-06-16",
-      "completionDate": "2024-06-16",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 94,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00202",
-      "employeeId": "SYE-0017",
-      "courseId": "SEC-006",
-      "trainingDate": "2024-06-19",
-      "completionDate": "2024-06-19",
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 81,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00203",
-      "employeeId": "SYE-0017",
-      "courseId": "SEC-007",
-      "trainingDate": "2024-06-22",
-      "completionDate": "2024-06-22",
-      "trainer": "Pongsatorn N.",
-      "method": "Classroom",
-      "status": "Completed",
-      "score": 84,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00204",
-      "employeeId": "SYE-0018",
-      "courseId": "GEN-001",
-      "trainingDate": "2025-06-06",
-      "completionDate": "2025-06-06",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00205",
-      "employeeId": "SYE-0018",
-      "courseId": "GEN-002",
-      "trainingDate": "2025-06-09",
-      "completionDate": "2025-06-09",
-      "trainer": "Waranya T.",
-      "method": "Online",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00206",
-      "employeeId": "SYE-0018",
-      "courseId": "GEN-003",
-      "trainingDate": "2025-06-12",
-      "completionDate": "2025-06-12",
-      "trainer": "Akkharasaran S.",
-      "method": "Self-study",
-      "status": "Completed",
-      "score": 99,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00207",
-      "employeeId": "SYE-0018",
-      "courseId": "GEN-004",
-      "trainingDate": "2025-06-15",
-      "completionDate": "2025-06-15",
-      "trainer": "Pongsatorn N.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 90,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00208",
-      "employeeId": "SYE-0018",
-      "courseId": "GEN-005",
-      "trainingDate": "2025-06-18",
-      "completionDate": "2025-06-18",
-      "trainer": "Rattanapakorn K.",
-      "method": "OJT",
-      "status": "Completed",
-      "score": 96,
-      "passed": true,
-      "remarks": "Passed with certification"
-    },
-    {
-      "id": "TR-00209",
-      "employeeId": "SYE-0018",
-      "courseId": "GEN-006",
-      "trainingDate": "2025-06-21",
-      "completionDate": null,
-      "trainer": "Akkharasaran S.",
-      "method": "Online",
-      "status": "In Progress",
-      "score": null,
-      "passed": false,
-      "remarks": "In progress"
-    }
-  ],
   "quizResults": [
     {
       "id": "QR-00001",
       "quizId": "QUIZ-001",
       "employeeId": "SYE-0001",
-      "date": "2024-01-06",
-      "score": 95,
+      "date": "2024-01-04",
+      "score": 90,
       "totalQuestions": 5,
       "correctAnswers": 5,
       "passed": true,
@@ -7715,40 +10245,40 @@ window.SYE_SAMPLE_DATA = {
       "id": "QR-00002",
       "quizId": "QUIZ-002",
       "employeeId": "SYE-0001",
-      "date": "2024-01-09",
-      "score": 87,
+      "date": "2024-01-07",
+      "score": 92,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         1,
         2,
         1,
-        2
+        1
       ]
     },
     {
       "id": "QR-00003",
       "quizId": "QUIZ-003",
       "employeeId": "SYE-0001",
-      "date": "2024-01-12",
-      "score": 87,
+      "date": "2024-01-10",
+      "score": 94,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00004",
       "quizId": "QUIZ-004",
       "employeeId": "SYE-0001",
-      "date": "2024-01-15",
-      "score": 94,
+      "date": "2024-01-13",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -7763,24 +10293,24 @@ window.SYE_SAMPLE_DATA = {
       "id": "QR-00005",
       "quizId": "QUIZ-005",
       "employeeId": "SYE-0001",
-      "date": "2024-01-18",
-      "score": 82,
+      "date": "2024-01-16",
+      "score": 96,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00006",
       "quizId": "QUIZ-006",
       "employeeId": "SYE-0001",
-      "date": "2024-01-21",
-      "score": 88,
+      "date": "2024-01-19",
+      "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -7795,8 +10325,24 @@ window.SYE_SAMPLE_DATA = {
       "id": "QR-00007",
       "quizId": "QUIZ-007",
       "employeeId": "SYE-0001",
-      "date": "2024-01-24",
-      "score": 83,
+      "date": "2024-01-22",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00008",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0001",
+      "date": "2024-01-25",
+      "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
       "passed": true,
@@ -7808,10 +10354,26 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00008",
-      "quizId": "QUIZ-008",
+      "id": "QR-00009",
+      "quizId": "QUIZ-009",
       "employeeId": "SYE-0001",
-      "date": "2024-01-27",
+      "date": "2024-01-28",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00010",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0001",
+      "date": "2024-01-31",
       "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -7824,43 +10386,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00009",
-      "quizId": "QUIZ-009",
-      "employeeId": "SYE-0001",
-      "date": "2024-01-30",
-      "score": 83,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00010",
-      "quizId": "QUIZ-010",
-      "employeeId": "SYE-0001",
-      "date": "2024-02-02",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
       "id": "QR-00011",
-      "quizId": "QUIZ-033",
+      "quizId": "QUIZ-011",
       "employeeId": "SYE-0001",
-      "date": "2024-02-05",
-      "score": 97,
+      "date": "2024-02-03",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -7873,58 +10403,41 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00012",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-06",
-      "score": 98,
-      "totalQuestions": 5,
-      "correctAnswers": 5,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "id": "QR-00013",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-09",
-      "score": 89,
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-06",
+      "score": 88,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
       "answers": [
+        0,
         1,
-        2,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00013",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-09",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
         1,
+        0,
         1
       ]
     },
     {
       "id": "QR-00014",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-12",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00015",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-15",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-12",
       "score": 92,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -7937,11 +10450,27 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
+      "id": "QR-00015",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-15",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
       "id": "QR-00016",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-18",
-      "score": 91,
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-18",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -7954,10 +10483,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00017",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-21",
-      "score": 99,
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-21",
+      "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -7970,9 +10499,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00018",
-      "quizId": "QUIZ-007",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-24",
+      "quizId": "QUIZ-033",
+      "employeeId": "SYE-0001",
+      "date": "2024-02-24",
       "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -7986,73 +10515,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00019",
-      "quizId": "QUIZ-008",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-27",
-      "score": 96,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00020",
-      "quizId": "QUIZ-009",
-      "employeeId": "SYE-0002",
-      "date": "2024-01-30",
-      "score": 85,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00021",
-      "quizId": "QUIZ-010",
-      "employeeId": "SYE-0002",
-      "date": "2024-02-02",
-      "score": 90,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00022",
-      "quizId": "QUIZ-030",
-      "employeeId": "SYE-0002",
-      "date": "2024-02-05",
-      "score": 85,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00023",
       "quizId": "QUIZ-001",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-06",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-04",
       "score": 92,
       "totalQuestions": 5,
       "correctAnswers": 5,
@@ -8066,122 +10531,42 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00024",
+      "id": "QR-00020",
       "quizId": "QUIZ-002",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-09",
-      "score": 80,
+      "employeeId": "SYE-0002",
+      "date": "2024-01-07",
+      "score": 94,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         1,
         2,
         1,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00025",
+      "id": "QR-00021",
       "quizId": "QUIZ-003",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-12",
-      "score": 86,
+      "employeeId": "SYE-0002",
+      "date": "2024-01-10",
+      "score": 95,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00026",
+      "id": "QR-00022",
       "quizId": "QUIZ-004",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-15",
-      "score": 86,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00027",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-18",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00028",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-21",
-      "score": 81,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00029",
-      "quizId": "QUIZ-007",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-24",
-      "score": 86,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00030",
-      "quizId": "QUIZ-008",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-27",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00031",
-      "quizId": "QUIZ-009",
-      "employeeId": "SYE-0003",
-      "date": "2024-01-30",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-13",
       "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -8194,10 +10579,42 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00032",
-      "quizId": "QUIZ-010",
-      "employeeId": "SYE-0003",
-      "date": "2024-02-02",
+      "id": "QR-00023",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-16",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00024",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-19",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00025",
+      "quizId": "QUIZ-007",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-22",
       "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
@@ -8210,11 +10627,123 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
+      "id": "QR-00026",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-25",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00027",
+      "quizId": "QUIZ-009",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-28",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00028",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0002",
+      "date": "2024-01-31",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00029",
+      "quizId": "QUIZ-011",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-03",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00030",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-06",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00031",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-09",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00032",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-12",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
       "id": "QR-00033",
-      "quizId": "QUIZ-035",
-      "employeeId": "SYE-0003",
-      "date": "2024-02-05",
-      "score": 89,
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-15",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -8227,10 +10756,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00034",
-      "quizId": "QUIZ-036",
-      "employeeId": "SYE-0003",
-      "date": "2024-02-08",
-      "score": 99,
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-18",
+      "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -8243,10 +10772,42 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00035",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-21",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00036",
+      "quizId": "QUIZ-030",
+      "employeeId": "SYE-0002",
+      "date": "2024-02-24",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00037",
       "quizId": "QUIZ-001",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-06",
-      "score": 95,
+      "employeeId": "SYE-0003",
+      "date": "2024-01-04",
+      "score": 94,
       "totalQuestions": 5,
       "correctAnswers": 5,
       "passed": true,
@@ -8259,74 +10820,42 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00036",
+      "id": "QR-00038",
       "quizId": "QUIZ-002",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-09",
-      "score": 80,
+      "employeeId": "SYE-0003",
+      "date": "2024-01-07",
+      "score": 95,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         1,
         2,
         1,
-        2
-      ]
-    },
-    {
-      "id": "QR-00037",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-12",
-      "score": 86,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00038",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-15",
-      "score": 85,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00039",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-18",
-      "score": 85,
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-10",
+      "score": 96,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00040",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-21",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-13",
       "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -8340,10 +10869,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00041",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-24",
-      "score": 93,
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-16",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -8356,250 +10885,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00042",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-27",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00043",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0004",
-      "date": "2024-03-30",
-      "score": 92,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00044",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0004",
-      "date": "2024-04-02",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00045",
-      "quizId": "QUIZ-019",
-      "employeeId": "SYE-0004",
-      "date": "2024-04-05",
-      "score": 92,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00046",
-      "quizId": "QUIZ-030",
-      "employeeId": "SYE-0004",
-      "date": "2024-04-08",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00047",
-      "quizId": "QUIZ-031",
-      "employeeId": "SYE-0004",
-      "date": "2024-04-11",
-      "score": 94,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00048",
-      "quizId": "QUIZ-032",
-      "employeeId": "SYE-0004",
-      "date": "2024-04-14",
-      "score": 84,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00049",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0005",
-      "date": "2024-06-20",
-      "score": 92,
-      "totalQuestions": 5,
-      "correctAnswers": 5,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "id": "QR-00050",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0005",
-      "date": "2024-06-23",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00051",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0005",
-      "date": "2024-06-26",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00052",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0005",
-      "date": "2024-06-29",
-      "score": 80,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00053",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-02",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00054",
       "quizId": "QUIZ-006",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-05",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00055",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-08",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00056",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-11",
-      "score": 80,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00057",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-14",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-19",
       "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
@@ -8612,11 +10900,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00058",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-17",
-      "score": 89,
+      "id": "QR-00043",
+      "quizId": "QUIZ-007",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-22",
+      "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -8628,11 +10916,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00059",
-      "quizId": "QUIZ-019",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-20",
-      "score": 98,
+      "id": "QR-00044",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-25",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -8644,11 +10932,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00060",
-      "quizId": "QUIZ-030",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-23",
-      "score": 96,
+      "id": "QR-00045",
+      "quizId": "QUIZ-009",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-28",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -8660,10 +10948,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00061",
-      "quizId": "QUIZ-031",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-26",
+      "id": "QR-00046",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0003",
+      "date": "2024-01-31",
       "score": 88,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -8676,289 +10964,15 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00062",
-      "quizId": "QUIZ-032",
-      "employeeId": "SYE-0005",
-      "date": "2024-07-29",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00063",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-06",
-      "score": 81,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00064",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-09",
-      "score": 80,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        2
-      ]
-    },
-    {
-      "id": "QR-00065",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-12",
-      "score": 98,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00066",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-15",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00067",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-18",
-      "score": 98,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00068",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-21",
-      "score": 81,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00069",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-24",
-      "score": 80,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00070",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-27",
-      "score": 82,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00071",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0006",
-      "date": "2024-09-30",
-      "score": 83,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00072",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0006",
-      "date": "2024-10-03",
-      "score": 83,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00073",
-      "quizId": "QUIZ-019",
-      "employeeId": "SYE-0006",
-      "date": "2024-10-06",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00074",
-      "quizId": "QUIZ-030",
-      "employeeId": "SYE-0006",
-      "date": "2024-10-09",
-      "score": 93,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00075",
-      "quizId": "QUIZ-031",
-      "employeeId": "SYE-0006",
-      "date": "2024-10-12",
-      "score": 81,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00076",
-      "quizId": "QUIZ-032",
-      "employeeId": "SYE-0006",
-      "date": "2024-10-15",
-      "score": 87,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00077",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-06",
-      "score": 89,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00078",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-09",
+      "id": "QR-00047",
+      "quizId": "QUIZ-011",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-03",
       "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
       "answers": [
-        1,
-        2,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00079",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-12",
-      "score": 89,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
         0,
         1,
         0,
@@ -8966,26 +10980,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00080",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-15",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00081",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-18",
+      "id": "QR-00048",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-06",
       "score": 92,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -8998,10 +10996,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00082",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-21",
+      "id": "QR-00049",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-09",
       "score": 94,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9014,11 +11012,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00083",
-      "quizId": "QUIZ-011",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-24",
-      "score": 93,
+      "id": "QR-00050",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-12",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9030,27 +11028,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00084",
-      "quizId": "QUIZ-012",
-      "employeeId": "SYE-0007",
-      "date": "2024-02-27",
-      "score": 87,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00085",
-      "quizId": "QUIZ-013",
-      "employeeId": "SYE-0007",
-      "date": "2024-03-01",
-      "score": 91,
+      "id": "QR-00051",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-15",
+      "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9062,10 +11044,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00086",
-      "quizId": "QUIZ-014",
-      "employeeId": "SYE-0007",
-      "date": "2024-03-04",
+      "id": "QR-00052",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-18",
       "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9078,11 +11060,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00087",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0007",
-      "date": "2024-03-07",
-      "score": 97,
+      "id": "QR-00053",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-21",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9094,44 +11076,76 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00088",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0008",
-      "date": "2024-04-06",
-      "score": 87,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00089",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0008",
-      "date": "2024-04-09",
-      "score": 81,
+      "id": "QR-00054",
+      "quizId": "QUIZ-035",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-24",
+      "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00055",
+      "quizId": "QUIZ-036",
+      "employeeId": "SYE-0003",
+      "date": "2024-02-27",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00056",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-04",
+      "score": 95,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00057",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-07",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         1,
         2,
         1,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00090",
+      "id": "QR-00058",
       "quizId": "QUIZ-003",
-      "employeeId": "SYE-0008",
-      "date": "2024-04-12",
-      "score": 89,
+      "employeeId": "SYE-0004",
+      "date": "2024-03-10",
+      "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9143,11 +11157,27 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00091",
+      "id": "QR-00059",
       "quizId": "QUIZ-004",
-      "employeeId": "SYE-0008",
-      "date": "2024-04-15",
-      "score": 83,
+      "employeeId": "SYE-0004",
+      "date": "2024-03-13",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00060",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-16",
+      "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
       "passed": true,
@@ -9159,11 +11189,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00092",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0008",
-      "date": "2024-04-18",
-      "score": 93,
+      "id": "QR-00061",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-19",
+      "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9175,9 +11205,169 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00093",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0008",
+      "id": "QR-00062",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-22",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00063",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-25",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00064",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-28",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00065",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0004",
+      "date": "2024-03-31",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00066",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-03",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00067",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-06",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00068",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-09",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00069",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-12",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00070",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-15",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00071",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-18",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00072",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0004",
       "date": "2024-04-21",
       "score": 85,
       "totalQuestions": 4,
@@ -9191,11 +11381,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00094",
-      "quizId": "QUIZ-011",
-      "employeeId": "SYE-0008",
+      "id": "QR-00073",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0004",
       "date": "2024-04-24",
-      "score": 93,
+      "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9207,10 +11397,42 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00095",
-      "quizId": "QUIZ-012",
-      "employeeId": "SYE-0008",
+      "id": "QR-00074",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0004",
       "date": "2024-04-27",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00075",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0004",
+      "date": "2024-04-30",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00076",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-03",
       "score": 88,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9223,10 +11445,315 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00096",
+      "id": "QR-00077",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-06",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00078",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-09",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00079",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-12",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00080",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-15",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00081",
+      "quizId": "QUIZ-030",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-18",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00082",
+      "quizId": "QUIZ-031",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-21",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00083",
+      "quizId": "QUIZ-032",
+      "employeeId": "SYE-0004",
+      "date": "2024-05-24",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00084",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0005",
+      "date": "2024-06-18",
+      "score": 96,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00085",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0005",
+      "date": "2024-06-21",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00086",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0005",
+      "date": "2024-06-24",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00087",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0005",
+      "date": "2024-06-27",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00088",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0005",
+      "date": "2024-06-30",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00089",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-03",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00090",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-06",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00091",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-09",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00092",
       "quizId": "QUIZ-013",
-      "employeeId": "SYE-0008",
-      "date": "2024-04-30",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-12",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00093",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-15",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00094",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-18",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00095",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-21",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00096",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-24",
       "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9240,10 +11767,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00097",
-      "quizId": "QUIZ-014",
-      "employeeId": "SYE-0008",
-      "date": "2024-05-03",
-      "score": 89,
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-27",
+      "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9256,10 +11783,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00098",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0008",
-      "date": "2024-05-06",
-      "score": 98,
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0005",
+      "date": "2024-07-30",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9272,90 +11799,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00099",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-06",
-      "score": 81,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00100",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-09",
-      "score": 94,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00101",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-12",
-      "score": 98,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00102",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-15",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00103",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-18",
-      "score": 92,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00104",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-21",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-02",
       "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
@@ -9368,27 +11814,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00105",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-24",
-      "score": 84,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00106",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-27",
-      "score": 98,
+      "id": "QR-00100",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-05",
+      "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9400,74 +11830,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00107",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0009",
-      "date": "2024-05-30",
-      "score": 89,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00108",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0009",
-      "date": "2024-06-02",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00109",
-      "quizId": "QUIZ-019",
-      "employeeId": "SYE-0009",
-      "date": "2024-06-05",
-      "score": 87,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00110",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0009",
-      "date": "2024-06-08",
-      "score": 94,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00111",
-      "quizId": "QUIZ-034",
-      "employeeId": "SYE-0009",
-      "date": "2024-06-11",
+      "id": "QR-00101",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-08",
       "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9480,11 +11846,171 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
+      "id": "QR-00102",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-11",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00103",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-14",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00104",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-17",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00105",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-20",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00106",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-23",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00107",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-26",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00108",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0005",
+      "date": "2024-08-29",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00109",
+      "quizId": "QUIZ-030",
+      "employeeId": "SYE-0005",
+      "date": "2024-09-01",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00110",
+      "quizId": "QUIZ-031",
+      "employeeId": "SYE-0005",
+      "date": "2024-09-04",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00111",
+      "quizId": "QUIZ-032",
+      "employeeId": "SYE-0005",
+      "date": "2024-09-07",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
       "id": "QR-00112",
       "quizId": "QUIZ-001",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-06",
-      "score": 90,
+      "employeeId": "SYE-0006",
+      "date": "2024-09-04",
+      "score": 98,
       "totalQuestions": 5,
       "correctAnswers": 5,
       "passed": true,
@@ -9499,9 +12025,9 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00113",
       "quizId": "QUIZ-002",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-09",
-      "score": 96,
+      "employeeId": "SYE-0006",
+      "date": "2024-09-07",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9515,9 +12041,9 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00114",
       "quizId": "QUIZ-003",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-12",
-      "score": 83,
+      "employeeId": "SYE-0006",
+      "date": "2024-09-10",
+      "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
       "passed": true,
@@ -9531,25 +12057,25 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00115",
       "quizId": "QUIZ-004",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-15",
-      "score": 82,
+      "employeeId": "SYE-0006",
+      "date": "2024-09-13",
+      "score": 90,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00116",
       "quizId": "QUIZ-005",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-18",
-      "score": 92,
+      "employeeId": "SYE-0006",
+      "date": "2024-09-16",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9563,25 +12089,25 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00117",
       "quizId": "QUIZ-006",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-21",
-      "score": 87,
+      "employeeId": "SYE-0006",
+      "date": "2024-09-19",
+      "score": 100,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00118",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-24",
-      "score": 98,
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0006",
+      "date": "2024-09-22",
+      "score": 88,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9594,186 +12120,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00119",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-27",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00120",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0010",
-      "date": "2024-08-30",
-      "score": 89,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00121",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0010",
-      "date": "2024-09-02",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00122",
-      "quizId": "QUIZ-019",
-      "employeeId": "SYE-0010",
-      "date": "2024-09-05",
-      "score": 85,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00123",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0010",
-      "date": "2024-09-08",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00124",
-      "quizId": "QUIZ-034",
-      "employeeId": "SYE-0010",
-      "date": "2024-09-11",
-      "score": 95,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00125",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0011",
-      "date": "2025-02-20",
-      "score": 93,
-      "totalQuestions": 5,
-      "correctAnswers": 5,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "id": "QR-00126",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0011",
-      "date": "2025-02-23",
-      "score": 84,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        2
-      ]
-    },
-    {
-      "id": "QR-00127",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0011",
-      "date": "2025-02-26",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00128",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-01",
-      "score": 84,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00129",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-04",
-      "score": 82,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00130",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-07",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0006",
+      "date": "2024-09-25",
       "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9786,11 +12135,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00131",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-10",
-      "score": 93,
+      "id": "QR-00120",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0006",
+      "date": "2024-09-28",
+      "score": 92,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9802,26 +12151,26 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00132",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-13",
-      "score": 83,
+      "id": "QR-00121",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-01",
+      "score": 94,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00133",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-16",
+      "id": "QR-00122",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-04",
       "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9834,10 +12183,26 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00134",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-19",
+      "id": "QR-00123",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-07",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00124",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-10",
       "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9850,11 +12215,171 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00135",
+      "id": "QR-00125",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-13",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00126",
       "quizId": "QUIZ-019",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-22",
-      "score": 93,
+      "employeeId": "SYE-0006",
+      "date": "2024-10-16",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00127",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-19",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00128",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-22",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00129",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-25",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00130",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-28",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00131",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0006",
+      "date": "2024-10-31",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00132",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-03",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00133",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-06",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00134",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-09",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00135",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-12",
+      "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9867,9 +12392,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00136",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-25",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-15",
       "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -9883,10 +12408,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00137",
-      "quizId": "QUIZ-034",
-      "employeeId": "SYE-0011",
-      "date": "2025-03-28",
-      "score": 93,
+      "quizId": "QUIZ-030",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-18",
+      "score": 100,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -9899,170 +12424,25 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00138",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-06",
-      "score": 87,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
+      "quizId": "QUIZ-031",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-21",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
       "passed": true,
       "answers": [
-        1,
-        0,
         0,
         1,
-        1
+        0,
+        2
       ]
     },
     {
       "id": "QR-00139",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-09",
-      "score": 95,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00140",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-12",
-      "score": 87,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00141",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-15",
-      "score": 81,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00142",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-18",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00143",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-21",
-      "score": 89,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00144",
-      "quizId": "QUIZ-015",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-24",
-      "score": 94,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00145",
-      "quizId": "QUIZ-016",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-27",
-      "score": 89,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00146",
-      "quizId": "QUIZ-017",
-      "employeeId": "SYE-0012",
-      "date": "2025-03-30",
-      "score": 92,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00147",
-      "quizId": "QUIZ-018",
-      "employeeId": "SYE-0012",
-      "date": "2025-04-02",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00148",
-      "quizId": "QUIZ-019",
-      "employeeId": "SYE-0012",
-      "date": "2025-04-05",
+      "quizId": "QUIZ-032",
+      "employeeId": "SYE-0006",
+      "date": "2024-11-24",
       "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -10075,124 +12455,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00149",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0012",
-      "date": "2025-04-08",
-      "score": 92,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00150",
-      "quizId": "QUIZ-034",
-      "employeeId": "SYE-0012",
-      "date": "2025-04-11",
-      "score": 81,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00151",
+      "id": "QR-00140",
       "quizId": "QUIZ-001",
-      "employeeId": "SYE-0013",
-      "date": "2025-05-06",
-      "score": 81,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00152",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0013",
-      "date": "2025-05-09",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00153",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0013",
-      "date": "2025-05-12",
-      "score": 86,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00154",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0013",
-      "date": "2025-05-15",
-      "score": 84,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00155",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0013",
-      "date": "2025-05-18",
-      "score": 83,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00156",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0014",
-      "date": "2025-01-20",
-      "score": 93,
+      "employeeId": "SYE-0007",
+      "date": "2024-02-04",
+      "score": 100,
       "totalQuestions": 5,
       "correctAnswers": 5,
       "passed": true,
@@ -10205,42 +12472,106 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00157",
+      "id": "QR-00141",
       "quizId": "QUIZ-002",
-      "employeeId": "SYE-0014",
-      "date": "2025-01-23",
-      "score": 89,
+      "employeeId": "SYE-0007",
+      "date": "2024-02-07",
+      "score": 85,
       "totalQuestions": 4,
-      "correctAnswers": 4,
+      "correctAnswers": 3,
       "passed": true,
       "answers": [
         1,
         2,
         1,
-        1
+        2
       ]
     },
     {
-      "id": "QR-00158",
+      "id": "QR-00142",
       "quizId": "QUIZ-003",
-      "employeeId": "SYE-0014",
-      "date": "2025-01-26",
-      "score": 84,
+      "employeeId": "SYE-0007",
+      "date": "2024-02-10",
+      "score": 90,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00159",
+      "id": "QR-00143",
       "quizId": "QUIZ-004",
-      "employeeId": "SYE-0014",
-      "date": "2025-01-29",
+      "employeeId": "SYE-0007",
+      "date": "2024-02-13",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00144",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0007",
+      "date": "2024-02-16",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00145",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0007",
+      "date": "2024-02-19",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00146",
+      "quizId": "QUIZ-007",
+      "employeeId": "SYE-0007",
+      "date": "2024-02-22",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00147",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0007",
+      "date": "2024-02-25",
       "score": 92,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -10253,11 +12584,91 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00160",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-01",
-      "score": 84,
+      "id": "QR-00148",
+      "quizId": "QUIZ-009",
+      "employeeId": "SYE-0007",
+      "date": "2024-02-28",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00149",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-02",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00150",
+      "quizId": "QUIZ-011",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-05",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00151",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-08",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00152",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-11",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00153",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-14",
+      "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
       "passed": true,
@@ -10266,61 +12677,174 @@ window.SYE_SAMPLE_DATA = {
         1,
         0,
         2
+      ]
+    },
+    {
+      "id": "QR-00154",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-17",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00155",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-20",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00156",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-23",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00157",
+      "quizId": "QUIZ-033",
+      "employeeId": "SYE-0007",
+      "date": "2024-03-26",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00158",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-04",
+      "score": 85,
+      "totalQuestions": 5,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00159",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-07",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00160",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-10",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
       ]
     },
     {
       "id": "QR-00161",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-04",
-      "score": 87,
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-13",
+      "score": 100,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00162",
-      "quizId": "QUIZ-011",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-07",
-      "score": 84,
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-16",
+      "score": 88,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00163",
-      "quizId": "QUIZ-012",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-10",
-      "score": 87,
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-19",
+      "score": 90,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
       "id": "QR-00164",
-      "quizId": "QUIZ-013",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-13",
+      "quizId": "QUIZ-007",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-22",
       "score": 92,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -10334,10 +12858,10 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00165",
-      "quizId": "QUIZ-014",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-16",
-      "score": 90,
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-25",
+      "score": 94,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -10350,267 +12874,9 @@ window.SYE_SAMPLE_DATA = {
     },
     {
       "id": "QR-00166",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0014",
-      "date": "2025-02-19",
-      "score": 98,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00167",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-06",
-      "score": 82,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00168",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-09",
-      "score": 80,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        2
-      ]
-    },
-    {
-      "id": "QR-00169",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-12",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00170",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-15",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00171",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-18",
-      "score": 83,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00172",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-21",
-      "score": 97,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00173",
-      "quizId": "QUIZ-025",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-24",
-      "score": 97,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00174",
-      "quizId": "QUIZ-026",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-27",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00175",
-      "quizId": "QUIZ-027",
-      "employeeId": "SYE-0015",
-      "date": "2024-07-30",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00176",
-      "quizId": "QUIZ-028",
-      "employeeId": "SYE-0015",
-      "date": "2024-08-02",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00177",
-      "quizId": "QUIZ-029",
-      "employeeId": "SYE-0015",
-      "date": "2024-08-05",
-      "score": 81,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00178",
-      "quizId": "QUIZ-033",
-      "employeeId": "SYE-0015",
-      "date": "2024-08-08",
-      "score": 83,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00179",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0016",
-      "date": "2024-02-20",
-      "score": 89,
-      "totalQuestions": 5,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00180",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0016",
-      "date": "2024-02-23",
-      "score": 96,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        1
-      ]
-    },
-    {
-      "id": "QR-00181",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0016",
-      "date": "2024-02-26",
-      "score": 85,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00182",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0016",
-      "date": "2024-02-29",
+      "quizId": "QUIZ-009",
+      "employeeId": "SYE-0008",
+      "date": "2024-04-28",
       "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -10623,203 +12889,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00183",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-03",
-      "score": 97,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00184",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-06",
-      "score": 90,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00185",
-      "quizId": "QUIZ-011",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-09",
-      "score": 86,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00186",
-      "quizId": "QUIZ-012",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-12",
-      "score": 98,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00187",
-      "quizId": "QUIZ-013",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-15",
-      "score": 98,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00188",
-      "quizId": "QUIZ-014",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-18",
-      "score": 85,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00189",
-      "quizId": "QUIZ-035",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-21",
-      "score": 99,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00190",
-      "quizId": "QUIZ-036",
-      "employeeId": "SYE-0016",
-      "date": "2024-03-24",
-      "score": 91,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00191",
-      "quizId": "QUIZ-001",
-      "employeeId": "SYE-0017",
-      "date": "2024-05-20",
-      "score": 93,
-      "totalQuestions": 5,
-      "correctAnswers": 5,
-      "passed": true,
-      "answers": [
-        1,
-        0,
-        0,
-        1,
-        0
-      ]
-    },
-    {
-      "id": "QR-00192",
-      "quizId": "QUIZ-002",
-      "employeeId": "SYE-0017",
-      "date": "2024-05-23",
-      "score": 87,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        1,
-        2,
-        1,
-        2
-      ]
-    },
-    {
-      "id": "QR-00193",
-      "quizId": "QUIZ-003",
-      "employeeId": "SYE-0017",
-      "date": "2024-05-26",
-      "score": 88,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00194",
-      "quizId": "QUIZ-004",
-      "employeeId": "SYE-0017",
-      "date": "2024-05-29",
-      "score": 80,
-      "totalQuestions": 4,
-      "correctAnswers": 3,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        2
-      ]
-    },
-    {
-      "id": "QR-00195",
-      "quizId": "QUIZ-005",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-01",
+      "id": "QR-00167",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-01",
       "score": 96,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -10832,27 +12905,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00196",
-      "quizId": "QUIZ-006",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-04",
-      "score": 94,
-      "totalQuestions": 4,
-      "correctAnswers": 4,
-      "passed": true,
-      "answers": [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "id": "QR-00197",
+      "id": "QR-00168",
       "quizId": "QUIZ-011",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-07",
-      "score": 97,
+      "employeeId": "SYE-0008",
+      "date": "2024-05-04",
+      "score": 98,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -10864,11 +12921,27 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00198",
+      "id": "QR-00169",
       "quizId": "QUIZ-012",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-10",
-      "score": 83,
+      "employeeId": "SYE-0008",
+      "date": "2024-05-07",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00170",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-10",
+      "score": 85,
       "totalQuestions": 4,
       "correctAnswers": 3,
       "passed": true,
@@ -10880,10 +12953,10 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00199",
-      "quizId": "QUIZ-013",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-13",
+      "id": "QR-00171",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-13",
       "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
@@ -10896,11 +12969,11 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00200",
-      "quizId": "QUIZ-014",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-16",
-      "score": 94,
+      "id": "QR-00172",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-16",
+      "score": 95,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -10912,43 +12985,59 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
-      "id": "QR-00201",
-      "quizId": "QUIZ-035",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-19",
-      "score": 81,
+      "id": "QR-00173",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-19",
+      "score": 100,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00202",
-      "quizId": "QUIZ-036",
-      "employeeId": "SYE-0017",
-      "date": "2024-06-22",
-      "score": 84,
+      "id": "QR-00174",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-22",
+      "score": 88,
       "totalQuestions": 4,
-      "correctAnswers": 3,
+      "correctAnswers": 4,
       "passed": true,
       "answers": [
         0,
         1,
         0,
-        2
+        1
       ]
     },
     {
-      "id": "QR-00203",
+      "id": "QR-00175",
+      "quizId": "QUIZ-033",
+      "employeeId": "SYE-0008",
+      "date": "2024-05-25",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00176",
       "quizId": "QUIZ-001",
-      "employeeId": "SYE-0018",
-      "date": "2025-06-06",
-      "score": 99,
+      "employeeId": "SYE-0009",
+      "date": "2024-05-04",
+      "score": 90,
       "totalQuestions": 5,
       "correctAnswers": 5,
       "passed": true,
@@ -10961,11 +13050,444 @@ window.SYE_SAMPLE_DATA = {
       ]
     },
     {
+      "id": "QR-00177",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-07",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00178",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-10",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00179",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-13",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00180",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-16",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00181",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-19",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00182",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-22",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00183",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-25",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00184",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-28",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00185",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0009",
+      "date": "2024-05-31",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00186",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-03",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00187",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-06",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00188",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-09",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00189",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-12",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00190",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-15",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00191",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-18",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00192",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-21",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00193",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-24",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00194",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-27",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00195",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0009",
+      "date": "2024-06-30",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00196",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-03",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00197",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-06",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00198",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-09",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00199",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-12",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00200",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-15",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00201",
+      "quizId": "QUIZ-033",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-18",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00202",
+      "quizId": "QUIZ-034",
+      "employeeId": "SYE-0009",
+      "date": "2024-07-21",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00203",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-04",
+      "score": 88,
+      "totalQuestions": 5,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
       "id": "QR-00204",
       "quizId": "QUIZ-002",
-      "employeeId": "SYE-0018",
-      "date": "2025-06-09",
-      "score": 99,
+      "employeeId": "SYE-0010",
+      "date": "2024-07-07",
+      "score": 90,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -10979,9 +13501,9 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00205",
       "quizId": "QUIZ-003",
-      "employeeId": "SYE-0018",
-      "date": "2025-06-12",
-      "score": 99,
+      "employeeId": "SYE-0010",
+      "date": "2024-07-10",
+      "score": 92,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -10995,9 +13517,9 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00206",
       "quizId": "QUIZ-004",
-      "employeeId": "SYE-0018",
-      "date": "2025-06-15",
-      "score": 90,
+      "employeeId": "SYE-0010",
+      "date": "2024-07-13",
+      "score": 94,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -11011,9 +13533,3185 @@ window.SYE_SAMPLE_DATA = {
     {
       "id": "QR-00207",
       "quizId": "QUIZ-005",
-      "employeeId": "SYE-0018",
-      "date": "2025-06-18",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-16",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00208",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-19",
       "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00209",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-22",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00210",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-25",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00211",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-28",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00212",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0010",
+      "date": "2024-07-31",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00213",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-03",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00214",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-06",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00215",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-09",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00216",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-12",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00217",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-15",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00218",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-18",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00219",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-21",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00220",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-24",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00221",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-27",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00222",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0010",
+      "date": "2024-08-30",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00223",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-02",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00224",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-05",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00225",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-08",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00226",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-11",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00227",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-14",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00228",
+      "quizId": "QUIZ-033",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-17",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00229",
+      "quizId": "QUIZ-034",
+      "employeeId": "SYE-0010",
+      "date": "2024-09-20",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00230",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-04",
+      "score": 90,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00231",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-07",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00232",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-10",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00233",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-13",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00234",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-16",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00235",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-19",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00236",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-22",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00237",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-25",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00238",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-28",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00239",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0011",
+      "date": "2024-08-31",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00240",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-03",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00241",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-06",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00242",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-09",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00243",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-12",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00244",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-15",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00245",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-18",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00246",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-21",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00247",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-24",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00248",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-27",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00249",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0011",
+      "date": "2024-09-30",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00250",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-03",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00251",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-06",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00252",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-09",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00253",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-12",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00254",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-15",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00255",
+      "quizId": "QUIZ-033",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-18",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00256",
+      "quizId": "QUIZ-034",
+      "employeeId": "SYE-0011",
+      "date": "2024-10-21",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00257",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0012",
+      "date": "2024-03-18",
+      "score": 92,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00258",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0012",
+      "date": "2024-03-21",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00259",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0012",
+      "date": "2024-03-24",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00260",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0012",
+      "date": "2024-03-27",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00261",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0012",
+      "date": "2024-03-30",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00262",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-02",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00263",
+      "quizId": "QUIZ-007",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-05",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00264",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-08",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00265",
+      "quizId": "QUIZ-009",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-11",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00266",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-14",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00267",
+      "quizId": "QUIZ-011",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-17",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00268",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-20",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00269",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-23",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00270",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-26",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00271",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0012",
+      "date": "2024-04-29",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00272",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0012",
+      "date": "2024-05-02",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00273",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0012",
+      "date": "2024-05-05",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00274",
+      "quizId": "QUIZ-035",
+      "employeeId": "SYE-0012",
+      "date": "2024-05-08",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00275",
+      "quizId": "QUIZ-036",
+      "employeeId": "SYE-0012",
+      "date": "2024-05-11",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00276",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0013",
+      "date": "2024-05-18",
+      "score": 94,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00277",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0013",
+      "date": "2024-05-21",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00278",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0013",
+      "date": "2024-05-24",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00279",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0013",
+      "date": "2024-05-27",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00280",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0013",
+      "date": "2024-05-30",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00281",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-02",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00282",
+      "quizId": "QUIZ-007",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-05",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00283",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-08",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00284",
+      "quizId": "QUIZ-009",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-11",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00285",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-14",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00286",
+      "quizId": "QUIZ-011",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-17",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00287",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-20",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00288",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-23",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00289",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-26",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00290",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0013",
+      "date": "2024-06-29",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00291",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0013",
+      "date": "2024-07-02",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00292",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0013",
+      "date": "2024-07-05",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00293",
+      "quizId": "QUIZ-035",
+      "employeeId": "SYE-0013",
+      "date": "2024-07-08",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00294",
+      "quizId": "QUIZ-036",
+      "employeeId": "SYE-0013",
+      "date": "2024-07-11",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00295",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0014",
+      "date": "2024-02-18",
+      "score": 95,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00296",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0014",
+      "date": "2024-02-21",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00297",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0014",
+      "date": "2024-02-24",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00298",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0014",
+      "date": "2024-02-27",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00299",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-01",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00300",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-04",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00301",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-07",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00302",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-10",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00303",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-13",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00304",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-16",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00305",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-19",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00306",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-22",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00307",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-25",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00308",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-28",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00309",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0014",
+      "date": "2024-03-31",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00310",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-03",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00311",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-06",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00312",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-09",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00313",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-12",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00314",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-15",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00315",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-18",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00316",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-21",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00317",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-24",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00318",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-27",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00319",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0014",
+      "date": "2024-04-30",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00320",
+      "quizId": "QUIZ-035",
+      "employeeId": "SYE-0014",
+      "date": "2024-05-03",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00321",
+      "quizId": "QUIZ-036",
+      "employeeId": "SYE-0014",
+      "date": "2024-05-06",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00322",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-04",
+      "score": 96,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00323",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-07",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00324",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-10",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00325",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-13",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00326",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-16",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00327",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-19",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00328",
+      "quizId": "QUIZ-010",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-22",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00329",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-25",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00330",
+      "quizId": "QUIZ-013",
+      "employeeId": "SYE-0015",
+      "date": "2024-06-28",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00331",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-01",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00332",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-04",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00333",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-07",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00334",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-10",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00335",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-13",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00336",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-16",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00337",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-19",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00338",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-22",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00339",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-25",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00340",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-28",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00341",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0015",
+      "date": "2024-07-31",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00342",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-03",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00343",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-06",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00344",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-09",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00345",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-12",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00346",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-15",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00347",
+      "quizId": "QUIZ-035",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-18",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00348",
+      "quizId": "QUIZ-036",
+      "employeeId": "SYE-0015",
+      "date": "2024-08-21",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00349",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0016",
+      "date": "2024-07-18",
+      "score": 98,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00350",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0016",
+      "date": "2024-07-21",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00351",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0016",
+      "date": "2024-07-24",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00352",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0016",
+      "date": "2024-07-27",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00353",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0016",
+      "date": "2024-07-30",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00354",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-02",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00355",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-05",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00356",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-08",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00357",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-11",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00358",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-14",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00359",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-17",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00360",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-20",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00361",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-23",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00362",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-26",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00363",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0016",
+      "date": "2024-08-29",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00364",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0016",
+      "date": "2024-09-01",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00365",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0016",
+      "date": "2024-09-04",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00366",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0016",
+      "date": "2024-09-07",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00367",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0016",
+      "date": "2024-09-10",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00368",
+      "quizId": "QUIZ-035",
+      "employeeId": "SYE-0016",
+      "date": "2024-09-13",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00369",
+      "quizId": "QUIZ-036",
+      "employeeId": "SYE-0016",
+      "date": "2024-09-16",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00370",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0017",
+      "date": "2024-01-18",
+      "score": 100,
+      "totalQuestions": 5,
+      "correctAnswers": 5,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "QR-00371",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0017",
+      "date": "2024-01-21",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "id": "QR-00372",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0017",
+      "date": "2024-01-24",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00373",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0017",
+      "date": "2024-01-27",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00374",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0017",
+      "date": "2024-01-30",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00375",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-02",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00376",
+      "quizId": "QUIZ-008",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-05",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00377",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-08",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00378",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-11",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00379",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-14",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00380",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-17",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00381",
+      "quizId": "QUIZ-025",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-20",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00382",
+      "quizId": "QUIZ-026",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-23",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00383",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-26",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00384",
+      "quizId": "QUIZ-028",
+      "employeeId": "SYE-0017",
+      "date": "2024-02-29",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00385",
+      "quizId": "QUIZ-029",
+      "employeeId": "SYE-0017",
+      "date": "2024-03-03",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00386",
+      "quizId": "QUIZ-001",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-04",
+      "score": 85,
+      "totalQuestions": 5,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00387",
+      "quizId": "QUIZ-002",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-07",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "id": "QR-00388",
+      "quizId": "QUIZ-003",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-10",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00389",
+      "quizId": "QUIZ-004",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-13",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00390",
+      "quizId": "QUIZ-005",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-16",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00391",
+      "quizId": "QUIZ-006",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-19",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00392",
+      "quizId": "QUIZ-012",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-22",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00393",
+      "quizId": "QUIZ-014",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-25",
+      "score": 94,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00394",
+      "quizId": "QUIZ-015",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-28",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00395",
+      "quizId": "QUIZ-016",
+      "employeeId": "SYE-0018",
+      "date": "2024-03-31",
+      "score": 96,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00396",
+      "quizId": "QUIZ-017",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-03",
+      "score": 98,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00397",
+      "quizId": "QUIZ-018",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-06",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00398",
+      "quizId": "QUIZ-019",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-09",
+      "score": 85,
+      "totalQuestions": 4,
+      "correctAnswers": 3,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "id": "QR-00399",
+      "quizId": "QUIZ-020",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-12",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00400",
+      "quizId": "QUIZ-021",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-15",
+      "score": 95,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00401",
+      "quizId": "QUIZ-022",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-18",
+      "score": 100,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00402",
+      "quizId": "QUIZ-023",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-21",
+      "score": 88,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00403",
+      "quizId": "QUIZ-024",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-24",
+      "score": 90,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00404",
+      "quizId": "QUIZ-027",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-27",
+      "score": 92,
+      "totalQuestions": 4,
+      "correctAnswers": 4,
+      "passed": true,
+      "answers": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "QR-00405",
+      "quizId": "QUIZ-037",
+      "employeeId": "SYE-0018",
+      "date": "2024-04-30",
+      "score": 94,
       "totalQuestions": 4,
       "correctAnswers": 4,
       "passed": true,
@@ -11027,1676 +16725,3388 @@ window.SYE_SAMPLE_DATA = {
   ],
   "activityLog": [
     {
-      "id": "LOG-00209",
-      "date": "2025-06-21",
-      "timestamp": "2025-06-21T10:30:00.000Z",
-      "type": "record_added",
-      "description": "Runchida S. (SYE-0018 - Developer) in progress Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006]",
-      "relatedId": "TR-00209"
-    },
-    {
-      "id": "LOG-00208",
-      "date": "2025-06-18",
-      "timestamp": "2025-06-18T09:30:00.000Z",
+      "id": "LOG-1732406400027",
+      "date": "2024-11-24",
+      "timestamp": "2024-11-24T09:37:00",
       "type": "training_completed",
-      "description": "Runchida S. (SYE-0018 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 96%)",
-      "relatedId": "TR-00208"
-    },
-    {
-      "id": "LOG-00207",
-      "date": "2025-06-15",
-      "timestamp": "2025-06-15T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Runchida S. (SYE-0018 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 90%)",
-      "relatedId": "TR-00207"
-    },
-    {
-      "id": "LOG-00206",
-      "date": "2025-06-12",
-      "timestamp": "2025-06-12T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Runchida S. (SYE-0018 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 99%)",
-      "relatedId": "TR-00206"
-    },
-    {
-      "id": "LOG-00205",
-      "date": "2025-06-09",
-      "timestamp": "2025-06-09T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Runchida S. (SYE-0018 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 99%)",
-      "relatedId": "TR-00205"
-    },
-    {
-      "id": "LOG-00204",
-      "date": "2025-06-06",
-      "timestamp": "2025-06-06T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Runchida S. (SYE-0018 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 99%)",
-      "relatedId": "TR-00204"
-    },
-    {
-      "id": "LOG-00156",
-      "date": "2025-05-21",
-      "timestamp": "2025-05-21T13:30:00.000Z",
-      "type": "record_added",
-      "description": "Chirawat K. (SYE-0013 - Developer) in progress Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006]",
-      "relatedId": "TR-00156"
-    },
-    {
-      "id": "LOG-00155",
-      "date": "2025-05-18",
-      "timestamp": "2025-05-18T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Chirawat K. (SYE-0013 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 83%)",
-      "relatedId": "TR-00155"
-    },
-    {
-      "id": "LOG-00154",
-      "date": "2025-05-15",
-      "timestamp": "2025-05-15T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Chirawat K. (SYE-0013 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 84%)",
-      "relatedId": "TR-00154"
-    },
-    {
-      "id": "LOG-00153",
-      "date": "2025-05-12",
-      "timestamp": "2025-05-12T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Chirawat K. (SYE-0013 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 86%)",
-      "relatedId": "TR-00153"
-    },
-    {
-      "id": "LOG-00152",
-      "date": "2025-05-09",
-      "timestamp": "2025-05-09T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Chirawat K. (SYE-0013 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 91%)",
-      "relatedId": "TR-00152"
-    },
-    {
-      "id": "LOG-00151",
-      "date": "2025-05-06",
-      "timestamp": "2025-05-06T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Chirawat K. (SYE-0013 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 81%)",
-      "relatedId": "TR-00151"
-    },
-    {
-      "id": "LOG-00150",
-      "date": "2025-04-11",
-      "timestamp": "2025-04-11T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Frontend State Management Standard [SEC-005] (Score: 81%)",
-      "relatedId": "TR-00150"
-    },
-    {
-      "id": "LOG-00149",
-      "date": "2025-04-08",
-      "timestamp": "2025-04-08T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 92%)",
-      "relatedId": "TR-00149"
-    },
-    {
-      "id": "LOG-00148",
-      "date": "2025-04-05",
-      "timestamp": "2025-04-05T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 90%)",
-      "relatedId": "TR-00148"
-    },
-    {
-      "id": "LOG-00147",
-      "date": "2025-04-02",
-      "timestamp": "2025-04-02T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 91%)",
-      "relatedId": "TR-00147"
-    },
-    {
-      "id": "LOG-00146",
-      "date": "2025-03-30",
-      "timestamp": "2025-03-30T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 92%)",
-      "relatedId": "TR-00146"
-    },
-    {
-      "id": "LOG-00137",
-      "date": "2025-03-28",
-      "timestamp": "2025-03-28T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Frontend State Management Standard [SEC-005] (Score: 93%)",
-      "relatedId": "TR-00137"
-    },
-    {
-      "id": "LOG-00145",
-      "date": "2025-03-27",
-      "timestamp": "2025-03-27T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 89%)",
-      "relatedId": "TR-00145"
-    },
-    {
-      "id": "LOG-00136",
-      "date": "2025-03-25",
-      "timestamp": "2025-03-25T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 98%)",
-      "relatedId": "TR-00136"
-    },
-    {
-      "id": "LOG-00144",
-      "date": "2025-03-24",
-      "timestamp": "2025-03-24T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 94%)",
-      "relatedId": "TR-00144"
-    },
-    {
-      "id": "LOG-00135",
-      "date": "2025-03-22",
-      "timestamp": "2025-03-22T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 93%)",
-      "relatedId": "TR-00135"
-    },
-    {
-      "id": "LOG-00143",
-      "date": "2025-03-21",
-      "timestamp": "2025-03-21T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 89%)",
-      "relatedId": "TR-00143"
-    },
-    {
-      "id": "LOG-00134",
-      "date": "2025-03-19",
-      "timestamp": "2025-03-19T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 98%)",
-      "relatedId": "TR-00134"
-    },
-    {
-      "id": "LOG-00142",
-      "date": "2025-03-18",
-      "timestamp": "2025-03-18T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 99%)",
-      "relatedId": "TR-00142"
-    },
-    {
-      "id": "LOG-00133",
-      "date": "2025-03-16",
-      "timestamp": "2025-03-16T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 95%)",
-      "relatedId": "TR-00133"
-    },
-    {
-      "id": "LOG-00141",
-      "date": "2025-03-15",
-      "timestamp": "2025-03-15T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 81%)",
-      "relatedId": "TR-00141"
-    },
-    {
-      "id": "LOG-00132",
-      "date": "2025-03-13",
-      "timestamp": "2025-03-13T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 83%)",
-      "relatedId": "TR-00132"
-    },
-    {
-      "id": "LOG-00140",
-      "date": "2025-03-12",
-      "timestamp": "2025-03-12T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 87%)",
-      "relatedId": "TR-00140"
-    },
-    {
-      "id": "LOG-00131",
-      "date": "2025-03-10",
-      "timestamp": "2025-03-10T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 93%)",
-      "relatedId": "TR-00131"
-    },
-    {
-      "id": "LOG-00139",
-      "date": "2025-03-09",
-      "timestamp": "2025-03-09T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 95%)",
+      "description": "Pornchita Y. (Developer) completed Legacy System Integration Patterns (Score: 90%)",
       "relatedId": "TR-00139"
     },
     {
-      "id": "LOG-00130",
-      "date": "2025-03-07",
-      "timestamp": "2025-03-07T11:30:00.000Z",
+      "id": "LOG-1732147200026",
+      "date": "2024-11-21",
+      "timestamp": "2024-11-21T09:36:00",
       "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 90%)",
-      "relatedId": "TR-00130"
-    },
-    {
-      "id": "LOG-00138",
-      "date": "2025-03-06",
-      "timestamp": "2025-03-06T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kittiphop S. (SYE-0012 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 87%)",
+      "description": "Pornchita Y. (Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting (Score: 85%)",
       "relatedId": "TR-00138"
     },
     {
-      "id": "LOG-00129",
-      "date": "2025-03-04",
-      "timestamp": "2025-03-04T10:30:00.000Z",
+      "id": "LOG-1731888000025",
+      "date": "2024-11-18",
+      "timestamp": "2024-11-18T09:35:00",
       "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 82%)",
+      "description": "Pornchita Y. (Developer) completed Microservices & Distributed Event-Driven Architecture Standard (Score: 100%)",
+      "relatedId": "TR-00137"
+    },
+    {
+      "id": "LOG-1731628800024",
+      "date": "2024-11-15",
+      "timestamp": "2024-11-15T09:34:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed System Reliability & Scalability (Score: 98%)",
+      "relatedId": "TR-00136"
+    },
+    {
+      "id": "LOG-1731369600023",
+      "date": "2024-11-12",
+      "timestamp": "2024-11-12T09:33:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Containerization & Orchestration (Score: 96%)",
+      "relatedId": "TR-00135"
+    },
+    {
+      "id": "LOG-1731110400022",
+      "date": "2024-11-09",
+      "timestamp": "2024-11-09T09:32:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Incident Response & Post-Mortem (Score: 95%)",
+      "relatedId": "TR-00134"
+    },
+    {
+      "id": "LOG-1730851200021",
+      "date": "2024-11-06",
+      "timestamp": "2024-11-06T09:31:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 94%)",
+      "relatedId": "TR-00133"
+    },
+    {
+      "id": "LOG-1730592000020",
+      "date": "2024-11-03",
+      "timestamp": "2024-11-03T09:30:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 92%)",
+      "relatedId": "TR-00132"
+    },
+    {
+      "id": "LOG-1730332800019",
+      "date": "2024-10-31",
+      "timestamp": "2024-10-31T09:29:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Defect Lifecycle Management (Score: 90%)",
+      "relatedId": "TR-00131"
+    },
+    {
+      "id": "LOG-1730073600018",
+      "date": "2024-10-28",
+      "timestamp": "2024-10-28T09:28:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 88%)",
+      "relatedId": "TR-00130"
+    },
+    {
+      "id": "LOG-1729814400017",
+      "date": "2024-10-25",
+      "timestamp": "2024-10-25T09:27:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed API Testing (Score: 100%)",
       "relatedId": "TR-00129"
     },
     {
-      "id": "LOG-00128",
-      "date": "2025-03-01",
-      "timestamp": "2025-03-01T09:30:00.000Z",
+      "id": "LOG-1729555200016",
+      "date": "2024-10-22",
+      "timestamp": "2024-10-22T09:26:00",
       "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 84%)",
+      "description": "Pornchita Y. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 95%)",
       "relatedId": "TR-00128"
     },
     {
-      "id": "LOG-00127",
-      "date": "2025-02-26",
-      "timestamp": "2025-02-26T16:30:00.000Z",
+      "id": "LOG-1729468800026",
+      "date": "2024-10-21",
+      "timestamp": "2024-10-21T09:36:00",
       "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 99%)",
+      "description": "Chirawat K. (Developer) completed Frontend State Management Standard (Score: 94%)",
+      "relatedId": "TR-00256"
+    },
+    {
+      "id": "LOG-1729296000015",
+      "date": "2024-10-19",
+      "timestamp": "2024-10-19T09:25:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 90%)",
       "relatedId": "TR-00127"
     },
     {
-      "id": "LOG-00126",
-      "date": "2025-02-23",
-      "timestamp": "2025-02-23T15:30:00.000Z",
+      "id": "LOG-1729209600025",
+      "date": "2024-10-18",
+      "timestamp": "2024-10-18T09:35:00",
       "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 84%)",
+      "description": "Chirawat K. (Developer) completed Customer Experience Systems (CXS) Platform Architecture (Score: 92%)",
+      "relatedId": "TR-00255"
+    },
+    {
+      "id": "LOG-1729036800014",
+      "date": "2024-10-16",
+      "timestamp": "2024-10-16T09:24:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 85%)",
       "relatedId": "TR-00126"
     },
     {
-      "id": "LOG-00125",
-      "date": "2025-02-20",
-      "timestamp": "2025-02-20T14:30:00.000Z",
+      "id": "LOG-1728950400024",
+      "date": "2024-10-15",
+      "timestamp": "2024-10-15T09:34:00",
       "type": "training_completed",
-      "description": "Thanakorn C. (SYE-0011 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 93%)",
+      "description": "Chirawat K. (Developer) completed System Reliability & Scalability (Score: 90%)",
+      "relatedId": "TR-00254"
+    },
+    {
+      "id": "LOG-1728777600013",
+      "date": "2024-10-13",
+      "timestamp": "2024-10-13T09:23:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 100%)",
       "relatedId": "TR-00125"
     },
     {
-      "id": "LOG-00167",
-      "date": "2025-02-19",
-      "timestamp": "2025-02-19T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 98%)",
-      "relatedId": "TR-00167"
-    },
-    {
-      "id": "LOG-00166",
-      "date": "2025-02-16",
-      "timestamp": "2025-02-16T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Data Flow Analysis [BA-004] (Score: 90%)",
-      "relatedId": "TR-00166"
-    },
-    {
-      "id": "LOG-00165",
-      "date": "2025-02-13",
-      "timestamp": "2025-02-13T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes [BA-003] (Score: 92%)",
-      "relatedId": "TR-00165"
-    },
-    {
-      "id": "LOG-00164",
-      "date": "2025-02-10",
-      "timestamp": "2025-02-10T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards [BA-002] (Score: 87%)",
-      "relatedId": "TR-00164"
-    },
-    {
-      "id": "LOG-00163",
-      "date": "2025-02-07",
-      "timestamp": "2025-02-07T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Requirements Elicitation Techniques [BA-001] (Score: 84%)",
-      "relatedId": "TR-00163"
-    },
-    {
-      "id": "LOG-00162",
-      "date": "2025-02-04",
-      "timestamp": "2025-02-04T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 87%)",
-      "relatedId": "TR-00162"
-    },
-    {
-      "id": "LOG-00161",
-      "date": "2025-02-01",
-      "timestamp": "2025-02-01T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 84%)",
-      "relatedId": "TR-00161"
-    },
-    {
-      "id": "LOG-00160",
-      "date": "2025-01-29",
-      "timestamp": "2025-01-29T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 92%)",
-      "relatedId": "TR-00160"
-    },
-    {
-      "id": "LOG-00159",
-      "date": "2025-01-26",
-      "timestamp": "2025-01-26T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 84%)",
-      "relatedId": "TR-00159"
-    },
-    {
-      "id": "LOG-00158",
-      "date": "2025-01-23",
-      "timestamp": "2025-01-23T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 89%)",
-      "relatedId": "TR-00158"
-    },
-    {
-      "id": "LOG-00157",
-      "date": "2025-01-20",
-      "timestamp": "2025-01-20T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Passawan C. (SYE-0014 - BA) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 93%)",
-      "relatedId": "TR-00157"
-    },
-    {
-      "id": "LOG-00076",
-      "date": "2024-10-15",
-      "timestamp": "2024-10-15T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Legacy System Integration Patterns [SEC-003] (Score: 87%)",
-      "relatedId": "TR-00076"
-    },
-    {
-      "id": "LOG-00075",
+      "id": "LOG-1728691200023",
       "date": "2024-10-12",
-      "timestamp": "2024-10-12T12:30:00.000Z",
+      "timestamp": "2024-10-12T09:33:00",
       "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting [SEC-002] (Score: 81%)",
-      "relatedId": "TR-00075"
+      "description": "Chirawat K. (Developer) completed Containerization & Orchestration (Score: 88%)",
+      "relatedId": "TR-00253"
     },
     {
-      "id": "LOG-00074",
-      "date": "2024-10-09",
-      "timestamp": "2024-10-09T11:30:00.000Z",
+      "id": "LOG-1728518400012",
+      "date": "2024-10-10",
+      "timestamp": "2024-10-10T09:22:00",
       "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Microservices & Distributed Event-Driven Architecture Standard [SEC-001] (Score: 93%)",
-      "relatedId": "TR-00074"
-    },
-    {
-      "id": "LOG-00073",
-      "date": "2024-10-06",
-      "timestamp": "2024-10-06T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 93%)",
-      "relatedId": "TR-00073"
-    },
-    {
-      "id": "LOG-00072",
-      "date": "2024-10-03",
-      "timestamp": "2024-10-03T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 83%)",
-      "relatedId": "TR-00072"
-    },
-    {
-      "id": "LOG-00071",
-      "date": "2024-09-30",
-      "timestamp": "2024-09-30T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 83%)",
-      "relatedId": "TR-00071"
-    },
-    {
-      "id": "LOG-00070",
-      "date": "2024-09-27",
-      "timestamp": "2024-09-27T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 82%)",
-      "relatedId": "TR-00070"
-    },
-    {
-      "id": "LOG-00069",
-      "date": "2024-09-24",
-      "timestamp": "2024-09-24T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 80%)",
-      "relatedId": "TR-00069"
-    },
-    {
-      "id": "LOG-00068",
-      "date": "2024-09-21",
-      "timestamp": "2024-09-21T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 81%)",
-      "relatedId": "TR-00068"
-    },
-    {
-      "id": "LOG-00067",
-      "date": "2024-09-18",
-      "timestamp": "2024-09-18T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 98%)",
-      "relatedId": "TR-00067"
-    },
-    {
-      "id": "LOG-00066",
-      "date": "2024-09-15",
-      "timestamp": "2024-09-15T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 91%)",
-      "relatedId": "TR-00066"
-    },
-    {
-      "id": "LOG-00065",
-      "date": "2024-09-12",
-      "timestamp": "2024-09-12T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 98%)",
-      "relatedId": "TR-00065"
-    },
-    {
-      "id": "LOG-00124",
-      "date": "2024-09-11",
-      "timestamp": "2024-09-11T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Frontend State Management Standard [SEC-005] (Score: 95%)",
+      "description": "Pornchita Y. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 98%)",
       "relatedId": "TR-00124"
     },
     {
-      "id": "LOG-00064",
-      "date": "2024-09-09",
-      "timestamp": "2024-09-09T09:30:00.000Z",
+      "id": "LOG-1728432000022",
+      "date": "2024-10-09",
+      "timestamp": "2024-10-09T09:32:00",
       "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 80%)",
-      "relatedId": "TR-00064"
+      "description": "Chirawat K. (Developer) completed Incident Response & Post-Mortem (Score: 100%)",
+      "relatedId": "TR-00252"
     },
     {
-      "id": "LOG-00123",
-      "date": "2024-09-08",
-      "timestamp": "2024-09-08T12:30:00.000Z",
+      "id": "LOG-1728259200011",
+      "date": "2024-10-07",
+      "timestamp": "2024-10-07T09:21:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 88%)",
+      "description": "Pornchita Y. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 96%)",
       "relatedId": "TR-00123"
     },
     {
-      "id": "LOG-00063",
-      "date": "2024-09-06",
-      "timestamp": "2024-09-06T16:30:00.000Z",
+      "id": "LOG-1728172800021",
+      "date": "2024-10-06",
+      "timestamp": "2024-10-06T09:31:00",
       "type": "training_completed",
-      "description": "Pornchita Y. (SYE-0006 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 81%)",
-      "relatedId": "TR-00063"
+      "description": "Chirawat K. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 95%)",
+      "relatedId": "TR-00251"
     },
     {
-      "id": "LOG-00122",
-      "date": "2024-09-05",
-      "timestamp": "2024-09-05T11:30:00.000Z",
+      "id": "LOG-1728000000010",
+      "date": "2024-10-04",
+      "timestamp": "2024-10-04T09:20:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 85%)",
+      "description": "Pornchita Y. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 95%)",
       "relatedId": "TR-00122"
     },
     {
-      "id": "LOG-00121",
-      "date": "2024-09-02",
-      "timestamp": "2024-09-02T10:30:00.000Z",
+      "id": "LOG-1727913600020",
+      "date": "2024-10-03",
+      "timestamp": "2024-10-03T09:30:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 88%)",
+      "description": "Chirawat K. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 90%)",
+      "relatedId": "TR-00250"
+    },
+    {
+      "id": "LOG-1727740800009",
+      "date": "2024-10-01",
+      "timestamp": "2024-10-01T09:19:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Data Flow Analysis (Score: 94%)",
       "relatedId": "TR-00121"
     },
     {
-      "id": "LOG-00120",
-      "date": "2024-08-30",
-      "timestamp": "2024-08-30T09:30:00.000Z",
+      "id": "LOG-1727654400019",
+      "date": "2024-09-30",
+      "timestamp": "2024-09-30T09:29:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 89%)",
+      "description": "Chirawat K. (Developer) completed Defect Lifecycle Management (Score: 85%)",
+      "relatedId": "TR-00249"
+    },
+    {
+      "id": "LOG-1727481600008",
+      "date": "2024-09-28",
+      "timestamp": "2024-09-28T09:18:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 92%)",
       "relatedId": "TR-00120"
     },
     {
-      "id": "LOG-00119",
-      "date": "2024-08-27",
-      "timestamp": "2024-08-27T16:30:00.000Z",
+      "id": "LOG-1727395200018",
+      "date": "2024-09-27",
+      "timestamp": "2024-09-27T09:28:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 99%)",
+      "description": "Chirawat K. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 100%)",
+      "relatedId": "TR-00248"
+    },
+    {
+      "id": "LOG-1727222400007",
+      "date": "2024-09-25",
+      "timestamp": "2024-09-25T09:17:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 90%)",
       "relatedId": "TR-00119"
     },
     {
-      "id": "LOG-00118",
-      "date": "2024-08-24",
-      "timestamp": "2024-08-24T15:30:00.000Z",
+      "id": "LOG-1727136000017",
+      "date": "2024-09-24",
+      "timestamp": "2024-09-24T09:27:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 98%)",
+      "description": "Chirawat K. (Developer) completed API Testing (Score: 98%)",
+      "relatedId": "TR-00247"
+    },
+    {
+      "id": "LOG-1726963200006",
+      "date": "2024-09-22",
+      "timestamp": "2024-09-22T09:16:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Budgeting and Resource Allocation (Score: 88%)",
       "relatedId": "TR-00118"
     },
     {
-      "id": "LOG-00117",
-      "date": "2024-08-21",
-      "timestamp": "2024-08-21T14:30:00.000Z",
+      "id": "LOG-1726876800016",
+      "date": "2024-09-21",
+      "timestamp": "2024-09-21T09:26:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 87%)",
+      "description": "Chirawat K. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 96%)",
+      "relatedId": "TR-00246"
+    },
+    {
+      "id": "LOG-1726790400026",
+      "date": "2024-09-20",
+      "timestamp": "2024-09-20T09:36:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Frontend State Management Standard (Score: 92%)",
+      "relatedId": "TR-00229"
+    },
+    {
+      "id": "LOG-1726704000005",
+      "date": "2024-09-19",
+      "timestamp": "2024-09-19T09:15:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 100%)",
       "relatedId": "TR-00117"
     },
     {
-      "id": "LOG-00116",
-      "date": "2024-08-18",
-      "timestamp": "2024-08-18T13:30:00.000Z",
+      "id": "LOG-1726617600015",
+      "date": "2024-09-18",
+      "timestamp": "2024-09-18T09:25:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 92%)",
+      "description": "Chirawat K. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 95%)",
+      "relatedId": "TR-00245"
+    },
+    {
+      "id": "LOG-1726531200025",
+      "date": "2024-09-17",
+      "timestamp": "2024-09-17T09:35:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Customer Experience Systems (CXS) Platform Architecture (Score: 90%)",
+      "relatedId": "TR-00228"
+    },
+    {
+      "id": "LOG-1726444800020",
+      "date": "2024-09-16",
+      "timestamp": "2024-09-16T09:30:00",
+      "type": "training_completed",
+      "description": "Tanasarn J. (QA) completed Contact Center Application Features (Score: 92%)",
+      "relatedId": "TR-00369"
+    },
+    {
+      "id": "LOG-1726444800004",
+      "date": "2024-09-16",
+      "timestamp": "2024-09-16T09:14:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 95%)",
       "relatedId": "TR-00116"
     },
     {
-      "id": "LOG-00115",
-      "date": "2024-08-15",
-      "timestamp": "2024-08-15T12:30:00.000Z",
+      "id": "LOG-1726358400014",
+      "date": "2024-09-15",
+      "timestamp": "2024-09-15T09:24:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 82%)",
+      "description": "Chirawat K. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 94%)",
+      "relatedId": "TR-00244"
+    },
+    {
+      "id": "LOG-1726272000024",
+      "date": "2024-09-14",
+      "timestamp": "2024-09-14T09:34:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed System Reliability & Scalability (Score: 88%)",
+      "relatedId": "TR-00227"
+    },
+    {
+      "id": "LOG-1726185600019",
+      "date": "2024-09-13",
+      "timestamp": "2024-09-13T09:29:00",
+      "type": "training_completed",
+      "description": "Tanasarn J. (QA) completed Omnichannel Routing Logic & Unified Agent Workspace (Score: 90%)",
+      "relatedId": "TR-00368"
+    },
+    {
+      "id": "LOG-1726185600003",
+      "date": "2024-09-13",
+      "timestamp": "2024-09-13T09:13:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 90%)",
       "relatedId": "TR-00115"
     },
     {
-      "id": "LOG-00114",
-      "date": "2024-08-12",
-      "timestamp": "2024-08-12T11:30:00.000Z",
+      "id": "LOG-1726099200013",
+      "date": "2024-09-12",
+      "timestamp": "2024-09-12T09:23:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 83%)",
+      "description": "Chirawat K. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 92%)",
+      "relatedId": "TR-00243"
+    },
+    {
+      "id": "LOG-1726012800023",
+      "date": "2024-09-11",
+      "timestamp": "2024-09-11T09:33:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Containerization & Orchestration (Score: 100%)",
+      "relatedId": "TR-00226"
+    },
+    {
+      "id": "LOG-1725926400018",
+      "date": "2024-09-10",
+      "timestamp": "2024-09-10T09:28:00",
+      "type": "training_completed",
+      "description": "Tanasarn J. (QA) completed Incident Response & Post-Mortem (Score: 88%)",
+      "relatedId": "TR-00367"
+    },
+    {
+      "id": "LOG-1725926400002",
+      "date": "2024-09-10",
+      "timestamp": "2024-09-10T09:12:00",
+      "type": "training_completed",
+      "description": "Pornchita Y. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 85%)",
       "relatedId": "TR-00114"
     },
     {
-      "id": "LOG-00113",
-      "date": "2024-08-09",
-      "timestamp": "2024-08-09T10:30:00.000Z",
+      "id": "LOG-1725840000012",
+      "date": "2024-09-09",
+      "timestamp": "2024-09-09T09:22:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 96%)",
-      "relatedId": "TR-00113"
+      "description": "Chirawat K. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 90%)",
+      "relatedId": "TR-00242"
     },
     {
-      "id": "LOG-00179",
-      "date": "2024-08-08",
-      "timestamp": "2024-08-08T12:30:00.000Z",
+      "id": "LOG-1725753600022",
+      "date": "2024-09-08",
+      "timestamp": "2024-09-08T09:32:00",
       "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 83%)",
-      "relatedId": "TR-00179"
+      "description": "Natlada N. (Developer) completed Incident Response & Post-Mortem (Score: 95%)",
+      "relatedId": "TR-00225"
     },
     {
-      "id": "LOG-00112",
-      "date": "2024-08-06",
-      "timestamp": "2024-08-06T09:30:00.000Z",
+      "id": "LOG-1725667200027",
+      "date": "2024-09-07",
+      "timestamp": "2024-09-07T09:37:00",
       "type": "training_completed",
-      "description": "Natlada N. (SYE-0010 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 90%)",
-      "relatedId": "TR-00112"
-    },
-    {
-      "id": "LOG-00178",
-      "date": "2024-08-05",
-      "timestamp": "2024-08-05T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed System Reliability & Scalability [SRE-005] (Score: 81%)",
-      "relatedId": "TR-00178"
-    },
-    {
-      "id": "LOG-00177",
-      "date": "2024-08-02",
-      "timestamp": "2024-08-02T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Containerization & Orchestration [SRE-004] (Score: 91%)",
-      "relatedId": "TR-00177"
-    },
-    {
-      "id": "LOG-00176",
-      "date": "2024-07-30",
-      "timestamp": "2024-07-30T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Incident Response & Post-Mortem [SRE-003] (Score: 99%)",
-      "relatedId": "TR-00176"
-    },
-    {
-      "id": "LOG-00062",
-      "date": "2024-07-29",
-      "timestamp": "2024-07-29T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Legacy System Integration Patterns [SEC-003] (Score: 99%)",
-      "relatedId": "TR-00062"
-    },
-    {
-      "id": "LOG-00175",
-      "date": "2024-07-27",
-      "timestamp": "2024-07-27T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards [SRE-002] (Score: 91%)",
-      "relatedId": "TR-00175"
-    },
-    {
-      "id": "LOG-00061",
-      "date": "2024-07-26",
-      "timestamp": "2024-07-26T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting [SEC-002] (Score: 88%)",
-      "relatedId": "TR-00061"
-    },
-    {
-      "id": "LOG-00174",
-      "date": "2024-07-24",
-      "timestamp": "2024-07-24T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering [SRE-001] (Score: 97%)",
-      "relatedId": "TR-00174"
-    },
-    {
-      "id": "LOG-00060",
-      "date": "2024-07-23",
-      "timestamp": "2024-07-23T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Microservices & Distributed Event-Driven Architecture Standard [SEC-001] (Score: 96%)",
-      "relatedId": "TR-00060"
-    },
-    {
-      "id": "LOG-00173",
-      "date": "2024-07-21",
-      "timestamp": "2024-07-21T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 97%)",
-      "relatedId": "TR-00173"
-    },
-    {
-      "id": "LOG-00059",
-      "date": "2024-07-20",
-      "timestamp": "2024-07-20T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 98%)",
-      "relatedId": "TR-00059"
-    },
-    {
-      "id": "LOG-00172",
-      "date": "2024-07-18",
-      "timestamp": "2024-07-18T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 83%)",
-      "relatedId": "TR-00172"
-    },
-    {
-      "id": "LOG-00058",
-      "date": "2024-07-17",
-      "timestamp": "2024-07-17T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 89%)",
-      "relatedId": "TR-00058"
-    },
-    {
-      "id": "LOG-00171",
-      "date": "2024-07-15",
-      "timestamp": "2024-07-15T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 88%)",
-      "relatedId": "TR-00171"
-    },
-    {
-      "id": "LOG-00057",
-      "date": "2024-07-14",
-      "timestamp": "2024-07-14T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 85%)",
-      "relatedId": "TR-00057"
-    },
-    {
-      "id": "LOG-00170",
-      "date": "2024-07-12",
-      "timestamp": "2024-07-12T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 88%)",
-      "relatedId": "TR-00170"
-    },
-    {
-      "id": "LOG-00056",
-      "date": "2024-07-11",
-      "timestamp": "2024-07-11T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 80%)",
-      "relatedId": "TR-00056"
-    },
-    {
-      "id": "LOG-00169",
-      "date": "2024-07-09",
-      "timestamp": "2024-07-09T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 80%)",
-      "relatedId": "TR-00169"
-    },
-    {
-      "id": "LOG-00055",
-      "date": "2024-07-08",
-      "timestamp": "2024-07-08T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 99%)",
-      "relatedId": "TR-00055"
-    },
-    {
-      "id": "LOG-00168",
-      "date": "2024-07-06",
-      "timestamp": "2024-07-06T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Methinee K. (SYE-0015 - SRE) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 82%)",
-      "relatedId": "TR-00168"
-    },
-    {
-      "id": "LOG-00054",
-      "date": "2024-07-05",
-      "timestamp": "2024-07-05T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 88%)",
-      "relatedId": "TR-00054"
-    },
-    {
-      "id": "LOG-00053",
-      "date": "2024-07-02",
-      "timestamp": "2024-07-02T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 93%)",
-      "relatedId": "TR-00053"
-    },
-    {
-      "id": "LOG-00052",
-      "date": "2024-06-29",
-      "timestamp": "2024-06-29T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 80%)",
-      "relatedId": "TR-00052"
-    },
-    {
-      "id": "LOG-00051",
-      "date": "2024-06-26",
-      "timestamp": "2024-06-26T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 93%)",
-      "relatedId": "TR-00051"
-    },
-    {
-      "id": "LOG-00050",
-      "date": "2024-06-23",
-      "timestamp": "2024-06-23T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 93%)",
-      "relatedId": "TR-00050"
-    },
-    {
-      "id": "LOG-00203",
-      "date": "2024-06-22",
-      "timestamp": "2024-06-22T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Contact Center Application Features [SEC-007] (Score: 84%)",
-      "relatedId": "TR-00203"
-    },
-    {
-      "id": "LOG-00049",
-      "date": "2024-06-20",
-      "timestamp": "2024-06-20T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Athitaya B. (SYE-0005 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 92%)",
-      "relatedId": "TR-00049"
-    },
-    {
-      "id": "LOG-00202",
-      "date": "2024-06-19",
-      "timestamp": "2024-06-19T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Omnichannel Routing Logic & Unified Agent Workspace [SEC-006] (Score: 81%)",
-      "relatedId": "TR-00202"
-    },
-    {
-      "id": "LOG-00201",
-      "date": "2024-06-16",
-      "timestamp": "2024-06-16T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Data Flow Analysis [BA-004] (Score: 94%)",
-      "relatedId": "TR-00201"
-    },
-    {
-      "id": "LOG-00200",
-      "date": "2024-06-13",
-      "timestamp": "2024-06-13T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes [BA-003] (Score: 90%)",
-      "relatedId": "TR-00200"
-    },
-    {
-      "id": "LOG-00111",
-      "date": "2024-06-11",
-      "timestamp": "2024-06-11T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Frontend State Management Standard [SEC-005] (Score: 95%)",
+      "description": "Athitaya B. (Developer) completed Legacy System Integration Patterns (Score: 85%)",
       "relatedId": "TR-00111"
     },
     {
-      "id": "LOG-00199",
-      "date": "2024-06-10",
-      "timestamp": "2024-06-10T16:30:00.000Z",
+      "id": "LOG-1725667200017",
+      "date": "2024-09-07",
+      "timestamp": "2024-09-07T09:27:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards [BA-002] (Score: 83%)",
-      "relatedId": "TR-00199"
+      "description": "Tanasarn J. (QA) completed Defect Lifecycle Management (Score: 100%)",
+      "relatedId": "TR-00366"
     },
     {
-      "id": "LOG-00110",
-      "date": "2024-06-08",
-      "timestamp": "2024-06-08T15:30:00.000Z",
+      "id": "LOG-1725667200001",
+      "date": "2024-09-07",
+      "timestamp": "2024-09-07T09:11:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 94%)",
+      "description": "Pornchita Y. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 100%)",
+      "relatedId": "TR-00113"
+    },
+    {
+      "id": "LOG-1725580800011",
+      "date": "2024-09-06",
+      "timestamp": "2024-09-06T09:21:00",
+      "type": "training_completed",
+      "description": "Chirawat K. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 88%)",
+      "relatedId": "TR-00241"
+    },
+    {
+      "id": "LOG-1725494400021",
+      "date": "2024-09-05",
+      "timestamp": "2024-09-05T09:31:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 90%)",
+      "relatedId": "TR-00224"
+    },
+    {
+      "id": "LOG-1725408000026",
+      "date": "2024-09-04",
+      "timestamp": "2024-09-04T09:36:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting (Score: 100%)",
       "relatedId": "TR-00110"
     },
     {
-      "id": "LOG-00198",
-      "date": "2024-06-07",
-      "timestamp": "2024-06-07T15:30:00.000Z",
+      "id": "LOG-1725408000016",
+      "date": "2024-09-04",
+      "timestamp": "2024-09-04T09:26:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Requirements Elicitation Techniques [BA-001] (Score: 97%)",
-      "relatedId": "TR-00198"
+      "description": "Tanasarn J. (QA) completed Performance, Stress & Load Testing with Apache JMeter (Score: 95%)",
+      "relatedId": "TR-00365"
     },
     {
-      "id": "LOG-00109",
-      "date": "2024-06-05",
-      "timestamp": "2024-06-05T14:30:00.000Z",
+      "id": "LOG-1725408000000",
+      "date": "2024-09-04",
+      "timestamp": "2024-09-04T09:10:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 87%)",
+      "description": "Pornchita Y. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 98%)",
+      "relatedId": "TR-00112"
+    },
+    {
+      "id": "LOG-1725321600010",
+      "date": "2024-09-03",
+      "timestamp": "2024-09-03T09:20:00",
+      "type": "training_completed",
+      "description": "Chirawat K. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 100%)",
+      "relatedId": "TR-00240"
+    },
+    {
+      "id": "LOG-1725235200020",
+      "date": "2024-09-02",
+      "timestamp": "2024-09-02T09:30:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 85%)",
+      "relatedId": "TR-00223"
+    },
+    {
+      "id": "LOG-1725148800025",
+      "date": "2024-09-01",
+      "timestamp": "2024-09-01T09:35:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Microservices & Distributed Event-Driven Architecture Standard (Score: 98%)",
       "relatedId": "TR-00109"
     },
     {
-      "id": "LOG-00197",
-      "date": "2024-06-04",
-      "timestamp": "2024-06-04T14:30:00.000Z",
+      "id": "LOG-1725148800015",
+      "date": "2024-09-01",
+      "timestamp": "2024-09-01T09:25:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 94%)",
-      "relatedId": "TR-00197"
+      "description": "Tanasarn J. (QA) completed API Testing (Score: 90%)",
+      "relatedId": "TR-00364"
     },
     {
-      "id": "LOG-00108",
-      "date": "2024-06-02",
-      "timestamp": "2024-06-02T13:30:00.000Z",
+      "id": "LOG-REG-SYE-0006",
+      "date": "2024-09-01",
+      "timestamp": "2024-09-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Pornchita Y. (Developer - Outsource) joined API & Integration Platform",
+      "relatedId": "SYE-0006"
+    },
+    {
+      "id": "LOG-1725062400009",
+      "date": "2024-08-31",
+      "timestamp": "2024-08-31T09:19:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 99%)",
+      "description": "Chirawat K. (Developer) completed Data Flow Analysis (Score: 95%)",
+      "relatedId": "TR-00239"
+    },
+    {
+      "id": "LOG-1724976000019",
+      "date": "2024-08-30",
+      "timestamp": "2024-08-30T09:29:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Defect Lifecycle Management (Score: 100%)",
+      "relatedId": "TR-00222"
+    },
+    {
+      "id": "LOG-1724889600024",
+      "date": "2024-08-29",
+      "timestamp": "2024-08-29T09:34:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed System Reliability & Scalability (Score: 96%)",
       "relatedId": "TR-00108"
     },
     {
-      "id": "LOG-00196",
-      "date": "2024-06-01",
-      "timestamp": "2024-06-01T13:30:00.000Z",
+      "id": "LOG-1724889600014",
+      "date": "2024-08-29",
+      "timestamp": "2024-08-29T09:24:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 96%)",
-      "relatedId": "TR-00196"
+      "description": "Tanasarn J. (QA) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 85%)",
+      "relatedId": "TR-00363"
     },
     {
-      "id": "LOG-00107",
-      "date": "2024-05-30",
-      "timestamp": "2024-05-30T12:30:00.000Z",
+      "id": "LOG-1724803200008",
+      "date": "2024-08-28",
+      "timestamp": "2024-08-28T09:18:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 89%)",
+      "description": "Chirawat K. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 90%)",
+      "relatedId": "TR-00238"
+    },
+    {
+      "id": "LOG-1724716800018",
+      "date": "2024-08-27",
+      "timestamp": "2024-08-27T09:28:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 98%)",
+      "relatedId": "TR-00221"
+    },
+    {
+      "id": "LOG-1724630400023",
+      "date": "2024-08-26",
+      "timestamp": "2024-08-26T09:33:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Containerization & Orchestration (Score: 95%)",
       "relatedId": "TR-00107"
     },
     {
-      "id": "LOG-00195",
-      "date": "2024-05-29",
-      "timestamp": "2024-05-29T12:30:00.000Z",
+      "id": "LOG-1724630400013",
+      "date": "2024-08-26",
+      "timestamp": "2024-08-26T09:23:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 80%)",
-      "relatedId": "TR-00195"
+      "description": "Tanasarn J. (QA) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 100%)",
+      "relatedId": "TR-00362"
     },
     {
-      "id": "LOG-00106",
-      "date": "2024-05-27",
-      "timestamp": "2024-05-27T11:30:00.000Z",
+      "id": "LOG-1724544000007",
+      "date": "2024-08-25",
+      "timestamp": "2024-08-25T09:17:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 98%)",
+      "description": "Chirawat K. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 85%)",
+      "relatedId": "TR-00237"
+    },
+    {
+      "id": "LOG-1724457600017",
+      "date": "2024-08-24",
+      "timestamp": "2024-08-24T09:27:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed API Testing (Score: 96%)",
+      "relatedId": "TR-00220"
+    },
+    {
+      "id": "LOG-1724371200022",
+      "date": "2024-08-23",
+      "timestamp": "2024-08-23T09:32:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Incident Response & Post-Mortem (Score: 94%)",
       "relatedId": "TR-00106"
     },
     {
-      "id": "LOG-00194",
-      "date": "2024-05-26",
-      "timestamp": "2024-05-26T11:30:00.000Z",
+      "id": "LOG-1724371200012",
+      "date": "2024-08-23",
+      "timestamp": "2024-08-23T09:22:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 88%)",
-      "relatedId": "TR-00194"
+      "description": "Tanasarn J. (QA) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 98%)",
+      "relatedId": "TR-00361"
     },
     {
-      "id": "LOG-00105",
-      "date": "2024-05-24",
-      "timestamp": "2024-05-24T10:30:00.000Z",
+      "id": "LOG-1724284800006",
+      "date": "2024-08-22",
+      "timestamp": "2024-08-22T09:16:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 84%)",
+      "description": "Chirawat K. (Developer) completed Budgeting and Resource Allocation (Score: 100%)",
+      "relatedId": "TR-00236"
+    },
+    {
+      "id": "LOG-1724198400026",
+      "date": "2024-08-21",
+      "timestamp": "2024-08-21T09:36:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Contact Center Application Features (Score: 100%)",
+      "relatedId": "TR-00348"
+    },
+    {
+      "id": "LOG-1724198400016",
+      "date": "2024-08-21",
+      "timestamp": "2024-08-21T09:26:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 95%)",
+      "relatedId": "TR-00219"
+    },
+    {
+      "id": "LOG-1724112000021",
+      "date": "2024-08-20",
+      "timestamp": "2024-08-20T09:31:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 92%)",
       "relatedId": "TR-00105"
     },
     {
-      "id": "LOG-00193",
-      "date": "2024-05-23",
-      "timestamp": "2024-05-23T10:30:00.000Z",
+      "id": "LOG-1724112000011",
+      "date": "2024-08-20",
+      "timestamp": "2024-08-20T09:21:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 87%)",
-      "relatedId": "TR-00193"
+      "description": "Tanasarn J. (QA) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 96%)",
+      "relatedId": "TR-00360"
     },
     {
-      "id": "LOG-00104",
-      "date": "2024-05-21",
-      "timestamp": "2024-05-21T09:30:00.000Z",
+      "id": "LOG-1724025600005",
+      "date": "2024-08-19",
+      "timestamp": "2024-08-19T09:15:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 85%)",
+      "description": "Chirawat K. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 98%)",
+      "relatedId": "TR-00235"
+    },
+    {
+      "id": "LOG-1723939200025",
+      "date": "2024-08-18",
+      "timestamp": "2024-08-18T09:35:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Omnichannel Routing Logic & Unified Agent Workspace (Score: 98%)",
+      "relatedId": "TR-00347"
+    },
+    {
+      "id": "LOG-1723939200015",
+      "date": "2024-08-18",
+      "timestamp": "2024-08-18T09:25:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 94%)",
+      "relatedId": "TR-00218"
+    },
+    {
+      "id": "LOG-1723852800020",
+      "date": "2024-08-17",
+      "timestamp": "2024-08-17T09:30:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 90%)",
       "relatedId": "TR-00104"
     },
     {
-      "id": "LOG-00192",
-      "date": "2024-05-20",
-      "timestamp": "2024-05-20T09:30:00.000Z",
+      "id": "LOG-1723852800010",
+      "date": "2024-08-17",
+      "timestamp": "2024-08-17T09:20:00",
       "type": "training_completed",
-      "description": "Buntita F. (SYE-0017 - BA) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 93%)",
-      "relatedId": "TR-00192"
+      "description": "Tanasarn J. (QA) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 95%)",
+      "relatedId": "TR-00359"
     },
     {
-      "id": "LOG-00103",
-      "date": "2024-05-18",
-      "timestamp": "2024-05-18T16:30:00.000Z",
+      "id": "LOG-1723766400004",
+      "date": "2024-08-16",
+      "timestamp": "2024-08-16T09:14:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 92%)",
+      "description": "Chirawat K. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 96%)",
+      "relatedId": "TR-00234"
+    },
+    {
+      "id": "LOG-1723680000024",
+      "date": "2024-08-15",
+      "timestamp": "2024-08-15T09:34:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed System Reliability & Scalability (Score: 96%)",
+      "relatedId": "TR-00346"
+    },
+    {
+      "id": "LOG-1723680000014",
+      "date": "2024-08-15",
+      "timestamp": "2024-08-15T09:24:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 92%)",
+      "relatedId": "TR-00217"
+    },
+    {
+      "id": "LOG-1723593600019",
+      "date": "2024-08-14",
+      "timestamp": "2024-08-14T09:29:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Defect Lifecycle Management (Score: 88%)",
       "relatedId": "TR-00103"
     },
     {
-      "id": "LOG-00102",
-      "date": "2024-05-15",
-      "timestamp": "2024-05-15T15:30:00.000Z",
+      "id": "LOG-1723593600009",
+      "date": "2024-08-14",
+      "timestamp": "2024-08-14T09:19:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 91%)",
+      "description": "Tanasarn J. (QA) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 94%)",
+      "relatedId": "TR-00358"
+    },
+    {
+      "id": "LOG-1723507200003",
+      "date": "2024-08-13",
+      "timestamp": "2024-08-13T09:13:00",
+      "type": "training_completed",
+      "description": "Chirawat K. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 95%)",
+      "relatedId": "TR-00233"
+    },
+    {
+      "id": "LOG-1723420800023",
+      "date": "2024-08-12",
+      "timestamp": "2024-08-12T09:33:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Containerization & Orchestration (Score: 95%)",
+      "relatedId": "TR-00345"
+    },
+    {
+      "id": "LOG-1723420800013",
+      "date": "2024-08-12",
+      "timestamp": "2024-08-12T09:23:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 90%)",
+      "relatedId": "TR-00216"
+    },
+    {
+      "id": "LOG-1723334400018",
+      "date": "2024-08-11",
+      "timestamp": "2024-08-11T09:28:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 100%)",
       "relatedId": "TR-00102"
     },
     {
-      "id": "LOG-00101",
-      "date": "2024-05-12",
-      "timestamp": "2024-05-12T14:30:00.000Z",
+      "id": "LOG-1723334400008",
+      "date": "2024-08-11",
+      "timestamp": "2024-08-11T09:18:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 98%)",
+      "description": "Tanasarn J. (QA) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 92%)",
+      "relatedId": "TR-00357"
+    },
+    {
+      "id": "LOG-1723248000002",
+      "date": "2024-08-10",
+      "timestamp": "2024-08-10T09:12:00",
+      "type": "training_completed",
+      "description": "Chirawat K. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 94%)",
+      "relatedId": "TR-00232"
+    },
+    {
+      "id": "LOG-1723161600022",
+      "date": "2024-08-09",
+      "timestamp": "2024-08-09T09:32:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Incident Response & Post-Mortem (Score: 94%)",
+      "relatedId": "TR-00344"
+    },
+    {
+      "id": "LOG-1723161600012",
+      "date": "2024-08-09",
+      "timestamp": "2024-08-09T09:22:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 88%)",
+      "relatedId": "TR-00215"
+    },
+    {
+      "id": "LOG-1723075200017",
+      "date": "2024-08-08",
+      "timestamp": "2024-08-08T09:27:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed API Testing (Score: 95%)",
       "relatedId": "TR-00101"
     },
     {
-      "id": "LOG-00100",
-      "date": "2024-05-09",
-      "timestamp": "2024-05-09T13:30:00.000Z",
+      "id": "LOG-1723075200007",
+      "date": "2024-08-08",
+      "timestamp": "2024-08-08T09:17:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 94%)",
+      "description": "Tanasarn J. (QA) completed Data Flow Analysis (Score: 90%)",
+      "relatedId": "TR-00356"
+    },
+    {
+      "id": "LOG-1722988800001",
+      "date": "2024-08-07",
+      "timestamp": "2024-08-07T09:11:00",
+      "type": "training_completed",
+      "description": "Chirawat K. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 92%)",
+      "relatedId": "TR-00231"
+    },
+    {
+      "id": "LOG-1722902400021",
+      "date": "2024-08-06",
+      "timestamp": "2024-08-06T09:31:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 92%)",
+      "relatedId": "TR-00343"
+    },
+    {
+      "id": "LOG-1722902400011",
+      "date": "2024-08-06",
+      "timestamp": "2024-08-06T09:21:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 100%)",
+      "relatedId": "TR-00214"
+    },
+    {
+      "id": "LOG-1722816000016",
+      "date": "2024-08-05",
+      "timestamp": "2024-08-05T09:26:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 90%)",
       "relatedId": "TR-00100"
     },
     {
-      "id": "LOG-00099",
-      "date": "2024-05-06",
-      "timestamp": "2024-05-06T12:30:00.000Z",
+      "id": "LOG-1722816000006",
+      "date": "2024-08-05",
+      "timestamp": "2024-08-05T09:16:00",
       "type": "training_completed",
-      "description": "Pipat H. (SYE-0009 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 81%)",
+      "description": "Tanasarn J. (QA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 88%)",
+      "relatedId": "TR-00355"
+    },
+    {
+      "id": "LOG-1722729600000",
+      "date": "2024-08-04",
+      "timestamp": "2024-08-04T09:10:00",
+      "type": "training_completed",
+      "description": "Chirawat K. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 90%)",
+      "relatedId": "TR-00230"
+    },
+    {
+      "id": "LOG-1722643200020",
+      "date": "2024-08-03",
+      "timestamp": "2024-08-03T09:30:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 90%)",
+      "relatedId": "TR-00342"
+    },
+    {
+      "id": "LOG-1722643200010",
+      "date": "2024-08-03",
+      "timestamp": "2024-08-03T09:20:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 95%)",
+      "relatedId": "TR-00213"
+    },
+    {
+      "id": "LOG-1722556800015",
+      "date": "2024-08-02",
+      "timestamp": "2024-08-02T09:25:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 85%)",
       "relatedId": "TR-00099"
     },
     {
-      "id": "LOG-00098",
-      "date": "2024-05-06",
-      "timestamp": "2024-05-06T11:30:00.000Z",
+      "id": "LOG-1722556800005",
+      "date": "2024-08-02",
+      "timestamp": "2024-08-02T09:15:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 98%)",
+      "description": "Tanasarn J. (QA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 100%)",
+      "relatedId": "TR-00354"
+    },
+    {
+      "id": "LOG-REG-SYE-0011",
+      "date": "2024-08-01",
+      "timestamp": "2024-08-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Chirawat K. (Developer - Outsource) joined Customer Experience Systems",
+      "relatedId": "SYE-0011"
+    },
+    {
+      "id": "LOG-1722384000019",
+      "date": "2024-07-31",
+      "timestamp": "2024-07-31T09:29:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Defect Lifecycle Management (Score: 88%)",
+      "relatedId": "TR-00341"
+    },
+    {
+      "id": "LOG-1722384000009",
+      "date": "2024-07-31",
+      "timestamp": "2024-07-31T09:19:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Data Flow Analysis (Score: 90%)",
+      "relatedId": "TR-00212"
+    },
+    {
+      "id": "LOG-1722297600014",
+      "date": "2024-07-30",
+      "timestamp": "2024-07-30T09:24:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 100%)",
       "relatedId": "TR-00098"
     },
     {
-      "id": "LOG-00097",
-      "date": "2024-05-03",
-      "timestamp": "2024-05-03T10:30:00.000Z",
+      "id": "LOG-1722297600004",
+      "date": "2024-07-30",
+      "timestamp": "2024-07-30T09:14:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Data Flow Analysis [BA-004] (Score: 89%)",
+      "description": "Tanasarn J. (QA) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 95%)",
+      "relatedId": "TR-00353"
+    },
+    {
+      "id": "LOG-1722124800018",
+      "date": "2024-07-28",
+      "timestamp": "2024-07-28T09:28:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 100%)",
+      "relatedId": "TR-00340"
+    },
+    {
+      "id": "LOG-1722124800008",
+      "date": "2024-07-28",
+      "timestamp": "2024-07-28T09:18:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 85%)",
+      "relatedId": "TR-00211"
+    },
+    {
+      "id": "LOG-1722038400013",
+      "date": "2024-07-27",
+      "timestamp": "2024-07-27T09:23:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 98%)",
       "relatedId": "TR-00097"
     },
     {
-      "id": "LOG-00096",
-      "date": "2024-04-30",
-      "timestamp": "2024-04-30T09:30:00.000Z",
+      "id": "LOG-1722038400003",
+      "date": "2024-07-27",
+      "timestamp": "2024-07-27T09:13:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes [BA-003] (Score: 96%)",
+      "description": "Tanasarn J. (QA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 90%)",
+      "relatedId": "TR-00352"
+    },
+    {
+      "id": "LOG-1721865600017",
+      "date": "2024-07-25",
+      "timestamp": "2024-07-25T09:27:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed API Testing (Score: 95%)",
+      "relatedId": "TR-00339"
+    },
+    {
+      "id": "LOG-1721865600007",
+      "date": "2024-07-25",
+      "timestamp": "2024-07-25T09:17:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 100%)",
+      "relatedId": "TR-00210"
+    },
+    {
+      "id": "LOG-1721779200012",
+      "date": "2024-07-24",
+      "timestamp": "2024-07-24T09:22:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 96%)",
       "relatedId": "TR-00096"
     },
     {
-      "id": "LOG-00095",
-      "date": "2024-04-27",
-      "timestamp": "2024-04-27T16:30:00.000Z",
+      "id": "LOG-1721779200002",
+      "date": "2024-07-24",
+      "timestamp": "2024-07-24T09:12:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards [BA-002] (Score: 88%)",
+      "description": "Tanasarn J. (QA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 85%)",
+      "relatedId": "TR-00351"
+    },
+    {
+      "id": "LOG-1721606400016",
+      "date": "2024-07-22",
+      "timestamp": "2024-07-22T09:26:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 90%)",
+      "relatedId": "TR-00338"
+    },
+    {
+      "id": "LOG-1721606400006",
+      "date": "2024-07-22",
+      "timestamp": "2024-07-22T09:16:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Budgeting and Resource Allocation (Score: 98%)",
+      "relatedId": "TR-00209"
+    },
+    {
+      "id": "LOG-1721520000026",
+      "date": "2024-07-21",
+      "timestamp": "2024-07-21T09:36:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Frontend State Management Standard (Score: 100%)",
+      "relatedId": "TR-00202"
+    },
+    {
+      "id": "LOG-1721520000011",
+      "date": "2024-07-21",
+      "timestamp": "2024-07-21T09:21:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 95%)",
       "relatedId": "TR-00095"
     },
     {
-      "id": "LOG-00094",
-      "date": "2024-04-24",
-      "timestamp": "2024-04-24T15:30:00.000Z",
+      "id": "LOG-1721520000001",
+      "date": "2024-07-21",
+      "timestamp": "2024-07-21T09:11:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Requirements Elicitation Techniques [BA-001] (Score: 93%)",
+      "description": "Tanasarn J. (QA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 100%)",
+      "relatedId": "TR-00350"
+    },
+    {
+      "id": "LOG-1721347200015",
+      "date": "2024-07-19",
+      "timestamp": "2024-07-19T09:25:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 85%)",
+      "relatedId": "TR-00337"
+    },
+    {
+      "id": "LOG-1721347200005",
+      "date": "2024-07-19",
+      "timestamp": "2024-07-19T09:15:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 96%)",
+      "relatedId": "TR-00208"
+    },
+    {
+      "id": "LOG-1721260800025",
+      "date": "2024-07-18",
+      "timestamp": "2024-07-18T09:35:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Customer Experience Systems (CXS) Platform Architecture (Score: 95%)",
+      "relatedId": "TR-00201"
+    },
+    {
+      "id": "LOG-1721260800010",
+      "date": "2024-07-18",
+      "timestamp": "2024-07-18T09:20:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 94%)",
       "relatedId": "TR-00094"
     },
     {
-      "id": "LOG-00093",
-      "date": "2024-04-21",
-      "timestamp": "2024-04-21T14:30:00.000Z",
+      "id": "LOG-1721260800000",
+      "date": "2024-07-18",
+      "timestamp": "2024-07-18T09:10:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 85%)",
+      "description": "Tanasarn J. (QA) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 98%)",
+      "relatedId": "TR-00349"
+    },
+    {
+      "id": "LOG-1721088000014",
+      "date": "2024-07-16",
+      "timestamp": "2024-07-16T09:24:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 100%)",
+      "relatedId": "TR-00336"
+    },
+    {
+      "id": "LOG-1721088000004",
+      "date": "2024-07-16",
+      "timestamp": "2024-07-16T09:14:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 95%)",
+      "relatedId": "TR-00207"
+    },
+    {
+      "id": "LOG-1721001600024",
+      "date": "2024-07-15",
+      "timestamp": "2024-07-15T09:34:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed System Reliability & Scalability (Score: 90%)",
+      "relatedId": "TR-00200"
+    },
+    {
+      "id": "LOG-1721001600009",
+      "date": "2024-07-15",
+      "timestamp": "2024-07-15T09:19:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Data Flow Analysis (Score: 92%)",
       "relatedId": "TR-00093"
     },
     {
-      "id": "LOG-00092",
-      "date": "2024-04-18",
-      "timestamp": "2024-04-18T13:30:00.000Z",
+      "id": "LOG-REG-SYE-0016",
+      "date": "2024-07-15",
+      "timestamp": "2024-07-15T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Tanasarn J. (QA - Outsource) joined User Application Systems",
+      "relatedId": "SYE-0016"
+    },
+    {
+      "id": "LOG-1720828800013",
+      "date": "2024-07-13",
+      "timestamp": "2024-07-13T09:23:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 93%)",
+      "description": "Thanapat S. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 98%)",
+      "relatedId": "TR-00335"
+    },
+    {
+      "id": "LOG-1720828800003",
+      "date": "2024-07-13",
+      "timestamp": "2024-07-13T09:13:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 94%)",
+      "relatedId": "TR-00206"
+    },
+    {
+      "id": "LOG-1720742400023",
+      "date": "2024-07-12",
+      "timestamp": "2024-07-12T09:33:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Containerization & Orchestration (Score: 85%)",
+      "relatedId": "TR-00199"
+    },
+    {
+      "id": "LOG-1720742400008",
+      "date": "2024-07-12",
+      "timestamp": "2024-07-12T09:18:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 90%)",
       "relatedId": "TR-00092"
     },
     {
-      "id": "LOG-00091",
-      "date": "2024-04-15",
-      "timestamp": "2024-04-15T12:30:00.000Z",
+      "id": "LOG-1720656000018",
+      "date": "2024-07-11",
+      "timestamp": "2024-07-11T09:28:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 83%)",
+      "description": "Khemmanit S. (BA) completed Contact Center Application Features (Score: 90%)",
+      "relatedId": "TR-00294"
+    },
+    {
+      "id": "LOG-1720569600012",
+      "date": "2024-07-10",
+      "timestamp": "2024-07-10T09:22:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 96%)",
+      "relatedId": "TR-00334"
+    },
+    {
+      "id": "LOG-1720569600002",
+      "date": "2024-07-10",
+      "timestamp": "2024-07-10T09:12:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 92%)",
+      "relatedId": "TR-00205"
+    },
+    {
+      "id": "LOG-1720483200022",
+      "date": "2024-07-09",
+      "timestamp": "2024-07-09T09:32:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Incident Response & Post-Mortem (Score: 100%)",
+      "relatedId": "TR-00198"
+    },
+    {
+      "id": "LOG-1720483200007",
+      "date": "2024-07-09",
+      "timestamp": "2024-07-09T09:17:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 88%)",
       "relatedId": "TR-00091"
     },
     {
-      "id": "LOG-00048",
-      "date": "2024-04-14",
-      "timestamp": "2024-04-14T09:30:00.000Z",
+      "id": "LOG-1720396800017",
+      "date": "2024-07-08",
+      "timestamp": "2024-07-08T09:27:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Legacy System Integration Patterns [SEC-003] (Score: 84%)",
-      "relatedId": "TR-00048"
+      "description": "Khemmanit S. (BA) completed Omnichannel Routing Logic & Unified Agent Workspace (Score: 85%)",
+      "relatedId": "TR-00293"
     },
     {
-      "id": "LOG-00090",
-      "date": "2024-04-12",
-      "timestamp": "2024-04-12T11:30:00.000Z",
+      "id": "LOG-1720310400011",
+      "date": "2024-07-07",
+      "timestamp": "2024-07-07T09:21:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 89%)",
+      "description": "Thanapat S. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 95%)",
+      "relatedId": "TR-00333"
+    },
+    {
+      "id": "LOG-1720310400001",
+      "date": "2024-07-07",
+      "timestamp": "2024-07-07T09:11:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 90%)",
+      "relatedId": "TR-00204"
+    },
+    {
+      "id": "LOG-1720224000021",
+      "date": "2024-07-06",
+      "timestamp": "2024-07-06T09:31:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 98%)",
+      "relatedId": "TR-00197"
+    },
+    {
+      "id": "LOG-1720224000006",
+      "date": "2024-07-06",
+      "timestamp": "2024-07-06T09:16:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Budgeting and Resource Allocation (Score: 100%)",
       "relatedId": "TR-00090"
     },
     {
-      "id": "LOG-00047",
-      "date": "2024-04-11",
-      "timestamp": "2024-04-11T16:30:00.000Z",
+      "id": "LOG-1720137600016",
+      "date": "2024-07-05",
+      "timestamp": "2024-07-05T09:26:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting [SEC-002] (Score: 94%)",
-      "relatedId": "TR-00047"
+      "description": "Khemmanit S. (BA) completed Defect Lifecycle Management (Score: 100%)",
+      "relatedId": "TR-00292"
     },
     {
-      "id": "LOG-00089",
-      "date": "2024-04-09",
-      "timestamp": "2024-04-09T10:30:00.000Z",
+      "id": "LOG-1720051200010",
+      "date": "2024-07-04",
+      "timestamp": "2024-07-04T09:20:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 81%)",
+      "description": "Thanapat S. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 94%)",
+      "relatedId": "TR-00332"
+    },
+    {
+      "id": "LOG-1720051200000",
+      "date": "2024-07-04",
+      "timestamp": "2024-07-04T09:10:00",
+      "type": "training_completed",
+      "description": "Natlada N. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 88%)",
+      "relatedId": "TR-00203"
+    },
+    {
+      "id": "LOG-1719964800020",
+      "date": "2024-07-03",
+      "timestamp": "2024-07-03T09:30:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 96%)",
+      "relatedId": "TR-00196"
+    },
+    {
+      "id": "LOG-1719964800005",
+      "date": "2024-07-03",
+      "timestamp": "2024-07-03T09:15:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 95%)",
       "relatedId": "TR-00089"
     },
     {
-      "id": "LOG-00046",
-      "date": "2024-04-08",
-      "timestamp": "2024-04-08T15:30:00.000Z",
+      "id": "LOG-1719878400015",
+      "date": "2024-07-02",
+      "timestamp": "2024-07-02T09:25:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Microservices & Distributed Event-Driven Architecture Standard [SEC-001] (Score: 93%)",
-      "relatedId": "TR-00046"
+      "description": "Khemmanit S. (BA) completed API Testing (Score: 98%)",
+      "relatedId": "TR-00291"
     },
     {
-      "id": "LOG-00088",
-      "date": "2024-04-06",
-      "timestamp": "2024-04-06T09:30:00.000Z",
+      "id": "LOG-1719792000009",
+      "date": "2024-07-01",
+      "timestamp": "2024-07-01T09:19:00",
       "type": "training_completed",
-      "description": "Bhanutad A. (SYE-0008 - BA) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 87%)",
+      "description": "Thanapat S. (Developer) completed Data Flow Analysis (Score: 92%)",
+      "relatedId": "TR-00331"
+    },
+    {
+      "id": "LOG-REG-SYE-0010",
+      "date": "2024-07-01",
+      "timestamp": "2024-07-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Natlada N. (Developer - Outsource) joined Customer Experience Systems",
+      "relatedId": "SYE-0010"
+    },
+    {
+      "id": "LOG-1719705600019",
+      "date": "2024-06-30",
+      "timestamp": "2024-06-30T09:29:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Defect Lifecycle Management (Score: 95%)",
+      "relatedId": "TR-00195"
+    },
+    {
+      "id": "LOG-1719705600004",
+      "date": "2024-06-30",
+      "timestamp": "2024-06-30T09:14:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 90%)",
       "relatedId": "TR-00088"
     },
     {
-      "id": "LOG-00045",
-      "date": "2024-04-05",
-      "timestamp": "2024-04-05T14:30:00.000Z",
+      "id": "LOG-1719619200014",
+      "date": "2024-06-29",
+      "timestamp": "2024-06-29T09:24:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners [DEV-005] (Score: 92%)",
-      "relatedId": "TR-00045"
+      "description": "Khemmanit S. (BA) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 96%)",
+      "relatedId": "TR-00290"
     },
     {
-      "id": "LOG-00044",
-      "date": "2024-04-02",
-      "timestamp": "2024-04-02T13:30:00.000Z",
+      "id": "LOG-1719532800008",
+      "date": "2024-06-28",
+      "timestamp": "2024-06-28T09:18:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Automated Unit Testing & Mocking in Golang and Next.js [DEV-004] (Score: 91%)",
-      "relatedId": "TR-00044"
+      "description": "Thanapat S. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 90%)",
+      "relatedId": "TR-00330"
     },
     {
-      "id": "LOG-00043",
-      "date": "2024-03-30",
-      "timestamp": "2024-03-30T12:30:00.000Z",
+      "id": "LOG-1719446400018",
+      "date": "2024-06-27",
+      "timestamp": "2024-06-27T09:28:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices [DEV-003] (Score: 92%)",
-      "relatedId": "TR-00043"
+      "description": "Pipat H. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 94%)",
+      "relatedId": "TR-00194"
     },
     {
-      "id": "LOG-00042",
-      "date": "2024-03-27",
-      "timestamp": "2024-03-27T11:30:00.000Z",
+      "id": "LOG-1719446400003",
+      "date": "2024-06-27",
+      "timestamp": "2024-06-27T09:13:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release [DEV-002] (Score: 88%)",
-      "relatedId": "TR-00042"
-    },
-    {
-      "id": "LOG-00191",
-      "date": "2024-03-24",
-      "timestamp": "2024-03-24T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Contact Center Application Features [SEC-007] (Score: 91%)",
-      "relatedId": "TR-00191"
-    },
-    {
-      "id": "LOG-00041",
-      "date": "2024-03-24",
-      "timestamp": "2024-03-24T10:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation [DEV-001] (Score: 93%)",
-      "relatedId": "TR-00041"
-    },
-    {
-      "id": "LOG-00190",
-      "date": "2024-03-21",
-      "timestamp": "2024-03-21T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Omnichannel Routing Logic & Unified Agent Workspace [SEC-006] (Score: 99%)",
-      "relatedId": "TR-00190"
-    },
-    {
-      "id": "LOG-00040",
-      "date": "2024-03-21",
-      "timestamp": "2024-03-21T09:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 98%)",
-      "relatedId": "TR-00040"
-    },
-    {
-      "id": "LOG-00039",
-      "date": "2024-03-18",
-      "timestamp": "2024-03-18T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 85%)",
-      "relatedId": "TR-00039"
-    },
-    {
-      "id": "LOG-00189",
-      "date": "2024-03-18",
-      "timestamp": "2024-03-18T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Data Flow Analysis [BA-004] (Score: 85%)",
-      "relatedId": "TR-00189"
-    },
-    {
-      "id": "LOG-00038",
-      "date": "2024-03-15",
-      "timestamp": "2024-03-15T15:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 85%)",
-      "relatedId": "TR-00038"
-    },
-    {
-      "id": "LOG-00188",
-      "date": "2024-03-15",
-      "timestamp": "2024-03-15T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes [BA-003] (Score: 98%)",
-      "relatedId": "TR-00188"
-    },
-    {
-      "id": "LOG-00037",
-      "date": "2024-03-12",
-      "timestamp": "2024-03-12T14:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 86%)",
-      "relatedId": "TR-00037"
-    },
-    {
-      "id": "LOG-00187",
-      "date": "2024-03-12",
-      "timestamp": "2024-03-12T12:30:00.000Z",
-      "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards [BA-002] (Score: 98%)",
-      "relatedId": "TR-00187"
-    },
-    {
-      "id": "LOG-00036",
-      "date": "2024-03-09",
-      "timestamp": "2024-03-09T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 80%)",
-      "relatedId": "TR-00036"
-    },
-    {
-      "id": "LOG-00186",
-      "date": "2024-03-09",
-      "timestamp": "2024-03-09T11:30:00.000Z",
-      "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Requirements Elicitation Techniques [BA-001] (Score: 86%)",
-      "relatedId": "TR-00186"
-    },
-    {
-      "id": "LOG-00087",
-      "date": "2024-03-07",
-      "timestamp": "2024-03-07T16:30:00.000Z",
-      "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 97%)",
+      "description": "Athitaya B. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 85%)",
       "relatedId": "TR-00087"
     },
     {
-      "id": "LOG-00035",
-      "date": "2024-03-06",
-      "timestamp": "2024-03-06T12:30:00.000Z",
+      "id": "LOG-1719360000013",
+      "date": "2024-06-26",
+      "timestamp": "2024-06-26T09:23:00",
       "type": "training_completed",
-      "description": "Pongsatorn N. (SYE-0004 - Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 95%)",
-      "relatedId": "TR-00035"
+      "description": "Khemmanit S. (BA) completed Data Flow Analysis (Score: 95%)",
+      "relatedId": "TR-00289"
     },
     {
-      "id": "LOG-00185",
-      "date": "2024-03-06",
-      "timestamp": "2024-03-06T10:30:00.000Z",
+      "id": "LOG-1719273600007",
+      "date": "2024-06-25",
+      "timestamp": "2024-06-25T09:17:00",
       "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 90%)",
-      "relatedId": "TR-00185"
+      "description": "Thanapat S. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 88%)",
+      "relatedId": "TR-00329"
     },
     {
-      "id": "LOG-00086",
-      "date": "2024-03-04",
-      "timestamp": "2024-03-04T15:30:00.000Z",
+      "id": "LOG-1719187200017",
+      "date": "2024-06-24",
+      "timestamp": "2024-06-24T09:27:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Data Flow Analysis [BA-004] (Score: 98%)",
+      "description": "Pipat H. (Developer) completed API Testing (Score: 92%)",
+      "relatedId": "TR-00193"
+    },
+    {
+      "id": "LOG-1719187200002",
+      "date": "2024-06-24",
+      "timestamp": "2024-06-24T09:12:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 100%)",
       "relatedId": "TR-00086"
     },
     {
-      "id": "LOG-00184",
-      "date": "2024-03-03",
-      "timestamp": "2024-03-03T09:30:00.000Z",
+      "id": "LOG-1719100800012",
+      "date": "2024-06-23",
+      "timestamp": "2024-06-23T09:22:00",
       "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 97%)",
-      "relatedId": "TR-00184"
+      "description": "Khemmanit S. (BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 94%)",
+      "relatedId": "TR-00288"
     },
     {
-      "id": "LOG-00085",
-      "date": "2024-03-01",
-      "timestamp": "2024-03-01T14:30:00.000Z",
+      "id": "LOG-1719014400006",
+      "date": "2024-06-22",
+      "timestamp": "2024-06-22T09:16:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes [BA-003] (Score: 91%)",
+      "description": "Thanapat S. (Developer) completed Budgeting and Resource Allocation (Score: 100%)",
+      "relatedId": "TR-00328"
+    },
+    {
+      "id": "LOG-1718928000016",
+      "date": "2024-06-21",
+      "timestamp": "2024-06-21T09:26:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 90%)",
+      "relatedId": "TR-00192"
+    },
+    {
+      "id": "LOG-1718928000001",
+      "date": "2024-06-21",
+      "timestamp": "2024-06-21T09:11:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 98%)",
       "relatedId": "TR-00085"
     },
     {
-      "id": "LOG-00183",
-      "date": "2024-02-29",
-      "timestamp": "2024-02-29T16:30:00.000Z",
+      "id": "LOG-1718841600011",
+      "date": "2024-06-20",
+      "timestamp": "2024-06-20T09:21:00",
       "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 95%)",
-      "relatedId": "TR-00183"
+      "description": "Khemmanit S. (BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 92%)",
+      "relatedId": "TR-00287"
     },
     {
-      "id": "LOG-00084",
-      "date": "2024-02-27",
-      "timestamp": "2024-02-27T13:30:00.000Z",
+      "id": "LOG-1718755200005",
+      "date": "2024-06-19",
+      "timestamp": "2024-06-19T09:15:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards [BA-002] (Score: 87%)",
+      "description": "Thanapat S. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 95%)",
+      "relatedId": "TR-00327"
+    },
+    {
+      "id": "LOG-1718668800015",
+      "date": "2024-06-18",
+      "timestamp": "2024-06-18T09:25:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 88%)",
+      "relatedId": "TR-00191"
+    },
+    {
+      "id": "LOG-1718668800000",
+      "date": "2024-06-18",
+      "timestamp": "2024-06-18T09:10:00",
+      "type": "training_completed",
+      "description": "Athitaya B. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 96%)",
       "relatedId": "TR-00084"
     },
     {
-      "id": "LOG-00182",
-      "date": "2024-02-26",
-      "timestamp": "2024-02-26T15:30:00.000Z",
+      "id": "LOG-1718582400010",
+      "date": "2024-06-17",
+      "timestamp": "2024-06-17T09:20:00",
       "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 85%)",
-      "relatedId": "TR-00182"
+      "description": "Khemmanit S. (BA) completed Requirements Elicitation Techniques (Score: 90%)",
+      "relatedId": "TR-00286"
     },
     {
-      "id": "LOG-00083",
-      "date": "2024-02-24",
-      "timestamp": "2024-02-24T12:30:00.000Z",
+      "id": "LOG-1718496000004",
+      "date": "2024-06-16",
+      "timestamp": "2024-06-16T09:14:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Requirements Elicitation Techniques [BA-001] (Score: 93%)",
+      "description": "Thanapat S. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 90%)",
+      "relatedId": "TR-00326"
+    },
+    {
+      "id": "LOG-1718409600014",
+      "date": "2024-06-15",
+      "timestamp": "2024-06-15T09:24:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 100%)",
+      "relatedId": "TR-00190"
+    },
+    {
+      "id": "LOG-REG-SYE-0005",
+      "date": "2024-06-15",
+      "timestamp": "2024-06-15T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Athitaya B. (Developer - Outsource) joined API & Integration Platform",
+      "relatedId": "SYE-0005"
+    },
+    {
+      "id": "LOG-1718323200009",
+      "date": "2024-06-14",
+      "timestamp": "2024-06-14T09:19:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed Budgeting and Resource Allocation (Score: 88%)",
+      "relatedId": "TR-00285"
+    },
+    {
+      "id": "LOG-1718236800003",
+      "date": "2024-06-13",
+      "timestamp": "2024-06-13T09:13:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 85%)",
+      "relatedId": "TR-00325"
+    },
+    {
+      "id": "LOG-1718150400013",
+      "date": "2024-06-12",
+      "timestamp": "2024-06-12T09:23:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 95%)",
+      "relatedId": "TR-00189"
+    },
+    {
+      "id": "LOG-1718064000008",
+      "date": "2024-06-11",
+      "timestamp": "2024-06-11T09:18:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed Stakeholder Communication (Score: 100%)",
+      "relatedId": "TR-00284"
+    },
+    {
+      "id": "LOG-1717977600002",
+      "date": "2024-06-10",
+      "timestamp": "2024-06-10T09:12:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 100%)",
+      "relatedId": "TR-00324"
+    },
+    {
+      "id": "LOG-1717891200012",
+      "date": "2024-06-09",
+      "timestamp": "2024-06-09T09:22:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 90%)",
+      "relatedId": "TR-00188"
+    },
+    {
+      "id": "LOG-1717804800007",
+      "date": "2024-06-08",
+      "timestamp": "2024-06-08T09:17:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed Enterprise Risk Management & Mitigation Matrix (Score: 95%)",
+      "relatedId": "TR-00283"
+    },
+    {
+      "id": "LOG-1717718400001",
+      "date": "2024-06-07",
+      "timestamp": "2024-06-07T09:11:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 98%)",
+      "relatedId": "TR-00323"
+    },
+    {
+      "id": "LOG-1717632000011",
+      "date": "2024-06-06",
+      "timestamp": "2024-06-06T09:21:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 85%)",
+      "relatedId": "TR-00187"
+    },
+    {
+      "id": "LOG-1717545600006",
+      "date": "2024-06-05",
+      "timestamp": "2024-06-05T09:16:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 90%)",
+      "relatedId": "TR-00282"
+    },
+    {
+      "id": "LOG-1717459200000",
+      "date": "2024-06-04",
+      "timestamp": "2024-06-04T09:10:00",
+      "type": "training_completed",
+      "description": "Thanapat S. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 96%)",
+      "relatedId": "TR-00322"
+    },
+    {
+      "id": "LOG-1717372800010",
+      "date": "2024-06-03",
+      "timestamp": "2024-06-03T09:20:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 100%)",
+      "relatedId": "TR-00186"
+    },
+    {
+      "id": "LOG-1717286400005",
+      "date": "2024-06-02",
+      "timestamp": "2024-06-02T09:15:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 85%)",
+      "relatedId": "TR-00281"
+    },
+    {
+      "id": "LOG-REG-SYE-0015",
+      "date": "2024-06-01",
+      "timestamp": "2024-06-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Thanapat S. (Developer - Outsource) joined User Application Systems",
+      "relatedId": "SYE-0015"
+    },
+    {
+      "id": "LOG-1717113600009",
+      "date": "2024-05-31",
+      "timestamp": "2024-05-31T09:19:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Data Flow Analysis (Score: 98%)",
+      "relatedId": "TR-00185"
+    },
+    {
+      "id": "LOG-1717027200004",
+      "date": "2024-05-30",
+      "timestamp": "2024-05-30T09:14:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 100%)",
+      "relatedId": "TR-00280"
+    },
+    {
+      "id": "LOG-1716854400008",
+      "date": "2024-05-28",
+      "timestamp": "2024-05-28T09:18:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 96%)",
+      "relatedId": "TR-00184"
+    },
+    {
+      "id": "LOG-1716768000003",
+      "date": "2024-05-27",
+      "timestamp": "2024-05-27T09:13:00",
+      "type": "training_completed",
+      "description": "Khemmanit S. (BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 98%)",
+      "relatedId": "TR-00279"
+    },
+    {
+      "id": "LOG-1716595200017",
+      "date": "2024-05-25",
+      "timestamp": "2024-05-25T09:27:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Customer Experience Systems (CXS) Platform Architecture (Score: 90%)",
+      "relatedId": "TR-00175"
+    },
+    {
+      "id": "LOG-1716595200007",
+      "date": "2024-05-25",
+      "timestamp": "2024-05-25T09:17:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 95%)",
+      "relatedId": "TR-00183"
+    },
+    {
+      "id": "LOG-1716508800027",
+      "date": "2024-05-24",
+      "timestamp": "2024-05-24T09:37:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Legacy System Integration Patterns (Score: 100%)",
       "relatedId": "TR-00083"
     },
     {
-      "id": "LOG-00181",
-      "date": "2024-02-23",
-      "timestamp": "2024-02-23T14:30:00.000Z",
+      "id": "LOG-1716508800002",
+      "date": "2024-05-24",
+      "timestamp": "2024-05-24T09:12:00",
       "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 96%)",
-      "relatedId": "TR-00181"
+      "description": "Khemmanit S. (BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 96%)",
+      "relatedId": "TR-00278"
     },
     {
-      "id": "LOG-00082",
-      "date": "2024-02-21",
-      "timestamp": "2024-02-21T11:30:00.000Z",
+      "id": "LOG-1716336000016",
+      "date": "2024-05-22",
+      "timestamp": "2024-05-22T09:26:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 94%)",
+      "description": "Bhanutad A. (BA) completed Defect Lifecycle Management (Score: 88%)",
+      "relatedId": "TR-00174"
+    },
+    {
+      "id": "LOG-1716336000006",
+      "date": "2024-05-22",
+      "timestamp": "2024-05-22T09:16:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Budgeting and Resource Allocation (Score: 94%)",
+      "relatedId": "TR-00182"
+    },
+    {
+      "id": "LOG-1716249600026",
+      "date": "2024-05-21",
+      "timestamp": "2024-05-21T09:36:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Enterprise API Gateway Configuration, Security & Rate Limiting (Score: 98%)",
       "relatedId": "TR-00082"
     },
     {
-      "id": "LOG-00180",
-      "date": "2024-02-20",
-      "timestamp": "2024-02-20T13:30:00.000Z",
+      "id": "LOG-1716249600001",
+      "date": "2024-05-21",
+      "timestamp": "2024-05-21T09:11:00",
       "type": "training_completed",
-      "description": "Maneerut B. (SYE-0016 - BA) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 89%)",
-      "relatedId": "TR-00180"
+      "description": "Khemmanit S. (BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 95%)",
+      "relatedId": "TR-00277"
     },
     {
-      "id": "LOG-00081",
-      "date": "2024-02-18",
-      "timestamp": "2024-02-18T10:30:00.000Z",
+      "id": "LOG-1716076800015",
+      "date": "2024-05-19",
+      "timestamp": "2024-05-19T09:25:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 92%)",
+      "description": "Bhanutad A. (BA) completed API Testing (Score: 100%)",
+      "relatedId": "TR-00173"
+    },
+    {
+      "id": "LOG-1716076800005",
+      "date": "2024-05-19",
+      "timestamp": "2024-05-19T09:15:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 92%)",
+      "relatedId": "TR-00181"
+    },
+    {
+      "id": "LOG-1715990400025",
+      "date": "2024-05-18",
+      "timestamp": "2024-05-18T09:35:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Microservices & Distributed Event-Driven Architecture Standard (Score: 96%)",
       "relatedId": "TR-00081"
     },
     {
-      "id": "LOG-00080",
-      "date": "2024-02-15",
-      "timestamp": "2024-02-15T09:30:00.000Z",
+      "id": "LOG-1715990400000",
+      "date": "2024-05-18",
+      "timestamp": "2024-05-18T09:10:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 91%)",
+      "description": "Khemmanit S. (BA) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 94%)",
+      "relatedId": "TR-00276"
+    },
+    {
+      "id": "LOG-1715817600014",
+      "date": "2024-05-16",
+      "timestamp": "2024-05-16T09:24:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 95%)",
+      "relatedId": "TR-00172"
+    },
+    {
+      "id": "LOG-1715817600004",
+      "date": "2024-05-16",
+      "timestamp": "2024-05-16T09:14:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 90%)",
+      "relatedId": "TR-00180"
+    },
+    {
+      "id": "LOG-1715731200024",
+      "date": "2024-05-15",
+      "timestamp": "2024-05-15T09:34:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed System Reliability & Scalability (Score: 95%)",
       "relatedId": "TR-00080"
     },
     {
-      "id": "LOG-00079",
-      "date": "2024-02-12",
-      "timestamp": "2024-02-12T16:30:00.000Z",
+      "id": "LOG-REG-SYE-0013",
+      "date": "2024-05-15",
+      "timestamp": "2024-05-15T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Khemmanit S. (BA - Outsource) joined User Application Systems",
+      "relatedId": "SYE-0013"
+    },
+    {
+      "id": "LOG-1715558400013",
+      "date": "2024-05-13",
+      "timestamp": "2024-05-13T09:23:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 89%)",
+      "description": "Bhanutad A. (BA) completed Data Flow Analysis (Score: 90%)",
+      "relatedId": "TR-00171"
+    },
+    {
+      "id": "LOG-1715558400003",
+      "date": "2024-05-13",
+      "timestamp": "2024-05-13T09:13:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 88%)",
+      "relatedId": "TR-00179"
+    },
+    {
+      "id": "LOG-1715472000023",
+      "date": "2024-05-12",
+      "timestamp": "2024-05-12T09:33:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Containerization & Orchestration (Score: 94%)",
       "relatedId": "TR-00079"
     },
     {
-      "id": "LOG-00078",
-      "date": "2024-02-09",
-      "timestamp": "2024-02-09T15:30:00.000Z",
+      "id": "LOG-1715385600018",
+      "date": "2024-05-11",
+      "timestamp": "2024-05-11T09:28:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 90%)",
+      "description": "Krid T. (BA) completed Contact Center Application Features (Score: 85%)",
+      "relatedId": "TR-00275"
+    },
+    {
+      "id": "LOG-1715299200012",
+      "date": "2024-05-10",
+      "timestamp": "2024-05-10T09:22:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 85%)",
+      "relatedId": "TR-00170"
+    },
+    {
+      "id": "LOG-1715299200002",
+      "date": "2024-05-10",
+      "timestamp": "2024-05-10T09:12:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 100%)",
+      "relatedId": "TR-00178"
+    },
+    {
+      "id": "LOG-1715212800022",
+      "date": "2024-05-09",
+      "timestamp": "2024-05-09T09:32:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Incident Response & Post-Mortem (Score: 92%)",
       "relatedId": "TR-00078"
     },
     {
-      "id": "LOG-00034",
-      "date": "2024-02-08",
-      "timestamp": "2024-02-08T11:30:00.000Z",
+      "id": "LOG-1715126400017",
+      "date": "2024-05-08",
+      "timestamp": "2024-05-08T09:27:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Contact Center Application Features [SEC-007] (Score: 99%)",
-      "relatedId": "TR-00034"
+      "description": "Krid T. (BA) completed Omnichannel Routing Logic & Unified Agent Workspace (Score: 100%)",
+      "relatedId": "TR-00274"
     },
     {
-      "id": "LOG-00077",
-      "date": "2024-02-06",
-      "timestamp": "2024-02-06T14:30:00.000Z",
+      "id": "LOG-1715040000011",
+      "date": "2024-05-07",
+      "timestamp": "2024-05-07T09:21:00",
       "type": "training_completed",
-      "description": "Kingkarn P. (SYE-0007 - BA) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 89%)",
+      "description": "Bhanutad A. (BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 100%)",
+      "relatedId": "TR-00169"
+    },
+    {
+      "id": "LOG-1715040000001",
+      "date": "2024-05-07",
+      "timestamp": "2024-05-07T09:11:00",
+      "type": "training_completed",
+      "description": "Pipat H. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 95%)",
+      "relatedId": "TR-00177"
+    },
+    {
+      "id": "LOG-1714953600026",
+      "date": "2024-05-06",
+      "timestamp": "2024-05-06T09:36:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Contact Center Application Features (Score: 98%)",
+      "relatedId": "TR-00321"
+    },
+    {
+      "id": "LOG-1714953600021",
+      "date": "2024-05-06",
+      "timestamp": "2024-05-06T09:31:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 90%)",
       "relatedId": "TR-00077"
     },
     {
-      "id": "LOG-00022",
-      "date": "2024-02-05",
-      "timestamp": "2024-02-05T15:30:00.000Z",
+      "id": "LOG-1714867200016",
+      "date": "2024-05-05",
+      "timestamp": "2024-05-05T09:26:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Microservices & Distributed Event-Driven Architecture Standard [SEC-001] (Score: 85%)",
-      "relatedId": "TR-00022"
+      "description": "Krid T. (BA) completed Defect Lifecycle Management (Score: 98%)",
+      "relatedId": "TR-00273"
     },
     {
-      "id": "LOG-00011",
-      "date": "2024-02-05",
-      "timestamp": "2024-02-05T12:30:00.000Z",
+      "id": "LOG-1714780800010",
+      "date": "2024-05-04",
+      "timestamp": "2024-05-04T09:20:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Customer Experience Systems (CXS) Platform Architecture [SEC-004] (Score: 97%)",
-      "relatedId": "TR-00011"
+      "description": "Bhanutad A. (BA) completed Requirements Elicitation Techniques (Score: 98%)",
+      "relatedId": "TR-00168"
     },
     {
-      "id": "LOG-00033",
-      "date": "2024-02-05",
-      "timestamp": "2024-02-05T10:30:00.000Z",
+      "id": "LOG-1714780800000",
+      "date": "2024-05-04",
+      "timestamp": "2024-05-04T09:10:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Omnichannel Routing Logic & Unified Agent Workspace [SEC-006] (Score: 89%)",
-      "relatedId": "TR-00033"
+      "description": "Pipat H. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 90%)",
+      "relatedId": "TR-00176"
     },
     {
-      "id": "LOG-00021",
-      "date": "2024-02-02",
-      "timestamp": "2024-02-02T14:30:00.000Z",
+      "id": "LOG-1714694400025",
+      "date": "2024-05-03",
+      "timestamp": "2024-05-03T09:35:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Budgeting and Resource Allocation [PM-004] (Score: 90%)",
-      "relatedId": "TR-00021"
+      "description": "Pakawat M. (Developer) completed Omnichannel Routing Logic & Unified Agent Workspace (Score: 96%)",
+      "relatedId": "TR-00320"
     },
     {
-      "id": "LOG-00010",
-      "date": "2024-02-02",
-      "timestamp": "2024-02-02T11:30:00.000Z",
+      "id": "LOG-1714694400020",
+      "date": "2024-05-03",
+      "timestamp": "2024-05-03T09:30:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Budgeting and Resource Allocation [PM-004] (Score: 93%)",
-      "relatedId": "TR-00010"
+      "description": "Pongsatorn N. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 88%)",
+      "relatedId": "TR-00076"
     },
     {
-      "id": "LOG-00032",
-      "date": "2024-02-02",
-      "timestamp": "2024-02-02T09:30:00.000Z",
+      "id": "LOG-1714608000015",
+      "date": "2024-05-02",
+      "timestamp": "2024-05-02T09:25:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Budgeting and Resource Allocation [PM-004] (Score: 85%)",
-      "relatedId": "TR-00032"
+      "description": "Krid T. (BA) completed API Testing (Score: 96%)",
+      "relatedId": "TR-00272"
     },
     {
-      "id": "LOG-00031",
-      "date": "2024-01-30",
-      "timestamp": "2024-01-30T16:30:00.000Z",
+      "id": "LOG-1714521600009",
+      "date": "2024-05-01",
+      "timestamp": "2024-05-01T09:19:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Stakeholder Communication [PM-003] (Score: 96%)",
-      "relatedId": "TR-00031"
+      "description": "Bhanutad A. (BA) completed Budgeting and Resource Allocation (Score: 96%)",
+      "relatedId": "TR-00167"
     },
     {
-      "id": "LOG-00020",
-      "date": "2024-01-30",
-      "timestamp": "2024-01-30T13:30:00.000Z",
-      "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Stakeholder Communication [PM-003] (Score: 85%)",
-      "relatedId": "TR-00020"
+      "id": "LOG-REG-SYE-0009",
+      "date": "2024-05-01",
+      "timestamp": "2024-05-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Pipat H. (Developer - Outsource) joined Customer Experience Systems",
+      "relatedId": "SYE-0009"
     },
     {
-      "id": "LOG-00009",
-      "date": "2024-01-30",
-      "timestamp": "2024-01-30T10:30:00.000Z",
+      "id": "LOG-1714435200024",
+      "date": "2024-04-30",
+      "timestamp": "2024-04-30T09:34:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Stakeholder Communication [PM-003] (Score: 83%)",
-      "relatedId": "TR-00009"
+      "description": "Pakawat M. (Developer) completed System Reliability & Scalability (Score: 95%)",
+      "relatedId": "TR-00319"
     },
     {
-      "id": "LOG-00030",
-      "date": "2024-01-27",
-      "timestamp": "2024-01-27T15:30:00.000Z",
+      "id": "LOG-1714435200019",
+      "date": "2024-04-30",
+      "timestamp": "2024-04-30T09:29:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Enterprise Risk Management & Mitigation Matrix [PM-002] (Score: 99%)",
-      "relatedId": "TR-00030"
+      "description": "Pongsatorn N. (Developer) completed Defect Lifecycle Management (Score: 100%)",
+      "relatedId": "TR-00075"
     },
     {
-      "id": "LOG-00019",
-      "date": "2024-01-27",
-      "timestamp": "2024-01-27T12:30:00.000Z",
+      "id": "LOG-1714435200019",
+      "date": "2024-04-30",
+      "timestamp": "2024-04-30T09:29:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Enterprise Risk Management & Mitigation Matrix [PM-002] (Score: 96%)",
-      "relatedId": "TR-00019"
+      "description": "Thanaboon T. (QA) completed Chatbot Integration Framework (Score: 94%)",
+      "relatedId": "TR-00405"
     },
     {
-      "id": "LOG-00008",
-      "date": "2024-01-27",
-      "timestamp": "2024-01-27T09:30:00.000Z",
+      "id": "LOG-1714348800014",
+      "date": "2024-04-29",
+      "timestamp": "2024-04-29T09:24:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Enterprise Risk Management & Mitigation Matrix [PM-002] (Score: 95%)",
-      "relatedId": "TR-00008"
+      "description": "Krid T. (BA) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 95%)",
+      "relatedId": "TR-00271"
     },
     {
-      "id": "LOG-00007",
-      "date": "2024-01-24",
-      "timestamp": "2024-01-24T16:30:00.000Z",
+      "id": "LOG-1714262400008",
+      "date": "2024-04-28",
+      "timestamp": "2024-04-28T09:18:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Enterprise Project Governance, WBS & Milestone Tracking [PM-001] (Score: 83%)",
-      "relatedId": "TR-00007"
+      "description": "Bhanutad A. (BA) completed Stakeholder Communication (Score: 95%)",
+      "relatedId": "TR-00166"
     },
     {
-      "id": "LOG-00029",
-      "date": "2024-01-24",
-      "timestamp": "2024-01-24T14:30:00.000Z",
+      "id": "LOG-1714176000023",
+      "date": "2024-04-27",
+      "timestamp": "2024-04-27T09:33:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Enterprise Project Governance, WBS & Milestone Tracking [PM-001] (Score: 86%)",
-      "relatedId": "TR-00029"
+      "description": "Pakawat M. (Developer) completed Containerization & Orchestration (Score: 94%)",
+      "relatedId": "TR-00318"
     },
     {
-      "id": "LOG-00018",
-      "date": "2024-01-24",
-      "timestamp": "2024-01-24T11:30:00.000Z",
+      "id": "LOG-1714176000018",
+      "date": "2024-04-27",
+      "timestamp": "2024-04-27T09:28:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Enterprise Project Governance, WBS & Milestone Tracking [PM-001] (Score: 98%)",
+      "description": "Pongsatorn N. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 95%)",
+      "relatedId": "TR-00074"
+    },
+    {
+      "id": "LOG-1714176000018",
+      "date": "2024-04-27",
+      "timestamp": "2024-04-27T09:28:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Incident Response & Post-Mortem (Score: 92%)",
+      "relatedId": "TR-00404"
+    },
+    {
+      "id": "LOG-1714089600013",
+      "date": "2024-04-26",
+      "timestamp": "2024-04-26T09:23:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Data Flow Analysis (Score: 94%)",
+      "relatedId": "TR-00270"
+    },
+    {
+      "id": "LOG-1714003200007",
+      "date": "2024-04-25",
+      "timestamp": "2024-04-25T09:17:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Enterprise Risk Management & Mitigation Matrix (Score: 94%)",
+      "relatedId": "TR-00165"
+    },
+    {
+      "id": "LOG-1713916800022",
+      "date": "2024-04-24",
+      "timestamp": "2024-04-24T09:32:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Incident Response & Post-Mortem (Score: 92%)",
+      "relatedId": "TR-00317"
+    },
+    {
+      "id": "LOG-1713916800017",
+      "date": "2024-04-24",
+      "timestamp": "2024-04-24T09:27:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed API Testing (Score: 90%)",
+      "relatedId": "TR-00073"
+    },
+    {
+      "id": "LOG-1713916800017",
+      "date": "2024-04-24",
+      "timestamp": "2024-04-24T09:27:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Defect Lifecycle Management (Score: 90%)",
+      "relatedId": "TR-00403"
+    },
+    {
+      "id": "LOG-1713830400012",
+      "date": "2024-04-23",
+      "timestamp": "2024-04-23T09:22:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 92%)",
+      "relatedId": "TR-00269"
+    },
+    {
+      "id": "LOG-1713744000006",
+      "date": "2024-04-22",
+      "timestamp": "2024-04-22T09:16:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 92%)",
+      "relatedId": "TR-00164"
+    },
+    {
+      "id": "LOG-1713657600021",
+      "date": "2024-04-21",
+      "timestamp": "2024-04-21T09:31:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 90%)",
+      "relatedId": "TR-00316"
+    },
+    {
+      "id": "LOG-1713657600016",
+      "date": "2024-04-21",
+      "timestamp": "2024-04-21T09:26:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 85%)",
+      "relatedId": "TR-00072"
+    },
+    {
+      "id": "LOG-1713657600016",
+      "date": "2024-04-21",
+      "timestamp": "2024-04-21T09:26:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Performance, Stress & Load Testing with Apache JMeter (Score: 88%)",
+      "relatedId": "TR-00402"
+    },
+    {
+      "id": "LOG-1713571200011",
+      "date": "2024-04-20",
+      "timestamp": "2024-04-20T09:21:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 90%)",
+      "relatedId": "TR-00268"
+    },
+    {
+      "id": "LOG-1713484800005",
+      "date": "2024-04-19",
+      "timestamp": "2024-04-19T09:15:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 90%)",
+      "relatedId": "TR-00163"
+    },
+    {
+      "id": "LOG-1713398400020",
+      "date": "2024-04-18",
+      "timestamp": "2024-04-18T09:30:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 88%)",
+      "relatedId": "TR-00315"
+    },
+    {
+      "id": "LOG-1713398400015",
+      "date": "2024-04-18",
+      "timestamp": "2024-04-18T09:25:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 100%)",
+      "relatedId": "TR-00071"
+    },
+    {
+      "id": "LOG-1713398400015",
+      "date": "2024-04-18",
+      "timestamp": "2024-04-18T09:25:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed API Testing (Score: 100%)",
+      "relatedId": "TR-00401"
+    },
+    {
+      "id": "LOG-1713312000010",
+      "date": "2024-04-17",
+      "timestamp": "2024-04-17T09:20:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Requirements Elicitation Techniques (Score: 88%)",
+      "relatedId": "TR-00267"
+    },
+    {
+      "id": "LOG-1713225600004",
+      "date": "2024-04-16",
+      "timestamp": "2024-04-16T09:14:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 88%)",
+      "relatedId": "TR-00162"
+    },
+    {
+      "id": "LOG-1713139200019",
+      "date": "2024-04-15",
+      "timestamp": "2024-04-15T09:29:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Defect Lifecycle Management (Score: 100%)",
+      "relatedId": "TR-00314"
+    },
+    {
+      "id": "LOG-1713139200014",
+      "date": "2024-04-15",
+      "timestamp": "2024-04-15T09:24:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 98%)",
+      "relatedId": "TR-00070"
+    },
+    {
+      "id": "LOG-1713139200014",
+      "date": "2024-04-15",
+      "timestamp": "2024-04-15T09:24:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 95%)",
+      "relatedId": "TR-00400"
+    },
+    {
+      "id": "LOG-1713052800009",
+      "date": "2024-04-14",
+      "timestamp": "2024-04-14T09:19:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Budgeting and Resource Allocation (Score: 100%)",
+      "relatedId": "TR-00266"
+    },
+    {
+      "id": "LOG-1712966400003",
+      "date": "2024-04-13",
+      "timestamp": "2024-04-13T09:13:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 100%)",
+      "relatedId": "TR-00161"
+    },
+    {
+      "id": "LOG-1712880000018",
+      "date": "2024-04-12",
+      "timestamp": "2024-04-12T09:28:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Performance, Stress & Load Testing with Apache JMeter (Score: 95%)",
+      "relatedId": "TR-00313"
+    },
+    {
+      "id": "LOG-1712880000013",
+      "date": "2024-04-12",
+      "timestamp": "2024-04-12T09:23:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 96%)",
+      "relatedId": "TR-00069"
+    },
+    {
+      "id": "LOG-1712880000013",
+      "date": "2024-04-12",
+      "timestamp": "2024-04-12T09:23:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 90%)",
+      "relatedId": "TR-00399"
+    },
+    {
+      "id": "LOG-1712793600008",
+      "date": "2024-04-11",
+      "timestamp": "2024-04-11T09:18:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Stakeholder Communication (Score: 95%)",
+      "relatedId": "TR-00265"
+    },
+    {
+      "id": "LOG-1712707200002",
+      "date": "2024-04-10",
+      "timestamp": "2024-04-10T09:12:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 95%)",
+      "relatedId": "TR-00160"
+    },
+    {
+      "id": "LOG-1712620800017",
+      "date": "2024-04-09",
+      "timestamp": "2024-04-09T09:27:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed API Testing (Score: 90%)",
+      "relatedId": "TR-00312"
+    },
+    {
+      "id": "LOG-1712620800012",
+      "date": "2024-04-09",
+      "timestamp": "2024-04-09T09:22:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 95%)",
+      "relatedId": "TR-00068"
+    },
+    {
+      "id": "LOG-1712620800012",
+      "date": "2024-04-09",
+      "timestamp": "2024-04-09T09:22:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 85%)",
+      "relatedId": "TR-00398"
+    },
+    {
+      "id": "LOG-1712534400007",
+      "date": "2024-04-08",
+      "timestamp": "2024-04-08T09:17:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Enterprise Risk Management & Mitigation Matrix (Score: 90%)",
+      "relatedId": "TR-00264"
+    },
+    {
+      "id": "LOG-1712448000001",
+      "date": "2024-04-07",
+      "timestamp": "2024-04-07T09:11:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 90%)",
+      "relatedId": "TR-00159"
+    },
+    {
+      "id": "LOG-1712361600016",
+      "date": "2024-04-06",
+      "timestamp": "2024-04-06T09:26:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Automated UI & API Testing Frameworks (Playwright & Postman) (Score: 85%)",
+      "relatedId": "TR-00311"
+    },
+    {
+      "id": "LOG-1712361600011",
+      "date": "2024-04-06",
+      "timestamp": "2024-04-06T09:21:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 94%)",
+      "relatedId": "TR-00067"
+    },
+    {
+      "id": "LOG-1712361600011",
+      "date": "2024-04-06",
+      "timestamp": "2024-04-06T09:21:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 100%)",
+      "relatedId": "TR-00397"
+    },
+    {
+      "id": "LOG-1712275200006",
+      "date": "2024-04-05",
+      "timestamp": "2024-04-05T09:16:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 85%)",
+      "relatedId": "TR-00263"
+    },
+    {
+      "id": "LOG-1712188800000",
+      "date": "2024-04-04",
+      "timestamp": "2024-04-04T09:10:00",
+      "type": "training_completed",
+      "description": "Bhanutad A. (BA) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 85%)",
+      "relatedId": "TR-00158"
+    },
+    {
+      "id": "LOG-1712102400015",
+      "date": "2024-04-03",
+      "timestamp": "2024-04-03T09:25:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 100%)",
+      "relatedId": "TR-00310"
+    },
+    {
+      "id": "LOG-1712102400010",
+      "date": "2024-04-03",
+      "timestamp": "2024-04-03T09:20:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 92%)",
+      "relatedId": "TR-00066"
+    },
+    {
+      "id": "LOG-1712102400010",
+      "date": "2024-04-03",
+      "timestamp": "2024-04-03T09:20:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 98%)",
+      "relatedId": "TR-00396"
+    },
+    {
+      "id": "LOG-1712016000005",
+      "date": "2024-04-02",
+      "timestamp": "2024-04-02T09:15:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 100%)",
+      "relatedId": "TR-00262"
+    },
+    {
+      "id": "LOG-REG-SYE-0008",
+      "date": "2024-04-01",
+      "timestamp": "2024-04-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Bhanutad A. (BA - Permanent) joined Customer Experience Systems",
+      "relatedId": "SYE-0008"
+    },
+    {
+      "id": "LOG-1711843200014",
+      "date": "2024-03-31",
+      "timestamp": "2024-03-31T09:24:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 98%)",
+      "relatedId": "TR-00309"
+    },
+    {
+      "id": "LOG-1711843200009",
+      "date": "2024-03-31",
+      "timestamp": "2024-03-31T09:19:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Data Flow Analysis (Score: 90%)",
+      "relatedId": "TR-00065"
+    },
+    {
+      "id": "LOG-1711843200009",
+      "date": "2024-03-31",
+      "timestamp": "2024-03-31T09:19:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 96%)",
+      "relatedId": "TR-00395"
+    },
+    {
+      "id": "LOG-1711756800004",
+      "date": "2024-03-30",
+      "timestamp": "2024-03-30T09:14:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 98%)",
+      "relatedId": "TR-00261"
+    },
+    {
+      "id": "LOG-1711584000013",
+      "date": "2024-03-28",
+      "timestamp": "2024-03-28T09:23:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Automated Unit Testing & Mocking in Golang and Next.js (Score: 96%)",
+      "relatedId": "TR-00308"
+    },
+    {
+      "id": "LOG-1711584000008",
+      "date": "2024-03-28",
+      "timestamp": "2024-03-28T09:18:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 88%)",
+      "relatedId": "TR-00064"
+    },
+    {
+      "id": "LOG-1711584000008",
+      "date": "2024-03-28",
+      "timestamp": "2024-03-28T09:18:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 95%)",
+      "relatedId": "TR-00394"
+    },
+    {
+      "id": "LOG-1711497600003",
+      "date": "2024-03-27",
+      "timestamp": "2024-03-27T09:13:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 96%)",
+      "relatedId": "TR-00260"
+    },
+    {
+      "id": "LOG-1711411200017",
+      "date": "2024-03-26",
+      "timestamp": "2024-03-26T09:27:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Customer Experience Systems (CXS) Platform Architecture (Score: 88%)",
+      "relatedId": "TR-00157"
+    },
+    {
+      "id": "LOG-1711324800012",
+      "date": "2024-03-25",
+      "timestamp": "2024-03-25T09:22:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 95%)",
+      "relatedId": "TR-00307"
+    },
+    {
+      "id": "LOG-1711324800007",
+      "date": "2024-03-25",
+      "timestamp": "2024-03-25T09:17:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 100%)",
+      "relatedId": "TR-00063"
+    },
+    {
+      "id": "LOG-1711324800007",
+      "date": "2024-03-25",
+      "timestamp": "2024-03-25T09:17:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Data Flow Analysis (Score: 94%)",
+      "relatedId": "TR-00393"
+    },
+    {
+      "id": "LOG-1711238400002",
+      "date": "2024-03-24",
+      "timestamp": "2024-03-24T09:12:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 95%)",
+      "relatedId": "TR-00259"
+    },
+    {
+      "id": "LOG-1711152000016",
+      "date": "2024-03-23",
+      "timestamp": "2024-03-23T09:26:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Defect Lifecycle Management (Score: 100%)",
+      "relatedId": "TR-00156"
+    },
+    {
+      "id": "LOG-1711065600011",
+      "date": "2024-03-22",
+      "timestamp": "2024-03-22T09:21:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 94%)",
+      "relatedId": "TR-00306"
+    },
+    {
+      "id": "LOG-1711065600006",
+      "date": "2024-03-22",
+      "timestamp": "2024-03-22T09:16:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Budgeting and Resource Allocation (Score: 95%)",
+      "relatedId": "TR-00062"
+    },
+    {
+      "id": "LOG-1711065600006",
+      "date": "2024-03-22",
+      "timestamp": "2024-03-22T09:16:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 92%)",
+      "relatedId": "TR-00392"
+    },
+    {
+      "id": "LOG-1710979200001",
+      "date": "2024-03-21",
+      "timestamp": "2024-03-21T09:11:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 94%)",
+      "relatedId": "TR-00258"
+    },
+    {
+      "id": "LOG-1710892800015",
+      "date": "2024-03-20",
+      "timestamp": "2024-03-20T09:25:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed API Testing (Score: 95%)",
+      "relatedId": "TR-00155"
+    },
+    {
+      "id": "LOG-1710806400010",
+      "date": "2024-03-19",
+      "timestamp": "2024-03-19T09:20:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 92%)",
+      "relatedId": "TR-00305"
+    },
+    {
+      "id": "LOG-1710806400005",
+      "date": "2024-03-19",
+      "timestamp": "2024-03-19T09:15:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 90%)",
+      "relatedId": "TR-00061"
+    },
+    {
+      "id": "LOG-1710806400005",
+      "date": "2024-03-19",
+      "timestamp": "2024-03-19T09:15:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 90%)",
+      "relatedId": "TR-00391"
+    },
+    {
+      "id": "LOG-1710720000000",
+      "date": "2024-03-18",
+      "timestamp": "2024-03-18T09:10:00",
+      "type": "training_completed",
+      "description": "Krid T. (BA) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 92%)",
+      "relatedId": "TR-00257"
+    },
+    {
+      "id": "LOG-1710633600014",
+      "date": "2024-03-17",
+      "timestamp": "2024-03-17T09:24:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Enterprise API Design, RESTful Guidelines & Golang Microservices (Score: 90%)",
+      "relatedId": "TR-00154"
+    },
+    {
+      "id": "LOG-1710547200009",
+      "date": "2024-03-16",
+      "timestamp": "2024-03-16T09:19:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Data Flow Analysis (Score: 90%)",
+      "relatedId": "TR-00304"
+    },
+    {
+      "id": "LOG-1710547200004",
+      "date": "2024-03-16",
+      "timestamp": "2024-03-16T09:14:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 85%)",
+      "relatedId": "TR-00060"
+    },
+    {
+      "id": "LOG-1710547200004",
+      "date": "2024-03-16",
+      "timestamp": "2024-03-16T09:14:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 88%)",
+      "relatedId": "TR-00390"
+    },
+    {
+      "id": "LOG-REG-SYE-0012",
+      "date": "2024-03-15",
+      "timestamp": "2024-03-15T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Krid T. (BA - Permanent) joined User Application Systems",
+      "relatedId": "SYE-0012"
+    },
+    {
+      "id": "LOG-1710374400013",
+      "date": "2024-03-14",
+      "timestamp": "2024-03-14T09:23:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Data Flow Analysis (Score: 85%)",
+      "relatedId": "TR-00153"
+    },
+    {
+      "id": "LOG-1710288000008",
+      "date": "2024-03-13",
+      "timestamp": "2024-03-13T09:18:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 88%)",
+      "relatedId": "TR-00303"
+    },
+    {
+      "id": "LOG-1710288000003",
+      "date": "2024-03-13",
+      "timestamp": "2024-03-13T09:13:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 100%)",
+      "relatedId": "TR-00059"
+    },
+    {
+      "id": "LOG-1710288000003",
+      "date": "2024-03-13",
+      "timestamp": "2024-03-13T09:13:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 100%)",
+      "relatedId": "TR-00389"
+    },
+    {
+      "id": "LOG-1710115200012",
+      "date": "2024-03-11",
+      "timestamp": "2024-03-11T09:22:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 100%)",
+      "relatedId": "TR-00152"
+    },
+    {
+      "id": "LOG-1710028800007",
+      "date": "2024-03-10",
+      "timestamp": "2024-03-10T09:17:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 100%)",
+      "relatedId": "TR-00302"
+    },
+    {
+      "id": "LOG-1710028800002",
+      "date": "2024-03-10",
+      "timestamp": "2024-03-10T09:12:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 98%)",
+      "relatedId": "TR-00058"
+    },
+    {
+      "id": "LOG-1710028800002",
+      "date": "2024-03-10",
+      "timestamp": "2024-03-10T09:12:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 95%)",
+      "relatedId": "TR-00388"
+    },
+    {
+      "id": "LOG-1709856000011",
+      "date": "2024-03-08",
+      "timestamp": "2024-03-08T09:21:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 98%)",
+      "relatedId": "TR-00151"
+    },
+    {
+      "id": "LOG-1709769600006",
+      "date": "2024-03-07",
+      "timestamp": "2024-03-07T09:16:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Budgeting and Resource Allocation (Score: 95%)",
+      "relatedId": "TR-00301"
+    },
+    {
+      "id": "LOG-1709769600001",
+      "date": "2024-03-07",
+      "timestamp": "2024-03-07T09:11:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 96%)",
+      "relatedId": "TR-00057"
+    },
+    {
+      "id": "LOG-1709769600001",
+      "date": "2024-03-07",
+      "timestamp": "2024-03-07T09:11:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 90%)",
+      "relatedId": "TR-00387"
+    },
+    {
+      "id": "LOG-1709596800010",
+      "date": "2024-03-05",
+      "timestamp": "2024-03-05T09:20:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Requirements Elicitation Techniques (Score: 96%)",
+      "relatedId": "TR-00150"
+    },
+    {
+      "id": "LOG-1709510400005",
+      "date": "2024-03-04",
+      "timestamp": "2024-03-04T09:15:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 90%)",
+      "relatedId": "TR-00300"
+    },
+    {
+      "id": "LOG-1709510400000",
+      "date": "2024-03-04",
+      "timestamp": "2024-03-04T09:10:00",
+      "type": "training_completed",
+      "description": "Pongsatorn N. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 95%)",
+      "relatedId": "TR-00056"
+    },
+    {
+      "id": "LOG-1709510400000",
+      "date": "2024-03-04",
+      "timestamp": "2024-03-04T09:10:00",
+      "type": "training_completed",
+      "description": "Thanaboon T. (QA) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 85%)",
+      "relatedId": "TR-00386"
+    },
+    {
+      "id": "LOG-1709424000015",
+      "date": "2024-03-03",
+      "timestamp": "2024-03-03T09:25:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed System Reliability & Scalability (Score: 95%)",
+      "relatedId": "TR-00385"
+    },
+    {
+      "id": "LOG-1709337600009",
+      "date": "2024-03-02",
+      "timestamp": "2024-03-02T09:19:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Budgeting and Resource Allocation (Score: 95%)",
+      "relatedId": "TR-00149"
+    },
+    {
+      "id": "LOG-1709251200004",
+      "date": "2024-03-01",
+      "timestamp": "2024-03-01T09:14:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 85%)",
+      "relatedId": "TR-00299"
+    },
+    {
+      "id": "LOG-REG-SYE-0004",
+      "date": "2024-03-01",
+      "timestamp": "2024-03-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Pongsatorn N. (Developer - Permanent) joined API & Integration Platform",
+      "relatedId": "SYE-0004"
+    },
+    {
+      "id": "LOG-REG-SYE-0018",
+      "date": "2024-03-01",
+      "timestamp": "2024-03-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Thanaboon T. (QA - Outsource) joined Technology Standards & Quality",
+      "relatedId": "SYE-0018"
+    },
+    {
+      "id": "LOG-1709164800014",
+      "date": "2024-02-29",
+      "timestamp": "2024-02-29T09:24:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Containerization & Orchestration (Score: 90%)",
+      "relatedId": "TR-00384"
+    },
+    {
+      "id": "LOG-1709078400008",
+      "date": "2024-02-28",
+      "timestamp": "2024-02-28T09:18:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Stakeholder Communication (Score: 94%)",
+      "relatedId": "TR-00148"
+    },
+    {
+      "id": "LOG-1708992000018",
+      "date": "2024-02-27",
+      "timestamp": "2024-02-27T09:28:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Contact Center Application Features (Score: 90%)",
+      "relatedId": "TR-00055"
+    },
+    {
+      "id": "LOG-1708992000003",
+      "date": "2024-02-27",
+      "timestamp": "2024-02-27T09:13:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 100%)",
+      "relatedId": "TR-00298"
+    },
+    {
+      "id": "LOG-1708905600013",
+      "date": "2024-02-26",
+      "timestamp": "2024-02-26T09:23:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Incident Response & Post-Mortem (Score: 85%)",
+      "relatedId": "TR-00383"
+    },
+    {
+      "id": "LOG-1708819200007",
+      "date": "2024-02-25",
+      "timestamp": "2024-02-25T09:17:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Enterprise Risk Management & Mitigation Matrix (Score: 92%)",
+      "relatedId": "TR-00147"
+    },
+    {
+      "id": "LOG-1708732800017",
+      "date": "2024-02-24",
+      "timestamp": "2024-02-24T09:27:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Customer Experience Systems (CXS) Platform Architecture (Score: 98%)",
       "relatedId": "TR-00018"
     },
     {
-      "id": "LOG-00006",
-      "date": "2024-01-21",
-      "timestamp": "2024-01-21T15:30:00.000Z",
+      "id": "LOG-1708732800017",
+      "date": "2024-02-24",
+      "timestamp": "2024-02-24T09:27:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 88%)",
-      "relatedId": "TR-00006"
+      "description": "Rattanapakorn K. (PM) completed Microservices & Distributed Event-Driven Architecture Standard (Score: 100%)",
+      "relatedId": "TR-00036"
     },
     {
-      "id": "LOG-00028",
-      "date": "2024-01-21",
-      "timestamp": "2024-01-21T13:30:00.000Z",
+      "id": "LOG-1708732800017",
+      "date": "2024-02-24",
+      "timestamp": "2024-02-24T09:27:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 81%)",
-      "relatedId": "TR-00028"
+      "description": "Waranya T. (PM) completed Omnichannel Routing Logic & Unified Agent Workspace (Score: 85%)",
+      "relatedId": "TR-00054"
     },
     {
-      "id": "LOG-00017",
-      "date": "2024-01-21",
-      "timestamp": "2024-01-21T10:30:00.000Z",
+      "id": "LOG-1708732800002",
+      "date": "2024-02-24",
+      "timestamp": "2024-02-24T09:12:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance [GEN-006] (Score: 99%)",
+      "description": "Pakawat M. (Developer) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 98%)",
+      "relatedId": "TR-00297"
+    },
+    {
+      "id": "LOG-1708646400012",
+      "date": "2024-02-23",
+      "timestamp": "2024-02-23T09:22:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 100%)",
+      "relatedId": "TR-00382"
+    },
+    {
+      "id": "LOG-1708560000006",
+      "date": "2024-02-22",
+      "timestamp": "2024-02-22T09:16:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 90%)",
+      "relatedId": "TR-00146"
+    },
+    {
+      "id": "LOG-1708473600016",
+      "date": "2024-02-21",
+      "timestamp": "2024-02-21T09:26:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Incident Response & Post-Mortem (Score: 96%)",
       "relatedId": "TR-00017"
     },
     {
-      "id": "LOG-00005",
-      "date": "2024-01-18",
-      "timestamp": "2024-01-18T14:30:00.000Z",
+      "id": "LOG-1708473600016",
+      "date": "2024-02-21",
+      "timestamp": "2024-02-21T09:26:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 82%)",
-      "relatedId": "TR-00005"
+      "description": "Rattanapakorn K. (PM) completed Incident Response & Post-Mortem (Score: 98%)",
+      "relatedId": "TR-00035"
     },
     {
-      "id": "LOG-00027",
-      "date": "2024-01-18",
-      "timestamp": "2024-01-18T12:30:00.000Z",
+      "id": "LOG-1708473600016",
+      "date": "2024-02-21",
+      "timestamp": "2024-02-21T09:26:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 99%)",
-      "relatedId": "TR-00027"
+      "description": "Waranya T. (PM) completed Incident Response & Post-Mortem (Score: 100%)",
+      "relatedId": "TR-00053"
     },
     {
-      "id": "LOG-00016",
-      "date": "2024-01-18",
-      "timestamp": "2024-01-18T09:30:00.000Z",
+      "id": "LOG-1708473600001",
+      "date": "2024-02-21",
+      "timestamp": "2024-02-21T09:11:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed 100% On-Premise Infrastructure & Standard Technology Stack [GEN-005] (Score: 91%)",
+      "description": "Pakawat M. (Developer) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 96%)",
+      "relatedId": "TR-00296"
+    },
+    {
+      "id": "LOG-1708387200011",
+      "date": "2024-02-20",
+      "timestamp": "2024-02-20T09:21:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed On-Premise Infrastructure & VMware Tanzu Kubernetes Clustering (Score: 98%)",
+      "relatedId": "TR-00381"
+    },
+    {
+      "id": "LOG-1708300800005",
+      "date": "2024-02-19",
+      "timestamp": "2024-02-19T09:15:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 88%)",
+      "relatedId": "TR-00145"
+    },
+    {
+      "id": "LOG-1708214400015",
+      "date": "2024-02-18",
+      "timestamp": "2024-02-18T09:25:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 95%)",
       "relatedId": "TR-00016"
     },
     {
-      "id": "LOG-00015",
-      "date": "2024-01-15",
-      "timestamp": "2024-01-15T16:30:00.000Z",
+      "id": "LOG-1708214400015",
+      "date": "2024-02-18",
+      "timestamp": "2024-02-18T09:25:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 92%)",
+      "description": "Rattanapakorn K. (PM) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 96%)",
+      "relatedId": "TR-00034"
+    },
+    {
+      "id": "LOG-1708214400015",
+      "date": "2024-02-18",
+      "timestamp": "2024-02-18T09:25:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Observability, Prometheus Metrics & Grafana Telemetry Dashboards (Score: 98%)",
+      "relatedId": "TR-00052"
+    },
+    {
+      "id": "LOG-1708214400000",
+      "date": "2024-02-18",
+      "timestamp": "2024-02-18T09:10:00",
+      "type": "training_completed",
+      "description": "Pakawat M. (Developer) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 95%)",
+      "relatedId": "TR-00295"
+    },
+    {
+      "id": "LOG-1708128000010",
+      "date": "2024-02-17",
+      "timestamp": "2024-02-17T09:20:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Performance, Stress & Load Testing with Apache JMeter (Score: 96%)",
+      "relatedId": "TR-00380"
+    },
+    {
+      "id": "LOG-1708041600004",
+      "date": "2024-02-16",
+      "timestamp": "2024-02-16T09:14:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 100%)",
+      "relatedId": "TR-00144"
+    },
+    {
+      "id": "LOG-1707955200014",
+      "date": "2024-02-15",
+      "timestamp": "2024-02-15T09:24:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Defect Lifecycle Management (Score: 94%)",
       "relatedId": "TR-00015"
     },
     {
-      "id": "LOG-00004",
-      "date": "2024-01-15",
-      "timestamp": "2024-01-15T13:30:00.000Z",
+      "id": "LOG-1707955200014",
+      "date": "2024-02-15",
+      "timestamp": "2024-02-15T09:24:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 94%)",
-      "relatedId": "TR-00004"
+      "description": "Rattanapakorn K. (PM) completed Defect Lifecycle Management (Score: 95%)",
+      "relatedId": "TR-00033"
     },
     {
-      "id": "LOG-00026",
-      "date": "2024-01-15",
-      "timestamp": "2024-01-15T11:30:00.000Z",
+      "id": "LOG-1707955200014",
+      "date": "2024-02-15",
+      "timestamp": "2024-02-15T09:24:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows [GEN-004] (Score: 86%)",
-      "relatedId": "TR-00026"
+      "description": "Waranya T. (PM) completed Defect Lifecycle Management (Score: 96%)",
+      "relatedId": "TR-00051"
     },
     {
-      "id": "LOG-00014",
-      "date": "2024-01-12",
-      "timestamp": "2024-01-12T15:30:00.000Z",
+      "id": "LOG-REG-SYE-0014",
+      "date": "2024-02-15",
+      "timestamp": "2024-02-15T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Pakawat M. (Developer - Permanent) joined User Application Systems",
+      "relatedId": "SYE-0014"
+    },
+    {
+      "id": "LOG-1707868800009",
+      "date": "2024-02-14",
+      "timestamp": "2024-02-14T09:19:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 91%)",
+      "description": "Kittin T. (SRE) completed CI/CD Pipeline Integration & Quality Gates on RHEL Runners (Score: 95%)",
+      "relatedId": "TR-00379"
+    },
+    {
+      "id": "LOG-1707782400003",
+      "date": "2024-02-13",
+      "timestamp": "2024-02-13T09:13:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 95%)",
+      "relatedId": "TR-00143"
+    },
+    {
+      "id": "LOG-1707696000013",
+      "date": "2024-02-12",
+      "timestamp": "2024-02-12T09:23:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 92%)",
       "relatedId": "TR-00014"
     },
     {
-      "id": "LOG-00003",
-      "date": "2024-01-12",
-      "timestamp": "2024-01-12T12:30:00.000Z",
+      "id": "LOG-1707696000013",
+      "date": "2024-02-12",
+      "timestamp": "2024-02-12T09:23:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 87%)",
-      "relatedId": "TR-00003"
+      "description": "Rattanapakorn K. (PM) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 94%)",
+      "relatedId": "TR-00032"
     },
     {
-      "id": "LOG-00025",
-      "date": "2024-01-12",
-      "timestamp": "2024-01-12T10:30:00.000Z",
+      "id": "LOG-1707696000013",
+      "date": "2024-02-12",
+      "timestamp": "2024-02-12T09:23:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) [GEN-003] (Score: 86%)",
-      "relatedId": "TR-00025"
+      "description": "Waranya T. (PM) completed Enterprise Test Planning & 70/20/10 Testing Strategy (Score: 95%)",
+      "relatedId": "TR-00050"
     },
     {
-      "id": "LOG-00013",
-      "date": "2024-01-09",
-      "timestamp": "2024-01-09T14:30:00.000Z",
+      "id": "LOG-1707609600008",
+      "date": "2024-02-11",
+      "timestamp": "2024-02-11T09:18:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 89%)",
+      "description": "Kittin T. (SRE) completed Git Workflow, Conventional Commits & Trunk-Based Release (Score: 94%)",
+      "relatedId": "TR-00378"
+    },
+    {
+      "id": "LOG-1707523200002",
+      "date": "2024-02-10",
+      "timestamp": "2024-02-10T09:12:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 90%)",
+      "relatedId": "TR-00142"
+    },
+    {
+      "id": "LOG-1707436800012",
+      "date": "2024-02-09",
+      "timestamp": "2024-02-09T09:22:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 90%)",
       "relatedId": "TR-00013"
     },
     {
-      "id": "LOG-00002",
-      "date": "2024-01-09",
-      "timestamp": "2024-01-09T11:30:00.000Z",
+      "id": "LOG-1707436800012",
+      "date": "2024-02-09",
+      "timestamp": "2024-02-09T09:22:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 87%)",
-      "relatedId": "TR-00002"
+      "description": "Rattanapakorn K. (PM) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 92%)",
+      "relatedId": "TR-00031"
     },
     {
-      "id": "LOG-00024",
-      "date": "2024-01-09",
-      "timestamp": "2024-01-09T09:30:00.000Z",
+      "id": "LOG-1707436800012",
+      "date": "2024-02-09",
+      "timestamp": "2024-02-09T09:22:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) [GEN-002] (Score: 80%)",
-      "relatedId": "TR-00024"
+      "description": "Waranya T. (PM) completed Business Process Modeling with BPMN 2.0 & Swimlanes (Score: 94%)",
+      "relatedId": "TR-00049"
     },
     {
-      "id": "LOG-00023",
-      "date": "2024-01-06",
-      "timestamp": "2024-01-06T16:30:00.000Z",
+      "id": "LOG-1707350400007",
+      "date": "2024-02-08",
+      "timestamp": "2024-02-08T09:17:00",
       "type": "training_completed",
-      "description": "Waranya T. (SYE-0003 - PM) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 92%)",
-      "relatedId": "TR-00023"
+      "description": "Kittin T. (SRE) completed Secure Coding Practices & OWASP Top 10 Mitigation (Score: 92%)",
+      "relatedId": "TR-00377"
     },
     {
-      "id": "LOG-00012",
-      "date": "2024-01-06",
-      "timestamp": "2024-01-06T13:30:00.000Z",
+      "id": "LOG-1707264000001",
+      "date": "2024-02-07",
+      "timestamp": "2024-02-07T09:11:00",
       "type": "training_completed",
-      "description": "Rattanapakorn K. (SYE-0002 - PM) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 98%)",
+      "description": "Kingkarn P. (BA) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 85%)",
+      "relatedId": "TR-00141"
+    },
+    {
+      "id": "LOG-1707177600011",
+      "date": "2024-02-06",
+      "timestamp": "2024-02-06T09:21:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 88%)",
       "relatedId": "TR-00012"
     },
     {
-      "id": "LOG-00001",
-      "date": "2024-01-06",
-      "timestamp": "2024-01-06T10:30:00.000Z",
+      "id": "LOG-1707177600011",
+      "date": "2024-02-06",
+      "timestamp": "2024-02-06T09:21:00",
       "type": "training_completed",
-      "description": "Akkharasaran S. (SYE-0001 - PM) completed SYE Division Orientation, Leadership & Workplace Guidelines [GEN-001] (Score: 95%)",
+      "description": "Rattanapakorn K. (PM) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 90%)",
+      "relatedId": "TR-00030"
+    },
+    {
+      "id": "LOG-1707177600011",
+      "date": "2024-02-06",
+      "timestamp": "2024-02-06T09:21:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Writing User Stories, Given-When-Then Criteria & DoR Standards (Score: 92%)",
+      "relatedId": "TR-00048"
+    },
+    {
+      "id": "LOG-1707091200006",
+      "date": "2024-02-05",
+      "timestamp": "2024-02-05T09:16:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Enterprise Risk Management & Mitigation Matrix (Score: 90%)",
+      "relatedId": "TR-00376"
+    },
+    {
+      "id": "LOG-1707004800000",
+      "date": "2024-02-04",
+      "timestamp": "2024-02-04T09:10:00",
+      "type": "training_completed",
+      "description": "Kingkarn P. (BA) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 100%)",
+      "relatedId": "TR-00140"
+    },
+    {
+      "id": "LOG-1706918400010",
+      "date": "2024-02-03",
+      "timestamp": "2024-02-03T09:20:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Requirements Elicitation Techniques (Score: 100%)",
+      "relatedId": "TR-00011"
+    },
+    {
+      "id": "LOG-1706918400010",
+      "date": "2024-02-03",
+      "timestamp": "2024-02-03T09:20:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Requirements Elicitation Techniques (Score: 88%)",
+      "relatedId": "TR-00029"
+    },
+    {
+      "id": "LOG-1706918400010",
+      "date": "2024-02-03",
+      "timestamp": "2024-02-03T09:20:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Requirements Elicitation Techniques (Score: 90%)",
+      "relatedId": "TR-00047"
+    },
+    {
+      "id": "LOG-1706832000005",
+      "date": "2024-02-02",
+      "timestamp": "2024-02-02T09:15:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 88%)",
+      "relatedId": "TR-00375"
+    },
+    {
+      "id": "LOG-REG-SYE-0007",
+      "date": "2024-02-01",
+      "timestamp": "2024-02-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Kingkarn P. (BA - Permanent) joined Customer Experience Systems",
+      "relatedId": "SYE-0007"
+    },
+    {
+      "id": "LOG-1706659200009",
+      "date": "2024-01-31",
+      "timestamp": "2024-01-31T09:19:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Budgeting and Resource Allocation (Score: 95%)",
+      "relatedId": "TR-00010"
+    },
+    {
+      "id": "LOG-1706659200009",
+      "date": "2024-01-31",
+      "timestamp": "2024-01-31T09:19:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Budgeting and Resource Allocation (Score: 100%)",
+      "relatedId": "TR-00028"
+    },
+    {
+      "id": "LOG-1706659200009",
+      "date": "2024-01-31",
+      "timestamp": "2024-01-31T09:19:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Budgeting and Resource Allocation (Score: 88%)",
+      "relatedId": "TR-00046"
+    },
+    {
+      "id": "LOG-1706572800004",
+      "date": "2024-01-30",
+      "timestamp": "2024-01-30T09:14:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 100%)",
+      "relatedId": "TR-00374"
+    },
+    {
+      "id": "LOG-1706400000008",
+      "date": "2024-01-28",
+      "timestamp": "2024-01-28T09:18:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Stakeholder Communication (Score: 90%)",
+      "relatedId": "TR-00009"
+    },
+    {
+      "id": "LOG-1706400000008",
+      "date": "2024-01-28",
+      "timestamp": "2024-01-28T09:18:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Stakeholder Communication (Score: 95%)",
+      "relatedId": "TR-00027"
+    },
+    {
+      "id": "LOG-1706400000008",
+      "date": "2024-01-28",
+      "timestamp": "2024-01-28T09:18:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Stakeholder Communication (Score: 100%)",
+      "relatedId": "TR-00045"
+    },
+    {
+      "id": "LOG-1706313600003",
+      "date": "2024-01-27",
+      "timestamp": "2024-01-27T09:13:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 95%)",
+      "relatedId": "TR-00373"
+    },
+    {
+      "id": "LOG-1706140800007",
+      "date": "2024-01-25",
+      "timestamp": "2024-01-25T09:17:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Enterprise Risk Management & Mitigation Matrix (Score: 85%)",
+      "relatedId": "TR-00008"
+    },
+    {
+      "id": "LOG-1706140800007",
+      "date": "2024-01-25",
+      "timestamp": "2024-01-25T09:17:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Enterprise Risk Management & Mitigation Matrix (Score: 90%)",
+      "relatedId": "TR-00026"
+    },
+    {
+      "id": "LOG-1706140800007",
+      "date": "2024-01-25",
+      "timestamp": "2024-01-25T09:17:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Enterprise Risk Management & Mitigation Matrix (Score: 95%)",
+      "relatedId": "TR-00044"
+    },
+    {
+      "id": "LOG-1706054400002",
+      "date": "2024-01-24",
+      "timestamp": "2024-01-24T09:12:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 90%)",
+      "relatedId": "TR-00372"
+    },
+    {
+      "id": "LOG-1705881600006",
+      "date": "2024-01-22",
+      "timestamp": "2024-01-22T09:16:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 100%)",
+      "relatedId": "TR-00007"
+    },
+    {
+      "id": "LOG-1705881600006",
+      "date": "2024-01-22",
+      "timestamp": "2024-01-22T09:16:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 85%)",
+      "relatedId": "TR-00025"
+    },
+    {
+      "id": "LOG-1705881600006",
+      "date": "2024-01-22",
+      "timestamp": "2024-01-22T09:16:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Enterprise Project Governance, WBS & Milestone Tracking (Score: 90%)",
+      "relatedId": "TR-00043"
+    },
+    {
+      "id": "LOG-1705795200001",
+      "date": "2024-01-21",
+      "timestamp": "2024-01-21T09:11:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 85%)",
+      "relatedId": "TR-00371"
+    },
+    {
+      "id": "LOG-1705622400005",
+      "date": "2024-01-19",
+      "timestamp": "2024-01-19T09:15:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 98%)",
+      "relatedId": "TR-00006"
+    },
+    {
+      "id": "LOG-1705622400005",
+      "date": "2024-01-19",
+      "timestamp": "2024-01-19T09:15:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 100%)",
+      "relatedId": "TR-00024"
+    },
+    {
+      "id": "LOG-1705622400005",
+      "date": "2024-01-19",
+      "timestamp": "2024-01-19T09:15:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Business Continuity Plan (BCP), Disaster Recovery (DR Site) & PDPA Compliance (Score: 85%)",
+      "relatedId": "TR-00042"
+    },
+    {
+      "id": "LOG-1705536000000",
+      "date": "2024-01-18",
+      "timestamp": "2024-01-18T09:10:00",
+      "type": "training_completed",
+      "description": "Kittin T. (SRE) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 100%)",
+      "relatedId": "TR-00370"
+    },
+    {
+      "id": "LOG-1705363200004",
+      "date": "2024-01-16",
+      "timestamp": "2024-01-16T09:14:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 96%)",
+      "relatedId": "TR-00005"
+    },
+    {
+      "id": "LOG-1705363200004",
+      "date": "2024-01-16",
+      "timestamp": "2024-01-16T09:14:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 98%)",
+      "relatedId": "TR-00023"
+    },
+    {
+      "id": "LOG-1705363200004",
+      "date": "2024-01-16",
+      "timestamp": "2024-01-16T09:14:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed 100% On-Premise Infrastructure & Standard Technology Stack (Score: 100%)",
+      "relatedId": "TR-00041"
+    },
+    {
+      "id": "LOG-REG-SYE-0017",
+      "date": "2024-01-15",
+      "timestamp": "2024-01-15T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Kittin T. (SRE - Permanent) joined Technology Standards & Quality",
+      "relatedId": "SYE-0017"
+    },
+    {
+      "id": "LOG-1705104000003",
+      "date": "2024-01-13",
+      "timestamp": "2024-01-13T09:13:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 95%)",
+      "relatedId": "TR-00004"
+    },
+    {
+      "id": "LOG-1705104000003",
+      "date": "2024-01-13",
+      "timestamp": "2024-01-13T09:13:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 96%)",
+      "relatedId": "TR-00022"
+    },
+    {
+      "id": "LOG-1705104000003",
+      "date": "2024-01-13",
+      "timestamp": "2024-01-13T09:13:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Enterprise On-Premise Tooling: Jira Data Center & Confluence Workflows (Score: 98%)",
+      "relatedId": "TR-00040"
+    },
+    {
+      "id": "LOG-1704844800002",
+      "date": "2024-01-10",
+      "timestamp": "2024-01-10T09:12:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 94%)",
+      "relatedId": "TR-00003"
+    },
+    {
+      "id": "LOG-1704844800002",
+      "date": "2024-01-10",
+      "timestamp": "2024-01-10T09:12:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 95%)",
+      "relatedId": "TR-00021"
+    },
+    {
+      "id": "LOG-1704844800002",
+      "date": "2024-01-10",
+      "timestamp": "2024-01-10T09:12:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Adaptive Software Development Life Cycle (Hybrid Agile & Waterfall) (Score: 96%)",
+      "relatedId": "TR-00039"
+    },
+    {
+      "id": "LOG-1704585600001",
+      "date": "2024-01-07",
+      "timestamp": "2024-01-07T09:11:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 92%)",
+      "relatedId": "TR-00002"
+    },
+    {
+      "id": "LOG-1704585600001",
+      "date": "2024-01-07",
+      "timestamp": "2024-01-07T09:11:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 94%)",
+      "relatedId": "TR-00020"
+    },
+    {
+      "id": "LOG-1704585600001",
+      "date": "2024-01-07",
+      "timestamp": "2024-01-07T09:11:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed Integrated ISO Governance & Compliance Standards (ISO 27001, 9001, 14001, 22301) (Score: 95%)",
+      "relatedId": "TR-00038"
+    },
+    {
+      "id": "LOG-1704326400000",
+      "date": "2024-01-04",
+      "timestamp": "2024-01-04T09:10:00",
+      "type": "training_completed",
+      "description": "Akkharasaran S. (PM) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 90%)",
       "relatedId": "TR-00001"
+    },
+    {
+      "id": "LOG-1704326400000",
+      "date": "2024-01-04",
+      "timestamp": "2024-01-04T09:10:00",
+      "type": "training_completed",
+      "description": "Rattanapakorn K. (PM) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 92%)",
+      "relatedId": "TR-00019"
+    },
+    {
+      "id": "LOG-1704326400000",
+      "date": "2024-01-04",
+      "timestamp": "2024-01-04T09:10:00",
+      "type": "training_completed",
+      "description": "Waranya T. (PM) completed SYE Division Orientation, Leadership & Workplace Guidelines (Score: 94%)",
+      "relatedId": "TR-00037"
+    },
+    {
+      "id": "LOG-REG-SYE-0001",
+      "date": "2024-01-01",
+      "timestamp": "2024-01-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Akkharasaran S. (PM - Permanent) joined Customer Experience Systems",
+      "relatedId": "SYE-0001"
+    },
+    {
+      "id": "LOG-REG-SYE-0002",
+      "date": "2024-01-01",
+      "timestamp": "2024-01-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Rattanapakorn K. (PM - Permanent) joined API & Integration Platform",
+      "relatedId": "SYE-0002"
+    },
+    {
+      "id": "LOG-REG-SYE-0003",
+      "date": "2024-01-01",
+      "timestamp": "2024-01-01T08:30:00",
+      "type": "employee_added",
+      "description": "Engineer Waranya T. (PM - Permanent) joined User Application Systems",
+      "relatedId": "SYE-0003"
     }
   ]
 };
