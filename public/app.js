@@ -184,13 +184,12 @@ const DB = {
     }
 };
 
-// Initialize Data (Always sync authentic personnel and master curriculum)
+// Initialize Data
 function initData() {
     if (!localStorage.getItem('sye_employees') || (window.SYE_SAMPLE_DATA && DB.get('sye_employees').length !== window.SYE_SAMPLE_DATA.employees.length)) {
         console.log("Loading authentic master data...");
         loadSampleData();
     } else if (window.SYE_SAMPLE_DATA) {
-        // Sync course contents & quizzes while preserving custom records
         DB.set('sye_courses', window.SYE_SAMPLE_DATA.courses);
         DB.set('sye_work_instructions', window.SYE_SAMPLE_DATA.workInstructions);
         DB.set('sye_quizzes', window.SYE_SAMPLE_DATA.quizzes);
@@ -252,6 +251,27 @@ const DataAPI = {
         };
     }
 };
+
+// Smooth Counter Animation Helper
+function animateCounter(elementId, targetValue, suffix = '') {
+    const el = document.getElementById(elementId);
+    if (!el) return;
+    const duration = 1000;
+    const startTime = performance.now();
+    const update = (currentTime) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        const currentVal = Math.floor(easeOut * targetValue);
+        el.textContent = currentVal + suffix;
+        if (progress < 1) {
+            requestAnimationFrame(update);
+        } else {
+            el.textContent = targetValue + suffix;
+        }
+    };
+    requestAnimationFrame(update);
+}
 
 // ===== SHARED UI HELPERS =====
 const UI = {
@@ -354,7 +374,6 @@ function handleRoute() {
     
     let hash = window.location.hash.substring(1) || 'landing';
     
-    // Dynamic course route
     let courseMatch = hash.match(/^course-(.+)$/);
     let isCourseRoute = false;
     let courseId = null;
@@ -386,7 +405,6 @@ function handleRoute() {
         document.getElementById('admin-layout').classList.remove('hidden');
         document.getElementById('admin-layout').classList.add('flex');
         
-        // Sidebar active status
         document.querySelectorAll('.nav-item').forEach(el => {
             el.classList.remove('active');
             if(el.getAttribute('href') === '#' + hash) {
@@ -414,14 +432,14 @@ window.addEventListener('hashchange', handleRoute);
 
 // ===== LEARNER PORTAL SCREENS =====
 
-// 1. Landing Screen
+// 1. Landing Screen (With Official AEON Logo)
 function renderLanding(container) {
     const employees = DataAPI.getEmployees();
     
     container.innerHTML = `
-        <div class="max-w-2xl w-full my-auto py-8">
+        <div class="max-w-2xl w-full my-auto py-8 animate-fade-in-up">
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 text-center">
-                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-6 shadow-sm">🎓</div>
+                <img src="favicon.svg" alt="AEON" class="w-20 h-20 rounded-3xl mx-auto mb-6 shadow-md object-cover border border-slate-200">
                 <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">${I18N.t('app_title')}</h1>
                 <p class="text-slate-500 text-sm max-w-md mx-auto mb-10 leading-relaxed font-medium">
                     ${I18N.t('app_subtitle')}<br>
@@ -477,7 +495,7 @@ function renderLanding(container) {
 // 2. Registration Screen
 function renderRegister(container) {
     container.innerHTML = `
-        <div class="max-w-lg w-full my-auto py-6">
+        <div class="max-w-lg w-full my-auto py-6 animate-fade-in-up">
             <div class="mb-4">
                 <a href="#landing" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
@@ -485,7 +503,7 @@ function renderRegister(container) {
             </div>
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8">
                 <div class="flex items-center space-x-3 mb-6">
-                    <div class="w-10 h-10 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold text-xl">📝</div>
+                    <img src="favicon.svg" alt="AEON" class="w-10 h-10 rounded-xl shadow-xs object-cover border border-slate-200">
                     <div>
                         <h2 class="text-xl font-bold text-slate-800">${I18N.t('reg_title')}</h2>
                         <p class="text-xs text-slate-500">${I18N.t('reg_desc')}</p>
@@ -605,7 +623,6 @@ function renderMyTraining(container) {
     const allLearnerRecords = DataAPI.getRecords().filter(r => r.employeeId === learnerId);
     const completedCourseIds = new Set(records.map(r => r.courseId));
 
-    // Grouping
     const generalCourses = allCourses.filter(c => c.targetRoles.includes('All') && !c.targetSection);
     const roleCourses = allCourses.filter(c => c.targetRoles.includes(emp.role) && !c.targetSection && !c.targetRoles.includes('All'));
     const sectionCourses = allCourses.filter(c => c.targetSection === emp.section && (c.targetRoles.includes('All') || c.targetRoles.includes(emp.role)));
@@ -613,7 +630,7 @@ function renderMyTraining(container) {
     const stats = DataAPI.getEmployeeStats(learnerId);
 
     container.innerHTML = `
-        <div class="max-w-4xl w-full py-4">
+        <div class="max-w-4xl w-full py-4 animate-fade-in-up">
             <div class="flex justify-between items-center mb-6">
                 <a href="#landing" class="text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
@@ -626,9 +643,7 @@ function renderMyTraining(container) {
             <!-- Learner Header Card -->
             <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
                 <div class="flex items-center space-x-4">
-                    <div class="w-16 h-16 rounded-2xl bg-blue-600 text-white flex items-center justify-center font-bold text-2xl shadow-sm">
-                        ${emp.name.charAt(0)}
-                    </div>
+                    <img src="favicon.svg" alt="AEON" class="w-16 h-16 rounded-2xl shadow-xs object-cover border border-slate-200 shrink-0">
                     <div>
                         <div class="flex items-center gap-2">
                             <h2 class="text-2xl font-bold text-slate-800">${I18N.t('welcome')}, ${emp.name}</h2>
@@ -783,14 +798,12 @@ function formatRichContent(rawText) {
             .replace(/\*(.*?)\*/g, '<em class="italic text-slate-700">$1</em>');
     }
 
-    // 1. Preserve HTML blocks (like image containers)
     text = text.replace(/<div[\s\S]*?<\/div>/gi, (match) => {
         const id = `@@HTML_BLOCK_${tokens.length}@@`;
         tokens.push({ id, html: match });
         return `\n\n${id}\n\n`;
     });
 
-    // 2. Fenced Code Blocks
     text = text.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
         const id = `@@CODE_BLOCK_${tokens.length}@@`;
         const escaped = code
@@ -807,7 +820,6 @@ function formatRichContent(rawText) {
         return `\n\n${id}\n\n`;
     });
 
-    // 3. Tables
     text = text.replace(/((?:\|[^\n]+\|\n)+)/g, (match) => {
         const lines = match.trim().split('\n').filter(l => l.trim().startsWith('|'));
         if (lines.length >= 2) {
@@ -843,7 +855,6 @@ function formatRichContent(rawText) {
         return match;
     });
 
-    // 4. Line by line
     const lines = text.split('\n');
     let outHtml = '';
     let inOl = false;
@@ -1002,7 +1013,7 @@ function renderCourse(container, courseId) {
     }
 
     container.innerHTML = `
-        <div class="max-w-5xl w-full py-4">
+        <div class="max-w-5xl w-full py-4 animate-fade-in-up">
             <div class="mb-4">
                 <a href="#my-training" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_roadmap')}
@@ -1137,7 +1148,6 @@ function renderQuiz(container, quiz, learnerId, courseId) {
         const passed = percent >= quiz.passingScore;
         const resId = 'QR-' + Date.now();
         
-        // Save quiz result
         const results = DataAPI.getQuizResults();
         results.push({
             id: resId,
@@ -1152,10 +1162,8 @@ function renderQuiz(container, quiz, learnerId, courseId) {
         });
         DB.set('sye_quiz_results', results);
 
-        // Save training record
         saveTrainingRecord(learnerId, courseId, passed ? 'Completed' : 'Failed', percent, passed, 'Online', 'Akkharasaran S.');
 
-        // Show result UI
         const resDiv = document.getElementById('quiz-result');
         resDiv.classList.remove('hidden');
         if(passed) {
@@ -1213,7 +1221,7 @@ function saveTrainingRecord(empId, courseId, status, score, passed, method, trai
     DB.logActivity('training_completed', `${emp ? emp.name : empId} (${emp ? emp.role : ''}) ${status === 'Completed' ? 'completed' : status.toLowerCase()} ${course ? course.name : courseId}${score !== null ? ` (Score: ${score}%)` : ''}`, courseId);
 }
 
-// 6. Detailed Quiz Breakdown & Answer Review Modal
+// 6. Detailed Quiz Breakdown Modal
 window.viewLearnerQuizReview = (empId, courseId) => {
     const quiz = DataAPI.getQuizzes().find(q => q.courseId === courseId) || DataAPI.getQuizzes()[0];
     const results = DataAPI.getQuizResults().filter(r => r.employeeId === empId && r.quizId === quiz.id);
@@ -1236,7 +1244,6 @@ window.viewQuizBreakdownModal = (resId) => {
     
     let html = `
         <div class="space-y-6">
-            <!-- Header Result Summary -->
             <div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-slate-50 rounded-2xl border border-slate-200 gap-4">
                 <div>
                     <h3 class="font-bold text-slate-800 text-base">${quiz.title}</h3>
@@ -1253,7 +1260,6 @@ window.viewQuizBreakdownModal = (resId) => {
                 </div>
             </div>
 
-            <!-- Questions Breakdown -->
             <div class="space-y-4">
                 <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Questions Breakdown & Explanations</h4>
                 ${quiz.questions.map((q, idx) => {
@@ -1298,7 +1304,6 @@ window.viewQuizBreakdownModal = (resId) => {
     UI.showModal(I18N.t('assessment_review_title'), html, null, '', false);
 };
 
-// Preview empty quiz questions
 window.viewQuizPreview = (quizId) => {
     const quiz = DataAPI.getQuizzes().find(q => q.id === quizId);
     if (!quiz) return;
@@ -1332,7 +1337,7 @@ window.viewQuizPreview = (quizId) => {
 
 // ===== ADMIN PORTAL SCREENS =====
 
-// 1. Dashboard (With Enhanced Animations, Number Labels & Multi-Color Role Bars)
+// 1. Dashboard (With Animated Counters & High-Performance Chart Transitions)
 function renderDashboard(container) {
     const employees = DataAPI.getEmployees();
     const courses = DataAPI.getCourses();
@@ -1351,215 +1356,227 @@ function renderDashboard(container) {
     const sortedLogs = [...logs].sort((a,b) => new Date(b.timestamp) - new Date(a.timestamp));
 
     container.innerHTML = `
-        <!-- Stats Summary Row -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-blue-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Engineers (SYE)</p>
-                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${totalEmps}</p>
+        <div class="space-y-8 animate-fade-in-up">
+            <!-- Stats Summary Row -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-blue-500 hover:shadow-md transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Engineers (SYE)</p>
+                            <p id="stat-total" class="text-3xl font-extrabold text-slate-800 mt-1">0</p>
+                        </div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl">👥</div>
                     </div>
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl">👥</div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-emerald-500 hover:shadow-md transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Fully Onboarded (100%)</p>
+                            <p id="stat-completed" class="text-3xl font-extrabold text-slate-800 mt-1">0</p>
+                        </div>
+                        <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl">✅</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-amber-500 hover:shadow-md transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">In Progress</p>
+                            <p id="stat-inprog" class="text-3xl font-extrabold text-slate-800 mt-1">0</p>
+                        </div>
+                        <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-2xl">🔄</div>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-indigo-500 hover:shadow-md transition">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Avg Completion</p>
+                            <p id="stat-avg" class="text-3xl font-extrabold text-slate-800 mt-1">0%</p>
+                        </div>
+                        <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-2xl">📈</div>
+                    </div>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-emerald-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Fully Onboarded (100%)</p>
-                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${compl}</p>
-                    </div>
-                    <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-2xl">✅</div>
-                </div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-amber-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">In Progress</p>
-                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${inprog}</p>
-                    </div>
-                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-2xl">🔄</div>
-                </div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-indigo-500">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Avg Completion</p>
-                        <p class="text-3xl font-extrabold text-slate-800 mt-1">${overallCompRate}%</p>
-                    </div>
-                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-2xl">📈</div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Charts Row -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
-                    <span class="text-xs font-semibold text-blue-600">4 Core Sections</span>
+            <!-- Charts Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
+                        <span class="text-xs font-semibold text-blue-600">4 Core Sections</span>
+                    </div>
+                    <div class="relative h-64"><canvas id="sectionChart"></canvas></div>
                 </div>
-                <div class="relative h-64"><canvas id="sectionChart"></canvas></div>
-            </div>
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <div class="flex items-center justify-between mb-4">
-                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
-                    <span class="text-xs font-semibold text-slate-400">Average % Completed</span>
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
+                    <div class="flex items-center justify-between mb-4">
+                        <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
+                        <span class="text-xs font-semibold text-slate-400">Average % Completed</span>
+                    </div>
+                    <div class="relative h-64"><canvas id="roleChart"></canvas></div>
                 </div>
-                <div class="relative h-64"><canvas id="roleChart"></canvas></div>
             </div>
-        </div>
 
-        <!-- Statistics & Activity Row -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">SYE Engineering Knowledge Base</h3>
-                <div class="grid grid-cols-3 gap-4 text-center">
-                    <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                        <div class="text-3xl font-extrabold text-blue-600">${courses.length}</div>
-                        <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Total Courses</div>
+            <!-- Statistics & Activity Row -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">SYE Engineering Knowledge Base</h3>
+                    <div class="grid grid-cols-3 gap-4 text-center">
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="text-3xl font-extrabold text-blue-600">${courses.length}</div>
+                            <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Total Courses</div>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="text-3xl font-extrabold text-indigo-600">${DataAPI.getWIs().length}</div>
+                            <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Work Instructions</div>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
+                            <div class="text-3xl font-extrabold text-amber-600">${DataAPI.getQuizzes().length}</div>
+                            <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Technical Quizzes</div>
+                        </div>
                     </div>
-                    <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                        <div class="text-3xl font-extrabold text-indigo-600">${DataAPI.getWIs().length}</div>
-                        <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Work Instructions</div>
-                    </div>
-                    <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
-                        <div class="text-3xl font-extrabold text-amber-600">${DataAPI.getQuizzes().length}</div>
-                        <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Technical Quizzes</div>
-                    </div>
-                </div>
-                <div class="mt-6 p-4 rounded-xl bg-blue-50/50 border border-blue-100 flex items-center justify-between">
-                    <div>
-                        <h4 class="font-bold text-blue-900 text-xs">System Enabler (SYE) Division</h4>
-                        <p class="text-xs text-blue-700 mt-0.5">Head of SYE: Akkharasaran S. • Sermmit Tower 14th Floor</p>
-                    </div>
-                    <a href="#landing" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition">Learner Portal</a>
-                </div>
-            </div>
-            
-            <div class="lg:col-span-1 bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col">
-                <div class="flex justify-between items-center mb-4">
-                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Recent Activity</h3>
-                    <span class="text-[10px] font-bold text-slate-400">${sortedLogs.length} logs</span>
-                </div>
-                <div class="flex-1 overflow-y-auto max-h-60 pr-2">
-                    <div class="space-y-3.5">
-                        ${sortedLogs.slice(0, 15).map(log => `
-                            <div class="flex items-start">
-                                <div class="w-2 h-2 mt-1.5 rounded-full bg-blue-500 mr-2.5 shrink-0"></div>
-                                <div class="flex-1 min-w-0">
-                                    <p class="text-xs text-slate-700 leading-snug break-words">${log.description}</p>
-                                    <p class="text-[10px] text-slate-400 mt-0.5">${new Date(log.timestamp).toLocaleString()}</p>
-                                </div>
+                    <div class="mt-6 p-4 rounded-xl bg-blue-50/50 border border-blue-100 flex items-center justify-between">
+                        <div class="flex items-center space-x-3">
+                            <img src="favicon.svg" alt="AEON" class="w-9 h-9 rounded-xl shadow-xs object-cover border border-slate-200">
+                            <div>
+                                <h4 class="font-bold text-blue-900 text-xs">System Enabler (SYE) Division</h4>
+                                <p class="text-xs text-blue-700 mt-0.5">Head of SYE: Akkharasaran S. • Sermmit Tower 14th Floor</p>
                             </div>
-                        `).join('')}
-                        ${sortedLogs.length === 0 ? '<p class="text-xs text-slate-400 italic">No activity recorded.</p>' : ''}
+                        </div>
+                        <a href="#landing" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition">Learner Portal</a>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-1 bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Recent Activity</h3>
+                        <span class="text-[10px] font-bold text-slate-400">${sortedLogs.length} logs</span>
+                    </div>
+                    <div class="flex-1 overflow-y-auto max-h-60 pr-2">
+                        <div class="space-y-3.5">
+                            ${sortedLogs.slice(0, 15).map(log => `
+                                <div class="flex items-start">
+                                    <div class="w-2 h-2 mt-1.5 rounded-full bg-blue-500 mr-2.5 shrink-0"></div>
+                                    <div class="flex-1 min-w-0">
+                                        <p class="text-xs text-slate-700 leading-snug break-words">${log.description}</p>
+                                        <p class="text-[10px] text-slate-400 mt-0.5">${new Date(log.timestamp).toLocaleString()}</p>
+                                    </div>
+                                </div>
+                            `).join('')}
+                            ${sortedLogs.length === 0 ? '<p class="text-xs text-slate-400 italic">No activity recorded.</p>' : ''}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     `;
 
-    setTimeout(() => {
-        // Doughnut Chart (With Employee Numbers in Labels)
-        const sectionLabels = SECTIONS.map(sec => {
-            const emps = employees.filter(e => e.section === sec);
-            const fullyTrained = emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
-            const shortName = sec.replace('Platform', '').replace('Systems', '').trim();
-            return `${shortName} (${fullyTrained}/${emps.length})`;
-        });
+    // Trigger Smooth Numbers Count-Up Animation
+    animateCounter('stat-total', totalEmps);
+    animateCounter('stat-completed', compl);
+    animateCounter('stat-inprog', inprog);
+    animateCounter('stat-avg', overallCompRate, '%');
 
-        const secData = SECTIONS.map(sec => {
-            const emps = employees.filter(e => e.section === sec);
-            if(!emps.length) return 0;
-            return emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
-        });
+    // Render Charts with Full Animation
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            const sectionLabels = SECTIONS.map(sec => {
+                const emps = employees.filter(e => e.section === sec);
+                const fullyTrained = emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
+                const shortName = sec.replace('Platform', '').replace('Systems', '').trim();
+                return `${shortName} (${fullyTrained}/${emps.length})`;
+            });
 
-        const ctx1 = document.getElementById('sectionChart');
-        if(ctx1) {
-            const chart1 = new Chart(ctx1, {
-                type: 'doughnut',
-                data: {
-                    labels: sectionLabels,
-                    datasets: [{
-                        data: secData,
-                        backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6'],
-                        borderWidth: 2,
-                        borderColor: '#ffffff'
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: {
-                        animateRotate: true,
-                        animateScale: true,
-                        duration: 1200,
-                        easing: 'easeOutQuart'
+            const secData = SECTIONS.map(sec => {
+                const emps = employees.filter(e => e.section === sec);
+                if(!emps.length) return 0;
+                return emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
+            });
+
+            const ctx1 = document.getElementById('sectionChart');
+            if(ctx1) {
+                const chart1 = new Chart(ctx1, {
+                    type: 'doughnut',
+                    data: {
+                        labels: sectionLabels,
+                        datasets: [{
+                            data: secData,
+                            backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6'],
+                            borderWidth: 2,
+                            borderColor: '#ffffff'
+                        }]
                     },
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: { boxWidth: 12, font: { size: 11, weight: '600' } }
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        animation: {
+                            animateRotate: true,
+                            animateScale: true,
+                            duration: 1400,
+                            easing: 'easeOutQuart'
+                        },
+                        plugins: {
+                            legend: {
+                                position: 'bottom',
+                                labels: { boxWidth: 12, font: { size: 11, weight: '600' } }
+                            }
                         }
                     }
-                }
+                });
+                currentCharts.push(chart1);
+            }
+
+            const roleLabels = ROLES;
+            const roleColors = {
+                'Developer': '#3b82f6', // Blue
+                'BA': '#10b981',        // Emerald
+                'PM': '#f59e0b',        // Amber
+                'SRE': '#f43f5e',       // Rose
+                'QA': '#8b5cf6'         // Purple
+            };
+
+            const roleAverages = roleLabels.map(role => {
+                const emps = employees.filter(e => e.role === role);
+                if(!emps.length) return 0;
+                const total = emps.reduce((acc, curr) => acc + DataAPI.getEmployeeStats(curr.id).percent, 0);
+                return Math.round(total / emps.length);
             });
-            currentCharts.push(chart1);
-        }
 
-        // Horizontal Bar Chart (With Multi-Colored Role Bars)
-        const roleLabels = ROLES;
-        const roleColors = {
-            'Developer': '#3b82f6', // Blue
-            'BA': '#10b981',        // Emerald
-            'PM': '#f59e0b',        // Amber
-            'SRE': '#f43f5e',       // Rose
-            'QA': '#8b5cf6'         // Purple
-        };
-
-        const roleAverages = roleLabels.map(role => {
-            const emps = employees.filter(e => e.role === role);
-            if(!emps.length) return 0;
-            const total = emps.reduce((acc, curr) => acc + DataAPI.getEmployeeStats(curr.id).percent, 0);
-            return Math.round(total / emps.length);
-        });
-
-        const ctx2 = document.getElementById('roleChart');
-        if(ctx2) {
-            const chart2 = new Chart(ctx2, {
-                type: 'bar',
-                data: {
-                    labels: roleLabels,
-                    datasets: [{
-                        label: 'Average Progress %',
-                        data: roleAverages,
-                        backgroundColor: roleLabels.map(r => roleColors[r] || '#3b82f6'),
-                        borderRadius: 8
-                    }]
-                },
-                options: {
-                    indexAxis: 'y',
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    animation: {
-                        duration: 1200,
-                        easing: 'easeOutQuart'
+            const ctx2 = document.getElementById('roleChart');
+            if(ctx2) {
+                const chart2 = new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: roleLabels,
+                        datasets: [{
+                            label: 'Average Progress %',
+                            data: roleAverages,
+                            backgroundColor: roleLabels.map(r => roleColors[r] || '#3b82f6'),
+                            borderRadius: 8
+                        }]
                     },
-                    scales: {
-                        x: {
-                            max: 100,
-                            min: 0,
-                            ticks: { callback: (v) => v + '%' }
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        animation: {
+                            duration: 1400,
+                            easing: 'easeOutQuart'
+                        },
+                        scales: {
+                            x: {
+                                max: 100,
+                                min: 0,
+                                ticks: { callback: (v) => v + '%' }
+                            }
+                        },
+                        plugins: {
+                            legend: { display: false }
                         }
-                    },
-                    plugins: {
-                        legend: { display: false }
                     }
-                }
-            });
-            currentCharts.push(chart2);
-        }
-    }, 50);
+                });
+                currentCharts.push(chart2);
+            }
+        }, 100);
+    });
 }
 
 // 2. Training Catalog
@@ -1567,14 +1584,13 @@ function renderCatalog(container) {
     const courses = DataAPI.getCourses();
     
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <h3 class="font-bold text-slate-800 text-lg">Training Catalog (${courses.length} Courses)</h3>
             <button onclick="openCourseModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Course
             </button>
         </div>
         
-        <!-- Category Filters -->
         <div class="flex flex-wrap gap-2 mb-6" id="catalog-filters">
             <button class="cat-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 text-white transition" data-cat="All">All</button>
             ${CATEGORIES.map(c => `
@@ -1750,7 +1766,7 @@ function renderWorkInstructions(container) {
     const wis = DataAPI.getWIs();
     
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <div>
                 <h3 class="font-bold text-slate-800 text-lg">Standard Work Instructions (${wis.length} SOP Documents)</h3>
                 <p class="text-xs text-slate-400 mt-0.5">ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified Operational Procedures</p>
@@ -1795,7 +1811,6 @@ window.viewWIDetail = (id) => {
     
     let html = `
         <div class="space-y-6 max-h-[75vh] overflow-y-auto pr-2">
-            <!-- Header Metadata Card -->
             <div class="p-5 bg-slate-50 rounded-2xl border border-slate-200">
                 <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
                     <span class="font-mono text-xs font-bold px-3 py-1 bg-blue-600 text-white rounded-lg">${wi.id}</span>
@@ -1812,7 +1827,6 @@ window.viewWIDetail = (id) => {
                 </div>
             </div>
 
-            <!-- Objective & Scope -->
             <div>
                 <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1. Objective & Scope</h4>
                 <div class="bg-white p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2">
@@ -1821,7 +1835,6 @@ window.viewWIDetail = (id) => {
                 </div>
             </div>
 
-            <!-- Prerequisites -->
             ${wi.prerequisites && wi.prerequisites.length ? `
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">2. Prerequisites & Compliance Controls</h4>
@@ -1833,7 +1846,6 @@ window.viewWIDetail = (id) => {
                 </div>
             ` : ''}
 
-            <!-- Step by step procedure -->
             <div>
                 <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">3. Standard Operating Procedure Steps</h4>
                 <div class="space-y-3">
@@ -1849,7 +1861,6 @@ window.viewWIDetail = (id) => {
                 </div>
             </div>
 
-            <!-- Rollback Procedure -->
             ${wi.rollbackProcedure ? `
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-rose-500 mb-2">4. Contingency & Rollback Protocol</h4>
@@ -1859,7 +1870,6 @@ window.viewWIDetail = (id) => {
                 </div>
             ` : ''}
 
-            <!-- Revision History Timeline -->
             ${wi.revisionHistory && wi.revisionHistory.length ? `
                 <div>
                     <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">5. Revision History & Approvals</h4>
@@ -1977,7 +1987,7 @@ function renderEmployees(container) {
     const emps = DataAPI.getEmployees();
     
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <div>
                 <h3 class="font-bold text-slate-800 text-lg">SYE Engineering Roster (${emps.length} Total Engineers)</h3>
                 <p class="text-xs text-slate-400 mt-0.5">Permanent Staff & Outsource Engineers (OS-SYE / OS-ECM / OS-NRT)</p>
@@ -2175,7 +2185,7 @@ window.viewEmployeeDetail = (id) => {
         <div class="space-y-6">
             <div class="flex justify-between items-start">
                 <div class="flex items-center space-x-4">
-                    <div class="w-14 h-14 rounded-2xl bg-blue-600 text-white flex items-center justify-center text-xl font-bold">${emp.name.charAt(0)}</div>
+                    <img src="favicon.svg" alt="AEON" class="w-14 h-14 rounded-2xl shadow-xs object-cover border border-slate-200">
                     <div>
                         <h2 class="text-xl font-bold text-slate-800">${emp.name} <span class="text-xs font-mono text-slate-400 ml-2">(${emp.id})</span></h2>
                         <p class="text-xs text-slate-500 mt-1">${emp.role} • ${emp.section} • Joined ${emp.joinDate}</p>
@@ -2243,7 +2253,7 @@ function renderRecords(container) {
     records.sort((a,b) => new Date(b.trainingDate) - new Date(a.trainingDate));
 
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <h3 class="font-bold text-slate-800 text-lg">Training Records Log (${records.length} Records)</h3>
             <button onclick="openRecordModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Training Record
@@ -2364,7 +2374,7 @@ window.deleteRecord = (id) => {
     }
 };
 
-// 6. Assessments Management (37 Quizzes & Audit Submissions Log)
+// 6. Assessments Management
 function renderAssessments(container) {
     const quizzes = DataAPI.getQuizzes();
     const results = DataAPI.getQuizResults();
@@ -2373,7 +2383,7 @@ function renderAssessments(container) {
     results.sort((a,b) => new Date(b.date) - new Date(a.date));
 
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
             <div>
                 <h3 class="font-bold text-slate-800 text-lg">Technical Assessments & Submissions</h3>
                 <p class="text-xs text-slate-400 mt-0.5">${quizzes.length} Master Quizzes • ${results.length} Submissions Logged</p>
@@ -2484,13 +2494,12 @@ function renderReports(container) {
     const results = DataAPI.getQuizResults();
 
     container.innerHTML = `
-        <div class="mb-6">
+        <div class="mb-6 animate-fade-in-up">
             <h3 class="font-bold text-slate-800 text-lg">Audit & Compliance Reports</h3>
             <p class="text-xs text-slate-400 mt-0.5">Export certified training records for ISO 9001, ISO 27001, and Management Audit</p>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
-            <!-- Report Card 1 -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-3">📊</div>
@@ -2502,7 +2511,6 @@ function renderReports(container) {
                 </button>
             </div>
 
-            <!-- Report Card 2 -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">📋</div>
@@ -2514,7 +2522,6 @@ function renderReports(container) {
                 </button>
             </div>
 
-            <!-- Report Card 3 -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-3">📝</div>
@@ -2526,7 +2533,6 @@ function renderReports(container) {
                 </button>
             </div>
 
-            <!-- Report Card 4 -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-3">📑</div>
@@ -2538,7 +2544,6 @@ function renderReports(container) {
                 </button>
             </div>
 
-            <!-- Report Card 5: Certificate Generator -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
                 <div>
                     <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-3">🎓</div>
@@ -2553,7 +2558,6 @@ function renderReports(container) {
     `;
 }
 
-// Universal Excel Exporter (With UTF-8 Byte Order Mark for Flawless Thai & English Display)
 function exportToExcelCSV(filename, headers, rows) {
     const BOM = '\uFEFF';
     let csvContent = headers.map(h => `"${h.replace(/"/g, '""')}"`).join(',') + '\n';
@@ -2715,7 +2719,7 @@ function printCertificate(empId, courseId) {
     printContainer.innerHTML = `
         <div class="p-12 border-8 border-slate-800 bg-white text-center max-w-4xl mx-auto my-8 rounded-3xl relative">
             <div class="border-2 border-blue-600 p-8 rounded-2xl">
-                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl mx-auto flex items-center justify-center font-bold text-3xl mb-4">S</div>
+                <img src="favicon.svg" alt="AEON" class="w-16 h-16 rounded-2xl mx-auto mb-4 shadow-sm object-cover border border-slate-200">
                 <h1 class="text-3xl font-extrabold text-slate-900 tracking-wider uppercase mb-1">Certificate of Completion</h1>
                 <p class="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-8">System Enabler (SYE) Division • AEON System Development</p>
                 
@@ -2754,16 +2758,15 @@ function printCertificate(empId, courseId) {
     }, 1000);
 }
 
-// 8. Settings Page (Enterprise Environment, Architecture & Approvers)
+// 8. Settings Page
 function renderSettings(container) {
     container.innerHTML = `
-        <div class="max-w-4xl space-y-6">
+        <div class="max-w-4xl space-y-6 animate-fade-in-up">
             <div>
                 <h3 class="font-bold text-slate-800 text-lg">System Configuration & Governance</h3>
                 <p class="text-xs text-slate-400 mt-0.5">SYE Academy Enterprise Platform • Version ${APP_VERSION}</p>
             </div>
             
-            <!-- Environment Card -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                 <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
                     <span>🏢</span> On-Premise Infrastructure & Environment
@@ -2782,16 +2785,18 @@ function renderSettings(container) {
                 </div>
             </div>
 
-            <!-- Leadership & Approvers Card -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                 <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
                     <span>👑</span> Division Leadership & Architectural Authorities
                 </h4>
                 <div class="space-y-3 text-xs">
                     <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
-                        <div>
-                            <span class="font-bold text-slate-800">Akkharasaran S.</span>
-                            <p class="text-slate-500 text-[11px]">Head of System Enabler Division • CES Lead • TSQ Lead</p>
+                        <div class="flex items-center space-x-3">
+                            <img src="favicon.svg" alt="AEON" class="w-7 h-7 rounded-lg shadow-xs object-cover border border-slate-200">
+                            <div>
+                                <span class="font-bold text-slate-800">Akkharasaran S.</span>
+                                <p class="text-slate-500 text-[11px]">Head of System Enabler Division • CES Lead • TSQ Lead</p>
+                            </div>
                         </div>
                         <span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold rounded-lg text-[10px]">Division Head (sye@aeon.co.th)</span>
                     </div>
@@ -2812,7 +2817,6 @@ function renderSettings(container) {
                 </div>
             </div>
 
-            <!-- ISO Governance Standards Card -->
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                 <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
                     <span>🛡️</span> Certified ISO Governance Framework
@@ -2846,7 +2850,6 @@ window.addEventListener('load', () => {
     handleRoute();
 });
 
-// Run once immediately if ready
 if (document.readyState === 'complete' || document.readyState === 'interactive') {
     initData();
     handleRoute();

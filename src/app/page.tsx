@@ -16,14 +16,12 @@ export default function Home() {
       }
     };
 
-    // If already loaded or wait for window load
     if (document.readyState === 'complete') {
       initializeApp();
     } else {
       window.addEventListener('load', initializeApp);
     }
 
-    // Also interval check to ensure fast hydration
     const timer = setInterval(() => {
       const w = window as any;
       if (typeof w.handleRoute === 'function' && typeof w.initData === 'function') {
@@ -44,9 +42,9 @@ export default function Home() {
       {/* LEARNER LAYOUT */}
       <div id="learner-layout" className="hidden flex-col w-full h-screen overflow-hidden">
         {/* Top Navbar */}
-        <nav id="learner-nav" className="bg-white border-b border-slate-200 px-6 py-3.5 flex justify-between items-center shadow-xs shrink-0 z-10">
+        <nav id="learner-nav" className="bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center shadow-xs shrink-0 z-10">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={() => { window.location.hash = 'landing'; }}>
-            <div className="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-xs">S</div>
+            <img src="/favicon.svg" alt="AEON" className="w-9 h-9 rounded-xl shadow-xs object-cover border border-slate-200" />
             <div>
               <h1 className="text-base font-bold text-slate-800 leading-tight">SYE Academy</h1>
               <p className="text-xs text-slate-500 font-medium">System Enabler Division • AEON</p>
@@ -79,7 +77,7 @@ export default function Home() {
         <aside id="sidebar" className="w-64 bg-white border-r border-slate-200 flex flex-col z-20 shrink-0">
           <div className="h-16 flex items-center px-6 border-b border-slate-100 justify-between">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-blue-600 text-white rounded-lg flex items-center justify-center font-bold text-base shadow-xs">S</div>
+              <img src="/favicon.svg" alt="AEON" className="w-8 h-8 rounded-lg shadow-xs object-cover border border-slate-200" />
               <div>
                 <h1 className="text-base font-bold text-slate-800 leading-tight">SYE Academy</h1>
                 <p className="text-[11px] text-slate-400">Admin & Audit Portal</p>
