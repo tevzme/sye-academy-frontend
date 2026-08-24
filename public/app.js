@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '2.8.0';
+const APP_VERSION = '2.9.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
