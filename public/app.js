@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '12.0.0';
+const APP_VERSION = '13.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -2359,7 +2359,7 @@ function renderEmployees(container) {
                 <h3 class="font-bold text-slate-800 text-lg">SYE Engineering Roster (${emps.length} Total Engineers)</h3>
                 <p class="text-xs text-slate-400 mt-0.5">Permanent Staff & Outsource Engineers (OS-SYE / OS-ECM / OS-NRT)</p>
             </div>
-            <button onclick="openEmpModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+            <button onclick="openEmpModal()" class="rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Engineer
             </button>
         </div>
@@ -2381,16 +2381,16 @@ function renderEmployees(container) {
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs text-slate-600">
-                    <thead class="bg-white text-xs uppercase text-slate-400 border-b border-slate-100 sticky top-0 z-10 font-semibold tracking-wider">
+                    <thead class="bg-slate-50 text-[11px] uppercase text-slate-500 border-b border-slate-200 font-semibold tracking-wider">
                         <tr>
-                            <th class="px-5 py-3.5">ID</th>
-                            <th class="px-5 py-3.5">Name</th>
-                            <th class="px-5 py-3.5">Role</th>
-                            <th class="px-5 py-3.5">Section / Unit</th>
-                            <th class="px-5 py-3.5">Type</th>
-                            <th class="px-5 py-3.5 w-44">Progress</th>
-                            <th class="px-5 py-3.5">Status</th>
-                            <th class="px-5 py-3.5 text-right">Actions</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">ID</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Name</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Role</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Section / Unit</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Type</th>
+                            <th class="px-4 py-3.5 min-w-[140px] whitespace-nowrap">Progress</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Status</th>
+                            <th class="px-4 py-3.5 text-right whitespace-nowrap">Actions</th>
                         </tr>
                     </thead>
                     <tbody id="emp-tbody" class="divide-y divide-slate-100"></tbody>
@@ -2414,14 +2414,14 @@ function renderEmployees(container) {
             const stats = DataAPI.getEmployeeStats(emp.id);
             return `
                 <tr class="hover:bg-slate-50 transition">
-                    <td class="px-5 py-3.5 font-mono text-xs cursor-pointer text-blue-600 font-semibold" onclick="viewEmployeeDetail('${emp.id}')">${emp.id}</td>
-                    <td class="px-5 py-3.5 font-semibold text-slate-800 cursor-pointer" onclick="viewEmployeeDetail('${emp.id}')">${emp.name}</td>
-                    <td class="px-5 py-3.5 font-medium">${emp.role}</td>
-                    <td class="px-5 py-3.5 text-slate-500">${emp.section}</td>
-                    <td class="px-5 py-3.5">${UI.renderEmploymentBadge(emp)}</td>
-                    <td class="px-5 py-3.5">${UI.renderProgressBar(stats.percent)}</td>
-                    <td class="px-5 py-3.5">${UI.renderBadge(emp.status)}</td>
-                    <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
+                    <td class="px-4 py-3.5 font-mono text-xs cursor-pointer text-blue-600 font-bold whitespace-nowrap" onclick="viewEmployeeDetail('${emp.id}')">${emp.id}</td>
+                    <td class="px-4 py-3.5 font-semibold text-slate-800 cursor-pointer whitespace-nowrap" onclick="viewEmployeeDetail('${emp.id}')">${emp.name}</td>
+                    <td class="px-4 py-3.5 font-medium whitespace-nowrap">${emp.role}</td>
+                    <td class="px-4 py-3.5 text-slate-500 whitespace-nowrap">${emp.section}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap">${UI.renderEmploymentBadge(emp)}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap">${UI.renderProgressBar(stats.percent)}</td>
+                    <td class="px-4 py-3.5 whitespace-nowrap">${UI.renderBadge(emp.status)}</td>
+                    <td class="px-4 py-3.5 text-right space-x-2 whitespace-nowrap">
                         <button onclick="viewEmployeeDetail('${emp.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-semibold">Profile</button>
                         <button onclick="openEmpModal('${emp.id}')" class="text-slate-600 hover:text-slate-900 text-xs font-semibold">Edit</button>
                         <button onclick="deleteEmp('${emp.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-semibold">Delete</button>
@@ -2708,7 +2708,10 @@ function renderRecords(container) {
 
     container.innerHTML = `
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 animate-fade-in-up">
-            <h3 class="font-bold text-slate-800 text-lg">Training Records Log (${records.length} Records)</h3>
+            <div>
+                <h3 class="font-bold text-slate-800 text-lg">Training Records Log (${records.length} Records)</h3>
+                <p class="text-xs text-slate-400 mt-0.5">Audited completion records for all certified engineers</p>
+            </div>
             <button onclick="openRecordModal()" class="rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
                 <span>+</span> Add Training Record
             </button>
@@ -2716,32 +2719,32 @@ function renderRecords(container) {
         <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs text-slate-600">
-                    <thead class="bg-white text-xs uppercase text-slate-400 border-b border-slate-100 font-semibold tracking-wider">
+                    <thead class="bg-slate-50 text-[11px] uppercase text-slate-500 border-b border-slate-200 font-semibold tracking-wider">
                         <tr>
-                            <th class="px-5 py-3.5">Date</th>
-                            <th class="px-5 py-3.5">Engineer</th>
-                            <th class="px-5 py-3.5">Course</th>
-                            <th class="px-5 py-3.5">Trainer</th>
-                            <th class="px-5 py-3.5">Method</th>
-                            <th class="px-5 py-3.5">Score</th>
-                            <th class="px-5 py-3.5">Status</th>
-                            <th class="px-5 py-3.5 text-right">Actions</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Date</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Engineer</th>
+                            <th class="px-4 py-3.5 min-w-[200px]">Course</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Trainer</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Method</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Score</th>
+                            <th class="px-4 py-3.5 whitespace-nowrap">Status</th>
+                            <th class="px-4 py-3.5 text-right whitespace-nowrap">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
-                        ${records.slice(0, 50).map(r => {
+                        ${records.slice(0, 100).map(r => {
                             const emp = emps.find(e => e.id === r.employeeId) || { name: r.employeeId, role: '' };
                             const course = courses.find(c => c.id === r.courseId) || { name: r.courseId };
                             return `
                                 <tr class="hover:bg-slate-50 transition">
-                                    <td class="px-5 py-3.5 whitespace-nowrap font-mono">${r.trainingDate}</td>
-                                    <td class="px-5 py-3.5 font-semibold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${r.employeeId}')">${emp.name}</td>
-                                    <td class="px-5 py-3.5 text-slate-700">${course.name}</td>
-                                    <td class="px-5 py-3.5 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
-                                    <td class="px-5 py-3.5">${r.method}</td>
-                                    <td class="px-5 py-3.5 font-semibold">${r.score !== null ? `${r.score}%` : '-'}</td>
-                                    <td class="px-5 py-3.5">${UI.renderBadge(r.status)}</td>
-                                    <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
+                                    <td class="px-4 py-3.5 whitespace-nowrap font-mono text-xs">${r.trainingDate}</td>
+                                    <td class="px-4 py-3.5 font-semibold text-slate-800 cursor-pointer text-blue-600 whitespace-nowrap" onclick="viewEmployeeDetail('${r.employeeId}')">${emp.name}</td>
+                                    <td class="px-4 py-3.5 text-slate-700 font-medium"><span class="font-mono text-slate-400 mr-1.5">[${r.courseId}]</span>${course.name}</td>
+                                    <td class="px-4 py-3.5 text-slate-500 whitespace-nowrap">${r.trainer || 'Akkharasaran S.'}</td>
+                                    <td class="px-4 py-3.5 whitespace-nowrap">${r.method}</td>
+                                    <td class="px-4 py-3.5 font-bold whitespace-nowrap ${r.score >= 80 ? 'text-emerald-600' : 'text-slate-600'}">${r.score !== null ? `${r.score}%` : '-'}</td>
+                                    <td class="px-4 py-3.5 whitespace-nowrap">${UI.renderBadge(r.status)}</td>
+                                    <td class="px-4 py-3.5 text-right space-x-2 whitespace-nowrap">
                                         <button onclick="viewLearnerQuizReview('${r.employeeId}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 text-xs font-semibold">Review</button>
                                         <button onclick="deleteRecord('${r.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-semibold">Delete</button>
                                     </td>
