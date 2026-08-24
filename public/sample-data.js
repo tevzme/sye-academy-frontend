@@ -1,4 +1,4 @@
-// SYE Academy Master Seed Data (v3.0.0 - World-Class Certified Curriculum with High-Res Illustrations)
+// SYE Academy Master Seed Data (v3.5.0 - Fully Illustrated Curriculum)
 // System Enabler (SYE) Division • AEON System Development Department
 // Sermmit Tower 14th Floor • ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
@@ -271,7 +271,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "อัตลักษณ์ฝ่าย พันธกิจเชิงกลยุทธ์ และค่านิยมหลักของ AEON",
-          "body": "### ฝ่าย System Enabler (SYE) คือใคร\n**ฝ่าย System Enabler (SYE)** สังกัดอยู่ภายใต้ **ฝ่ายพัฒนาระบบ (System Development Department) บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน)** ทำหน้าที่เป็นแกนหลักทางเทคโนโลยีที่รับผิดชอบการออกแบบ พัฒนา และดูแลระบบการเงินดิจิทัลที่มีความเสถียรและปลอดภัยสูงสุด\n\n### พันธกิจหลักของฝ่าย:\n- **ขับเคลื่อนประสบการณ์การเงินยุคใหม่**: ส่งมอบระบบบัตรเครดิต สินเชื่อดิจิทัล การชำระเงิน และระบบบริการลูกค้าที่ไร้รอยต่อ\n- **ความพร้อมใช้งานสูงสุด**: รักษาเสถียรภาพและความถูกต้องของทุกธุรกรรมการเงิน\n- **พัฒนานวัตกรรมอย่างต่อเนื่อง**: นำมาตรฐานวิศวกรรมระดับสากล สถาปัตยกรรม Microservices และระบบอัตโนมัติมาประยุกต์ใช้\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_org_leadership_chart.jpg\" alt=\"SYE Division Leadership & Organizational Structure\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">SYE Division Leadership & Organizational Structure</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sermmit Tower 14th Fl. • ISO Certified</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![SYE Division Structure & On-Premise Multi-Cluster Infrastructure](/images/sye_org_leadership_chart.jpg)\n\n### ฝ่าย System Enabler (SYE) คือใคร\n**ฝ่าย System Enabler (SYE)** สังกัดอยู่ภายใต้ **ฝ่ายพัฒนาระบบ (System Development Department) บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน)** ทำหน้าที่เป็นแกนหลักทางเทคโนโลยีที่รับผิดชอบการออกแบบ พัฒนา และดูแลระบบการเงินดิจิทัลที่มีความเสถียรและปลอดภัยสูงสุด\n\n### พันธกิจหลักของฝ่าย:\n- **ขับเคลื่อนประสบการณ์การเงินยุคใหม่**: ส่งมอบระบบบัตรเครดิต สินเชื่อดิจิทัล การชำระเงิน และระบบบริการลูกค้าที่ไร้รอยต่อ\n- **ความพร้อมใช้งานสูงสุด**: รักษาเสถียรภาพและความถูกต้องของทุกธุรกรรมการเงิน\n- **พัฒนานวัตกรรมอย่างต่อเนื่อง**: นำมาตรฐานวิศวกรรมระดับสากล สถาปัตยกรรม Microservices และระบบอัตโนมัติมาประยุกต์ใช้\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_org_leadership_chart.jpg\" alt=\"SYE Division Leadership & Organizational Structure\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">SYE Division Leadership & Organizational Structure</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sermmit Tower 14th Fl. • ISO Certified</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "โครงสร้างผู้นำฝ่าย และ 3 ส่วนงานหลัก (Sections)",
@@ -285,7 +285,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "จรรยาบรรณวิชาชีพและระเบียบปฏิบัติในสถานที่ทำงาน",
           "body": "### 1. จริยธรรมและข้อห้ามการใช้ข้อมูลภายใน (Insider Trading):\nในฐานะพนักงานสถาบันการเงินที่จดทะเบียนในตลาดหลักทรัพย์ ห้ามนำข้อมูลทางการเงินหรือข้อมูลลับภายในไปใช้ซื้อขายหลักทรัพย์ AEON โดยเด็ดขาด ผู้ฝ่าฝืนมีโทษเลิกจ้างทันทีและดำเนินคดีตามกฎหมาย\n\n### 2. นโยบายโต๊ะทำงานสะอาด (Clean Desk & Screen Policy):\n- ห้ามเปิดหน้าจอที่มีข้อมูลลูกค้าทิ้งไว้เมื่อไม่อยู่ที่โต๊ะ\n- กดล็อกหน้าจอคอมพิวเตอร์ทุกครั้งเมื่อลุกออกจากที่นั่ง (`Win + L` หรือ `Cmd + Ctrl + Q`)\n- จัดเก็บเอกสารที่มีข้อมูลสำคัญในลิ้นชักที่ล็อกได้ หรือทำลายทิ้งด้วยเครื่องทำลายเอกสารทันที\n\n### 3. วัฒนธรรมการสื่อสารและการทำงานร่วมกัน:\n- ใช้ช่องทางสื่อสารทางการของบริษัท (Slack / Teams) ในการประสานงาน\n- ปฏิบัติต่อเพื่อนร่วมงานด้วยความเคารพ สุภาพ และทำงานร่วมกันอย่างสร้างสรรค์"
         }
-      ]
+      ],
+      "image": "/images/sye_org_leadership_chart.jpg",
+      "imageAlt": "SYE Division Structure & On-Premise Multi-Cluster Infrastructure"
     },
     {
       "id": "GEN-002",
@@ -335,7 +337,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "ภาพรวมระบบมาตรฐาน ISO สากลทั้ง 4 ด้านของ AEON",
-          "body": "ระบบงาน วิศวกรรม และโครงสร้างพื้นฐานทั้งหมดในฝ่าย SYE ได้รับการรับรองและกำกับดูแลโดย **มาตรฐาน ISO สากล 4 ด้าน**:\n\n| มาตรฐาน ISO | ด้านที่รับผิดชอบ | ขอบเขตการปฏิบัติงานในฝ่าย SYE |\n|---|---|---|\n| **ISO/IEC 27001** | ความมั่นคงปลอดภัยสารสนเทศ (ISMS) | ระบบ Zero-Trust, การเข้ารหัสข้อมูล, การห้ามฝังรหัสผ่านในโค้ด, การแจ้งเตือน SOC |\n| **ISO 9001** | ระบบบริหารงานคุณภาพ (QMS) | ด่านตรวจวัดคุณภาพ SDLC, Peer Review, การเขียน Unit Test, บันทึกประวัติบน Jira |\n| **ISO 14001** | การจัดการสิ่งแวดล้อม (EMS) | การทำงานแบบไร้กระดาษ 100%, การบริหารพลังงานเซิร์ฟเวอร์แบบ Virtualization |\n| **ISO 22301** | ความต่อเนื่องทางธุรกิจ (BCMS) | ศูนย์สำรองฉุกเฉิน (DR Site), การซ้อมกู้คืนระบบ BCP, ควบคุม RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Zero Trust Security Perimeter & ISO 27001 Identity Flow](/images/security_iam_perimeter.jpg)\n\nระบบงาน วิศวกรรม และโครงสร้างพื้นฐานทั้งหมดในฝ่าย SYE ได้รับการรับรองและกำกับดูแลโดย **มาตรฐาน ISO สากล 4 ด้าน**:\n\n| มาตรฐาน ISO | ด้านที่รับผิดชอบ | ขอบเขตการปฏิบัติงานในฝ่าย SYE |\n|---|---|---|\n| **ISO/IEC 27001** | ความมั่นคงปลอดภัยสารสนเทศ (ISMS) | ระบบ Zero-Trust, การเข้ารหัสข้อมูล, การห้ามฝังรหัสผ่านในโค้ด, การแจ้งเตือน SOC |\n| **ISO 9001** | ระบบบริหารงานคุณภาพ (QMS) | ด่านตรวจวัดคุณภาพ SDLC, Peer Review, การเขียน Unit Test, บันทึกประวัติบน Jira |\n| **ISO 14001** | การจัดการสิ่งแวดล้อม (EMS) | การทำงานแบบไร้กระดาษ 100%, การบริหารพลังงานเซิร์ฟเวอร์แบบ Virtualization |\n| **ISO 22301** | ความต่อเนื่องทางธุรกิจ (BCMS) | ศูนย์สำรองฉุกเฉิน (DR Site), การซ้อมกู้คืนระบบ BCP, ควบคุม RPO < 5m / RTO < 30m |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-slate-900\">\n        <img src=\"images/security_iam_perimeter.jpg\" alt=\"ISO 27001 ISMS & Zero-Trust Security Perimeter\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-800/90 border-slate-700 text-white border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-emerald-400\">ISO 27001 ISMS & Zero-Trust Security Perimeter</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Hardware FIDO2 • AES-256 • TLS 1.3</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "ISO 27001: ความมั่นคงปลอดภัยสารสนเทศและสถาปัตยกรรม Zero-Trust",
@@ -349,7 +351,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "ISO 14001: การจัดการสิ่งแวดล้อม และ ISO 22301: ความต่อเนื่องทางธุรกิจ",
           "body": "### ISO 14001 (การจัดการสิ่งแวดล้อม):\n- **การทำงานแบบไร้กระดาษ 100% (Paperless)**: เอกสารการออกแบบ สถาปัตยกรรม และการอนุมัติงานทำผ่านระบบดิจิทัลบน Confluence และ Jira ทั้งหมด\n- **การบริหารพลังงานเซิร์ฟเวอร์**: การใช้ Containerization และ Virtualization ช่วยลดจำนวนเครื่อง Physical Server และประหยัดพลังงานใน Data Center\n\n### ISO 22301 (ความต่อเนื่องทางธุรกิจ):\n- รับประกันว่าระบบการเงินของ AEON จะสามารถให้บริการได้อย่างต่อเนื่องแม้เกิดภัยพิบัติ\n- กำหนดให้มีการซ้อมแผน BCP เป็นประจำ และควบคุมให้ระบบกู้คืนได้ตามเกณฑ์ RPO < 5 นาที และ RTO < 30 นาที"
         }
-      ]
+      ],
+      "image": "/images/security_iam_perimeter.jpg",
+      "imageAlt": "Zero Trust Security Perimeter & ISO 27001 Identity Flow"
     },
     {
       "id": "GEN-003",
@@ -395,7 +399,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "กลยุทธ์การพัฒนาแบบยืดหยุ่น (Track A Agile และ Track B Waterfall)",
-          "body": "ฝ่าย SYE ไม่ได้ยึดติดกับพิธีกรรม Scrum แบบตายตัว แต่ใช้ **โมเดลการส่งมอบงานแบบปรับเปลี่ยนตามความเหมาะสม (Adaptive Hybrid Agile & Waterfall)** ตามลักษณะงานและข้อกำหนดทางกฎหมายของแต่ละโครงการ:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_hybrid_sdlc_framework.jpg\" alt=\"Adaptive Project Delivery Model (Hybrid Agile & Waterfall)\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Adaptive Project Delivery Model (Hybrid Agile & Waterfall)</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">On-Premise Jira Data Center • ISO 9001 Quality Flow</span>\n        </div>\n    </div>\n</div>\n\n\n### Track A: การพัฒนาแบบ Agile (สำหรับระบบช่องทางลูกค้า):\n- **ลักษณะงานที่เหมาะสม**: แอปพลิเคชัน Mobile Banking (CXS), เว็บพอร์ทัลบริการลูกค้า, ระบบ AI Chatbot (OCS) และงานปรับปรุง UX\n- **แนวทางการทำงาน**: รอบการพัฒนาละ 2 สัปดาห์, บริหาร Backlog บน Jira Data Center, ปล่อยทดสอบบน Staging ต่อเนื่อง และรับ Feedback รวดเร็ว\n\n### Track B: การพัฒนาแบบ Waterfall (สำหรับระบบหลักและข้อกำหนดกฎหมาย):\n- **ลักษณะงานที่เหมาะสม**: การเชื่อมต่อ Core Banking (API), ระบบชำระเงิน Payment Switch, ระบบรายงานตามกฎหมายธนาคาร และงานโครงสร้างพื้นฐาน\n- **แนวทางการทำงาน**: ควบคุมคุณภาพผ่านขั้นตอน Milestone ที่มีเอกสารตรวจรับชัดเจน (Requirements $\\rightarrow$ Architecture $\\rightarrow$ Development $\\rightarrow$ UAT $\\rightarrow$ CAB Approval $\\rightarrow$ Release)"
+          "body": "![AEON Enterprise SDLC Governance & Automated Quality Gates](/images/sye_hybrid_sdlc_framework.jpg)\n\nฝ่าย SYE ไม่ได้ยึดติดกับพิธีกรรม Scrum แบบตายตัว แต่ใช้ **โมเดลการส่งมอบงานแบบปรับเปลี่ยนตามความเหมาะสม (Adaptive Hybrid Agile & Waterfall)** ตามลักษณะงานและข้อกำหนดทางกฎหมายของแต่ละโครงการ:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_hybrid_sdlc_framework.jpg\" alt=\"Adaptive Project Delivery Model (Hybrid Agile & Waterfall)\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Adaptive Project Delivery Model (Hybrid Agile & Waterfall)</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">On-Premise Jira Data Center • ISO 9001 Quality Flow</span>\n        </div>\n    </div>\n</div>\n\n\n### Track A: การพัฒนาแบบ Agile (สำหรับระบบช่องทางลูกค้า):\n- **ลักษณะงานที่เหมาะสม**: แอปพลิเคชัน Mobile Banking (CXS), เว็บพอร์ทัลบริการลูกค้า, ระบบ AI Chatbot (OCS) และงานปรับปรุง UX\n- **แนวทางการทำงาน**: รอบการพัฒนาละ 2 สัปดาห์, บริหาร Backlog บน Jira Data Center, ปล่อยทดสอบบน Staging ต่อเนื่อง และรับ Feedback รวดเร็ว\n\n### Track B: การพัฒนาแบบ Waterfall (สำหรับระบบหลักและข้อกำหนดกฎหมาย):\n- **ลักษณะงานที่เหมาะสม**: การเชื่อมต่อ Core Banking (API), ระบบชำระเงิน Payment Switch, ระบบรายงานตามกฎหมายธนาคาร และงานโครงสร้างพื้นฐาน\n- **แนวทางการทำงาน**: ควบคุมคุณภาพผ่านขั้นตอน Milestone ที่มีเอกสารตรวจรับชัดเจน (Requirements $\\rightarrow$ Architecture $\\rightarrow$ Development $\\rightarrow$ UAT $\\rightarrow$ CAB Approval $\\rightarrow$ Release)"
         },
         {
           "title": "ด่านควบคุมคุณภาพ 6 ขั้นตอนของวงจร SDLC",
@@ -405,7 +409,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "กลยุทธ์ปิรามิดการทดสอบ (สัดส่วน 70 / 20 / 10)",
           "body": "เพื่อให้ซอฟต์แวร์มีคุณภาพสูงสุดและระบบทดสอบทำงานได้รวดเร็ว ฝ่าย SYE กำหนดสัดส่วน **Testing Pyramid**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n- **70% Unit Tests**: เขียนด้วย **Golang** (`testing` / `testify`) และ **Jest/Vitest** สำหรับ Next.js ต้องมีความครอบคลุมโค้ด **ไม่น้อยกว่า 80%**\n- **20% Integration Tests**: ทดสอบการเชื่อมต่อ API, ฐานข้อมูล PostgreSQL และ Message Schema บน Apache Kafka\n- **10% End-to-End & Performance Tests**: ทดสอบจำลองการทำธุรกรรมจริงของผู้ใช้งานผ่าน Playwright / Cypress และทดสอบโหลดด้วย JMeter บน STAGING"
         }
-      ]
+      ],
+      "image": "/images/sye_hybrid_sdlc_framework.jpg",
+      "imageAlt": "AEON Enterprise SDLC Governance & Automated Quality Gates"
     },
     {
       "id": "GEN-004",
@@ -455,7 +461,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "ลำดับชั้นของงานและกระบวนการทำงานบน Jira Data Center",
-          "body": "งานวิศวกรรมทั้งหมดในฝ่าย SYE ต้องได้รับการบันทึกและติดตามบน **On-Premise Jira Data Center** ขององค์กร เพื่อความโปร่งใสตามมาตรฐาน ISO 9001\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_jira_confluence_tools.jpg\" alt=\"Enterprise On-Premise Jira & Confluence Workflows\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise On-Premise Jira & Confluence Workflows</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sprint Tracking • CAB Approvals • ADRs & WIs</span>\n        </div>\n    </div>\n</div>\n\n\n### ลำดับชั้นของงานมาตรฐาน (Issue Hierarchy):\n1. **Epic**: โครงการใหญ่ทางธุรกิจหรือสถาปัตยกรรมที่ใช้เวลาหลายเดือน (เช่น `ระบบยืนยันตัวตนด้วยใบหน้า Mobile App v2`)\n2. **Story**: ความต้องการเชิงฟังก์ชันที่ส่งมอบคุณค่าแก่ผู้ใช้ เขียนในรูปแบบ Given-When-Then\n3. **Task / Technical Task**: งานด้านเทคนิค เช่น การทำ Index ฐานข้อมูล, การปรับแต่ง API Schema\n4. **Bug**: ข้อผิดพลาดของระบบที่ไม่ตรงตามเงื่อนไขที่ตกลงไว้\n5. **Sub-Task**: งานย่อยระดับรายชั่วโมงที่มอบหมายให้วิศวกรแต่ละคนรับผิดชอบ"
+          "body": "![Atlassian Jira Agile & Confluence Documentation Flow](/images/sye_jira_confluence_tools.jpg)\n\nงานวิศวกรรมทั้งหมดในฝ่าย SYE ต้องได้รับการบันทึกและติดตามบน **On-Premise Jira Data Center** ขององค์กร เพื่อความโปร่งใสตามมาตรฐาน ISO 9001\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_jira_confluence_tools.jpg\" alt=\"Enterprise On-Premise Jira & Confluence Workflows\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise On-Premise Jira & Confluence Workflows</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Sprint Tracking • CAB Approvals • ADRs & WIs</span>\n        </div>\n    </div>\n</div>\n\n\n### ลำดับชั้นของงานมาตรฐาน (Issue Hierarchy):\n1. **Epic**: โครงการใหญ่ทางธุรกิจหรือสถาปัตยกรรมที่ใช้เวลาหลายเดือน (เช่น `ระบบยืนยันตัวตนด้วยใบหน้า Mobile App v2`)\n2. **Story**: ความต้องการเชิงฟังก์ชันที่ส่งมอบคุณค่าแก่ผู้ใช้ เขียนในรูปแบบ Given-When-Then\n3. **Task / Technical Task**: งานด้านเทคนิค เช่น การทำ Index ฐานข้อมูล, การปรับแต่ง API Schema\n4. **Bug**: ข้อผิดพลาดของระบบที่ไม่ตรงตามเงื่อนไขที่ตกลงไว้\n5. **Sub-Task**: งานย่อยระดับรายชั่วโมงที่มอบหมายให้วิศวกรแต่ละคนรับผิดชอบ"
         },
         {
           "title": "การจัดระดับความรุนแรงของบั๊กและวงจรชีวิตของข้อผิดพลาด",
@@ -469,7 +475,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "มาตรฐานเอกสาร Confluence (ADRs และ Work Instructions)",
           "body": "**On-Premise Confluence Data Center** เป็นศูนย์กลางข้อมูลทางเทคนิคของฝ่าย SYE:\n\n- **Architectural Decision Records (ADRs)**: เอกสารบันทึกเหตุผลการตัดสินใจเลือกเทคโนโลยีหรือสถาปัตยกรรมเปรียบเทียบกับทางเลือกอื่น\n- **Work Instructions (WIs)**: คู่มือการปฏิบัติงานทีละขั้นตอนสำหรับการ Release, Patching และบำรุงรักษาระบบตามมาตรฐาน ISO 9001\n- **Blameless Post-Mortems**: สรุปรายงานวิเคราะห์สาเหตุเชิงลึกของเหตุขัดข้อง P1/P2 เผยแพร่ภายใน **48 ชั่วโมง**"
         }
-      ]
+      ],
+      "image": "/images/sye_jira_confluence_tools.jpg",
+      "imageAlt": "Atlassian Jira Agile & Confluence Documentation Flow"
     },
     {
       "id": "GEN-005",
@@ -515,7 +523,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "นโยบายการใช้งานระบบ On-Premise 100% (ห้ามใช้ Public Cloud)",
-          "body": "เพื่อปฏิบัติตามกฎระเบียบของสถาบันการเงินและการรักษาความปลอดภัยข้อมูลลูกค้า **ระบบงานการเงินของฝ่าย SYE ดำเนินงานบนระบบ On-Premise 100% เท่านั้น** ไม่อนุญาตให้ใช้ Public Cloud (เช่น AWS, GCP, Azure) ในระบบจริง\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### ระดับชั้นการประมวลผลระดับองค์กร:\n1. **ระบบจัดการคอนเทนเนอร์**: **VMware Tanzu Kubernetes (K8s)** สำหรับรัน Microservices แบบ High-Density Pods พร้อมระบบ Ingress Routing\n2. **เครื่องเสมือน (Virtual Machine - VM)**: ต้องเป็นระบบปฏิบัติการ **Red Hat Enterprise Linux (RHEL)** เท่านั้น ไม่อนุญาตให้ใช้ Linux อื่นที่ไม่ผ่านการรับรอง"
+          "body": "![Agile Scrum Sprint Cadence & Definition of Done (DoD)](/images/agile_scrum_cycle.jpg)\n\nเพื่อปฏิบัติตามกฎระเบียบของสถาบันการเงินและการรักษาความปลอดภัยข้อมูลลูกค้า **ระบบงานการเงินของฝ่าย SYE ดำเนินงานบนระบบ On-Premise 100% เท่านั้น** ไม่อนุญาตให้ใช้ Public Cloud (เช่น AWS, GCP, Azure) ในระบบจริง\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### ระดับชั้นการประมวลผลระดับองค์กร:\n1. **ระบบจัดการคอนเทนเนอร์**: **VMware Tanzu Kubernetes (K8s)** สำหรับรัน Microservices แบบ High-Density Pods พร้อมระบบ Ingress Routing\n2. **เครื่องเสมือน (Virtual Machine - VM)**: ต้องเป็นระบบปฏิบัติการ **Red Hat Enterprise Linux (RHEL)** เท่านั้น ไม่อนุญาตให้ใช้ Linux อื่นที่ไม่ผ่านการรับรอง"
         },
         {
           "title": "สแตกแอปพลิเคชันมาตรฐาน: Golang (Backend) และ Next.js (Frontend)",
@@ -525,7 +533,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "ฐานข้อมูล, หน่วยความจำแคช และระบบส่งต่อข้อความ (Kafka)",
           "body": "### ฐานข้อมูลหลัก: PostgreSQL (Postgres)\n- คลัสเตอร์ PostgreSQL ระดับองค์กรติดตั้งบน RHEL VM พร้อมดิสก์ NVMe ความเร็วสูง\n- รองรับมาตรฐาน ACID เต็มรูปแบบ มีระบบ Synchronous Replication ไปยัง DR Site และรองรับฟิลด์ JSONB\n\n### หน่วยความจำแคช: Redis Cluster\n- จัดเก็บ Session, บัญชีดำ Token (Blacklist) และการจำกัดปริมาณทราฟฟิก (Rate Limiting) ในระดับเสี้ยววินาที\n\n### ระบบส่งต่อข้อความ: Apache Kafka\n- คลัสเตอร์ Kafka บน RHEL รองรับการกระจาย Event ระหว่าง Microservices ข้ามส่วนงานแบบ Asynchronous"
         }
-      ]
+      ],
+      "image": "/images/agile_scrum_cycle.jpg",
+      "imageAlt": "Agile Scrum Sprint Cadence & Definition of Done (DoD)"
     },
     {
       "id": "GEN-006",
@@ -575,7 +585,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "แผนความต่อเนื่องทางธุรกิจ (BCP) และศูนย์สำรองฉุกเฉิน (DR Site)",
-          "body": "เนื่องจากระบบของ SYE รองรับธุรกรรมการเงินสดแบบเรียลไทม์ แผนความต่อเนื่องทางธุรกิจจึงเป็นหัวใจสำคัญภายใต้ **ISO 22301**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_bcp_dr_datacenter.jpg\" alt=\"Enterprise BCP & DR Site Synchronous Replication\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise BCP & DR Site Synchronous Replication</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">ISO 22301 BCMS • RPO < 5m • RTO < 30m</span>\n        </div>\n    </div>\n</div>\n\n\n### สถาปัตยกรรมศูนย์ข้อมูลคู่ (Dual-Site High Availability):\n- **ศูนย์ข้อมูลหลัก (Main DC)**: ตั้งอยู่ ณ **อาคารเสริมมิตร ทาวเวอร์ ชั้น 14**\n- **ศูนย์สำรองฉุกเฉิน (DR Site)**: ตั้งอยู่ ณ ศูนย์ข้อมูลภายนอกที่อยู่ห่างออกไปกว่า **30 กิโลเมตร** เพื่อป้องกันภัยพิบัติในพื้นที่\n- **โครงข่ายใยแก้วนำแสงเฉพาะ (Dedicated Dark Fiber)**: ทำหน้าที่คัดลอกข้อมูล PostgreSQL WAL และกระจาย Kafka Events แบบ Synchronous ตลอดเวลา"
+          "body": "![Business Continuity (BCP) & Multi-Site Disaster Recovery Topology](/images/sye_bcp_dr_datacenter.jpg)\n\nเนื่องจากระบบของ SYE รองรับธุรกรรมการเงินสดแบบเรียลไทม์ แผนความต่อเนื่องทางธุรกิจจึงเป็นหัวใจสำคัญภายใต้ **ISO 22301**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_bcp_dr_datacenter.jpg\" alt=\"Enterprise BCP & DR Site Synchronous Replication\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise BCP & DR Site Synchronous Replication</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">ISO 22301 BCMS • RPO < 5m • RTO < 30m</span>\n        </div>\n    </div>\n</div>\n\n\n### สถาปัตยกรรมศูนย์ข้อมูลคู่ (Dual-Site High Availability):\n- **ศูนย์ข้อมูลหลัก (Main DC)**: ตั้งอยู่ ณ **อาคารเสริมมิตร ทาวเวอร์ ชั้น 14**\n- **ศูนย์สำรองฉุกเฉิน (DR Site)**: ตั้งอยู่ ณ ศูนย์ข้อมูลภายนอกที่อยู่ห่างออกไปกว่า **30 กิโลเมตร** เพื่อป้องกันภัยพิบัติในพื้นที่\n- **โครงข่ายใยแก้วนำแสงเฉพาะ (Dedicated Dark Fiber)**: ทำหน้าที่คัดลอกข้อมูล PostgreSQL WAL และกระจาย Kafka Events แบบ Synchronous ตลอดเวลา"
         },
         {
           "title": "ตัวชี้วัดสำคัญของแผน BCP: เกณฑ์ RPO < 5 นาที และ RTO < 30 นาที",
@@ -589,7 +599,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "การปฏิบัติตามกฎหมายคุ้มครองข้อมูลส่วนบุคคล (PDPA)",
           "body": "### หลักการสำคัญของ PDPA:\n- **ฐานความยินยอม (Consent)**: การประมวลผลข้อมูลลูกค้าต้องได้รับความยินยอมชัดเจน หรือมีฐานความจำเป็นตามสัญญา\n- **สิทธิของเจ้าของข้อมูล**: ลูกค้ามีสิทธิขอเข้าถึง แก้ไข โอนย้าย หรือขอลบข้อมูลส่วนบุคคลของตนเองได้\n- **ห้ามคัดลอกข้อมูลจริงลง DEV/STAGING**: สภาพแวดล้อม DEV ต้องใช้ Mock Data และ STAGING ต้องผ่านการ Masking ข้อมูลส่วนบุคคลก่อนเสมอ\n- **การแจ้งเตือนเหตุข้อมูลรั่วไหลภายใน 72 ชั่วโมง**: หากเกิดเหตุข้อมูลรั่วไหลที่กระทบต่อสิทธิของเจ้าของข้อมูล ต้องแจ้งคณะกรรมการคุ้มครองข้อมูลส่วนบุคคลภายใน **72 ชั่วโมง**"
         }
-      ]
+      ],
+      "image": "/images/sye_bcp_dr_datacenter.jpg",
+      "imageAlt": "Business Continuity (BCP) & Multi-Site Disaster Recovery Topology"
     },
     {
       "id": "PM-001",
@@ -638,7 +650,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: The Project Charter",
-          "body": "The project charter is the foundational document that formally authorizes a project at AEON. It defines the high-level scope, objectives, key stakeholders, and the project manager's authority. A well-crafted charter aligns the project team and sponsors on the expected business value. It serves as the single point of reference for the project's overarching goals throughout its lifecycle.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Project Governance, Stage-Gate Flow & WBS Delivery](/images/sye_pm_project_governance.jpg)\n\nThe project charter is the foundational document that formally authorizes a project at AEON. It defines the high-level scope, objectives, key stakeholders, and the project manager's authority. A well-crafted charter aligns the project team and sponsors on the expected business value. It serves as the single point of reference for the project's overarching goals throughout its lifecycle.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Work Breakdown Structure (WBS)",
@@ -652,7 +664,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Milestones & Status Reporting",
           "body": "Milestones represent significant points or events in the project timeline, such as phase completions or major deliverables. They are crucial for tracking high-level progress and communicating status to executive stakeholders. Weekly status reports must accurately reflect project health regarding scope, schedule, and budget (the triple constraint). Transparency in reporting, especially when a project is \"yellow\" or \"red\", is vital for timely intervention."
         }
-      ]
+      ],
+      "image": "/images/sye_pm_project_governance.jpg",
+      "imageAlt": "Project Governance, Stage-Gate Flow & WBS Delivery"
     },
     {
       "id": "PM-002",
@@ -698,13 +712,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "ตารางวิเคราะห์และประเมินระดับความเสี่ยง (Impact vs Likelihood)",
-          "body": "### ตารางเมทริกซ์คะแนนความเสี่ยง 5x5\nการประเมินความเสี่ยงพิจารณาจากโอกาสที่จะเกิดขึ้นร่วมกับความเสียหายต่อธุรกิจ (การสูญเสียทางการเงิน, การถูกปรับจาก ธปท., ระบบหยุดทำงาน):\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n\n\n| ช่วงคะแนน | ระดับความเสี่ยง | มาตรการที่ต้องดำเนินการ |\n|---|---|---|\n| **16 – 25** | **วิกฤต (สีแดง)** | ต้องมีแผนแก้ไขทันที ไม่สามารถปล่อยระบบได้หากไม่ได้รับอนุมัติจาก Head of Division |\n| **10 – 15** | **สูง (สีส้ม)** | กำหนดผู้รับผิดชอบชัดเจนและติดตามผลในที่ประชุมทุก 2 สัปดาห์ |\n| **5 – 9** | **ปานกลาง (สีเหลือง)** | ติดตามสถานะในทีมและเตรียมแผนสำรอง |\n| **1 – 4** | **ต่ำ (สีเขียว)** | ยอมรับความเสี่ยงและบันทึกประวัติไว้ใน Confluence |"
+          "body": "![Enterprise Risk Management Matrix & Mitigation Protocol](/images/sye_pm_project_governance.jpg)\n\n### ตารางเมทริกซ์คะแนนความเสี่ยง 5x5\nการประเมินความเสี่ยงพิจารณาจากโอกาสที่จะเกิดขึ้นร่วมกับความเสียหายต่อธุรกิจ (การสูญเสียทางการเงิน, การถูกปรับจาก ธปท., ระบบหยุดทำงาน):\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n\n\n| ช่วงคะแนน | ระดับความเสี่ยง | มาตรการที่ต้องดำเนินการ |\n|---|---|---|\n| **16 – 25** | **วิกฤต (สีแดง)** | ต้องมีแผนแก้ไขทันที ไม่สามารถปล่อยระบบได้หากไม่ได้รับอนุมัติจาก Head of Division |\n| **10 – 15** | **สูง (สีส้ม)** | กำหนดผู้รับผิดชอบชัดเจนและติดตามผลในที่ประชุมทุก 2 สัปดาห์ |\n| **5 – 9** | **ปานกลาง (สีเหลือง)** | ติดตามสถานะในทีมและเตรียมแผนสำรอง |\n| **1 – 4** | **ต่ำ (สีเขียว)** | ยอมรับความเสี่ยงและบันทึกประวัติไว้ใน Confluence |"
         },
         {
           "title": "กลยุทธ์การจัดการความเสี่ยง (Risk Treatment Strategies)",
           "body": "### 4 กลยุทธ์หลักในการรับมือความเสี่ยง:\n1. **Mitigate (บรรเทาผลกระทบ)**: สร้างระบบป้องกันทางเทคนิค (เช่น การเพิ่ม Redis Cache เพื่อลดภาระฐานข้อมูลช่วงสิ้นเดือน)\n2. **Avoid (หลีกเลี่ยง)**: ปรับเปลี่ยนสถาปัตยกรรมเพื่อตัดปัจจัยเสี่ยงออกไป\n3. **Transfer (โอนย้าย)**: ทำสัญญา SLA หรือประกันภัยความเสี่ยงทางไซเบอร์\n4. **Accept (ยอมรับความเสี่ยง)**: จัดทำเอกสารบันทึกเหตุผลที่ยอมรับความเสี่ยงพร้อมลายเซ็นอนุมัติ"
         }
-      ]
+      ],
+      "image": "/images/sye_pm_project_governance.jpg",
+      "imageAlt": "Enterprise Risk Management Matrix & Mitigation Protocol"
     },
     {
       "id": "PM-003",
@@ -753,7 +769,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Stakeholder Mapping",
-          "body": "Stakeholder mapping involves identifying all individuals or groups impacted by the project and analyzing their level of influence and interest. We utilize a Power/Interest grid to categorize stakeholders into four quadrants: Manage Closely, Keep Satisfied, Keep Informed, and Monitor. This analysis dictates the frequency and level of detail required for communication with each group. Reassessing this map periodically is necessary as project dynamics change.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Stakeholder Communication Plan & Escalation Hierarchy](/images/sye_pm_project_governance.jpg)\n\nStakeholder mapping involves identifying all individuals or groups impacted by the project and analyzing their level of influence and interest. We utilize a Power/Interest grid to categorize stakeholders into four quadrants: Manage Closely, Keep Satisfied, Keep Informed, and Monitor. This analysis dictates the frequency and level of detail required for communication with each group. Reassessing this map periodically is necessary as project dynamics change.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: The Communication Plan",
@@ -767,7 +783,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Escalation Pathways",
           "body": "When a project encounters an issue that the team cannot resolve internally, it must be escalated appropriately. The escalation path should be defined during project initiation, clearly stating who should be contacted for specific types of issues (e.g., technical, financial, or personnel). Effective escalation provides proposed solutions alongside the problem description, enabling leaders to make informed decisions quickly. Escalation should be viewed as a tool for unblocking progress, not a sign of failure."
         }
-      ]
+      ],
+      "image": "/images/sye_pm_project_governance.jpg",
+      "imageAlt": "Stakeholder Communication Plan & Escalation Hierarchy"
     },
     {
       "id": "PM-004",
@@ -817,7 +835,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Budget Tracking Fundamentals",
-          "body": "Project budgets at AEON encompass personnel costs, software licenses, infrastructure, and third-party vendor fees. Project Managers must track actual expenditures against the baseline budget on a monthly basis. Variance analysis helps identify areas where the project is over or under budget, allowing for timely corrective actions. Accurate financial forecasting is critical for departmental financial planning.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![IT Budgeting, Resource Capacity Planning & Vendor SLA](/images/sye_pm_project_governance.jpg)\n\nProject budgets at AEON encompass personnel costs, software licenses, infrastructure, and third-party vendor fees. Project Managers must track actual expenditures against the baseline budget on a monthly basis. Variance analysis helps identify areas where the project is over or under budget, allowing for timely corrective actions. Accurate financial forecasting is critical for departmental financial planning.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_pm_project_governance.jpg\" alt=\"Enterprise Project Governance, WBS & Risk Matrix\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise Project Governance, WBS & Risk Matrix</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Gantt Milestones • Resource Capacity Allocation</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Resource Planning",
@@ -831,7 +849,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Vendor and Contract Management",
           "body": "Many projects rely on external vendors for specialized skills or software platforms. Project Managers are responsible for tracking vendor deliverables against the Statement of Work (SOW) and ensuring milestones are met before approving invoices. Maintaining a professional, collaborative relationship with vendors while strictly enforcing contract terms is essential. Any changes to vendor scope must go through the formal Change Request process."
         }
-      ]
+      ],
+      "image": "/images/sye_pm_project_governance.jpg",
+      "imageAlt": "IT Budgeting, Resource Capacity Planning & Vendor SLA"
     },
     {
       "id": "BA-001",
@@ -874,7 +894,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Interview Techniques",
-          "body": "One-on-one interviews are crucial for eliciting detailed requirements from subject matter experts (SMEs). At AEON, Business Analysts should prepare open-ended questions in advance to encourage discussion. Active listening and asking clarifying \"why\" questions help uncover underlying business needs rather than just technical requests. Always document the interview outcomes and seek confirmation from the interviewee to ensure accuracy.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Requirements Discovery, Event Storming & Ubiquitous Language](/images/sye_ba_process_modeling.jpg)\n\nOne-on-one interviews are crucial for eliciting detailed requirements from subject matter experts (SMEs). At AEON, Business Analysts should prepare open-ended questions in advance to encourage discussion. Active listening and asking clarifying \"why\" questions help uncover underlying business needs rather than just technical requests. Always document the interview outcomes and seek confirmation from the interviewee to ensure accuracy.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Facilitating Workshops",
@@ -888,7 +908,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Surveys and Questionnaires",
           "body": "When requirements need to be gathered from a large, geographically dispersed group of stakeholders, surveys are an efficient tool. They are best used for quantitative data gathering or prioritizing features among many users. Questions must be unambiguous and carefully structured to avoid leading the respondent. The results should be analyzed to identify trends that warrant deeper investigation through interviews."
         }
-      ]
+      ],
+      "image": "/images/sye_ba_process_modeling.jpg",
+      "imageAlt": "Requirements Discovery, Event Storming & Ubiquitous Language"
     },
     {
       "id": "BA-002",
@@ -939,7 +961,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: The User Story Format",
-          "body": "User stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![User Story Mapping, INVEST Criteria & BDD Acceptance Criteria](/images/sye_ba_process_modeling.jpg)\n\nUser stories at AEON follow the standard format: \"As a [type of user], I want [some goal] so that [some reason].\" This structure ensures the focus remains on the value delivered to the user rather than technical implementation details. The 'persona' must be specific, the 'action' clear, and the 'business value' justifiable. A story without clear business value should not be brought into a sprint.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Applying INVEST Criteria",
@@ -953,7 +975,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Definition of Done (DoD)",
           "body": "While Acceptance Criteria are specific to an individual story, the Definition of Done is a global checklist that applies to all stories. At AEON, our DoD includes items like \"Code Reviewed,\" \"Unit Tests Passed,\" and \"Deployed to Staging.\" A story cannot be marked as Done and demonstrated at the Sprint Review unless all DoD items and Acceptance Criteria are met. This ensures a consistent level of quality across the product."
         }
-      ]
+      ],
+      "image": "/images/sye_ba_process_modeling.jpg",
+      "imageAlt": "User Story Mapping, INVEST Criteria & BDD Acceptance Criteria"
     },
     {
       "id": "BA-003",
@@ -999,13 +1023,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "สัญลักษณ์มาตรฐาน BPMN 2.0 สำหรับระบบการเงิน",
-          "body": "### สัญลักษณ์พื้นฐานที่ใช้ในการเขียนกระบวนการบน Confluence:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n\n\n### สัญลักษณ์หลักใน BPMN 2.0:\n1. **Events (เหตุการณ์)**: Start Event (วงกลมเส้นเดี่ยว), Message/Timer Event (วงกลมเส้นคู่), End Event (วงกลมเส้นหนา)\n2. **Tasks (กิจกรรม)**: User Task (งานที่เจ้าหน้าที่ทำ), Service Task (การเรียก API โดยระบบอัตโนมัติ)\n3. **Gateways (จุดตัดสินใจเงื่อนไข)**:\n   - **Exclusive (XOR)**: เลือกเดินทางใดทางหนึ่ง (เช่น คะแนนเครดิต $ge 700$ ให้ผ่าน ถ้า $< 700$ ให้ส่งตรวจเพิ่ม)\n   - **Parallel (AND)**: ทำงานหลายอย่างพร้อมกัน (เช่น ส่ง SMS แจ้งลูกค้า และ สร้างไฟล์ใบเสร็จ PDF)"
+          "body": "![Business Process Modeling Notation (BPMN 2.0) Workflows](/images/sye_ba_process_modeling.jpg)\n\n### สัญลักษณ์พื้นฐานที่ใช้ในการเขียนกระบวนการบน Confluence:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n\n\n### สัญลักษณ์หลักใน BPMN 2.0:\n1. **Events (เหตุการณ์)**: Start Event (วงกลมเส้นเดี่ยว), Message/Timer Event (วงกลมเส้นคู่), End Event (วงกลมเส้นหนา)\n2. **Tasks (กิจกรรม)**: User Task (งานที่เจ้าหน้าที่ทำ), Service Task (การเรียก API โดยระบบอัตโนมัติ)\n3. **Gateways (จุดตัดสินใจเงื่อนไข)**:\n   - **Exclusive (XOR)**: เลือกเดินทางใดทางหนึ่ง (เช่น คะแนนเครดิต $ge 700$ ให้ผ่าน ถ้า $< 700$ ให้ส่งตรวจเพิ่ม)\n   - **Parallel (AND)**: ทำงานหลายอย่างพร้อมกัน (เช่น ส่ง SMS แจ้งลูกค้า และ สร้างไฟล์ใบเสร็จ PDF)"
         },
         {
           "title": "การแบ่งหน้าที่รับผิดชอบด้วย Swimlanes ข้ามส่วนงาน",
           "body": "### การกำหนดขอบเขตด้วย Swimlanes:\nการจำลองขั้นตอนการสมัครสินเชื่อจะแบ่ง Swimlanes ตามหน้าที่รับผิดชอบ:\n- **Customer Channel (CXS)**: หน้าจอบน Mobile Banking ให้ลูกค้ากรอกข้อมูล\n- **API & Middleware (API)**: ระบบดึงข้อมูลตรวจสอบเครดิตบูโรอัตโนมัติ\n- **Customer Service (OCS)**: เจ้าหน้าที่ตรวจสอบเอกสารเพิ่มเติมในกรณีพิเศษ\n- **Core Banking**: บันทึกรายการลงบัญชีธนาคาร"
         }
-      ]
+      ],
+      "image": "/images/sye_ba_process_modeling.jpg",
+      "imageAlt": "Business Process Modeling Notation (BPMN 2.0) Workflows"
     },
     {
       "id": "BA-004",
@@ -1055,7 +1081,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Data Flow Diagrams (DFD)",
-          "body": "Data Flow Diagrams visually represent how information moves through a system or organization. They show external entities that provide or receive data, the processes that transform the data, and the data stores where information rests. Unlike process maps, DFDs focus solely on the data itself, not the sequential flow of tasks. They are critical for identifying data redundancy and security vulnerabilities.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Data Modeling, Entity Relationships & API Contract Spec](/images/sye_ba_process_modeling.jpg)\n\nData Flow Diagrams visually represent how information moves through a system or organization. They show external entities that provide or receive data, the processes that transform the data, and the data stores where information rests. Unlike process maps, DFDs focus solely on the data itself, not the sequential flow of tasks. They are critical for identifying data redundancy and security vulnerabilities.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ba_process_modeling.jpg\" alt=\"Business Analyst Requirements Engineering & BPMN 2.0\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Business Analyst Requirements Engineering & BPMN 2.0</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">User Stories • Given-When-Then • DoR Checklist</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: The Data Dictionary",
@@ -1069,7 +1095,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Data Privacy and Security Alignment",
           "body": "When analyzing data flows, BAs must always consider PDPA and internal security policies. You must identify where sensitive personal data (like national ID numbers) enters the system, where it is stored, and who has access to it. Requirements must include necessary data masking, encryption, or access controls. Protecting customer data is a foundational requirement for all new systems at AEON."
         }
-      ]
+      ],
+      "image": "/images/sye_ba_process_modeling.jpg",
+      "imageAlt": "Data Modeling, Entity Relationships & API Contract Spec"
     },
     {
       "id": "DEV-001",
@@ -1119,7 +1147,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "ภัยคุกคาม OWASP Top 10 ในระบบการเงินของ AEON",
-          "body": "### ภูมิทัศน์ความปลอดภัยของระบบการเงิน\nเนื่องจากระบบของฝ่าย SYE ประมวลผลเงินและข้อมูลเครดิตลูกค้า ความผิดพลาดทางความปลอดภัยจะส่งผลกระทบต่อความเชื่อมั่นและข้อกำหนดกฎหมายของ ธปท.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### ภัยคุกคามหลักที่ต้องเฝ้าระวัง:\n1. **Broken Object Level Authorization (BOLA)**: ผู้ใช้งานที่ล็อกอินแล้วแอบเข้าถึงข้อมูลบัญชีของผู้อื่นโดยการเปลี่ยนเลข ID ใน URL\n2. **SQL Injection (SQLi)**: การนำข้อความที่ผู้ใช้กรอกมาต่อ String คำสั่ง SQL โดยตรง\n3. **Cross-Site Scripting (XSS)**: การฝังสคริปต์อันตรายเพื่อขโมย Session หรือ Token ลูกค้า\n4. **Hardcoded Secrets**: การเผลอฝังรหัสผ่านหรือ API Key ลงใน Git Repository"
+          "body": "![OWASP Top 10 Defensive Engineering & Secure Coding](/images/sye_secure_coding_owasp.jpg)\n\n### ภูมิทัศน์ความปลอดภัยของระบบการเงิน\nเนื่องจากระบบของฝ่าย SYE ประมวลผลเงินและข้อมูลเครดิตลูกค้า ความผิดพลาดทางความปลอดภัยจะส่งผลกระทบต่อความเชื่อมั่นและข้อกำหนดกฎหมายของ ธปท.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_secure_coding_owasp.jpg\" alt=\"Secure Software Engineering & OWASP Top 10 Mitigation\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Secure Software Engineering & OWASP Top 10 Mitigation</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Parameterized Queries • DOM Sanitization • SAST/DAST</span>\n        </div>\n    </div>\n</div>\n\n\n### ภัยคุกคามหลักที่ต้องเฝ้าระวัง:\n1. **Broken Object Level Authorization (BOLA)**: ผู้ใช้งานที่ล็อกอินแล้วแอบเข้าถึงข้อมูลบัญชีของผู้อื่นโดยการเปลี่ยนเลข ID ใน URL\n2. **SQL Injection (SQLi)**: การนำข้อความที่ผู้ใช้กรอกมาต่อ String คำสั่ง SQL โดยตรง\n3. **Cross-Site Scripting (XSS)**: การฝังสคริปต์อันตรายเพื่อขโมย Session หรือ Token ลูกค้า\n4. **Hardcoded Secrets**: การเผลอฝังรหัสผ่านหรือ API Key ลงใน Git Repository"
         },
         {
           "title": "การป้องกัน SQL Injection และมาตรฐานการคิวรีฐานข้อมูลใน Golang",
@@ -1133,7 +1161,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "การป้องกันช่องโหว่สิทธิ์ (Broken Access Control) บน Golang Middleware",
           "body": "### การตรวจสอบความเป็นเจ้าของข้อมูล (Resource Ownership):\nทุก API Handler ต้องตรวจสอบว่า ID ที่ส่งมาใน Request ตรงกับ Subject ใน Token ของผู้เรียกใช้งานจริงหรือไม่:\n\n```go\n// Middleware ตรวจสอบสิทธิ์การเข้าถึงข้อมูลของตนเอง\nfunc RequireResourceOwnership() gin.HandlerFunc {\n    return func(c *gin.Context) {\n        tokenClaims := c.MustGet(\"claims\").(*JWTClaims)\n        requestedUserID := c.Param(\"userId\")\n\n        if tokenClaims.Role != \"ADMIN\" && tokenClaims.Subject != requestedUserID {\n            c.AbortWithStatusJSON(http.StatusForbidden, gin.H{\n                \"error_code\": \"FORBIDDEN_ACCESS\",\n                \"message\":    \"คุณไม่มีสิทธิ์เข้าถึงข้อมูลของลูกค้ารายนี้\",\n            })\n            return\n        }\n        c.Next()\n    }\n}\n```"
         }
-      ]
+      ],
+      "image": "/images/sye_secure_coding_owasp.jpg",
+      "imageAlt": "OWASP Top 10 Defensive Engineering & Secure Coding"
     },
     {
       "id": "DEV-002",
@@ -1181,7 +1211,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "กลยุทธ์การจัดการ Branch และการเชื่อมโยง Environment",
-          "body": "ซอร์สโค้ดทั้งหมดจัดเก็บบน **AEON GitHub Enterprise Server (On-Premise)**\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n\n\n### หน้าที่ของแต่ละ Branch:\n- `main`: โค้ดชุดที่พร้อมขึ้น Production ป้องกันการ Push ตรงโดยเด็ดขาด\n- `staging`: โค้ดสำหรับทดสอบบน Staging UAT และทำ Release Candidate\n- `develop`: โค้ดหลักสำหรับการรวมงานในแต่ละ Sprint\n- `feature/{jira-key}-{ชื่อฟีเจอร์}`: Branch พัฒนาฟังก์ชันใหม่ แตกออกจาก `develop`\n- `hotfix/{jira-key}-{ชื่อปัญหา}`: Branch แก้ปัญหาด่วน แตกออกจาก `main`"
+          "body": "![Trunk-Based Git Branching Strategy & Code Review Standards](/images/devops_cicd_pipeline.jpg)\n\nซอร์สโค้ดทั้งหมดจัดเก็บบน **AEON GitHub Enterprise Server (On-Premise)**\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n\n\n### หน้าที่ของแต่ละ Branch:\n- `main`: โค้ดชุดที่พร้อมขึ้น Production ป้องกันการ Push ตรงโดยเด็ดขาด\n- `staging`: โค้ดสำหรับทดสอบบน Staging UAT และทำ Release Candidate\n- `develop`: โค้ดหลักสำหรับการรวมงานในแต่ละ Sprint\n- `feature/{jira-key}-{ชื่อฟีเจอร์}`: Branch พัฒนาฟังก์ชันใหม่ แตกออกจาก `develop`\n- `hotfix/{jira-key}-{ชื่อปัญหา}`: Branch แก้ปัญหาด่วน แตกออกจาก `main`"
         },
         {
           "title": "มาตรฐานการเขียน Commit (Conventional Commits) และการระบุ Ticket",
@@ -1191,7 +1221,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "วงจรชีวิตของ Pull Request และการตรวจโค้ด (Peer Review)",
           "body": "### ข้อกำหนดของ Pull Request (PR):\n1. **ชื่อ PR**: ต้องขึ้นต้นด้วยรหัส Jira เช่น `[SYE-1420] PromptPay Dynamic QR`\n2. **คำอธิบาย**: ระบุสิ่งที่แก้ไข ผลกระทบ และผลการทดสอบ\n3. **การอนุมัติ**: ต้องผ่านการตรวจและ Approve จากเพื่อนร่วมทีมอย่างน้อย **2 คน** และ CI ผ่านเป็นสีเขียว\n4. **การรวมโค้ด**: ให้เลือกใช้ **Squash and Merge** เพื่อรักษาประวัติการพัฒนาให้เรียบง่ายและเป็นระเบียบ"
         }
-      ]
+      ],
+      "image": "/images/devops_cicd_pipeline.jpg",
+      "imageAlt": "Trunk-Based Git Branching Strategy & Code Review Standards"
     },
     {
       "id": "DEV-003",
@@ -1239,7 +1271,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: RESTful Principles",
-          "body": "APIs at AEON must adhere to REST principles, using nouns to represent resources (e.g., `/users`, `/orders`) rather than verbs. We utilize standard HTTP methods to indicate actions: GET for retrieval, POST for creation, PUT/PATCH for updates, and DELETE for removal. APIs must be stateless, meaning each request contains all information necessary for the server to fulfill it, independent of previous requests.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_golang_kafka_mesh.jpg\" alt=\"Golang Microservices & Apache Kafka Event Mesh\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Golang Microservices & Apache Kafka Event Mesh</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">API Gateway • gRPC • Redis • PostgreSQL</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![RESTful API Design, OpenAPI 3.1 & Idempotency Locking](/images/sye_api_core_banking.jpg)\n\nAPIs at AEON must adhere to REST principles, using nouns to represent resources (e.g., `/users`, `/orders`) rather than verbs. We utilize standard HTTP methods to indicate actions: GET for retrieval, POST for creation, PUT/PATCH for updates, and DELETE for removal. APIs must be stateless, meaning each request contains all information necessary for the server to fulfill it, independent of previous requests.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_golang_kafka_mesh.jpg\" alt=\"Golang Microservices & Apache Kafka Event Mesh\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Golang Microservices & Apache Kafka Event Mesh</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">API Gateway • gRPC • Redis • PostgreSQL</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Status Codes and Error Handling",
@@ -1253,7 +1285,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Swagger Documentation",
           "body": "Every API deployed at AEON must have accompanying OpenAPI (Swagger) documentation. This documentation is generated automatically from code annotations. The Swagger UI provides an interactive interface for developers and QA to understand the endpoints, required payloads, and expected responses. Undocumented APIs will not pass the CI pipeline and cannot be deployed to production."
         }
-      ]
+      ],
+      "image": "/images/sye_api_core_banking.jpg",
+      "imageAlt": "RESTful API Design, OpenAPI 3.1 & Idempotency Locking"
     },
     {
       "id": "DEV-004",
@@ -1302,7 +1336,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "การเขียน Table-Driven Unit Test ในภาษา Golang",
-          "body": "### ข้อดีของการเขียน Table-Driven Test\nช่วยให้สามารถทดสอบทั้งกรณีปกติ (Happy Path) และกรณีผิดพลาด (Edge Cases) หลายๆ แบบได้ในฟังก์ชันเดียวอย่างเป็นระเบียบ\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```go\nfunc TestValidateNationalID(t *testing.T) {\n    tests := []struct {\n        name    string\n        id      string\n        wantErr bool\n    }{\n        {name: \"เลขบัตรประชาชนถูกต้อง\", id: \"1100501234561\", wantErr: false},\n        {name: \"Checksum ไม่ถูกต้อง\", id: \"1100501234569\", wantErr: true},\n        {name: \"จำนวนหลักไม่ครบ\", id: \"12345\", wantErr: true},\n        {name: \"มีตัวอักษรปน\", id: \"110050123456A\", wantErr: true},\n    }\n\n    for _, tt := range tests {\n        t.Run(tt.name, func(t *testing.T) {\n            err := ValidateNationalID(tt.id)\n            if tt.wantErr {\n                assert.Error(t, err)\n            } else {\n                assert.NoError(t, err)\n            }\n        })\n    }\n}\n```"
+          "body": "![Test-Driven Development (TDD) Red-Green-Refactor & AAA Pattern](/images/sye_golang_kafka_mesh.jpg)\n\n### ข้อดีของการเขียน Table-Driven Test\nช่วยให้สามารถทดสอบทั้งกรณีปกติ (Happy Path) และกรณีผิดพลาด (Edge Cases) หลายๆ แบบได้ในฟังก์ชันเดียวอย่างเป็นระเบียบ\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```go\nfunc TestValidateNationalID(t *testing.T) {\n    tests := []struct {\n        name    string\n        id      string\n        wantErr bool\n    }{\n        {name: \"เลขบัตรประชาชนถูกต้อง\", id: \"1100501234561\", wantErr: false},\n        {name: \"Checksum ไม่ถูกต้อง\", id: \"1100501234569\", wantErr: true},\n        {name: \"จำนวนหลักไม่ครบ\", id: \"12345\", wantErr: true},\n        {name: \"มีตัวอักษรปน\", id: \"110050123456A\", wantErr: true},\n    }\n\n    for _, tt := range tests {\n        t.Run(tt.name, func(t *testing.T) {\n            err := ValidateNationalID(tt.id)\n            if tt.wantErr {\n                assert.Error(t, err)\n            } else {\n                assert.NoError(t, err)\n            }\n        })\n    }\n}\n```"
         },
         {
           "title": "การทำ Mocking ฐานข้อมูลด้วย Go Interface",
@@ -1312,7 +1346,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "การทดสอบ React Component บน Next.js",
           "body": "### การทดสอบด้วย React Testing Library:\nทดสอบพฤติกรรมการใช้งานจริงของ Component เช่น ปุ่มกดยืนยันการโอนเงินจะถูกปิดใช้งานเมื่อยอดเงินเป็น 0:\n\n```tsx\ntest('ปุ่มยืนยันต้องกดไม่ได้ถ้ายอดเงินเป็น 0 และทำงานถูกต้องเมื่อกดยืนยัน', () => {\n    const onConfirm = jest.fn();\n    render(<TransferConfirmButton amount={500} onConfirm={onConfirm} />);\n    \n    const btn = screen.getByRole('button', { name: /ยืนยันการโอนเงิน/i });\n    expect(btn).toBeEnabled();\n    fireEvent.click(btn);\n    expect(onConfirm).toHaveBeenCalledTimes(1);\n});\n```"
         }
-      ]
+      ],
+      "image": "/images/sye_golang_kafka_mesh.jpg",
+      "imageAlt": "Test-Driven Development (TDD) Red-Green-Refactor & AAA Pattern"
     },
     {
       "id": "DEV-005",
@@ -1364,7 +1400,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Continuous Integration Basics",
-          "body": "Continuous Integration (CI) is the practice of automatically building and testing code every time a commit is pushed. At AEON, we utilize both Jenkins and GitHub Actions. The CI pipeline compiles the code, runs unit tests, performs static code analysis, and checks for security vulnerabilities. A failing CI build blocks the Pull Request from being merged, ensuring the main branch remains stable.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![12-Factor Microservices Resiliency & Circuit Breaker Pattern](/images/sye_golang_kafka_mesh.jpg)\n\nContinuous Integration (CI) is the practice of automatically building and testing code every time a commit is pushed. At AEON, we utilize both Jenkins and GitHub Actions. The CI pipeline compiles the code, runs unit tests, performs static code analysis, and checks for security vulnerabilities. A failing CI build blocks the Pull Request from being merged, ensuring the main branch remains stable.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/devops_cicd_pipeline.jpg\" alt=\"On-Premise CI/CD Release Pipeline & Quality Gates\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">On-Premise CI/CD Release Pipeline & Quality Gates</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">GitFlow & SonarQube on RHEL Runners</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Build Stages and Pipelines",
@@ -1378,7 +1414,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Deployment Strategies",
           "body": "Continuous Deployment (CD) automates the release of artifacts to target environments. We employ advanced deployment strategies like Blue/Green and Canary releases for critical services to minimize downtime and risk. These strategies route a small percentage of traffic to the new version, allowing us to monitor for errors before rolling out to all users. Automated rollbacks are triggered if health checks fail."
         }
-      ]
+      ],
+      "image": "/images/sye_golang_kafka_mesh.jpg",
+      "imageAlt": "12-Factor Microservices Resiliency & Circuit Breaker Pattern"
     },
     {
       "id": "QA-001",
@@ -1426,7 +1464,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Test Levels",
-          "body": "Quality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![The Modern Testing Pyramid & Defect Prevention Strategy](/images/sye_qa_automation_pyramid.jpg)\n\nQuality Assurance involves multiple levels of testing to ensure comprehensive coverage. Unit testing is handled by developers, while QA focuses on Integration, System, and Acceptance testing. System testing verifies the complete, integrated application against requirements. User Acceptance Testing (UAT) validates that the software meets business needs and is ready for production deployment.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Risk-Based Testing",
@@ -1440,7 +1478,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Test Metrics and Reporting",
           "body": "Effective QA relies on data to measure product quality and team efficiency. Key metrics include Test Execution Coverage, Defect Density, and Defect Rejection Rate. Daily test execution reports keep stakeholders informed of progress and blockers. The final Test Summary Report provides a formal sign-off recommendation based on these metrics before a production release."
         }
-      ]
+      ],
+      "image": "/images/sye_qa_automation_pyramid.jpg",
+      "imageAlt": "The Modern Testing Pyramid & Defect Prevention Strategy"
     },
     {
       "id": "QA-002",
@@ -1485,13 +1525,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "สถาปัตยกรรมการทดสอบด้วย Playwright (Page Object Model)",
-          "body": "### ทำไมต้องใช้ Playwright สำหรับพอร์ทัลของ AEON\nPlaywright มีระบบ Auto-waiting อัตโนมัติ รองรับการรันแบบ Headless ความเร็วสูง และบันทึกวิดีโอการเกิดข้อผิดพลาดได้ในตัว\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```typescript\n// ตัวอย่าง Page Object สำหรับหน้าชำระเงินบัตรเครดิต\nexport class CardPaymentPage {\n  constructor(private page: Page) {}\n\n  async fillPaymentDetails(cardNumber: string, amount: string) {\n    await this.page.getByLabel('หมายเลขบัตร').fill(cardNumber);\n    await this.page.getByLabel('จำนวนเงิน').fill(amount);\n  }\n}\n```"
+          "body": "![Automated UI & E2E Testing with Playwright & Cypress](/images/sye_qa_automation_pyramid.jpg)\n\n### ทำไมต้องใช้ Playwright สำหรับพอร์ทัลของ AEON\nPlaywright มีระบบ Auto-waiting อัตโนมัติ รองรับการรันแบบ Headless ความเร็วสูง และบันทึกวิดีโอการเกิดข้อผิดพลาดได้ในตัว\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n\n\n```typescript\n// ตัวอย่าง Page Object สำหรับหน้าชำระเงินบัตรเครดิต\nexport class CardPaymentPage {\n  constructor(private page: Page) {}\n\n  async fillPaymentDetails(cardNumber: string, amount: string) {\n    await this.page.getByLabel('หมายเลขบัตร').fill(cardNumber);\n    await this.page.getByLabel('จำนวนเงิน').fill(amount);\n  }\n}\n```"
         },
         {
           "title": "การรันชุดทดสอบ API อัตโนมัติด้วย Newman บน CI/CD",
           "body": "### การสั่งรัน API Test Collection บนเซิร์ฟเวอร์ RHEL:\nชุดทดสอบ API จาก Postman จะถูกรันอัตโนมัติทุกครั้งที่มีการปล่อยโค้ดใหม่ผ่านคำสั่ง Newman CLI:\n\n```bash\nnewman run ./tests/aeon-payment-api.postman_collection.json \\\n  --environment ./tests/staging.postman_environment.json \\\n  --reporters cli,htmlextra \\\n  --reporter-htmlextra-export ./reports/api-test-report.html\n```"
         }
-      ]
+      ],
+      "image": "/images/sye_qa_automation_pyramid.jpg",
+      "imageAlt": "Automated UI & E2E Testing with Playwright & Cypress"
     },
     {
       "id": "QA-003",
@@ -1541,7 +1583,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Postman Fundamentals",
-          "body": "Postman is our standard tool for manual and automated API testing. QA engineers use it to construct HTTP requests with specific headers, query parameters, and JSON payloads. Understanding how to manage environments and variables in Postman is essential for executing tests across Dev, Staging, and Production without modifying the requests themselves.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Automated API & Contract Testing with Postman & Pact](/images/sye_qa_automation_pyramid.jpg)\n\nPostman is our standard tool for manual and automated API testing. QA engineers use it to construct HTTP requests with specific headers, query parameters, and JSON payloads. Understanding how to manage environments and variables in Postman is essential for executing tests across Dev, Staging, and Production without modifying the requests themselves.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Request and Response Validation",
@@ -1555,7 +1597,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Collection Automation",
           "body": "Individual Postman requests are organized into Collections that represent complete test suites or user workflows. These collections can be executed sequentially using the Postman Collection Runner. For CI/CD integration, we export these collections and run them automatically via the command line using Newman. Automated API tests are significantly faster and less brittle than UI tests."
         }
-      ]
+      ],
+      "image": "/images/sye_qa_automation_pyramid.jpg",
+      "imageAlt": "Automated API & Contract Testing with Postman & Pact"
     },
     {
       "id": "QA-004",
@@ -1601,13 +1645,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "เกณฑ์มาตรฐานประสิทธิภาพ (SLA Benchmarks) ของระบบการเงิน",
-          "body": "### ตัวชี้วัดประสิทธิภาพที่ต้องผ่านก่อนขึ้นระบบ:\n\n| ตัวชี้วัด | เกณฑ์เป้าหมาย (SLA) | ความหมาย |\n|---|---|---|\n| **P95 Latency** | $< 200\\text{ ms}$ | 95% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 200 มิลลิวินาที |\n| **P99 Latency** | $< 500\\text{ ms}$ | 99% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 500 มิลลิวินาที |\n| **Error Rate** | $< 0.01\\%$ | อัตราข้อผิดพลาดของระบบช่วงโหลดสูงสุดไม่เกิน 0.01% |\n| **Target TPS** | $ge 2,500\\text{ TPS}$ | รองรับธุรกรรมตัดยอดบัตรเครดิตพร้อมกันได้ 2,500 รายการ/วินาที |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Performance, Load & Stress Testing SLA Benchmark](/images/sye_qa_automation_pyramid.jpg)\n\n### ตัวชี้วัดประสิทธิภาพที่ต้องผ่านก่อนขึ้นระบบ:\n\n| ตัวชี้วัด | เกณฑ์เป้าหมาย (SLA) | ความหมาย |\n|---|---|---|\n| **P95 Latency** | $< 200\\text{ ms}$ | 95% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 200 มิลลิวินาที |\n| **P99 Latency** | $< 500\\text{ ms}$ | 99% ของผู้ใช้ต้องได้รับผลลัพธ์ภายใน 500 มิลลิวินาที |\n| **Error Rate** | $< 0.01\\%$ | อัตราข้อผิดพลาดของระบบช่วงโหลดสูงสุดไม่เกิน 0.01% |\n| **Target TPS** | $ge 2,500\\text{ TPS}$ | รองรับธุรกรรมตัดยอดบัตรเครดิตพร้อมกันได้ 2,500 รายการ/วินาที |\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "การรัน JMeter ผ่าน Command-Line บนเซิร์ฟเวอร์ RHEL",
           "body": "### การสั่งรันแบบ Non-GUI Mode เพื่อประสิทธิภาพสูงสุด:\nรันการทดสอบโหลด 5,000 ผู้ใช้งานเสมือนจริงและสร้าง Dashboard วิเคราะห์ผลอัตโนมัติ:\n\n```bash\njmeter -n -t ./scenarios/salary_day_payment_spike.jmx \\\n  -l ./results/run_20260824.jtl \\\n  -e -o ./dashboard_report/\n```"
         }
-      ]
+      ],
+      "image": "/images/sye_qa_automation_pyramid.jpg",
+      "imageAlt": "Performance, Load & Stress Testing SLA Benchmark"
     },
     {
       "id": "QA-005",
@@ -1658,7 +1704,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Bug Severity vs. Priority",
-          "body": "Severity defines the technical impact of a defect on the system (e.g., Critical, Major, Minor), while Priority defines how urgently the business needs it fixed (High, Medium, Low). A typo on the homepage might be Low Severity but High Priority, whereas a crash deep in an unused feature might be High Severity but Low Priority. QA assigns Severity, while the Product Owner determines Priority.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Defect Lifecycle Management & 5-Whys Root Cause Analysis](/images/sye_qa_automation_pyramid.jpg)\n\nSeverity defines the technical impact of a defect on the system (e.g., Critical, Major, Minor), while Priority defines how urgently the business needs it fixed (High, Medium, Low). A typo on the homepage might be Low Severity but High Priority, whereas a crash deep in an unused feature might be High Severity but Low Priority. QA assigns Severity, while the Product Owner determines Priority.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_qa_automation_pyramid.jpg\" alt=\"70/20/10 QA Testing Pyramid & Defect Triaging\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">70/20/10 QA Testing Pyramid & Defect Triaging</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Automated Test Suites • Code Coverage >=80%</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Writing Effective Defect Reports",
@@ -1672,7 +1718,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Root Cause and Verification",
           "body": "When verifying a fixed defect, QA must not only test the original steps but also perform regression testing around the affected area to ensure the fix didn't break existing functionality. Developers are required to provide a brief Root Cause analysis in the JIRA ticket upon resolution. This helps QA design better test cases in the future to catch similar issues earlier."
         }
-      ]
+      ],
+      "image": "/images/sye_qa_automation_pyramid.jpg",
+      "imageAlt": "Defect Lifecycle Management & 5-Whys Root Cause Analysis"
     },
     {
       "id": "SRE-001",
@@ -1719,7 +1767,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Cloud Service Models",
-          "body": "AEON utilizes a mix of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides fundamental computing resources like VMs and networks. PaaS offers managed environments like managed databases or container services, reducing operational overhead. Understanding these models dictates the division of responsibility between the cloud provider and our SRE team.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Site Reliability Engineering (SRE) Four Golden Signals](/images/sye_sre_tanzu_monitoring.jpg)\n\nAEON utilizes a mix of Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). IaaS provides fundamental computing resources like VMs and networks. PaaS offers managed environments like managed databases or container services, reducing operational overhead. Understanding these models dictates the division of responsibility between the cloud provider and our SRE team.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Networking & Storage",
@@ -1733,7 +1781,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Infrastructure as Code (IaC)",
           "body": "Manual configuration of cloud resources via web consoles is prohibited in production. We manage all infrastructure using Infrastructure as Code tools like Terraform. IaC allows us to version control our infrastructure, apply changes consistently across environments, and rapidly recover from disasters. Code reviews are mandatory for all infrastructure changes just as they are for application code."
         }
-      ]
+      ],
+      "image": "/images/sye_sre_tanzu_monitoring.jpg",
+      "imageAlt": "Site Reliability Engineering (SRE) Four Golden Signals"
     },
     {
       "id": "SRE-002",
@@ -1779,13 +1829,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "มาตรฐานการวัดผล 4 Golden Signals และ RED Method",
-          "body": "### มาตรฐาน Telemetry สำหรับบริการบน Tanzu:\nทุก Microservice ที่รันบน Tanzu ต้องเปิด Endpoint `/metrics` เพื่อส่งข้อมูล **4 Golden Signals**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Rate**: ปริมาณคำขอต่อวินาที (Requests/sec)\n2. **Errors**: จำนวนคำขอที่ล้มเหลว (HTTP 5xx)\n3. **Duration**: ความเร็วในการตอบสนอง (Latency)\n4. **Saturation**: สัดส่วนการใช้ทรัพยากร (CPU, RAM, Database Connections)\n\n```go\n// ตัวอย่างการเก็บ Metrics ใน Golang ด้วย Prometheus Client\nvar httpRequestsTotal = prometheus.NewCounterVec(\n    prometheus.CounterOpts{\n        Name: \"http_requests_total\",\n        Help: \"จำนวนคำขอ HTTP ทั้งหมดแยกตาม Endpoint\",\n    },\n    []string{\"method\", \"path\", \"status\"},\n)\n```"
+          "body": "![Full-Stack Observability Stack (Prometheus, Grafana & OTel)](/images/sye_sre_tanzu_monitoring.jpg)\n\n### มาตรฐาน Telemetry สำหรับบริการบน Tanzu:\nทุก Microservice ที่รันบน Tanzu ต้องเปิด Endpoint `/metrics` เพื่อส่งข้อมูล **4 Golden Signals**:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Rate**: ปริมาณคำขอต่อวินาที (Requests/sec)\n2. **Errors**: จำนวนคำขอที่ล้มเหลว (HTTP 5xx)\n3. **Duration**: ความเร็วในการตอบสนอง (Latency)\n4. **Saturation**: สัดส่วนการใช้ทรัพยากร (CPU, RAM, Database Connections)\n\n```go\n// ตัวอย่างการเก็บ Metrics ใน Golang ด้วย Prometheus Client\nvar httpRequestsTotal = prometheus.NewCounterVec(\n    prometheus.CounterOpts{\n        Name: \"http_requests_total\",\n        Help: \"จำนวนคำขอ HTTP ทั้งหมดแยกตาม Endpoint\",\n    },\n    []string{\"method\", \"path\", \"status\"},\n)\n```"
         },
         {
           "title": "คำสั่ง PromQL สำหรับติดตาม SLO และการส่งแจ้งเตือน Alertmanager",
           "body": "### สูตรคำนวณ PromQL สำหรับหน้าจอ Dashboard:\n- **คำนวณอัตรา Error คิดเป็นเปอร์เซ็นต์**:\n  ```promql\n  sum(rate(http_requests_total{status=~\"5..\"}[5m])) / sum(rate(http_requests_total[5m])) * 100\n  ```\n- **คำนวณความเร็ว Latency ระดับ P95**:\n  ```promql\n  histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, path))\n  ```\n\n### การส่งแจ้งเตือน:\nกรณีเกิดเหตุ P1/P2 ระบบ Alertmanager จะส่งเสียงเตือนไปยัง **PagerDuty ของวิศวกร On-call** ทันที พร้อมแจ้งเตือนลง Slack ช่อง `#ops-critical-alerts`"
         }
-      ]
+      ],
+      "image": "/images/sye_sre_tanzu_monitoring.jpg",
+      "imageAlt": "Full-Stack Observability Stack (Prometheus, Grafana & OTel)"
     },
     {
       "id": "SRE-003",
@@ -1836,7 +1888,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Incident Command System",
-          "body": "During a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Incident Command System, War Room & Blameless Post-Mortem](/images/sye_sre_tanzu_monitoring.jpg)\n\nDuring a major incident, we establish an Incident Command System to coordinate the response. The Incident Commander (IC) takes absolute authority over the situation, directing engineers and ensuring procedures are followed. The IC does not fix the problem; they manage the people fixing the problem. This structure prevents chaos and ensures a unified approach to mitigation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Outage Communication",
@@ -1850,7 +1902,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Action Items and Follow-up",
           "body": "The most important output of a post-mortem is the list of actionable items designed to improve system resilience. These might include adding new alerts, rewriting a flaky service, or updating runbooks. Action items must be assigned to specific owners and tracked in JIRA with high priority. An incident is not truly closed until all preventative action items are completed."
         }
-      ]
+      ],
+      "image": "/images/sye_sre_tanzu_monitoring.jpg",
+      "imageAlt": "Incident Command System, War Room & Blameless Post-Mortem"
     },
     {
       "id": "SRE-004",
@@ -1899,7 +1953,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Docker Fundamentals",
-          "body": "Containerization packages an application and all its dependencies into a single, standardized unit. Docker ensures consistency across environments—if it runs on a developer's laptop, it will run exactly the same way in production. SREs assist development teams in writing optimized Dockerfiles, emphasizing multi-stage builds to minimize image size and attack surface.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![VMware Tanzu K8s Container Orchestration & Pod Architecture](/images/sye_onprem_infra_arch.jpg)\n\nContainerization packages an application and all its dependencies into a single, standardized unit. Docker ensures consistency across environments—if it runs on a developer's laptop, it will run exactly the same way in production. SREs assist development teams in writing optimized Dockerfiles, emphasizing multi-stage builds to minimize image size and attack surface.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Kubernetes Architecture",
@@ -1913,7 +1967,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Configuration and Secrets Management",
           "body": "Applications often require environment-specific configuration and sensitive credentials. In K8s, we separate these from the container image using ConfigMaps and Secrets. Secrets are base64 encoded and must be injected into Pods at runtime. For production, we integrate K8s with external secret management systems (like HashiCorp Vault) to ensure highest security."
         }
-      ]
+      ],
+      "image": "/images/sye_onprem_infra_arch.jpg",
+      "imageAlt": "VMware Tanzu K8s Container Orchestration & Pod Architecture"
     },
     {
       "id": "SRE-005",
@@ -1962,7 +2018,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Load Balancing & Auto-scaling",
-          "body": "To handle variable traffic, we utilize horizontal auto-scaling combined with Layer 7 load balancers. Application tiers are configured to scale out automatically based on CPU utilization or request queue length. Load balancers distribute incoming traffic evenly across healthy instances, performing constant health checks to quickly remove failed nodes from rotation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![High Availability (HA) & Patroni PostgreSQL Automated Failover](/images/sye_bcp_dr_datacenter.jpg)\n\nTo handle variable traffic, we utilize horizontal auto-scaling combined with Layer 7 load balancers. Application tiers are configured to scale out automatically based on CPU utilization or request queue length. Load balancers distribute incoming traffic evenly across healthy instances, performing constant health checks to quickly remove failed nodes from rotation.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_sre_tanzu_monitoring.jpg\" alt=\"VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">VMware Tanzu Kubernetes & Prometheus/Grafana Telemetry</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">99.95% Availability Mandate • Alertmanager</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Caching Strategies",
@@ -1976,7 +2032,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Chaos Engineering Basics",
           "body": "Chaos Engineering involves intentionally injecting failures into a system to build confidence in its resilience. We conduct controlled experiments, such as terminating random server instances or introducing network latency, to observe how our systems respond. These exercises uncover hidden dependencies and validate that our auto-healing and fallback mechanisms function correctly in real-world failure scenarios."
         }
-      ]
+      ],
+      "image": "/images/sye_bcp_dr_datacenter.jpg",
+      "imageAlt": "High Availability (HA) & Patroni PostgreSQL Automated Failover"
     },
     {
       "id": "SEC-001",
@@ -2020,13 +2078,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "การออกแบบ Microservices ตามหลัก Domain-Driven Design (DDD)",
-          "body": "### มาตรฐานสถาปัตยกรรม Microservices ของฝ่าย SYE:\nระบบของส่วนงาน API & Integration Platform ถูกออกแบบแยกตามขอบเขตหน้าที่ทางธุรกิจอย่างชัดเจน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### หลักการสำคัญ:\n1. **แยกฐานข้อมูลอิสระ (Database-per-Service)**: แต่ละ Microservice เป็นเจ้าของ Schema ฐานข้อมูล PostgreSQL ของตนเอง ห้ามทำ Cross-database Join ข้ามบริการโดยเด็ดขาด\n2. **การสื่อสารภายในด้วย gRPC**: ทราฟฟิกภายนอกเข้ามาผ่าน API Gateway ส่วนการเชื่อมต่อระหว่าง Microservices ภายในจะใช้ **gRPC** ผ่าน HTTP/2\n3. **การกระจาย Event ด้วย Apache Kafka**: เมื่อเกิดการเปลี่ยนแปลงสถานะ (เช่น มีการตัดเงิน) จะส่ง Event ไปยัง Kafka เพื่อให้ระบบอื่นทำงานต่อแบบ Asynchronous"
+          "body": "![Enterprise API Gateway Architecture & Distributed Rate Limiting](/images/sye_platform_arch.jpg)\n\n### มาตรฐานสถาปัตยกรรม Microservices ของฝ่าย SYE:\nระบบของส่วนงาน API & Integration Platform ถูกออกแบบแยกตามขอบเขตหน้าที่ทางธุรกิจอย่างชัดเจน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_onprem_infra_arch.jpg\" alt=\"100% On-Premise Enterprise Infrastructure Topology\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">100% On-Premise Enterprise Infrastructure Topology</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">VMware Tanzu • RHEL • Golang • PostgreSQL • Redis • Kafka</span>\n        </div>\n    </div>\n</div>\n\n\n### หลักการสำคัญ:\n1. **แยกฐานข้อมูลอิสระ (Database-per-Service)**: แต่ละ Microservice เป็นเจ้าของ Schema ฐานข้อมูล PostgreSQL ของตนเอง ห้ามทำ Cross-database Join ข้ามบริการโดยเด็ดขาด\n2. **การสื่อสารภายในด้วย gRPC**: ทราฟฟิกภายนอกเข้ามาผ่าน API Gateway ส่วนการเชื่อมต่อระหว่าง Microservices ภายในจะใช้ **gRPC** ผ่าน HTTP/2\n3. **การกระจาย Event ด้วย Apache Kafka**: เมื่อเกิดการเปลี่ยนแปลงสถานะ (เช่น มีการตัดเงิน) จะส่ง Event ไปยัง Kafka เพื่อให้ระบบอื่นทำงานต่อแบบ Asynchronous"
         },
         {
           "title": "รูปแบบ Transactional Outbox และการป้องกันรายการซ้ำ (Idempotency)",
           "body": "### การป้องกันข้อมูลไม่ตรงกันด้วย Outbox Pattern:\nบันทึก Event ลงตาราง `outbox_events` ใน Transaction เดียวกับการเขียนฐานข้อมูล แล้วให้ Worker ส่งต่อไปยัง Kafka อีกทอดหนึ่ง\n\n```sql\n-- ตัวอย่างตาราง Outbox เพื่อความถูกต้อง 100%\nCREATE TABLE outbox_events (\n    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n    aggregate_type VARCHAR(64) NOT NULL,\n    event_type VARCHAR(128) NOT NULL,\n    payload JSONB NOT NULL,\n    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()\n);\n```\n\n### การป้องกันการทำรายการซ้ำ (Idempotency Key):\nทุก API ตัดเงินต้องส่ง Header `X-Idempotency-Key` โดยระบบจะบันทึก Key ลงใน **Redis** หากมีการกดส่งซ้ำ ระบบจะคืนค่าผลลัพธ์เดิมทันทีโดยไม่ตัดเงินซ้ำ"
         }
-      ]
+      ],
+      "image": "/images/sye_platform_arch.jpg",
+      "imageAlt": "Enterprise API Gateway Architecture & Distributed Rate Limiting"
     },
     {
       "id": "SEC-002",
@@ -2072,13 +2132,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "สถาปัตยกรรมความปลอดภัยและหน้าที่ของ API Gateway",
-          "body": "### ด่านหน้าความปลอดภัยของระบบ:\nAPI Gateway ทำหน้าที่เป็นประตูปกป้องคลัสเตอร์ VMware Tanzu ภายใน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Mutual TLS (mTLS)**: ตรวจสอบใบรับรองดิจิทัลแบบ 2 ฝั่งสำหรับระบบพันธมิตรทางการเงินภายนอก\n2. **การตรวจสอบ JWT Token**: ตรวจสอบลายมือชื่อดิจิทัล (Signature) ก่อนส่งทราฟฟิกเข้า Microservices\n3. **การจำกัดปริมาณทราฟฟิก (Rate Limiting)**: ควบคุมปริมาณคำขอผ่าน Redis เพื่อป้องกันการโจมตีและระบบโอเวอร์โหลด"
+          "body": "![OAuth2.0 / OIDC Authorization Code Flow with PKCE Protocol](/images/sye_platform_arch.jpg)\n\n### ด่านหน้าความปลอดภัยของระบบ:\nAPI Gateway ทำหน้าที่เป็นประตูปกป้องคลัสเตอร์ VMware Tanzu ภายใน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n\n\n1. **Mutual TLS (mTLS)**: ตรวจสอบใบรับรองดิจิทัลแบบ 2 ฝั่งสำหรับระบบพันธมิตรทางการเงินภายนอก\n2. **การตรวจสอบ JWT Token**: ตรวจสอบลายมือชื่อดิจิทัล (Signature) ก่อนส่งทราฟฟิกเข้า Microservices\n3. **การจำกัดปริมาณทราฟฟิก (Rate Limiting)**: ควบคุมปริมาณคำขอผ่าน Redis เพื่อป้องกันการโจมตีและระบบโอเวอร์โหลด"
         },
         {
           "title": "การตั้งค่า Circuit Breaker เพื่อความเสถียรของระบบ",
           "body": "### การป้องกันระบบล่มต่อเนื่อง (Cascading Failure):\nเมื่อระบบปลายทางมีข้อผิดพลาดเกิน 50% ภายใน 10 วินาที API Gateway จะตัดวงจร (Open Circuit) และตอบกลับทันทีเพื่อรักษาเสถียรภาพของระบบโดยรวม\n\n```yaml\n# ตัวอย่างคอนฟิก Circuit Breaker บน Tanzu Ingress\nspec:\n  circuitBreaker:\n    consecutiveErrors: 5\n    interval: 10s\n    baseEjectionTime: 30s\n  rateLimit:\n    requestsPerSecond: 2500\n```"
         }
-      ]
+      ],
+      "image": "/images/sye_platform_arch.jpg",
+      "imageAlt": "OAuth2.0 / OIDC Authorization Code Flow with PKCE Protocol"
     },
     {
       "id": "SEC-003",
@@ -2124,7 +2186,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Anti-Corruption Layer (ACL)",
-          "body": "When integrating modern microservices with legacy core systems, we employ the Anti-Corruption Layer pattern. This isolating layer translates requests and data models between the new and old systems. It prevents legacy naming conventions and outdated data structures from polluting the new microservice architecture, ensuring long-term maintainability.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Core Banking Integration, Anti-Corruption Layer & Kafka Streams](/images/sye_api_core_banking.jpg)\n\nWhen integrating modern microservices with legacy core systems, we employ the Anti-Corruption Layer pattern. This isolating layer translates requests and data models between the new and old systems. It prevents legacy naming conventions and outdated data structures from polluting the new microservice architecture, ensuring long-term maintainability.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_api_core_banking.jpg\" alt=\"Enterprise API Gateway & Core Banking Integration\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Enterprise API Gateway & Core Banking Integration</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">mTLS • JWT Auth • AS400 & Kafka Connectors</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Adapter Patterns",
@@ -2134,7 +2196,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Data Migration Strategies",
           "body": "Migrating data from legacy systems to new databases requires careful planning. We utilize strategies like the Strangler Fig pattern, gradually routing traffic to the new system while synchronizing data in the background. Data integrity checks and automated reconciliation scripts are essential to guarantee no data is lost during the transition."
         }
-      ]
+      ],
+      "image": "/images/sye_api_core_banking.jpg",
+      "imageAlt": "Core Banking Integration, Anti-Corruption Layer & Kafka Streams"
     },
     {
       "id": "SEC-004",
@@ -2178,13 +2242,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "โครงสร้างสถาปัตยกรรม CXS: Mobile Apps, Next.js และ BFF Layer",
-          "body": "### ภาพรวมช่องทางบริการลูกค้าของ AEON:\nส่วนงาน CXS รับผิดชอบการพัฒนาและดูแลระบบที่ติดต่อกับลูกค้าโดยตรง:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n\n\n### องค์ประกอบของระบบ:\n1. **Mobile Banking (iOS / Android)**: แอปพลิเคชันการเงินที่รองรับการยืนยันตัวตนด้วยลายนิ้วมือ/ใบหน้า บัตรเครดิตดิจิทัล และการสแกนจ่าย QR\n2. **Next.js Web Portal**: เว็บพอร์ทัลบริการลูกค้าแบบ Server-Side Rendering (SSR) สำหรับตรวจสอบใบแจ้งยอดและขอสินเชื่อ\n3. **Golang BFF Layer**: บริการรวมข้อมูลและปรับขนาด Payload ให้ประหยัดแบนด์วิดท์มือถือ"
+          "body": "![Customer Data Platform (CDP) Real-Time Identity Resolution](/images/sye_cxs_mobile_frontend.jpg)\n\n### ภาพรวมช่องทางบริการลูกค้าของ AEON:\nส่วนงาน CXS รับผิดชอบการพัฒนาและดูแลระบบที่ติดต่อกับลูกค้าโดยตรง:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n\n\n### องค์ประกอบของระบบ:\n1. **Mobile Banking (iOS / Android)**: แอปพลิเคชันการเงินที่รองรับการยืนยันตัวตนด้วยลายนิ้วมือ/ใบหน้า บัตรเครดิตดิจิทัล และการสแกนจ่าย QR\n2. **Next.js Web Portal**: เว็บพอร์ทัลบริการลูกค้าแบบ Server-Side Rendering (SSR) สำหรับตรวจสอบใบแจ้งยอดและขอสินเชื่อ\n3. **Golang BFF Layer**: บริการรวมข้อมูลและปรับขนาด Payload ให้ประหยัดแบนด์วิดท์มือถือ"
         },
         {
           "title": "กระบวนการเปิดบัญชีดิจิทัล e-KYC และการยืนยันตัวตนชีวมิติ",
           "body": "### ขั้นตอนการตรวจสอบตัวตนดิจิทัล:\n1. **OCR อ่านบัตรประชาชน**: ตรวจสอบความถูกต้องของเลขบัตรและ Laser Code\n2. **Liveness Detection & Face Matching**: ตรวจสอบภาพถ่ายใบหน้าจริงเทียบกับรูปถ่ายในบัตรประชาชน\n3. **เชื่อมต่อ NDID**: ยืนยันตัวตนข้ามสถาบันการเงินผ่านเครือข่าย NDID\n4. **อนุมัติวงเงินอัตโนมัติ**: ประมวลผลคะแนนเครดิตและแจ้งผลภายใน **60 วินาที**"
         }
-      ]
+      ],
+      "image": "/images/sye_cxs_mobile_frontend.jpg",
+      "imageAlt": "Customer Data Platform (CDP) Real-Time Identity Resolution"
     },
     {
       "id": "SEC-005",
@@ -2229,7 +2295,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: Centralized State Management",
-          "body": "Complex frontend applications at AEON utilize centralized state management libraries like Redux or Vuex. This ensures a predictable state container where data flows in a unidirectional manner. Developers must strictly adhere to the pattern of dispatching actions and using pure functions (reducers) to update the state, avoiding direct mutations that cause side effects.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Modern Mobile Frontend State Management & Micro-Frontends](/images/sye_cxs_mobile_frontend.jpg)\n\nComplex frontend applications at AEON utilize centralized state management libraries like Redux or Vuex. This ensures a predictable state container where data flows in a unidirectional manner. Developers must strictly adhere to the pattern of dispatching actions and using pure functions (reducers) to update the state, avoiding direct mutations that cause side effects.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_cxs_mobile_frontend.jpg\" alt=\"Customer Experience Systems (CXS) Architecture\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Customer Experience Systems (CXS) Architecture</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">Next.js SSR • Mobile BFF • Biometric Auth</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: State Normalization",
@@ -2239,7 +2305,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Data Fetching and Caching",
           "body": "We utilize advanced data fetching libraries (like React Query or SWR) to handle server state, distinct from UI state. These libraries provide built-in caching, automatic background refetching, and stale-while-revalidate strategies. This results in highly responsive interfaces that mask network latency and reduce unnecessary API calls to the backend."
         }
-      ]
+      ],
+      "image": "/images/sye_cxs_mobile_frontend.jpg",
+      "imageAlt": "Modern Mobile Frontend State Management & Micro-Frontends"
     },
     {
       "id": "SEC-006",
@@ -2283,13 +2351,15 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "โครงสร้างสถาปัตยกรรม Omnichannel และระบบรับข้อความรวมศูนย์",
-          "body": "### ระบบรวมศูนย์งานบริการลูกค้าของ AEON:\nแพลตฟอร์ม OCS รวมศูนย์การติดต่อจากทุกช่องทางดิจิทัลและเสียงเข้ามาที่คิวเดียวกัน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n\n\n### ช่องทางการเชื่อมต่อ:\n1. **LINE Official Account**: รับข้อความผ่าน Webhook ของ LINE เข้าสู่ระบบอย่างปลอดภัย\n2. **Web Live Chat**: วิดเจ็ตแชตสดผ่าน WebSocket บนหน้าเว็บของ AEON\n3. **ระบบโทรศัพท์ CTI**: เชื่อมต่อระบบตู้สาขาโทรศัพท์ VoIP เข้ากับคอมพิวเตอร์เจ้าหน้าที่\n4. **หน้าจอรวมศูนย์ (Unified Agent Workspace)**: เว็บแอปพลิเคชัน Next.js ให้เจ้าหน้าที่แชต โทร และดูประวัติ CRM 360 ได้ในหน้าจอเดียว"
+          "body": "![Omnichannel Routing Engine & Resilient Message Queues](/images/sye_ocs_omnichannel_ai.jpg)\n\n### ระบบรวมศูนย์งานบริการลูกค้าของ AEON:\nแพลตฟอร์ม OCS รวมศูนย์การติดต่อจากทุกช่องทางดิจิทัลและเสียงเข้ามาที่คิวเดียวกัน:\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n\n\n### ช่องทางการเชื่อมต่อ:\n1. **LINE Official Account**: รับข้อความผ่าน Webhook ของ LINE เข้าสู่ระบบอย่างปลอดภัย\n2. **Web Live Chat**: วิดเจ็ตแชตสดผ่าน WebSocket บนหน้าเว็บของ AEON\n3. **ระบบโทรศัพท์ CTI**: เชื่อมต่อระบบตู้สาขาโทรศัพท์ VoIP เข้ากับคอมพิวเตอร์เจ้าหน้าที่\n4. **หน้าจอรวมศูนย์ (Unified Agent Workspace)**: เว็บแอปพลิเคชัน Next.js ให้เจ้าหน้าที่แชต โทร และดูประวัติ CRM 360 ได้ในหน้าจอเดียว"
         },
         {
           "title": "ระบบจัดสรรงานตามทักษะ (Skill-Based Routing) และ CRM Screen-Pop",
           "body": "### กระบวนการจัดสรรคิวงาน:\nเมื่อลูกค้าติดต่อเข้ามา ระบบจะวิเคราะห์เจตนาและระดับสมาชิกเพื่อส่งต่อให้เจ้าหน้าที่ที่เหมาะสมที่สุด:\n\n```text\nลูกค้าติดต่อเข้ามา -> AI ตรวจสอบหัวข้อ (เช่น สอบถามรายการปฏิเสธบัตร)\n  -> ตรวจสอบระดับสมาชิก (เช่น บัตรแพลทินัม)\n  -> ค้นหาเจ้าหน้าที่กลุ่ม 'VIP-Disputes' ที่พร้อมให้บริการ\n  -> ส่งงานเข้าหน้าจอเจ้าหน้าที่ พร้อมเปิดประวัติลูกค้า (Screen-Pop) ทันที (< 500ms)\n```"
         }
-      ]
+      ],
+      "image": "/images/sye_ocs_omnichannel_ai.jpg",
+      "imageAlt": "Omnichannel Routing Engine & Resilient Message Queues"
     },
     {
       "id": "SEC-007",
@@ -2333,7 +2403,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: The Agent Desktop",
-          "body": "The Agent Desktop is a unified web-based interface providing everything an agent needs to handle interactions. It consolidates multiple legacy applications into a single pane of glass, reducing toggle tax. Features include integrated softphone controls, omnichannel interaction histories, and real-time performance metrics dashboards.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![Unified Customer 360 Architecture & Real-Time Data Pipeline](/images/sye_ocs_omnichannel_ai.jpg)\n\nThe Agent Desktop is a unified web-based interface providing everything an agent needs to handle interactions. It consolidates multiple legacy applications into a single pane of glass, reducing toggle tax. Features include integrated softphone controls, omnichannel interaction histories, and real-time performance metrics dashboards.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: CRM Integration & Screen Pop",
@@ -2343,7 +2413,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Integrated Knowledge Base",
           "body": "The desktop features an AI-assisted knowledge base that suggests relevant articles based on the context of the ongoing conversation. Agents can quickly search for procedures, policies, and troubleshooting steps without leaving the application. Feedback mechanisms allow agents to flag outdated content, ensuring the repository remains accurate and useful."
         }
-      ]
+      ],
+      "image": "/images/sye_ocs_omnichannel_ai.jpg",
+      "imageAlt": "Unified Customer 360 Architecture & Real-Time Data Pipeline"
     },
     {
       "id": "SEC-008",
@@ -2389,7 +2461,7 @@ window.SYE_SAMPLE_DATA = {
       "content_th": [
         {
           "title": "หัวข้อ: NLU Training and Intents",
-          "body": "Natural Language Understanding (NLU) is the core of our chatbot framework. BAs and developers collaborate to define \"Intents\" (what the user wants) and provide varied training phrases. Continuous training based on actual chat logs is required to improve the bot's accuracy over time. Entities are extracted from the text to gather specific parameters required for transactions.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
+          "body": "![AI / NLU Intelligent Chatbot Intent Classification & Handoff](/images/sye_ocs_omnichannel_ai.jpg)\n\nNatural Language Understanding (NLU) is the core of our chatbot framework. BAs and developers collaborate to define \"Intents\" (what the user wants) and provide varied training phrases. Continuous training based on actual chat logs is required to improve the bot's accuracy over time. Entities are extracted from the text to gather specific parameters required for transactions.\n\n\n<div class=\"my-6\">\n    <div class=\"overflow-hidden rounded-2xl border border-slate-200 shadow-md bg-white\">\n        <img src=\"images/sye_ocs_omnichannel_ai.jpg\" alt=\"Omnichannel Customer Service & AI Chatbot Engine\" class=\"w-full h-auto object-cover max-h-[500px]\">\n        <div class=\"p-3.5 bg-slate-50 border-slate-100 text-slate-700 border-t flex items-center justify-between\">\n            <span class=\"text-xs font-bold text-slate-700\">Omnichannel Customer Service & AI Chatbot Engine</span>\n            <span class=\"text-[11px] font-mono text-slate-400\">LINE OA • CTI Telephony • Unified Agent Workspace</span>\n        </div>\n    </div>\n</div>\n"
         },
         {
           "title": "หัวข้อ: Dialog Flow Design",
@@ -2399,7 +2471,9 @@ window.SYE_SAMPLE_DATA = {
           "title": "หัวข้อ: Fallback and Human Handoff",
           "body": "When the bot fails to understand a user multiple times, it must trigger a graceful fallback mechanism. The standard protocol is to seamlessly transfer the conversation to a human agent in the appropriate queue. The full chat transcript and extracted context are passed to the agent's desktop, ensuring the customer never has to repeat themselves."
         }
-      ]
+      ],
+      "image": "/images/sye_ocs_omnichannel_ai.jpg",
+      "imageAlt": "AI / NLU Intelligent Chatbot Intent Classification & Handoff"
     }
   ],
   "trainingRecords": [

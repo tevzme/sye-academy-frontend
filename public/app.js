@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '3.0.0';
+const APP_VERSION = '3.5.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -1126,7 +1126,18 @@ function renderCourse(container, courseId) {
                 </div>
             ` : ''}
 
-            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+                        <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 md:p-8 mb-8">
+                <!-- Course Hero Image Banner -->
+                <div class="mb-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative bg-slate-900">
+                    <img src="${course.image || '/images/sye_platform_arch.jpg'}" alt="${courseName}" class="w-full h-56 sm:h-72 object-cover" />
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 via-slate-900/40 to-transparent p-4 flex items-center justify-between text-white">
+                        <span class="text-xs font-semibold uppercase tracking-wider flex items-center gap-1.5 font-mono">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> ${course.id} • ${course.category} Technical Track
+                        </span>
+                        <span class="text-xs text-slate-300 font-mono">AEON SYE Technical Standard</span>
+                    </div>
+                </div>
+
                 <div class="mb-6 border-b border-slate-100 pb-5">
                     <div class="flex flex-wrap gap-2 mb-2.5">
                         <span class="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded-md text-xs font-mono font-semibold">${course.id}</span>
@@ -1711,25 +1722,34 @@ function renderCatalog(container) {
         const grid = document.getElementById('catalog-grid');
         
         grid.innerHTML = filtered.map(c => `
-            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-5 flex flex-col justify-between hover:shadow-md transition">
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-blue-300 transition duration-200 group">
                 <div>
-                    <div class="flex justify-between items-start mb-2">
-                        <span class="font-mono text-xs font-semibold px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${c.id}</span>
-                        <span class="text-xs font-medium px-2 py-0.5 bg-blue-50 text-blue-700 rounded-md">${c.category}</span>
+                    <!-- Card Thumbnail Image -->
+                    <div class="h-36 w-full overflow-hidden bg-slate-900 relative">
+                        <img src="${c.image || '/images/sye_platform_arch.jpg'}" alt="${c.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90 group-hover:opacity-100" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-black/20"></div>
+                        <span class="absolute top-2.5 left-2.5 font-mono text-[11px] font-bold px-2.5 py-1 bg-slate-900/90 text-white rounded-lg backdrop-blur-xs border border-white/10 shadow-sm">${c.id}</span>
+                        <span class="absolute top-2.5 right-2.5 text-[11px] font-semibold px-2.5 py-1 bg-blue-600 text-white rounded-lg shadow-sm">${c.category}</span>
                     </div>
-                    <h4 class="font-semibold text-slate-800 text-base mb-2">${c.name}</h4>
-                    <p class="text-xs text-slate-500 line-clamp-3 mb-4 leading-relaxed">${c.description}</p>
+
+                    <div class="p-5">
+                        <h4 class="font-bold text-slate-800 text-base mb-1.5 group-hover:text-blue-600 transition cursor-pointer" onclick="navigate('/course/${c.id}', event)">${c.name}</h4>
+                        <p class="text-xs text-slate-500 line-clamp-2 mb-4 leading-relaxed">${c.description}</p>
+                        
+                        <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3">
+                            <span class="px-2 py-0.5 bg-slate-50 rounded font-medium">⏱ ${c.duration}</span>
+                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded font-medium">👥 ${c.targetRoles.join(', ')}</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-3">
-                        <span>⏱ ${c.duration}</span>
-                        <span class="text-indigo-600 font-medium">👥 ${c.targetRoles.join(', ')}</span>
-                        <span class="text-amber-600 font-medium">📝 Assessment</span>
-                    </div>
-                    <div class="flex items-center justify-end space-x-2 pt-2 border-t border-slate-100">
-                        <button onclick="previewCourseContent('${c.id}')" class="text-xs font-semibold text-slate-600 hover:text-slate-900 px-2 py-1 rounded">Read Material</button>
-                        <button onclick="openCourseModal('${c.id}')" class="text-xs font-semibold text-blue-600 hover:text-blue-800 px-2 py-1 rounded">Edit</button>
-                        <button onclick="deleteCourse('${c.id}')" class="text-xs font-semibold text-rose-500 hover:text-rose-700 px-2 py-1 rounded">Delete</button>
+
+                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100">
+                    <button onclick="previewCourseContent('${c.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                        <span>📖 Read Material</span>
+                    </button>
+                    <div class="flex items-center space-x-1">
+                        <button onclick="openCourseModal('${c.id}')" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-2 py-1">Edit</button>
+                        <button onclick="deleteCourse('${c.id}')" class="text-xs font-semibold text-rose-500 hover:text-rose-700 px-2 py-1">Delete</button>
                     </div>
                 </div>
             </div>
@@ -1756,6 +1776,18 @@ window.previewCourseContent = (courseId) => {
     if (!course) return;
     
     let contentHtml = '';
+    
+    // Top Hero Image Banner
+    contentHtml += `
+        <div class="mb-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative bg-slate-900">
+            <img src="${course.image || '/images/sye_platform_arch.jpg'}" alt="${course.name}" class="w-full h-48 sm:h-60 object-cover" />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 to-transparent p-3 flex items-center justify-between text-white">
+                <span class="text-xs font-semibold uppercase font-mono">${course.id} • ${course.category}</span>
+                <span class="text-xs text-slate-300 font-mono">Technical Blueprint</span>
+            </div>
+        </div>
+    `;
+
     if (course.content && course.content.length > 0) {
         if(course.learningObjectives) {
             contentHtml += `
