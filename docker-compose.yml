@@ -8,6 +8,8 @@ services:
     container_name: sye-academy-frontend
     restart: unless-stopped
     ports:
-      - "3000:80"
+      - "8080:8080"
     environment:
-      - VITE_API_URL=http://localhost:8080/api/v1
+      - PORT=8080
+      - BACKEND_URL=http://backend:8080
+      - NODE_ENV=production

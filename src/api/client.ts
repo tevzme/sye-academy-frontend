@@ -1,7 +1,9 @@
 import axios from 'axios';
 import { ApiResponse, Course, Employee, EmployeeStats, ReportSummary, TrainingRecord, WorkInstruction, Quiz, QuizResult, ActivityLog } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/v1';
+const API_BASE_URL = typeof window !== 'undefined'
+  ? (process.env.NEXT_PUBLIC_API_URL || '/api/v1')
+  : (process.env.BACKEND_URL ? `${process.env.BACKEND_URL}/api/v1` : 'http://127.0.0.1:8080/api/v1');
 
 export const apiClient = axios.create({
   baseURL: API_BASE_URL,

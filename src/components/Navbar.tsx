@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { useApp } from '../context/AppContext';
 import { Globe, User, Shield, LogOut, BookOpen, GraduationCap } from 'lucide-react';
