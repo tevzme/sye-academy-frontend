@@ -35,12 +35,12 @@ const I18N = {
             start_training_sub: 'New Staff & Outsource Engineer Registration',
             admin_panel: 'Admin Panel',
             admin_panel_sub: 'Compliance Records, Audits & System Management',
-            returning_learner: 'Returning Learner?',
-            select_learner: 'Select your name to continue...',
-            continue_btn: 'Continue →',
-            back_to_home: '← Back to Home',
+            returning_learner: 'Select Registered Engineer',
+            select_learner: 'Select engineer to start / continue training...',
+            continue_btn: 'Start Training →',
+            back_to_home: '← Back to Dashboard',
             back_to_roadmap: '← Back to My Training Roadmap',
-            log_out: 'Log out',
+            log_out: 'Exit to Dashboard',
             welcome: 'Welcome',
             onboarding_progress: 'Onboarding Progress',
             courses_completed: 'courses completed',
@@ -90,12 +90,12 @@ const I18N = {
             start_training_sub: 'ลงทะเบียนพนักงานประจำและ Outsource เพื่อเริ่มการอบรม',
             admin_panel: 'ผู้ดูแลระบบ (Admin Panel)',
             admin_panel_sub: 'บันทึกการอบรม ทะเบียนพนักงาน และเอกสาร Audit',
-            returning_learner: 'พนักงานเดิมที่เคยลงทะเบียนแล้ว',
-            select_learner: 'เลือกชื่อของคุณเพื่อเข้าสู่ระบบ...',
-            continue_btn: 'เข้าสู่ระบบอบรม →',
-            back_to_home: '← กลับหน้าหลัก',
+            returning_learner: 'เลือกวิศวกรที่ลงทะเบียนแล้ว',
+            select_learner: 'เลือกชื่อของคุณเพื่อเข้าสู่ระบบอบรม...',
+            continue_btn: 'เริ่มการอบรม →',
+            back_to_home: '← กลับหน้าหลัก (Dashboard)',
             back_to_roadmap: '← กลับสู่แผนผังการอบรมของฉัน',
-            log_out: 'ออกจากระบบ',
+            log_out: 'กลับหน้า Dashboard',
             welcome: 'ยินดีต้อนรับ',
             onboarding_progress: 'ความคืบหน้าการฝึกอบรม',
             courses_completed: 'หลักสูตรที่ผ่านแล้ว',
@@ -360,7 +360,7 @@ const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'num
 document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', dateOptions);
 
 // ===== ROUTER =====
-const learnerRoutes = ['landing', 'register', 'my-training'];
+const learnerRoutes = ['register', 'my-training'];
 const adminRoutes = ['dashboard', 'catalog', 'work-instructions', 'employees', 'records', 'assessments', 'reports', 'settings'];
 
 function handleRoute() {
@@ -368,7 +368,8 @@ function handleRoute() {
     UI.resetScroll();
     updateLangButtonLabels();
     
-    let hash = window.location.hash.substring(1) || 'landing';
+    let hash = window.location.hash.substring(1);
+    if (!hash || hash === 'landing') hash = 'dashboard';
     
     let courseMatch = hash.match(/^course-(.+)$/);
     let isCourseRoute = false;
@@ -389,8 +390,7 @@ function handleRoute() {
         const container = document.getElementById('learner-content');
         container.innerHTML = '';
         
-        if (hash === 'landing') renderLanding(container);
-        else if (hash === 'register') renderRegister(container);
+        if (hash === 'register') renderRegister(container);
         else if (hash === 'my-training') renderMyTraining(container);
         else if (isCourseRoute) renderCourse(container, courseId);
     } else {
@@ -426,72 +426,63 @@ function handleRoute() {
 
 window.addEventListener('hashchange', handleRoute);
 
-// ===== LEARNER PORTAL =====
-
-function renderLanding(container) {
+// Modal to Start Training / Select Engineer directly
+window.openLearnerModal = () => {
     const employees = DataAPI.getEmployees();
     
-    container.innerHTML = `
-        <div class="max-w-2xl w-full my-auto py-8">
-            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 text-center">
-                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-6 shadow-sm">🎓</div>
-                <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">${I18N.t('app_title')}</h1>
-                <p class="text-slate-500 text-sm max-w-md mx-auto mb-10 leading-relaxed font-medium">
-                    ${I18N.t('app_subtitle')}<br>
-                    <span class="text-xs text-slate-400">${I18N.t('division_name')}</span>
-                </p>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
-                    <a href="#register" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-blue-50/30 border-2 border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-md transition duration-200 group text-center">
-                        <span class="text-3xl mb-3 group-hover:scale-110 transition-transform">📚</span>
-                        <span class="font-bold text-slate-800 group-hover:text-blue-700 text-base mb-1">${I18N.t('start_training')}</span>
-                        <span class="text-xs text-slate-400">${I18N.t('start_training_sub')}</span>
-                    </a>
-                    <a href="#dashboard" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-slate-50 border-2 border-slate-200 rounded-2xl hover:border-slate-800 hover:shadow-md transition duration-200 group text-center">
-                        <span class="text-3xl mb-3 group-hover:scale-110 transition-transform">🔧</span>
-                        <span class="font-bold text-slate-800 group-hover:text-slate-900 text-base mb-1">${I18N.t('admin_panel')}</span>
-                        <span class="text-xs text-slate-400">${I18N.t('admin_panel_sub')}</span>
-                    </a>
-                </div>
-                
-                <!-- Returning Learner Form -->
-                <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
-                    <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
-                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
-                            <option value="">${I18N.t('select_learner')}</option>
-                            ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id} ${e.employmentType === 'Outsource' ? '[OS]' : ''})</option>`).join('')}
-                        </select>
-                        <button id="continue-btn" class="shrink-0 rounded-xl px-5 py-2.5 bg-slate-800 text-white text-sm font-semibold hover:bg-slate-700 transition disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap shadow-sm text-center" disabled>
-                            ${I18N.t('continue_btn')}
-                        </button>
-                    </div>
+    let html = `
+        <div class="space-y-6">
+            <div class="p-4 bg-blue-50/60 rounded-2xl border border-blue-100 flex items-center space-x-3">
+                <div class="w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shrink-0">🎓</div>
+                <div>
+                    <h4 class="font-bold text-blue-900 text-sm">System Enabler Onboarding Portal</h4>
+                    <p class="text-xs text-blue-700 mt-0.5">Select your profile to continue self-study modules or assessments.</p>
                 </div>
             </div>
-            <p class="text-center text-xs text-slate-400 mt-6 font-medium">${I18N.t('division_full')}</p>
+
+            <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Select Registered Engineer</label>
+                <div class="space-y-3">
+                    <select id="modal-learner-select" class="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
+                        <option value="">-- Choose your name from roster --</option>
+                        ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id} ${e.employmentType === 'Outsource' ? '[OS]' : ''})</option>`).join('')}
+                    </select>
+                    <button id="modal-continue-btn" onclick="startSelectedLearner()" class="w-full rounded-xl px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold transition shadow-sm">
+                        Continue to Training Roadmap →
+                    </button>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-100 pt-4 text-center">
+                <p class="text-xs text-slate-400 mb-2">Not registered yet?</p>
+                <a href="#register" onclick="UI.closeModal()" class="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-800">
+                    <span>➕ Register New Staff / Outsource Engineer</span>
+                </a>
+            </div>
         </div>
     `;
 
-    const select = document.getElementById('learner-select');
-    const btn = document.getElementById('continue-btn');
-    
-    select.addEventListener('change', (e) => {
-        btn.disabled = !e.target.value;
-    });
-    
-    btn.addEventListener('click', () => {
-        if(select.value) {
-            DB.setCurrentLearner(select.value);
-            window.location.hash = 'my-training';
-        }
-    });
-}
+    UI.showModal('Start Training / Learner Mode', html, null, '', false);
+};
+
+window.startSelectedLearner = () => {
+    const sel = document.getElementById('modal-learner-select');
+    if (!sel || !sel.value) {
+        alert('Please select an engineer first.');
+        return;
+    }
+    DB.setCurrentLearner(sel.value);
+    UI.closeModal();
+    window.location.hash = 'my-training';
+};
+
+// ===== LEARNER PORTAL =====
 
 function renderRegister(container) {
     container.innerHTML = `
-        <div class="max-w-lg w-full my-auto py-6">
+        <div class="max-w-lg w-full my-auto py-6 animate-fade-in-up">
             <div class="mb-4">
-                <a href="#landing" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
+                <a href="#dashboard" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
                 </a>
             </div>
@@ -599,20 +590,20 @@ function renderRegister(container) {
 
 window.logoutLearner = () => {
     DB.setCurrentLearner(null);
-    window.location.hash = 'landing';
+    window.location.hash = 'dashboard';
 };
 
 function renderMyTraining(container) {
     const learnerId = DB.getCurrentLearner();
     if(!learnerId) {
-        window.location.hash = 'landing';
+        window.location.hash = 'dashboard';
         return;
     }
 
     const emp = DataAPI.getEmployees().find(e => e.id === learnerId);
     if(!emp) {
         DB.setCurrentLearner(null);
-        window.location.hash = 'landing';
+        window.location.hash = 'dashboard';
         return;
     }
 
@@ -630,7 +621,7 @@ function renderMyTraining(container) {
     container.innerHTML = `
         <div class="max-w-4xl w-full py-4 animate-fade-in-up">
             <div class="flex justify-between items-center mb-6">
-                <a href="#landing" class="text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1">
+                <a href="#dashboard" class="text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
                 </a>
                 <button onclick="logoutLearner()" class="text-xs font-semibold text-rose-500 hover:text-rose-700 transition">
@@ -945,7 +936,7 @@ function renderCourse(container, courseId) {
     UI.resetScroll();
     const learnerId = DB.getCurrentLearner();
     if(!learnerId) {
-        window.location.hash = 'landing';
+        window.location.hash = 'dashboard';
         return;
     }
 
@@ -1433,7 +1424,7 @@ function renderDashboard(container) {
                                 <p class="text-xs text-blue-700 mt-0.5">Head of SYE: Akkharasaran S. • Sermmit Tower 14th Floor</p>
                             </div>
                         </div>
-                        <a href="#landing" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition">Learner Portal</a>
+                        <button onclick="openLearnerModal()" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition">Start Training</button>
                     </div>
                 </div>
                 
@@ -2187,7 +2178,7 @@ window.viewEmployeeDetail = (id) => {
         <div class="space-y-6">
             <div class="flex justify-between items-start">
                 <div class="flex items-center space-x-4">
-                    <img src="favicon.svg" alt="AEON" class="w-14 h-14 rounded-2xl shadow-xs object-cover border border-slate-200">
+                    <div class="w-14 h-14 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl shrink-0">${emp.name.charAt(0)}</div>
                     <div>
                         <h2 class="text-xl font-bold text-slate-800">${emp.name} <span class="text-xs font-mono text-slate-400 ml-2">(${emp.id})</span></h2>
                         <p class="text-xs text-slate-500 mt-1">${emp.role} • ${emp.section} • Joined ${emp.joinDate}</p>
