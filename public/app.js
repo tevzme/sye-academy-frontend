@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '6.0.0';
+const APP_VERSION = '9.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -865,7 +865,7 @@ function renderMyTraining(container) {
     roadmap.innerHTML += renderGroup(3, I18N.t('step3_title'), I18N.t('step3_desc'), sectionCourses, secUnlocked);
 }
 
-// Rich Markdown Parser with Native Image & Diagram Support
+// Bulletproof Markdown Parser with Native Inline Images, Code Blocks & Tables
 function formatRichContent(rawText) {
     if (!rawText) return '';
 
@@ -886,30 +886,7 @@ function formatRichContent(rawText) {
             .replace(/\*(.*?)\*/g, '<em class="italic text-slate-700">$1</em>');
     }
 
-    // 1. Parse Markdown Images ![alt](src)
-    text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
-        const id = `@@IMG_BLOCK_${tokens.length}@@`;
-        const imgHtml = `
-            <div class="my-6 rounded-3xl overflow-hidden border border-slate-200 shadow-md bg-white">
-                <img src="${src.trim()}" alt="${alt || 'Technical Architecture Diagram'}" class="w-full h-auto object-cover max-h-[480px] bg-slate-950" loading="lazy" />
-                <div class="px-5 py-3 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600 font-medium">
-                    <span class="flex items-center gap-2"><span class="text-blue-600 font-bold">📐</span> ${alt || 'Technical Architecture & Process Diagram'}</span>
-                    <span class="font-mono text-slate-400 font-normal">AEON SYE Technical Standard</span>
-                </div>
-            </div>
-        `;
-        tokens.push({ id, html: imgHtml });
-        return `\n\n${id}\n\n`;
-    });
-
-    // 2. Parse HTML blocks (SVGs, custom divs)
-    text = text.replace(/<div[\s\S]*?<\/div>/gi, (match) => {
-        const id = `@@HTML_BLOCK_${tokens.length}@@`;
-        tokens.push({ id, html: match });
-        return `\n\n${id}\n\n`;
-    });
-
-    // 3. Parse Code blocks
+    // 1. Code blocks
     text = text.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
         const id = `@@CODE_BLOCK_${tokens.length}@@`;
         const escaped = code
@@ -926,7 +903,24 @@ function formatRichContent(rawText) {
         return `\n\n${id}\n\n`;
     });
 
-    // 4. Parse Tables
+    // 2. Images ![alt](src)
+    text = text.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (match, alt, src) => {
+        const id = `@@IMG_BLOCK_${tokens.length}@@`;
+        const cleanSrc = src.trim();
+        const imgHtml = `
+            <div class="my-6 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-white">
+                <img src="${cleanSrc}" alt="${alt || 'Technical Architecture Diagram'}" class="w-full h-auto object-contain max-h-[460px] block mx-auto bg-slate-900" loading="lazy" />
+                <div class="px-4 py-2.5 bg-slate-50 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600 font-medium">
+                    <span class="flex items-center gap-1.5"><span class="text-blue-600 font-bold">📐</span> ${alt || 'Technical Architecture & Process Diagram'}</span>
+                    <span class="font-mono text-slate-400 font-normal">AEON SYE Technical Standard</span>
+                </div>
+            </div>
+        `;
+        tokens.push({ id, html: imgHtml });
+        return `\n\n${id}\n\n`;
+    });
+
+    // 3. Tables
     text = text.replace(/((?:\|[^\n]+\|\n)+)/g, (match) => {
         const lines = match.trim().split('\n').filter(l => l.trim().startsWith('|'));
         if (lines.length >= 2) {
@@ -1017,19 +1011,11 @@ function formatRichContent(rawText) {
 
         if (line.startsWith('- ') || line.startsWith('* ')) {
             const itemText = line.substring(2);
-            if (inOl) {
-                if (!inNestedUl) {
-                    outHtml += '<ul class="list-disc pl-5 my-1.5 space-y-1 text-xs text-slate-600">\n';
-                    inNestedUl = true;
-                }
-                outHtml += `    <li>${formatInline(itemText)}</li>\n`;
-            } else {
-                if (!inUl) {
-                    outHtml += '<ul class="list-disc pl-5 my-2.5 space-y-1.5 text-sm text-slate-700 leading-relaxed">\n';
-                    inUl = true;
-                }
-                outHtml += `  <li>${formatInline(itemText)}</li>\n`;
+            if (!inUl) {
+                outHtml += '<ul class="list-disc pl-5 my-2.5 space-y-1.5 text-sm text-slate-700 leading-relaxed">\n';
+                inUl = true;
             }
+            outHtml += `  <li>${formatInline(itemText)}</li>\n`;
             continue;
         }
 
@@ -1039,22 +1025,29 @@ function formatRichContent(rawText) {
 
     outHtml += closeLists();
 
-    tokens.forEach(tok => {
-        outHtml = outHtml.split(tok.id).join(tok.html);
-    });
+    // Replace all tokens recursively
+    let prev = '';
+    while (prev !== outHtml) {
+        prev = outHtml;
+        tokens.forEach(tok => {
+            outHtml = outHtml.split(tok.id).join(tok.html);
+        });
+    }
 
     outHtml = outHtml.replace(/<p class="[^"]*">\s*(<div[\s\S]*?<\/div>)\s*<\/p>/gi, '$1');
 
     return outHtml;
 }
-
 // 4. Course Detail Page
 function renderCourse(container, courseId) {
     UI.resetScroll();
-    const learnerId = DB.getCurrentLearner();
+    let learnerId = DB.getCurrentLearner();
     if(!learnerId) {
-        window.navigate('/landing');
-        return;
+        const emps = DataAPI.getEmployees();
+        if (emps && emps.length > 0) {
+            learnerId = emps[0].id;
+            DB.setCurrentLearner(learnerId);
+        }
     }
 
     const course = DataAPI.getCourses().find(c => c.id === courseId);
@@ -1720,34 +1713,29 @@ function renderCatalog(container) {
         const grid = document.getElementById('catalog-grid');
         
         grid.innerHTML = filtered.map(c => `
-            <div class="bg-white rounded-3xl shadow-sm border border-slate-200/90 overflow-hidden flex flex-col justify-between hover:shadow-md hover:border-blue-300 transition duration-200 group">
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200/90 p-6 flex flex-col justify-between hover:shadow-md hover:border-blue-300 transition duration-200 group">
                 <div>
-                    <!-- Card Thumbnail Image -->
-                    <div class="h-36 w-full overflow-hidden bg-slate-900 relative">
-                        <img src="${c.image || '/images/sye_platform_arch.jpg'}" alt="${c.name}" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-90 group-hover:opacity-100" />
-                        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-black/20"></div>
-                        <span class="absolute top-2.5 left-2.5 font-mono text-[11px] font-bold px-2.5 py-1 bg-slate-900/90 text-white rounded-lg backdrop-blur-xs border border-white/10 shadow-sm">${c.id}</span>
-                        <span class="absolute top-2.5 right-2.5 text-[11px] font-semibold px-2.5 py-1 bg-blue-600 text-white rounded-lg shadow-sm">${c.category}</span>
+                    <div class="flex justify-between items-start mb-2">
+                        <span class="font-mono text-xs font-bold px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${c.id}</span>
+                        <span class="text-[11px] font-semibold px-2 py-0.5 bg-blue-50 text-blue-700 rounded-md">${c.category}</span>
                     </div>
-
-                    <div class="p-5">
-                        <h4 class="font-bold text-slate-800 text-base mb-1.5 group-hover:text-blue-600 transition cursor-pointer" onclick="navigate('/course/${c.id}', event)">${c.name}</h4>
-                        <p class="text-xs text-slate-500 line-clamp-2 mb-4 leading-relaxed">${c.description}</p>
-                        
-                        <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3">
-                            <span class="px-2 py-0.5 bg-slate-50 rounded font-medium">⏱ ${c.duration}</span>
-                            <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 rounded font-medium">👥 ${c.targetRoles.join(', ')}</span>
-                        </div>
-                    </div>
+                    <h4 class="font-bold text-slate-800 text-base mb-2 group-hover:text-blue-600 transition cursor-pointer" onclick="navigate('/course/${c.id}', event)">${c.name}</h4>
+                    <p class="text-xs text-slate-500 line-clamp-3 mb-4 leading-relaxed">${c.description}</p>
                 </div>
-
-                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-slate-100">
-                    <button onclick="previewCourseContent('${c.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
-                        <span>📖 Read Material</span>
-                    </button>
-                    <div class="flex items-center space-x-1">
-                        <button onclick="openCourseModal('${c.id}')" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-2 py-1">Edit</button>
-                        <button onclick="deleteCourse('${c.id}')" class="text-xs font-semibold text-rose-500 hover:text-rose-700 px-2 py-1">Delete</button>
+                <div>
+                    <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-4">
+                        <span>⏱ ${c.duration}</span>
+                        <span>👥 ${c.targetRoles.join(', ')}</span>
+                        ${c.hasAssessment ? `<span class="text-amber-600 font-bold">📝 Assessment</span>` : ''}
+                    </div>
+                    <div class="flex items-center justify-between pt-2 border-t border-slate-100">
+                        <button onclick="previewCourseContent('${c.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
+                            <span>📖 Read Material</span>
+                        </button>
+                        <div class="flex items-center space-x-1">
+                            <button onclick="openCourseModal('${c.id}')" class="text-xs font-semibold text-slate-500 hover:text-slate-800 px-2 py-1">Edit</button>
+                            <button onclick="deleteCourse('${c.id}')" class="text-xs font-semibold text-rose-500 hover:text-rose-700 px-2 py-1">Delete</button>
+                        </div>
                     </div>
                 </div>
             </div>
