@@ -1,11 +1,10 @@
-// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.5.1) =====
+// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.6.0) =====
 // System Enabler (SYE) Division • AEON System Development Department
 // Head of SYE: Akkharasaran S. (sye@aeon.co.th)
-// ISO 27001 (ISMS), ISO 9001 (QMS), ISO 14001 (EMS), ISO 22301 (BCMS) Certified
-// Standardized Clean Enterprise Typography (Inter + Noto Sans Thai)
+// Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '2.5.1';
+const APP_VERSION = '2.6.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -38,9 +37,9 @@ const I18N = {
             returning_learner: 'Select Registered Engineer',
             select_learner: 'Select engineer to start / continue training...',
             continue_btn: 'Start Training →',
-            back_to_home: '← Back to Dashboard',
+            back_to_home: '← Back to Home',
             back_to_roadmap: '← Back to My Training Roadmap',
-            log_out: 'Exit to Dashboard',
+            log_out: 'Exit to Portal',
             welcome: 'Welcome',
             onboarding_progress: 'Onboarding Progress',
             courses_completed: 'courses completed',
@@ -93,9 +92,9 @@ const I18N = {
             returning_learner: 'เลือกวิศวกรที่ลงทะเบียนแล้ว',
             select_learner: 'เลือกชื่อของคุณเพื่อเข้าสู่ระบบอบรม...',
             continue_btn: 'เริ่มการอบรม →',
-            back_to_home: '← กลับหน้าหลัก (Dashboard)',
+            back_to_home: '← กลับหน้าหลัก (Home)',
             back_to_roadmap: '← กลับสู่แผนผังการอบรมของฉัน',
-            log_out: 'กลับหน้า Dashboard',
+            log_out: 'กลับหน้าแรก',
             welcome: 'ยินดีต้อนรับ',
             onboarding_progress: 'ความคืบหน้าการฝึกอบรม',
             courses_completed: 'หลักสูตรที่ผ่านแล้ว',
@@ -365,10 +364,43 @@ document.getElementById('modal-container').addEventListener('click', (e) => {
 
 // Update Date in Header
 const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', dateOptions);
+const dateEl = document.getElementById('current-date');
+if (dateEl) dateEl.textContent = new Date().toLocaleDateString('en-US', dateOptions);
 
-// ===== ROUTER =====
-const learnerRoutes = ['register', 'my-training'];
+// ===== CLEAN HTML5 ROUTER (NO '#') =====
+window.navigate = function(path, event) {
+    if (event && event.preventDefault) event.preventDefault();
+    
+    let target = path.startsWith('/') ? path : '/' + path;
+    if (window.location.protocol === 'file:') {
+        window.location.hash = target.replace(/^//, '');
+    } else {
+        window.history.pushState(null, '', target);
+        handleRoute();
+    }
+};
+
+window.addEventListener('popstate', handleRoute);
+window.addEventListener('hashchange', handleRoute);
+
+function getActiveRoute() {
+    if (window.location.protocol === 'file:' && window.location.hash) {
+        return window.location.hash.substring(1).replace(/^//, '');
+    }
+    if (window.location.hash) {
+        const hashVal = window.location.hash.substring(1).replace(/^//, '');
+        if (hashVal) {
+            window.history.replaceState(null, '', '/' + hashVal);
+            return hashVal;
+        }
+    }
+    
+    let pathname = window.location.pathname.replace(/^//, '');
+    if (!pathname) return 'landing';
+    return pathname;
+}
+
+const learnerRoutes = ['landing', 'register', 'my-training'];
 const adminRoutes = ['dashboard', 'catalog', 'work-instructions', 'employees', 'records', 'assessments', 'reports', 'settings'];
 
 function handleRoute() {
@@ -376,13 +408,10 @@ function handleRoute() {
     UI.resetScroll();
     updateLangButtonLabels();
     
-    let hash = window.location.hash.substring(1);
-    if (hash === 'landing' || !hash) {
-        window.location.hash = 'dashboard';
-        return;
-    }
+    let path = getActiveRoute();
+    if (!path || path === 'home') path = 'landing';
     
-    let courseMatch = hash.match(/^course-(.+)$/);
+    let courseMatch = path.match(/^(?:course/|course-)(.+)$/);
     let isCourseRoute = false;
     let courseId = null;
     if (courseMatch) {
@@ -390,7 +419,7 @@ function handleRoute() {
         courseId = courseMatch[1];
     }
 
-    const isLearner = learnerRoutes.includes(hash) || isCourseRoute;
+    const isLearner = learnerRoutes.includes(path) || isCourseRoute;
     
     if (isLearner) {
         document.getElementById('admin-layout').classList.add('hidden');
@@ -401,11 +430,12 @@ function handleRoute() {
         const container = document.getElementById('learner-content');
         container.innerHTML = '';
         
-        if (hash === 'register') renderRegister(container);
-        else if (hash === 'my-training') renderMyTraining(container);
+        if (path === 'landing') renderLanding(container);
+        else if (path === 'register') renderRegister(container);
+        else if (path === 'my-training') renderMyTraining(container);
         else if (isCourseRoute) renderCourse(container, courseId);
     } else {
-        if (!adminRoutes.includes(hash)) hash = 'dashboard';
+        if (!adminRoutes.includes(path)) path = 'dashboard';
         
         document.getElementById('learner-layout').classList.add('hidden');
         document.getElementById('learner-layout').classList.remove('flex');
@@ -414,28 +444,28 @@ function handleRoute() {
         
         document.querySelectorAll('.nav-item').forEach(el => {
             el.classList.remove('active');
-            if(el.getAttribute('href') === '#' + hash) {
+            const targetPath = (el.getAttribute('href') || '').replace(/^//, '').replace(/^#/, '');
+            if(targetPath === path) {
                 el.classList.add('active');
                 const titleText = el.textContent.replace(/[^\x00-\x7F]/g, "").trim();
-                document.getElementById('page-title').textContent = titleText || 'Dashboard';
+                const pageTitleEl = document.getElementById('page-title');
+                if (pageTitleEl) pageTitleEl.textContent = titleText || 'Dashboard';
             }
         });
         
         const container = document.getElementById('admin-content');
         container.innerHTML = '';
         
-        if (hash === 'dashboard') renderDashboard(container);
-        else if (hash === 'catalog') renderCatalog(container);
-        else if (hash === 'work-instructions') renderWorkInstructions(container);
-        else if (hash === 'employees') renderEmployees(container);
-        else if (hash === 'records') renderRecords(container);
-        else if (hash === 'assessments') renderAssessments(container);
-        else if (hash === 'reports') renderReports(container);
-        else if (hash === 'settings') renderSettings(container);
+        if (path === 'dashboard') renderDashboard(container);
+        else if (path === 'catalog') renderCatalog(container);
+        else if (path === 'work-instructions') renderWorkInstructions(container);
+        else if (path === 'employees') renderEmployees(container);
+        else if (path === 'records') renderRecords(container);
+        else if (path === 'assessments') renderAssessments(container);
+        else if (path === 'reports') renderReports(container);
+        else if (path === 'settings') renderSettings(container);
     }
 }
-
-window.addEventListener('hashchange', handleRoute);
 
 // Modal to Start Training / Select Engineer directly
 window.openLearnerModal = () => {
@@ -466,7 +496,7 @@ window.openLearnerModal = () => {
 
             <div class="border-t border-slate-100 pt-4 text-center">
                 <p class="text-xs text-slate-400 mb-2">Not registered yet?</p>
-                <a href="#register" onclick="UI.closeModal()" class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800">
+                <a href="/register" onclick="UI.closeModal(); navigate('/register', event);" class="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:text-blue-800">
                     <span>➕ Register New Staff / Outsource Engineer</span>
                 </a>
             </div>
@@ -484,16 +514,107 @@ window.startSelectedLearner = () => {
     }
     DB.setCurrentLearner(sel.value);
     UI.closeModal();
-    window.location.hash = 'my-training';
+    window.navigate('/my-training');
 };
 
 // ===== LEARNER PORTAL =====
 
+// 1. Landing Page
+function renderLanding(container) {
+    const employees = DataAPI.getEmployees();
+    const isThai = I18N.current === 'th';
+    
+    container.innerHTML = `
+        <div class="max-w-2xl w-full my-auto py-8 text-center animate-fade-in-up">
+            <div class="inline-flex items-center space-x-3 mb-6 bg-white p-3 rounded-2xl shadow-xs border border-slate-200">
+                <img src="favicon.svg" alt="AEON" class="w-10 h-10 rounded-xl shadow-2xs object-cover border border-slate-200">
+                <div class="text-left">
+                    <span class="text-xs font-bold text-blue-600 block uppercase tracking-wider">AEON System Development</span>
+                    <span class="text-xs text-slate-500 font-medium">System Enabler (SYE) Division</span>
+                </div>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
+                ${I18N.t('app_title')}
+            </h1>
+            <p class="text-sm sm:text-base text-slate-600 max-w-lg mx-auto mb-8 leading-relaxed">
+                ${I18N.t('app_subtitle')}
+            </p>
+
+            <!-- Main Action Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left">
+                <a href="/register" onclick="navigate('/register', event)" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow-md transition duration-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
+                            📚
+                        </div>
+                        <h3 class="text-base font-bold text-slate-800 mb-1 group-hover:text-blue-600 transition">${I18N.t('start_training')}</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">${I18N.t('start_training_sub')}</p>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex items-center text-xs font-bold text-blue-600 group-hover:translate-x-1 transition">
+                        <span>Get Started →</span>
+                    </div>
+                </a>
+
+                <a href="/dashboard" onclick="navigate('/dashboard', event)" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-slate-800 hover:shadow-md transition duration-200 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 bg-slate-100 text-slate-800 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
+                            🔧
+                        </div>
+                        <h3 class="text-base font-bold text-slate-800 mb-1 group-hover:text-slate-900 transition">${I18N.t('admin_panel')}</h3>
+                        <p class="text-xs text-slate-500 leading-relaxed">${I18N.t('admin_panel_sub')}</p>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-100 flex items-center text-xs font-bold text-slate-800 group-hover:translate-x-1 transition">
+                        <span>Open Dashboard →</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Returning Learner Selector Box -->
+            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm text-left mb-6">
+                <h4 class="text-sm font-bold text-slate-800 mb-1 flex items-center gap-2">
+                    <span>👤</span> ${I18N.t('returning_learner')}
+                </h4>
+                <p class="text-xs text-slate-500 mb-4">${isThai ? 'เลือกชื่อของคุณเพื่อดูหลักสูตรที่ต้องเรียนและทำแบบทดสอบ' : 'Select your name to view your assigned curriculum and resume assessments.'}</p>
+                
+                <div class="space-y-3">
+                    <select id="landing-learner-select" class="w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
+                        <option value="">-- ${I18N.t('select_learner')} --</option>
+                        ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.section}) ${e.employmentType === 'Outsource' ? '[OS]' : ''}</option>`).join('')}
+                    </select>
+                    <button id="landing-continue-btn" onclick="startLandingLearner()" class="w-full rounded-2xl px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold transition shadow-sm">
+                        ${I18N.t('continue_btn')}
+                    </button>
+                </div>
+            </div>
+
+            <!-- Certified Governance Matrix Footer -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs text-slate-500">
+                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">ISO 27001 ISMS</div>
+                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">ISO 9001 QMS</div>
+                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">ISO 22301 BCMS</div>
+                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">VMware Tanzu K8s</div>
+            </div>
+        </div>
+    `;
+}
+
+window.startLandingLearner = () => {
+    const sel = document.getElementById('landing-learner-select');
+    if (!sel || !sel.value) {
+        alert('Please select your name from the dropdown first.');
+        return;
+    }
+    DB.setCurrentLearner(sel.value);
+    window.navigate('/my-training');
+};
+
+// 2. Registration Page
 function renderRegister(container) {
     container.innerHTML = `
         <div class="max-w-lg w-full my-auto py-6 animate-fade-in-up">
             <div class="mb-4">
-                <a href="#dashboard" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
+                <a href="/landing" onclick="navigate('/landing', event)" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
                 </a>
             </div>
@@ -595,26 +716,27 @@ function renderRegister(container) {
         DB.set('sye_employees', emps);
         DB.logActivity('employee_added', `New engineer ${name} (${role} - ${employmentType}) registered in ${section}`, staffId);
         DB.setCurrentLearner(staffId);
-        window.location.hash = 'my-training';
+        window.navigate('/my-training');
     });
 }
 
 window.logoutLearner = () => {
     DB.setCurrentLearner(null);
-    window.location.hash = 'dashboard';
+    window.navigate('/landing');
 };
 
+// 3. My Training Roadmap
 function renderMyTraining(container) {
     const learnerId = DB.getCurrentLearner();
     if(!learnerId) {
-        window.location.hash = 'dashboard';
+        window.navigate('/landing');
         return;
     }
 
     const emp = DataAPI.getEmployees().find(e => e.id === learnerId);
     if(!emp) {
         DB.setCurrentLearner(null);
-        window.location.hash = 'dashboard';
+        window.navigate('/landing');
         return;
     }
 
@@ -632,7 +754,7 @@ function renderMyTraining(container) {
     container.innerHTML = `
         <div class="max-w-4xl w-full py-4 animate-fade-in-up">
             <div class="flex justify-between items-center mb-6">
-                <a href="#dashboard" class="text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1">
+                <a href="/landing" onclick="navigate('/landing', event)" class="text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_home')}
                 </a>
                 <button onclick="logoutLearner()" class="text-xs font-semibold text-rose-500 hover:text-rose-700 transition">
@@ -714,7 +836,7 @@ function renderMyTraining(container) {
                         <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 rounded-lg text-xs font-semibold flex items-center gap-1">
                             <span>✅</span> ${scoreText ? scoreText.substring(3) : 'Completed'}
                         </span>
-                        <a href="#course-${course.id}" class="rounded-lg px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 transition shadow-sm">
+                        <a href="/course/${course.id}" onclick="navigate('/course/${course.id}', event)" class="rounded-lg px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 transition shadow-sm">
                             ${I18N.t('review_course')}
                         </a>
                         <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-lg px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-medium hover:bg-blue-100 transition">
@@ -725,7 +847,7 @@ function renderMyTraining(container) {
             } else if (canStart) {
                 borderColor = 'border-blue-500';
                 actionButtons = `
-                    <a href="#course-${course.id}" class="inline-flex items-center rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold hover:bg-blue-700 transition shadow-sm gap-1">
+                    <a href="/course/${course.id}" onclick="navigate('/course/${course.id}', event)" class="inline-flex items-center rounded-xl px-4 py-2 bg-blue-600 text-white text-xs font-semibold hover:bg-blue-700 transition shadow-sm gap-1">
                         ${I18N.current === 'th' ? 'เข้าสู่บทเรียน →' : 'Start Course →'}
                     </a>
                 `;
@@ -749,7 +871,7 @@ function renderMyTraining(container) {
                             <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-xs rounded font-medium">📝 Assessment</span>
                             <span class="px-2 py-0.5 bg-indigo-50 text-indigo-700 text-xs rounded font-medium">👥 ${course.targetRoles.join(', ')}</span>
                         </div>
-                        <h4 class="text-base font-semibold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="window.location.hash='course-${course.id}'">${courseName}</h4>
+                        <h4 class="text-base font-semibold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="navigate('/course/${course.id}', event)">${courseName}</h4>
                         <p class="text-xs text-slate-500">⏱ ${course.duration}</p>
                     </div>
                     <div class="shrink-0 flex items-center">
@@ -944,11 +1066,12 @@ function formatRichContent(rawText) {
     return outHtml;
 }
 
+// 4. Course Detail Page
 function renderCourse(container, courseId) {
     UI.resetScroll();
     const learnerId = DB.getCurrentLearner();
     if(!learnerId) {
-        window.location.hash = 'dashboard';
+        window.navigate('/landing');
         return;
     }
 
@@ -1008,7 +1131,7 @@ function renderCourse(container, courseId) {
     container.innerHTML = `
         <div class="max-w-4xl w-full py-4 animate-fade-in-up">
             <div class="mb-4">
-                <a href="#my-training" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
+                <a href="/my-training" onclick="navigate('/my-training', event)" class="text-xs font-semibold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
                     ${I18N.t('back_to_roadmap')}
                 </a>
             </div>
@@ -1114,7 +1237,7 @@ function renderQuiz(container, quiz, learnerId, courseId) {
             <div id="quiz-result" class="hidden p-6 rounded-2xl text-center"></div>
             <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
                 <button type="submit" id="quiz-submit-btn" class="flex-1 rounded-xl px-6 py-3 bg-blue-600 text-white font-semibold text-sm hover:bg-blue-700 transition shadow-sm">${I18N.t('submit_answers')}</button>
-                <a href="#my-training" id="quiz-back-btn" class="hidden flex-1 text-center rounded-xl px-6 py-3 bg-slate-100 text-slate-700 font-semibold text-sm hover:bg-slate-200 transition">${I18N.t('back_to_roadmap')}</a>
+                <a href="/my-training" onclick="navigate('/my-training', event)" id="quiz-back-btn" class="hidden flex-1 text-center rounded-xl px-6 py-3 bg-slate-100 text-slate-700 font-semibold text-sm hover:bg-slate-200 transition">${I18N.t('back_to_roadmap')}</a>
             </div>
         </form>
     `;
