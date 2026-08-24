@@ -1,12 +1,20 @@
-// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.3) =====
-// Features: Default English, Bilingual Engine (EN/TH), Diagrams, Akkharasaran S. Lead Authority, 2025+ Timeline
+// ===== SYE ACADEMY - CORE APPLICATION LOGIC (v2.4.0) =====
+// System Enabler (SYE) Division • AEON System Development Department
+// Head of SYE: Akkharasaran S. (sye@aeon.co.th)
+// ISO 27001 (ISMS), ISO 9001 (QMS), ISO 14001 (EMS), ISO 22301 (BCMS) Certified
+// On-Premise VMware Tanzu Kubernetes (TKG) & RedHat Enterprise Linux VM Infrastructure
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '2.3.0';
+const APP_VERSION = '2.4.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
-const SECTIONS = ['API & Integration Platform', 'Customer Experience Systems', 'Omnichannel Customer Service'];
+const SECTIONS = [
+    'API & Integration Platform',
+    'Customer Experience Systems',
+    'User Application Systems',
+    'Technology Standards & Quality'
+];
 const CATEGORIES = ['General', 'PM', 'BA', 'Developer', 'QA', 'SRE', 'Section'];
 const TRAINING_METHODS = ['Classroom', 'Online', 'Self-study', 'OJT'];
 const RECORD_STATUSES = ['Completed', 'In Progress', 'Scheduled', 'Failed'];
@@ -24,9 +32,9 @@ const I18N = {
             division_name: 'System Enabler (SYE) • System Development Department',
             division_full: 'System Enabler (SYE) Division • AEON System Development Department',
             start_training: 'Start Training',
-            start_training_sub: 'New Employee Onboarding & Registration',
+            start_training_sub: 'New Staff & Outsource Engineer Registration',
             admin_panel: 'Admin Panel',
-            admin_panel_sub: 'Compliance Records & System Management',
+            admin_panel_sub: 'Compliance Records, Audits & System Management',
             returning_learner: 'Returning Learner?',
             select_learner: 'Select your name to continue...',
             continue_btn: 'Continue →',
@@ -40,14 +48,14 @@ const I18N = {
             view_assessment: '📝 View Assessment',
             locked: '🔒 Locked',
             step1_title: 'Step 1: Division & General Engineering Orientation',
-            step1_desc: 'Division mission, 3 sections, cross-role collaboration, architecture landscape, and security policies',
+            step1_desc: 'Division mission, organizational sections, ISO governance, on-premise architecture landscape, and security policies',
             step2_title: 'Step 2: Role-Specific Technical Training',
             step2_desc: 'Technical and domain competencies required for your specific engineering role',
             step3_title: 'Step 3: Section Platform Architecture',
             step3_desc: 'Platform architectures, standards, and workflows specific to your assigned section',
             learning_objectives: 'Learning Objectives',
             end_of_content: '── End of Course Content ──',
-            confirm_read: 'I confirm that I have read and understood all the technical material above',
+            confirm_read: 'I confirm that I have read and understood all the technical material and standards above',
             take_assessment: 'Take Knowledge Assessment →',
             retake_assessment: 'Retake Assessment →',
             confirm_completion: 'Confirm Completion ✓',
@@ -58,14 +66,16 @@ const I18N = {
             not_passed: '❌ Assessment Not Passed',
             score_label: 'Score',
             min_pass: 'Passing required',
-            reg_title: 'New Employee Registration',
+            reg_title: 'Engineer Registration',
             reg_desc: 'Register to start your System Enabler (SYE) onboarding journey',
-            staff_id: 'Staff ID',
+            staff_id: 'Staff ID / Contractor ID',
             first_name: 'First Name',
             last_name: 'Last Name',
             email: 'Corporate Email',
             role: 'Engineering Role',
             section: 'Assigned Section',
+            employment_type: 'Employment Type',
+            vendor_name: 'Vendor / Entity Name',
             reg_submit: 'Register & Start Onboarding →',
             assessment_review_title: 'Assessment Submission Review',
             correct_ans: '✓ Correct Answer',
@@ -77,7 +87,7 @@ const I18N = {
             division_name: 'ฝ่าย System Enabler (SYE) • ฝ่ายพัฒนาระบบ AEON',
             division_full: 'ฝ่าย System Enabler (SYE) • ฝ่ายพัฒนาระบบ บริษัท อิออน ธนสินทรัพย์ (ไทยแลนด์) จำกัด (มหาชน)',
             start_training: 'เข้าสู่การฝึกอบรม (Start Training)',
-            start_training_sub: 'ลงทะเบียนพนักงานใหม่ และเริ่มแผนการเรียนรู้',
+            start_training_sub: 'ลงทะเบียนพนักงานประจำและ Outsource เพื่อเริ่มการอบรม',
             admin_panel: 'ผู้ดูแลระบบ (Admin Panel)',
             admin_panel_sub: 'บันทึกการอบรม ทะเบียนพนักงาน และเอกสาร Audit',
             returning_learner: 'พนักงานเดิมที่เคยลงทะเบียนแล้ว',
@@ -91,15 +101,16 @@ const I18N = {
             courses_completed: 'หลักสูตรที่ผ่านแล้ว',
             review_course: '📖 ทบทวนบทเรียน',
             view_assessment: '📝 ดูผลการสอบ',
+            locked: '🔒 ล็อกตามลำดับ',
             step1_title: 'ขั้นตอนที่ 1: การปฐมนิเทศฝ่าย SYE และมาตรฐานวิศวกรรมทั่วไป',
-            step1_desc: 'โครงสร้างผู้นำ 3 ส่วนงาน, มาตรฐาน ISO 4 ด้าน, SDLC แบบยืดหยุ่น, ระบบ On-Premise และแผน BCP/DR Site',
+            step1_desc: 'โครงสร้างผู้นำ 4 ส่วนงาน, มาตรฐาน ISO 4 ด้าน, ระบบ On-Premise (Tanzu/RHEL) และแผน BCP/DR Site',
             step2_title: 'ขั้นตอนที่ 2: การฝึกอบรมเฉพาะตำแหน่ง (Role-Specific)',
             step2_desc: 'ทักษะและมาตรฐานการทำงานเฉพาะของตำแหน่งงานของคุณ',
             step3_title: 'ขั้นตอนที่ 3: สถาปัตยกรรมแพลตฟอร์มประจำ Section',
             step3_desc: 'โครงสร้างระบบและมาตรฐานการปฏิบัติงานของแต่ละส่วนงาน',
             learning_objectives: 'วัตถุประสงค์การเรียนรู้ (Learning Objectives)',
             end_of_content: '── สิ้นสุดเนื้อหาบทเรียน ──',
-            confirm_read: 'ข้าพเจ้ายืนยันว่าได้อ่านและทำความเข้าใจเนื้อหาทางเทคนิคข้างต้นครบถ้วนแล้ว',
+            confirm_read: 'ข้าพเจ้ายืนยันว่าได้อ่านและทำความเข้าใจเนื้อหาทางเทคนิคและมาตรฐานข้างต้นครบถ้วนแล้ว',
             take_assessment: 'ทำแบบทดสอบประเมินความรู้ →',
             retake_assessment: 'ทำแบบทดสอบใหม่ →',
             confirm_completion: 'ยืนยันจบการอบรม ✓',
@@ -110,14 +121,16 @@ const I18N = {
             not_passed: '❌ ไม่ผ่านเกณฑ์การทดสอบ',
             score_label: 'คะแนนที่ได้',
             min_pass: 'เกณฑ์คะแนนขั้นต่ำ',
-            reg_title: 'ลงทะเบียนพนักงานใหม่',
+            reg_title: 'ลงทะเบียนพนักงาน / วิศวกรใหม่',
             reg_desc: 'เข้ารับการฝึกอบรมและเตรียมความพร้อมฝ่าย System Enabler',
-            staff_id: 'รหัสพนักงาน (Staff ID)',
+            staff_id: 'รหัสพนักงาน / รหัสสัญญา (Staff ID)',
             first_name: 'ชื่อ (First Name)',
             last_name: 'นามสกุล (Last Name)',
             email: 'อีเมล (Email)',
             role: 'ตำแหน่ง (Role)',
             section: 'ส่วนงาน (Section)',
+            employment_type: 'ประเภทการจ้างงาน',
+            vendor_name: 'สังกัดบริษัท / Outsource Vendor',
             reg_submit: 'ลงทะเบียนและเริ่มการอบรม →',
             assessment_review_title: 'รายละเอียดผลการทดสอบประเมินผล',
             correct_ans: '✓ คำตอบที่ถูกต้อง',
@@ -139,17 +152,14 @@ window.toggleLanguage = () => {
 };
 
 function updateLangButtonLabels() {
-    const label = I18N.current === 'en' ? '🇬🇧 English' : '🇹🇭 ภาษาไทย';
     const shortLabel = I18N.current === 'en' ? 'EN' : 'TH';
-    
     const btnLearner = document.getElementById('lang-label-learner');
     if (btnLearner) btnLearner.textContent = shortLabel;
-    
     const btnAdmin = document.getElementById('lang-label-admin');
     if (btnAdmin) btnAdmin.textContent = shortLabel;
 }
 
-// ===== DATA LAYER (localStorage helpers) =====
+// ===== DATA LAYER (localStorage helpers & Seed Synchronizer) =====
 const DB = {
     get: (key) => JSON.parse(localStorage.getItem(key) || '[]'),
     set: (key, data) => localStorage.setItem(key, JSON.stringify(data)),
@@ -174,38 +184,16 @@ const DB = {
     }
 };
 
-// Initialize Data
+// Initialize Data (Always sync authentic personnel and master curriculum)
 function initData() {
-    if (!localStorage.getItem('sye_employees')) {
-        console.log("Loading initial sample data...");
+    if (!localStorage.getItem('sye_employees') || (window.SYE_SAMPLE_DATA && DB.get('sye_employees').length !== window.SYE_SAMPLE_DATA.employees.length)) {
+        console.log("Loading authentic master data...");
         loadSampleData();
     } else if (window.SYE_SAMPLE_DATA) {
         // Sync course contents & quizzes while preserving custom records
-        const currentCourses = DB.get('sye_courses');
-        if (currentCourses.length > 0 && window.SYE_SAMPLE_DATA.courses) {
-            const sampleCoursesMap = new Map(window.SYE_SAMPLE_DATA.courses.map(c => [c.id, c]));
-            const updatedCourses = currentCourses.map(c => {
-                const sample = sampleCoursesMap.get(c.id);
-                if (sample) {
-                    return {
-                        ...c,
-                        name: sample.name,
-                        name_th: sample.name_th,
-                        description: sample.description,
-                        description_th: sample.description_th,
-                        learningObjectives: sample.learningObjectives,
-                        learningObjectives_th: sample.learningObjectives_th,
-                        content: sample.content,
-                        content_th: sample.content_th
-                    };
-                }
-                return c;
-            });
-            DB.set('sye_courses', updatedCourses);
-        }
-        if (window.SYE_SAMPLE_DATA.quizzes) {
-            DB.set('sye_quizzes', window.SYE_SAMPLE_DATA.quizzes);
-        }
+        DB.set('sye_courses', window.SYE_SAMPLE_DATA.courses);
+        DB.set('sye_work_instructions', window.SYE_SAMPLE_DATA.workInstructions);
+        DB.set('sye_quizzes', window.SYE_SAMPLE_DATA.quizzes);
     }
 }
 
@@ -224,11 +212,7 @@ function loadSampleData() {
             const storageKey = keyMap[key] || key;
             DB.set(storageKey, window.SYE_SAMPLE_DATA[key]);
         });
-        console.log("Sample data initialized.");
-    } else {
-        ['sye_employees', 'sye_courses', 'sye_training_records', 'sye_work_instructions', 'sye_quizzes', 'sye_quiz_results', 'sye_activity_log'].forEach(key => {
-            if(!localStorage.getItem(key)) DB.set(key, []);
-        });
+        console.log("Authentic sample data initialized.");
     }
 }
 
@@ -271,6 +255,14 @@ const DataAPI = {
 
 // ===== SHARED UI HELPERS =====
 const UI = {
+    resetScroll: () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        const learnerEl = document.getElementById('learner-content');
+        if (learnerEl) learnerEl.scrollTop = 0;
+        const adminEl = document.getElementById('admin-content');
+        if (adminEl) adminEl.scrollTop = 0;
+    },
+
     renderBadge: (status) => {
         const config = {
             'Completed': { bg: 'bg-emerald-50', text: 'text-emerald-700', dot: 'bg-emerald-500' },
@@ -284,6 +276,13 @@ const UI = {
         return `<span class="inline-flex items-center rounded-full ${c.bg} px-2.5 py-0.5 text-xs font-semibold ${c.text}">
             <span class="mr-1.5 h-1.5 w-1.5 rounded-full ${c.dot}"></span>${status}
         </span>`;
+    },
+
+    renderEmploymentBadge: (emp) => {
+        if (emp.employmentType === 'Permanent' || !emp.employmentType) {
+            return `<span class="px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 text-[10px] font-bold border border-blue-100">Permanent (${emp.vendor || 'AEON'})</span>`;
+        }
+        return `<span class="px-2 py-0.5 rounded-md bg-purple-50 text-purple-700 text-[10px] font-bold border border-purple-100">Outsource (${emp.vendor || 'OS-SYE'})</span>`;
     },
     
     renderProgressBar: (percent) => {
@@ -350,6 +349,7 @@ const adminRoutes = ['dashboard', 'catalog', 'work-instructions', 'employees', '
 
 function handleRoute() {
     UI.destroyCharts();
+    UI.resetScroll();
     updateLangButtonLabels();
     
     let hash = window.location.hash.substring(1) || 'landing';
@@ -386,7 +386,7 @@ function handleRoute() {
         document.getElementById('admin-layout').classList.remove('hidden');
         document.getElementById('admin-layout').classList.add('flex');
         
-        // Keep sidebar in English as requested
+        // Sidebar active status
         document.querySelectorAll('.nav-item').forEach(el => {
             el.classList.remove('active');
             if(el.getAttribute('href') === '#' + hash) {
@@ -445,9 +445,9 @@ function renderLanding(container) {
                 <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
                     <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
                     <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
-                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50">
+                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
                             <option value="">${I18N.t('select_learner')}</option>
-                            ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id})</option>`).join('')}
+                            ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id} ${e.employmentType === 'Outsource' ? '[OS]' : ''})</option>`).join('')}
                         </select>
                         <button id="continue-btn" class="shrink-0 rounded-xl px-5 py-2.5 bg-slate-800 text-white text-sm font-semibold hover:bg-slate-700 transition disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap shadow-sm text-center" disabled>
                             ${I18N.t('continue_btn')}
@@ -495,7 +495,7 @@ function renderRegister(container) {
                 <form id="reg-form" class="space-y-4">
                     <div>
                         <label class="block text-xs font-semibold text-slate-700 mb-1">${I18N.t('staff_id')}</label>
-                        <input type="text" id="reg-id" required placeholder="e.g., SYE-0023" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
+                        <input type="text" id="reg-id" required placeholder="e.g., SYE-0019" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
                     <div class="grid grid-cols-2 gap-3">
                         <div>
@@ -511,12 +511,21 @@ function renderRegister(container) {
                         <label class="block text-xs font-semibold text-slate-700 mb-1">${I18N.t('email')}</label>
                         <input type="email" id="reg-email" required placeholder="name@aeon.co.th" class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none">
                     </div>
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">${I18N.t('role')}</label>
-                        <select id="reg-role" required class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50">
-                            <option value="">Select Role...</option>
-                            ${ROLES.map(r => `<option value="${r}">${r}</option>`).join('')}
-                        </select>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">${I18N.t('role')}</label>
+                            <select id="reg-role" required class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50">
+                                <option value="">Select Role...</option>
+                                ${ROLES.map(r => `<option value="${r}">${r}</option>`).join('')}
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 mb-1">${I18N.t('employment_type')}</label>
+                            <select id="reg-type" required class="w-full rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50">
+                                <option value="Permanent">Permanent (AEON Staff)</option>
+                                <option value="Outsource">Outsource (Contractor)</option>
+                            </select>
+                        </div>
                     </div>
                     <div>
                         <label class="block text-xs font-semibold text-slate-700 mb-1">${I18N.t('section')}</label>
@@ -552,6 +561,7 @@ function renderRegister(container) {
         const ln = document.getElementById('reg-ln').value.trim();
         const role = document.getElementById('reg-role').value;
         const section = document.getElementById('reg-section').value;
+        const employmentType = document.getElementById('reg-type').value;
         const email = document.getElementById('reg-email').value.trim();
         const name = `${fn} ${ln}`;
 
@@ -560,6 +570,8 @@ function renderRegister(container) {
             name,
             role,
             section,
+            employmentType,
+            vendor: employmentType === 'Permanent' ? 'AEON' : 'OS-SYE',
             joinDate: new Date().toISOString().split('T')[0],
             status: 'Active',
             email
@@ -567,7 +579,7 @@ function renderRegister(container) {
 
         emps.push(newEmp);
         DB.set('sye_employees', emps);
-        DB.logActivity('employee_added', `New employee ${name} (${role}) registered for training in ${section}`, staffId);
+        DB.logActivity('employee_added', `New engineer ${name} (${role} - ${employmentType}) registered in ${section}`, staffId);
         DB.setCurrentLearner(staffId);
         window.location.hash = 'my-training';
     });
@@ -622,9 +634,10 @@ function renderMyTraining(container) {
                             <h2 class="text-2xl font-bold text-slate-800">${I18N.t('welcome')}, ${emp.name}</h2>
                         </div>
                         <p class="text-xs font-mono text-slate-400 mt-0.5">${emp.id} • ${emp.email}</p>
-                        <div class="flex flex-wrap gap-2 mt-2.5">
+                        <div class="flex flex-wrap items-center gap-2 mt-2.5">
                             <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-semibold">${emp.role}</span>
                             <span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-lg text-xs font-semibold">${emp.section}</span>
+                            ${UI.renderEmploymentBadge(emp)}
                         </div>
                     </div>
                 </div>
@@ -644,7 +657,6 @@ function renderMyTraining(container) {
     `;
 
     const roadmap = document.getElementById('training-roadmap');
-    
     const isGroupComplete = (courses) => courses.every(c => completedCourseIds.has(c.id));
 
     let genUnlocked = true;
@@ -692,11 +704,9 @@ function renderMyTraining(container) {
                         <a href="#course-${course.id}" class="rounded-lg px-3 py-1.5 bg-white border border-slate-200 text-slate-700 text-xs font-semibold hover:bg-slate-50 transition shadow-sm">
                             ${I18N.t('review_course')}
                         </a>
-                        ${course.hasAssessment ? `
-                            <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-lg px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold hover:bg-blue-100 transition">
-                                ${I18N.t('view_assessment')}
-                            </button>
-                        ` : ''}
+                        <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-lg px-3 py-1.5 bg-blue-50 text-blue-700 text-xs font-semibold hover:bg-blue-100 transition">
+                            ${I18N.t('view_assessment')}
+                        </button>
                     </div>
                 `;
             } else if (canStart) {
@@ -723,7 +733,7 @@ function renderMyTraining(container) {
                         <div class="flex items-center space-x-2.5 mb-1.5">
                             <span class="w-5 h-5 rounded-full bg-slate-100 text-slate-600 text-[11px] flex items-center justify-center font-bold">${index + 1}</span>
                             <span class="text-xs font-mono font-bold text-slate-500">${course.id}</span>
-                            ${course.hasAssessment ? `<span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-[10px] uppercase font-bold rounded">📝 Assessment</span>` : ''}
+                            <span class="px-2 py-0.5 bg-amber-50 text-amber-700 text-[10px] uppercase font-bold rounded">📝 Assessment</span>
                         </div>
                         <h4 class="text-base font-bold text-slate-800 mb-1 cursor-pointer hover:text-blue-600" onclick="window.location.hash='course-${course.id}'">${courseName}</h4>
                         <p class="text-xs text-slate-500">⏱ ${course.duration}</p>
@@ -751,20 +761,19 @@ window.logoutLearner = () => {
     window.location.hash = 'landing';
 };
 
-// Rich Markdown to HTML Parser
+// Rich Markdown Parser
 function formatRichContent(rawText) {
     if (!rawText) return '';
 
     let text = rawText.replace(/\r\n/g, '\n');
     const tokens = [];
 
-    // Helper for inline formatting
     function formatInline(str) {
         if (!str) return '';
         return str
-            .replace(/\$\\ge\s*(\d+)%?\\?\$/g, '&ge; $1%')
-            .replace(/\\ge/g, '&ge;')
-            .replace(/\\le/g, '&le;')
+            .replace(/\$\ge\s*(\d+)%?\?\$/g, '&ge; $1%')
+            .replace(/\ge/g, '&ge;')
+            .replace(/\le/g, '&le;')
             .replace(/\$([^\$]+)\$/g, '$1')
             .replace(/`([^`]+)`/g, (m, code) => {
                 const esc = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -781,7 +790,7 @@ function formatRichContent(rawText) {
         return `\n\n${id}\n\n`;
     });
 
-    // 2. Fenced Code Blocks (```lang ... ```)
+    // 2. Fenced Code Blocks
     text = text.replace(/```([a-zA-Z0-9_-]*)\n([\s\S]*?)```/g, (match, lang, code) => {
         const id = `@@CODE_BLOCK_${tokens.length}@@`;
         const escaped = code
@@ -798,7 +807,7 @@ function formatRichContent(rawText) {
         return `\n\n${id}\n\n`;
     });
 
-    // 3. Markdown Tables (| Col 1 | Col 2 | ... |)
+    // 3. Tables
     text = text.replace(/((?:\|[^\n]+\|\n)+)/g, (match) => {
         const lines = match.trim().split('\n').filter(l => l.trim().startsWith('|'));
         if (lines.length >= 2) {
@@ -834,7 +843,7 @@ function formatRichContent(rawText) {
         return match;
     });
 
-    // 4. Line-by-line block processing for Headings, Lists, and Paragraphs
+    // 4. Line by line
     const lines = text.split('\n');
     let outHtml = '';
     let inOl = false;
@@ -864,25 +873,17 @@ function formatRichContent(rawText) {
         let line = lines[i].trim();
 
         if (!line) {
-            if (inNestedUl) {
-                outHtml += '</ul></li>\n';
-                inNestedUl = false;
-            }
-            if (inUl) {
-                outHtml += '</ul>\n';
-                inUl = false;
-            }
+            if (inNestedUl) { outHtml += '</ul></li>\n'; inNestedUl = false; }
+            if (inUl) { outHtml += '</ul>\n'; inUl = false; }
             continue;
         }
 
-        // Token placeholder
         if (line.startsWith('@@') && line.endsWith('@@')) {
             outHtml += closeLists();
             outHtml += line + '\n';
             continue;
         }
 
-        // Headings
         if (line.startsWith('### ')) {
             outHtml += closeLists();
             outHtml += `<h4 class="text-base font-bold text-slate-800 mt-6 mb-2.5">${formatInline(line.substring(4))}</h4>\n`;
@@ -894,19 +895,11 @@ function formatRichContent(rawText) {
             continue;
         }
 
-        // Ordered list: 1. item, 2. item
         const numMatch = line.match(/^(\d+)\.\s+(.*)$/);
         if (numMatch) {
-            if (inUl) {
-                outHtml += '</ul>\n';
-                inUl = false;
-            }
-            if (inNestedUl) {
-                outHtml += '</ul></li>\n';
-                inNestedUl = false;
-            } else if (inOl) {
-                outHtml += '</li>\n';
-            }
+            if (inUl) { outHtml += '</ul>\n'; inUl = false; }
+            if (inNestedUl) { outHtml += '</ul></li>\n'; inNestedUl = false; }
+            else if (inOl) { outHtml += '</li>\n'; }
             if (!inOl) {
                 outHtml += '<ol class="list-decimal pl-5 my-2.5 space-y-2 text-sm md:text-base text-slate-800 font-medium">\n';
                 inOl = true;
@@ -915,7 +908,6 @@ function formatRichContent(rawText) {
             continue;
         }
 
-        // Unordered list: - item or * item
         if (line.startsWith('- ') || line.startsWith('* ')) {
             const itemText = line.substring(2);
             if (inOl) {
@@ -934,14 +926,12 @@ function formatRichContent(rawText) {
             continue;
         }
 
-        // Standard text line / paragraph
         outHtml += closeLists();
         outHtml += `<p class="mb-3.5 leading-relaxed text-slate-700 text-sm md:text-base">${formatInline(line)}</p>\n`;
     }
 
     outHtml += closeLists();
 
-    // 5. Restore Tokens
     tokens.forEach(tok => {
         outHtml = outHtml.replace(tok.id, tok.html);
     });
@@ -951,6 +941,7 @@ function formatRichContent(rawText) {
 
 // 4. Course Content & Assessment Screen
 function renderCourse(container, courseId) {
+    UI.resetScroll();
     const learnerId = DB.getCurrentLearner();
     if(!learnerId) {
         window.location.hash = 'landing';
@@ -973,7 +964,7 @@ function renderCourse(container, courseId) {
     const isCompleted = records.length > 0;
     const completedRecord = isCompleted ? records[records.length - 1] : null;
 
-    const quiz = DataAPI.getQuizzes().find(q => q.courseId === courseId);
+    const quiz = DataAPI.getQuizzes().find(q => q.courseId === courseId) || DataAPI.getQuizzes()[0];
     
     let contentHtml = '';
     if (contentSecs && contentSecs.length > 0) {
@@ -1029,11 +1020,9 @@ function renderCourse(container, courseId) {
                         </div>
                     </div>
                     <div class="flex items-center gap-2">
-                        ${course.hasAssessment ? `
-                            <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-xl px-4 py-2 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm">
-                                ${I18N.t('review_answers_btn')}
-                            </button>
-                        ` : ''}
+                        <button onclick="viewLearnerQuizReview('${learnerId}', '${course.id}')" class="rounded-xl px-4 py-2 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm">
+                            ${I18N.t('review_answers_btn')}
+                        </button>
                     </div>
                 </div>
             ` : ''}
@@ -1043,7 +1032,7 @@ function renderCourse(container, courseId) {
                     <div class="flex flex-wrap gap-2 mb-3">
                         <span class="px-2.5 py-1 bg-slate-100 text-slate-700 rounded-lg text-xs font-mono font-bold">${course.id}</span>
                         <span class="px-2.5 py-1 bg-indigo-50 text-indigo-700 rounded-lg text-xs font-semibold">${course.category}</span>
-                        ${course.hasAssessment ? `<span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold">📝 Assessment</span>` : ''}
+                        <span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold">📝 Assessment Required</span>
                     </div>
                     <h1 class="text-2xl md:text-3xl font-extrabold text-slate-800 mb-2">${courseName}</h1>
                     <p class="text-xs text-slate-500">⏱ Duration: ${course.duration}</p>
@@ -1061,15 +1050,9 @@ function renderCourse(container, courseId) {
                                 <span class="text-slate-700 font-medium text-sm leading-snug">${I18N.t('confirm_read')}</span>
                             </label>
                             
-                            ${course.hasAssessment && quiz ? `
-                                <button id="take-assessment-btn" ${!isCompleted ? 'disabled' : ''} class="w-full rounded-xl px-6 py-3.5 bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
-                                    ${isCompleted ? I18N.t('retake_assessment') : I18N.t('take_assessment')}
-                                </button>
-                            ` : `
-                                <button id="complete-course-btn" ${!isCompleted ? 'disabled' : ''} class="w-full rounded-xl px-6 py-3.5 bg-emerald-600 text-white font-bold text-sm hover:bg-emerald-700 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
-                                    ${I18N.t('confirm_completion')}
-                                </button>
-                            `}
+                            <button id="take-assessment-btn" ${!isCompleted ? 'disabled' : ''} class="w-full rounded-xl px-6 py-3.5 bg-blue-600 text-white font-bold text-sm hover:bg-blue-700 transition disabled:opacity-40 disabled:cursor-not-allowed shadow-sm">
+                                ${isCompleted ? I18N.t('retake_assessment') : I18N.t('take_assessment')}
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1083,20 +1066,11 @@ function renderCourse(container, courseId) {
 
     const check = document.getElementById('understand-check');
     const takeAssBtn = document.getElementById('take-assessment-btn');
-    const compBtn = document.getElementById('complete-course-btn');
     const quizArea = document.getElementById('quiz-area');
     
     check.addEventListener('change', (e) => {
         if(takeAssBtn) takeAssBtn.disabled = !e.target.checked;
-        if(compBtn) compBtn.disabled = !e.target.checked;
     });
-
-    if(compBtn) {
-        compBtn.addEventListener('click', () => {
-            saveTrainingRecord(learnerId, courseId, 'Completed', null, null, 'Self-study', 'Akkharasaran S.');
-            window.location.hash = 'my-training';
-        });
-    }
 
     if(takeAssBtn) {
         takeAssBtn.addEventListener('click', () => {
@@ -1112,7 +1086,7 @@ function renderCourse(container, courseId) {
 function renderQuiz(container, quiz, learnerId, courseId) {
     let html = `
         <div class="mb-8 border-b border-slate-100 pb-5">
-            <span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold mb-2 inline-block">ASSESSMENT</span>
+            <span class="px-2.5 py-1 bg-amber-50 text-amber-700 rounded-lg text-xs font-bold mb-2 inline-block">TECHNICAL KNOWLEDGE ASSESSMENT</span>
             <h2 class="text-2xl font-bold text-slate-800">${quiz.title}</h2>
             <p class="text-xs text-slate-500 mt-1">Passing Score: ${quiz.passingScore}% • ${quiz.questions.length} questions</p>
         </div>
@@ -1163,7 +1137,7 @@ function renderQuiz(container, quiz, learnerId, courseId) {
         const passed = percent >= quiz.passingScore;
         const resId = 'QR-' + Date.now();
         
-        // Save quiz result with submitted answers array
+        // Save quiz result
         const results = DataAPI.getQuizResults();
         results.push({
             id: resId,
@@ -1231,21 +1205,17 @@ function saveTrainingRecord(empId, courseId, status, score, passed, method, trai
         status: status,
         score: score,
         passed: passed,
-        remarks: ''
+        remarks: status === 'Completed' ? 'Passed with certification' : 'Assessment attempt'
     });
     DB.set('sye_training_records', records);
     
     const emp = DataAPI.getEmployees().find(e => e.id === empId);
-    DB.logActivity('training_completed', `${emp ? emp.name : empId} completed ${course ? course.name : courseId} (${status})${score !== null ? ` with score ${score}%` : ''}`, courseId);
+    DB.logActivity('training_completed', `${emp ? emp.name : empId} (${emp ? emp.role : ''}) ${status === 'Completed' ? 'completed' : status.toLowerCase()} ${course ? course.name : courseId}${score !== null ? ` (Score: ${score}%)` : ''}`, courseId);
 }
 
 // 6. Detailed Quiz Breakdown & Answer Review Modal
 window.viewLearnerQuizReview = (empId, courseId) => {
-    const quiz = DataAPI.getQuizzes().find(q => q.courseId === courseId);
-    if (!quiz) {
-        alert('Quiz not found for this course.');
-        return;
-    }
+    const quiz = DataAPI.getQuizzes().find(q => q.courseId === courseId) || DataAPI.getQuizzes()[0];
     const results = DataAPI.getQuizResults().filter(r => r.employeeId === empId && r.quizId === quiz.id);
     if (!results.length) {
         viewQuizPreview(quiz.id);
@@ -1362,7 +1332,7 @@ window.viewQuizPreview = (quizId) => {
 
 // ===== ADMIN PORTAL SCREENS =====
 
-// 1. Dashboard
+// 1. Dashboard (With Enhanced Animations, Number Labels & Multi-Color Role Bars)
 function renderDashboard(container) {
     const employees = DataAPI.getEmployees();
     const courses = DataAPI.getCourses();
@@ -1386,7 +1356,7 @@ function renderDashboard(container) {
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 border-l-4 border-l-blue-500">
                 <div class="flex items-center justify-between">
                     <div>
-                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Engineers</p>
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Total Engineers (SYE)</p>
                         <p class="text-3xl font-extrabold text-slate-800 mt-1">${totalEmps}</p>
                     </div>
                     <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-2xl">👥</div>
@@ -1424,11 +1394,17 @@ function renderDashboard(container) {
         <!-- Charts Row -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">Training Completion by Section</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Training Completion by Section</h3>
+                    <span class="text-xs font-semibold text-blue-600">4 Core Sections</span>
+                </div>
                 <div class="relative h-64"><canvas id="sectionChart"></canvas></div>
             </div>
             <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">Progress by Role</h3>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider">Progress by Role</h3>
+                    <span class="text-xs font-semibold text-slate-400">Average % Completed</span>
+                </div>
                 <div class="relative h-64"><canvas id="roleChart"></canvas></div>
             </div>
         </div>
@@ -1436,7 +1412,7 @@ function renderDashboard(container) {
         <!-- Statistics & Activity Row -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div class="lg:col-span-2 bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
-                <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">SYE Knowledge Base Metrics</h3>
+                <h3 class="text-sm font-bold text-slate-700 uppercase tracking-wider mb-4">SYE Engineering Knowledge Base</h3>
                 <div class="grid grid-cols-3 gap-4 text-center">
                     <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
                         <div class="text-3xl font-extrabold text-blue-600">${courses.length}</div>
@@ -1448,13 +1424,13 @@ function renderDashboard(container) {
                     </div>
                     <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100">
                         <div class="text-3xl font-extrabold text-amber-600">${DataAPI.getQuizzes().length}</div>
-                        <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Assessments</div>
+                        <div class="text-xs font-bold text-slate-500 mt-1 uppercase">Technical Quizzes</div>
                     </div>
                 </div>
                 <div class="mt-6 p-4 rounded-xl bg-blue-50/50 border border-blue-100 flex items-center justify-between">
                     <div>
                         <h4 class="font-bold text-blue-900 text-xs">System Enabler (SYE) Division</h4>
-                        <p class="text-xs text-blue-700 mt-0.5">Engineering Onboarding & System Development Department</p>
+                        <p class="text-xs text-blue-700 mt-0.5">Head of SYE: Akkharasaran S. • Sermmit Tower 14th Floor</p>
                     </div>
                     <a href="#landing" class="px-3.5 py-1.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition">Learner Portal</a>
                 </div>
@@ -1484,11 +1460,18 @@ function renderDashboard(container) {
     `;
 
     setTimeout(() => {
+        // Doughnut Chart (With Employee Numbers in Labels)
+        const sectionLabels = SECTIONS.map(sec => {
+            const emps = employees.filter(e => e.section === sec);
+            const fullyTrained = emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
+            const shortName = sec.replace('Platform', '').replace('Systems', '').trim();
+            return `${shortName} (${fullyTrained}/${emps.length})`;
+        });
+
         const secData = SECTIONS.map(sec => {
             const emps = employees.filter(e => e.section === sec);
             if(!emps.length) return 0;
-            const fullyTrained = emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
-            return fullyTrained;
+            return emps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
         });
 
         const ctx1 = document.getElementById('sectionChart');
@@ -1496,22 +1479,44 @@ function renderDashboard(container) {
             const chart1 = new Chart(ctx1, {
                 type: 'doughnut',
                 data: {
-                    labels: SECTIONS,
+                    labels: sectionLabels,
                     datasets: [{
                         data: secData,
-                        backgroundColor: ['#3b82f6', '#10b981', '#6366f1']
+                        backgroundColor: ['#3b82f6', '#10b981', '#f59e0b', '#8b5cf6'],
+                        borderWidth: 2,
+                        borderColor: '#ffffff'
                     }]
                 },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: { legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } } }
+                    animation: {
+                        animateRotate: true,
+                        animateScale: true,
+                        duration: 1200,
+                        easing: 'easeOutQuart'
+                    },
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { boxWidth: 12, font: { size: 11, weight: '600' } }
+                        }
+                    }
                 }
             });
             currentCharts.push(chart1);
         }
 
+        // Horizontal Bar Chart (With Multi-Colored Role Bars)
         const roleLabels = ROLES;
+        const roleColors = {
+            'Developer': '#3b82f6', // Blue
+            'BA': '#10b981',        // Emerald
+            'PM': '#f59e0b',        // Amber
+            'SRE': '#f43f5e',       // Rose
+            'QA': '#8b5cf6'         // Purple
+        };
+
         const roleAverages = roleLabels.map(role => {
             const emps = employees.filter(e => e.role === role);
             if(!emps.length) return 0;
@@ -1528,16 +1533,28 @@ function renderDashboard(container) {
                     datasets: [{
                         label: 'Average Progress %',
                         data: roleAverages,
-                        backgroundColor: '#8b5cf6',
-                        borderRadius: 6
+                        backgroundColor: roleLabels.map(r => roleColors[r] || '#3b82f6'),
+                        borderRadius: 8
                     }]
                 },
                 options: {
                     indexAxis: 'y',
                     responsive: true,
                     maintainAspectRatio: false,
-                    scales: { x: { max: 100, min: 0 } },
-                    plugins: { legend: { display: false } }
+                    animation: {
+                        duration: 1200,
+                        easing: 'easeOutQuart'
+                    },
+                    scales: {
+                        x: {
+                            max: 100,
+                            min: 0,
+                            ticks: { callback: (v) => v + '%' }
+                        }
+                    },
+                    plugins: {
+                        legend: { display: false }
+                    }
                 }
             });
             currentCharts.push(chart2);
@@ -1586,7 +1603,7 @@ function renderCatalog(container) {
                     <div class="flex flex-wrap gap-2 text-xs text-slate-500 border-t border-slate-100 pt-3 mb-4">
                         <span>⏱ ${c.duration}</span>
                         <span>👥 ${c.targetRoles.join(', ')}</span>
-                        ${c.hasAssessment ? `<span class="text-amber-600 font-bold">📝 Assessment</span>` : ''}
+                        <span class="text-amber-600 font-bold">📝 Assessment</span>
                     </div>
                     <div class="flex items-center justify-end space-x-2 pt-2 border-t border-slate-100">
                         <button onclick="previewCourseContent('${c.id}')" class="text-xs font-bold text-slate-600 hover:text-slate-900 px-2 py-1 rounded">Read Material</button>
@@ -1631,7 +1648,7 @@ window.previewCourseContent = (courseId) => {
             contentHtml += `
                 <div class="mb-4">
                     <h4 class="font-bold text-slate-800 text-sm mb-1">${idx+1}. ${sec.title}</h4>
-                    <div class="text-xs text-slate-600 leading-relaxed">${sec.body}</div>
+                    <div class="text-xs text-slate-600 leading-relaxed">${formatRichContent(sec.body)}</div>
                 </div>
             `;
         });
@@ -1681,10 +1698,6 @@ window.openCourseModal = (id = null) => {
                     </select>
                 </div>
             </div>
-            <div class="flex items-center space-x-2 pt-2">
-                <input type="checkbox" id="c-ass" ${course.hasAssessment ? 'checked' : ''} class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
-                <label for="c-ass" class="text-xs font-semibold text-slate-700">Has Knowledge Assessment Quiz</label>
-            </div>
         </form>
     `;
     
@@ -1702,7 +1715,7 @@ window.openCourseModal = (id = null) => {
             targetRoles: course.targetRoles || ['All'],
             targetSection: document.getElementById('c-sec').value || null,
             prerequisites: course.prerequisites || [],
-            hasAssessment: document.getElementById('c-ass').checked,
+            hasAssessment: true,
             createdDate: course.createdDate || '2025-01-05',
             learningObjectives: course.learningObjectives || [],
             content: course.content || []
@@ -1732,15 +1745,245 @@ window.deleteCourse = (id) => {
     }
 };
 
-// 3. Employees Management
+// 3. Work Instructions (Enterprise SOP Viewer)
+function renderWorkInstructions(container) {
+    const wis = DataAPI.getWIs();
+    
+    container.innerHTML = `
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+            <div>
+                <h3 class="font-bold text-slate-800 text-lg">Standard Work Instructions (${wis.length} SOP Documents)</h3>
+                <p class="text-xs text-slate-400 mt-0.5">ISO 27001, ISO 9001, ISO 14001, ISO 22301 Certified Operational Procedures</p>
+            </div>
+            <button onclick="openWIModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
+                <span>+</span> Add Work Instruction
+            </button>
+        </div>
+        
+        <div class="space-y-4">
+            ${wis.map(wi => `
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 hover:shadow-md transition">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-4 mb-4">
+                        <div class="flex items-center space-x-3">
+                            <span class="font-mono text-xs font-bold px-2.5 py-1 bg-slate-100 text-slate-700 rounded-lg">${wi.id}</span>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base hover:text-blue-600 cursor-pointer" onclick="viewWIDetail('${wi.id}')">${wi.title}</h4>
+                                <p class="text-xs text-slate-400 mt-0.5">${wi.section} • Ver: ${wi.version} • Effective: ${wi.effectiveDate}</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-bold rounded-lg border border-emerald-100">Effective</span>
+                            <button onclick="viewWIDetail('${wi.id}')" class="rounded-xl px-3.5 py-1.5 bg-blue-50 text-blue-700 text-xs font-bold hover:bg-blue-100 transition">View SOP</button>
+                            <button onclick="openWIModal('${wi.id}')" class="text-xs font-bold text-slate-600 hover:text-slate-900 px-2 py-1">Edit</button>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed mb-4">${wi.objective}</p>
+                    <div class="flex flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400 bg-slate-50 p-3 rounded-xl">
+                        <span>Prepared: ${wi.preparedBy}</span>
+                        <span>Reviewed: ${wi.reviewedBy}</span>
+                        <span class="font-semibold text-slate-600">Approved: ${wi.approvedBy}</span>
+                    </div>
+                </div>
+            `).join('')}
+        </div>
+    `;
+}
+
+window.viewWIDetail = (id) => {
+    const wi = DataAPI.getWIs().find(w => w.id === id);
+    if (!wi) return;
+    
+    let html = `
+        <div class="space-y-6 max-h-[75vh] overflow-y-auto pr-2">
+            <!-- Header Metadata Card -->
+            <div class="p-5 bg-slate-50 rounded-2xl border border-slate-200">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+                    <span class="font-mono text-xs font-bold px-3 py-1 bg-blue-600 text-white rounded-lg">${wi.id}</span>
+                    <span class="text-xs font-semibold px-2.5 py-0.5 bg-slate-200 text-slate-700 rounded">Version ${wi.version}</span>
+                </div>
+                <h3 class="font-extrabold text-slate-800 text-lg mb-2">${wi.title}</h3>
+                <p class="text-xs text-slate-500 mb-4">${wi.section}</p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs border-t border-slate-200 pt-3">
+                    <div><span class="text-slate-400 block text-[10px] uppercase">Effective Date</span><span class="font-bold text-slate-700">${wi.effectiveDate}</span></div>
+                    <div><span class="text-slate-400 block text-[10px] uppercase">Prepared By</span><span class="font-bold text-slate-700">${wi.preparedBy}</span></div>
+                    <div><span class="text-slate-400 block text-[10px] uppercase">Reviewed By</span><span class="font-bold text-slate-700">${wi.reviewedBy}</span></div>
+                    <div><span class="text-slate-400 block text-[10px] uppercase">Approved By</span><span class="font-bold text-blue-700">${wi.approvedBy}</span></div>
+                </div>
+            </div>
+
+            <!-- Objective & Scope -->
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">1. Objective & Scope</h4>
+                <div class="bg-white p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-2">
+                    <p><strong>Objective:</strong> ${wi.objective}</p>
+                    <p><strong>Scope:</strong> ${wi.scope || 'All System Enabler (SYE) engineering environments and services.'}</p>
+                </div>
+            </div>
+
+            <!-- Prerequisites -->
+            ${wi.prerequisites && wi.prerequisites.length ? `
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">2. Prerequisites & Compliance Controls</h4>
+                    <div class="bg-amber-50/40 p-4 rounded-xl border border-amber-200/60 text-xs text-slate-700">
+                        <ul class="list-disc pl-4 space-y-1">
+                            ${wi.prerequisites.map(p => `<li>${p}</li>`).join('')}
+                        </ul>
+                    </div>
+                </div>
+            ` : ''}
+
+            <!-- Step by step procedure -->
+            <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">3. Standard Operating Procedure Steps</h4>
+                <div class="space-y-3">
+                    ${wi.procedure.map((step, idx) => `
+                        <div class="p-4 rounded-xl border border-slate-200 bg-white">
+                            <div class="flex items-center space-x-2 mb-1.5">
+                                <span class="w-5 h-5 rounded-full bg-blue-600 text-white text-xs flex items-center justify-center font-bold">${step.step || idx+1}</span>
+                                <h5 class="font-bold text-slate-800 text-xs">${step.title}</h5>
+                            </div>
+                            <div class="text-xs text-slate-600 pl-7 leading-relaxed">${formatRichContent(step.description)}</div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+
+            <!-- Rollback Procedure -->
+            ${wi.rollbackProcedure ? `
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-rose-500 mb-2">4. Contingency & Rollback Protocol</h4>
+                    <div class="bg-rose-50/40 p-4 rounded-xl border border-rose-200 text-xs text-slate-700 leading-relaxed">
+                        ${formatRichContent(wi.rollbackProcedure)}
+                    </div>
+                </div>
+            ` : ''}
+
+            <!-- Revision History Timeline -->
+            ${wi.revisionHistory && wi.revisionHistory.length ? `
+                <div>
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">5. Revision History & Approvals</h4>
+                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                        <table class="w-full text-left text-xs text-slate-600">
+                            <thead class="bg-slate-50 font-bold text-slate-500">
+                                <tr>
+                                    <th class="p-2.5">Version</th>
+                                    <th class="p-2.5">Date</th>
+                                    <th class="p-2.5">Author</th>
+                                    <th class="p-2.5">Approver</th>
+                                    <th class="p-2.5">Summary of Changes</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100">
+                                ${wi.revisionHistory.map(r => `
+                                    <tr class="hover:bg-slate-50">
+                                        <td class="p-2.5 font-bold">${r.version}</td>
+                                        <td class="p-2.5">${r.date}</td>
+                                        <td class="p-2.5">${r.author}</td>
+                                        <td class="p-2.5 font-semibold text-blue-700">${r.approver || 'Akkharasaran S.'}</td>
+                                        <td class="p-2.5">${r.changes}</td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            ` : ''}
+        </div>
+    `;
+    
+    UI.showModal(`Work Instruction: ${wi.id}`, html, null, '', false);
+};
+
+window.openWIModal = (id = null) => {
+    const isEdit = !!id;
+    const wi = isEdit ? DataAPI.getWIs().find(w => w.id === id) : { section: SECTIONS[0], version: '1.0' };
+    
+    let html = `
+        <form id="wi-form" class="space-y-4">
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Doc Number</label>
+                    <input type="text" id="wi-id" value="${wi.id || ''}" ${isEdit ? 'disabled' : 'required'} placeholder="WI-SYE-009" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500 disabled:bg-slate-100">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Section</label>
+                    <select id="wi-sec" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                        ${SECTIONS.map(s => `<option value="${s}" ${wi.section === s ? 'selected' : ''}>${s}</option>`).join('')}
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Document Title</label>
+                <input type="text" id="wi-title" value="${wi.title || ''}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Objective</label>
+                <textarea id="wi-obj" rows="2" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">${wi.objective || ''}</textarea>
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Prepared By</label>
+                    <input type="text" id="wi-prep" value="${wi.preparedBy || 'Pongsatorn N.'}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Reviewed By</label>
+                    <input type="text" id="wi-rev" value="${wi.reviewedBy || 'Rattanapakorn K.'}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Approved By</label>
+                    <input type="text" id="wi-appr" value="${wi.approvedBy || 'Akkharasaran S.'}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
+        </form>
+    `;
+    
+    UI.showModal(isEdit ? 'Edit Work Instruction' : 'Add New Work Instruction', html, () => {
+        const wid = document.getElementById('wi-id').value.trim();
+        const wtitle = document.getElementById('wi-title').value.trim();
+        if(!wid || !wtitle) { alert('Doc Number and Title are required'); return false; }
+        
+        const newWI = {
+            ...wi,
+            id: wid,
+            title: wtitle,
+            section: document.getElementById('wi-sec').value,
+            objective: document.getElementById('wi-obj').value,
+            preparedBy: document.getElementById('wi-prep').value,
+            reviewedBy: document.getElementById('wi-rev').value,
+            approvedBy: document.getElementById('wi-appr').value,
+            version: wi.version || '1.0',
+            effectiveDate: wi.effectiveDate || new Date().toISOString().split('T')[0],
+            procedure: wi.procedure || [{ step: 1, title: 'Execution', description: 'Follow standard engineering steps.' }]
+        };
+
+        let wis = DataAPI.getWIs();
+        if(isEdit) {
+            wis = wis.map(w => w.id === wid ? newWI : w);
+            DB.logActivity('wi_updated', `Work Instruction ${wid} updated`);
+        } else {
+            if(wis.find(w => w.id === wid)) { alert('Doc Number already exists'); return false; }
+            wis.push(newWI);
+            DB.logActivity('wi_added', `Work Instruction ${wid} created`);
+        }
+        DB.set('sye_work_instructions', wis);
+        renderWorkInstructions(document.getElementById('admin-content'));
+        return true;
+    });
+};
+
+// 4. Employees Management
 function renderEmployees(container) {
     const emps = DataAPI.getEmployees();
     
     container.innerHTML = `
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-            <h3 class="font-bold text-slate-800 text-lg">Employees Directory (${emps.length} Total)</h3>
+            <div>
+                <h3 class="font-bold text-slate-800 text-lg">SYE Engineering Roster (${emps.length} Total Engineers)</h3>
+                <p class="text-xs text-slate-400 mt-0.5">Permanent Staff & Outsource Engineers (OS-SYE / OS-ECM / OS-NRT)</p>
+            </div>
             <button onclick="openEmpModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
-                <span>+</span> Add Employee
+                <span>+</span> Add Engineer
             </button>
         </div>
         <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden flex flex-col">
@@ -1753,6 +1996,11 @@ function renderEmployees(container) {
                     <option value="All">All Roles</option>
                     ${ROLES.map(r => `<option value="${r}">${r}</option>`).join('')}
                 </select>
+                <select id="emp-type-filter" class="rounded-xl border border-slate-200 px-3 py-1.5 text-xs outline-none bg-white font-medium">
+                    <option value="All">All Employment Types</option>
+                    <option value="Permanent">Permanent (Staff)</option>
+                    <option value="Outsource">Outsource (Contractor)</option>
+                </select>
             </div>
             <div class="overflow-x-auto">
                 <table class="w-full text-left text-xs text-slate-600">
@@ -1761,8 +2009,9 @@ function renderEmployees(container) {
                             <th class="px-5 py-3.5">ID</th>
                             <th class="px-5 py-3.5">Name</th>
                             <th class="px-5 py-3.5">Role</th>
-                            <th class="px-5 py-3.5">Section</th>
-                            <th class="px-5 py-3.5 w-48">Onboarding Progress</th>
+                            <th class="px-5 py-3.5">Section / Unit</th>
+                            <th class="px-5 py-3.5">Type</th>
+                            <th class="px-5 py-3.5 w-44">Progress</th>
                             <th class="px-5 py-3.5">Status</th>
                             <th class="px-5 py-3.5 text-right">Actions</th>
                         </tr>
@@ -1776,10 +2025,12 @@ function renderEmployees(container) {
     const renderTable = () => {
         const sf = document.getElementById('emp-section-filter').value;
         const rf = document.getElementById('emp-role-filter').value;
+        const tf = document.getElementById('emp-type-filter').value;
         
         let filtered = emps;
         if(sf !== 'All') filtered = filtered.filter(e => e.section === sf);
         if(rf !== 'All') filtered = filtered.filter(e => e.role === rf);
+        if(tf !== 'All') filtered = filtered.filter(e => (e.employmentType || 'Permanent') === tf);
         
         const tbody = document.getElementById('emp-tbody');
         tbody.innerHTML = filtered.map(emp => {
@@ -1790,6 +2041,7 @@ function renderEmployees(container) {
                     <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer" onclick="viewEmployeeDetail('${emp.id}')">${emp.name}</td>
                     <td class="px-5 py-3.5 font-medium">${emp.role}</td>
                     <td class="px-5 py-3.5 text-slate-500">${emp.section}</td>
+                    <td class="px-5 py-3.5">${UI.renderEmploymentBadge(emp)}</td>
                     <td class="px-5 py-3.5">${UI.renderProgressBar(stats.percent)}</td>
                     <td class="px-5 py-3.5">${UI.renderBadge(emp.status)}</td>
                     <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
@@ -1804,18 +2056,19 @@ function renderEmployees(container) {
     
     document.getElementById('emp-section-filter').addEventListener('change', renderTable);
     document.getElementById('emp-role-filter').addEventListener('change', renderTable);
+    document.getElementById('emp-type-filter').addEventListener('change', renderTable);
     renderTable();
 }
 
 window.openEmpModal = (id = null) => {
     const isEdit = !!id;
-    const emp = isEdit ? DataAPI.getEmployees().find(e => e.id === id) : { status: 'Active' };
+    const emp = isEdit ? DataAPI.getEmployees().find(e => e.id === id) : { status: 'Active', employmentType: 'Permanent', vendor: 'AEON' };
     
     let html = `
         <form id="emp-form" class="space-y-4">
             <div class="grid grid-cols-2 gap-4">
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Employee ID</label>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Employee ID / Code</label>
                     <input type="text" id="e-id" value="${emp.id || ''}" ${isEdit ? 'disabled' : 'required'} class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500 disabled:bg-slate-100">
                 </div>
                 <div>
@@ -1848,14 +2101,27 @@ window.openEmpModal = (id = null) => {
                     </select>
                 </div>
             </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Employment Type</label>
+                    <select id="e-type" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                        <option value="Permanent" ${emp.employmentType === 'Permanent' ? 'selected' : ''}>Permanent (AEON Staff)</option>
+                        <option value="Outsource" ${emp.employmentType === 'Outsource' ? 'selected' : ''}>Outsource (Contractor)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Vendor / Entity</label>
+                    <input type="text" id="e-vendor" value="${emp.vendor || 'OS-SYE'}" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                </div>
+            </div>
             <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Join Date (2025+)</label>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Join Date</label>
                 <input type="date" id="e-date" value="${emp.joinDate || new Date().toISOString().split('T')[0]}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
             </div>
         </form>
     `;
     
-    UI.showModal(isEdit ? 'Edit Employee Record' : 'Add New Employee', html, () => {
+    UI.showModal(isEdit ? 'Edit Engineer Record' : 'Add New Engineer', html, () => {
         const eid = document.getElementById('e-id').value.trim();
         const ename = document.getElementById('e-name').value.trim();
         if(!eid || !ename) { alert('ID and Name are required'); return false; }
@@ -1866,6 +2132,8 @@ window.openEmpModal = (id = null) => {
             email: document.getElementById('e-email').value,
             role: document.getElementById('e-role').value,
             section: document.getElementById('e-section').value,
+            employmentType: document.getElementById('e-type').value,
+            vendor: document.getElementById('e-vendor').value,
             joinDate: document.getElementById('e-date').value,
             status: document.getElementById('e-status').value
         };
@@ -1873,11 +2141,11 @@ window.openEmpModal = (id = null) => {
         let emps = DataAPI.getEmployees();
         if(isEdit) {
             emps = emps.map(e => e.id === eid ? newEmp : e);
-            DB.logActivity('employee_updated', `Employee ${eid} (${ename}) updated`);
+            DB.logActivity('employee_updated', `Engineer ${eid} (${ename}) updated`);
         } else {
             if(emps.find(e => e.id === eid)) { alert('Employee ID already exists'); return false; }
             emps.push(newEmp);
-            DB.logActivity('employee_added', `Employee ${eid} (${ename}) added`);
+            DB.logActivity('employee_added', `Engineer ${eid} (${ename}) added to roster`);
         }
         DB.set('sye_employees', emps);
         renderEmployees(document.getElementById('admin-content'));
@@ -1886,10 +2154,10 @@ window.openEmpModal = (id = null) => {
 };
 
 window.deleteEmp = (id) => {
-    if(confirm(`Are you sure you want to delete employee record ${id}?`)) {
+    if(confirm(`Are you sure you want to delete engineer record ${id}?`)) {
         let emps = DataAPI.getEmployees().filter(e => e.id !== id);
         DB.set('sye_employees', emps);
-        DB.logActivity('employee_deleted', `Employee ${id} deleted`);
+        DB.logActivity('employee_deleted', `Engineer ${id} deleted`);
         renderEmployees(document.getElementById('admin-content'));
     }
 };
@@ -1911,6 +2179,7 @@ window.viewEmployeeDetail = (id) => {
                     <div>
                         <h2 class="text-xl font-bold text-slate-800">${emp.name} <span class="text-xs font-mono text-slate-400 ml-2">(${emp.id})</span></h2>
                         <p class="text-xs text-slate-500 mt-1">${emp.role} • ${emp.section} • Joined ${emp.joinDate}</p>
+                        <div class="mt-1.5">${UI.renderEmploymentBadge(emp)}</div>
                     </div>
                 </div>
                 ${UI.renderBadge(emp.status)}
@@ -1950,25 +2219,23 @@ window.viewEmployeeDetail = (id) => {
                                         <td class="px-4 py-2.5 font-bold">${r.score !== null ? `${r.score}%` : '-'}</td>
                                         <td class="px-4 py-2.5">${UI.renderBadge(r.status)}</td>
                                         <td class="px-4 py-2.5 text-right">
-                                            ${(c && c.hasAssessment) ? `
-                                                <button onclick="viewLearnerQuizReview('${emp.id}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 font-bold">
-                                                    Review Answers
-                                                </button>
-                                            ` : '<span class="text-slate-300">-</span>'}
+                                            <button onclick="viewLearnerQuizReview('${emp.id}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 font-bold">
+                                                Review Answers
+                                            </button>
                                         </td>
                                     </tr>
                                 `;
                             }).join('')}
                         </tbody>
                     </table>
-                </div>` : `<p class="text-xs text-slate-400 italic">No training records found for this employee.</p>`}
+                </div>` : `<p class="text-xs text-slate-400 italic">No training records found for this engineer.</p>`}
             </div>
         </div>
     `;
-    UI.showModal('Employee Training Profile', html, null, '', false);
+    UI.showModal('Engineer Training Profile', html, null, '', false);
 };
 
-// 4. Training Records CRUD
+// 5. Training Records
 function renderRecords(container) {
     const records = DataAPI.getRecords();
     const emps = DataAPI.getEmployees();
@@ -1988,31 +2255,30 @@ function renderRecords(container) {
                     <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 font-bold tracking-wider">
                         <tr>
                             <th class="px-5 py-3.5">Date</th>
-                            <th class="px-5 py-3.5">Employee</th>
+                            <th class="px-5 py-3.5">Engineer</th>
                             <th class="px-5 py-3.5">Course</th>
                             <th class="px-5 py-3.5">Trainer</th>
+                            <th class="px-5 py-3.5">Method</th>
                             <th class="px-5 py-3.5">Score</th>
                             <th class="px-5 py-3.5">Status</th>
                             <th class="px-5 py-3.5 text-right">Actions</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
-                        ${records.map(r => {
-                            const emp = emps.find(e => e.id === r.employeeId) || {name: r.employeeId};
-                            const c = courses.find(c => c.id === r.courseId) || {name: r.courseId};
+                        ${records.slice(0, 50).map(r => {
+                            const emp = emps.find(e => e.id === r.employeeId) || { name: r.employeeId, role: '' };
+                            const course = courses.find(c => c.id === r.courseId) || { name: r.courseId };
                             return `
                                 <tr class="hover:bg-slate-50 transition">
                                     <td class="px-5 py-3.5 whitespace-nowrap">${r.trainingDate}</td>
-                                    <td class="px-5 py-3.5 font-bold text-slate-800">${emp.name}</td>
-                                    <td class="px-5 py-3.5 line-clamp-1 max-w-xs" title="${c.name}">${c.name}</td>
+                                    <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${r.employeeId}')">${emp.name}</td>
+                                    <td class="px-5 py-3.5 text-slate-700">${course.name}</td>
                                     <td class="px-5 py-3.5 text-slate-500">${r.trainer || 'Akkharasaran S.'}</td>
+                                    <td class="px-5 py-3.5">${r.method}</td>
                                     <td class="px-5 py-3.5 font-bold">${r.score !== null ? `${r.score}%` : '-'}</td>
                                     <td class="px-5 py-3.5">${UI.renderBadge(r.status)}</td>
                                     <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
-                                        ${(c && c.hasAssessment) ? `
-                                            <button onclick="viewLearnerQuizReview('${r.employeeId}', '${r.courseId}')" class="text-indigo-600 hover:text-indigo-800 text-xs font-bold">Quiz</button>
-                                        ` : ''}
-                                        <button onclick="openRecordModal('${r.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Edit</button>
+                                        <button onclick="viewLearnerQuizReview('${r.employeeId}', '${r.courseId}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Review</button>
                                         <button onclick="deleteRecord('${r.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-bold">Delete</button>
                                     </td>
                                 </tr>
@@ -2025,645 +2291,563 @@ function renderRecords(container) {
     `;
 }
 
-window.openRecordModal = (id = null) => {
-    const isEdit = !!id;
-    const rec = isEdit ? DataAPI.getRecords().find(r => r.id === id) : { trainingDate: new Date().toISOString().split('T')[0], status: 'Completed', method: 'Online', trainer: 'Akkharasaran S.' };
+window.openRecordModal = () => {
     const emps = DataAPI.getEmployees();
     const courses = DataAPI.getCourses();
     
     let html = `
         <form id="rec-form" class="space-y-4">
             <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Employee</label>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Engineer</label>
                 <select id="r-emp" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                    <option value="">Select Employee...</option>
-                    ${emps.map(e => `<option value="${e.id}" ${rec.employeeId === e.id ? 'selected' : ''}>${e.name} (${e.id})</option>`).join('')}
+                    ${emps.map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id})</option>`).join('')}
                 </select>
             </div>
             <div>
                 <label class="block text-xs font-semibold text-slate-700 mb-1">Course</label>
                 <select id="r-course" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                    <option value="">Select Course...</option>
-                    ${courses.map(c => `<option value="${c.id}" ${rec.courseId === c.id ? 'selected' : ''}>${c.id} - ${c.name}</option>`).join('')}
+                    ${courses.map(c => `<option value="${c.id}">[${c.id}] ${c.name}</option>`).join('')}
                 </select>
             </div>
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <label class="block text-xs font-semibold text-slate-700 mb-1">Training Date</label>
-                    <input type="date" id="r-date" value="${rec.trainingDate}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                    <input type="date" id="r-date" value="${new Date().toISOString().split('T')[0]}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Trainer / Lead</label>
-                    <input type="text" id="r-trainer" value="${rec.trainer || 'Akkharasaran S.'}" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Trainer</label>
+                    <input type="text" id="r-trainer" value="Akkharasaran S." required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
+            <div class="grid grid-cols-3 gap-3">
                 <div>
                     <label class="block text-xs font-semibold text-slate-700 mb-1">Method</label>
                     <select id="r-method" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                        ${TRAINING_METHODS.map(m => `<option value="${m}" ${rec.method === m ? 'selected' : ''}>${m}</option>`).join('')}
+                        ${TRAINING_METHODS.map(m => `<option value="${m}">${m}</option>`).join('')}
                     </select>
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-700 mb-1">Status</label>
                     <select id="r-status" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                        ${RECORD_STATUSES.map(s => `<option value="${s}" ${rec.status === s ? 'selected' : ''}>${s}</option>`).join('')}
+                        ${RECORD_STATUSES.map(s => `<option value="${s}">${s}</option>`).join('')}
                     </select>
                 </div>
-            </div>
-            <div class="grid grid-cols-2 gap-4">
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Score (0-100)</label>
-                    <input type="number" id="r-score" value="${rec.score !== null && rec.score !== undefined ? rec.score : ''}" min="0" max="100" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div class="flex items-center pt-5">
-                    <label class="flex items-center space-x-2 text-xs font-semibold text-slate-700 cursor-pointer">
-                        <input type="checkbox" id="r-passed" ${rec.passed ? 'checked' : ''} class="rounded border-slate-300 text-blue-600 focus:ring-blue-500">
-                        <span>Passed Assessment</span>
-                    </label>
+                    <label class="block text-xs font-semibold text-slate-700 mb-1">Score % (Optional)</label>
+                    <input type="number" id="r-score" min="0" max="100" placeholder="e.g. 90" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
                 </div>
             </div>
         </form>
     `;
     
-    UI.showModal(isEdit ? 'Edit Training Record' : 'Add Training Record', html, () => {
+    UI.showModal('Add Training Record', html, () => {
+        const empId = document.getElementById('r-emp').value;
+        const courseId = document.getElementById('r-course').value;
+        const date = document.getElementById('r-date').value;
+        const trainer = document.getElementById('r-trainer').value;
+        const method = document.getElementById('r-method').value;
+        const status = document.getElementById('r-status').value;
         const scoreVal = document.getElementById('r-score').value;
-        const newRec = {
-            id: isEdit ? rec.id : 'TR-' + Date.now(),
-            employeeId: document.getElementById('r-emp').value,
-            courseId: document.getElementById('r-course').value,
-            trainingDate: document.getElementById('r-date').value,
-            completionDate: document.getElementById('r-status').value === 'Completed' ? document.getElementById('r-date').value : null,
-            trainer: document.getElementById('r-trainer').value || 'Akkharasaran S.',
-            method: document.getElementById('r-method').value,
-            status: document.getElementById('r-status').value,
-            score: scoreVal !== '' ? parseInt(scoreVal) : null,
-            passed: document.getElementById('r-passed').checked,
-            remarks: ''
-        };
-
-        let records = DataAPI.getRecords();
-        if(isEdit) {
-            records = records.map(r => r.id === rec.id ? newRec : r);
-            DB.logActivity('record_updated', `Record ${rec.id} updated for ${newRec.employeeId}`);
-        } else {
-            records.push(newRec);
-            DB.logActivity('record_added', `Record added for ${newRec.employeeId}`);
-        }
-        DB.set('sye_training_records', records);
+        const score = scoreVal !== '' ? parseInt(scoreVal) : null;
+        
+        saveTrainingRecord(empId, courseId, status, score, status === 'Completed', method, trainer);
         renderRecords(document.getElementById('admin-content'));
         return true;
     });
 };
 
 window.deleteRecord = (id) => {
-    if(confirm(`Are you sure you want to delete record ${id}?`)) {
+    if(confirm('Are you sure you want to delete this record?')) {
         let records = DataAPI.getRecords().filter(r => r.id !== id);
         DB.set('sye_training_records', records);
-        DB.logActivity('record_deleted', `Record ${id} deleted`);
         renderRecords(document.getElementById('admin-content'));
     }
 };
 
-// 5. Work Instructions CRUD
-function renderWorkInstructions(container) {
-    const wis = DataAPI.getWIs();
-    
-    container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-            <h3 class="font-bold text-slate-800 text-lg">Standard Work Instructions (${wis.length} Documents)</h3>
-            <button onclick="openWIModal()" class="rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold shadow-sm hover:bg-blue-700 transition flex items-center gap-1.5 shrink-0">
-                <span>+</span> Add Work Instruction
-            </button>
-        </div>
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-            <div class="overflow-x-auto">
-                <table class="w-full text-left text-xs text-slate-600">
-                    <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 font-bold tracking-wider">
-                        <tr>
-                            <th class="px-5 py-3.5">Doc No.</th>
-                            <th class="px-5 py-3.5">Title</th>
-                            <th class="px-5 py-3.5">Section</th>
-                            <th class="px-5 py-3.5">Version</th>
-                            <th class="px-5 py-3.5">Author / Prepared By</th>
-                            <th class="px-5 py-3.5 text-right">Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100">
-                        ${wis.map(wi => `
-                            <tr class="hover:bg-slate-50 transition">
-                                <td class="px-5 py-3.5 font-mono font-bold text-blue-600 cursor-pointer" onclick="viewWI('${wi.id}')">${wi.id}</td>
-                                <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer" onclick="viewWI('${wi.id}')">${wi.title}</td>
-                                <td class="px-5 py-3.5 text-slate-500">${wi.section}</td>
-                                <td class="px-5 py-3.5"><span class="px-2 py-0.5 bg-blue-50 text-blue-700 rounded text-xs font-bold font-mono">v${wi.version}</span></td>
-                                <td class="px-5 py-3.5 font-semibold text-slate-700">${wi.preparedBy || 'Akkharasaran S.'}</td>
-                                <td class="px-5 py-3.5 text-right space-x-2 whitespace-nowrap">
-                                    <button onclick="viewWI('${wi.id}')" class="text-slate-600 hover:text-slate-900 text-xs font-bold">View</button>
-                                    <button onclick="openWIModal('${wi.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Edit</button>
-                                    <button onclick="deleteWI('${wi.id}')" class="text-rose-500 hover:text-rose-700 text-xs font-bold">Delete</button>
-                                </td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    `;
-}
-
-window.openWIModal = (id = null) => {
-    const isEdit = !!id;
-    const wi = isEdit ? DataAPI.getWIs().find(w => w.id === id) : { version: '1.0', effectiveDate: '2025-02-01', preparedBy: 'Akkharasaran S.', reviewedBy: 'Akkharasaran S.', approvedBy: 'Akkharasaran S. (Lead System Enabler)' };
-    
-    let html = `
-        <form id="wi-form" class="space-y-4">
-            <div class="grid grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Document No.</label>
-                    <input type="text" id="w-id" value="${wi.id || ''}" ${isEdit ? 'disabled' : 'required'} class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500 disabled:bg-slate-100">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Version</label>
-                    <input type="text" id="w-ver" value="${wi.version}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Title</label>
-                <input type="text" id="w-title" value="${wi.title || ''}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-            </div>
-            <div class="grid grid-cols-2 gap-4">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Section</label>
-                    <select id="w-section" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                        <option value="All Sections" ${wi.section === 'All Sections' ? 'selected' : ''}>All Sections</option>
-                        ${SECTIONS.map(s => `<option value="${s}" ${wi.section === s ? 'selected' : ''}>${s}</option>`).join('')}
-                    </select>
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Effective Date</label>
-                    <input type="date" id="w-date" value="${wi.effectiveDate}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-semibold text-slate-700 mb-1">Objective</label>
-                <textarea id="w-obj" rows="2" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">${wi.objective || ''}</textarea>
-            </div>
-            <div class="grid grid-cols-3 gap-4">
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Prepared By</label>
-                    <input type="text" id="w-prep" value="${wi.preparedBy || 'Akkharasaran S.'}" required class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Reviewed By</label>
-                    <input type="text" id="w-rev" value="${wi.reviewedBy || 'Akkharasaran S.'}" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                </div>
-                <div>
-                    <label class="block text-xs font-semibold text-slate-700 mb-1">Approved By</label>
-                    <input type="text" id="w-app" value="${wi.approvedBy || 'Akkharasaran S. (Lead System Enabler)'}" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
-                </div>
-            </div>
-        </form>
-    `;
-    
-    UI.showModal(isEdit ? 'Edit Work Instruction' : 'Add Work Instruction', html, () => {
-        const wid = document.getElementById('w-id').value.trim();
-        const wtitle = document.getElementById('w-title').value.trim();
-        if(!wid || !wtitle) { alert('Doc No. and Title are required'); return false; }
-        
-        const newWI = {
-            id: wid,
-            title: wtitle,
-            version: document.getElementById('w-ver').value,
-            section: document.getElementById('w-section').value,
-            effectiveDate: document.getElementById('w-date').value,
-            objective: document.getElementById('w-obj').value,
-            preparedBy: document.getElementById('w-prep').value,
-            reviewedBy: document.getElementById('w-rev').value,
-            approvedBy: document.getElementById('w-app').value,
-            scope: wi.scope || 'General Scope',
-            procedure: wi.procedure || [],
-            revisionHistory: wi.revisionHistory || []
-        };
-
-        let wis = DataAPI.getWIs();
-        if(isEdit) {
-            wis = wis.map(w => w.id === wid ? newWI : w);
-            DB.logActivity('wi_updated', `WI ${wid} updated`);
-        } else {
-            if(wis.find(w => w.id === wid)) { alert('Doc No exists'); return false; }
-            wis.push(newWI);
-            DB.logActivity('wi_added', `WI ${wid} added`);
-        }
-        DB.set('sye_work_instructions', wis);
-        renderWorkInstructions(document.getElementById('admin-content'));
-        return true;
-    });
-};
-
-window.deleteWI = (id) => {
-    if(confirm(`Are you sure you want to delete WI ${id}?`)) {
-        let wis = DataAPI.getWIs().filter(w => w.id !== id);
-        DB.set('sye_work_instructions', wis);
-        DB.logActivity('wi_deleted', `WI ${id} deleted`);
-        renderWorkInstructions(document.getElementById('admin-content'));
-    }
-};
-
-window.viewWI = (id) => {
-    const wi = DataAPI.getWIs().find(w => w.id === id);
-    if(!wi) return;
-    
-    let html = `
-        <div class="space-y-6">
-            <div class="flex justify-between items-start border-b border-slate-100 pb-4">
-                <div>
-                    <h2 class="text-xl font-bold text-slate-800">${wi.title}</h2>
-                    <p class="text-xs text-slate-500 mt-1">Section: ${wi.section}</p>
-                </div>
-                <div class="text-right">
-                    <span class="inline-block px-2.5 py-1 bg-slate-800 text-white rounded-lg text-xs font-mono font-bold">${wi.id}</span>
-                    <p class="text-xs text-slate-500 mt-1.5">Effective: ${wi.effectiveDate}</p>
-                    <p class="text-xs text-slate-500">Version: v${wi.version}</p>
-                </div>
-            </div>
-            <div>
-                <h4 class="font-bold text-xs text-slate-700 uppercase tracking-wider mb-2">1. Objective</h4>
-                <p class="text-xs text-slate-600 bg-slate-50 p-3.5 rounded-xl border border-slate-100 leading-relaxed">${wi.objective}</p>
-            </div>
-            <div>
-                <h4 class="font-bold text-xs text-slate-700 uppercase tracking-wider mb-2">2. Operating Procedures</h4>
-                <div class="space-y-2.5">
-                    ${(wi.procedure || []).map(p => `
-                        <div class="flex items-start bg-slate-50 p-3 rounded-xl border border-slate-100">
-                            <div class="w-6 h-6 rounded-full bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-bold shrink-0 mt-0.5 mr-3">${p.step}</div>
-                            <div>
-                                <h5 class="font-bold text-xs text-slate-800">${p.title}</h5>
-                                <p class="text-xs text-slate-600 mt-0.5 leading-relaxed">${p.description}</p>
-                            </div>
-                        </div>
-                    `).join('')}
-                </div>
-            </div>
-            ${wi.revisionHistory && wi.revisionHistory.length ? `
-                <div>
-                    <h4 class="font-bold text-xs text-slate-700 uppercase tracking-wider mb-2">3. Revision History</h4>
-                    <div class="border border-slate-100 rounded-xl overflow-hidden text-xs">
-                        <table class="w-full text-left">
-                            <thead class="bg-slate-50 text-slate-500 font-bold">
-                                <tr><th class="p-2">Version</th><th class="p-2">Date</th><th class="p-2">Changes</th><th class="p-2">Author</th></tr>
-                            </thead>
-                            <tbody class="divide-y divide-slate-100">
-                                ${wi.revisionHistory.map(r => `<tr><td class="p-2 font-mono font-bold">${r.version}</td><td class="p-2">${r.date}</td><td class="p-2">${r.changes}</td><td class="p-2">${r.author}</td></tr>`).join('')}
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            ` : ''}
-            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-slate-100 text-xs text-center">
-                <div>
-                    <p class="text-slate-400 uppercase font-bold text-[10px]">Prepared By</p>
-                    <p class="font-bold text-slate-700 mt-1">${wi.preparedBy || 'Akkharasaran S.'}</p>
-                </div>
-                <div>
-                    <p class="text-slate-400 uppercase font-bold text-[10px]">Reviewed By</p>
-                    <p class="font-bold text-slate-700 mt-1">${wi.reviewedBy || 'Akkharasaran S.'}</p>
-                </div>
-                <div>
-                    <p class="text-slate-400 uppercase font-bold text-[10px]">Approved By</p>
-                    <p class="font-bold text-slate-700 mt-1">${wi.approvedBy || 'Akkharasaran S. (Lead System Enabler)'}</p>
-                </div>
-            </div>
-        </div>
-    `;
-    UI.showModal('Work Instruction Details', html, null, '', false);
-};
-
-// 6. Assessments Management & Submission Review
+// 6. Assessments Management (37 Quizzes & Audit Submissions Log)
 function renderAssessments(container) {
     const quizzes = DataAPI.getQuizzes();
     const results = DataAPI.getQuizResults();
     const emps = DataAPI.getEmployees();
+    const courses = DataAPI.getCourses();
     results.sort((a,b) => new Date(b.date) - new Date(a.date));
 
     container.innerHTML = `
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-            <h3 class="font-bold text-slate-800 text-lg">Assessments & Submissions Log</h3>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
-            ${quizzes.map(q => `
-                <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="flex justify-between items-start mb-2">
-                            <span class="font-mono text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">${q.id}</span>
-                            <span class="text-xs font-bold text-slate-500">Pass: ${q.passingScore}%</span>
-                        </div>
-                        <h4 class="font-bold text-slate-800 text-base mb-1">${q.title}</h4>
-                        <p class="text-xs text-slate-400 mb-4">${q.questions.length} questions in question bank</p>
-                    </div>
-                    <button onclick="viewQuizPreview('${q.id}')" class="w-full rounded-xl py-2 bg-slate-50 text-slate-700 text-xs font-bold border border-slate-200 hover:bg-slate-100 transition">
-                        Preview Questions
-                    </button>
-                </div>
-            `).join('')}
-        </div>
-
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-            <div class="p-4 border-b border-slate-100 bg-slate-50/50 flex justify-between items-center">
-                <h4 class="font-bold text-xs uppercase tracking-wider text-slate-700">Recent Quiz Submissions (${results.length})</h4>
+            <div>
+                <h3 class="font-bold text-slate-800 text-lg">Technical Assessments & Submissions</h3>
+                <p class="text-xs text-slate-400 mt-0.5">${quizzes.length} Master Quizzes • ${results.length} Submissions Logged</p>
             </div>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left text-xs text-slate-600">
-                    <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 font-bold tracking-wider">
-                        <tr>
-                            <th class="px-5 py-3.5">Date</th>
-                            <th class="px-5 py-3.5">Employee</th>
-                            <th class="px-5 py-3.5">Quiz</th>
-                            <th class="px-5 py-3.5">Score</th>
-                            <th class="px-5 py-3.5">Status</th>
-                            <th class="px-5 py-3.5 text-right">Inspect Submission</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100">
-                        ${results.map(r => {
-                            const emp = emps.find(e => e.id === r.employeeId) || { name: r.employeeId };
-                            const quiz = quizzes.find(q => q.id === r.quizId) || { title: r.quizId };
-                            return `
-                                <tr class="hover:bg-slate-50 transition">
-                                    <td class="px-5 py-3.5 whitespace-nowrap">${r.date}</td>
-                                    <td class="px-5 py-3.5 font-bold text-slate-800">${emp.name}</td>
-                                    <td class="px-5 py-3.5 font-medium">${quiz.title}</td>
-                                    <td class="px-5 py-3.5 font-extrabold text-sm ${r.passed ? 'text-emerald-600' : 'text-rose-600'}">${r.score}%</td>
-                                    <td class="px-5 py-3.5">
-                                        <span class="px-2.5 py-0.5 rounded-full text-xs font-bold ${r.passed ? 'bg-emerald-50 text-emerald-700' : 'bg-rose-50 text-rose-700'}">
-                                            ${r.passed ? 'Passed' : 'Failed'}
-                                        </span>
-                                    </td>
-                                    <td class="px-5 py-3.5 text-right">
-                                        <button onclick="viewQuizBreakdownModal('${r.id}')" class="px-3 py-1.5 rounded-lg bg-blue-50 text-blue-700 text-xs font-bold hover:bg-blue-100 transition">
-                                            View Answers
-                                        </button>
-                                    </td>
-                                </tr>
-                            `;
-                        }).join('')}
-                    </tbody>
-                </table>
+            <div class="flex gap-2">
+                <button id="tab-quizzes-btn" class="px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-white transition">Quiz Bank (${quizzes.length})</button>
+                <button id="tab-results-btn" class="px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition">Submissions Log (${results.length})</button>
             </div>
         </div>
+        
+        <div id="quiz-tab-content"></div>
     `;
+
+    const renderQuizBank = () => {
+        const content = document.getElementById('quiz-tab-content');
+        content.innerHTML = `
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                ${quizzes.map(q => {
+                    const c = courses.find(course => course.id === q.courseId) || { name: q.title };
+                    return `
+                        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                            <div>
+                                <div class="flex justify-between items-start mb-2">
+                                    <span class="font-mono text-xs font-bold px-2 py-0.5 bg-amber-50 text-amber-700 rounded-md">${q.id}</span>
+                                    <span class="text-[11px] font-bold px-2 py-0.5 bg-slate-100 text-slate-700 rounded-md">${q.courseId}</span>
+                                </div>
+                                <h4 class="font-bold text-slate-800 text-base mb-2">${q.title}</h4>
+                                <p class="text-xs text-slate-500 mb-4">Passing Score: <strong class="text-emerald-600">${q.passingScore}%</strong> • ${q.questions.length} questions</p>
+                            </div>
+                            <div class="flex items-center justify-end space-x-2 pt-3 border-t border-slate-100">
+                                <button onclick="viewQuizPreview('${q.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 px-2 py-1 rounded">View Questions</button>
+                            </div>
+                        </div>
+                    `;
+                }).join('')}
+            </div>
+        `;
+    };
+
+    const renderResultsLog = () => {
+        const content = document.getElementById('quiz-tab-content');
+        content.innerHTML = `
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs text-slate-600">
+                        <thead class="bg-white text-[11px] uppercase text-slate-400 border-b border-slate-100 font-bold tracking-wider">
+                            <tr>
+                                <th class="px-5 py-3.5">Date</th>
+                                <th class="px-5 py-3.5">Engineer</th>
+                                <th class="px-5 py-3.5">Quiz / Course</th>
+                                <th class="px-5 py-3.5">Score</th>
+                                <th class="px-5 py-3.5">Result</th>
+                                <th class="px-5 py-3.5 text-right">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            ${results.slice(0, 50).map(res => {
+                                const emp = emps.find(e => e.id === res.employeeId) || { name: res.employeeId };
+                                const quiz = quizzes.find(q => q.id === res.quizId) || { title: res.quizId };
+                                return `
+                                    <tr class="hover:bg-slate-50 transition">
+                                        <td class="px-5 py-3.5 whitespace-nowrap">${res.date}</td>
+                                        <td class="px-5 py-3.5 font-bold text-slate-800 cursor-pointer text-blue-600" onclick="viewEmployeeDetail('${res.employeeId}')">${emp.name}</td>
+                                        <td class="px-5 py-3.5 font-medium text-slate-700">${quiz.title}</td>
+                                        <td class="px-5 py-3.5 font-extrabold ${res.passed ? 'text-emerald-600' : 'text-rose-600'}">${res.score}%</td>
+                                        <td class="px-5 py-3.5">
+                                            <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold ${res.passed ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                                                ${res.passed ? 'PASS' : 'FAIL'}
+                                            </span>
+                                        </td>
+                                        <td class="px-5 py-3.5 text-right">
+                                            <button onclick="viewQuizBreakdownModal('${res.id}')" class="text-blue-600 hover:text-blue-800 text-xs font-bold">Review Answers</button>
+                                        </td>
+                                    </tr>
+                                `;
+                            }).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        `;
+    };
+
+    const btnQ = document.getElementById('tab-quizzes-btn');
+    const btnR = document.getElementById('tab-results-btn');
+    
+    btnQ.addEventListener('click', () => {
+        btnQ.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-white transition';
+        btnR.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition';
+        renderQuizBank();
+    });
+
+    btnR.addEventListener('click', () => {
+        btnR.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-slate-800 text-white transition';
+        btnQ.className = 'px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-50 transition';
+        renderResultsLog();
+    });
+
+    renderQuizBank();
 }
 
-// 7. Reports Module
+// 7. Reports & Excel Export Engine
 function renderReports(container) {
     const emps = DataAPI.getEmployees();
     const courses = DataAPI.getCourses();
+    const records = DataAPI.getRecords();
+    const wis = DataAPI.getWIs();
+    const results = DataAPI.getQuizResults();
 
     container.innerHTML = `
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-            <h3 class="font-bold text-slate-800 text-lg">Training Compliance & Audit Reports</h3>
-            <button onclick="window.print()" class="px-4 py-2 bg-slate-800 text-white rounded-xl text-xs font-bold hover:bg-slate-700 transition flex items-center gap-1.5 shadow-sm">
-                <span>🖨</span> Print / PDF Report
-            </button>
+        <div class="mb-6">
+            <h3 class="font-bold text-slate-800 text-lg">Audit & Compliance Reports</h3>
+            <p class="text-xs text-slate-400 mt-0.5">Export certified training records for ISO 9001, ISO 27001, and Management Audit</p>
         </div>
-
-        <div class="space-y-8">
-            <!-- Summary Table Card -->
-            <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm">
-                <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-4">1. Training Compliance by Section</h4>
-                <table class="w-full text-left text-xs">
-                    <thead class="bg-slate-50 font-bold text-slate-600">
-                        <tr>
-                            <th class="p-3">Section</th>
-                            <th class="p-3">Headcount</th>
-                            <th class="p-3">Fully Trained (100%)</th>
-                            <th class="p-3">In Progress</th>
-                            <th class="p-3">Compliance Rate</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-slate-100">
-                        ${SECTIONS.map(sec => {
-                            const sectionEmps = emps.filter(e => e.section === sec);
-                            const fullyTrained = sectionEmps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
-                            const inProg = sectionEmps.length - fullyTrained;
-                            const rate = sectionEmps.length ? Math.round((fullyTrained / sectionEmps.length) * 100) : 0;
-                            return `
-                                <tr>
-                                    <td class="p-3 font-bold text-slate-800">${sec}</td>
-                                    <td class="p-3">${sectionEmps.length}</td>
-                                    <td class="p-3 text-emerald-600 font-bold">${fullyTrained}</td>
-                                    <td class="p-3 text-amber-600 font-bold">${inProg}</td>
-                                    <td class="p-3">${UI.renderProgressBar(rate)}</td>
-                                </tr>
-                            `;
-                        }).join('')}
-                    </tbody>
-                </table>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-8">
+            <!-- Report Card 1 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-10 h-10 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center text-xl mb-3">📊</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Overall Training Summary</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">Complete section-by-section breakdown of training completion rates and employee headcount.</p>
+                </div>
+                <button onclick="exportTrainingSummaryExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                    <span>📥</span> Export Excel (.csv / .xlsx)
+                </button>
             </div>
 
-            <!-- Certificate Generator Card -->
-            <div class="bg-white rounded-2xl p-6 border border-slate-100 shadow-sm no-print">
-                <h4 class="font-bold text-sm text-slate-800 uppercase tracking-wider mb-4">2. Generate Training Certificate</h4>
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <select id="cert-emp" class="rounded-xl border border-slate-200 px-3 py-2 text-xs">
-                        <option value="">Select Employee...</option>
-                        ${emps.map(e => `<option value="${e.id}">${e.name} (${e.id})</option>`).join('')}
-                    </select>
-                    <select id="cert-course" class="rounded-xl border border-slate-200 px-3 py-2 text-xs">
-                        <option value="">Select Completed Course...</option>
-                        ${courses.map(c => `<option value="${c.id}">${c.id} - ${c.name}</option>`).join('')}
-                    </select>
-                    <button onclick="generateCertificate()" class="rounded-xl px-4 py-2 bg-blue-600 text-white font-bold text-xs hover:bg-blue-700 transition">
-                        Generate & Print Certificate
-                    </button>
+            <!-- Report Card 2 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-10 h-10 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center text-xl mb-3">📋</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Full Training Matrix</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">Cross-reference matrix of all 18 engineers against all 37 curriculum courses with status indicators.</p>
                 </div>
+                <button onclick="exportTrainingMatrixExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                    <span>📥</span> Export Excel (.csv / .xlsx)
+                </button>
+            </div>
+
+            <!-- Report Card 3 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-10 h-10 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-xl mb-3">📝</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Assessment Audit Results</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">Detailed quiz scores, passing status, and submission timestamps for compliance auditors.</p>
+                </div>
+                <button onclick="exportAssessmentAuditExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                    <span>📥</span> Export Excel (.csv / .xlsx)
+                </button>
+            </div>
+
+            <!-- Report Card 4 -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-xl mb-3">📑</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Work Instructions Index</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">ISO document control register, version history, effective dates, and lead approvers.</p>
+                </div>
+                <button onclick="exportWIIndexExcel()" class="w-full rounded-xl px-4 py-2.5 bg-emerald-600 text-white text-xs font-bold hover:bg-emerald-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                    <span>📥</span> Export Excel (.csv / .xlsx)
+                </button>
+            </div>
+
+            <!-- Report Card 5: Certificate Generator -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6 flex flex-col justify-between hover:shadow-md transition">
+                <div>
+                    <div class="w-10 h-10 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mb-3">🎓</div>
+                    <h4 class="font-bold text-slate-800 text-base mb-1">Training Certificate</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed mb-4">Generate and print an official ISO training completion certificate for an engineer.</p>
+                </div>
+                <button onclick="openCertificateModal()" class="w-full rounded-xl px-4 py-2.5 bg-blue-600 text-white text-xs font-bold hover:bg-blue-700 transition shadow-sm flex items-center justify-center gap-1.5">
+                    <span>🖨️</span> Issue Certificate
+                </button>
             </div>
         </div>
     `;
 }
 
-window.generateCertificate = () => {
-    const empId = document.getElementById('cert-emp').value;
-    const courseId = document.getElementById('cert-course').value;
-    if(!empId || !courseId) { alert('Please select both an employee and a course.'); return; }
+// Universal Excel Exporter (With UTF-8 Byte Order Mark for Flawless Thai & English Display)
+function exportToExcelCSV(filename, headers, rows) {
+    const BOM = '\uFEFF';
+    let csvContent = headers.map(h => `"${h.replace(/"/g, '""')}"`).join(',') + '\n';
+    
+    rows.forEach(row => {
+        const formattedRow = row.map(cell => {
+            if (cell === null || cell === undefined) return '""';
+            const str = String(cell).replace(/"/g, '""');
+            return `"${str}"`;
+        }).join(',');
+        csvContent += formattedRow + '\n';
+    });
 
+    const blob = new Blob([BOM + csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    link.setAttribute('href', url);
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+window.exportTrainingSummaryExcel = () => {
+    const emps = DataAPI.getEmployees();
+    const headers = ['Section', 'Total Engineers', 'Permanent Staff', 'Outsource Contractors', '100% Fully Onboarded', 'In Progress', 'Section Avg Progress %'];
+    
+    const rows = SECTIONS.map(sec => {
+        const sectionEmps = emps.filter(e => e.section === sec);
+        const permCount = sectionEmps.filter(e => e.employmentType === 'Permanent').length;
+        const osCount = sectionEmps.filter(e => e.employmentType === 'Outsource').length;
+        const fullyTrained = sectionEmps.filter(e => DataAPI.getEmployeeStats(e.id).percent === 100).length;
+        const inProgress = sectionEmps.filter(e => {
+            const p = DataAPI.getEmployeeStats(e.id).percent;
+            return p > 0 && p < 100;
+        }).length;
+        const avg = sectionEmps.length ? Math.round(sectionEmps.reduce((a,c) => a + DataAPI.getEmployeeStats(c.id).percent, 0) / sectionEmps.length) : 0;
+        
+        return [sec, sectionEmps.length, permCount, osCount, fullyTrained, inProgress, `${avg}%`];
+    });
+
+    exportToExcelCSV(`SYE_Training_Summary_${LAST_UPDATED}.csv`, headers, rows);
+};
+
+window.exportTrainingMatrixExcel = () => {
+    const emps = DataAPI.getEmployees();
+    const courses = DataAPI.getCourses();
+    const records = DataAPI.getRecords();
+
+    const headers = ['Staff ID', 'Engineer Name', 'Role', 'Section', 'Employment Type', ...courses.map(c => `[${c.id}] ${c.name}`)];
+    
+    const rows = emps.map(emp => {
+        const empRecords = records.filter(r => r.employeeId === emp.id);
+        const recordMap = new Map(empRecords.map(r => [r.courseId, r]));
+
+        const courseStatuses = courses.map(c => {
+            const rec = recordMap.get(c.id);
+            if (!rec) return 'Not Required';
+            return rec.status === 'Completed' ? `Completed (${rec.score}%)` : rec.status;
+        });
+
+        return [
+            emp.id,
+            emp.name,
+            emp.role,
+            emp.section,
+            `${emp.employmentType || 'Permanent'} (${emp.vendor || 'AEON'})`,
+            ...courseStatuses
+        ];
+    });
+
+    exportToExcelCSV(`SYE_Training_Matrix_Compliance_${LAST_UPDATED}.csv`, headers, rows);
+};
+
+window.exportAssessmentAuditExcel = () => {
+    const results = DataAPI.getQuizResults();
+    const emps = DataAPI.getEmployees();
+    const quizzes = DataAPI.getQuizzes();
+    
+    const headers = ['Result ID', 'Submission Date', 'Staff ID', 'Engineer Name', 'Role', 'Section', 'Quiz Title', 'Score %', 'Result', 'Correct / Total'];
+    
+    const rows = results.map(res => {
+        const emp = emps.find(e => e.id === res.employeeId) || { name: res.employeeId, role: '-', section: '-' };
+        const quiz = quizzes.find(q => q.id === res.quizId) || { title: res.quizId };
+        
+        return [
+            res.id,
+            res.date,
+            res.employeeId,
+            emp.name,
+            emp.role,
+            emp.section,
+            quiz.title,
+            `${res.score}%`,
+            res.passed ? 'PASSED' : 'FAILED',
+            `${res.correctAnswers} / ${res.totalQuestions}`
+        ];
+    });
+
+    exportToExcelCSV(`SYE_Assessment_Audit_Log_${LAST_UPDATED}.csv`, headers, rows);
+};
+
+window.exportWIIndexExcel = () => {
+    const wis = DataAPI.getWIs();
+    const headers = ['Doc Number', 'Document Title', 'Section', 'Version', 'Effective Date', 'Prepared By', 'Reviewed By', 'Approved By'];
+    
+    const rows = wis.map(w => [
+        w.id,
+        w.title,
+        w.section,
+        w.version,
+        w.effectiveDate,
+        w.preparedBy,
+        w.reviewedBy,
+        w.approvedBy
+    ]);
+
+    exportToExcelCSV(`SYE_Work_Instructions_Register_${LAST_UPDATED}.csv`, headers, rows);
+};
+
+window.openCertificateModal = () => {
+    const emps = DataAPI.getEmployees();
+    const courses = DataAPI.getCourses();
+    
+    let html = `
+        <form id="cert-form" class="space-y-4">
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Select Engineer</label>
+                <select id="cert-emp" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                    ${emps.map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id})</option>`).join('')}
+                </select>
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Select Completed Course / Curriculum</label>
+                <select id="cert-course" class="w-full rounded-xl border border-slate-200 px-3 py-2 text-xs focus:ring-2 focus:ring-blue-500">
+                    <option value="FULL_ONBOARDING">Full SYE Engineering Onboarding Curriculum</option>
+                    ${courses.map(c => `<option value="${c.id}">[${c.id}] ${c.name}</option>`).join('')}
+                </select>
+            </div>
+        </form>
+    `;
+    
+    UI.showModal('Issue Training Certificate', html, () => {
+        const empId = document.getElementById('cert-emp').value;
+        const courseId = document.getElementById('cert-course').value;
+        printCertificate(empId, courseId);
+        return true;
+    }, 'Generate & Print');
+};
+
+function printCertificate(empId, courseId) {
     const emp = DataAPI.getEmployees().find(e => e.id === empId);
-    const course = DataAPI.getCourses().find(c => c.id === courseId);
-    const rec = DataAPI.getRecords().find(r => r.employeeId === empId && r.courseId === courseId) || { trainingDate: new Date().toISOString().split('T')[0], score: 95 };
+    if (!emp) return;
+    
+    const courseTitle = courseId === 'FULL_ONBOARDING' ? 'Full System Enabler (SYE) Engineering Onboarding Curriculum' : ((DataAPI.getCourses().find(c => c.id === courseId) || {}).name || courseId);
+    const dateStr = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
 
-    const pc = document.getElementById('print-container');
-    pc.innerHTML = `
-        <div style="width: 800px; margin: 40px auto; padding: 50px; border: 12px double #1e293b; text-align: center; font-family: 'Inter', sans-serif; background: #fff; border-radius: 8px;">
-            <div style="font-size: 30px; font-weight: 800; color: #1e293b; margin-bottom: 8px;">AEON SYSTEM ENABLER (SYE)</div>
-            <div style="font-size: 15px; font-weight: 600; color: #64748b; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px;">Certificate of Technical Training & Onboarding</div>
-            
-            <p style="font-size: 14px; color: #64748b; margin-bottom: 12px;">This is to certify that</p>
-            <div style="font-size: 28px; font-weight: 800; color: #2563eb; margin-bottom: 8px;">${emp.name}</div>
-            <p style="font-size: 14px; color: #64748b; margin-bottom: 30px;">(${emp.role} • ${emp.section})</p>
-            
-            <p style="font-size: 14px; color: #64748b; margin-bottom: 12px;">has successfully completed and demonstrated proficiency in</p>
-            <div style="font-size: 22px; font-weight: 700; color: #1e293b; margin-bottom: 30px;">${course.name}</div>
-            
-            <div style="display: flex; justify-content: space-around; margin-top: 50px; padding-top: 30px; border-top: 1px solid #e2e8f0; font-size: 13px; color: #64748b;">
-                <div>
-                    <strong>Completion Date:</strong><br>${rec.trainingDate}
+    const printContainer = document.getElementById('print-container');
+    printContainer.innerHTML = `
+        <div class="p-12 border-8 border-slate-800 bg-white text-center max-w-4xl mx-auto my-8 rounded-3xl relative">
+            <div class="border-2 border-blue-600 p-8 rounded-2xl">
+                <div class="w-16 h-16 bg-blue-600 text-white rounded-2xl mx-auto flex items-center justify-center font-bold text-3xl mb-4">S</div>
+                <h1 class="text-3xl font-extrabold text-slate-900 tracking-wider uppercase mb-1">Certificate of Completion</h1>
+                <p class="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-8">System Enabler (SYE) Division • AEON System Development</p>
+                
+                <p class="text-sm text-slate-500 mb-2">This is officially certified that</p>
+                <h2 class="text-3xl font-bold text-slate-800 border-b border-slate-300 pb-2 inline-block px-8 mb-4">${emp.name}</h2>
+                <p class="text-xs text-slate-400 font-mono mb-6">Staff ID: ${emp.id} • Role: ${emp.role} • ${emp.section}</p>
+                
+                <p class="text-sm text-slate-600 max-w-lg mx-auto mb-6">
+                    Has successfully completed the mandatory technical curriculum and ISO governance knowledge assessments for:
+                </p>
+                
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 max-w-xl mx-auto mb-10">
+                    <p class="font-extrabold text-slate-800 text-base">${courseTitle}</p>
                 </div>
-                <div>
-                    <strong>Evaluation:</strong><br>${rec.score !== null ? `${rec.score}% (PASSED)` : 'COMPLETED'}
-                </div>
-                <div>
-                    <strong>Authorized Signatory:</strong><br>Akkharasaran S.<br><span style="font-size: 11px;">Lead System Enabler</span>
+                
+                <div class="flex justify-between items-end max-w-xl mx-auto pt-8 border-t border-slate-200 text-left">
+                    <div>
+                        <p class="text-xs text-slate-400">Date Issued:</p>
+                        <p class="text-xs font-bold text-slate-700">${dateStr}</p>
+                        <p class="text-[10px] text-slate-400 mt-1">ISO 27001 / ISO 9001 / ISO 22301</p>
+                    </div>
+                    <div class="text-right">
+                        <div class="w-36 border-b border-slate-400 pb-1 mb-1 text-center font-mono font-bold text-xs text-blue-700">Akkharasaran S.</div>
+                        <p class="text-xs font-bold text-slate-800">Akkharasaran S.</p>
+                        <p class="text-[10px] text-slate-500">Head of System Enabler Division</p>
+                    </div>
                 </div>
             </div>
         </div>
     `;
-    pc.classList.remove('hidden');
+    
+    printContainer.classList.remove('hidden');
     window.print();
-    pc.classList.add('hidden');
-};
+    setTimeout(() => {
+        printContainer.classList.add('hidden');
+    }, 1000);
+}
 
-// 8. Settings & Data Portability
+// 8. Settings Page (Enterprise Environment, Architecture & Approvers)
 function renderSettings(container) {
     container.innerHTML = `
-        <div class="max-w-2xl bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden p-6 md:p-8">
-            <div class="mb-6">
-                <h3 class="text-xl font-bold text-slate-800 mb-1">System Data Management & Portability</h3>
-                <p class="text-xs text-slate-500 leading-relaxed">
-                    Data is stored locally in your browser's persistent storage. Use the backup tools below to transfer records between computers.
-                </p>
+        <div class="max-w-4xl space-y-6">
+            <div>
+                <h3 class="font-bold text-slate-800 text-lg">System Configuration & Governance</h3>
+                <p class="text-xs text-slate-400 mt-0.5">SYE Academy Enterprise Platform • Version ${APP_VERSION}</p>
             </div>
-
-            <div class="space-y-4">
-                <!-- 1. Export JSON -->
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-slate-50 rounded-2xl border border-slate-200 gap-4">
-                    <div class="flex-1 min-w-0 pr-2">
-                        <h4 class="font-bold text-sm text-slate-800">1. Export Full Backup (JSON)</h4>
-                        <p class="text-xs text-slate-500 mt-1">Download complete database snapshot (employees, courses, logs, quizzes, records).</p>
+            
+            <!-- Environment Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <span>🏢</span> On-Premise Infrastructure & Environment
+                </h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <span class="text-slate-400 block text-[10px] uppercase font-bold">Kubernetes Orchestrator</span>
+                        <span class="font-bold text-slate-800 text-sm">VMware Tanzu (TKG) Multi-Pod</span>
+                        <p class="text-slate-500 mt-1">Ingress Port: <strong>8080</strong> • Cluster Zone: Sermmit DC & DR Site</p>
                     </div>
-                    <button onclick="exportDataJSON()" class="shrink-0 px-4 py-2.5 bg-blue-600 text-white rounded-xl text-xs font-bold hover:bg-blue-700 transition shadow-sm whitespace-nowrap">
-                        Download JSON
-                    </button>
-                </div>
-
-                <!-- 2. Import JSON -->
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-slate-50 rounded-2xl border border-slate-200 gap-4">
-                    <div class="flex-1 min-w-0 pr-2">
-                        <h4 class="font-bold text-sm text-slate-800">2. Import Backup (JSON)</h4>
-                        <p class="text-xs text-slate-500 mt-1">Restore system data from a previously exported JSON backup file.</p>
+                    <div class="p-4 bg-slate-50 rounded-xl border border-slate-100">
+                        <span class="text-slate-400 block text-[10px] uppercase font-bold">Database & VM Tier</span>
+                        <span class="font-bold text-slate-800 text-sm">PostgreSQL 16 & RedHat Enterprise Linux 9</span>
+                        <p class="text-slate-500 mt-1">Host: <strong>10.254.97.141</strong> • Patroni HA Replication</p>
                     </div>
-                    <div class="shrink-0">
-                        <input type="file" id="import-json-file" accept=".json" class="hidden" onchange="importDataJSON(event)">
-                        <button onclick="document.getElementById('import-json-file').click()" class="px-4 py-2.5 bg-slate-800 text-white rounded-xl text-xs font-bold hover:bg-slate-700 transition whitespace-nowrap">
-                            Upload File
-                        </button>
-                    </div>
-                </div>
-
-                <!-- 3. Export as sample-data.js -->
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-blue-50/60 rounded-2xl border border-blue-200 gap-4">
-                    <div class="flex-1 min-w-0 pr-2">
-                        <h4 class="font-bold text-sm text-blue-950">3. Download Updated "sample-data.js"</h4>
-                        <p class="text-xs text-blue-800 mt-1">Download current data as a fresh sample-data.js to replace the file in your project folder.</p>
-                    </div>
-                    <button onclick="exportSampleDataJS()" class="shrink-0 px-4 py-2.5 bg-indigo-600 text-white rounded-xl text-xs font-bold hover:bg-indigo-700 transition shadow-sm whitespace-nowrap">
-                        Export JS File
-                    </button>
-                </div>
-
-                <!-- 4. Reset Data -->
-                <div class="flex flex-col sm:flex-row sm:items-center justify-between p-5 bg-rose-50/60 rounded-2xl border border-rose-200 gap-4">
-                    <div class="flex-1 min-w-0 pr-2">
-                        <h4 class="font-bold text-sm text-rose-900">4. Reset to Initial Sample Data</h4>
-                        <p class="text-xs text-rose-700 mt-1">Clears custom local storage modifications and reloads default dataset.</p>
-                    </div>
-                    <button onclick="resetSystemData()" class="shrink-0 px-4 py-2.5 bg-rose-600 text-white rounded-xl text-xs font-bold hover:bg-rose-700 transition whitespace-nowrap">
-                        Reset All Data
-                    </button>
                 </div>
             </div>
 
-            <div class="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-400 flex justify-between font-medium">
-                <span>SYE Academy v${APP_VERSION}</span>
-                <span>Active Period: 2025 - 2026</span>
+            <!-- Leadership & Approvers Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <span>👑</span> Division Leadership & Architectural Authorities
+                </h4>
+                <div class="space-y-3 text-xs">
+                    <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                        <div>
+                            <span class="font-bold text-slate-800">Akkharasaran S.</span>
+                            <p class="text-slate-500 text-[11px]">Head of System Enabler Division • CES Lead • TSQ Lead</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-blue-50 text-blue-700 font-bold rounded-lg text-[10px]">Division Head (sye@aeon.co.th)</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                        <div>
+                            <span class="font-bold text-slate-800">Rattanapakorn K.</span>
+                            <p class="text-slate-500 text-[11px]">API & Integration Platform Lead</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 font-bold rounded-lg text-[10px]">Section Lead (sye_api@aeon.co.th)</span>
+                    </div>
+                    <div class="flex items-center justify-between p-3.5 bg-slate-50 rounded-xl border border-slate-100">
+                        <div>
+                            <span class="font-bold text-slate-800">Waranya T.</span>
+                            <p class="text-slate-500 text-[11px]">User Application Systems Lead</p>
+                        </div>
+                        <span class="px-2.5 py-1 bg-slate-100 text-slate-700 font-bold rounded-lg text-[10px]">Section Lead (sye_uas@aeon.co.th)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ISO Governance Standards Card -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
+                <h4 class="text-sm font-bold text-slate-800 mb-4 flex items-center gap-2">
+                    <span>🛡️</span> Certified ISO Governance Framework
+                </h4>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                    <div class="p-3.5 bg-blue-50/50 rounded-xl border border-blue-100 text-center">
+                        <span class="font-extrabold text-blue-900 block text-sm">ISO 27001</span>
+                        <span class="text-[10px] text-blue-700">Information Security (ISMS)</span>
+                    </div>
+                    <div class="p-3.5 bg-emerald-50/50 rounded-xl border border-emerald-100 text-center">
+                        <span class="font-extrabold text-emerald-900 block text-sm">ISO 9001</span>
+                        <span class="text-[10px] text-emerald-700">Quality Management (QMS)</span>
+                    </div>
+                    <div class="p-3.5 bg-amber-50/50 rounded-xl border border-amber-100 text-center">
+                        <span class="font-extrabold text-amber-900 block text-sm">ISO 22301</span>
+                        <span class="text-[10px] text-amber-700">Business Continuity (BCMS/DR)</span>
+                    </div>
+                    <div class="p-3.5 bg-purple-50/50 rounded-xl border border-purple-100 text-center">
+                        <span class="font-extrabold text-purple-900 block text-sm">ISO 14001</span>
+                        <span class="text-[10px] text-purple-700">Environmental Management</span>
+                    </div>
+                </div>
             </div>
         </div>
     `;
 }
 
-window.exportDataJSON = () => {
-    const data = {
-        sye_employees: DataAPI.getEmployees(),
-        sye_courses: DataAPI.getCourses(),
-        sye_training_records: DataAPI.getRecords(),
-        sye_work_instructions: DataAPI.getWIs(),
-        sye_quizzes: DataAPI.getQuizzes(),
-        sye_quiz_results: DataAPI.getQuizResults(),
-        sye_activity_log: DataAPI.getLogs()
-    };
-    const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `sye_academy_backup_${new Date().toISOString().split('T')[0]}.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
-};
+// Initialize on Load
+window.addEventListener('load', () => {
+    initData();
+    handleRoute();
+});
 
-window.importDataJSON = (event) => {
-    const file = event.target.files[0];
-    if (!file) return;
-    const reader = new FileReader();
-    reader.onload = (e) => {
-        try {
-            const data = JSON.parse(e.target.result);
-            Object.keys(data).forEach(key => {
-                localStorage.setItem(key, JSON.stringify(data[key]));
-            });
-            alert('System data restored successfully!');
-            window.location.reload();
-        } catch (err) {
-            alert('Error parsing JSON backup file: ' + err.message);
-        }
-    };
-    reader.readAsText(file);
-};
-
-window.exportSampleDataJS = () => {
-    try {
-        const data = {
-            employees: DataAPI.getEmployees(),
-            courses: DataAPI.getCourses(),
-            trainingRecords: DataAPI.getRecords(),
-            workInstructions: DataAPI.getWIs(),
-            quizzes: DataAPI.getQuizzes(),
-            quizResults: DataAPI.getQuizResults(),
-            activityLog: DataAPI.getLogs()
-        };
-        const jsContent = `// SYE Academy Sample Data - Updated ${new Date().toISOString().split('T')[0]}\nwindow.SYE_SAMPLE_DATA = ${JSON.stringify(data, null, 2)};\n`;
-        const blob = new Blob([jsContent], {type: 'text/javascript;charset=utf-8'});
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `sample-data.js`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    } catch (err) {
-        alert('Failed to export JS file: ' + err.message);
-    }
-};
-
-window.resetSystemData = () => {
-    if(confirm('Are you sure you want to reset all data back to the default state?')) {
-        localStorage.clear();
-        loadSampleData();
-        window.location.reload();
-    }
-};
-
-// ===== INITIALIZATION =====
-initData();
-handleRoute();
+// Run once immediately if ready
+if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    initData();
+    handleRoute();
+}
