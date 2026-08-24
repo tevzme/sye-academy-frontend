@@ -4,7 +4,7 @@
 // Clean HTML5 History Routing (No '#' in URLs) + Bilingual Support + Controlled ISO Documents
 
 // ===== CONSTANTS & CONFIG =====
-const APP_VERSION = '15.0.0';
+const APP_VERSION = '16.0.0';
 const LAST_UPDATED = new Date().toISOString().split('T')[0];
 
 const ROLES = ['PM', 'BA', 'Developer', 'QA', 'SRE'];
@@ -522,9 +522,10 @@ window.startSelectedLearner = () => {
 
 // ===== LEARNER PORTAL =====
 
-// 1. Landing Screen (Original Exact UI matching User Screenshot)
+// 1. Landing Screen with Scrollable Capped Dropdown
 function renderLanding(container) {
-    const employees = DataAPI.getEmployees();
+    const employees = DataAPI.getEmployees().sort((a,b)=>a.name.localeCompare(b.name));
+    let selectedLearnerId = '';
     
     container.innerHTML = `
         <div class="max-w-2xl w-full my-auto py-8 animate-fade-in-up">
@@ -563,15 +564,45 @@ function renderLanding(container) {
                     </a>
                 </div>
                 
-                <!-- Returning Learner Form -->
-                <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
+                <!-- Returning Learner Section with Scrollable Capped Custom Dropdown -->
+                <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full text-left">
                     <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
-                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
-                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
-                            <option value="">${I18N.t('select_learner')}</option>
-                            ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id})</option>`).join('')}
-                        </select>
-                        <button id="continue-btn" class="shrink-0 rounded-xl px-5 py-2.5 bg-slate-800 text-white text-sm font-semibold hover:bg-slate-700 transition disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap shadow-sm text-center" disabled>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full relative">
+                        <!-- Custom Select Component -->
+                        <div class="relative flex-1 w-full" id="dropdown-container">
+                            <button
+                                type="button"
+                                id="dropdown-trigger-btn"
+                                class="w-full flex items-center justify-between rounded-xl border border-slate-200 px-4 py-2.5 text-sm bg-slate-50 hover:bg-slate-100/80 focus:ring-2 focus:ring-blue-500 font-medium text-slate-700 transition"
+                            >
+                                <span id="selected-label" class="truncate text-slate-500">${I18N.t('select_learner')}</span>
+                                <svg class="w-4 h-4 text-slate-400 shrink-0 ml-2 transition-transform duration-200" id="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                            </button>
+
+                            <!-- Scrollable Menu with Search (Max Height 220px) -->
+                            <div
+                                id="dropdown-menu"
+                                class="hidden absolute left-0 right-0 bottom-full mb-2 sm:bottom-auto sm:top-full sm:mt-1.5 bg-white rounded-2xl shadow-xl border border-slate-200 z-50 p-2 animate-fade-in"
+                            >
+                                <div class="p-1.5 border-b border-slate-100 mb-1">
+                                    <input
+                                        type="text"
+                                        id="dropdown-search"
+                                        placeholder="Type to filter engineer name or ID..."
+                                        class="w-full px-3 py-1.5 text-xs rounded-lg border border-slate-200 outline-none focus:border-blue-500 bg-slate-50 font-medium"
+                                    />
+                                </div>
+                                <div id="dropdown-items" class="max-h-56 overflow-y-auto space-y-0.5 pr-1">
+                                    <!-- Populated dynamically -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <button
+                            id="continue-btn"
+                            class="shrink-0 rounded-xl px-5 py-2.5 bg-slate-800 text-white text-sm font-semibold hover:bg-slate-700 transition disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap shadow-sm text-center"
+                            disabled
+                        >
                             ${I18N.t('continue_btn')}
                         </button>
                     </div>
@@ -581,17 +612,100 @@ function renderLanding(container) {
         </div>
     `;
 
-    const select = document.getElementById('learner-select');
-    const btn = document.getElementById('continue-btn');
-    
-    select.addEventListener('change', (e) => {
-        btn.disabled = !e.target.value;
+    const triggerBtn = document.getElementById('dropdown-trigger-btn');
+    const menu = document.getElementById('dropdown-menu');
+    const arrow = document.getElementById('dropdown-arrow');
+    const searchInput = document.getElementById('dropdown-search');
+    const itemsList = document.getElementById('dropdown-items');
+    const selectedLabel = document.getElementById('selected-label');
+    const continueBtn = document.getElementById('continue-btn');
+
+    const renderItems = (filter = '') => {
+        const query = filter.toLowerCase().trim();
+        const filtered = employees.filter(e => 
+            e.name.toLowerCase().includes(query) || 
+            e.id.toLowerCase().includes(query) || 
+            e.role.toLowerCase().includes(query) ||
+            e.section.toLowerCase().includes(query)
+        );
+
+        if (filtered.length === 0) {
+            itemsList.innerHTML = `<div class="p-4 text-center text-xs text-slate-400">No engineers match "${filter}"</div>`;
+            return;
+        }
+
+        itemsList.innerHTML = filtered.map(e => `
+            <div
+                class="dropdown-item flex items-center justify-between px-3 py-2 rounded-xl text-xs hover:bg-blue-50/80 cursor-pointer transition text-slate-700 ${selectedLearnerId === e.id ? 'bg-blue-50 font-semibold text-blue-700' : ''}"
+                data-id="${e.id}"
+                data-name="${e.name}"
+            >
+                <div class="flex items-center space-x-2.5 min-w-0">
+                    <div class="w-6 h-6 rounded-lg bg-blue-100 text-blue-700 font-bold flex items-center justify-center text-[10px] shrink-0">
+                        ${e.name.charAt(0)}
+                    </div>
+                    <div class="min-w-0">
+                        <p class="font-medium text-slate-800 truncate">${e.name}</p>
+                        <p class="text-[10px] text-slate-400 font-mono">${e.id} • ${e.section}</p>
+                    </div>
+                </div>
+                <span class="px-2 py-0.5 rounded-md text-[10px] font-semibold bg-slate-100 text-slate-600 shrink-0 ml-2">${e.role}</span>
+            </div>
+        `).join('');
+
+        itemsList.querySelectorAll('.dropdown-item').forEach(el => {
+            el.addEventListener('click', () => {
+                const id = el.dataset.id;
+                const name = el.dataset.name;
+                selectedLearnerId = id;
+                selectedLabel.textContent = name;
+                selectedLabel.classList.remove('text-slate-500');
+                selectedLabel.classList.add('text-slate-900', 'font-semibold');
+                continueBtn.disabled = false;
+                closeDropdown();
+            });
+        });
+    };
+
+    const toggleDropdown = () => {
+        const isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+            menu.classList.remove('hidden');
+            arrow.classList.add('rotate-180');
+            renderItems(searchInput.value);
+            setTimeout(() => searchInput.focus(), 50);
+        } else {
+            closeDropdown();
+        }
+    };
+
+    const closeDropdown = () => {
+        menu.classList.add('hidden');
+        arrow.classList.remove('rotate-180');
+    };
+
+    triggerBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        toggleDropdown();
     });
-    
-    btn.addEventListener('click', () => {
-        const learnerId = select.value;
-        if(learnerId) {
-            DB.setCurrentLearner(learnerId);
+
+    searchInput.addEventListener('input', (e) => {
+        renderItems(e.target.value);
+    });
+
+    searchInput.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!document.getElementById('dropdown-container')?.contains(e.target)) {
+            closeDropdown();
+        }
+    });
+
+    continueBtn.addEventListener('click', () => {
+        if (selectedLearnerId) {
+            DB.setCurrentLearner(selectedLearnerId);
             navigate('/my-training');
         }
     });

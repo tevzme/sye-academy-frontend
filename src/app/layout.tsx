@@ -46,8 +46,8 @@ export default function RootLayout({
         {/* Chart.js CDN */}
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         {/* Core Scripts */}
-        <script src="/sample-data.js?v=15.0.0"></script>
-        <script src="/app.js?v=15.0.0" defer></script>
+        <script src="/sample-data.js?v=16.0.0"></script>
+        <script src="/app.js?v=16.0.0" defer></script>
         <style dangerouslySetInnerHTML={{ __html: `
           body {
             font-family: 'Inter', 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
