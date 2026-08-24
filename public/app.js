@@ -520,95 +520,67 @@ window.startSelectedLearner = () => {
 
 // ===== LEARNER PORTAL =====
 
-// 1. Landing Page
+// 1. Landing Screen (Original Exact UI matching User Screenshot)
 function renderLanding(container) {
     const employees = DataAPI.getEmployees();
-    const isThai = I18N.current === 'th';
     
     container.innerHTML = `
-        <div class="max-w-2xl w-full my-auto py-8 text-center animate-fade-in-up">
-            <div class="inline-flex items-center space-x-3 mb-6 bg-white p-3 rounded-2xl shadow-xs border border-slate-200">
-                <img src="favicon.svg" alt="AEON" class="w-10 h-10 rounded-xl shadow-2xs object-cover border border-slate-200">
-                <div class="text-left">
-                    <span class="text-xs font-bold text-blue-600 block uppercase tracking-wider">AEON System Development</span>
-                    <span class="text-xs text-slate-500 font-medium">System Enabler (SYE) Division</span>
-                </div>
-            </div>
-
-            <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-3">
-                ${I18N.t('app_title')}
-            </h1>
-            <p class="text-sm sm:text-base text-slate-600 max-w-lg mx-auto mb-8 leading-relaxed">
-                ${I18N.t('app_subtitle')}
-            </p>
-
-            <!-- Main Action Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 text-left">
-                <a href="/register" onclick="navigate('/register', event)" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-blue-500 hover:shadow-md transition duration-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
-                            📚
-                        </div>
-                        <h3 class="text-base font-bold text-slate-800 mb-1 group-hover:text-blue-600 transition">${I18N.t('start_training')}</h3>
-                        <p class="text-xs text-slate-500 leading-relaxed">${I18N.t('start_training_sub')}</p>
-                    </div>
-                    <div class="mt-5 pt-3 border-t border-slate-100 flex items-center text-xs font-bold text-blue-600 group-hover:translate-x-1 transition">
-                        <span>Get Started →</span>
-                    </div>
-                </a>
-
-                <a href="/dashboard" onclick="navigate('/dashboard', event)" class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm hover:border-slate-800 hover:shadow-md transition duration-200 group flex flex-col justify-between">
-                    <div>
-                        <div class="w-12 h-12 bg-slate-100 text-slate-800 rounded-2xl flex items-center justify-center text-2xl mb-4 group-hover:scale-105 transition">
-                            🔧
-                        </div>
-                        <h3 class="text-base font-bold text-slate-800 mb-1 group-hover:text-slate-900 transition">${I18N.t('admin_panel')}</h3>
-                        <p class="text-xs text-slate-500 leading-relaxed">${I18N.t('admin_panel_sub')}</p>
-                    </div>
-                    <div class="mt-5 pt-3 border-t border-slate-100 flex items-center text-xs font-bold text-slate-800 group-hover:translate-x-1 transition">
-                        <span>Open Dashboard →</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Returning Learner Selector Box -->
-            <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm text-left mb-6">
-                <h4 class="text-sm font-bold text-slate-800 mb-1 flex items-center gap-2">
-                    <span>👤</span> ${I18N.t('returning_learner')}
-                </h4>
-                <p class="text-xs text-slate-500 mb-4">${isThai ? 'เลือกชื่อของคุณเพื่อดูหลักสูตรที่ต้องเรียนและทำแบบทดสอบ' : 'Select your name to view your assigned curriculum and resume assessments.'}</p>
+        <div class="max-w-2xl w-full my-auto py-8 animate-fade-in-up">
+            <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-8 md:p-12 text-center">
+                <div class="w-20 h-20 bg-blue-50 text-blue-600 rounded-3xl mx-auto flex items-center justify-center text-4xl mb-6 shadow-sm">🎓</div>
+                <h1 class="text-3xl font-extrabold text-slate-800 tracking-tight mb-2">${I18N.t('app_title')}</h1>
+                <p class="text-slate-500 text-sm max-w-md mx-auto mb-10 leading-relaxed font-medium">
+                    ${I18N.t('app_subtitle')}<br>
+                    <span class="text-xs text-slate-400">${I18N.t('division_name')}</span>
+                </p>
                 
-                <div class="space-y-3">
-                    <select id="landing-learner-select" class="w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50 font-medium">
-                        <option value="">-- ${I18N.t('select_learner')} --</option>
-                        ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.section}) ${e.employmentType === 'Outsource' ? '[OS]' : ''}</option>`).join('')}
-                    </select>
-                    <button id="landing-continue-btn" onclick="startLandingLearner()" class="w-full rounded-2xl px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold transition shadow-sm">
-                        ${I18N.t('continue_btn')}
-                    </button>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
+                    <a href="/register" onclick="navigate('/register', event)" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-blue-50/30 border-2 border-slate-200 rounded-2xl hover:border-blue-600 hover:shadow-md transition duration-200 group text-center">
+                        <span class="text-3xl mb-3 group-hover:scale-110 transition-transform">📚</span>
+                        <span class="font-bold text-slate-800 group-hover:text-blue-700 text-base mb-1">${I18N.t('start_training')}</span>
+                        <span class="text-xs text-slate-400">${I18N.t('start_training_sub')}</span>
+                    </a>
+                    <a href="/dashboard" onclick="navigate('/dashboard', event)" class="flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-slate-50 border-2 border-slate-200 rounded-2xl hover:border-slate-800 hover:shadow-md transition duration-200 group text-center">
+                        <span class="text-3xl mb-3 group-hover:scale-110 transition-transform">🔧</span>
+                        <span class="font-bold text-slate-800 group-hover:text-slate-900 text-base mb-1">${I18N.t('admin_panel')}</span>
+                        <span class="text-xs text-slate-400">${I18N.t('admin_panel_sub')}</span>
+                    </a>
+                </div>
+                
+                <!-- Returning Learner Form -->
+                <div class="border-t border-slate-100 pt-8 max-w-md mx-auto w-full">
+                    <p class="text-xs font-bold text-slate-400 mb-3 uppercase tracking-wider text-center">${I18N.t('returning_learner')}</p>
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full">
+                        <select id="learner-select" class="flex-1 w-full min-w-0 rounded-xl border border-slate-200 px-4 py-2.5 text-sm focus:ring-2 focus:ring-blue-500 outline-none bg-slate-50">
+                            <option value="">${I18N.t('select_learner')}</option>
+                            ${employees.sort((a,b)=>a.name.localeCompare(b.name)).map(e => `<option value="${e.id}">${e.name} (${e.role} - ${e.id})</option>`).join('')}
+                        </select>
+                        <button id="continue-btn" class="shrink-0 rounded-xl px-5 py-2.5 bg-slate-800 text-white text-sm font-semibold hover:bg-slate-700 transition disabled:opacity-40 disabled:cursor-not-allowed whitespace-nowrap shadow-sm text-center" disabled>
+                            ${I18N.t('continue_btn')}
+                        </button>
+                    </div>
                 </div>
             </div>
-
-            <!-- Certified Governance Matrix Footer -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs text-slate-500">
-                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">ISO 27001 ISMS</div>
-                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">ISO 9001 QMS</div>
-                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">ISO 22301 BCMS</div>
-                <div class="p-3 bg-white/60 rounded-xl border border-slate-200 font-medium">VMware Tanzu K8s</div>
-            </div>
+            <p class="text-center text-xs text-slate-400 mt-6 font-medium">${I18N.t('division_full')}</p>
         </div>
     `;
-}
 
-window.startLandingLearner = () => {
-    const sel = document.getElementById('landing-learner-select');
-    if (!sel || !sel.value) {
-        alert('Please select your name from the dropdown first.');
-        return;
+    const select = document.getElementById('learner-select');
+    const btn = document.getElementById('continue-btn');
+    
+    if (select && btn) {
+        select.addEventListener('change', (e) => {
+            btn.disabled = !e.target.value;
+        });
+        
+        btn.addEventListener('click', () => {
+            if(select.value) {
+                DB.setCurrentLearner(select.value);
+                window.navigate('/my-training');
+            }
+        });
     }
-    DB.setCurrentLearner(sel.value);
-    window.navigate('/my-training');
-};
+}
 
 // 2. Registration Page
 function renderRegister(container) {

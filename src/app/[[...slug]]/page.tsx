@@ -55,7 +55,7 @@ export default function AppRouterPage() {
         {/* Top Navbar */}
         <nav id="learner-nav" className="bg-white border-b border-slate-200 px-6 py-3 flex justify-between items-center shadow-xs shrink-0 z-10">
           <div className="flex items-center space-x-3 cursor-pointer" onClick={(e) => nav('/landing', e)}>
-            <img src="/favicon.svg" alt="AEON" className="w-9 h-9 rounded-xl shadow-xs object-cover border border-slate-200" />
+            <div className="w-9 h-9 bg-blue-600 text-white rounded-xl flex items-center justify-center font-bold text-lg shadow-sm">S</div>
             <div>
               <h1 className="text-base font-bold text-slate-800 leading-tight">SYE Academy</h1>
               <p className="text-xs text-slate-500 font-medium">System Enabler Division • AEON</p>
