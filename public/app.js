@@ -377,7 +377,10 @@ function handleRoute() {
     updateLangButtonLabels();
     
     let hash = window.location.hash.substring(1);
-    if (!hash || hash === 'landing') hash = 'dashboard';
+    if (hash === 'landing' || !hash) {
+        window.location.hash = 'dashboard';
+        return;
+    }
     
     let courseMatch = hash.match(/^course-(.+)$/);
     let isCourseRoute = false;
